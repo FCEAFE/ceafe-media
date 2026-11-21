@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Wednesday, 18 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Wednesday, 18 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 18 November 2026, about 12:00 to 19:05 Europe/Madrid: everything new since the 13:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<hr>
+<h2 id="s1">Update: Shenzhen eve: one hour for the Trump–Xi–Putin meeting, and a US &ldquo;last chance&rdquo; warning to Moscow</h2>
+<p>On the eve of Thursday&rsquo;s first US–China–Russia leaders&rsquo; meeting, Kremlin spokesman Dmitry Peskov said &ldquo;one hour is allotted&rdquo; for the trilateral and that no full-fledged Putin–Trump negotiations are planned for 19 November; Kremlin aide Yury Ushakov said a Putin–Trump meeting is planned after the APEC plenary (TASS, Russian state agency). US envoys Steve Witkoff and Jared Kushner have warned Russia that this round may be its last chance for a favourable deal, according to journalist Tim Zadorozhnyy, shared by the Kyiv Independent. The New York Times reports that Western intelligence expects Putin to keep fighting through the winter. Putin&rsquo;s military aide confirmed that the &ldquo;nuclear briefcase&rdquo; travelled with him to China (as relayed by @DD_Geopolitics). Putin stood centre-stage beside Xi and Trump in the APEC &ldquo;family photo&rdquo;, his first in nine years, which Bloomberg called &ldquo;a powerful rebuff of western efforts to isolate&rdquo; him.</p>
+<p>Middle powers worked the margins. Canada&rsquo;s Mark Carney met Trump on a trade agreement and said Canada had restored market access for &ldquo;more than 90 per cent&rdquo; of the trade previously hit by Chinese tariffs; he also accused Putin of &ldquo;lying&rdquo; when Putin said Western sanctions were &ldquo;a thing of the past&rdquo; (Al Jazeera). Japan&rsquo;s Sanae Takaichi met Putin for about 30 minutes, the first face-to-face meeting of the two countries&rsquo; leaders since 2019 (South China Morning Post).</p>
+<p><strong>Why it matters for Europe.</strong> This continues the 13:30 story on Trump&rsquo;s arrival. Canada, Japan and South Korea are using Shenzhen to secure their own deals, while no European leader sits at the table where Ukraine will be discussed. CEAFE wants a pan-European peace involving Ukraine, Russia and the EU, without outside powers deciding for them. The nuclear briefcase is a reminder of the nuclear dimension many European leaders play down.</p>
+<p>No member state, on its own, has the scale of the powers it hopes to sit beside at the same table.</p>
+<p><strong>What to watch.</strong> The trilateral on 19 November and any joint text; whether Ukraine and the Abu Dhabi track feature in it; any one-on-one Putin–Trump meeting.</p>
+<p><strong>Sources:</strong> TASS, Kremlin, Kyiv Independent (<a href="https://x.com/i/status/2123103040878297295">post</a>), NYT via Clash Report (<a href="https://x.com/i/status/2123036161140805969">post</a>), @DD_Geopolitics (<a href="https://x.com/i/status/2123061715323490376">post</a>), Bloomberg (<a href="https://x.com/i/status/2123085109825823189">post</a>), @MarkJCarney (<a href="https://x.com/i/status/2123045894790459874">post</a>), Al Jazeera (<a href="https://x.com/i/status/2123107718793703910">post</a>), <a href="https://www.scmp.com/news/china/diplomacy/article/3374961/japans-takaichi-meets-putin-rare-talks-amid-strained-ties-russia">South China Morning Post</a>, <a href="https://t.me/tassagency_en/99076">TASS on Telegram</a>.</p>
+<hr>
+<h2 id="s2">Europe&rsquo;s own track: the Coalition of the Willing meets in Berlin on Thursday</h2>
+<p>NATO Secretary General Mark Rutte will travel to Berlin on 19 November for a meeting of the Coalition of the Willing co-hosted by Chancellor Friedrich Merz, President Emmanuel Macron and UK Prime Minister Andy Burnham (NATO press office); Finland&rsquo;s President Alexander Stubb will also attend. The meeting falls on the same day as the Shenzhen trilateral. Rutte said NATO is &ldquo;doing our part to ensure peace talks will be successful&rdquo; and welcomed &ldquo;hundreds of millions of dollars&rdquo; of new pledges to the PURL scheme. President Zelensky thanked Ursula von der Leyen for the proposed Instrument for Coordinated Support to Ukraine (up to €45 billion for 2027, of which up to €25 billion for defence) and asked Parliament and Council for &ldquo;swift adoption&rdquo;. In Paris, Foreign Minister Jean-Noël Barrot accused Marine Le Pen and Jean-Luc Mélenchon of the same line: &ldquo;capitulation of Ukraine and complacency with the Kremlin&rdquo;. In Washington, House Republicans threatened to strip Ukraine-related provisions, including intelligence sharing, from a major defence bill (Clash Report).</p>
+<p><strong>Why it matters for Europe.</strong> The European negotiating team agreed in Dublin on 13 November (EU institutions plus France, Germany, Italy, Poland and the UK) meets in Berlin while the decisive meeting happens in Shenzhen. A seven-member team without a single European voice carries less weight than a Union speaking as one. CEAFE&rsquo;s line is that more money for weapons prolongs the war; what matters here is whether Europe secures a seat in the peace talks.</p>
+<p><strong>What to watch.</strong> Outcome of the Berlin meeting (security guarantees, ceasefire sequencing); the €45 billion instrument in Parliament and Council.</p>
+<p><strong>Sources:</strong> NATO press office (<a href="https://x.com/i/status/2123027373608026541">post</a>), <a href="https://www.nato.int/en/news-and-events/events/media-advisories/2026/11/18/participation-by-the-nato-secretary-general-in-a-meeting-of-leaders-on-ukraine">NATO media advisory</a>, <a href="https://www.presidentti.fi/en/president-stubb-to-attend-meeting-of-the-leaders-of-the-coalition-of-the-willing-in-berlin/">Finnish Presidency</a>, @ZelenskyyUa (<a href="https://x.com/i/status/2123033090452795604">post</a>), Ukrainian MoD (<a href="https://x.com/i/status/2123059097780076896">post</a>), @jnbarrot (<a href="https://x.com/i/status/2123069600241783248">post</a>), Clash Report (<a href="https://x.com/i/status/2123068381066645995">post</a>), <a href="https://www.euronews.com/2026/11/13/eu-leaders-bring-italy-and-poland-into-ukraine-peace-talks-team-as-kallas-fights-for-spot">Euronews</a>.</p>
+<hr>
+<h2 id="s3">Update: Washington presses Europe to buy American: Colby&rsquo;s F-35 remarks published and a forum for 80+ US firms</h2>
+<p>The Department of War has published Under Secretary Elbridge Colby&rsquo;s remarks to the EU Foreign Affairs Council (Defence) of 17 November, as prepared: &ldquo;we strongly oppose measures to exclude American firms from competition in European markets&rdquo;, extended to &ldquo;other non-EU NATO allies&rdquo;. On fighters he said &ldquo;there is no way that a gathering of disparate so-called middle powers would ever be able to build a competitor to the F-35 in a timely fashion&rdquo; and that the effort &ldquo;would almost certainly result in the waste of European and Canadian money, with an inferior result&rdquo;. After a meeting at NATO headquarters he told Reuters that &ldquo;if you&rsquo;re going to have a secure Europe in NATO 3.0, you need things like the (US fighter jet) F-35&rdquo;, while saying the US does not insist on American-only production and proposing joint ventures and licensed co-production. The same day the US ambassador to NATO said he led a &ldquo;Transatlantic Defense Industry Access Forum&rdquo; connecting &ldquo;80+ U.S. companies with European partners&rdquo;, adding: &ldquo;bolstered by NATO Allies&rsquo; 5% defense spending commitment, we are cutting red tape, fueling American jobs&rdquo;. The State Department discussed &ldquo;burden sharing&rdquo; and Lithuania&rsquo;s 5% of GDP plan with Vilnius. EU Defence Commissioner Andrius Kubilius told the European Business Summit that Europe must &ldquo;outspend Russia and outproduce it&rdquo;, and that European air-defence firms can deliver to Ukraine &ldquo;only in 2028 or 2029&rdquo;.</p>
+<p><strong>Why it matters for Europe.</strong> This updates the 07:30 story on Colby in Brussels: the warning is now on the official record. Washington is openly using Europe&rsquo;s 5% pledge as a market for US industry and jobs, and argues that Europe should not build its own fighter, although it already does (GCAP: Italy, UK, Japan; and FCAS). A fighter whose software, spares and upgrades depend on US approval is the clearest case for European preference.</p>
+<p>The EU as a whole can bear comparison; each capital on its own cannot. That is the difference that matters.</p>
+<p><strong>What to watch.</strong> The US force-posture review due by 1 December (about 80,000 US troops in Europe, per Reuters); &ldquo;European preference&rdquo; rules in EDIP and SAFE.</p>
+<p><strong>Sources:</strong> <a href="https://www.war.gov/News/Speeches/Speech/Article/4649777/remarks-by-under-secretary-of-war-for-policy-elbridge-colby-at-the-european-uni/">U.S. Department of War (Colby remarks)</a>, <a href="https://www.investing.com/news/stock-market-news/pentagons-colby-warns-nato-allies-against-shutting-us-firms-out-of-arms-deals-5033782">Reuters via Investing.com</a>, @USAmbNATO (<a href="https://x.com/i/status/2123065147266568514">post</a>), @StateDeptPM (<a href="https://x.com/i/status/2123102591483568266">post</a>), <a href="https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2506">European Commission (Kubilius speech)</a>, <a href="https://aviationweek.com/defense/budget-policy-operations/italy-ramp-gcap-spending-2030s">Aviation Week</a>.</p>
+<hr>
+<h2 id="s4">Russia asks whether the Netherlands is &ldquo;openly joining the conflict&rdquo; over the Crimean Bridge strike</h2>
+<p>The Russian embassy in The Hague posted: &ldquo;Moscow has been duly informed of the NL involvement. The confession has been well noted. Is The Hague openly joining the conflict?&rdquo; It responded to a statement by Destinus, the Netherlands-headquartered company, that its missiles were the only foreign-made weapons used in Ukraine&rsquo;s 17 November attack on the Crimean Bridge (Reuters via The Moscow Times). Destinus president Oleksandr Danyliuk said nine Ruta Block 1 cruise missiles were launched and seven hit the bridge (Clash Report). Dutch Foreign Minister Tom Berendsen told lawmakers that such embassy messages aim to divide Western countries and that Dutch companies exporting to Ukraine does not mean the Netherlands is at war with Russia. Separately, France&rsquo;s Minister Delegate for the Armed Forces Alice Rufo told RMC that a defence mission attached to the French embassy works in Ukraine, including specialists who maintain Mirage aircraft and Caesar howitzers (TASS, citing RMC).</p>
+<p><strong>Why it matters for Europe.</strong> Moscow is singling out an EU member state and a European manufacturer; in April Russia&rsquo;s defence ministry had already listed European firms, including Destinus sites in Hengelo. Russia&rsquo;s warnings target European states rather than the US, which is why CEAFE takes its nuclear signals seriously. Weapons as reported: Ruta Block 1 cruise missiles and Da Vinci (LORD) deep-strike drones by Destinus (Netherlands), and the FP-5 Flamingo by Fire Point (Ukraine). Destinus&rsquo;s account has not been independently verified.</p>
+<p><strong>What to watch.</strong> Any formal Russian démarche to The Hague; a Dutch government statement; Moscow&rsquo;s reaction to the French mission.</p>
+<p><strong>Sources:</strong> @rusembassynl (<a href="https://x.com/i/status/2122976975320990148">post</a>), <a href="https://www.themoscowtimes.com/2026/11/18/russia-asks-if-netherlands-is-joining-ukraine-war-after-dutch-companys-missiles-used-in-bridge-attack-a94298">The Moscow Times (Reuters)</a>, <a href="https://www.dutchnews.nl/2026/11/russian-embassy-responds-to-nl-role-in-crimea-bridge-attack/">DutchNews.nl</a>, <a href="https://clashreport.com/defense/articles/russia-asks-netherlands-joining-war-j3w4df768t">Clash Report</a>, <a href="https://t.me/tassagency_en/99092">TASS</a>.</p>
+<hr>
+<h2 id="s5">EU sets up a Sanctions Office under Commissioner Albuquerque, outside Kallas&rsquo;s remit</h2>
+<p>The European Commission created an EU Sanctions Office in its Secretariat-General, overseen by Commissioner Maria Luís Albuquerque, to cover the whole sanctions cycle from design to enforcement and anti-circumvention, mainly for the Russia and Belarus regimes; the changes take effect on 16 January 2027 (Brussels Times; Sofia Globe). TASS noted that the office is not under the High Representative, Kaja Kallas. The Council also authorised the signature of the EU–Indonesia trade and investment agreements, which it says &ldquo;will boost EU competitiveness, diversify trade&rdquo;. EU and UK leaders meet in Brussels on Friday 20 November for the second EU–UK summit, on &ldquo;strategic partnership&rdquo; and &ldquo;security in Europe and beyond&rdquo;. Six EU countries (Austria, Croatia, Germany, Lithuania, Slovakia and Slovenia) will explore joint procurement of CBRN surveillance equipment through the European Defence Agency.</p>
+<p><strong>Why it matters for Europe.</strong> Sanctions and trade are where the Union already acts with one voice and real weight; centralising enforcement strengthens a tool only the EU as a whole can wield. The Indonesia deal diversifies supply chains away from dependence on the US and China, and the joint CBRN purchase is the kind of intra-European procurement CEAFE welcomes.</p>
+<p><strong>What to watch.</strong> Name and mandate of the new EU Sanctions Envoy; the EU–UK summit&rsquo;s security deliverables; Montenegro&rsquo;s accession conference on 19 November.</p>
+<p><strong>Sources:</strong> <a href="https://www.brusselstimes.com/eu-affairs/2412656/eu-revamps-sanctions-strategy-with-new-office-and-envoy-for-enforcement/">Brussels Times</a>, <a href="https://sofiaglobe.com/2026/11/18/european-commission-sets-up-new-eu-sanctions-office-appoints-new-eu-sanctions-envoy/">Sofia Globe</a>, <a href="https://t.me/tassagency_en/99089">TASS</a>, Council of the EU (<a href="https://x.com/i/status/2123093508643021034">post</a>), European Council (<a href="https://x.com/i/status/2123109187085590736">post</a>), @EUDefenceAgency (<a href="https://x.com/i/status/2123012350001234073">post</a>).</p>
+<hr>
+<h2 id="s6">Estonia moves to close its border with Russia indefinitely</h2>
+<p>Estonia&rsquo;s Prime Minister Kristen Michal called for closing the Estonian–Russian border indefinitely and said the border guard is ready for a possible &ldquo;migration attack&rdquo; (TASS, citing Delfi). Defense News reports that Estonia plans to close its road crossings after an attempted arson attack on the drone maker Threod Systems. Narva&rsquo;s mayor criticised the proposal to close the Narva crossing, saying it would also affect Latvian and Finnish citizens (TASS, citing ERR).</p>
+<p><strong>Why it matters for Europe.</strong> Sabotage against a European drone maker on the eastern flank is a hybrid threat to the EU&rsquo;s own defence industrial base, and a closed external border is a matter for the whole Schengen area, not only Tallinn.</p>
+<p><strong>What to watch.</strong> The formal government decision and the closure date; Russia&rsquo;s response.</p>
+<p><strong>Sources:</strong> <a href="https://t.me/tassagency_en/99082">TASS</a>, <a href="https://www.defensenews.com/global/europe/">Defense News</a>.</p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

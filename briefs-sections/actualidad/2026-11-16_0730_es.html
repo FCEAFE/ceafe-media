@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — lunes, 16 de noviembre de 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">lunes, 16 de noviembre de 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 15–16 de noviembre de 2026</li>
+<li><strong>Compiled from:</strong> el informe diario de la sección Actualidad de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Negociaciones de paz en Ucrania: toma forma el equipo europeo «E5 + UE» mientras Rusia mide si le concede asiento</h2>
+<p><strong>Los líderes europeos, reunidos en Dublín el 13 de noviembre, designaron al equipo europeo para cualquier negociación entre Rusia y Ucrania: el E5 de la Coalición de Voluntarios (Francia, Alemania, Italia, Polonia y Reino Unido, a nivel de asesores de seguridad nacional) más la Comisión y el Consejo Europeo, «en plena coordinación con la OTAN» (António Costa, según Agence Europe, Euronews y Kyiv Independent).</strong></p>
+<p>En la noche del 15, Ursula von der Leyen dijo haber hablado de las negociaciones con el presidente finlandés Alexander Stubb y que «Europa participará estrechamente en este proceso a través del formato E5 + UE», con «máximo apoyo a Ucrania y máxima presión sobre Rusia». El excomisario Thierry Breton criticó que se hayan nombrado «7 representantes» «en lugar del que prevén los Tratados». Según una publicación de Reuters, Zelenski afirma que los negociadores estadounidenses plantearon que Kiev ceda el Donbás a cambio del ingreso en la OTAN. El ministro británico de Defensa, Wes Streeting, respondió que «Rusia no está en posición de dictar nada» (Sky News) y que la disuasión nuclear británica «no es negociable». Lo dijo al recibir al HMS Vengeance tras una patrulla que el Daily Mail califica de récord. Los ministros de Exteriores de la UE se reúnen hoy (16 de noviembre) en Bruselas con el ministro ucraniano Andrii Sybiha; según la diplomacia irlandesa, aprobarán 113 nuevas inclusiones en la lista de sanciones.</p>
+<p><strong>La versión rusa:</strong> TASS presentó la declaración de von der Leyen como que «los países europeos buscan un papel» en las negociaciones y dio eco a un artículo de opinión de The American Conservative según el cual «Rusia ya ha ganado». El Kremlin había dicho antes que primero quería conocer las «verdaderas intenciones» de Europa (AFP, citada por Kyiv Post). @F_CEAFE reposteó una crítica que ridiculiza la idea de que «Rusia no debe tener asiento en la mesa» como «diplomacia europea en la era de los belicistas incompetentes» (cita del diputado estonio @markomihkelson).</p>
+<p><strong>Por qué importa a Europa.</strong> Europa llega por fin a la mesa, pero como un grupo improvisado de cinco capitales (una de ellas, Reino Unido, fuera de la UE) más dos instituciones, y con la Alta Representante apartada. El argumento de Breton coincide con el de CEAFE: los Tratados ya prevén una sola voz de la Unión. Una Europa de 27 fragmentada en enviados nacionales es más fácil de dividir y menos creíble ante Washington o Moscú. Además, la disuasión «no negociable» de Streeting depende de misiles Trident II D5 suministrados por EE. UU.: la garantía última de seguridad europea sigue sin ser plenamente soberana.</p>
+<p><strong>Qué vigilar.</strong> las conclusiones del Consejo de hoy y las 113 inclusiones en la lista de sanciones; si Moscú acepta negociadores europeos; la cumbre del 26 y 27 de noviembre sobre la financiación de Ucrania y los activos rusos congelados.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122077019080970406">von der Leye</a></li>
+<li><a href="https://x.com/i/status/2122059338764386690">Breto</a></li>
+<li><a href="https://x.com/i/status/2122057073034694949">Reuters</a></li>
+<li><a href="https://x.com/i/status/2122021969025466496">Streeting (1)</a></li>
+<li><a href="https://x.com/i/status/2122031505065041935">Streeting (2)</a></li>
+<li><a href="https://x.com/i/status/2122052133994254594">Zelenski</a></li>
+<li><a href="https://agenceurope.eu/en/bulletin/article/13981/1/after-months-of-indecision-eu27-choose-who-will-represent-them-at-eventual-peace-talks">agenceurope.eu</a></li>
+<li><a href="https://www.euronews.com/2026/11/13/eu-leaders-bring-italy-and-poland-into-ukraine-peace-talks-team-as-kallas-fights-for-spot">euronews.com</a></li>
+<li><a href="https://www.consilium.europa.eu/en/meetings/fac/2026/11/16/">consilium.europa.eu</a></li>
+<li><a href="https://www.gov.ie/en/department-of-foreign-affairs/press-releases/mcentee-to-discuss-further-sanctions-against-russia-and-the-need-for-the-opening-of-aid-corridors-into-gaza-with-eu-foreign-ministers/">gov.ie</a></li>
+<li><a href="https://t.me/s/tassagency_en">TASS (medio estatal ruso):</a></li>
+<li><a href="https://x.com/i/status/2122164743771230261">repost de @F_CEAFE</a></li>
+</ul>
+<hr>
+<h2 id="s2">Xi recibirá a Putin y a Trump en Shenzhen el 19 de noviembre, sin Europa</h2>
+<p><strong>El Ministerio de Exteriores chino anunció que el presidente Xi Jinping celebrará una «cumbre China-Rusia-EE.</strong></p>
+<p>UU.» con Vladímir Putin y Donald Trump en Shenzhen el 19 de noviembre, en paralelo a la reunión de líderes de APEC (18 y 19 de noviembre). Dmitri Peskov lo confirmó a TASS. Xinhua y Global Times (medios estatales chinos) presentan APEC en torno a la «apertura, innovación y cooperación». Según Reuters, Ucrania, el comercio y la IA marcarán el encuentro. Para Bloomberg, Trump llega «debilitado políticamente en casa, pero quizá aún más deseoso de exhibir su poder fuera». Mark Carney se reunirá con Xi el martes y dijo que Canadá «tiene otros socios para la fabricación de automóviles» si Washington no quiere una cadena de suministro norteamericana integrada.</p>
+<p><strong>Por qué importa a Europa.</strong> Las tres potencias que deciden sobre la guerra de Ucrania, las reglas del comercio y la IA se reúnen sin ningún europeo, pocos días después de que la UE nombrara a su equipo negociador. Solo una Unión que actúe como un único actor, con defensa, tecnología y peso comercial propios, es invitada a mesas como esta. La cobertura abierta de Canadá frente a EE. UU. es el tipo de palanca colectiva que la UE rara vez usa con Washington.</p>
+<p><strong>Qué vigilar.</strong> si se discuten condiciones sobre Ucrania a espaldas de Europa, y cualquier acuerdo comercial o de control de exportaciones entre EE. UU. y China (chips, tierras raras) que luego tengan que acatar las empresas europeas.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122138273137275282">Exteriores de Chi</a></li>
+<li><a href="https://x.com/i/status/2122041706187313357">Peskov</a></li>
+<li><a href="https://x.com/i/status/2122156794663612774">Xinhua, medio estatal chino</a></li>
+<li><a href="https://x.com/i/status/2122177874425679914">Reuters</a></li>
+<li><a href="https://x.com/i/status/2122141364729135340">Bloomberg (1)</a></li>
+<li><a href="https://x.com/i/status/2122174084997894586">Bloomberg (2)</a></li>
+</ul>
+<hr>
+<h2 id="s3">Gaza: Australia, Canadá, Italia y Reino Unido denuncian 150.000 tiendas retenidas en la frontera</h2>
+<p><strong>Los ministros de Exteriores de Australia, Canadá, Italia y Reino Unido instaron el 15 de noviembre al Gobierno de Israel a «acabar ya con los retrasos y permitir un acceso humanitario inmediato, rápido y sin trabas en toda Gaza».</strong></p>
+<p>Recordaron que «150.000 tiendas y otros suministros vitales están retenidos en la frontera» mientras las inundaciones agravan el invierno. La UE emitió su propia declaración el 14 de noviembre pidiendo reabrir todos los pasos. La ministra irlandesa Helen McEntee pedirá hoy «intensificar la presión» sobre Israel. Haaretz informa de que las propias cifras israelíes muestran entregas de ayuda muy por debajo de lo comprometido. Exteriores de Israel difundió un discurso en la ONU que llama a la UNRWA «el pirómano» y criticó a la Autoridad Palestina. En la política israelí, Haaretz informa de conversaciones entre el bloque de Netanyahu y el de Gadi Eisenkot. @F_CEAFE reposteó a Eisenkot, que calificaba la conducta de Netanyahu de amenaza directa a la democracia israelí.</p>
+<p><strong>Por qué importa a Europa.</strong> Italia es el único Estado miembro entre los cuatro firmantes: la UE vuelve a hablar con declaraciones nacionales dispersas y no con una política única con consecuencias, pese a ser el primer socio comercial de Israel.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://www.gov.uk/government/news/joint-foreign-ministers-statement-on-gaza--2">gov.uk</a></li>
+<li><a href="https://www.canada.ca/en/global-affairs/news/2026/11/joint-foreign-ministers-statement-on-gaza.html">canada.ca</a></li>
+<li><a href="https://www.aljazeera.com/news/2026/11/15/australia-canada-italy-and-the-uk-urge-israel-to-allow-aid-into-gaza">aljazeera.com</a></li>
+<li><a href="https://x.com/i/status/2122113677591527627">Haaretz, de pago; solo titular</a></li>
+<li><a href="https://x.com/i/status/2122006073666424942">Exteriores de Israel</a></li>
+</ul>
+<hr>
+<h2 id="s4">Rubio: «Dejad de citar leyes a hombres con espadas», y la CPI deja fuera a las tropas de EE. UU. de su investigación sobre Afganistán</h2>
+<p><strong>En un discurso ante la Federalist Society el 13 de noviembre, el secretario de Estado Marco Rubio afirmó que «para esta élite global, el derecho internacional no es un conjunto neutral de normas, es un instrumento».</strong></p>
+<p>Defendió las sanciones de EE. UU. contra la Corte Penal Internacional y advirtió de que, si la Corte intenta aplicar sus «decretos de papel» a estadounidenses, la respuesta será la de Pompeyo: «Dejad de citar leyes a hombres con espadas». El Departamento de Estado difundió después coberturas afines de Breitbart, Daily Caller y American Greatness. El ministro iraní Abbas Araghchi replicó que aquel general romano acabó «decapitado tras huir del campo de batalla». Por otra parte, los jueces de la CPI cierran la parte de la investigación sobre Afganistán que podía examinar a tropas estadounidenses y se centran solo en los talibanes (Defense News). Según Reuters, las sanciones de EE. UU. a la CPI entrarán en vigor en abril salvo acuerdo.</p>
+<p><strong>Por qué importa a Europa.</strong> La CPI tiene sede en La Haya y la financian sobre todo Estados europeos. Washington dice que la ley obliga a los demás pero no a EE. UU., mientras pide a Europa que aplique sus sanciones contra terceros: es el doble rasero que CEAFE denuncia. Europa tiene herramientas (el Estatuto de Bloqueo de la UE) y peso económico para proteger las instituciones que acoge.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://singjupost.com/transcript-secretary-rubios-keynote-remarks-at-the-federalist-society-national-lawyers-convention/">singjupost.com</a></li>
+<li><a href="https://www.afp.com/en/rubio-takes-swipe-international-law-attacks-icc">afp.com</a></li>
+<li><a href="https://x.com/i/status/2122136375403147507">Departamento de Estado</a></li>
+<li><a href="https://x.com/i/status/2122055778374729812">Araghchi</a></li>
+<li><a href="https://www.defensenews.com/global/europe/">defensenews.com</a></li>
+</ul>
+<hr>
+<h2 id="s5">Asia: ASEAN y China no cierran el código del mar de China Meridional; Canadá concluye un TLC con ASEAN</h2>
+<p><strong>En la 49.ª Cumbre de ASEAN en Manila, ASEAN y China no lograron cerrar el código de conducta del mar de China Meridional pese a un acuerdo provisional sobre el 80 % del texto.</strong></p>
+<p>La ministra filipina Theresa Lazaro dijo que siguen abiertas cuestiones clave, como si será jurídicamente vinculante. Canadá anunció la conclusión sustancial de un tratado de libre comercio con ASEAN, un mercado de «casi 700 millones de personas». Según Bloomberg, los líderes buscan en Manila vínculos comerciales «como cobertura frente al creciente proteccionismo de EE. UU.». Taiwán informó de 4 salidas de aeronaves del EPL (todas cruzaron la línea media), 7 buques de la Armada china y 3 buques oficiales.</p>
+<p><strong>Por qué importa a Europa.</strong> Las potencias medias diversifican frente a la presión comercial estadounidense; la UE, primer bloque comercial del mundo, debería liderar esa tendencia, no seguirla.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122177891148697612">Al Jazeer</a></li>
+<li><a href="https://x.com/i/status/2122026090667421861">Carne</a></li>
+<li><a href="https://x.com/i/status/2122077186005807484">Bloomberg</a></li>
+<li><a href="https://x.com/i/status/2122132544959160530">Defensa de Taiwá</a></li>
+</ul>
+<hr>
+<h2>Véase también</h2>
+<ul>
+<li>Estonia cerrará su frontera con Rusia el 1 de diciembre tras el sabotaje atribuido al GRU — véase Conflictos.</li>
+<li>Guerra Irán–EE. UU.: tres portaaviones estadounidenses en el CENTCOM — véase Conflictos.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

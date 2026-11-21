@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTS — Thursday, 19 November 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTS</h1>
+      <p class="list-date">Thursday, 19 November 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> 18 November 2026 about 19:00 to 19 November about 06:00 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Conflicts section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Update: Trump weighs new strikes on Iran as Israel presses for a four- to seven-day air campaign</h2>
+<p><strong>Trump is considering another round of major strikes on Iran, with Israel pushing for a four- to seven-day air campaign and warning that Iran is rebuilding its missile and drone arsenals, The New York Times reports (as relayed by @ClashReport and @KingstonAReif); Gulf leaders are urging restraint.</strong></p>
+<p>Reuters reports that Israel&rsquo;s spy chief lobbied for joint strikes during a visit to Washington. Trump called the memorandum of understanding that JD Vance negotiated with Iran “a waste of time”, said he would wage the war again, and that talks continue but he wants a “lasting” deal (Al Jazeera, @atrupar). He also claimed Iran is “looking at gas” and biological weapons and threatened to “wipe them out” if a dirty-bomb attack happened, while saying Washington residents need not worry. US intelligence director Jay Clayton told lawmakers Iranian threats to Americans have “increased substantially” (Reuters), while Homeland Security Secretary Markwayne Mullin said there is no imminent dirty-bomb threat (Anadolu).</p>
+<p><strong>Why it matters for Europe.</strong> A new US–Israeli air campaign would hit Gulf energy flows again, and Europe would bear the cost without having any say in the decision.</p>
+<p><strong>What to watch.</strong> Any White House decision after Shenzhen; Iranian reaction (IRNA, Tasnim); tanker movements.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123252866982752289">NYT via @ClashReport</a>, <a href="https://x.com/i/status/2123271548987474370">NYT via @ClashReport</a>, <a href="https://x.com/i/status/2123252413695967338">@KingstonAReif</a>, <a href="https://x.com/i/status/2123161868072042593">Reuters</a>, <a href="https://x.com/i/status/2123223482032922922">Reuters</a>, <a href="https://x.com/i/status/2123246014513741880">Al Jazeera</a>, <a href="https://x.com/i/status/2123217195870076992">@atrupar</a>, <a href="https://x.com/i/status/2123130368215662668">Anadolu</a>, <a href="https://x.com/i/status/2123176962990424523">@HormuzLetter</a></p>
+<hr>
+<h2 id="s2">Update: Three tankers on fire after hitting mines east of Hormuz; Iran says it struck US Patriot batteries in Kuwait</h2>
+<p><strong>Iran&rsquo;s army says three oil tankers caught fire after hitting naval mines east of the Strait of Hormuz (Al Jazeera); UKMTO issued warning 212-26 the same evening (as quoted by @MenchOsint; the UKMTO page was not readable).</strong></p>
+<p>Iran says its forces struck US Patriot air-defence systems and drone and missile launch platforms in Kuwait in “self-defence”; Kuwait condemned the attacks as a violation of its sovereignty (Anadolu). Tasnim (Iranian state agency) mocks Trump&rsquo;s “imaginary control” over the Strait, saying ships hit mines or projectiles there “multiple times a day”. Iraq has reopened its oil pipeline to Turkey to bypass the disruption (Euronews).</p>
+<p><strong>Why it matters for Europe.</strong> The Americas can shield themselves from Hormuz; Europe cannot. Mines in the shipping lanes keep raising the cost of the Gulf energy Europe relies on.</p>
+<p><strong>What to watch.</strong> Names and flags of the mined tankers; CENTCOM comment on the Kuwait claim.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123158454747681034">Al Jazeera</a>, <a href="https://aje.news/bfbnk1">Al Jazeera</a>, <a href="https://x.com/i/status/2123182951705739735">@MenchOsint citing UKMTO</a>, <a href="https://x.com/i/status/2123178183411294680">Anadolu</a>, <a href="https://t.me/s/Tasnimnews_en">Tasnim</a>, <a href="https://x.com/i/status/2123118075369111592">Euronews</a>, <a href="https://x.com/i/status/2123122776341131600">@ClashReport</a></p>
+<hr>
+<h2 id="s3">Update: Ukraine hits the Crimean Bridge again; rail span reportedly struck and rail traffic suspended</h2>
+<p><strong>Ukrainian forces hit the Crimean (Kerch) Bridge again just after midnight local time on 19 November, less than two days after the 17 November strike collapsed an entire section of it, Russian-installed Crimea head Sergey Aksyonov confirmed (Kyiv Independent).</strong></p>
+<p>OSINT accounts report drones and cruise missiles scored multiple hits on the remaining rail span and that rail traffic was suspended (@Osinttechnical); the Kyiv Independent could not verify the damage. Ukraine reportedly used domestically built airborne relays (“flying modems”) to guide the 17 November strike without Starlink (@ClashReport, citing a report). The Russian embassy in the Netherlands asked whether The Hague is “openly joining the conflict” after the Dutch firm Destinus said its missiles were used against the bridge. France 24 has fact-checked fake damage videos circulating after the attack.</p>
+<p><strong>Why it matters for Europe.</strong> A European-made missile helped cut Russia&rsquo;s main land link to Crimea. That is what European industry can do once it gets the orders, and it explains why Moscow is now going after the Netherlands.</p>
+<p><strong>What to watch.</strong> Russian MoD statement and satellite imagery of the rail span; Russian retaliation against Kyiv&rsquo;s bridges (The Economist reports seven ballistic missile strikes on two Kyiv bridges, via @MilitarySummary).</p>
+<p><strong>Sources:</strong> <a href="https://kyivindependent.com/ukrainian-forces-once-more-hit-russias-crimean-bridge-days-after-devastating-strike/">Kyiv Independent</a>, <a href="https://x.com/i/status/2123224949082968296">@Osinttechnical</a>, <a href="https://x.com/i/status/2123220150132330692">CNN</a>, <a href="https://x.com/i/status/2123137386590900526">@ClashReport</a>, <a href="https://x.com/i/status/2123104358623592651">@MilitarySummary on the Russian embassy</a>, <a href="https://x.com/i/status/2123172509088628903">France 24</a></p>
+<hr>
+<h2 id="s4">Musk says Starlink will not serve offensive strikes as NATO launches STARLIFT for military satellite launches</h2>
+<p><strong>Elon Musk said Zelensky has asked to use Starlink&rsquo;s commercial satellites for offensive military actions and SpaceX has declined “from the beginning of this conflict”; he said Starlink is a civilian system and offensive drone strikes need the military Starshield, denied ever turning Starlink off, and, asked about Zelensky&rsquo;s claim that Starshield was slowed down, said “Zelensky is not always truthful” (interview clips via @ClashReport).</strong></p>
+<p>He also said “if we were to turn off Starlink, the entire Ukrainian front would collapse”. Separately, NATO formally launched STARLIFT at NATO EDGE 26 in Izmir, an initiative to secure slots on commercial rockets for military satellites, including short-notice launches, through a network of spaceports in the Alliance and South Korea (NATO). Ten NATO members finance it through NSPA: Belgium, Canada, Finland, Germany, Italy, the Netherlands, Norway, Sweden, Türkiye and the UK, plus South Korea; France, Spain, Luxembourg, Hungary and the US are not among the funders (NATO, SpaceQ).</p>
+<p><strong>Why it matters for Europe.</strong> The owner of a foreign private network says he decides which military uses Ukraine may make of it, and that the front depends on him. This is the kill-switch risk in its purest form, and it shows why Europe needs IRIS² and its own launchers. STARLIFT pools demand, but without France and Spain among its funders, it is no substitute for a single EU space policy.</p>
+<p><strong>What to watch.</strong> Kyiv&rsquo;s response to Musk; CSIS Space Strategic Dialogue on 19 November (spacecraft threat discrimination).</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123267369997074712">@ClashReport</a>, <a href="https://x.com/i/status/2123271234012197139">@ClashReport</a>, <a href="https://x.com/i/status/2123266243734175882">@ClashReport</a>, <a href="https://x.com/i/status/2123264819704823930">@ClashReport</a>, <a href="https://www.nato.int/en/news-and-events/articles/news/2026/11/17/natos-multinational-space-initiative-starlift-begins">NATO</a>, <a href="https://www.aa.com.tr/en/world/nato-launches-multinational-initiative-to-secure-military-satellite-launches/4129426">Anadolu</a>, <a href="https://spaceq.ca/nato-starlift-begins/">SpaceQ</a></p>
+<hr>
+<h2 id="s5">Update: Houthis fire at Riyadh and Jizan; coalition reports damage in Riyadh and strikes Saada</h2>
+<p><strong>Houthi military spokesman Yahya Saree claimed cruise-missile strikes on Riyadh airport and the King Abdullah Financial District, several ballistic missiles at a “vital site” in Jizan and a drone at Khamis Mushait air base (as relayed by @MenchOsint).</strong></p>
+<p>The Saudi-led coalition says a Houthi missile threat toward Riyadh caused damage (Reuters) and that it destroyed a ballistic-missile launch platform in Saada (Al Jazeera). Al Masirah (Houthi) says Saudi warplanes bombed the Sahar area of Saada (via Tasnim, Iranian state agency).</p>
+<p><strong>Why it matters for Europe.</strong> Missile fire at the Saudi capital&rsquo;s airport and financial district shows the Yemen war widening at the same time as Hormuz, with both chokepoints on Europe&rsquo;s route to Asia and the Gulf now under threat.</p>
+<p><strong>What to watch.</strong> Saudi statement on the damage in Riyadh; flight disruptions.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123150991608414350">@MenchOsint citing @Yah_Saree</a>, <a href="https://x.com/i/status/2123257580298416585">Reuters</a>, <a href="https://x.com/i/status/2123209953553055931">Al Jazeera</a>, <a href="https://t.me/s/Tasnimnews_en">Tasnim</a></p>
+<hr>
+<h2 id="s6">Update: Israel&rsquo;s central Gaza offensive goes on for days, coordinated with the US; Katz vows indefinite occupation</h2>
+<p><strong>Israel coordinated its offensive in central Gaza with the US and expects it to last several days, Israeli Army Radio reports (Anadolu); forces have advanced beyond the ceasefire&rsquo;s “yellow line” and taken sections of Salah al-Din Road (Al Jazeera).</strong></p>
+<p>UN humanitarian officials say Palestinians are fleeing Deir al-Balah (Xinhua). Defence Minister Israel Katz vowed to occupy Gaza, Lebanon and Syria indefinitely and threatened to expand the occupied territory if fighting escalates (Al Jazeera). Palestinian Islamic Jihad and Hezbollah called the operation a “flagrant violation” of the ceasefire. In southern Lebanon, Israeli excavators demolished homes in Zawtar al-Sharqiye (Al Jazeera).</p>
+<p><strong>Why it matters for Europe.</strong> A fourth active front, next to Iran, Yemen and Lebanon, pushes the EU&rsquo;s southern neighbourhood further towards permanent war. Europe is the Palestinians&rsquo; largest donor, yet it has no seat on the US-led Board of Peace.</p>
+<p><strong>What to watch.</strong> Reactions from Egypt and Qatar (mediators) and from the EU High Representative.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123231092089950471">Anadolu</a>, <a href="https://x.com/i/status/2123125335428641003">Al Jazeera</a>, <a href="https://x.com/i/status/2123127851176346018">Al Jazeera</a>, <a href="https://x.com/i/status/2123122818179080254">Al Jazeera</a>, <a href="https://x.com/i/status/2123136747060236553">Al Jazeera</a>, <a href="https://x.com/i/status/2123176518247485514">Al Jazeera</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Conflicts. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

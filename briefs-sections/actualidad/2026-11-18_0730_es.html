@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — miércoles, 18 de noviembre de 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">miércoles, 18 de noviembre de 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 17 de noviembre de 2026, hacia las 18:50, al 18 de noviembre, hacia las 06:00 (hora de Madrid): todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Actualidad de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">APEC en Shenzhen: Xi defiende el libre comercio y se reúne con Putin antes del encuentro del jueves con Trump</h2>
+<p><strong>Xi Jinping inauguró el 18 de noviembre la Cumbre Empresarial de APEC en Shenzhen con una advertencia contra el proteccionismo «desenfrenado» y el unilateralismo, y pidió un comercio libre y abierto y cooperación mundial en IA (Bloomberg, Reuters, France 24).</strong></p>
+<p>Después se reunió con Vladímir Putin, que llegó el 17 de noviembre para la 33.ª Reunión de Líderes Económicos de APEC (18–19 nov) (Xinhua, MAE ruso), y con el surcoreano Lee Jae Myung (Xinhua). Bloomberg informó de que Putin se reunirá con Xi y Trump el jueves; Trump llega a China tras Manila y prevé ver allí a la mexicana Claudia Sheinbaum (Casa Blanca, vía Bloomberg). China dijo que tomará contramedidas si EE. UU. impone nuevas restricciones a los chips (titular de Reuters), y Global Times citó a expertos chinos que critican los planes de la UE de ampliar el Reglamento de Subvenciones Extranjeras. El enviado de Taiwán a APEC dijo que hablará con otros miembros (Reuters).</p>
+<p><strong>Por qué importa a Europa.</strong> Las tres potencias nucleares que más pesan para Ucrania y para la economía mundial se reúnen en Shenzhen, y la UE no está en la sala (no es miembro de APEC). Allí pueden perfilarse decisiones sobre chips, comercio y quizá la guerra. Al mismo tiempo, Pekín advierte a Bruselas por el Reglamento de Subvenciones Extranjeras. Europa solo puede negociar de igual a igual con EE. UU. y con China como un solo bloque.</p>
+<p><strong>Qué vigilar.</strong> La reunión EE. UU.–China–Rusia del 19 de noviembre; cualquier mención a Ucrania; contramedidas chinas sobre los chips.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2122885616534745133">Bloomberg</a>, <a href="https://x.com/i/status/2122895210489233534">X</a>, <a href="https://x.com/i/status/2122896126579810495">X</a>, <a href="https://x.com/i/status/2122904599724265520">X</a>, <a href="https://x.com/i/status/2122890046009483533">X</a>, <a href="https://x.com/i/status/2122796194049016104">X</a>, <a href="https://x.com/i/status/2122912728880697432">X</a>, <a href="https://x.com/i/status/2122809550214418836">X</a>, <a href="https://x.com/i/status/2122904848081502244">X</a>, <a href="https://x.com/i/status/2122892621165027796">X</a></p>
+<hr>
+<h2 id="s2">Cumbre del Quad en Manila: «grave preocupación» por la coerción económica y las restricciones a la exportación</h2>
+<p><strong>La Cumbre de Líderes Japón–Australia–India–EE. UU. (Quad) se celebró en Manila el 17 de noviembre durante unos 90 minutos con Sanae Takaichi, Anthony Albanese, Narendra Modi y Donald Trump, y emitió un comunicado conjunto (Oficina del primer ministro de Japón).</strong></p>
+<p>Según el resumen japonés, los cuatro líderes «expresaron su firme oposición a cualquier intento unilateral de cambiar el statu quo por la fuerza o la coerción» en los mares de China Oriental y Meridional, y «grave preocupación por la coerción económica, incluidas las restricciones arbitrarias a la exportación», con el compromiso de asegurar las cadenas de suministro críticas; también hablaron de Oriente Medio, incluido Irán. Takaichi y Trump mantuvieron una breve conversación en la cena del presidente Marcos. El secretario de Estado Marco Rubio dijo que Trump va «en serio» con el diálogo con Kim Jong Un, pero que no hay reunión prevista en el viaje a China (Yonhap, AP). El secretario general de la ASEAN presentó los resultados de la 49.ª cumbre (15–17 nov). En Manila, la policía bloqueó a manifestantes que protestaban contra la iniciativa tecnológica «Pax Silica» liderada por EE. UU. y contra el coste de la vida, que atribuían a la guerra con Irán (Anadolu).</p>
+<p><strong>Por qué importa a Europa.</strong> Las restricciones a la exportación y la seguridad de las cadenas de suministro son ya el lenguaje de las cumbres del Indo-Pacífico. Europa depende de los mismos insumos críticos, pero los negocia país por país.</p>
+<p><strong>Fuentes:</strong> <a href="https://japan.kantei.go.jp/105/diplomatic/202611/1117quad.html">Oficina del primer ministro de Japón</a>, <a href="https://japan.kantei.go.jp/105/diplomatic/202611/1117us.html">y</a>, <a href="https://x.com/i/status/2122851037925273705">X</a>, <a href="https://x.com/i/status/2122885846382883019">X</a>, <a href="https://x.com/i/status/2122865116492279814">X</a>, <a href="https://x.com/i/status/2122903132166623576">X</a>, <a href="https://x.com/i/status/2122800711968649603">X</a></p>
+<hr>
+<h2 id="s3">Noruega pide «un mandato europeo claro» para hablar con Rusia, mientras la Comisión propone hoy nueva financiación para Ucrania</h2>
+<p><strong>La Comisión Europea propondrá este miércoles 18 de noviembre un nuevo paquete de préstamos para Ucrania respaldado por todos los Estados miembros, «mientras algunas capitales siguen resistiéndose» a esa financiación (Bloomberg).</strong></p>
+<p>El comisario de Defensa, Andrius Kubilius, dijo que la Comisión ha desembolsado 1.710 millones de euros del componente de defensa del préstamo de apoyo a Ucrania (UASL). Zelenski pidió a la UE cumplir los «8.000 millones de euros adicionales para Ucrania este año» de la declaración de la cumbre de Ankara y centrar SAFE en lo que «ya se ha probado» en combate. El ministro noruego de Exteriores, Espen Barth Eide, pidió en Euronews un mandato europeo claro para que Europa hable con Rusia: «Esta guerra dura ya más que la Primera Guerra Mundial, y las guerras terminan», y «si alguien va a hablar del orden de seguridad europeo, Europa tiene que estar». También dijo que no se puede permitir que Moscú dicte la seguridad de Europa y advirtió contra la vuelta a las esferas de influencia; Euronews informó de que la siguiente fase de las conversaciones de paz es incierta porque Rusia resta importancia a un encuentro cara a cara con los europeos. El comisario de Economía, Valdis Dombrovskis, dijo que «cuanta más presión pongamos sobre Rusia, antes llegaremos a un verdadero proceso de paz». Zelenski afirmó que quedan «21.000 millones de euros sin usar de SAFE» que deberían ir a proyectos conjuntos con Ucrania (vía Clash Report). Tras el Consejo del EEE en Bruselas, Barth Eide habló de «seguridad económica, competitividad y autonomía estratégica». El enviado del Kremlin Kirill Dmítriev escribió que «Europa debería centrarse en financiar la reconstrucción de Ucrania, no en prolongar la guerra». El Foro Schuman de Seguridad y Defensa de la UE se celebra el 17 y 18 de noviembre (SEAE).</p>
+<p><strong>Por qué importa a Europa.</strong> La línea de CEAFE es que financiar más armas prolonga y escala la guerra; el dinero que Europa movilice debería servir a una paz negociada y paneuropea y a la reconstrucción. La petición de Barth Eide de un mandato europeo para hablar con Moscú es el tipo de paso diplomático que CEAFE destaca: una paz entre europeos, Ucrania y Rusia, negociada con Europa presente y no decidida por encima de ella.</p>
+<p><strong>Qué vigilar.</strong> Cuantía y condiciones de la propuesta de la Comisión; reunión de Berlín del 19 de noviembre.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2122777086926770364">Bloomberg</a>, <a href="https://x.com/i/status/2122765186826215702">X</a>, <a href="https://x.com/i/status/2122787033731276989">X</a>, <a href="https://x.com/i/status/2122825121500893446">X</a>, <a href="https://x.com/i/status/2122781103547392287">X</a>, <a href="https://x.com/i/status/2122779699294220622">y</a>, <a href="https://x.com/i/status/2122758467580776674">X</a>, <a href="https://x.com/i/status/2122777493811745114">X</a>, <a href="https://x.com/i/status/2122758802575597933">X</a>, <a href="https://x.com/i/status/2122766376729473335">X</a>, <a href="https://x.com/i/status/2122774142349152429">X</a>, <a href="https://x.com/i/status/2122766723501748719">X</a></p>
+<hr>
+<h2 id="s4">Complot de asesinato vinculado a Irán en Macedonia del Norte y Grecia</h2>
+<p><strong>Macedonia del Norte y Grecia dijeron haber descubierto y frustrado un complot de asesinato vinculado a Irán (titulares de Reuters y Haaretz; artículos no legibles).</strong></p>
+<p>La CNN, citada por The Times of Israel, informó de que la inteligencia estadounidense sugiere que Irán prepara planes para atacar a altos cargos de la Administración Trump con una «bomba sucia» o un arma química en Washington. Trump dijo que Washington se toma esos informes «muy en serio» (Anadolu); el ministro iraní de Exteriores, Abbas Araghchi, y el viceministro Kazem Gharibabadi lo negaron (Anadolu, Al Jazeera), y Rubio dijo después que Irán no supone una «amenaza inminente» (Al Jazeera). Rubio dijo también que hay «cero» pruebas de que las recientes caídas tecnológicas en EE. UU. (vuelos, bancos, correo, la red clasificada de la NSA) estén relacionadas entre sí o con un actor hostil (AP, Departamento de Estado). Clash Report, citando un informe, dijo que Teherán ha endurecido su posición negociadora tras las derrotas republicanas en las elecciones de mitad de mandato.</p>
+<p><strong>Por qué importa a Europa.</strong> La guerra entre EE. UU. e Irán llega a suelo europeo con operaciones encubiertas en los Balcanes, mientras los intercambios en el Golfo (ver Alerta temprana) mantienen en riesgo los precios de la energía y el transporte marítimo. Europa paga los costes de una guerra que no decidió.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2122807041659916530">Reuters</a>, <a href="https://x.com/i/status/2122838497715204106">X</a>, <a href="https://x.com/i/status/2122813325968904412">X</a>, <a href="https://x.com/i/status/2122767134941946074">X</a>, <a href="https://x.com/i/status/2122827135207280900">X</a>, <a href="https://x.com/i/status/2122792144507228650">X</a>, <a href="https://x.com/i/status/2122892640869871910">X</a>, <a href="https://x.com/i/status/2122866764165910764">X</a>, <a href="https://x.com/i/status/2122827840584380447">X</a></p>
+<hr>
+<h2 id="s5">Israel: un aliado de Eisenkot preside la Knéset con el alto el fuego de Gaza «en riesgo de colapso»</h2>
+<p><strong>Matan Kahana, del partido Yashar de Gadi Eisenkot, fue elegido presidente de la Knéset con 66 votos frente a Ofir Katz, del Likud, con apoyo de partidos árabes (Clash Report, Al Jazeera, France 24); la CNN lo calificó de «golpe crítico» al control de Netanyahu.</strong></p>
+<p>Netanyahu dijo que «los resultados de estas elecciones no son los que yo quería» y que las amenazas actuales «no son menos graves que antes de la guerra de los Seis Días de 1967»; el Likud habló de un «punto más bajo» (cuenta de Netanyahu). La Junta de Paz respaldada por EE. UU. advirtió al Consejo de Seguridad de la ONU de que el alto el fuego de Gaza, de hace un año, corre riesgo de colapso sin medidas inmediatas (Al Jazeera). Tras las sanciones británicas a ocho empresas israelíes que apoyan los asentamientos en Cisjordania (edición de las 20:30), Australia impuso nuevas sanciones contra la expansión de los asentamientos (Haaretz). Líderes de la oposición advirtieron de que Netanyahu podría reavivar una guerra total con Irán para seguir en el cargo (Washington Post).</p>
+<p><strong>Por qué importa a Europa.</strong> Un Netanyahu debilitado y una tregua frágil en Gaza cambian la ecuación regional. El Reino Unido y Australia actúan sobre los asentamientos mientras la UE, primer socio comercial de Israel, sigue sin usar su peso colectivo.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2122803089170223462">Clash Report</a>, <a href="https://x.com/i/status/2122811446274793491">X</a>, <a href="https://x.com/i/status/2122809950217089371">X</a>, <a href="https://x.com/i/status/2122815241348153505">X</a>, <a href="https://x.com/i/status/2122814753143927114">y</a>, <a href="https://x.com/i/status/2122877451328168105">X</a>, <a href="https://x.com/i/status/2122868691175960581">X</a>, <a href="https://x.com/i/status/2122791684085817618">X</a></p>
+<hr>
+<h2>Véase también</h2>
+<ul>
+<li>Colby critica los ataques profundos de Ucrania; Pistorius y Streeting replican — véase Conflictos.</li>
+<li>Colby: EE. UU. se «opone firmemente» a excluir a sus empresas del mercado europeo de armamento — véase Industria de Defensa.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

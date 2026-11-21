@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Monday, 16 November 2026 · 13:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Monday, 16 November 2026 · 13:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> new items since the 07:30 edition, i.e. from 06:00 to 11:45 Europe/Madrid, 16 November 2026 (incremental reads from the last post seen).</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Update: Washington crowns its AI “national champions” as chip curbs loom over the Trump–Xi summit</h2>
+<p><strong>The Wall Street Journal reported on 15 November that the Trump administration plans to designate more than two dozen AI “national champions”, including Nvidia, Amazon, Microsoft, OpenAI and Anthropic, to help them win business abroad against Chinese rivals; Commerce Secretary Howard Lutnick could unveil the list within a week (WSJ via Reuters, The Next Web).</strong></p>
+<p>Designated packages may get government advocacy, federal financing and faster export-licence reviews under the American AI Exports Program created by a July 2025 executive order. At the same time, Reuters reports that the prospect of tighter US curbs on China’s access to advanced AI chips, pushed by lawmakers after Jensen Huang’s resignation, is likely to overshadow the Trump–Xi meeting in Shenzhen on Thursday 19 November; a US official said there will be no further progress on the “Board of Trade” plan to cut reciprocal tariffs on $30 billion of goods. Previous coverage: 07:30 edition, topic 1.</p>
+<p><strong>China’s reaction (linked):</strong> Chinese analysts quoted by the South China Morning Post (13 Nov) say Beijing could tighten rare-earth export controls if Washington escalates chip curbs; Victor Gao (Centre for China and Globalisation) called using the Nvidia affair to pressure Beijing a “complete miscalculation”. China’s expanded rare-earth controls remain suspended until 10 January 2027. No official MOFCOM statement yet; Global Times (Chinese state media) reported Bessent’s demands on Nvidia without comment. Watch the summit.</p>
+<p><strong>ALERT — not yet reposted by @F_CEAFE:</strong> US industrial-policy / export-control story (national champions + chip curbs, China rare-earth counter-lever). @F_CEAFE has reposted the summit announcements (Mao Ning, Global Times) but not this angle. Link: https://thenextweb.com/news/ai-national-champions-nvidia-openai-anthropic-trump</p>
+<p><strong>Why it matters for Europe.</strong> This is the US double standard in one week: Washington names state-backed national champions, finances their exports and controls who buys their chips, while asking Europe not to be protectionist and to buy American. Europe has no equivalent list, no joint export-finance package for its own AI and cloud firms, and follows US chip controls (ASML) without reciprocity. A Buy-European logic for AI infrastructure would be the mirror image.</p>
+<p><strong>What to watch.</strong> Commerce announcement of the list; Nvidia Q3 results (18 Nov); Shenzhen summit (19 Nov) and any MOFCOM measure; NDAA chip amendments.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122253381196448138">Reuters</a></li>
+<li><a href="https://x.com/i/status/2122260889940431029">Reuters</a></li>
+<li><a href="https://x.com/i/status/2122262586016125011">Bloomberg</a></li>
+<li><a href="https://x.com/i/status/2122251067371241924">Global Times, Chinese state medi</a></li>
+<li><a href="https://www.investing.com/news/stock-market-news/trump-administration-to-name-nvidia-other-ai-firms-as-us-national-champions-wsj-reports-5028349">Reuters reprint; reuters.com returns 401</a></li>
+<li><a href="https://thenextweb.com/news/ai-national-champions-nvidia-openai-anthropic-trump">thenextweb.com</a></li>
+<li><a href="https://www.investing.com/news/stock-market-news/chip-tensions-loom-over-trumpxi-summit-as-us-and-china-push-ai-safety-steps-5028728">investing.com</a></li>
+<li><a href="https://www.scmp.com/economy/global-economy/article/3374328/china-could-tighten-rare-earths-exports-if-us-escalates-chip-curbs-over-nvidia-analysts">scmp.com</a></li>
+<li><a href="https://www.coindesk.com/markets/2026/11/16/trump-administration-to-name-nvidia-openai-and-several-others-as-u-s-ai-national-champions">coindesk.com</a></li>
+</ul>
+<hr>
+<h2 id="s2">Europe in the red, China past $1 trillion: the trade gap in numbers</h2>
+<p><strong>Eurostat published on 16 November that euro-area industrial production rose 0.2% m/m in September (EU +0.5%) but is down 1.5% y/y (EU −0.8%).</strong></p>
+<p>Its 13 November releases show euro-area Q3 GDP up 0.4% q/q (+1.3% y/y; EU +0.5% and +1.5%), against +0.8% q/q in the United States, and a euro-area goods trade deficit of €10.3 billion in September, against a €13.5 billion surplus a year earlier, driven by a wider energy deficit (€33.0 bn vs €20.7 bn) and a shrinking machinery-and-vehicles surplus (€3.0 bn vs €10.0 bn). Over January–September the euro area ran a €36.5 bn deficit, compared with a €102.2 bn surplus a year earlier. China, by contrast, posted a $1.04 trillion surplus in January–October, the fastest it has ever reached that mark, with October exports +35.2% y/y on AI hardware, while domestic demand keeps disappointing (WSJ, CNBC, AP). Ahead of APEC, Premier Li Qiang hailed China–ASEAN achievements “in the face of global trade restrictions”, and ASEAN signed its Digital Economy Framework Agreement in Manila (Xinhua, Chinese state media).</p>
+<p><strong>Why it matters for Europe.</strong> Europe now imports more than it exports, because it pays for energy it does not produce and its industrial surplus is eroding, while China’s surplus keeps growing. No single Member State can answer this alone. Only the EU, acting as one trade power, can set common trade defence and a European preference.</p>
+<p><strong>What to watch.</strong> Eurostat final HICP for October; Commission autumn forecast; EU trade-defence cases against Chinese overcapacity.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/4-16112026-ap">ec.europa.eu</a></li>
+<li><a href="https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-13112026-ap">ec.europa.eu</a></li>
+<li><a href="https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/6-13112026-bp">ec.europa.eu</a></li>
+<li><a href="https://x.com/i/status/2122262133681406330">WSJ</a></li>
+<li><a href="https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html">cnbc.com</a></li>
+<li><a href="https://apnews.com/article/china-trade-economy-trump-surplus-0fc56d7bd8bbff86ce6672bb67691f22">apnews.com</a></li>
+<li><a href="https://x.com/i/status/2122226915260178808">Reuters, Li Qiang</a></li>
+<li><a href="https://x.com/i/status/2122250034435731690">Xinhua, ASEAN DEFA</a></li>
+<li><a href="https://x.com/i/status/2122221992174887422">Global Times, China–ASEAN FTA 3.0</a></li>
+</ul>
+<hr>
+<h2 id="s3">Update: Gas stays near €90 as Europe enters winter with the lowest storage since 2013</h2>
+<p><strong>Dutch TTF front-month gas eased 0.5% to €90.50/MWh on Monday morning and UK NBP to 225.90 p/therm, while Brent for January fell 0.9% to $95.00/bbl, extending a two-week slide (Investing.com, 16 Nov).</strong></p>
+<p>Bloomberg says traders weighed milder weather and record US exports against Europe’s thin winter inventories. The IEA’s Global Gas Security Review 2026 (3 Nov) says EU storage entered the heating season at its lowest since 2013, after the effective halt of LNG through Hormuz cut Qatari and Emirati loadings by more than 60 bcm between March and October; tight markets could last well into 2027. The IEA also says 71 million barrels of emergency stocks will be released by the end of February. Copper fell for a third day to a four-month low on the tech selloff and weak Chinese data (Bloomberg). Previous coverage: 07:30 edition, topic 2.</p>
+<p><strong>Why it matters for Europe.</strong> Europe is replacing one dependence (Russian pipeline gas) with another (US LNG) at prices far above pre-crisis levels. The energy deficit is the main reason the euro area is now in trade deficit (topic 2). Common purchasing, storage obligations and faster European generation are a matter of sovereignty.</p>
+<p><strong>What to watch.</strong> EU storage withdrawals (AGSI); US EIA STEO; Brent reaction to the Bahrain strike reports (military side: see Conflicts).</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.investing.com/news/commodities-news/european-gas-slips-as-us-shipping-waivers-override-middle-east-turmoil-5028807">investing.com</a></li>
+<li><a href="https://x.com/i/status/2122248314196295730">Bloomberg</a></li>
+<li><a href="https://www.iea.org/news/low-storage-buffers-in-europe-could-prolong-global-gas-market-tightness-well-into-2027">iea.org</a></li>
+<li><a href="https://x.com/i/status/2122185407743877359">Bloomberg, copper</a></li>
+<li><a href="https://x.com/i/status/2122203718296703389">Al Jazeera English, oil</a></li>
+</ul>
+<hr>
+<h2 id="s4">Paying for Ukraine and squeezing Russia: €45 bn EU-budget loan and a Finnish push on “war crypto”</h2>
+<p><strong>The Financial Times reported on 16 November that the Commission will propose on Wednesday a new loan of about €45 billion, borrowed against the EU budget, covering almost two-thirds of Ukraine’s estimated €70 billion financing gap for 2027 (FT, reposted by @F_CEAFE; LIGA.net).</strong></p>
+<p>Commissioner Valdis Dombrovskis had flagged the two-thirds target on 9 November. The previous €90 billion loan (December 2025) was backstopped by about €210 billion of immobilised Russian central-bank assets; Hungary, Slovakia and the Czech Republic have opt-outs (Irish Times). Separately, Finnish Foreign Minister Elina Valtonen said she sent the Commission a letter asking for stronger EU-level action against crypto-assets used to finance Russia’s war and evade sanctions (Valtonen on X, RBC-Ukraine).</p>
+<p><strong>Why it matters for Europe.</strong> Common borrowing is the EU acting at the scale no Member State reaches alone. Opt-outs and demands for exemptions weaken the very instrument that makes Europe credible. Closing crypto loopholes is the European side of the sanctions fight, which only works if it is applied at EU level.</p>
+<p><strong>What to watch.</strong> Commission proposal (18 Nov); Belgian position on the Euroclear assets; next sanctions package. Political side: see World.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122261495065219269">@F_CEAFE RT of FT, original (1)</a></li>
+<li><a href="https://x.com/i/status/2122203269028319686">@F_CEAFE RT of FT, original (2)</a></li>
+<li><a href="https://finance.liga.net/en/state-finance/news/ft-european-commission-to-propose-new-45-billion-loan-for-ukraine-on-wednesday">finance.liga.net</a></li>
+<li><a href="https://www.irishtimes.com/world/europe/2026/11/09/eu-governments-scramble-to-help-fill-70bn-gap-in-ukraine-funding/">irishtimes.com</a></li>
+<li><a href="https://x.com/i/status/2122235954140229868">Valtone</a></li>
+<li><a href="https://newsukraine.rbc.ua/news/finland-urges-eu-to-sanction-russia-s-cryptocurrency-1794824635.html">newsukraine.rbc.ua</a></li>
+<li>FT article itself not fetched (paywall)</li>
+</ul>
+<hr>
+<h2 id="s5">AI’s hidden materials: US-listed AXT booms on indium phosphide made in China</h2>
+<p><strong>AXT Inc (Fremont, California), which makes gallium arsenide, indium phosphide (InP) and germanium substrates at plants in China, reported record Q3 revenue of $73.4 million, up 162% y/y, with InP revenue of $54.3 million (four times a year earlier) driven by optical connectivity for AI data centres (Semiconductor Today, 16 Nov).</strong></p>
+<p>The order backlog grew from over $100 million to more than $500 million; Q4 guidance is about $90 million. AXT notes that shipments within China need no export licence, and its Chinese subsidiary Tongmei is raising up to $545 million and preparing a Hong Kong listing. Its Chinese joint venture JinMei supplies high-purity gallium and germanium, materials on which China imposes export controls.</p>
+<p><strong>Why it matters for Europe.</strong> AI optics depend on a handful of compound-semiconductor substrate makers, with capacity concentrated in China. Europe’s Critical Raw Materials Act has to cover these niche materials (indium, gallium, germanium), or Europe’s photonics industry will remain exposed to export-control fights between Washington and Beijing.</p>
+<p><strong>What to watch.</strong> Chinese gallium/germanium licensing; EU CRMA strategic projects in compound semiconductors.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122260722071593452">Semiconductor To</a></li>
+<li><a href="https://www.semiconductor-today.com/news_items/2026/nov/axt-161126.shtml">semiconductor-today.com</a></li>
+</ul>
+<hr>
+<h2 id="s6">EIC Accelerator backs 35 deep-tech firms, but 74 more lacked funding</h2>
+<p><strong>The European Innovation Council selected 35 start-ups and SMEs from 453 full applications (88 interviews), with €84 million in proposed grants; 32 will be assessed for EIC Fund equity of up to €10 million each (EIC, 16 Nov).</strong></p>
+<p>Companies come from 17 EU and associated countries, most from France, Switzerland and Germany; examples include DEESS (France, autonomous underwater seabed-mapping robots) and Ecobean (Poland). Another 74 proposals above the quality threshold received only a Seal of Excellence because funding ran out.</p>
+<p><strong>Why it matters for Europe.</strong> 74 excellent projects without money is a measure of Europe’s funding gap, at a time when Washington finances its “national champions” (topic 1). It supports the case for a stronger FP10 and a European Competitiveness Fund (07:30 edition, topic 6).</p>
+<p><strong>What to watch.</strong> FP10/MFF negotiations.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122259876714103275">EU EIC</a></li>
+<li><a href="https://eic.ec.europa.eu/news/european-innovation-council-selects-35-deep-tech-companies-its-accelerator-support-2026-11-16_en">eic.ec.europa.eu</a></li>
+</ul>
+<hr>
+<h2>See also</h2>
+<ul>
+<li>Sovereign software: Europe’s militaries look for Palantir alternatives — see Defence Industry.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

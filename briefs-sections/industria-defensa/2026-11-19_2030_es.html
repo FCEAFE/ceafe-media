@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — jueves, 19 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">jueves, 19 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Window covered:</strong> 19 de noviembre de 2026, de las 13:00 a las 19:15 aproximadamente (hora de Madrid): todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Industria de Defensa de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Polonia y Grecia comprarán juntas satélites radar con préstamos SAFE de la UE</h2>
+<p><strong>El 19 de noviembre, en Varsovia, los ministerios de Defensa de Polonia y Grecia firmaron un memorando de entendimiento.</strong></p>
+<p>Fija un marco para comprar juntos satélites radar de observación de la Tierra (SAR, radar de apertura sintética), con parte del préstamo que cada país tiene en el instrumento SAFE de la UE, según el ministerio polaco. El memorando permite a la Agencia de Armamento polaca sumar a Grecia al contrato MikroSAR que firmó en mayo de 2025 con el consorcio de ICEYE Polska y la empresa estatal Wojskowe Zakłady Łączności Nr 1 (WZŁ-1). El ministerio precisa que, por ahora, no obliga a ninguna de las partes a firmar un contrato marco ni de suministro. En paralelo se celebró una Jornada de la Industria de Defensa polaco-griega con 84 empresas (53 polacas y 31 griegas). La viceministra de Defensa Magdalena Sobkowiak-Czarnecka escribió: «Esta vez son los griegos quienes compran nuestro sistema de satélites. Dentro de SAFE, por supuesto».</p>
+<p><strong>Por qué importa a Europa.</strong> Es justo el tipo de compra conjunta para el que se creó SAFE: dos Estados miembros suman su demanda de un producto europeo en vez de comprar sistemas nacionales o imágenes estadounidenses. Muestra también que la capacidad espacial europea puede construirse dentro de la UE, cuando la propia ICEYE puja 2.050 millones de euros por Avio S.p.A., fabricante del Vega. Los pedidos conjuntos como este, y no 27 pedidos nacionales por separado, dan a las empresas espaciales europeas la escala necesaria para competir con las estadounidenses. Otra prueba de que los europeos, comprando juntos, forman un mercado más fuerte que cualquiera de ellos por separado.</p>
+<p><strong>Qué vigilar.</strong> Si Grecia llega a sumarse al contrato MikroSAR y cuántos satélites encargaría.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.gov.pl/web/obrona-narodowa/polska-i-grecja-zaciesniaja-wspolprace-w-obszarze-satelitarnej-obserwacji-ziemi">gov.pl</a>, <a href="https://www.onalert.gr/eksoplismoi/ellada-kai-polonia-ypegrapsan-mnimonio-synergasias-gia-tin-koini-apoktisi-doryforon-sar-meso-safe/834784/">·</a>, <a href="https://www.money.pl/gospodarka/co-sie-dzieje-z-safe-grecy-kupuja-polski-system-satelitarny-7352728539252736a.html">·</a>, <a href="https://x.com/i/status/2123400620929397023">· @iceye_global</a></p>
+<hr>
+<h2 id="s2">Países Bajos y Alemania encargan en serie el perturbador Knifefish de HENSOLDT</h2>
+<p><strong>HENSOLDT suministrará en producción en serie su sistema de guerra electromagnética Knifefish a las fuerzas armadas de los Países Bajos y Alemania.</strong></p>
+<p>El mando neerlandés de material COMMIT, que firmó también en nombre de Alemania, y HENSOLDT Netherlands firmaron el pedido el 19 de noviembre en la feria NEDS de Róterdam. Es la primera opción de un acuerdo marco cerrado en junio. Knifefish perturba las comunicaciones por radio del enemigo, como el control de drones y las radios de mando. Irá montado en el vehículo blindado de ruedas Piranha 5 de GDELS y funciona junto al sistema de reconocimiento Sawfish, también de HENSOLDT. Ese mismo día, HENSOLDT firmó un acuerdo de participación industrial con el Ministerio de Asuntos Económicos neerlandés para el programa. No se ha publicado el importe.</p>
+<p><strong>Por qué importa a Europa.</strong> Un país que compra por dos, a un proveedor europeo y para un vehículo europeo: esa es la compra común que Europa necesita. La guerra electrónica contra drones es hoy una necesidad de primera línea, y aquí la cubre un producto europeo, no uno estadounidense.</p>
+<p><strong>Qué vigilar.</strong> En NEDS se firmó también un acuerdo entre Rheinmetall y los Países Bajos sobre tecnología de vehículos militares (@RheinmetallAG https://x.com/i/status/2123428081478119539; el enlace a la nota de prensa dio error 404 al comprobarlo).</p>
+<p><strong>Fuentes:</strong> <a href="https://www.hensoldt.net/news/hensoldt-awarded-dutch-german-contract-for-knifefish-radio-jamming-system">hensoldt.net</a>, <a href="https://www.hensoldt.net/news/hensoldt-agrees-industrial-cooperation-in-the-netherlands">·</a>, <a href="https://x.com/i/status/2123396590216056999">· @hensoldt</a>, <a href="https://x.com/i/status/2123426179298304428">·</a></p>
+<hr>
+<h2 id="s3">Kongsberg se suma al programa industrial ucraniano Brave Prime</h2>
+<p><strong>La noruega Kongsberg firmó en Kiev un memorando de entendimiento con Brave1, el clúster de tecnología de defensa respaldado por el Gobierno ucraniano.</strong></p>
+<p>Es la tercera empresa extranjera de defensa que entra en su iniciativa Brave Prime. La colaboración estudiará qué tecnologías de Kongsberg responden a las necesidades de Ucrania y las probará dentro del marco «Test in Ukraine» de Brave1. Pondrá además en contacto a Kongsberg con empresas ucranianas para integrar sus tecnologías y componentes, y buscará áreas de I+D conjunta. El sistema antiaéreo NASAMS de Kongsberg se usa en Ucrania desde 2022, y la empresa abrió una oficina permanente en Kiev en 2025.</p>
+<p><strong>Por qué importa a Europa.</strong> Unir el sector ucraniano de tecnología de defensa, rápido y probado en combate, con los grandes grupos europeos crea una base de suministro europea y evita que Ucrania se convierta en un escaparate de las empresas estadounidenses.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.kongsberg.com/news/news-archive/2026/kongsberg-joins-brave-prime-to-strengthen-collaboration-with-ukrainian-industry/">kongsberg.com</a>, <a href="https://x.com/i/status/2123476582295593414">· @kongsbergasa</a></p>
+<hr>
+<h2 id="s4">Francia encarga 72.000 fusiles HK416F y recibe su tercer avión de patrulla Albatros</h2>
+<p><strong>La agencia francesa de compras de defensa, la DGA, ha encargado a Heckler &amp; Koch France 72.000 fusiles HK416F en un contrato a diez años, notificado el 2 de noviembre de 2026.</strong></p>
+<p>El fusil es el núcleo del programa francés de armamento individual AIF. El pedido incluye también silenciadores y visores ópticos. Desde 2017 se han entregado más de 100.000 fusiles para sustituir al FAMAS. Por otro lado, la DGA entregó a la Marina francesa el 16 de noviembre el tercer avión de vigilancia marítima Falcon 2000 Albatros de Dassault Aviation. Con ello se cumple el objetivo de tres entregas en 2026, y seguirán dos al año. El programa AVSIMAR prevé 12 aviones, que sustituirán a ocho Falcon 50M y cinco Falcon 200 Gardian.</p>
+<p><strong>Por qué importa a Europa.</strong> Ambas son cadenas de suministro europeas: un fusil de diseño alemán fabricado por la filial francesa de H&amp;K y un avión de negocios francés adaptado a la patrulla marítima.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123466669242650689">@DGA</a>, <a href="https://x.com/i/status/2123421556781285477">·</a></p>
+<hr>
+<h2 id="s5">Exportaciones europeas: Argentina se interesa por corbetas de Fincantieri y Malasia por cañones ligeros de KNDS</h2>
+<p><strong>El ministro de Defensa argentino firmó en Roma una carta de intenciones para adquirir hasta tres corbetas FCX20 de Fincantieri, en configuración completa y con un paquete de apoyo logístico integrado, según Fincantieri.</strong></p>
+<p>Malasia entregó a KNDS una carta de intenciones para comprar sistemas de artillería ligera 105LG, informa KNDS France. Ninguno de los dos comunicados da importes ni más detalles.</p>
+<p><strong>Por qué importa a Europa.</strong> Las exportaciones reparten el coste de las líneas de producción europeas. En ambos mercados, los europeos compiten con proveedores estadounidenses, turcos y asiáticos.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123442435585966257">@Fincantieri</a>, <a href="https://x.com/i/status/2123463875698045432">· @KNDS_France</a></p>
+<hr>
+<h2 id="s6">GKN Aerospace y MBDA estudian colaborar en estructuras de misiles y lanzadores</h2>
+<p><strong>GKN Aerospace y MBDA han firmado una carta de intenciones para estudiar una colaboración en sistemas de misiles y lanzadores.</strong></p>
+<p>Une la experiencia de MBDA en sistemas de misiles con la de GKN en contenedores y estructuras ligeras de material compuesto. GKN Aerospace es británica (propiedad de Melrose), y MBDA pertenece conjuntamente a Airbus, BAE Systems y Leonardo.</p>
+<p><strong>Por qué importa a Europa.</strong> A la producción europea de misiles le falta capacidad, y los contenedores y estructuras son un cuello de botella. Mantener europea esa cadena de suministro la mantiene libre de ITAR.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123423457350189535">@GKNAero</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

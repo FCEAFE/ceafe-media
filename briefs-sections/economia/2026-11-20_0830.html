@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Friday, 20 November 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Friday, 20 November 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> 19 November 2026 about 19:00 to 20 November about 07:15 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Update: Anthropic touches $2 trillion on its Nasdaq debut, closes at about $1.75 trillion, and Wall Street falls more than 2%</h2>
+<p><strong>Anthropic, the US developer of the Claude models, began trading on the Nasdaq under the ticker ANT on 19 November.</strong></p>
+<p>The shares opened at $111.50, 34% above the $83 offer price, and rose as high as $115 (+38.6%), which briefly gave the company a fully diluted market value of about $2 trillion (PitchBook, AP, The National; Reuters via Investing.com). The rally faded: the stock closed at $97.17, up 17.1%, which values Anthropic at about $1.75 trillion on a fully diluted basis (The National, citing PitchBook) or about $1.27 trillion on the shares now outstanding (Yahoo Finance); the BBC gives about $1.76 trillion. <strong>Verified figure: the $2 trillion valuation was reached intraday, at the open, not at the close.</strong> The IPO raised $81.3 billion (980 million shares at $83), plus a $26 billion private placement, for a total of $107.3 billion, the largest offering on record, ahead of SpaceX’s $86 billion in June. The debut did not lift the market: all three US indices fell more than 2%, the S&amp;P 500 lost for a sixth straight session and chip stocks fell, led by AMD (-7.7%) after a short seller alleged China export-control exposure.</p>
+<p><strong>Why it matters for Europe.</strong> In one day a single US AI company raised more than all of Europe’s start-ups are expected to raise in the whole of 2026 ($81 billion, Atomico, covered on 18–19 November), and its value at the close is roughly 125 times that of Mistral AI, Europe’s leading AI lab (€11.7 billion in its last confirmed round, ActuIA). The US is expected to put $450 billion into start-ups this year; Europe hosts 7% of world computing capacity against 72% in the US, and only seven European tech companies listed in 2026 up to 20 October (Atomico). US capital markets, not European ones, set the price of frontier AI, and European savings ($50 trillion, of which about 0.01% goes to European venture capital, Atomico) flow to it. Dependence on US AI models is now also dependence on a $1.75 trillion listed company subject to US law.</p>
+<p><strong>What to watch.</strong> Second-day trading and the 30-day over-allotment option (147 million shares); lock-up expiries around the first earnings reports (PitchBook expects 2027 to test the price); whether the AI sell-off spreads to European chip and AI stocks (ASML, Infineon, STMicro) at today’s open. Earlier coverage: 2026-11-19_0730 topic 3 (pricing), 2026-11-19_2030 “Briefly noted”.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123483074650636401">@F_CEAFE</a>, <a href="https://x.com/i/status/2123622386398323102">· @ReutersTech</a>, <a href="https://x.com/i/status/2123620536290869697">· @ReutersTech</a>, <a href="https://x.com/i/status/2123582105645089036">· @Reuters</a>, <a href="https://x.com/i/status/2123631407582822775">· @FT</a>, <a href="https://x.com/i/status/2123655109288558721">· @business</a>, <a href="https://x.com/i/status/2123627503482785910">· @business</a>, <a href="https://x.com/i/status/2123494061302501515">· @business</a>, <a href="https://apnews.com/article/anthropic-ipo-nasdaq-ai-b6a74b8949021207dc162fcc876c4649">· AP</a>, <a href="https://apnews.com/article/anthropic-ipo-by-numbers-fdca56f1cda70c9908899057e7e591e6">· AP</a>, <a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-2f178054aea79d282e5ccf8d62f26a28">· AP</a>, <a href="https://www.thenationalnews.com/business/markets/2026/11/20/anthropic-share-price-today-ant-listing/">· The National</a>, <a href="https://pitchbook.com/news/articles/anthropics-historic-ipo-is-the-ai-industrys-validation-moment">· PitchBook</a>, <a href="https://www.bbc.com/news/articles/c3x29ggenz12o">· BBC</a>, <a href="https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-begins-trading-in-record-81b-raise-with-15t-valuation-192410598.html">· Yahoo Finance</a>, <a href="https://www.investing.com/news/stock-market-news/wall-street-ends-sharply-lower-asanthropics-debut-fails-to-revive-ai-fervor-5040108">· Yahoo Finance</a>, <a href="https://www.cnbc.com/2026/11/18/stock-market-today-live-updates.html">· CNBC</a>, <a href="https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html">· CNBC</a>, <a href="https://www.stateofeuropeantech.com/state-of-european-tech-2026.md">State of European Tech 2026</a>, <a href="https://live.euronext.com/en/financial-news/european-tech-startups-set-second-strongest-funding-year">State of European Tech 2026</a>, <a href="https://www.actuia.com/en/news/anthropic-one-third-of-global-venture-capital-this-quarter-what-remains-for-europe/">· ActuIA</a>, <a href="https://www.reuters.com/legal/transactional/anthropics-15-trillion-debut-rewrites-venture-capitals-playbook-2026-11-19/">· ActuIA</a>, <a href="https://www.reuters.com/business/finance/anthropic-listing-extends-nasdaqs-dominant-run-against-arch-rival-nyse-2026-11-19/">· ActuIA</a></p>
+<hr>
+<h2 id="s2">Washington licensed 879,868 Nvidia and AMD AI chips for Chinese firms, including Pentagon-listed “Chinese military companies”</h2>
+<p><strong>House Foreign Affairs Committee chairman Brian Mast used his powers under the Export Control Reform Act on 19 November to publish BIS licence data for Nvidia H200 and AMD MI325X chips to China.</strong></p>
+<p>As of 11 May 2026 the Commerce Department’s Bureau of Industry and Security had received applications for 3,444,160 chips for Chinese companies and approved 879,868 across 21 applications (about 579,868 Nvidia and 300,000 AMD), including 75,000 for Alibaba, 150,000 for Tencent and its subsidiaries, 43,000 for Baidu and 4,000 for BYD, all on the Pentagon’s 1260H list of Chinese military companies (committee summary). All approved rows are marked “Approved, not shipped”, so the data do not show deliveries (Edit USA analysis of the tables). The committee says Nvidia named possible diversion fronts as installers and that every application rated diversion risk “low”; Nvidia’s Jensen Huang will be interviewed on 1–2 December. Bloomberg reports California has opened an investigation into whether Nvidia chips or confidential information were improperly obtained by China.</p>
+<p><strong>Why it matters for Europe.</strong> This is the other face of the rule that took effect on 19 November (topic 1 of the 20:30 edition): Washington forces TSMC, Samsung and European intermediaries to cut Chinese designers off while licensing its own champions’ sales to Chinese firms it itself labels military companies. US export controls are an industrial policy that protects US market share, not only a security tool; Europe aligns (ASML’s China sales, the data-centre due diligence) without getting comparable exemptions. Equivalent European rules and a common EU export-control voice remain absent.</p>
+<p><strong>What to watch.</strong> MFA/MOFCOM reaction; Huang interviews 1–2 December; whether Commerce revokes approvals for 1260H firms; link to AMD’s Hunterbrook allegations (topic 1).</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123598901319962651">@ReutersTech</a>, <a href="https://x.com/i/status/2123575840797524453">· @Reuters</a>, <a href="https://x.com/i/status/2123598881455841571">· @ReutersBiz</a>, <a href="https://x.com/i/status/2123597199095529605">· @AJEnglish</a>, <a href="https://x.com/i/status/2123581451853549724">· @FT</a>, <a href="https://x.com/i/status/2123616719381930080">· @FT</a>, <a href="https://x.com/i/status/2123583386753122669">· @business</a>, <a href="https://x.com/i/status/2123593470073856009">· @business</a>, <a href="https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china">· HFAC press release</a>, <a href="https://democrats-foreignaffairs.house.gov/wp-content/uploads/2026/11/11.19.26-ECRA-Information-Disclosure-HFAC-Summary.pdf">· HFAC press release</a>, <a href="https://democrats-foreignaffairs.house.gov/wp-content/uploads/2026/11/11.19.26-ECRA-Information-Disclosure-of-BIS-License-Decisions.pdf">· HFAC press release</a>, <a href="https://www.cnbc.com/amp/2026/11/19/nvidia-amd-china-chip-sales-congress.html">· CNBC</a>, <a href="https://www.editusa.com/intelligence/house-releases-879-868-ai-chip-approvals-for-china-what-the-records-show">· Edit USA</a></p>
+<hr>
+<h2 id="s3">Update: Methane rules delayed two years after US pressure; US LNG exporters restart long-term deals with Europe</h2>
+<p><strong>The Council and the European Parliament agreed on 19 November to postpone the methane regulation’s monitoring, reporting and verification obligations for imported gas, oil and coal from 1 January 2027 to 1 January 2029, and methane-intensity reporting from August 2028 to August 2030 (Council of the EU; covered as a provisional deal in the 14:30 edition).</strong></p>
+<p>Politico reports the delay followed months of lobbying by Washington and fossil-fuel companies, and that an amendment to keep the rules for Russian imports was dropped. US exporters had told their commercial teams to pause long-term contracts with European buyers for fear of a 20% non-compliance penalty; the Center for LNG’s Charlie Riedl told Reuters at P-TEC in Warsaw that the delay “helps make the case” to sign. At P-TEC US firms signed agreements or memoranda with Montenegro, Albania, Hungary’s 4iG and Poland’s Orlen, and are finalising a long-term deal to supply 20% of the Czech Republic’s LNG consumption (Reuters).</p>
+<p><strong>Why it matters for Europe.</strong> An EU environmental rule was softened under pressure from the supplier that now dominates EU LNG imports, which then rewards Europe with long-term contracts that lock in dependence. Russia has been replaced by a single new supplier, at gas prices about 11 times higher than in the US (Burgum chart, 18 November LEAD).</p>
+<p><strong>What to watch.</strong> Signature of the Czech long-term LNG contract; Parliament plenary vote; whether TTF stays near €90/MWh.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123559501945065628">@Reuters</a>, <a href="https://x.com/i/status/2123496624617836885">@Reuters</a>, <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/methane-regulation-eu-agrees-targeted-amendment-to-safeguard-security-of-supply/">· Council of the EU</a>, <a href="https://finance.yahoo.com/news/us-gas-exporters-more-comfortable-144449548.html">· Council of the EU</a>, <a href="https://www.politico.eu/article/eu-extends-delay-of-key-methane-rules-to-two-years-after-us-pressure/">· Politico Europe</a></p>
+<hr>
+<h2 id="s4">EU to overhaul emergency oil stocks after the Hormuz shock; tanker attacks intensify</h2>
+<p><strong>Bloomberg reports the European Commission plans to revise the Oil Stocks Directive to avoid shortages of diesel and kerosene, after the Middle East war exposed the bloc’s dependence on imported refined products.</strong></p>
+<p>According to reports of the draft, emergency reserves would be tied to each member state’s actual fuel use and refining capacity, at least one third would have to be held as refined products rather than crude, and armed forces could get limited, temporary access in exceptional cases; approval is expected in early December (Quartz; OilPrice). The Japan Times reports Iran’s attacks on tankers crossing the Strait of Hormuz are intensifying even as oil prices fall, and Euronews quotes the IEA warning that the longer the disruption lasts the harder recovery will be for global energy markets.</p>
+<p><strong>Why it matters for Europe.</strong> Europe imports most of its diesel and jet fuel; holding stocks in crude does not help when refining capacity has closed. Military access to fuel stocks links energy policy to defence readiness, a European competence still being built.</p>
+<p><strong>What to watch.</strong> Commission proposal in early December; Hormuz shipping incidents (Conflicts section).</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123536926661632279">@business</a>, <a href="https://x.com/i/status/2123554458307055651">@business</a>, <a href="https://x.com/i/status/2123502873493258289">@business</a>, <a href="https://x.com/i/status/2123624252024734092">· @japantimes</a>, <a href="https://x.com/i/status/2123553892160122950">· @euronews</a>, <a href="https://qz.com/eu-oil-reserve-rules-emergency-stocks-fuel-use-111926">· Quartz</a>, <a href="https://oilprice.com/Latest-Energy-News/World-News/EU-Moves-to-Overhaul-Emergency-Oil-Stockpiles.html">· OilPrice</a></p>
+<hr>
+<h2 id="s5">BP weighs selling its 56% stake in the Greater Tortue Ahmeyim LNG plant off Senegal and Mauritania</h2>
+<p><strong>Bloomberg reports BP is considering divesting its majority stake and operatorship of the Greater Tortue Ahmeyim (GTA) floating LNG project on the Senegal–Mauritania maritime border, as chief executive Meg O’Neill streamlines the portfolio.</strong></p>
+<p>The $4.8 billion plant needs more investment to expand; a sale is uncertain given limited buyers and cross-border political sensitivities (Bloomberg, via Investing.com and TipRanks). No buyer or price has been reported.</p>
+<p><strong>Why it matters for Europe.</strong> GTA is one of the few non-US, non-Russian LNG sources close to Europe. If a European major exits, the buyer’s nationality (US, Gulf or Chinese) will decide who controls Atlantic LNG that could reduce Europe’s single-supplier dependence on the US.</p>
+<p><strong>What to watch.</strong> Bidders; any CFIUS-style screening angle if a non-European buyer emerges.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123519226497364068">@business</a>, <a href="https://www.investing.com/news/stock-market-news/bp-weighs-divesting-west-africa-lng-stake-to-streamline-portfolio-bloomberg-says-5039717">· Investing.com</a>, <a href="https://www.tipranks.com/news/the-fly/bp-considers-selling-majority-stake-in-west-africa-lng-facility-bloomberg-says-thefly-news">· TipRanks</a></p>
+<hr>
+<h2 id="s6">Rates turn hawkish worldwide as the AI trade unwinds</h2>
+<p><strong>Overnight, Japan’s core inflation accelerated in October, cementing expectations of a Bank of Japan rate rise (Reuters).</strong></p>
+<p>J.P. Morgan now expects the Federal Reserve to raise rates at each of its next three meetings as inflation persists (Reuters), and Chicago Fed president Austan Goolsbee warned the AI investment surge could strain US capacity and overheat the economy (Reuters). In Europe, ECB Governing Council member Fabio Panetta said inflation must not become entrenched without undue harm to growth, and Bank of England policymaker Megan Greene said rates have not done enough to curb inflation (Bloomberg). The FT reports oil is losing its grip on bond markets as inflation spreads more broadly; gold is heading for its biggest weekly fall since March and Seoul faces record foreign outflows despite record profits (“Sell Korea”, Reuters).</p>
+<p><strong>Why it matters for Europe.</strong> Higher US rates with an AI sell-off pull capital back to the dollar and raise borrowing costs for European defence and energy investment just as Europe needs to finance both.</p>
+<p><strong>What to watch.</strong> ECB and Fed December meetings; euro-dollar.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123638771132297289">@ReutersBiz</a>, <a href="https://x.com/i/status/2123549420205605302">· @Reuters</a>, <a href="https://x.com/i/status/2123597386190586253">· @Reuters</a>, <a href="https://x.com/i/status/2123549415134597388">· @business</a>, <a href="https://x.com/i/status/2123573320046010465">· @business</a>, <a href="https://x.com/i/status/2123617371269074995">· @business</a>, <a href="https://x.com/i/status/2123647848163992001">· @FT</a>, <a href="https://x.com/i/status/2123584664254271699">· @ReutersTech</a>, <a href="https://pbs.twimg.com/news_img/2123584666644979713/aO0ucfBa?format=jpg&amp;name=orig">image</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

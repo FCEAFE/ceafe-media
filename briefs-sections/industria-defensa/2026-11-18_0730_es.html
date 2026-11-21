@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — miércoles, 18 de noviembre de 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">miércoles, 18 de noviembre de 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Window covered:</strong> 17 de noviembre de 2026, hacia las 18:50, al 18 de noviembre, hacia las 06:00 (hora de Madrid): todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Industria de Defensa de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Colby a los ministros de la UE: EE. UU. se «opone firmemente» a excluir a sus empresas del mercado europeo de armamento</h2>
+<p><strong>Elbridge Colby, subsecretario de Guerra para Política de EE. UU., intervino el 17 de noviembre en el Consejo de Asuntos Exteriores de la UE (Defensa) y después habló con la prensa en la sede de la OTAN.</strong></p>
+<p>En su discurso escrito, publicado por el Departamento de Guerra, afirmó que Washington es «más receptivo a la UE en este ámbito que los gobiernos estadounidenses anteriores, siempre que el enfoque de la UE no sea excluyente». Añadió: «nos oponemos firmemente a las medidas que excluyan a las empresas estadounidenses de la competencia en los mercados europeos», y extendió esa postura a los demás aliados de la OTAN que no son de la UE. A su juicio, excluir a «la base industrial de defensa de mayor calidad del mundo» sería «contraproducente». A cambio ofreció «empresas conjuntas transatlánticas, coproducción bajo licencia y codesarrollo», sobre todo en defensa aérea y antimisiles integrada, artillería, municiones de precisión y cadenas de suministro. Ante los periodistas (Reuters) fue más allá: «Las empresas estadounidenses fabrican el mejor armamento del mundo. Si quieren una Europa segura en la OTAN 3.0, necesitan cosas como el F-35». Dijo también que la revisión del despliegue militar de EE. UU. en Europa debería cumplir el plazo del 1 de diciembre. Alemania acoge a unos 35.000 de los 80.000 militares estadounidenses en Europa.</p>
+<p><strong>Por qué importa a Europa.</strong> Es una injerencia directa de EE. UU. en el diseño de la política industrial de defensa de la UE (la preferencia europea en SAFE, EDIP y el FED). Washington pide a Europa que mantenga su mercado abierto mientras sus propias reglas mantienen cerrado el suyo: requisitos «Buy American», controles ITAR sobre cualquier componente estadounidense, el escrutinio del CFIUS y los acuerdos FOCI, que obligan a las empresas extranjeras a crear filiales en EE. UU. con consejos estadounidenses para optar a contratos del Pentágono. Para CEAFE, una «relación pragmática y equilibrada» significaría las mismas reglas a ambos lados del Atlántico. La coproducción bajo licencia deja en EE. UU. la autoridad de diseño, el veto a la exportación y, a menudo, las claves del software. El propio Colby dijo que «muchos Estados europeos comparten nuestra oposición», lo que muestra cómo una UE dividida puede volverse contra su propia política industrial.</p>
+<p><strong>Qué vigilar.</strong> Si la Comisión o los Estados miembros responden a Colby. Las cláusulas de preferencia europea de EDIP y SAFE. La decisión sobre el despliegue de EE. UU. (1 de diciembre) y la cumbre Reino Unido–UE sobre la participación en SAFE (20 de noviembre). UU.).</p>
+<p><strong>Fuentes:</strong> <a href="https://www.war.gov/News/Speeches/Speech/Article/4649777/remarks-by-under-secretary-of-war-for-policy-elbridge-colby-at-the-european-uni/">war.gov, discurso de Colby</a>, <a href="https://www.investing.com/news/stock-market-news/pentagons-colby-warns-nato-allies-against-shutting-us-firms-out-of-arms-deals-5033782">Reuters vía Investing.com</a>, <a href="https://x.com/i/status/2122760493563613674">Reuters en X</a>, <a href="https://x.com/i/status/2122822086708150774">Reuters en X (respuesta de Alemania y Reino Unido)</a></p>
+<hr>
+<h2 id="s2">El Departamento de Estado culmina su «sprint» de reforma de la ITAR: licencia general para socios de confianza y una lista de municiones más corta</h2>
+<p><strong>El Departamento de Estado anunció el 17 de noviembre que un esfuerzo de 90 días (del 30 de julio al 28 de octubre), dirigido por el subsecretario Thomas G. DiNanno, ha dado lugar a una docena de actuaciones normativas para reformar el Reglamento sobre el Tráfico Internacional de Armas (ITAR).</strong></p>
+<p>Ya se han publicado ocho avisos en el Federal Register. La reforma «ajusta» la Lista de Municiones de EE. UU. (USML) para que solo cubra tecnologías que den «una ventaja militar o de inteligencia crítica». También crea una «licencia general ITAR» que autorizará de antemano ciertas transferencias a «algunos de los gobiernos socios de mayor confianza» (sin nombrarlos). Las solicitudes se resolverían en 50 días en lugar de 60 cuando sea posible, con presunción de aprobación para las solicitudes sin defectos. En el ejercicio fiscal 2026 se tramitaron unas 25.000 licencias ITAR por unos 200.000 millones de dólares. El marco son las órdenes ejecutivas 14268 (abril de 2025) y 14383 («Estrategia de Transferencias de Armas America First», febrero de 2026). Los siguientes pasos son la reforma del proceso FMS y la política de exportación de EE. UU. en el Régimen de Control de Tecnología de Misiles (MTCR). Una propuesta de octubre que traspasa artículos de la USML al control del Departamento de Comercio sigue abierta a comentarios hasta el 30 de noviembre (IANS).</p>
+<p><strong>Por qué importa a Europa.</strong> El objetivo se dice sin rodeos: «Cada carga regulatoria innecesaria empuja a los socios de Estados Unidos hacia proveedores extranjeros». Unas licencias ITAR más fáciles restan atractivo a uno de los principales argumentos de venta de la industria europea, el sello «ITAR-free» (véase IRRIS de MBDA y el CEA, edición de las 20:30 del 17 de noviembre). EE. UU. conserva lo esencial: decide quién es «de confianza», y lo que pasa a Comercio sigue bajo jurisdicción estadounidense y su alcance extraterritorial, incluida la Entity List. Junto con lo dicho por Colby, el mensaje es que Washington rebaja sus propias trabas a la exportación mientras pide a Europa que renuncie a su preferencia.</p>
+<p><strong>Qué vigilar.</strong> Qué gobiernos entran en la licencia general (si se incluye a los Estados de la UE, y si a todos o solo a algunos), los textos del Federal Register y el plazo de comentarios del 30 de noviembre.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.state.gov/releases/office-of-the-spokesman/2026/11/department-of-state-completes-90-day-itar-reform-sprint-delivering-historic-reforms-to-strengthen-american-export-dominance">Departamento de Estado, 17/11/2026</a>, <a href="https://ianslive.in/us-plans-faster-arms-export-approvals-new-license-route-for-trusted-partners--20261118051202">IANS</a>, <a href="https://x.com/i/status/2122817940517195975">1</a>, <a href="https://x.com/i/status/2122815878270177285">2</a></p>
+<hr>
+<h2 id="s3">Ventas de armas: Albania recibe luz verde para comprar HIMARS con préstamos de EE. UU. (210 millones de dólares)</h2>
+<p><strong>El Departamento de Estado aprobó el 17 de noviembre una posible venta militar al extranjero (FMS) a Albania: dos lanzadores M142 HIMARS, seis contenedores M31A2 GMLRS de carga unitaria y seis M30A2 de cabeza alternativa (72 cohetes), ocho sistemas de dirección de tiro IFATDS, dos HMMWV, radios y apoyo.</strong></p>
+<p>El coste estimado es de 210 millones de dólares, pagados con <strong>préstamos</strong> de Financiación Militar Exterior (FMF) de EE. UU. El contratista principal es Lockheed Martin (Grand Prairie, Texas) y no consta ningún acuerdo de compensación (offset). Hasta 15 funcionarios y 15 técnicos del contratista viajarían a Albania unas dos veces al año. El Congreso dispone del plazo habitual de revisión.</p>
+<p><strong>Por qué importa a Europa.</strong> Otro miembro europeo de la OTAN compra un sistema estadounidense, financiado además con crédito estadounidense, lo que ata a Albania durante décadas a municiones, software de tiro y soporte de EE. UU. Europa no tiene un lanzacohetes íntegramente propio en producción en serie. Las opciones más cercanas son híbridas (GMARS, de Rheinmetall y Lockheed Martin; EuroPULS, de KNDS Deutschland y Elbit sobre un diseño israelí), una carencia que los proyectos conjuntos de la UE aún no han cubierto. Los compradores pequeños como Albania van donde está la financiación.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.state.gov/releases/bureau-of-political-military-affairs/2026/11/albania-m142-high-mobility-artillery-rocket-systems">Departamento de Estado</a>, <a href="https://www.devdiscourse.com/article/international/4008647-us-approves-potential-210-million-artilleryrocket-systemssale-to-albania">Reuters vía Devdiscourse</a></p>
+<hr>
+<h2 id="s4">Empresas de EE. UU. en el espacio de la OTAN: HawkEye 360 gana un pedido SIGINT vía Luxemburgo</h2>
+<p><strong>HawkEye 360 (EE. UU., NYSE: HAWK) anunció el 17 de noviembre que la Dirección de Defensa de Luxemburgo eligió el nuevo Global Data Marketplace for Space de la OTAN para comprarle inteligencia comercial de radiofrecuencia destinada al Componente Espacial de la OTAN.</strong></p>
+<p>La empresa destaca su oficina en Luxemburgo y sus acuerdos con Leonardo y ERA. La OTAN lanzó el mercado ese mismo día. <em>Por qué importa:</em> el primer pedido del mercado que difunde un proveedor va a una empresa estadounidense, a través de un gobierno europeo. Existen operadores europeos de geolocalización de radiofrecuencia (por ejemplo, la francesa Unseenlabs), y CEAFE esperaría aquí un criterio de preferencia europea. <a href="https://www.he360.com/hawkeye-360-announces-agreement-to-support-nato-space-operations/">HawkEye 360</a>, <a href="https://x.com/i/status/2122798183164055858">publicación</a>.</p>
+<ul>
+<li>Fragata británica para EE. UU. El ministro británico de Preparación e Industria de Defensa, Luke Pollard, defendió en Washington la producción en EE. UU. de una versión del Arrowhead 140 de Babcock (el diseño del Type 31) para cubrir una carencia de la Marina estadounidense. La cuenta UK Defence en EE. UU. compartió una entrevista (@tomhfh) que habla de una fragata de diseño británico «construida en Florida por estadounidenses». Informaciones anteriores apuntan a una producción bajo licencia con HII, cuyos astilleros están en Virginia y Misisipi; estas fuentes no confirman lo de Florida. <em>Por qué importa:</em> vender un diseño europeo a EE. UU. es positivo, pero el modelo revela la asimetría. EE. UU. exige construir en sus astilleros y con empleo estadounidense, mientras pide a Europa que compre su material tal cual. <a href="https://www.washingtonexaminer.com/policy/defense/4806290/uk-special-relationship-joint-us-frigate-production/">Washington Examiner</a>, <a href="https://defensewarroom.com/2026/10/26/babcock-arrowhead-140-frigate-us-navy/">Defence War Room</a>, <a href="https://x.com/i/status/2122771463706943995">publicación</a>.</li>
+</ul>
+<hr>
+<h2 id="s5">Espacio (Europa primero)</h2>
+<p><strong>Actualización: ICEYE–Avio.</strong></p>
+<p>Euronews informa de que ICEYE promete 1.000 millones de euros de inversión en Italia, pero que la oferta por Avio S.p.A. (fabricante del lanzador Vega, Colleferro; no confundir con Avio Aero) probablemente será examinada con lupa en Roma, que tiene voz a través de su participación en Leonardo, primer accionista de Avio (18,04 %). <a href="https://x.com/i/status/2122884494239916306">Euronews</a>, <a href="https://breakingdefense.com/2026/11/iceye-makes-2b-bid-for-italian-rocket-firm-avio/">Breaking Defense</a>.</p>
+<ul>
+<li>Francia y Alemania ante la cooperación espacial europea. En la Space Tech Expo Europe de Bremen, el presidente del CNES, François Jacq, y el responsable de la agencia espacial alemana reclamaron más cooperación europea, aunque con enfoques distintos (SpaceNews; solo se pudo leer la entradilla). <a href="https://spacenews.com/france-and-germany-offer-different-approaches-for-european-cooperation-in-space/">SpaceNews</a>.</li>
+<li>Ariane 6 VA271: ventana de lanzamiento fijada para el 23 de noviembre desde Kurú, con 36 satélites Amazon Leo con destino a la órbita baja (décimo vuelo de Ariane 6). El lanzador europeo pone en órbita una constelación estadounidense mientras el Vulcan está en tierra. <a href="https://x.com/i/status/2122777904186540271">Arianespace</a>.</li>
+<li>Vulcan de ULA: su consejero delegado dice que la investigación del fallo se centra en la etapa central de propulsante líquido. <a href="https://spacenews.com/ula-ceo-says-vulcan-failure-probe-focused-on-liquid-core-booster/">SpaceNews</a>.</li>
+<li>Exolaunch (Alemania) participa con ICEYE y EnduroSat en el panel «Built in Europe, Scaled for Orbit» del evento de la ESA en Slush (Helsinki), el jueves.</li>
+<li>Además: Space Cargo Unlimited presentó un modelo de desarrollo de una nave reutilizable para investigación en microgravedad (<a href="https://spacenews.com/space-cargo-unlimited-unveils-model-of-reusable-spacecraft-for-microgravity-research/">SpaceNews</a>). La Shenzhou-24 y su cohete Larga Marcha 2F se trasladaron a la zona de lanzamiento de Jiuquan (Global Times, medio estatal chino). No se han encontrado incidentes contraespaciales ni de aproximación (RPO) en esta ejecución.</li>
+</ul>
+<hr>
+<h2 id="s6">Resto del mundo</h2>
+<p><strong>Taiwán negocia en fase inicial con tres o cuatro socios «afines» una constelación de más de 300 satélites en órbita baja (de unos 1.000 kg cada uno) orientada a gobiernos.</strong></p>
+<p>El director de la agencia espacial taiwanesa (TASA) alude a las restricciones de Starlink/Starshield en Ucrania («si no le haces caso a Elon Musk, te puede asfixiar») y la compara expresamente con IRIS² de la UE (<a href="https://aviationweek.com/space/satellites/citing-starlink-problems-taiwan-pushes-300-sat-multinational-network">Aviation Week</a>). India: Reliance busca socios industriales para una constelación de 1.600 satélites como «alternativa bajo control indio» a Starlink (Bloomberg). <em>Por qué importa:</em> otros sacan la misma lección de soberanía que IRIS², y quizá más deprisa.</p>
+<ul>
+<li>Japón: Mitsubishi Heavy Industries firma un memorando con SAKURA internet sobre infraestructura de «IA soberana» (<a href="https://www.mhi.com/news/261118.html">MHI</a>).</li>
+<li>Corea del Sur: Hanwha Defense USA lanzó un Chunmoo frente a la costa de Misisipi, presentado como «la nueva era de la disuasión marítima».</li>
+<li>Serbia: se estrelló un MiG-29 y murió el piloto (Reuters).</li>
+<li>Canadá: Bombardier abre un centro de servicio en Fort Wayne (Indiana). Brasil: el prototipo eVTOL de Eve alcanza unos 44 nudos.</li>
+<li>Control de ventas de armas (06:00): la lista de notificaciones del Departamento de Estado solo muestra como nuevo el caso de Albania; la DSCA no se consultó por separado.</li>
+</ul>
+<hr>
+<h2>Véase también</h2>
+<ul>
+<li>Actualización: Destinus afirma que sus misiles Ruta, fabricados en Países Bajos, alcanzaron el puente de Kerch — véase Conflictos.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

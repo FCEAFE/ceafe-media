@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTOS — martes, 17 de noviembre de 2026 · 13:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+@page {
+  /* Extra bottom margin so body text clears the stamped steel bar (~21 mm from the edge). */
+  margin: 12mm 14mm 24mm 14mm;
+}
+@media print {
+  .steel-footer { display: none !important; }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTOS</h1>
+      <p class="list-date">martes, 17 de noviembre de 2026 · 13:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> novedades desde la edición de las 07:30, de 05:45 a 11:55 aproximadamente del 17 de noviembre de 2026, hora de Madrid.</li>
+<li><strong>Compiled from:</strong> publicaciones ya recogidas esta mañana por los bots de seguimiento de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE (el informe escrito de la sección Conflictos no estaba listo para esta edición).</li>
+</ul>
+<h2 id="s1">Actualización: Zelenski celebra una «operación sin precedentes» contra el puente de Crimea; analistas OSINT dicen que el mar de Azov queda cortado</h2>
+<p><strong>El presidente Zelenski agradeció el 17 de noviembre al Servicio de Seguridad de Ucrania (SBU), a las Fuerzas de Defensa y a los fabricantes ucranianos de armas «una operación sin precedentes en respuesta a» los ataques rusos contra las infraestructuras de Ucrania, en referencia al ataque nocturno contra el puente de Crimea (Kerch) recogido en la edición de las 07:30.</strong></p>
+<p>La cuenta OSINT AMK Mapping escribió que, además de destruir el tramo de calzada e impedir el paso de vehículos, los restos del vano derrumbado bloquean el paso de barcos por el canal inferior, lo que «corta de hecho el mar de Azov» y sus puertos. CEAFE no ha podido verificar esa afirmación de forma independiente. Rusia atacó los puentes Norte y Sur de Kiev el lunes por la noche, como recogió la edición de las 07:30.</p>
+<p><strong>Por qué importa a Europa.</strong> Si se confirma, el cierre del estrecho de Kerch golpearía la logística rusa hacia Crimea y los puertos de Azov, mientras siguen las conversaciones de paz y Moscú aún no acepta al equipo negociador europeo.</p>
+<p><strong>Qué vigilar.</strong> Declaraciones oficiales rusas o imágenes por satélite sobre el estado del canal, y posibles represalias rusas contra infraestructuras ucranianas.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122623023488393517">Volodímir Zelenski en X</a></li>
+<li><a href="https://x.com/i/status/2122577821516399058">AMK Mapping en X</a></li>
+<li><a href="https://x.com/i/status/2122567327707451570">Exilenova+ en X: el puente esta mañana</a></li>
+</ul>
+<hr>
+<h2 id="s2">Actualización: la Guardia Revolucionaria iraní reivindica un ataque con drones contra un radar de EE. UU. en Baréin, mientras Catar dice que la mediación continúa</h2>
+<p><strong>La Guardia Revolucionaria de Irán (CGRI) afirmó haber lanzado en la mañana del 17 de noviembre un ataque con drones contra un sistema de radar estadounidense en la base aérea de Isa, en Baréin, según Al Jazeera, y Reuters informó de que Irán atacó con drones un radar militar de EE. UU. en Baréin.</strong></p>
+<p>El portavoz del Ministerio de Exteriores de Catar, Majed al Ansari, dijo que la mediación para poner fin a lo que Al Jazeera llama la «guerra de EE. UU. e Israel contra Irán» sigue en marcha, y que en las próximas horas habrá una reunión con representantes iraníes. La edición de las 07:30 recogió los ataques a petroleros en Ormuz y la llegada de un tercer portaaviones estadounidense.</p>
+<p><strong>Por qué importa a Europa.</strong> Un ataque contra una instalación estadounidense en un Estado del Golfo extiende la guerra a las bases que también protegen el tráfico marítimo y el suministro energético europeos. Europa es espectadora de una mediación que pasa por Catar.</p>
+<p><strong>Qué vigilar.</strong> La respuesta de EE. UU., los informes de daños en Baréin y el resultado de la reunión catarí con representantes iraníes.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122592885505994840">Al Jazeera English en X (reivindicación del CGRI)</a></li>
+<li><a href="https://x.com/i/status/2122638438096638262">Reuters en X</a></li>
+<li><a href="https://reut.rs/4C8LGvn">Reuters: Irán ataca un radar militar de EE. UU. en Baréin</a></li>
+<li><a href="https://x.com/i/status/2122640892884381792">Al Jazeera English en X (mediación de Catar)</a></li>
+</ul>
+<hr>
+<h2 id="s3">Reguladores de 38 países alertan de un riesgo creciente de accidente nuclear en Ucrania este invierno</h2>
+<p><strong>Los reguladores de seguridad nuclear de 38 países afirmaron el 17 de noviembre que el riesgo de un accidente nuclear en Ucrania aumenta este invierno, y pidieron a Rusia que deje de atacar las infraestructuras eléctricas del país, según Reuters.</strong></p>
+<p>Las centrales nucleares dependen de un suministro eléctrico estable para la refrigeración y los sistemas de seguridad, por eso los reguladores vinculan el riesgo a los ataques contra la red.</p>
+<p><strong>Por qué importa a Europa.</strong> Un accidente nuclear en Ucrania afectaría directamente al territorio de la UE. Es un recordatorio de que la seguridad de Ucrania es seguridad europea.</p>
+<p><strong>Qué vigilar.</strong> Las declaraciones del OIEA y nuevos ataques contra subestaciones y centrales de Ucrania.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122635859958632823">Reuters en X</a></li>
+<li><a href="https://reut.rs/3UZkLBy">Reuters: aumenta el riesgo de accidente nuclear en Ucrania</a></li>
+</ul>
+<hr>
+<h2 id="s4">Komishuvaja: la búsqueda termina con 72 muertos, uno de los ataques más mortíferos de la guerra</h2>
+<p><strong>El Ministerio de Exteriores de Ucrania informó el 17 de noviembre de que han concluido las labores de búsqueda y rescate en Komishuvaja, en la región de Zaporiyia.</strong></p>
+<p>Según el ministerio, el ataque ruso contra la localidad del 2 de noviembre fue uno de los más mortíferos de la invasión a gran escala y mató a 72 personas, entre ellas rescatadores, policías y personal escolar y administrativo.</p>
+<p><strong>Por qué importa a Europa.</strong> El balance llega mientras los europeos intentan asegurarse un papel en las conversaciones de paz; cualquier acuerdo tendrá que abordar la rendición de cuentas por los ataques contra civiles.</p>
+<p><strong>Qué vigilar.</strong> Las reacciones internacionales y cualquier investigación de la Corte Penal Internacional o de la ONU.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122632559376908719">Ministerio de Exteriores de Ucrania en X</a></li>
+</ul>
+<hr>
+<h2>Véase también</h2>
+<ul>
+<li>Los ministros de Defensa de la UE aprueban la revisión de defensa de 2026; Alemania añade 300 millones de dólares para defensa antiaérea PURL — véase Actualidad.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Conflictos. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

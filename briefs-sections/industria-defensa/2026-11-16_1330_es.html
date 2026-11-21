@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — lunes, 16 de noviembre de 2026 · 13:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">lunes, 16 de noviembre de 2026 · 13:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Window covered:</strong> lunes 16 de noviembre de 2026, de 05:45 a 12:00, hora de Madrid</li>
+<li><strong>Compiled from:</strong> el informe diario de la sección Industria de Defensa de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Software militar soberano: Europa busca alternativas a Palantir</h2>
+<p><strong>Reuters (Berlín, 16 de noviembre) informa de que los ministerios de Defensa europeos intentan reducir su dependencia del Maven Smart System de Palantir y de que cada vez más empresas europeas compiten por ese negocio.</strong></p>
+<p>Alemania tiene una lista corta de pocas soluciones que no incluye a Palantir; según una fuente conocedora, no igualarán a Palantir, pero serán «suficientemente buenas», mantendrán la soberanía de los datos y cubrirán alrededor del 80 % de los requisitos en un año. La agencia francesa de adquisiciones (DGA) desarrolla una plataforma soberana, <strong>Arcadia</strong>, con varios proveedores: contratos antes de fin de año y una versión desplegable a mediados de 2027 (Alexandre Lahousse, subdirector). Países Bajos usa algo de software de Palantir, pero quiere una alternativa europea en dos años; el ministro de Adquisiciones, Derk Boswijk, advirtió de que el conocimiento europeo en IA está «muy fragmentado». Helsing presentó <strong>Clarity</strong> el 11 de noviembre («desarrollado y construido en Europa, bajo control europeo», en infraestructura propiedad del cliente) y ofrece una primera versión a la brigada de la Bundeswehr en Lituania en cuestión de meses. También compiten Systematic (Dinamarca, SitaWare), Thales, Safran y Comand AI. Palantir asegura que su sistema de la OTAN no tiene «interruptor de apagado». @F_CEAFE publicó la noticia esta mañana.</p>
+<p><strong>Nota para la compilación:</strong> el informe de Economía de las 13:30 también recoge esta noticia (su tema 5). Sección principal sugerida: Industria de Defensa, con referencia cruzada en Economía.</p>
+<p><strong>Por qué importa a Europa.</strong> Es el argumento del «kill switch» y de la soberanía de los datos aplicado a la capa de software que ya decide los objetivos. Reuters lo vincula a las restricciones de velocidad de Starlink que dificultaron el mes pasado la interceptación de drones en Ucrania. El punto débil lo señala Boswijk: Alemania, Francia y Países Bajos construyen cada uno su respuesta nacional. Una plataforma europea única (financiación FED/EDIP, compra común a través de la EDA u OCCAR) daría a la industria europea la escala que Palantir tiene en EE. UU., donde el software del Pentágono debe estar bajo control estadounidense.</p>
+<p><strong>Qué vigilar.</strong> adjudicaciones de Arcadia (antes de fin de 2026); decisión alemana; si Países Bajos se suma a una solución alemana o francesa.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122248336241508782">@Reuters</a></li>
+<li><a href="https://x.com/i/status/2122265332274319486">@F_CEAFE</a></li>
+<li><a href="https://www.channelnewsasia.com/business/europe-hunts-palantir-alternatives-militaries-seek-limit-us-dependence-6554656">channelnewsasia.com</a></li>
+<li><a href="https://helsing.ai/newsroom/helsing-unveils-clarity-a-sovereign-software-platform-for-military-intelligence">helsing.ai</a></li>
+</ul>
+<hr>
+<h2 id="s2">ICEYE presenta Gen5: un satélite radar europeo de 11 cm y libre de ITAR</h2>
+<p><strong>La finlandesa ICEYE anunció el 16 de noviembre su satélite SAR de quinta generación, «el más nítido de fabricación comercial», según la empresa.</strong></p>
+<p>Para clientes gubernamentales opera con 1.800 MHz de ancho de banda y una resolución de hasta 11 cm (sujeta a la normativa de la UIT); el resto de clientes dispone de 1.200 MHz y 16 cm. Reduce en más de un 30 % la separación mínima entre imágenes, duplica el tiempo de captación por órbita y lleva un procesador de IA a bordo para cribado y «tip-and-cue» en órbita. ICEYE ofrece a nuevos clientes un «sistema Gen5 plenamente soberano, libre de restricciones ITAR, operativo en 12 meses desde la firma», con segmento terreno y formación. Se define como «nativamente europea, fundada en Finlandia», con más de 1.500 empleados. Bloomberg cubrió el anuncio.</p>
+<p><strong>Por qué importa a Europa.</strong> Una empresa europea vende ya una constelación de vigilancia militar soberana y sin ITAR, justo la capacidad que CEAFE defiende comprar en Europa y no a proveedores estadounidenses. Los satélites de ICEYE son además objetivo de operaciones rusas de aproximación (Kosmos 2612 junto a ICEYE-X36 en octubre; satélites hermanos derivando hacia ICEYE-X37, según el registro de Conflictos en shared/space.md), prueba de su peso en la inteligencia europea y ucraniana.</p>
+<p><strong>Qué vigilar.</strong> fecha y lanzador (europeo o estadounidense) del primer Gen5; clientes gubernamentales.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122239297046655152">X post 2122239297046655152</a></li>
+<li><a href="https://hubs.li/Q04FkpKv0">ota de prensa de ICEYE</a></li>
+<li><a href="https://x.com/i/status/2122239505365131394">Bloomberg</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-11-16/iceye-unveils-new-satellite-to-give-governments-sharper-images">e pago; solo titular</a></li>
+</ul>
+<hr>
+<h2 id="s3">Turquía: ASELSAN firma 1.280 millones de euros con ROKETSAN en buscadores y enlaces de datos para misiles</h2>
+<p><strong>ASELSAN comunicó el 16 de noviembre a la plataforma de información de Borsa Istanbul (KAP) la firma de contratos por <strong>1.281.101.744 euros</strong> con ROKETSAN para suministrar enlaces de datos y cabezas buscadoras de misiles.</strong></p>
+<p>ROKETSAN supuso el 5,6 % de las ventas netas de ASELSAN y el 7,3 % de sus cuentas por cobrar en los últimos estados financieros. La comunicación no detalla calendario, número de contratos ni programas. Sigue a otro contrato ASELSAN–ROKETSAN de 1.234 millones de euros para subcomponentes de defensa aérea, comunicado el 23 de septiembre de 2026 (icwwm.com). Esa misma mañana ROKETSAN promocionó su misil de crucero de largo alcance KARA ATMACA y ASELSAN su familia de bombas planeadoras TOLUN.</p>
+<p><strong>Por qué importa a Europa.</strong> Turquía mantiene en su propia industria las piezas más valiosas de un misil (buscador y enlace de datos), con dos grandes contratos en dos meses. Europa tiene empresas equivalentes (MBDA, Diehl, Thales, Leonardo, Kongsberg, Saab), pero muchos compradores europeos de defensa aérea siguen importando sistemas completos de EE. UU. El modelo turco de campeones nacionales que se abastecen entre sí es una referencia para la integración vertical europea a escala de la UE.</p>
+<p><strong>Qué vigilar.</strong> a qué programas (HİSAR/SİPER, ATMACA, ÇAKIR, TAYFUN) van los buscadores.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122260435806179488">X post 2122260435806179488</a></li>
+<li><a href="https://www.borsatek.com/asels-roketsan-ile-1-28-milyar-euroluk-sozlesme/">borsatek.com</a></li>
+<li><a href="https://www.cnbce.com/sirket-haberleri/aselsan-ile-roketsan-arasinda-128-milyar-euroluk-dev-sozlesme-h41899">cnbce.com</a></li>
+<li><a href="https://icwwm.com/aselsan-roketsan-contracts-missile-seekers-data-links/">icwwm.com</a></li>
+<li><a href="https://x.com/i/status/2122268252403376221">X post 2122268252403376221</a></li>
+<li><a href="https://x.com/i/status/2122246344819528087">X post 2122246344819528087</a></li>
+</ul>
+<hr>
+<h2 id="s4">Soberanía tecnológica europea: enlaces cuánticos TeQuantS y una gigafactoría de IA nórdico-báltica</h2>
+<p><strong>Thales Alenia Space (Thales 67 %, Leonardo 33 %) firmó dos ampliaciones de contrato con la ESA como contratista principal de TeQuantS, dentro del programa ARTES y con apoyo del CNES.</strong></p>
+<ul>
+<li><strong>Thales Alenia Space</strong> (Thales 67 %, Leonardo 33 %) firmó dos ampliaciones de contrato con la ESA como contratista principal de <strong>TeQuantS</strong>, dentro del programa ARTES y con apoyo del CNES. La nueva fase crea un laboratorio cuántico en el CNES para probar una fuente de fotones entrelazados, la sincronización temporal satélite-tierra y la detección de fotones en tierra, de cara al satélite <strong>QINSAT</strong>, que demostrará la transmisión de fotones entrelazados entre el espacio y la Tierra. Participan Airbus Defence and Space, AUREA Technology, Bertin, OGS Technologies, SIGMAWORKS y dos laboratorios franceses. La nota menciona a gobiernos que intercambiarán información «de forma resiliente y soberana».</li>
+<li><strong>Nokia</strong> lidera <strong>AI Gigafactory Northern</strong> con Nscale, Telia, Verda y Skeleton: infraestructura de IA federada en Finlandia, Estonia, Letonia y Suecia que combina computación, nube soberana, conectividad y energía descarbonizada, para concurrir a la licitación de gigafactorías de IA de la Empresa Común EuroHPC.</li>
+</ul>
+<p><strong>Por qué importa a Europa.</strong> Son ejemplos positivos de la línea editorial: grandes empresas, startups y laboratorios europeos trabajando juntos en programas de la ESA y la UE en tecnologías (enlaces cuánticos seguros, computación de IA soberana) de las que dependerá la defensa. Vale la advertencia del caso SABRE: la propiedad intelectual financiada por la ESA o la UE debe llevar cláusulas que la mantengan en Europa.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122277427774984491">X post 2122277427774984491</a></li>
+<li><a href="https://www.thalesaleniaspace.com/en/news/thales-alenia-space-takes-new-step-towards-europes-future-quantum-satellite-internet-tequants">thalesaleniaspace.com</a></li>
+<li><a href="https://x.com/i/status/2122251865190449401">X post 2122251865190449401</a></li>
+<li><a href="https://www.nokia.com/newsroom/european-technology-leaders-form-ai-gigafactory-northern-consortium-to-build-trusted-sustainable-ai-infrastructure/">nokia.com</a></li>
+<li><a href="https://www.teliacompany.com/en/press-releases/telia-joins-european-technology-leaders-in-forming-ai-gigafactory-northern-consortium-to-build-trusted-sustainable-ai-infrastructure-2026-11-16-07-00-00">teliacompany.com</a></li>
+</ul>
+<hr>
+<h2 id="s5">Actualización: el fallo del Vulcan apunta a la etapa superior Centaur y queda pendiente la decisión de la Space Force</h2>
+<p><strong>Novedad respecto al informe de las 07:30: la información disponible sitúa la anomalía en la <strong>etapa superior Centaur V, cerca del final de su encendido</strong>; los propulsores sólidos (con toberas rediseñadas) y la primera etapa BE-4 funcionaron con normalidad (DW, Spaceflight Now, Behind the Black).</strong></p>
+<p>ULA y el cliente investigan. La Space Force había suspendido las misiones de seguridad nacional del Vulcan tras el fallo de tobera de febrero y esperaba los datos de este vuelo para decidir; esa decisión queda ahora más lejos. Reuters y DW subrayan que es el primer fracaso total de ULA desde 2006. (Véase el informe de las 07:30, tema 6.)</p>
+<p><strong>Por qué importa a Europa.</strong> Con Vulcan y New Glenn en tierra, los 24 lanzamientos de Amazon en Ariane 6 y las misiones institucionales europeas dependen de la cadencia de Ariane 6: un lanzador europeo fiable es un activo comercial y estratégico mientras flaquean las alternativas estadounidenses distintas de SpaceX.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122219364980081120">@Reuters</a></li>
+<li><a href="https://www.dw.com/en/rocket-from-boeing-lockheed-firm-fails-mid-flight-destroys-payload-of-amazon-satellites/a-79953931">dw.com</a></li>
+<li><a href="https://spaceflightnow.com/2026/11/15/ula-suffers-first-total-mission-failure-with-loss-of-vulcan-rocket-carrying-40-amazon-leo-satellites/">spaceflightnow.com</a></li>
+<li><a href="https://behindtheblack.com/behind-the-black/points-of-information/ulas-vulcan-rockets-upper-stage-fails-causing-a-loss-of-all-40-amazon-leo-satellites/">behindtheblack.com</a></li>
+</ul>
+<hr>
+<h2 id="s6">Breves de la industria: el GLADIUS polaco en servicio, Airbus con la Marine Nationale y L3Harris bajo la lupa de la FAA</h2>
+<p><strong>WB Group (Polonia): su sistema de reconocimiento y ataque GLADIUS (municiones merodeadoras con cadena propia de reconocimiento y mando) se integra en el día a día del 14.º Regimiento Antitanque de Suwałki, de la 16.ª División Mecanizada, según la empresa.</strong></p>
+<ul>
+<li><strong>WB Group (Polonia):</strong> su sistema de reconocimiento y ataque GLADIUS (municiones merodeadoras con cadena propia de reconocimiento y mando) se integra en el día a día del 14.º Regimiento Antitanque de Suwałki, de la 16.ª División Mecanizada, según la empresa. Un sistema polaco en servicio de primera línea en el flanco oriental de la OTAN.</li>
+<li><strong>Airbus Helicopters</strong> celebró los 400 años de la Marina francesa volando junto a la Marine Nationale (plataforma europea al servicio de un país europeo).</li>
+<li><strong>L3Harris (EE. UU.):</strong> la FAA investiga si un router instalado por L3Harris durante obras de sustitución de cobre por fibra en El Dorado (Arkansas) saturó la red de control aéreo y causó la suspensión nacional de vuelos de la semana pasada; se ha desactivado la difusión de datos en unos 60-69 routers similares mientras siguen las pruebas (USA Today, 14 de noviembre; ABC News). No recogido en informes anteriores.</li>
+<li><strong>Elbit Systems (Israel)</strong> promociona su óptica espacial en Space Tech Expo (publicación de la empresa); compite con proveedores europeos en satélites europeos de observación.</li>
+</ul>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122268438878171138">X post 2122268438878171138</a></li>
+<li><a href="https://x.com/i/status/2122271202869682474">X post 2122271202869682474</a></li>
+<li><a href="https://www.usatoday.com/story/news/nation/2026/11/14/faa-ground-stop-probe-l3harris/92780406007/">usatoday.com</a></li>
+<li><a href="https://abcnews.com/Politics/transportation-secretary-duffy-atc-routers-ability-broadcast-data/story?id=138155545">abcnews.com</a></li>
+<li><a href="https://x.com/i/status/2122257507271802947">X post 2122257507271802947</a></li>
+</ul>
+<hr>
+<h2>Véase también</h2>
+<ul>
+<li>Cumbre UE–Reino Unido el 20 de noviembre con compromiso de defensa, pero sin entrada en SAFE por ahora — véase Actualidad.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

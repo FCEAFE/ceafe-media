@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Tuesday, 17 November 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Tuesday, 17 November 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 16 November 2026 about 19:00 to 17 November about 06:00 Europe/Madrid (18:00–05:00 UTC): only items new since the 20:30 brief.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Update: Europe&rsquo;s full negotiating team joins the Ukraine talks for the first time, but Moscow has not accepted it</h2>
+<p><strong>On the evening of 16 November, Ukrainian, US and European negotiators held a team-level call.</strong></p>
+<p>Volodymyr Zelensky said that &ldquo;for the first time, Europe was represented in this discussion by the full group of those who will represent it in negotiations with the Russians&rdquo;: France, Germany, the United Kingdom, Italy and Poland, the European Commission, the European Council and a NATO representative. US envoys Steve Witkoff and Jared Kushner joined online. Zelensky called the discussion &ldquo;difficult&rdquo; and said the result was a meeting in Berlin within the Coalition of the Willing to agree &ldquo;concrete joint steps&rdquo;; Germany hosts that summit on Thursday 19 November, with more than 20 leaders expected (France 24, Kyiv Post). Kushner wrote that he and Witkoff had first spoken with Kremlin aide Yuri Ushakov and that the call with Europeans discussed &ldquo;how to facilitate direct engagement between Europe and Russia, which has been largely absent over the past four years&rdquo;. According to Al Jazeera, Ushakov said Russia has not agreed to expand the talks beyond the Russian, Ukrainian and US delegations, and no date has been set for the next round. Hours later, Kyiv&rsquo;s mayor Vitali Klitschko reported Russian ballistic-missile hits on the North and South bridges over the Dnipro, with water and heating cuts, while Russian-installed authorities said Ukraine struck the Kerch Bridge for a second night.</p>
+<p><strong>Why it matters for Europe.</strong> Europe has now fielded a team, but it is a team of five capitals plus the institutions rather than one voice. Italian senator Carlo Calenda, reposted by @F_CEAFE, called the choice not to mandate the European Council President to represent all of Europe &ldquo;a resounding own goal&rdquo;, blaming &ldquo;the political dwarfs who lead the European states&rdquo;. Russia can exploit a group format by refusing it outright, as Ushakov is doing, or by dealing with each capital separately. And on 19 November, while Europe meets in Berlin, Washington, Beijing and Moscow will meet in Shenzhen.</p>
+<p><strong>What to watch.</strong> Berlin Coalition of the Willing summit and the Witkoff/Kushner meeting on 19 Nov; whether the Kremlin accepts the European team; Commission financing proposal for Ukraine (expected Wednesday).</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122406253024682188">Zelensky</a></li>
+<li><a href="https://x.com/i/status/2122397087115698445">Kushner</a></li>
+<li><a href="https://x.com/i/status/2122402126324465947">@F_CEAFE repost of Calenda</a></li>
+<li><a href="https://x.com/i/status/2122234003310674201">@F_CEAFE repost of Calenda (original)</a></li>
+<li><a href="https://www.kyivpost.com/post/90291">Kyiv Post</a></li>
+<li><a href="https://www.pravda.com.ua/eng/news/2026/11/16/8063168/">Ukrainska Pravda</a></li>
+<li><a href="https://unn.ua/en/news/the-ukrainian-us-and-european-teams-held-talks-zelenskyy-announced-a-meeting-in-berlin-and-outlined-the-next-steps">UNN</a></li>
+<li><a href="https://www.aljazeera.com/news/2026/11/17/ukraine-holds-peace-talks-with-us-europe-as-conflict-escalates">Al Jazeera, Ushakov&rsquo;s position</a></li>
+<li><a href="https://www.bbc.com/news/articles/cw772jk4rvmxo">BBC, Kyiv bridges</a></li>
+<li><a href="https://www.dw.com/en/ukraine-russian-strikes-hit-bridges-in-kyiv-mayor-says/live-79964446">DW</a></li>
+<li><a href="https://x.com/i/status/2122470822329700654">@F_CEAFE repost, Kyiv Independent</a></li>
+<li><a href="https://t.me/s/tassagency_en">TASS, Russian state agency: Axios, IMF, Senate items</a></li>
+</ul>
+<hr>
+<h2 id="s2">Czech PM Babiš in Israel: &ldquo;no unified European air-defence solution&rdquo;, so Prague looks at Arrow 3 and Barak</h2>
+<p><strong>Czech Prime Minister Andrej Babiš met Benjamin Netanyahu in Jerusalem on 16 November, their first meeting since March 2021, at the start of a visit running to 18 November with his defence, foreign and health ministers and the chief of the general staff (ČTK, Domácí Politika).</strong></p>
+<p>Afterwards Babiš told reporters that the Czech Republic should buy more air-defence systems as soon as possible rather than wait until 2030, because a unified European air-defence solution will probably not be found (ČTK). The delegation met the makers of Israel&rsquo;s Arrow 3, and Babiš also mentioned Barak, which Slovakia has bought. Defence Minister Jaromír Zůna said Prague is ready to sign for more Spyder All-in-One systems around the turn of the year and then open a tender for protection against tactical ballistic missiles. Netanyahu said &ldquo;Israeli air defense systems are already protecting Czech skies&rdquo;, that &ldquo;Europe is not a spectator; Europe is a target&rdquo;, and praised Babiš: &ldquo;There are weak leaders who turn their backs on Israel, and you stand tall&rdquo; (Israeli PMO).</p>
+<p><strong>Why it matters for Europe.</strong> This is a Member State deciding on its own, and in public, that Europe will not deliver, and buying from outside the Union. Every crown spent on Arrow 3, Barak or Spyder is industrial work, R&amp;D and data control that leave Europe, and future upgrades depend on a non-European supplier. European alternatives exist (MBDA&rsquo;s SAMP/T NG and CAMM, Diehl&rsquo;s IRIS-T SLM, Kongsberg/Raytheon NASAMS). Babiš&rsquo;s reasoning, &ldquo;Europe won&rsquo;t agree, so we buy abroad&rdquo;, also makes itself true: national purchases are exactly what stops a European solution from forming. The visit also shows Prague breaking with the line of the governments that Netanyahu calls &ldquo;weak&rdquo;, on the same day Germany&rsquo;s foreign minister asked Israel to let more aid into Gaza before winter (Anadolu).</p>
+<p><strong>What to watch.</strong> Czech army&rsquo;s choice of systems after the delegation returns; any European (EDA/ESSI) reaction; Babiš&rsquo;s meetings with Israel&rsquo;s coalition negotiators on 17 Nov.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122410836203295031">Israeli PMO</a></li>
+<li><a href="https://x.com/i/status/2122398654678085671">Netanyahu</a></li>
+<li><a href="https://www.ceskenoviny.cz/zpravy/babis-chce-urychlit-nakup-protivzdusne-obrany/2902798">ČTK</a></li>
+<li><a href="https://domacipolitika.cz/zpravy/babis-v-jeruzaleme-poprve-od-2021-jednal-s-netanjahuem-o-obrane/">Domácí Politika</a></li>
+<li><a href="https://embassies.gov.il/nepal/en/news/prime-minister-netanyahu-meets-czech-prime-minister-babis-17112026">Israeli MFA, full statement</a></li>
+<li><a href="https://x.com/i/status/2122551660291424758">Anadolu morning briefing: German FM on Gaza aid</a></li>
+</ul>
+<hr>
+<h2 id="s3">Carney meets Xi in Shenzhen: more tariff relief and a &ldquo;strategic partnership&rdquo;, while Europe watches from outside APEC</h2>
+<p><strong>On 17 November, Canadian Prime Minister Mark Carney met Xi Jinping in Shenzhen ahead of the APEC leaders&rsquo; meeting (18–19 November).</strong></p>
+<p>It was their third meeting since Carney took office and their second in China this year. The two sides extended and expanded their preliminary trade arrangement: China gives tariff relief on about C$400m of Canadian exports (C$116m of frozen pork, C$285m of fish and seafood), and Canada extends by two years its remission of tariffs on some Chinese steel and aluminium, adding 32 more tariff items &ldquo;for which Canadian supply is insufficient or unavailable&rdquo; (Office of the Prime Minister of Canada). Ottawa says it has restored market access for more than 90% of the trade hit by tariff actions, nearly C$7.5bn of exports. Bloomberg and AP frame the meeting as Canada looking beyond the United States for trade. Beijing, for its part, said the first Xi–Trump–Putin summit on 19 November would be &ldquo;conducive to global stability&rdquo; and recalled that the three countries &ldquo;fought side by side&rdquo; in the Second World War. Kyodo read this as a veiled warning to Japan, whose government said it would &ldquo;closely monitor&rdquo; the three-way relations.</p>
+<p><strong>Why it matters for Europe.</strong> Canada, a NATO member squeezed by US tariffs, is diversifying on its own terms. It cut its 100% EV tariff to 6.1% for a 49,000-vehicle quota in January and now trades steel remission for farm access. That is the kind of autonomous hedging CEAFE argues Europe should practise as a bloc rather than leaving each capital to deal alone. Meanwhile, the Washington Post reports that hours after the White House ordered Commerce to close the remote-access loophole for AI chips, Trump said he understood &ldquo;both sides&rdquo;. US export-control pressure, which Europeans such as ASML apply in full, is bargained over in Washington&rsquo;s own talks with Beijing.</p>
+<p><strong>What to watch.</strong> APEC CEO Summit (Putin speaks 18 Nov); Trump–Xi bilateral and the trilateral on 19 Nov; whether Japan&rsquo;s concerns are raised.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.pm.gc.ca/en/news/news-releases/2026/11/17/prime-minister-carney-advances-canadas-strategic-partnership-china">PMO Canada</a></li>
+<li><a href="https://www.cbc.ca/news/politics/canada-china-carney-xi-9.7424608">CBC</a></li>
+<li><a href="https://www.straitstimes.com/asia/china-canada-relations-more-stable-carney-says-as-he-meets-xi">Reuters via Straits Times</a></li>
+<li><a href="https://apnews.com/article/apec-china-canada-xi-carney-1427deb4175e27c61efec6ee8eef36e8">AP</a></li>
+<li><a href="https://x.com/i/status/2122536482099396813">Bloomberg</a></li>
+<li><a href="https://x.com/i/status/2122518655204573637">Xinhua</a></li>
+<li><a href="https://x.com/i/status/2122393349881799074">Carney</a></li>
+<li><a href="https://english.kyodonews.net/articles/-/91594">Kyodo</a></li>
+<li><a href="https://x.com/i/status/2122547789150212357">Washington Post, chip loophole</a></li>
+<li><a href="https://x.com/i/status/2122457411797533156">Russian MFA repost, APEC 2035 bid</a></li>
+</ul>
+<hr>
+<h2 id="s4">Manila: Guterres&rsquo;s last ASEAN–UN summit calls for Security Council reform, as Trump arrives for the Quad</h2>
+<p><strong>UN Secretary-General António Guterres told ASEAN leaders in Manila on 16 November that &ldquo;our increasingly multipolar world requires a multilateral system that effectively supports and represents rising economic and political powers like yours&rdquo;.</strong></p>
+<p>He called for reform of the Security Council and of the international financial institutions, an end to the &ldquo;epic&rdquo; suffering in Myanmar, and the release of Aung San Suu Kyi (UN News). It was his final ASEAN–UN summit before he leaves office at the end of the year. He named the &ldquo;blockages in the Strait of Hormuz and the Red Sea&rdquo; and the Black Sea situation as direct costs for the region. Malaysia&rsquo;s Anwar Ibrahim used the same summit to condemn forced displacement in the West Bank and call for full UN membership for Palestine (Anadolu). The 29th ASEAN Plus Three summit took place on 17 November. Donald Trump flies into Manila on 17 November for the first Quad leaders&rsquo; meeting in two years before going on to China (Reuters), and Russia&rsquo;s Sergei Lavrov has arrived for the 21st East Asia Summit (Russian MFA, TASS).</p>
+<p><strong>Why it matters for Europe.</strong> Asia&rsquo;s diplomatic week is running through formats where the EU has no seat (EAS, Quad, APEC trilateral), while Guterres&rsquo;s call for representation of &ldquo;rising powers&rdquo; implicitly questions the weight of the two European permanent members. Europe&rsquo;s influence in this region depends on acting as one trading and regulatory power.</p>
+<p><strong>What to watch.</strong> Quad leaders&rsquo; statement (watch for language on China, critical minerals and Pax Silica); EAS chair&rsquo;s statement.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://news.un.org/en/story/2026/11/1168809">UN News</a></li>
+<li><a href="https://x.com/i/status/2122473036645576804">UN News</a></li>
+<li><a href="https://x.com/i/status/2122432032500277438">Anadolu, Anwar</a></li>
+<li><a href="https://x.com/i/status/2122527512043667926">ASEAN, APT summit</a></li>
+<li><a href="https://x.com/i/status/2122546884879548517">ASEAN</a></li>
+<li><a href="https://x.com/i/status/2122505039201677605">X post 2122505039201677605</a></li>
+<li><a href="https://x.com/i/status/2122515077412663688">Reuters, Quad</a></li>
+<li><a href="https://x.com/i/status/2122505684491145458">Russian MFA, Lavrov</a></li>
+</ul>
+<hr>
+<h2 id="s5">Zelensky asks Europe for missile &ldquo;parity&rdquo; as Putin hails the North Korean &ldquo;brotherhood in arms&rdquo;</h2>
+<p><strong>Zelensky said on 16 November that Russia &ldquo;is receiving dozens of ballistic missiles a month from North Korea&rdquo;, which hones its missiles by having them used in the war, and that &ldquo;Ukraine also needs clear parity&rdquo;.</strong></p>
+<p>He said &ldquo;Europe has missiles capable of carrying out effective strikes&rdquo; and that talks with Germany, France, the UK and Italy are under way on &ldquo;greater supplies of comparable weapons&rdquo;, and on destroying Russia&rsquo;s ballistic launchers. The same evening Vladimir Putin received Jo Yong-won, a secretary of the Workers&rsquo; Party of Korea Central Committee, and told him that the participation of North Korean units &ldquo;in the liberation of the Kursk Region has opened a new chapter in Russia–DPRK brotherhood in arms&rdquo; (Russian MFA, Kremlin; official Russian sources).</p>
+<p><strong>Why it matters for Europe.</strong> Kyiv is asking European capitals, not Washington, for long-range strike weapons. That is a test of whether Europe&rsquo;s own missile industry (MBDA&rsquo;s Storm Shadow/SCALP, Taurus) can be mobilised at scale, and of whether Europeans decide together or one by one.</p>
+<p><strong>What to watch.</strong> Any European decision in Berlin on 19 Nov; Pyongyang&rsquo;s reaction to Trump&rsquo;s offer to meet Kim.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122395486216740928">Zelensky); (Russian MFA (1)</a></li>
+<li><a href="https://x.com/i/status/2122427826980941843">Zelensky); (Russian MFA (2)</a></li>
+<li><a href="https://t.me/MFARussia/33386">Zelensky); (Russian MFA (3)</a></li>
+<li><a href="https://t.me/s/news_kremlin_eng">Kremlin, 16 Nov 20:11 UTC</a></li>
+</ul>
+<hr>
+<h2 id="s6">Update: Burnham sets out his EU reset and opens a debate on the &ldquo;long-term relationship&rdquo;</h2>
+<p><strong>In his Lord Mayor&rsquo;s Banquet speech on 16 November, UK Prime Minister Andy Burnham said: &ldquo;we have lost more than we have gained in the last 10 years.</strong></p>
+<p>The hard Brexit we were given is not good enough for Britain.&rdquo; He said Friday&rsquo;s UK–EU summit in Brussels would mean &ldquo;presenting legislation to Parliament next week&rdquo;, with nothing that crosses Labour&rsquo;s red lines before a general election. After the summit, he said, London will &ldquo;initiate a discussion with our EU partners about options for our long-term relationship&rdquo;, to be presented to the next Parliament (GOV.UK transcript). In the same speech he pledged to &ldquo;maintain our unique bond with the United States as our largest single trading partner and our key ally in defence&rdquo;, and said Britain would support mediators seeking a deal that ends the Iran war and reopens Hormuz.</p>
+<p><strong>Why it matters for Europe.</strong> A British government now says publicly that leaving the EU did not work. At the same time, the UK keeps its defence anchored on the US (Trident, F-35, Skynet dependencies). Any security pact with the EU should be judged on whether it strengthens European industry, not only on access.</p>
+<p><strong>What to watch.</strong> Text of the UK bill; Friday&rsquo;s summit conclusions, especially any defence/SAFE participation terms.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.gov.uk/government/speeches/pm-speech-at-the-lord-mayors-banquet-16-november-2026">GOV.UK</a></li>
+<li><a href="https://www.bbc.co.uk/news/articles/crp3e1n5kezpo">BBC</a></li>
+<li><a href="https://x.com/i/status/2122441160727683223">Anadolu</a></li>
+<li><a href="https://x.com/i/status/2122487380972351628">Al Jazeera, Iran</a></li>
+</ul>
+<hr>
+<h2>See also</h2>
+<ul>
+<li>Russian aircraft violate Japanese airspace and probe Korea&rsquo;s and Taiwan&rsquo;s air zones before APEC — see Conflicts.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

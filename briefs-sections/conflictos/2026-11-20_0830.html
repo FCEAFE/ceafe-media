@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTS — Friday, 20 November 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTS</h1>
+      <p class="list-date">Friday, 20 November 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> 19 November 2026 about 19:00 to 20 November about 07:15 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Conflicts section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Update: Russia hits Kyiv&rsquo;s bridges in mass missile and drone strike after Putin vows revenge for Crimean Bridge</h2>
+<p><strong>Russia launched a large-scale missile and drone attack on Ukraine overnight into 20 November.</strong></p>
+<p>In Kyiv, three employees of the city water utility were killed and about 15 people injured, and Mayor Vitali Klitschko reported that three bridges and critical infrastructure were damaged (https://x.com/i/status/2123652405220818965, https://x.com/i/status/2123643824824107089). Local reporting names the Podilsko-Voskresenskyi, Darnytskyi and Southern bridges across the Dnipro, with power, heat and water outages (Kyiv Independent, hromadske). Explosions were also heard in Lviv and Ivano-Frankivsk in western Ukraine shortly before 07:00 local time (https://x.com/i/status/2123643826539475177). The attack followed a day of Russian jet-drone raids on Kyiv and Putin&rsquo;s warning, delivered from China, that Russia&rsquo;s “response will be much more painful” after Ukraine&rsquo;s repeated strikes on the Crimean Bridge (quote relayed, https://x.com/i/status/2123505071464026290; original not checked this run). Russia&rsquo;s Defence Ministry (state source) claims it struck port infrastructure in the Odessa region, vessels “used in the interests of the AFU”, and defence-industry, energy and transport targets in Kyiv and five regions (TASS, t.me/s/tassagency_en). Earlier, EU High Representative Kaja Kallas said the EU would summon Russia&rsquo;s envoy over damage to European and other diplomatic premises in Kyiv (https://x.com/i/status/2123498192293490699).</p>
+<p><strong>Why it matters for Europe.</strong> Striking bridges in a European capital is a deliberate escalation in the action–reaction cycle with Ukraine&rsquo;s deep strikes, and it lands while Europeans are funding Ukraine&rsquo;s 2026–27 needs almost alone. Damage to EU diplomatic premises makes the attacks a direct matter for the Union.</p>
+<p><strong>What to watch.</strong> Final casualty toll and how long the bridges stay closed; Ukraine&rsquo;s air-defence figures; whether Kyiv answers with new deep strikes; the EU summons of the Russian envoy.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123652405220818965">X</a>, <a href="https://x.com/i/status/2123643824824107089">X</a>, <a href="https://x.com/i/status/2123643826539475177">X</a>, <a href="https://kyivindependent.com/russia-launches-mass-missile-attack-against-ukraine-after-putin-vows-revenge/">kyivindependent.com</a>, <a href="https://www.telegraph.co.uk/world-news/2026/11/20/russia-strikes-ukraine-kyiv-bridges/">telegraph.co.uk</a>, <a href="https://t.me/s/mod_russia_en">t.me</a>, <a href="https://t.me/s/tassagency_en">t.me</a></p>
+<hr>
+<h2 id="s2">Ukrainian drones hit Russia&rsquo;s Dorogobuzh nitrate plant</h2>
+<p><strong>Ukrainian attack drones struck the Dorogobuzh Nitrate Plant in Russia&rsquo;s Smolensk region on the evening of 19 November, according to @OSINTtechnical, which describes it as a major producer of nitrogen compounds used in explosives manufacturing and shared geolocated video (https://x.com/i/status/2123571745797841393).</strong></p>
+<p>The Kyiv Independent reported that Ukrainian drones “reportedly” struck a Russian chemical plant (https://x.com/i/status/2123615348054188112). Defense News reports that Ukraine plans to double drone supplies and triple deep strikes with European support, despite Washington asking it to prioritise front-line defence (defensenews.com, Europe section).</p>
+<p><strong>Why it matters for Europe.</strong> Ukraine&rsquo;s long-range campaign against Russia&rsquo;s explosives supply chain is increasingly European-backed; it is also the trigger Moscow cites for its strikes on Kyiv (topic 1).</p>
+<p><strong>What to watch.</strong> Official Ukrainian General Staff confirmation and damage assessment; Russian MoD claims of interceptions.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123571745797841393">X</a>, <a href="https://x.com/i/status/2123615348054188112">X</a>, <a href="https://www.defensenews.com/global/europe/">defensenews.com</a></p>
+<hr>
+<h2 id="s3">Yemen war: government forces battle the Houthis in Marib and Al-Jawf; Houthis claim new strikes on Riyadh and Jubail after the PIF Tower hit</h2>
+<p><strong>The Yemen war goes on: the army of Yemen&rsquo;s Saudi-backed government says that, under Operation &lsquo;Dawn of Yemen&rsquo;, its forces are fighting the Houthi militia in northern Marib and south-eastern Al-Jawf with warplanes, drones and rockets, and has released footage of the combat (<a href="https://x.com/i/status/2123479167794606091">@YemenAFMediaeng</a>); the Houthis, for their part, attacked government (PLC) positions in Raghwan, Marib (@war_noir).</strong></p>
+<p>The war has now reached Saudi Arabia&rsquo;s financial heart: on 19 November a Houthi attack damaged several floors of the Public Investment Fund (PIF) Tower in Riyadh&rsquo;s King Abdullah Financial District, with no injuries reported by Saudi Civil Defence.</p>
+<p>Yemen&rsquo;s Ansarallah (Houthis) said they targeted Riyadh&rsquo;s King Abdullah Financial District twice on 19 November, the Sadara petrochemical complex in Jubail, Khamis Mushait air base and Riyadh&rsquo;s King Khalid International Airport (statement relayed by @MenchOsint, https://x.com/i/status/2123485617078095979). The Saudi-led coalition said it intercepted two Houthi drones heading for southern Saudi Arabia (https://x.com/i/status/2123597462405583248). Al-Masirah (Houthi-run) reported two Saudi airstrikes on Sanaa, including a warehouse hit for a second time (relayed by Tasnim, Iranian state-aligned). Egypt condemned the Houthi attacks on civilian and economic facilities in Riyadh (https://x.com/i/status/2123626804221239344).</p>
+<p><strong>Why it matters for Europe.</strong> The Saudi–Houthi war is spreading to the Gulf&rsquo;s economic centres and energy plants, close to the Red Sea and Hormuz routes that carry Europe&rsquo;s trade and energy.</p>
+<p><strong>What to watch.</strong> Damage confirmation at Jubail; further alerts over Riyadh; any Houthi move against Red Sea shipping.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123485617078095979">X</a>, <a href="https://x.com/i/status/2123597462405583248">X</a>, <a href="https://x.com/i/status/2123626804221239344">X</a>, <a href="https://t.me/s/Tasnimnews_en">t.me</a></p>
+<hr>
+<h2 id="s4">Update: US widens Iran blockade to ship-to-ship transfers; Mossad chief pressed for new campaign; Iran weighs tanker “swarm”</h2>
+<p><strong>The US has expanded its blockade of Iranian ports to include any ship that receives cargo by ship-to-ship transfer from a vessel loaded in Iran, according to a Joint Maritime Information Center advisory reported by USNI News (https://x.com/i/status/2123520682445398206).</strong></p>
+<p>Since the blockade was reinstated in July, after the Iran–US memorandum of understanding failed, US ships have redirected about 150 vessels and disabled five (CENTCOM, 11 Nov). USNI counts 16 attacks on commercial shipping so far in November and 34 in October, the highest since the war began on 27 February; the IMO counts 25 seafarer deaths. The Wall Street Journal reported that Mossad chief Roman Goffman urged the Trump administration during a visit to Washington last week to launch a new multi-day air campaign against Iran (via Iran International, https://x.com/i/status/2123606354296508926). Israel&rsquo;s N12 says Tehran is considering a breakout attempt with loaded tankers (unconfirmed, https://x.com/i/status/2123493602399514661). Iran&rsquo;s Foreign Ministry spokesman Esmaeil Baghaei said US allegations about Iranian biological or chemical weapons are a pretext for invasion, comparing them with Colin Powell&rsquo;s 2003 UN presentation (relayed by TASS, Russian state media). Iranian lawmaker Esmail Kowsari called on regional countries to push the United States out of the region (https://x.com/i/status/2123649834443845915).</p>
+<p><strong>Why it matters for Europe.</strong> A wider blockade and talk of a new Israeli–US campaign keep Gulf energy flows at risk and raise the chance of new shocks to European fuel prices, while Europe has little say in the escalation.</p>
+<p><strong>What to watch.</strong> Any Iranian tanker convoy towards the blockade line; US decisions on new strikes; UKMTO/JMIC incident reports.</p>
+<p><strong>Sources:</strong> <a href="https://news.usni.org/2026/11/19/u-s-expands-iranian-blockade-as-ship-attacks-continue">news.usni.org</a>, <a href="https://x.com/i/status/2123606354296508926">X</a>, <a href="https://x.com/i/status/2123493602399514661">X</a>, <a href="https://x.com/i/status/2123649834443845915">X</a>, <a href="https://t.me/s/tassagency_en">t.me</a></p>
+<hr>
+<h2 id="s5">Update: Iran war drains US munitions — GAO and CSIS warn</h2>
+<p><strong>A Government Accountability Office study warns that “DoD does not have an overarching plan that links munitions production and funding to requirements”, and that the war on Iran is adding pressure to stockpiles (Defense News, https://x.com/i/status/2123492968522768473; Al Jazeera, https://x.com/i/status/2123608705459712098).</strong></p>
+<p>A new CSIS report says the Iran war has strained US missile stocks, raising concerns about readiness for a possible conflict with China (https://x.com/i/status/2123528248634032617). A Pentagon nominee told senators the Iran war has cost the US over $48 billion in munitions, equipment replacement and operating expenses (relayed, https://x.com/i/status/2123520480715931711).</p>
+<p><strong>Why it matters for Europe.</strong> US munitions shortages compete directly with European orders and Ukraine&rsquo;s PURL deliveries. They show why Europe needs its own production capacity, built together, as no single member state can do it alone.</p>
+<p><strong>What to watch.</strong> Reconciliation and appropriations figures for munitions; delivery delays to European customers.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123492968522768473">X</a>, <a href="https://x.com/i/status/2123608705459712098">X</a>, <a href="https://x.com/i/status/2123528248634032617">X</a>, <a href="https://x.com/i/status/2123520480715931711">X</a></p>
+<hr>
+<h2 id="s6">European deterrence: first France–Sweden nuclear exercise</h2>
+<p><strong>France and Sweden held their first joint nuclear-deterrence exercise; the defence ministries said it involved no actual nuclear weapons and was not aimed at any country (Defense News).</strong></p>
+<p>An OSINT analyst found the French A330 MRTT tanker that supported the exercise, callsign TOTAL95, taking off from Istres nuclear air base on 16 November (https://x.com/i/status/2123516914379227166).</p>
+<p><strong>Why it matters for Europe.</strong> French nuclear cooperation with a Nordic partner is a concrete step towards a European dimension of deterrence, built jointly rather than state by state.</p>
+<p><strong>What to watch.</strong> Further European partners joining French deterrence exercises.</p>
+<p><strong>Sources:</strong> <a href="https://www.defensenews.com/global/europe/">defensenews.com</a>, <a href="https://x.com/i/status/2123516914379227166">X</a></p>
+<hr>
+<p><strong>See also:</strong> Update: Trump phones Berlin: &ldquo;Friedrich, you can make a call to Putin&rdquo;; Kushner says Russia accepts Europeans at the table — see World.</p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Conflicts. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

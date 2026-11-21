@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — viernes, 20 de noviembre de 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">viernes, 20 de noviembre de 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 20 de noviembre de 2026, de las 07:00 a las 13:50 aproximadamente (hora de Madrid): todo lo nuevo desde la edición de las 08:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Actualidad de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<p><strong>TEMA DEL DÍA</strong></p>
+<h2 id="s1">La cumbre UE–Reino Unido sella los primeros acuerdos de relanzamiento desde el Brexit: movilidad juvenil, comercio agroalimentario y mercados de carbono vinculados</h2>
+<p><strong>La segunda cumbre UE–Reino Unido en Bruselas terminó con el anuncio de la oficina del primer ministro Andy Burnham: «El acuerdo está hecho; las negociaciones han concluido» sobre tres acuerdos: un programa de experiencia juvenil, un acuerdo agroalimentario (MSF) y la vinculación de los sistemas de comercio de emisiones de la UE y el Reino Unido (The Guardian; Euronews).</strong></p>
+<p>El programa juvenil permitirá a 100.000 jóvenes de cada lado vivir, trabajar o estudiar en el otro durante un máximo de tres años, y estará en marcha a más tardar en enero de 2030. El acuerdo MSF tiene como objetivo el 1 de marzo de 2028, y el Reino Unido vuelve a Erasmus+ el 1 de enero de 2027 (The Guardian; Euronews; Al Jazeera). Una declaración del Consejo de la UE establece que la adopción de los tres acuerdos «no precederá a la conclusión de las negociaciones» sobre la igualdad de trato de los estudiantes de la UE en las tasas universitarias, previstas en un plazo de seis meses (Politico Europe; Rapporteur). La matrícula de estudiantes de la UE en universidades británicas cayó un 57 % entre 2020/21 y 2023/24 (Migration Observatory, vía Euronews). Burnham: «Es un buen día para Gran Bretaña, es un buen día para Europa… hay algo de esperanza en el horizonte» para los jóvenes británicos.</p>
+<p>Ese mismo día, la presidenta de la Comisión, Ursula von der Leyen, anunció que la UE desembolsa casi 8.000 millones de euros a Ucrania, «el mayor pago hasta ahora»: 7.900 millones en el marco del Mecanismo para Ucrania. Su vídeo cifra el apoyo total de la UE a Ucrania en 245.500 millones de euros desde 2022, es decir, desde el inicio de la guerra de Ucrania (@vonderleyen).</p>
+<p><strong>Contexto:</strong> La cumbre, organizada por António Costa y von der Leyen, estaba prevista para julio, pero se aplazó tras la dimisión de Keir Starmer; los tres acuerdos se iniciaron bajo Starmer (The Guardian; avance de la edición de las 08:30). El borrador de declaración conjunta dice que ambas partes están «aplicando la Asociación de Seguridad y Defensa UE-Reino Unido» (Agence Europe).</p>
+<p><strong>Por qué importa a Europa.</strong> La Unión negoció como un solo bloque y mantuvo su capacidad de presión al vincular el paquete a las tasas universitarias: así obtiene un bloque de 27 condiciones de un gran vecino que ninguno de sus miembros lograría por sí solo. Las normas sanitarias y fitosanitarias y el comercio de emisiones son ámbitos del mercado único, de modo que es el primer paso de vuelta hacia sus reglas desde el Brexit. Enrico Letta (reposteado por @F_CEAFE) presentó el cuadro Trump–Xi–Putin como el mejor argumento para completar el mercado único, y Thierry Breton preguntó: «¿Francia sola, Alemania sola, son lo bastante grandes…?». Los 245.500 millones para Ucrania son un nivel de apoyo que solo la Unión en su conjunto puede sostener.</p>
+<p><strong>Qué vigilar.</strong> La declaración conjunta final; la negociación de las tasas universitarias en seis meses; la cooperación en seguridad y defensa y el posible acceso británico a SAFE.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.theguardian.com/world/live/2026/nov/20/uk-eu-european-union-brexit-deal-andy-burnham-latest-news-updates">The Guardian (directo)</a>, <a href="https://www.euronews.com/2026/11/20/young-europeans-win-a-route-back-to-the-uk-but-not-cheaper-university-fees-yet">Euronews</a>, <a href="https://www.politico.eu/article/brussels-to-link-uk-eu-summit-package-to-tuition-fee-demands/">Politico Europe</a>, <a href="https://www.rapporteur.com/news/tuition-fees-talks-delay-adoption-of-eu-uk-deal/">Rapporteur</a>, <a href="https://www.aljazeera.com/news/2026/11/20/eu-and-uk-seal-reset-deal">Al Jazeera</a>, <a href="https://x.com/i/status/2123734797474218034">@vonderleyen</a>, <a href="https://x.com/i/status/2123740316520132788">@AJEnglish</a>, <a href="https://x.com/i/status/2123731768465334414">@FT</a>, <a href="https://x.com/i/status/2123744465181454448">Burnham (vídeo)</a>, <a href="https://x.com/i/status/2123717996833132609">@EU_Eurostat</a>, <a href="https://x.com/i/status/2123695566299537889">Letta</a>, <a href="https://x.com/i/status/2123729601113592193">Breton</a></p>
+<hr>
+<p><strong>DESTACADO</strong></p>
+<h2 id="s2">«Clarity» de Helsing frente a Maven de Palantir: la apuesta europea por el software que dirige el targeting de la OTAN</h2>
+<p><strong>El 20 de noviembre @F_CEAFE republicó el mensaje de Helsing: «Necesitamos controlar nuestro destino.</strong></p>
+<p>Por eso lanzamos Clarity, nuestra plataforma soberana europea de inteligencia agéntica» (Helsing en X). Clarity, presentada el 11 de noviembre, emplea «cientos de agentes» para fusionar imágenes de satélite, vídeo de drones, señales, fuentes abiertas e informes de campo, señalar medios adversarios y preparar los datos de ataque para «el efector más adecuado», con una persona que valida cada amenaza y cada traspaso (Helsing). Está «construida en Europa, bajo control europeo», funciona en infraestructura propiedad de cada fuerza armada, sigue estándares OTAN y se conecta a efectores «de cualquier fabricante». Gundbert Scherf, cofundador y codirector ejecutivo: «Una capacidad tan crítica debe ser soberana» (Kyiv Independent).</p>
+<p><strong>Contexto:</strong> la OTAN ya utiliza el Maven Smart System de Palantir, y Ucrania ha usado tecnología de Palantir para análisis de inteligencia y planificación de ataques de largo alcance (Kyiv Independent). Por ahora no se conoce ningún cliente ni fecha de entrada en servicio de Clarity (The Next Web; Startuprad). La republicación coincide con la advertencia del embajador de EE. UU. ante la UE contra una propuesta legislativa (#CADA) que, según él, limitaría a «las grandes tecnológicas estadounidenses» en la economía europea de la IA: «EE. UU. no es el enemigo».</p>
+<p><strong>Por qué importa a Europa.</strong> El software que convierte los datos de los sensores en objetivos es el núcleo del mando y control moderno. Si el targeting de la OTAN funciona sobre una plataforma estadounidense, las fuerzas europeas dependen del código, las actualizaciones, el tratamiento de datos y los permisos de exportación de EE. UU.: un posible <em>kill switch</em> en la capa más sensible de la defensa. La alternativa europea existe; que gane escala depende de que los gobiernos europeos la compren juntos (FED, EDIP, SAFE, compras conjuntas), no solo del producto.</p>
+<p><strong>Qué vigilar.</strong> El primer cliente nacional o de una agencia de la OTAN; si los instrumentos de financiación de la UE o las reglas de «preferencia europea» favorecen el software soberano de mando y control; la presión de EE. UU. (CADA, la línea de Colby de comprar estadounidense).</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123703016771695050">@HelsingAI</a>, <a href="https://x.com/i/status/2123724233243271585">republicado por @F_CEAFE</a>, <a href="https://helsing.ai/clarity/">Helsing</a>, <a href="https://helsing.ai/newsroom/helsing-unveils-clarity-a-sovereign-software-platform-for-military-intelligence">y</a>, <a href="https://kyivindependent.com/helsing-launches-european-alternative-to-palantirs-military-ai/">Kyiv Independent</a>, <a href="https://thenextweb.com/news/helsing-clarity-palantir-maven-rival-karp-democrat">The Next Web</a>, <a href="https://x.com/i/status/2123686222648226269">@USAmbEU</a></p>
+<hr>
+<h2 id="s3">Un misil ruso Kh-101 cae en Polonia durante uno de los mayores ataques de la guerra; Tusk habla de «provocación intencionada»</h2>
+<p><strong>El ministro polaco de Defensa, Władysław Kosiniak-Kamysz, confirmó que un misil de crucero ruso Kh-101 violó el espacio aéreo polaco y cayó cerca de Nowy Lipowiec (distrito de Biłgoraj, voivodato de Lublin, a unos 50 km de la frontera ucraniana) poco después de las 06:30 hora local; un segundo objeto, en Rudnik nad Sanem, era probablemente otro misil, y un tercero, en Mołodycz, con toda probabilidad un dron a reacción (Onet, BBC Polska, Kyiv Independent).</strong></p>
+<p>El Mando Operacional indicó que 11 objetos amenazaron el espacio aéreo polaco y que tres entraron en él; parejas de F-16 polacos y Gripen aliados volaron toda la noche y se evacuó a los controladores del aeropuerto de Rzeszów. No hubo heridos ni daños en infraestructuras críticas. El primer ministro, Donald Tusk, reunió a ministros, mandos militares y jefes de los servicios y declaró: «Sabemos que lo que cayó en suelo polaco venía de Rusia… no parece un accidente. Parece que estamos ante una provocación intencionada», valoración que, según dijo, comparten «socios extranjeros, también dentro de la OTAN» (France 24).</p>
+<p><strong>Contexto:</strong> Kosiniak-Kamysz relacionó el momento elegido con el ejercicio de la Coalición de Voluntarios que se desarrolla en Polonia con tropas británicas y francesas, y calificó el ataque nocturno de «uno de los mayores desde el inicio de la guerra a gran escala». El ministro británico de Defensa, Wes Streeting, recién llegado a Polonia, lo calificó de «muy grave» y expresó la solidaridad del Reino Unido. <strong>La versión rusa:</strong> el Kremlin no había comentado nada a primera hora de la tarde, y medios rusos (Védomosti, Interfax) informaron de la alerta sin atribuir el origen de los objetos (Rzeczpospolita). Esa misma mañana, la portavoz de Exteriores rusa, María Zajárova (fuente oficial rusa), afirmó que la OTAN «se prepara abiertamente para un conflicto armado con Rusia» en «3-5 años» y que «Rusia no tiene intención de atacar a Estados de la OTAN». En septiembre de 2025, tras un incidente similar, el Ministerio de Defensa ruso sostuvo que «no se habían planeado» ataques contra objetivos en Polonia.</p>
+<p><strong>Por qué importa a Europa.</strong> Un misil de crucero que cae 50 km dentro de un Estado de la UE y de la OTAN es el desbordamiento más directo de la guerra de Ucrania sobre territorio de la Unión en este periodo. Cada Estado de primera línea responde por su cuenta (gabinete de crisis nacional, cazas nacionales, visitas bilaterales), mientras la defensa aérea del flanco oriental depende de rotaciones aliadas. Un escudo europeo común antiaéreo y antimisiles, construido y pagado entre todos, es la capacidad que ningún Estado miembro puede costear solo.</p>
+<p><strong>Qué vigilar.</strong> Si Varsovia pide consultas del artículo 4 de la OTAN (no anunciado por ahora); la identificación final del segundo y tercer objeto; cualquier declaración del Kremlin o del Ministerio de Defensa ruso.</p>
+<p><strong>Fuentes:</strong> <a href="https://wiadomosci.onet.pl/kraj/wladyslaw-kosiniak-kamysz-potwierdza-spadla-rakieta-ch-101/ne8lxs6">Onet</a>, <a href="https://www.bbc.com/polska/articles/c9gklm84kzemo">BBC Polska</a>, <a href="https://www.france24.com/en/europe/20261120-poland-says-russian-missile-hit-its-territory-during-attack-on-ukraine">France 24</a>, <a href="https://kyivindependent.com/poland-reports-airspace-violation-during-russian-attack-on-ukraine-investigates-debris-crash/">Kyiv Independent</a>, <a href="https://www.rp.pl/rosyjskie-drony-nad-polska/art45520101-rosyjskie-media-o-incydencie-w-polsce-rbk-cytuje-lawrowa-meduza-wskazuje-na-ataki-kremla">Rzeczpospolita</a>, <a href="https://x.com/i/status/2123698389552701453">@donaldtusk</a>, <a href="https://x.com/i/status/2123724974665912602">republicado por @F_CEAFE</a>, <a href="https://x.com/i/status/2123692969022914763">republicado por @F_CEAFE</a>, <a href="https://x.com/i/status/2123730277688025120">@wesstreeting</a>, <a href="https://x.com/i/status/2123710576849211756">@mfa_russia</a>, <a href="https://x.com/i/status/2123720157138698600">@clashreport</a></p>
+<hr>
+<h2 id="s4">Actualización: Moscú estudia la visita de tres enviados de la UE pero descarta cualquier fórmula OTAN; los europeos rechazan un acuerdo «tipo Yalta»</h2>
+<p><strong>El viceministro ruso de Exteriores, Serguéi Riabkov, dijo que se estudia una visita a Rusia de tres representantes de la UE, pero que «incluso la idea de una fórmula de cuasi pertenencia de Ucrania a la OTAN… es inaceptable para nosotros» (Interfax, vía Al Jazeera).</strong></p>
+<p>Los líderes europeos «rechazaron con firmeza un acuerdo &ldquo;tipo Yalta&rdquo;» tras la reunión de Shenzhen (Euronews), y el canciller Merz afirmó: «Rusia no ganará esta guerra» (vídeo de @clashreport). Anadolu, citando un informe sobre la llamada de Trump a la reunión de Berlín, afirma que cuestionó la continuidad de la ayuda militar europea a Ucrania. El excomisario Thierry Breton, republicado por @F_CEAFE: «¿Tienen Francia sola, Alemania sola, el tamaño para responder? Evidentemente no… es a Francia a quien se debilita cuando se debilita a Europa».</p>
+<p><strong>Contexto:</strong> ayer Kushner dijo que Rusia acepta a los europeos en un formato multilateral y una garantía «basada en el artículo 5» (edición de las 08:30, noticia 1). Las palabras de Riabkov contradicen esa lectura en lo relativo a la OTAN. No se ha dicho quiénes serían los «tres representantes de la UE».</p>
+<p><strong>Por qué importa a Europa.</strong> Por primera vez Moscú habla de enviados de la UE (no nacionales), pero la Unión sigue sin un negociador acordado. La idea de Breton es la de CEAFE: ningún Estado miembro tiene por sí solo el tamaño para sentarse en la mesa de Shenzhen.</p>
+<p><strong>Qué vigilar.</strong> Nombres y mandato de una eventual delegación de la UE; la primera ronda multilateral que Zelenski quiere «cuanto antes».</p>
+<p><strong>Fuentes:</strong> <a href="https://www.aljazeera.com/news/2026/11/20/russia-unleashes-retaliatory-barrage-on-kyiv-bridges">Al Jazeera</a>, <a href="https://x.com/i/status/2123694927033123297">@euronews</a>, <a href="https://x.com/i/status/2123736715038699781">@euronews</a>, <a href="https://x.com/i/status/2123699160230547636">@anadoluagency</a>, <a href="https://x.com/i/status/2123708988252446814">@ThierryBreton</a>, <a href="https://x.com/i/status/2123729601113592193">republicado por @F_CEAFE</a></p>
+<hr>
+<h2 id="s5">Hungría levanta su veto: Ucrania y Moldavia podrán abrir los últimos bloques de adhesión a la UE</h2>
+<p><strong>Los embajadores de la UE (Coreper) aprobaron el 20 de noviembre, sin debate, los resultados del examen analítico de los bloques 4 (agenda verde y conectividad sostenible) y 5 (recursos, agricultura y cohesión) para Ucrania y Moldavia, después de que Hungría indicara que dejaría de bloquearlos (Ukrainska Pravda; Euronews).</strong></p>
+<p>Budapest se había negado en el grupo de trabajo el 20 y el 27 de octubre y el 3 y el 10 de noviembre. La apertura formal aún exige posiciones comunes de la UE por unanimidad y conferencias intergubernamentales; el próximo Consejo de Asuntos Generales es el 15 de diciembre.</p>
+<p><strong>Contexto:</strong> el giro llega tras la victoria de Péter Magyar sobre Viktor Orbán y un acuerdo de octubre entre Kiev y Budapest sobre la minoría húngara. Orbán republicó un mensaje que afirmaba que Magyar «está a punto de retirar el veto». La Comisión ha propuesto excepciones para algunos productos agrarios ucranianos por presión de Polonia y Francia (Euronews).</p>
+<p><strong>Por qué importa a Europa.</strong> La unanimidad permitió a una sola capital congelar la ampliación durante años; esto la desbloquea, pero los Estados miembros pueden vetar «más de 100 veces» por el camino. La adhesión de Ucrania cambia el presupuesto de la Unión, la política agraria y la base industrial de defensa.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.pravda.com.ua/eng/news/2026/11/20/8063776/">Ukrainska Pravda</a>, <a href="https://www.euronews.com/2026/11/20/hungary-to-drop-veto-on-ukraines-remaining-eu-accession-clusters">Euronews</a>, <a href="https://x.com/i/status/2123719070520320469">@PM_ViktorOrban</a></p>
+<hr>
+<h2 id="s6">Xi celebra la trilateral «histórica»; CEAFE: «no apoyar la independencia de Taiwán es solo una parte de la posición estadounidense»</h2>
+<p><strong>@ChinaMilBugle citó a Xi Jinping, que calificó la trilateral de Shenzhen de «clave para la paz mundial» y dijo que «el orden posterior a la Segunda Guerra Mundial debe preservarse», recordando a China, Rusia y EE. UU. como «fuerzas antifascistas clave».</strong></p>
+<p>Al citarlo, @F_CEAFE escribió que no apoyar la independencia de Taiwán «es solo una parte de la posición estadounidense, una postura adoptada también por todos sus aliados»; a través del G7, la OTAN y el Quad, EE. UU. insiste en «la paz y la estabilidad en el estrecho de Taiwán», se opone a cambios unilaterales del statu quo y apoya la participación de Taiwán en organizaciones internacionales —como en la declaración del G7 del 11 de noviembre en París, «con participación también de la UE»—, y «no debemos pasar por alto las ventas de armas de EE. UU. a Taiwán, el tránsito de buques y aviones militares estadounidenses por el estrecho… o incluso la presencia de personal militar estadounidense en la isla». Exteriores chino respondió, vía Global Times (medio estatal chino), a preguntas sobre si Pekín propuso intercambios regulares a tres bandas.</p>
+<p><strong>Por qué importa a Europa.</strong> La UE suscribe en el G7 textos sobre Taiwán redactados en torno a la estrategia estadounidense mientras está ausente de la mesa donde EE. UU., China y Rusia hablan del orden mundial. Entretanto, Xi se reunió con Singapur, Malasia, Indonesia, Tailandia y Australia sobre comercio e IA (SCMP, propiedad de Alibaba).</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123673664423899489">@F_CEAFE</a>, <a href="https://x.com/ChinaMilBugle/status/2123579358174732334">@ChinaMilBugle</a>, <a href="https://x.com/i/status/2123684958137209321">@globaltimesnews</a>, <a href="https://www.scmp.com/news/china/diplomacy">SCMP</a></p>
+<hr>
+<h2 id="s7">Breves</h2>
+<p><strong>La factura de Zelenski: «Necesitamos 115.000 millones de dólares el año que viene» (vídeo de @clashreport, republicado por @F_CEAFE https://x.com/i/status/2123665482527965603).</strong></p>
+<p>El Ministerio de Defensa ucraniano sitúa los drones al frente de sus necesidades para 2027 y quiere fabricar más armas en Ucrania (@DefenceU https://x.com/i/status/2123709806594695445).</p>
+<ul>
+<li>Las tierras raras de Kenia, para un consorcio estadounidense: Frontier Minerals, elegida para el proyecto de tierras raras y niobio de Mrima Hill; la subsecretaria de Estado de EE. UU. para África lo presentó como un compromiso con una minería «transparente» (republicado por @F_CEAFE https://x.com/i/status/2123665732131000558 y https://x.com/i/status/2123693491989496302).</li>
+<li>Colombia dice no a tropas de EE. UU.: el presidente Abelardo De La Espriella comunicó a Washington que no permitirá fuerzas estadounidenses en operaciones contra los cárteles en suelo colombiano (NYT, republicado por @F_CEAFE https://x.com/i/status/2123666223372378277).</li>
+<li>Fábrica de Hengelo: en un debate de la televisión neerlandesa se sostuvo que la fábrica de drones de Hengelo es ya un objetivo legítimo para Rusia según el derecho de la guerra (opinión; republicado por @F_CEAFE https://x.com/i/status/2123668586451353966).</li>
+<li>Irán: el ministro Araghchi: «No sabíamos que el embajador israelí en Washington era el comandante en jefe del ejército de EE. UU.» (republicado por @F_CEAFE https://x.com/i/status/2123664881253585041); Irán prepara un convoy de petroleros en la isla de Jark para poner a prueba el bloqueo petrolero de EE. UU. (Euronews https://x.com/i/status/2123735639749239291); según un responsable del Pentágono, la guerra con Irán costaba 48.300 millones de dólares a 13 de noviembre (Xinhua, medio estatal chino https://x.com/i/status/2123670688963916256).</li>
+<li>Gaza: 1.658 palestinos muertos desde el «alto el fuego» de octubre de 2025 y 74.710 desde el 7 de octubre de 2023 (Al Jazeera, cifras del Ministerio de Sanidad de Gaza; republicado por @F_CEAFE https://x.com/i/status/2123665832115089502).</li>
+<li>Grecia y el GNL ruso: un mensaje republicado por @F_CEAFE contrasta el acuerdo de GNL de Turquía con Novatek con el veto griego de julio al 21.º paquete de sanciones (https://x.com/i/status/2123695400133722410); Zajárova elogió a Serbia por no sumarse a las sanciones de la UE (@mfa_russia https://x.com/i/status/2123744414225015250).</li>
+<li>Chips EE. UU.–China: el Congreso publicó la lista de empresas chinas que buscan chips de Nvidia; la Administración aprobó envíos de casi 900.000 chips avanzados de IA (SCMP, propiedad de Alibaba https://www.scmp.com/news/china/diplomacy).</li>
+</ul>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

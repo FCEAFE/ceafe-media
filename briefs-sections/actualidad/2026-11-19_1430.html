@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Thursday, 19 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Thursday, 19 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 19 November 2026, about 06:00 to 13:15 Europe/Madrid: everything new since the 07:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<p><strong>TOPIC OF THE DAY</strong></p>
+<h2 id="s1">Update: Shenzhen &ldquo;Declaration toward Peace&rdquo;: Trump, Xi and Putin agree on the UN, the ICC, oil products and nuclear risk, with Europe absent from the table</h2>
+<p><strong>The first-ever meeting of the leaders of the United States, China and Russia ended in Shenzhen on Thursday with a joint &ldquo;Heads of State Declaration toward Peace&rdquo; (full text published by the Russian Foreign Ministry, Russian state source).</strong></p>
+<p>Its four points: (1) as permanent members of the UN Security Council, the three &ldquo;committed to reform the U.N.&rdquo; so it can respond more effectively to global challenges; (2) they &ldquo;plan to increase the production and supply of refined petroleum products&rdquo; and &ldquo;reaffirmed the importance of stable energy flows&rdquo;; (3) they recognised &ldquo;the principle of state consent and respect for immunities of State officials&rdquo; as &ldquo;of paramount importance&rdquo; and agreed that &ldquo;the International Criminal Court and other similar bodies must not abuse their jurisdiction&rdquo;; (4) they reaffirmed that &ldquo;a nuclear war cannot be won and must never be fought&rdquo; and will hold a dialogue on reducing nuclear risks and preventing proliferation. Before the declaration, Trump told Xi and Putin that he would suggest ways to protect their countries from the ICC (clip via @Acyn). Putin said the three are &ldquo;united by our status as victorious powers in the Second World War&rdquo; and that, at Trump&rsquo;s initiative, much of the US–Russia bilateral was devoted to Ukraine. Xi called the meeting &ldquo;positive, constructive and fruitful&rdquo; and said &ldquo;positive interaction between major countries is not optional, but a must&rdquo; (Chinese MFA spokesperson; Global Times, Chinese state media). Trump left China shortly afterwards (Anadolu, Turkish state agency).</p>
+<p><strong>Context:</strong> This closes the story that opened the 07:30 edition (Putin–Trump bilateral). As we noted then, Europe is not at the table, and it still cannot agree on who speaks for it: the Dublin formula of 13 November gave the talks to &ldquo;the EU institutions and the E5&rdquo; rather than to the High Representative, Kaja Kallas, whose own words on Russia (&ldquo;if you would have more like small nations it&rsquo;s not a bad thing if the big power is actually much smaller&rdquo;, Lennart Meri Conference, 18 May 2024) have weighed against her as a negotiator (07:30 edition, story 2).</p>
+<p><strong>European reactions in this window:</strong> Former Commissioner Michel Barnier: &ldquo;En Chine aujourd&rsquo;hui il manque un drapeau, un continent: l&rsquo;Union européenne&rdquo; (&ldquo;In China today one flag, one continent is missing: the European Union&rdquo;). Former Commissioner Thierry Breton: &ldquo;Seuls, face aux empires&rdquo; (&ldquo;Alone, facing the empires&rdquo;). Polish Foreign Minister Radosław Sikorski, in Budapest: &ldquo;We will not accept any new spheres of influence in Europe&rdquo;, and on Shenzhen: &ldquo;What is this supposed to be, another Yalta?&rdquo; (clip via Clash Report). Germany&rsquo;s Minister of State for Europe, Gunther Krichbaum, at the General Affairs Council: &ldquo;Nothing about Ukraine without Ukraine, nothing about Europe without Europe.&rdquo;</p>
+<p><strong>Why it matters for Europe.</strong> Three powers have just signed, without any European present, a text on UN reform, international justice and nuclear risk — subjects that the EU and its member states treat as their own. Point 3 directly undercuts the ICC, which the EU supports as a matter of policy and which has had an arrest warrant out against Putin since March 2023; point 2 commits Washington, Moscow and Beijing to more oil-product supply at a time when the EU is still trying to cut Russian energy revenue. No EU member state alone has the weight to be invited to such a table; that is CEAFE&rsquo;s case for a single European voice instead of E3/E5 formats and competing envoys.</p>
+<p><strong>What to watch.</strong> Whether the &ldquo;dialogue on reducing nuclear risks&rdquo; gets a date and format; EU and ICC reactions to point 3; what Witkoff and Kushner tell the Coalition of the Willing in Berlin this afternoon.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123372469461328015">X</a>, <a href="https://t.me/MFARussia/33494">t.me</a>, <a href="https://t.me/MFARussia/33490">t.me</a>, <a href="https://x.com/i/status/2123351927945634175">X</a>, <a href="https://x.com/i/status/2123382291363971240">China Military Bugle</a>, <a href="https://x.com/i/status/2123354920699191354">Chinese MFA spokesperson</a>, <a href="https://x.com/i/status/2123377920182026430">Global Times</a>, <a href="https://x.com/i/status/2123359138617172080">@RapidResponse47</a>, <a href="https://x.com/i/status/2123357612280328697">@RapidResponse47</a>, <a href="https://x.com/i/status/2123358513850155283">@Acyn</a>, <a href="https://x.com/i/status/2123371188147622122">Anadolu</a>, <a href="https://x.com/i/status/2123308738043949119">Anadolu</a>, <a href="https://x.com/i/status/2123376434542416321">Anadolu</a>, <a href="https://x.com/i/status/2123321849245565393">Michel Barnier</a>, <a href="https://x.com/i/status/2123310308294812085">Thierry Breton</a>, <a href="https://x.com/i/status/2123351790766965043">Polish MFA</a>, <a href="https://x.com/i/status/2123329229643268420">Clash Report</a>, <a href="https://x.com/i/status/2123383156879294510">Germany in the EU</a>, <a href="https://www.scmp.com/news/china/diplomacy">Diplomacy page</a>, <a href="https://x.com/i/status/2123369338979971373">Euronews</a></p>
+<hr>
+<h2 id="s2">Berlin: Coalition of the Willing meets with Witkoff and Kushner as Shenzhen ends</h2>
+<p><strong>Chancellor Friedrich Merz is hosting the Coalition of the Willing at the Federal Chancellery under the motto &ldquo;United for Peace in Ukraine and European Security&rdquo;, co-chaired with France and the United Kingdom (E3), with heads of state or government from 37 countries plus António Costa, Ursula von der Leyen, Kaja Kallas and NATO Secretary General Mark Rutte (Bundesregierung).</strong></p>
+<p>President Zelensky arrived with his team: &ldquo;More than 40 partners will be represented, including the team of the American President. Ukraine&rsquo;s priorities are strengthening our air defense, energy and financial support, the diplomatic track…&rdquo; US envoys Jared Kushner and Steve Witkoff said they were heading to Berlin &ldquo;to consult with President Zelenskyy and European leaders&rdquo;; they are expected to brief on Trump&rsquo;s talks in China (Interfax-Ukraine, Kyiv Post). The agenda covers security guarantees in three parts: support for Ukraine&rsquo;s armed forces, a Multinational Force for Ukraine, and legal and political guarantees (Interfax-Ukraine).</p>
+<p><strong>Why it matters for Europe.</strong> On the same day, Europe&rsquo;s leaders meet in Berlin and learn second-hand, from US envoys, what was agreed in Shenzhen. The E3 co-chairs the format while the EU&rsquo;s institutions attend as guests: another sign of the fragmented European representation that story 1 describes.</p>
+<p><strong>What to watch.</strong> Final statement and any figures on the multinational force; the US envoys&rsquo; read-out of Shenzhen.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123377054158643397">@ZelenskyyUa</a>, <a href="https://x.com/i/status/2123319813883748586">@jaredkushner</a>, <a href="https://www.bundeskanzler.de/bk-de/aktuelles/koalition-der-willigen-in-berlin-2461162">Bundesregierung</a>, <a href="https://www.kyivpost.com/post/90536">Kyiv Post</a>, <a href="https://en.interfax.com.ua/news/general/1239165.html">Interfax-Ukraine</a>, <a href="https://www.dw.com/en/ukraines-allies-gather-in-berlin-for-coalition-of-the-willing-summit/live-79986520">DW live</a></p>
+<hr>
+<h2 id="s3">EU institutions: Commission hit by a large AI-assisted cyberattack; Swedish diplomat Lars Danielsson named sanctions envoy</h2>
+<p><strong>The European Commission was hit by a cyberattack on its internal HR and medical-reimbursement systems (Sysper, MyPMO, JSIS), first reported by Politico Europe on Thursday.</strong></p>
+<p>Commission spokesperson Thomas Regnier said the attack used &ldquo;a publicly available AI tool&rdquo;, was first detected on 22 October, involved no ransom demand and that there is no &ldquo;evidence of a data breach affecting Commission staff as a whole&rdquo;; he did not attribute it (Euronews). Politico reported that CERT-EU identified the tool as ARTEX, that the top crisis-management body met and that Tech Commissioner Henna Virkkunen briefed the College on Wednesday. Separately, the Commission has created an EU Sanctions Office under Commissioner Maria Luís Albuquerque (operational 16 January 2027) and appointed Lars Danielsson, Sweden&rsquo;s former permanent representative to the EU (2016–2023), as International Special Envoy for the Implementation of EU Sanctions from 6 February 2027, succeeding David O&rsquo;Sullivan (Commission decision of 18 Nov reported by Brussels Times, Kyiv Post; congratulated by Sweden&rsquo;s prime minister).</p>
+<p><strong>Why it matters for Europe.</strong> The Commission has been breached three times this year (January mobile-device infrastructure, March Europa.eu cloud, now HR systems, per Euronews). HR data (names, grades, home addresses) can feed targeted campaigns against EU staff: digital sovereignty and the EU&rsquo;s own cyber-defence are security matters, not IT matters. The sanctions envoy update continues the 20:30 story on the new Sanctions Office.</p>
+<p><strong>What to watch.</strong> Attribution of the attack; whether personal data was taken; the 22nd sanctions package against Russia (Kyiv Post).</p>
+<p><strong>Sources:</strong> <a href="https://www.politico.eu/newsletter/brussels-playbook/cyberattack-hits-the-commission/">Politico Europe</a>, <a href="https://www.euronews.com/2026/11/19/eu-commission-hit-by-large-scale-cyberattack-with-data-leakage-unknown">Euronews</a>, <a href="https://www.gmanetwork.com/news/topstories/world/1010091/european-commission-targeted-in-cyberattack-politico-reports/story/">Reuters via GMA</a>, <a href="https://x.com/i/status/2123348325961240987">@SouveraineTech</a>, <a href="https://x.com/i/status/2123295237754048568">Swedish PM via @SweMFA</a>, <a href="https://www.brusselstimes.com/2412656/eu-revamps-sanctions-strategy-with-new-office-and-envoy-for-enforcement">Brussels Times</a>, <a href="https://www.kyivpost.com/post/90535">Kyiv Post</a></p>
+<hr>
+<h2 id="s4">Indo-Pacific: Japan–India &ldquo;2+2&rdquo; in Tokyo, Russian bombers near Taiwan, Germany–Japan military talks</h2>
+<p><strong>Japan and India held their 4th Foreign and Defence Ministers&rsquo; Meeting (&ldquo;2+2&rdquo;) in Tokyo (Motegi, Koizumi, Jaishankar, Rajnath Singh) and issued a joint statement on a Free and Open Indo-Pacific and defence cooperation including maritime security, followed by the 19th Japan–India Foreign Ministers&rsquo; Strategic Dialogue.</strong></p>
+<p>Taiwan&rsquo;s Ministry of National Defense reported two sorties of Russian Tu-95 bombers entering its ADIZ from the south and exiting north-east of Keelung on Thursday morning, during the Shenzhen summit. Japan and Germany held their 18th military-to-military dialogue in Tokyo. Japan also reported that the Canadian frigate HMCS Regina completed Canada&rsquo;s 16th mission monitoring illicit ship-to-ship transfers with North Korean vessels.</p>
+<p><strong>Why it matters for Europe.</strong> Asia&rsquo;s middle powers deepen defence ties among themselves while the great powers meet; Germany&rsquo;s dialogue with Japan is a national track where a common EU security policy towards the Indo-Pacific is still thin.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123362045945090055">@MofaJapan_en</a>, <a href="https://x.com/i/status/2123384371898130480">@MofaJapan_en</a>, <a href="https://x.com/i/status/2123369979856953726">@MofaJapan_en</a>, <a href="https://x.com/i/status/2123356253460238657">@SpokespersonMoD</a>, <a href="https://x.com/i/status/2123309207638413732">@ModJapan_en</a>, <a href="https://x.com/i/status/2123305270394994777">@MoNDefense</a></p>
+<hr>
+<h2 id="s5">WTO: record stockpile of trade restrictions in 2026</h2>
+<p><strong>The WTO Director-General&rsquo;s annual trade-monitoring overview says the pace of new tariffs and other non-facilitating measures &ldquo;rose sharply in the first half of 2026&rdquo; and the stockpile reached a record level.</strong></p>
+<p>Members introduced 333 new restrictive measures in H1 2026 alone, more than the 300 in all of 2025, but also 466 trade-facilitating measures (391 in 2025); export-facilitating measures covered a record USD 570 billion (2.3%) of world exports, much of it temporary action linked to disruption in the Strait of Hormuz.</p>
+<p><strong>Why it matters for Europe.</strong> The EU, the world&rsquo;s largest trading bloc, depends on open rules; a rise in restrictions and the use of trade as a weapon reward scale and collective bargaining power, which only the Union as a whole has.</p>
+<p><strong>Sources:</strong> <a href="https://www.wto.org/english/news_e/news26_e/tmwto_17nov26_552_e.htm">WTO</a>, <a href="https://x.com/i/status/2123380117111980526">@wto</a></p>
+<hr>
+<p><strong>See also:</strong> Update: the EU delays its methane rules for importers by two years after US pressure — see Economy.</p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

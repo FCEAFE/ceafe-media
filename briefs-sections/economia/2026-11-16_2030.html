@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Monday, 16 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Monday, 16 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> new items since the 13:30 edition, i.e. from 11:45 to 18:45 Europe/Madrid, 16 November 2026 (incremental reads from the last post seen).</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Update: Washington closes the “remote access” loophole and extends chip controls to data centres worldwide</h2>
+<p><strong>The US Commerce Department’s Bureau of Industry and Security (BIS) issued an interim final rule on 16 November, “written by and at the direction of” the Treasury and the National Security Council, to stop companies headquartered in China and other Country Group D:5 destinations (or Macau) from using advanced US AI chips remotely through data centres in third countries.</strong></p>
+<p>Any data centre anywhere in the world that supplies more than 12 million “aggregate TPP” of compute to such companies now needs a licence, and chip exporters, foundries and data-centre operators must check their customers’ direct and indirect ownership. The rule also adds a licence requirement for advanced chips to Indonesia, Malaysia, Singapore, Thailand and Brazil, except when the buyer is a US-headquartered company, and formally rescinds the Biden-era AI Diffusion Rule. It comes three days before the Trump–Xi meeting in Shenzhen and after the Nvidia espionage scandal; a US senator has accused Commerce of failing to stem chip flows to China, while President Trump expressed confidence in Commerce Secretary Howard Lutnick (Reuters, Bloomberg). Previous coverage: 07:30 and 13:30 editions, topic 1.</p>
+<p><strong>China’s reaction (linked):</strong> No MOFCOM statement on the new rule was found by 18:45 Madrid. On 13 November, when the measure was still a bill, China’s Foreign Ministry opposed the “abuse” of export controls. Reuters quotes analysts saying that the scandal “is going to embolden China hawks and rock this very fragile trade truce”. Beijing’s counter-levers are covered in topic 5. Watch MOFCOM and the summit.</p>
+<p><strong>ALERT — not yet reposted by @F_CEAFE:</strong> US export-control story with extraterritorial reach to European data centres. No @F_CEAFE post on it in the window. Link: https://media.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology</p>
+<p><strong>Why it matters for Europe.</strong> The rule is extraterritorial. It applies to data centres “to or within any destination worldwide”, including European clouds, which must now vet their customers’ ownership for Washington. It also writes a US-only exemption into law: in the five “diversion-risk” countries, chips for US-headquartered companies need no licence, but chips for European ones do. This is the US double standard in regulatory form, with American industrial leadership treated as national security and enforced on allies’ soil. Europe has no comparable instrument to protect its own technology and complies through ASML and its cloud operators without reciprocity.</p>
+<p><strong>What to watch.</strong> Federal Register publication and comment period; MOFCOM response; Trump–Xi Shenzhen summit (19 Nov); whether the Commission or EU cloud providers comment on the due-diligence burden.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://media.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology">media.bis.gov</a></li>
+<li><a href="https://www.bis.gov/media/documents/rin-0694-ak50.pdf">bis.gov</a></li>
+<li><a href="https://apnews.com/article/nvidia-export-controls-chips-china-remote-access-60f868d3bb430b85a8657b27d421096e">apnews.com</a></li>
+<li><a href="https://www.washingtonpost.com/technology/2026/11/16/trump-officials-issue-rule-restrict-sales-ai-chips-china/">washingtonpost.com</a></li>
+<li><a href="https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/">techcrunch.com</a></li>
+<li><a href="https://x.com/i/status/2122335306380652730">NYT</a></li>
+<li><a href="https://x.com/i/status/2122356591324246049">WaPo</a></li>
+<li><a href="https://x.com/i/status/2122326334101754355">Bloomberg</a></li>
+<li><a href="https://x.com/i/status/2122364125028192294">Reuters</a></li>
+<li><a href="https://x.com/i/status/2122341432010670234">Reuters, senator</a></li>
+<li><a href="https://x.com/i/status/2122357785991971088">Bloomberg, Lutnick</a></li>
+<li><a href="https://x.com/i/status/2122328871206879311">Reuters podcast</a></li>
+</ul>
+<hr>
+<h2 id="s2">Brussels clears UniCredit–Commerzbank, the largest cross-border bank deal since the financial crisis</h2>
+<p><strong>The European Commission gave unconditional approval on 16 November under the EU Merger Regulation to UniCredit’s acquisition of control of Commerzbank, Germany’s second-largest bank.</strong></p>
+<p>The US Federal Reserve also approved it the same day, and UniCredit expects the last outstanding approval by the end of November. Executive Vice-President Teresa Ribera called it “probably the biggest cross-border banking deal we have had since the financial crisis” and a model of “positive scaling up of EU banks”. Unusually, she warned that Brussels would “react accordingly” if a national government tried to block completion (Politico). Berlin, which still holds about 13% of Commerzbank, is demanding guarantees on jobs, the Frankfurt headquarters and two supervisory-board seats.</p>
+<p><strong>Why it matters for Europe.</strong> This is a European champion built inside the single market, not a sale to an outside buyer. Even combined, UniCredit and Commerzbank would be worth only about a fifth of JPMorgan (Politico). That gap is the scale argument for the banking union and for capital-markets integration that can finance European defence and industry. It also tests whether member states will put national control ahead of building European scale.</p>
+<p><strong>What to watch.</strong> Berlin’s response; the final approval by end-November; the merger-guidelines reform.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.unicreditgroup.eu/en/press-media/press-releases/2026/november/unicredit-receives-unconditional-eu-approval-for-commerzbank-con.html">unicreditgroup.eu</a></li>
+<li><a href="https://www.politico.eu/article/eu-clears-unicredit-takeover-of-commerzbank/">politico.eu</a></li>
+<li><a href="https://www.afp.com/en/eu-clears-unicredit-takeover-germanys-commerzbank">afp.com</a></li>
+<li><a href="https://app.1848.nl/document/item/583164">Ribera remarks</a></li>
+<li><a href="https://x.com/i/status/2122374189273276588">Bloomberg</a></li>
+<li><a href="https://x.com/i/status/2122366631955370049">Reuters</a></li>
+<li><a href="https://x.com/i/status/2122345794376278417">Euronews</a></li>
+</ul>
+<hr>
+<h2 id="s3">Energy: oil slides to about $95 despite Hormuz mine attacks, but Europe’s gas cushion stays thin</h2>
+<p><strong>Brent fell 0.7% to $95.15 a barrel and WTI to $88.19 on Monday (Reuters via CNBC), extending a two-week slide.</strong></p>
+<p>The IEA said on Friday that the oil market will return to surplus in Q4, with supply at 105 mb/d, 1.7 mb/d above demand, as Middle East exports recover. This happened even though Iran’s Revolutionary Guards said two more tankers struck mines in the Strait of Hormuz on Monday, after six caught fire on Sunday and Monday (claims not independently verified). Dutch TTF gas slipped below €90/MWh on milder weather, the expected end of Norway’s Troll outage and record pipeline flows to US LNG plants (21.8 bcf on Saturday, BloombergNEF). EU storage, however, was 70.5% full on 14 November, 19.5 points below the five-year norm, and QatarEnergy has extended its force majeure until at least the end of December. Previous coverage: 13:30 edition, topic 3.</p>
+<p><strong>Why it matters for Europe.</strong> Lower prices come from US LNG and an IEA stock release, not from European resilience. Europe is swapping dependence on Gulf and Russian gas for dependence on US cargoes, which are exactly what Washington asks it to buy. The low storage level leaves the winter exposed to any new shock.</p>
+<p><strong>What to watch.</strong> EU storage trajectory against the 1 December target; Qatar force majeure; Hormuz shipping data.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.cnbc.com/2026/11/16/oil-prices-brent-wti-latest.html">cnbc.com</a></li>
+<li><a href="https://oilprice.com/Latest-Energy-News/World-News/European-Gas-Slumps-on-Milder-Weather-and-Record-US-LNG-Flows.html">oilprice.com</a></li>
+<li><a href="https://energyscan.engie.com/daily-news/oil-steadies-while-gas-power-and-carbon-prices-ease/">energyscan.engie.com</a></li>
+<li><a href="https://pespulse.com/">pespulse.com</a></li>
+<li><a href="https://x.com/i/status/2122355492550742022">AJE, mines</a></li>
+<li><a href="https://x.com/i/status/2122379191865782595">Reuters, Iraq oil</a></li>
+<li><a href="https://x.com/i/status/2122351567185580417">Reuters, Iran gas</a></li>
+</ul>
+<hr>
+<h2 id="s4">China’s export-control lever: rare-earth champions double profits, tunnel-boring machine curbs start Wednesday</h2>
+<p><strong>China’s two rare-earth national champions more than doubled their nine-month profits.</strong></p>
+<p>China Northern Rare Earth earned 3.65 bn yuan ($547 m) and China Rare Earth Resources and Technology 408 m yuan, as production quotas and consolidation pushed prices up (Reuters via Mining Weekly). NdPr oxide, the main magnet input, trades at 719,000 yuan a tonne, 62% above its level when the April 2025 export controls were introduced. Common magnets are not controlled, and China exported 48,057 t of them in January–September, up from 39,826 t a year earlier. Separately, Beijing’s new export controls on tunnel-boring machines take effect on 18 November. Exports to “sensitive” countries with territorial disputes, including India, will need a MOFCOM licence, which could delay metro, high-speed-rail and Himalayan-border tunnelling projects (The Hindu, Times of India). Bloomberg notes that US dependence on Chinese supplies “goes far beyond” rare earths.</p>
+<p><strong>Why it matters for Europe.</strong> This is the counterpart to topic 1. China answers US controls with its own, and the profits show that the lever pays. Europe faces the same dependence on Chinese rare earths but neither builds an equivalent lever nor answers either side. The Critical Raw Materials Act targets are the test.</p>
+<p><strong>What to watch.</strong> Whether Beijing uses rare earths against the BIS rule after the summit; how India responds to the tunnel-boring machine licences.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.miningweekly.com/article/chinas-top-rare-earth-firms-profits-surge-on-supply-caps-2026-11-16">miningweekly.com</a></li>
+<li><a href="https://www.thehindu.com/news/international/china-imposes-export-controls-on-tunnel-boring-machines-sought-by-india-citing-national-security/article71602536.ece">thehindu.com</a></li>
+<li><a href="https://timesofindia.indiatimes.com/business/india-business/china-to-restrict-exports-of-giant-tunnel-digging-machines-why-india-could-be-affected/articleshow/135450200.cms">timesofindia.indiatimes.com</a></li>
+<li><a href="https://x.com/i/status/2122325095645425894">Reuters</a></li>
+<li><a href="https://x.com/i/status/2122316266186686867">Bloomberg</a></li>
+<li><a href="https://x.com/i/status/2122315009053106363">Bloomberg India Editio</a></li>
+<li><a href="https://x.com/i/status/2122330497586180374">Global Times</a></li>
+<li><a href="https://x.com/i/status/2122325174867685807">AJE, Kachin rare earths</a></li>
+</ul>
+<hr>
+<h2 id="s5">Reverse flow: Italy’s Maire buys US LNG liquefaction technology from Baker Hughes</h2>
+<p><strong>Maire’s Nextchem unit agreed to buy Chart Industries’ mid-scale IPSMR and small-scale LNG process technologies, with more than 90 patents, for $220 million in cash.</strong></p>
+<p>Chart is a wholly owned subsidiary of Baker Hughes. The deal includes a 10-year cold-box supply agreement and a 12-person team, and is expected to close by the end of 2026 or in early January 2027, subject to regulatory approvals (Maire press release, 15 Nov). Maire shares rose 3.6% on Monday (Reuters).</p>
+<p><strong>Why it matters for Europe.</strong> This time a European firm acquires US intellectual property and know-how in a strategic energy technology, the opposite of the usual flow of European technology into US hands. It gives Europe a licensing position in LNG liquefaction at a time when European energy security depends on LNG. Watch whether US authorities impose conditions.</p>
+<p><strong>What to watch.</strong> Regulatory approvals before closing.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.groupmaire.com/media/filer_public/16/2d/162d9844-714a-4832-97eb-ba95cff23760/pr_51_maire_nextchem_15112026.pdf">groupmaire.com</a></li>
+<li><a href="https://live.euronext.com/en/financial-news/maire-bets-lng-projects-acquisition-baker-hughes-unit">live.euronext.com</a></li>
+<li><a href="https://x.com/i/status/2122354018684912124">Reuters</a></li>
+</ul>
+<hr>
+<h2 id="s6">A €1 bn fund for European deep tech: Plural, an early Helsing backer, closes Fund 3</h2>
+<p><strong>UK-based Plural raised €1 billion ($1.1 bn) for its third fund to back European start-ups in energy, AI infrastructure, defence and healthcare.</strong></p>
+<p>Two-thirds will go to early-stage deals and one-third to follow-ons (Reuters via StreetInsider, TechCrunch). In a post reposted on the R&amp;D list on 16 November, Commissioner Ekaterina Zaharieva highlighted the €5 billion Scaleup Europe Fund at the European Startup and Scaleup Forum.</p>
+<p><strong>Why it matters for Europe.</strong> Private European capital going into defence and AI start-ups reduces the need to sell growing companies to US buyers. Fund sizes still lag US venture capital, and the Scaleup Europe Fund is meant to close that late-stage gap.</p>
+<p><strong>What to watch.</strong> First investments; Scaleup Europe Fund deployment.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.streetinsider.com/Reuters/Plural+raises+%241.1+billion+to+back+European+technology+start-ups/27346853.html">streetinsider.com</a></li>
+<li><a href="https://techcrunch.com/2026/11/15/helsing-backer-plural-raises-1-1b-to-fund-europes-next-moonshots/">techcrunch.com</a></li>
+<li><a href="https://x.com/i/status/2122316282716393947">ReutersTech</a></li>
+<li><a href="https://x.com/i/status/2122302925578113390">RT Zahariev</a></li>
+</ul>
+<hr>
+<h2>See also</h2>
+<ul>
+<li>Update: EU lists 140 more targets over Russia&rsquo;s war — see World.</li>
+<li>Pax Silica: the US tech-security declaration — see World.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

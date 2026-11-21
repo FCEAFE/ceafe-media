@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Friday, 20 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Friday, 20 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> 20 November 2026 about 13:00 to 19:15 Europe/Madrid: everything new since the 14:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Update: Senator Cotton says Commerce Secretary Lutnick repeatedly ignored warnings that Nvidia AI chips were being smuggled to China</h2>
+<p><strong>Republican Senator Tom Cotton told the Wall Street Journal (20 November) that Commerce Secretary Howard Lutnick repeatedly ignored warnings that US AI chips were being smuggled to China before the recent Nvidia scandal became public.</strong></p>
+<p>Cotton stopped short of calling for his resignation but withheld his support: “If Howard Lutnick wanted my support, maybe he should have answered my many letters warning about these Chinese Communist Party shell companies…” (WSJ via Reuters). Cotton’s published letters to Lutnick (13 October 2025 and 20 March 2026) flagged Megaspeed, a Singapore-based spin-off of Chinese state-owned cloud firm 7Road, which imported over $4.6 billion of Nvidia hardware routed through Malaysia and Singapore, and the Super Micro smuggling indictment.</p>
+<p><strong>Why it matters for Europe.</strong> The same Commerce Department that this week extended US licensing to data centres in third countries, the EU included (BIS remote-access rule, 16 Nov), is accused at home of not enforcing the rules against diversion through US firms’ own channels. Europe’s cloud operators bear the compliance burden of an extraterritorial regime that Washington applies selectively. This is the double standard of the editorial line. Any enforcement shake-up at Commerce (Lutnick, Under Secretary Kessler) will decide how hard the rules bite on allies.</p>
+<p><strong>What to watch.</strong> Commerce/BIS reply; whether the long-delayed Megaspeed controls are published; Chip Security Act.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123838285248164000">@WSJ</a>, <a href="https://www.boursorama.com/bourse/actualites/le-senateur-republicain-tom-cotton-affirme-que-lutnick-a-ignore-ses-mises-en-garde-concernant-les-puces-destinees-a-la-chine-rapporte-le-wsj-67fb2ff5f64847590588820091e40e43">@WSJ</a>, <a href="https://www.cotton.senate.gov/wp-content/uploads/media/doc/101325lutnickletter.pdf">· Cotton letters</a>, <a href="https://www.cotton.senate.gov/wp-content/uploads/media/doc/32026chipsletter.pdf">· Cotton letters</a>, <a href="https://www.axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls">· Axios</a>, <a href="https://www.cbsnews.com/news/lutnick-nvidia-ai-chips-china/">· CBS News</a></p>
+<hr>
+<h2 id="s2">Update: China answers the House aerospace report: “politicising normal business”</h2>
+<p><strong>Reaction to the House Select Committee report “China’s wingmen” (topic 1 at 14:30).</strong></p>
+<p>Global Times (Chinese state media), quoting Chinese experts, says the calls to deny FAA certification to Chinese-built aircraft and to pull contracts from foreign defence contractors that keep investing in China’s aerospace sector “reflect a growing trend toward politicizing normal business”. It says the proposals stretch national-security claims, disrupt global aviation supply chains and reflect a Cold War mindset, and that Boeing and Airbus investments in China involve non-critical civil technology. @F_CEAFE reposted the Global Times post at 13:48.</p>
+<p><strong>Why it matters for Europe.</strong> Airbus, with its Tianjin final assembly line, and French suppliers sit between the two. Washington threatens US contracts and a presumption of denial for French takeovers, while Beijing frames any withdrawal as politicisation. So far the only official-sounding reply is Chinese state media; no MOFCOM or MFA statement was found (MFA briefing of 20 Nov did not address it), and no response from Paris, Brussels or Airbus.</p>
+<p><strong>What to watch.</strong> MOFCOM/MFA response next week; Airbus and French government position.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123760310716973464">X</a>, <a href="https://x.com/i/status/2123704916145500419">original @globaltimesnews</a>, <a href="https://www.globaltimes.cn/page/202611/1374718.shtml">· Global Times</a>, <a href="https://www.aerotime.aero/articles/us-lawmakers-airbus-contracts-china-ties">· AeroTime</a>, <a href="https://www.fmprc.gov.cn/mfa_eng/xw/fyrbt/202611/t20261120_12064156.html">· MFA briefing 20 Nov</a></p>
+<hr>
+<h2 id="s3">SK hynix (South Korea) becomes the top shareholder of Japan’s Kioxia (NAND memory) as US fund Bain exits</h2>
+<p><strong>On 20 November SK hynix disclosed that it will convert ¥129 billion (about $810 million) of convertible bonds issued by BCPE Pangea Cayman2 (SPC2), the Bain-led vehicle created in 2018 to buy Toshiba’s memory business, into 129,000 common shares, and buy the remaining 1,001 SPC2 shares from a Bain Capital affiliate for ¥100 million.</strong></p>
+<p>After completion, scheduled for 4 December, SK hynix will own 100% of SPC2 and an indirect stake of about 14.1% in Kioxia Holdings, ahead of Toshiba (10.46%). SK hynix says it has no plan to buy more Kioxia shares or to expand its role in management.</p>
+<p><strong>Why it matters for Europe.</strong> NAND flash is a core input for AI data centres, and its ownership is consolidating among Asian producers: SK hynix is No. 2 in NAND (19% share), Kioxia No. 4 (14%) (Counterpoint, via Reuters). Europe has no memory-chip maker of its own, so it depends on Korea, Japan, the US (Micron) and increasingly China for a strategic input. Not an ALERT case (no European target, no US buyer); the US element is Bain Capital’s exit.</p>
+<p><strong>What to watch.</strong> Japanese government (METI) view of a Korean rival as top shareholder; closing on 4 December.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123765854210805825">@ReutersTech</a>, <a href="https://www.sec.gov/Archives/edgar/data/2120882/000119312526469266/d79768d6k.htm">@ReutersTech</a>, <a href="https://en.yna.co.kr/view/AEN20261120005051320">· Yonhap</a>, <a href="https://www.channelnewsasia.com/business/sk-hynix-become-top-shareholder-in-rival-kioxia-after-bond-conversion-6569061">· Reuters via CNA</a>, <a href="https://asia.nikkei.com/business/markets/bonds/sk-hynix-to-become-kioxia-s-top-shareholder-with-bond-conversion">· Nikkei Asia</a></p>
+<hr>
+<h2 id="s4">Takeovers, the other direction: Italy’s Bending Spoons buys Mailchimp from Intuit for $3.68 billion</h2>
+<p><strong>Intuit (US) agreed on 19–20 November to sell its email-marketing platform Mailchimp to Bending Spoons (Milan) for an enterprise value of $3.68 billion: $3.31 billion in cash plus $368 million that Intuit will reinvest in newly issued Bending Spoons shares.</strong></p>
+<p>Closing is expected in early 2027, subject to regulatory approval. Bending Spoons, owner of WeTransfer, Vimeo, Evernote and Eventbrite, keeps buying US consumer software.</p>
+<p><strong>Why it matters for Europe.</strong> It is a rare case of a European buyer of a US tech asset, the reverse of the usual flow in which US groups buy European firms. It is not strategic infrastructure (cloud, chips, defence), so it does little to reduce Europe’s dependence on US digital platforms. Also in the window: Bloomberg on Sanofi’s pursuit of US-based Insmed, the biggest pharma takeover in years (thread from 17 Nov), another French buyer of a US company.</p>
+<p><strong>Sources:</strong> <a href="https://investors.intuit.com/news-events/press-releases/detail/1331/intuit-reports-first-quarter-results-and-enters-agreement-to-sell-mailchimp-to-bending-spoons">Intuit</a>, <a href="https://investors.bendingspoons.com/newsroom/bending-spoons-to-acquire-mailchimp">· Bending Spoons</a>, <a href="https://www.sec.gov/Archives/edgar/data/2004711/000200471126000026/bsp-20261119x6k.htm">· SEC 6-K</a>, <a href="https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/">· TechCrunch</a>, <a href="https://x.com/i/status/2123826239521587396">· TechCrunch</a></p>
+<hr>
+<h2 id="s5">Energy security — Update: Brussels puts military fuel needs into the EU emergency oil-stock rules</h2>
+<p><strong>Update to the oil-stocks overhaul (08:30 topic 4).</strong></p>
+<p>A draft Commission document seen by Euronews (20 November) would require member states to factor armed-forces demand, including sudden surges and simultaneous civilian and military pressure, into national oil-security risk assessments. They would also have to check whether refineries, ports, pipelines and distribution networks could withstand major disruptions, and report refinery closures and investments. Armed forces could tap emergency stocks temporarily in exceptional cases, and stock composition would have to reflect national use of diesel, jet fuel and other products (Bloomberg via Quartz). The Commission aims to adopt it in early December.</p>
+<p><strong>Why it matters for Europe.</strong> In a 2025 Commission impact assessment, 61.54% of EU countries reported trouble securing fuel for armed forces moving across the continent, a major hurdle for the 2030 military-readiness goal (Euronews). Europe imports most of its crude and, increasingly, refined diesel and jet fuel, while refinery closures continue; military mobility depends on that supply chain. It links the energy-dependence and defence-readiness threads.</p>
+<p><strong>What to watch.</strong> Formal proposal in early December; position of refining countries.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123770300555010093">@euronews</a>, <a href="https://www.euronews.com/2026/11/20/brussels-puts-military-fuel-needs-at-heart-of-new-oil-security-strategy">· Euronews</a>, <a href="https://qz.com/eu-oil-reserve-rules-emergency-stocks-fuel-use-111926">· Euronews</a>, <a href="https://finance.yahoo.com/energy/articles/eu-moves-overhaul-emergency-oil-193000476.html">· Yahoo Finance</a></p>
+<hr>
+<h2 id="s6">Markets and war risk: Warsaw falls 4.5%, Europe’s worst session, after Russian missiles and a drone enter Polish airspace</h2>
+<p><strong>Poland’s WIG20 fell 4.48% to 4,016.30 on 20 November, the worst performance among Europe’s markets, after Russian missiles and a jet-powered drone entered Polish airspace and crashed in the east of the country.</strong></p>
+<p>Banks and insurer PZU led the fall (PKO BP about -6.4% intraday). The zloty weakened, with the Swiss franc above 4.83 zł and the dollar at 4.06 zł (Bloomberg; mybank.pl; TVP Info).</p>
+<p><strong>Why it matters for Europe.</strong> The war risk is now priced in on the eastern flank. Poland, NATO’s biggest defence spender relative to GDP, sees capital leave on each incursion, and its banks and insurers bear the brunt. Investor confidence in the EU’s frontline economies depends on a credible common European defence and air-defence umbrella, which no single member state can provide alone. Bloomberg also notes that the AI-driven sell-off (14:30 topic 4) is following patterns seen before the dotcom crash.</p>
+<p><strong>What to watch.</strong> Polish market on Monday; NATO and EU response.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123833795321155808">@business</a>, <a href="https://x.com/i/status/2123785723786498254">@business</a>, <a href="https://mybank.pl/news/35907-wig20-traci-4-48-frank-przebija-4-83-zl-dolar-po-4-06-zl-skad-ta-wyprzedaz.html">@business</a>, <a href="https://www.tvp.info/96589772/gpw-inwestorzy-masowo-wyprzedaja-akcje-wig20-znizkuje-o-ponad-4-proc-najslabsze-banki-pko-bp-znizkuje-o-64-proc">@business</a></p>
+<hr>
+<p><strong>See also:</strong> Update: Trump calls Russian missiles in Poland &lsquo;little&rsquo; and &lsquo;by mistake&rsquo; — see World.</p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

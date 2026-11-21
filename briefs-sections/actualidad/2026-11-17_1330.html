@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Tuesday, 17 November 2026 · 13:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+@page {
+  /* Extra bottom margin so body text clears the stamped steel bar (~21 mm from the edge). */
+  margin: 12mm 14mm 24mm 14mm;
+}
+@media print {
+  .steel-footer { display: none !important; }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Tuesday, 17 November 2026 · 13:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> new items since the 07:30 edition, about 05:45 to 11:55 on 17 November 2026, Europe/Madrid.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section&rsquo;s monitoring of the Estados Def-AE / OOII and EU lists, the shared logs and @F_CEAFE posts (the section&rsquo;s written brief was not ready for this edition).</li>
+</ul>
+<h2 id="s1">EU defence ministers approve the 2026 defence review: &ldquo;cooperate earlier&rdquo;, from the planning stage</h2>
+<p><strong>EU defence ministers met in Brussels on 17 November at the Foreign Affairs Council (Defence) and the European Defence Agency (EDA) Steering Board.</strong></p>
+<p>According to the EDA, ministers approved the 2026 Coordinated Annual Review on Defence (CARD), whose core message is to cooperate earlier, from the capability planning stage, and endorsed eight collaborative opportunities &ldquo;from cruise missiles to a secure defence cloud&rdquo;. They also endorsed a joint statement on security of supply, to keep defence supply chains secure and resilient, and approved the Agency&rsquo;s 2027 budget of €78 million (+8.7%). At the same Council, Germany&rsquo;s defence minister Boris Pistorius announced $300 million for another PURL air-defence package for Ukraine, and Spain&rsquo;s minister Margarita Robles called for an EU Special Representative for Women, Peace and Security. The Council also highlighted Ukraine&rsquo;s battlefield expertise in defence technology as a potential boost to Europe&rsquo;s capabilities.</p>
+<p>If Europe wants to sit as an equal, it has to pool what is today fragmented.</p>
+<p><strong>Why it matters for Europe.</strong> The CARD diagnosis repeats what CEAFE has long argued: fragmented national planning is the root of Europe&rsquo;s capability gaps. At the same time, the German contribution goes through PURL, the NATO mechanism that pays for US-made weapons for Ukraine, so European money keeps feeding the US industrial base. An EDA budget of €78 million is tiny next to national defence budgets.</p>
+<p><strong>What to watch.</strong> Whether the eight CARD opportunities turn into funded joint programmes, and how much of Europe&rsquo;s Ukraine aid keeps flowing to US suppliers rather than European ones.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122629800036868518">EDA on X</a></li>
+<li><a href="https://x.com/i/status/2122629803299819897">EDA on X (security of supply, 2027 budget)</a></li>
+<li><a href="https://eda.europa.eu/news-and-events/news/2026/11/17/2026-defence-review--eu-ministers-endorse-eight-collaborative-opportunities--from-cruise-missiles-to-a-secure-defence-cloud">EDA news: 2026 defence review</a></li>
+<li><a href="https://eda.europa.eu/docs/default-source/applicants/web-version---2026-card-report-rev1.pdf">2026 CARD report (PDF)</a></li>
+<li><a href="https://x.com/i/status/2122638369897460159">Germany in the EU (Pistorius, PURL)</a></li>
+<li><a href="https://x.com/i/status/2122634336931369150">Spanish Defence Ministry (Robles)</a></li>
+<li><a href="https://x.com/i/status/2122615742206271866">EU Council on Ukraine&rsquo;s defence technology</a></li>
+</ul>
+<hr>
+<h2 id="s2">Update: East Asia Summit in Manila; Trump meets the Quad and ASEAN adopts a critical-minerals statement</h2>
+<p><strong>The 21st East Asia Summit took place in Manila on 17 November, as President Trump arrived for the ASEAN meetings and met the Quad leaders (US, Japan, India, Australia).</strong></p>
+<p>ASEAN published a leaders&rsquo; statement on critical minerals, which stresses the region&rsquo;s &ldquo;significant critical mineral endowment&rdquo; and its growing role as a producer, refiner and consumer of minerals. Russia&rsquo;s foreign minister Sergey Lavrov also attended the East Asia Summit and gave a press conference afterwards. Japan&rsquo;s foreign minister Motegi briefed on the Japan–India &ldquo;2+2&rdquo; meeting and the Quad leaders&rsquo; meeting. The 07:30 edition covered the ASEAN–UN summit and Trump&rsquo;s arrival.</p>
+<p><strong>Why it matters for Europe.</strong> Southeast Asia&rsquo;s minerals are a key prize in the US-led critical-minerals coalitions, and the Quad is one of the US-led blocs that group allies under Washington&rsquo;s leadership. Europe is not at the table in Manila. Its own access to these minerals depends on bilateral deals such as France–Malaysia rather than on a single EU voice.</p>
+<p><strong>What to watch.</strong> The text of the Quad leaders&rsquo; statement, and whether ASEAN&rsquo;s minerals statement favours any one bloc or keeps the region open to all partners.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122629556003893646">ASEAN on the East Asia Summit</a></li>
+<li><a href="https://x.com/i/status/2122634690246930517">ASEAN statement on critical minerals</a></li>
+<li><a href="https://x.com/i/status/2122637777560850633">White House via State Dept: Trump greets Quad leaders</a></li>
+<li><a href="https://x.com/i/status/2122625444499563006">Japan MOFA: Motegi press conference</a></li>
+</ul>
+<hr>
+<h2 id="s3">Xi receives Vietnam&rsquo;s To Lam and Mexico&rsquo;s Sheinbaum in Shenzhen before APEC</h2>
+<p><strong>China&rsquo;s leader Xi Jinping held a summit with Vietnam&rsquo;s party general secretary and president To Lam in Shenzhen on 17 November, ahead of APEC Economic Leaders&rsquo; Week.</strong></p>
+<p>According to Bloomberg, Mexican President Claudia Sheinbaum also reached out to Xi during a meeting in Shenzhen, seeking to overcome a recent trade spat. These meetings follow the Carney–Xi meeting covered in the 07:30 edition: Canada, Mexico and Vietnam, all deeply tied to the US economy, are each negotiating their own terms with Beijing.</p>
+<p><strong>Why it matters for Europe.</strong> While US neighbours and partners rebalance their ties with China, the EU is absent from APEC and has no comparable channel at this summit. CEAFE&rsquo;s view is that Europeans should cooperate with all global actors on their own terms, and do it as a bloc.</p>
+<p><strong>What to watch.</strong> Any tariff or investment announcements from the Sheinbaum–Xi meeting, and the APEC leaders&rsquo; meeting later this week.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122611146217914616">Vietnam Government Portal on X</a></li>
+<li><a href="https://en.baochinhphu.vn/to-lam-holds-summit-meeting-with-xi-jinping-ahead-of-33rd-apec-economic-leaders-week-11126111714454026.htm">Vietnam Government Portal: To Lam–Xi summit</a></li>
+<li><a href="https://x.com/i/status/2122624575657726038">Bloomberg on X (Sheinbaum–Xi)</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-11-17/sheinbaum-offers-new-era-of-mexico-china-ties-after-trade-spat">Bloomberg: Sheinbaum offers new era of Mexico–China ties</a></li>
+</ul>
+<hr>
+<h2 id="s4">UK sanctions those blocking Gaza aid and companies backing West Bank settlement expansion</h2>
+<p><strong>The UK announced on 17 November sanctions on those blocking aid from entering Gaza and on companies supporting illegal settlement expansion in the West Bank, the Foreign Office reported, sharing a post by minister Ed Miliband.</strong></p>
+<p>&ldquo;We will not be bystanders in the destruction of the two-state solution,&rdquo; the post says. Separately, Al Jazeera reported that Israeli settlers opened fire in the village of al-Duyuk near Jericho, killing a woman.</p>
+<p><strong>Why it matters for Europe.</strong> London acts on its own, outside the EU, while the Twenty-Seven remain divided on measures against settlement expansion. Each European capital acting alone carries less weight than a common EU position would.</p>
+<p><strong>What to watch.</strong> The names on the UK list, and whether EU member states follow with national or EU-level measures.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122640076467249554">FCDO on X (Ed Miliband)</a></li>
+<li><a href="https://x.com/i/status/2122542745948508263">Al Jazeera on X (al-Duyuk)</a></li>
+</ul>
+<hr>
+<h2>See also</h2>
+<ul>
+<li>ICEYE bids €2.05bn for Avio S.p.A., the Vega rocket maker — see Defence Industry.</li>
+<li>Update: Beijing answers the US chip rule — see Economy.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

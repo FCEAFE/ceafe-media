@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Wednesday, 18 November 2026 · 13:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Wednesday, 18 November 2026 · 13:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> 18 November 2026, about 06:00 to 12:00 Europe/Madrid: everything new since the 07:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<hr>
+<h2 id="s1">Washington presses ahead with a ban on Chinese optical transceivers for US data centres, over the objections of its own tech giants</h2>
+<p>The Trump administration plans to press ahead with a Federal Communications Commission (FCC) measure that would block US imports of new models of Chinese optical transceivers, the components that carry data over fibre-optic cables inside data centres, Reuters reported in an exclusive picked up by its tech desk this morning. Amazon, Google, Meta, CoreWeave and Cisco joined Microsoft in lobbying White House officials against it, warning that compliance could take up to a decade; three people familiar with the matter say it is moving forward anyway, though it could still be shelved. China holds two-thirds of the global market (Counterpoint Research), led by Eoptolink and Zhongji Innolight, which is on the Pentagon’s list of Chinese military-linked companies; US makers Coherent and Lumentum lack the scale to replace them. US firms raised the risk that Beijing retaliates by banning exports of indium phosphide, a critical mineral needed to make transceivers. The same morning Singapore’s prime minister, Lawrence Wong, said the new US chip rules will cut the volume of high-end chips transshipped through the city-state, that Singapore is “not here to implement or enforce the export controls of other countries”, but that it will facilitate US checks on chips deployed locally.</p>
+<p><strong>Linked action–reaction:</strong> FCC bans on new Chinese drones, robots, power inverters and routers over the past year → transceiver ban drafted (August, Reuters) → pushed ahead despite lobbying (17–18 November). <strong>China’s response:</strong> the Chinese Embassy in Washington said Beijing “firmly opposes the US overstretching the concept of national security”, urged Washington to “stop smearing Chinese companies and threatening them with sanctions”, and said China “will continue to do what is necessary to firmly defend the legitimate and lawful rights and interests of Chinese companies” (quoted by Reuters). No MOFCOM statement found yet; the MFA’s 18 November briefing did not address it.</p>
+<p><strong>Why it matters for Europe.</strong> Washington is willing to impose a ten-year adjustment cost on its own champions to remove Chinese hardware from its data centres, and asks transit hubs such as Singapore to police chip flows. The same logic is applied to Europe through the remote-access rule (16 November), which covers data centres in the EU. Europe has no comparable policy of its own on who supplies the physical layer of its AI infrastructure; it either follows Washington’s list or does nothing. A European screening and supply policy (European suppliers first, decided in Brussels, not copied from the FCC) is the condition for autonomy rather than alignment.</p>
+<p><strong>Key facts.</strong></p>
+<ul>
+<li>Measure: FCC ban on US imports of <em>new models</em> of Chinese optical transceivers; no implementation date or exemptions announced (Reuters via Investing.com; Bloomberg Law).</li>
+<li>Market: China about two-thirds of global supply (Counterpoint); Coherent +2.2% and Lumentum +1.5% after the report.</li>
+<li>Singapore (CNA, 18 Nov): most chips recorded as sales to Singapore are transshipped; firms using Singapore to circumvent controls face “clear and firm action”. ASEAN also agreed to China’s proposal to make 2027 the Year of ASEAN-China AI Cooperation.</li>
+<li>Malaysia’s Q3 growth was revised up on AI demand while officials gauge the impact of the new US rules (Bloomberg).</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2122984414472810567">@ReutersTech</a>, <a href="https://www.investing.com/news/stock-market-news/exclusivetrumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-5032280">Reuters via Investing.com</a>, <a href="https://news.bloomberglaw.com/artificial-intelligence/us-to-push-ahead-on-china-data-center-tech-import-ban-rtrs-1">Bloomberg Law</a>, <a href="https://www.channelnewsasia.com/singapore/ai-chips-us-lawrence-wong-donald-trump-6560086">CNA</a>, <a href="https://x.com/i/status/2122965576410599635">@business (Singapore)</a>, <a href="https://x.com/i/status/2122942928574107959">@business (Malaysia)</a></p>
+<p><strong>What to watch.</strong> FCC publication and any exemptions; MOFCOM reaction and whether Beijing restricts indium phosphide; whether the EU or member states adopt similar bans.</p>
+<hr>
+<h2 id="s2">Update: Beijing answers Nvidia’s China halt with one line, while Chinese chipmakers post record results</h2>
+<p>Asked by AFP about Nvidia’s halt of licensed Hopper (H200) shipments to China, Foreign Ministry spokesperson Guo Jiakun said only: “We have made clear more than once our principled position on U.S. chip exports to China.” Global Times (Chinese state media) set the halt against a run of record quarterly results from Chinese chipmakers, which it says shows US export controls are accelerating self-sufficiency. Memory maker CXMT reported third-quarter revenue of 118.71 billion yuan ($17.8 billion), up 613.2% year on year; GPU designers MetaX (1.5 billion yuan, +367%) and Moore Threads (1.55 billion yuan, +1,773.92%) also posted records, and SMIC’s revenue reached a record $3.19 billion. Citing IDC, the paper says Nvidia’s share of China’s data-centre AI-chip market fell to 34% in the first half of 2026, against 28% for Huawei.</p>
+<p><strong>Linked action–reaction:</strong> BIS remote-access rule (16 Nov) → MFA and MOFCOM threaten countermeasures (17 Nov) → Nvidia stops licensed sales to China (17 Nov, US time) → MFA restates its “principled position” (18 Nov); MOFCOM has not commented on the halt (its spokesperson pages did not render).</p>
+<p><strong>Why it matters for Europe.</strong> Export controls built to slow China are instead consolidating a Chinese chip industry with its own domestic market, while the US keeps supply of advanced AI chips (Global Times cites a think-tank estimate of 94% US supply in the first half of 2026). Europe has neither of the two positions: it is not a supplier of AI accelerators at scale, and it accepts US rules for its own data centres. What these figures reveal is an asymmetry of power, not a difference in talent.</p>
+<p><strong>Key facts.</strong></p>
+<ul>
+<li>Nvidia shipped 678,000 AI accelerators in China in January–June 2026 (−44%), Huawei 572,000 (IDC, via Global Times).</li>
+<li>TrendForce forecasts Chinese high-end AI-chip shipments of 5 million units in 2026 (+83%) (via Global Times).</li>
+<li>In Washington, Democratic lawmakers opened a probe into whether Commerce Secretary Howard Lutnick helped Cantor Fitzgerald, controlled by his sons, avoid losses linked to the Nvidia scandal (FT, via Reuters).</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://www.fmprc.gov.cn/eng/xw/fyrbt/lxjzh/202611/t20261118_12062001.html">China MFA (18 Nov briefing)</a>, <a href="https://www.globaltimes.cn/page/202611/1374545.shtml">Global Times (Chinese state media)</a>, <a href="https://x.com/i/status/2122955913565028557">@globaltimesnews (Chinese state media)</a>, <a href="https://x.com/i/status/2123000783192961401">@globaltimesnews (chipmakers)</a>, <a href="https://x.com/i/status/2123004583601463335">@Reuters (Lutnick probe)</a>, <a href="https://x.com/i/status/2122984410861518866">@ReutersTech (Nvidia succession)</a>, <a href="https://x.com/i/status/2122985740917203327">@Reuters</a></p>
+<p><strong>What to watch.</strong> The Trump–Xi–Putin meeting in Shenzhen; the 1 December House hearing with Jensen Huang; MOFCOM.</p>
+<hr>
+<h2 id="s3">Bloomberg finds US screening of Chinese investment has widened well beyond sensitive tech, even as Trump courts Chinese capital</h2>
+<p>A Bloomberg News analysis of 137 deals that faced US security review shows the obstacles to Chinese investment have multiplied and now go beyond sensitive technology companies, undercutting President Trump’s effort to reopen the door to Chinese capital. The report (17 November, by Lucille Liu, Nectar Gan, Jenny Leonard and others) is paywalled; its headline findings were carried by Bloomberg’s X account and by aggregators. In May, Treasury Secretary Scott Bessent spoke of a US–China “Board of Investment” to fast-track deals in non-sensitive areas (Bloomberg).</p>
+<p><strong>Why it matters for Europe.</strong> The US keeps control over who buys what on its soil, through CFIUS, sector bans and ownership rules for defence and strategic firms, even when the president wants the money. Europe applies US-inspired limits to Chinese buyers but has no equivalent screening of US purchases of its own strategic companies. The FDI Screening Regulation could provide the same reciprocity if it were used as Washington uses CFIUS. <strong>Takeover alert check:</strong> no new purchase of a European strategic firm by a US buyer was found in this window.</p>
+<p><strong>Key facts.</strong></p>
+<ul>
+<li>Sample: 137 deals reviewed by US security panels (Bloomberg).</li>
+<li>Finding: barriers now reach beyond sensitive tech (Bloomberg; details behind paywall).</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2122969852306477124">@business</a>, <a href="https://newsagentdata.com/news/a/1050286289-trump-s-push-to-reopen-us-doors-to-chinese-investment-faces">Bloomberg (via NewsAgent Data)</a>, <a href="https://www.bloomberg.com/news/articles/2026-05-14/bessent-says-us-china-are-discussing-a-board-of-investment">Bloomberg (Bessent, May 2026)</a></p>
+<p><strong>What to watch.</strong> Whether the Shenzhen summit produces an investment mechanism; CFIUS decisions on European deals (ICEYE–Avio, see Defence Industry).</p>
+<hr>
+<h2 id="s4">Uniper’s workers warn Centrica and Equinor off a takeover of Germany’s state-owned gas importer</h2>
+<p>Uniper’s works council stepped up its opposition to a sale of the German state-owned utility, directly warning suitors including Britain’s Centrica and Norway’s Equinor not to pursue a takeover against the will of employees (Bloomberg). Works-council chair Martin Geilhorn said a stock-market listing is “the best solution for the employees, for the company and for stakeholders in Germany” and urged the federal finance ministry and North Rhine-Westphalia to resist takeover attempts. Centrica, Equinor and a consortium of Canada’s Brookfield Asset Management and Canada Pension Plan Investment Board advanced to the second round, while Czech EPH and a KKR–RWE consortium were eliminated (Bloomberg, 14 November). Berlin, which took control in the 2022 gas crisis with a €13.5 billion bailout, wants to keep about 25% after any deal.</p>
+<p><strong>Why it matters for Europe.</strong> Uniper is one of Germany’s largest gas importers and power producers, so its owner matters for European energy security. A European buyer (Centrica or the majority state-owned Equinor) would keep it in European hands; the Brookfield–CPPIB consortium would put a critical energy asset under North American financial control. The US fund KKR is already out. Germany’s choice will show whether energy security is treated as strategic or simply sold to the highest bidder.</p>
+<p><strong>Key facts.</strong></p>
+<ul>
+<li>Market capitalisation nearly €18 billion; an IPO might value Uniper at about €12 billion, and any sale would likely be well below market value (Bloomberg; Headliner).</li>
+<li>Germany intends to retain around 25% after a transaction.</li>
+<li>German co-determination gives worker representatives strong influence over takeovers.</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2122968091403362499">@business</a>, <a href="https://www.headliner.nl/artikelen/ondernemingsraad-uniper-waarschuwt-centrica-equinor-vijandig-overnamebod-258474">Headliner (Bloomberg)</a>, <a href="https://www.energyconnects.com/news/utilities/2026/november/centrica-equinor-in-next-round-of-germany-s-uniper-sale/">Energy Connects (Bloomberg)</a>, <a href="https://www.morningstar.com/news/alliance-news/1794648037338228300/press-equinor-and-centrica-still-in-running-to-buy-uniper-bloomberg">Morningstar (Alliance News)</a></p>
+<p><strong>What to watch.</strong> Second-round bids and timing; the BASF–Evonik bid (07:30 edition) and Berlin’s new takeover law (17 November) as the other German tests.</p>
+<hr>
+<h2 id="s5">China doubles a 20-year US LNG contract with Venture Global as Trump lands in Shenzhen, and Asia competes with Europe for US gas</h2>
+<p>China Gas Holdings and US exporter Venture Global signed, on the sidelines of the APEC CEO Summit, an agreement for 1.0 million tonnes per annum (MTPA) of US LNG for 20 years from 2030, doubling a 0.5 MTPA deal signed in September. The FOB contract is priced off Henry Hub plus a fixed liquefaction fee, and lifts China Gas’s long-term commitments with Venture Global to 3.0 MTPA (4 MTPA across all its suppliers). Chinese buyers had stopped importing US LNG in March 2025 after Beijing put tariffs on US energy (Reuters via Boursorama). Meanwhile, Brent hovered near $93 a barrel as tanker attacks in the Strait of Hormuz (a gas tanker abandoned after being hit, an ADNOC vessel attacked with 11 crew injured) were offset by forecasts of a supply surplus and higher US crude stocks.</p>
+<p><strong>Why it matters for Europe.</strong> US gas is now Europe’s main alternative to Russian supply, at a price the US Interior Secretary says is 11 times the US price (07:30 edition). Long-term Chinese contracts from the same Louisiana plants show that Washington sells to Beijing what it urges Europe to buy instead of Russian gas, and that Asia will compete for those cargoes (elEconomista). Energy dependence has simply moved from one supplier to another.</p>
+<p><strong>Key facts.</strong></p>
+<ul>
+<li>Seller: Venture Global (Arlington, US; Calcasieu Pass, Plaquemines and CP2 LNG in Louisiana). Buyer: China Gas Holdings (Hong Kong-listed, 0384.HK).</li>
+<li>Deliveries from 2030; price not disclosed.</li>
+<li>Brent around $92.6–93.1 on 18 November (Economic Times, CNBC).</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://investors.ventureglobal.com/news/news-details/2026/Venture-Global-and-China-Gas-Announce-Increased-Long-Term-LNG-Agreement/default.aspx">Venture Global</a>, <a href="https://www.chinagasholdings.com/news_view.aspx?Fid=t2%3A4%3A2&amp;Id=4536&amp;TypeId=4">China Gas</a>, <a href="https://www.boursorama.com/bourse/actualites/china-gas-double-le-volume-de-son-contrat-de-gnl-d-une-duree-de-20-ans-conclu-avec-venture-global-19cfaac5e6edb446fbbd1ccee22bd52d">Reuters via Boursorama</a>, <a href="https://www.eleconomista.es/energia/noticias/14028694/11/26/china-recibe-a-trump-con-un-acuerdo-millonario-para-la-compra-de-gas-a-eeuu.html">elEconomista</a>, <a href="https://x.com/i/status/2122965581699621325">@Reuters</a>, <a href="https://x.com/i/status/2122998284893536415">@Reuters (Hormuz tanker)</a>, <a href="https://x.com/i/status/2122954637150236892">@AJEnglish (ADNOC)</a>, <a href="https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-november-18-brent-crude-drops-below-93-as-traders-weigh-supply-surplus-and-fresh-attacks-what-are-experts-saying/articleshow/135945687.cms">Economic Times</a>, <a href="https://x.com/i/status/2123002060337492160">@Reuters (QatarEnergy)</a></p>
+<p><strong>What to watch.</strong> Further US–China energy deals at the summit; EU gas storage and TTF; QatarEnergy’s expansion.</p>
+<hr>
+<h2 id="s6">Euro-area inflation confirmed at 4.0% in October, with energy prices up 21%</h2>
+<p>Eurostat confirmed euro-area annual inflation at 4.0% in October 2026, up from 3.8% in September and 2.1% a year earlier; EU inflation was also 4.0%. Energy prices rose 21.0% year on year (revised up from the 20.8% flash estimate) and contributed 1.89 percentage points, almost half of the total. Rates ranged from 0.6% in Sweden to 7.0% in Romania; Italy jumped to 5.6% (from 4.2%) and Spain stood at 4.9%. UK inflation rose to its highest level in a year after a surge in energy bills and motor fuel costs (Bloomberg, Reuters). In Berlin, Chancellor Friedrich Merz’s coalition agreed after overnight talks to cut the electricity tax by about two cents to 0.1 cents per kWh for households and small businesses from January to December 2027, and to cap fuel prices from January, initially for three months (AFP). AFP links the surge in German energy costs to the US-Israeli war against Iran and the disruption of shipping through Hormuz.</p>
+<p><strong>Why it matters for Europe.</strong> Energy is again the main driver of European inflation, and each government is answering on its own, with temporary national tax cuts. The Commission’s autumn forecast (17 November) already put euro-area inflation at 3.2% for 2026 and France’s growth at 0.4%. Without a common energy policy and its own supply, the EU pays the price of others’ wars and contracts.</p>
+<p><strong>Key facts.</strong></p>
+<ul>
+<li>Euro area, October 2026: all-items 4.0%; excluding energy 2.3%; services 3.3%; monthly rate 0.5% (Eurostat).</li>
+<li>Highest: Romania 7.0%, Lithuania 6.1%, Bulgaria 5.9%; lowest: Sweden 0.6%, Czechia and Denmark 2.1%. Germany 2.9%, France 3.7%, Poland 3.7%.</li>
+<li>Next flash estimate (November): 1 December 2026.</li>
+<li>German cut: average household saving about €50 a year, based on 2,400 kWh consumption (AFP, citing BDEW); until now only some heavy industries had a reduction.</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-18112026-ap">Eurostat</a>, <a href="https://x.com/i/status/2122994508572856523">@business (UK inflation)</a>, <a href="https://x.com/i/status/2122988232828760250">@Reuters (UK)</a>, <a href="https://x.com/i/status/2122997026879050112">@business (Germany)</a>, <a href="https://www.afp.com/en/germany-cut-electricity-tax-cap-fuel-prices">AFP</a>, <a href="https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/autumn-2026-economic-forecast-shows-continued-growth-amid-higher-inflation_en">European Commission (autumn forecast)</a></p>
+<p><strong>What to watch.</strong> ECB reaction; November flash estimate (1 December); EU-level energy measures.</p>
+<hr>
+<h2>See also</h2>
+<ul>
+<li>Xi and Putin in Shenzhen: Putin says the EU &ldquo;has been unable to adapt to the consequences of its own sanctions&rdquo; — see World.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

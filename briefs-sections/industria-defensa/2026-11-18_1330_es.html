@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — miércoles, 18 de noviembre de 2026 · 13:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">miércoles, 18 de noviembre de 2026 · 13:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Window covered:</strong> 18 de noviembre de 2026, de las 06:00 a las 12:00 aproximadamente (hora de Madrid): todo lo nuevo desde la edición de las 07:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Industria de Defensa de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<hr>
+<h2 id="s1">Actualización: ICEYE–Avio — Bruselas aplaude, Roma duda y Washington también tiene que dar su visto bueno</h2>
+<p>Novedades respecto a la edición de las 20:30 del 17 de noviembre y la edición de las 07:30 del 18 de noviembre. La oferta se refiere a Avio S.p.A. (Colleferro, Italia: lanzador Vega y motores de propulsante sólido), no a Avio Aero (el negocio de motores de GE Aerospace). Andrius Kubilius, comisario europeo de Defensa y Espacio, escribió en X que la fabricación de satélites y la capacidad de lanzamiento «se unen en una sola empresa», que esto «puede tener un gran impacto en el futuro de las actividades espaciales» europeas y que esa concentración «es exactamente lo que M. Draghi proponía en su famoso informe». El ministro de Defensa, Guido Crosetto, dijo a Reuters: «Si yo fuera Leonardo, me lo pensaría bien antes de salir de Avio» (Teleborsa/ANSA). Leonardo tiene el 18,04 % y está participada en un 30 % por el Ministerio de Economía; sin ella, ICEYE necesitaría más del 80 % de las acciones restantes para alcanzar su umbral del 66,67 %. Fuentes del Gobierno dijeron a Reuters que Roma no ha recibido ninguna notificación y que cualquier valoración es «prematura». El consejero delegado de ICEYE, Rafal Modrzewski, se mostró abierto a negociar, incluso la entrada de un socio público. Mediobanca Research prevé obstáculos políticos y regulatorios «significativos» y una posible contraoferta de inversores italianos o europeos (MilanoFinanza).</p>
+<p><strong>Por qué importa a Europa.</strong> Es una fusión intraeuropea (Finlandia–Italia) que uniría satélites radar SAR con un lanzador europeo y con el saber hacer en propulsión sólida que también abastece a MBDA. Según la línea del CEAFE, es positivo: campeones europeos más grandes y menos dispersos. Pero el anuncio de la oferta muestra hasta dónde llega la jurisdicción de EE. UU. en una operación entre dos empresas de la UE. Además del <em>golden power</em> italiano, la autorización de inversiones extranjeras de Francia y el Reino Unido y el control de subvenciones extranjeras de la UE, la oferta exige la aprobación «sin condiciones» del Comité de Inversiones Extranjeras de EE. UU. (CFIUS) y una notificación a la Agencia de Contrainteligencia y Seguridad de Defensa del Pentágono (DCSA), por las actividades de ambos grupos en EE. UU. Ninguna autoridad de la UE puede bloquear así una fusión estadounidense. La reticencia de Roma es el otro riesgo: un veto nacional a una concentración europea iría contra la industria a escala de la UE que reclama Kubilius.</p>
+<p><strong>Datos clave.</strong> 41 euros por acción, hasta unos 2.050 millones de euros, en efectivo; prima del 20 %; compromisos de 1.000 millones de inversión en cinco años y 400 empleos en Italia; facturación conjunta de unos 800 millones (MilanoFinanza). Condiciones: umbral del 66,67 %; <em>golden power</em> italiano; inversiones extranjeras en Francia y Reino Unido; reglamento FSR de la UE; CFIUS; notificación a la DCSA.</p>
+<p><strong>Fuentes:</strong> @KubiliusA (<a href="https://x.com/i/status/2123004235688403143">publicación</a>), <a href="https://www.iceye.com/hubfs/102%20Notice%20%2817.11.2026%29%20%5BENG%5D.pdf?hsLang=en">anuncio de la oferta de Iris 2 S.p.A. (ICEYE, PDF)</a>, <a href="https://teleborsa.ansa.it/notiziario/finanza/opa-iceye-su-avio-crosetto-se-fossi-leonardo-rifletterei-prima-di-uscire/">Teleborsa/ANSA (Crosetto)</a>, <a href="https://it.marketscreener.com/notizie/avio-al-governo-nessuna-notifica-da-iceye-prematura-ogni-valutazione-fonti-ce785edcda8bff21">MarketScreener/Reuters (sin notificación)</a>, <a href="https://www.milanofinanza.it/news/avio-iceye-faro-golden-power-2724557">MilanoFinanza</a>, <a href="https://www.defensenews.com/global/europe/">Defense News</a>.</p>
+<p><strong>Qué vigilar.</strong> La decisión de Leonardo (coordinada con el Gobierno), la opinión del consejo de Avio, la notificación del <em>golden power</em> y una posible contraoferta. El próximo Vega C (satélites IRIDE) se retrasa hacia Navidad (la edición de las 07:30 del 16 de noviembre).</p>
+<hr>
+<h2 id="s2">Suiza vota el 29 de noviembre si suaviza su ley de exportación de armas: empate técnico en las encuestas</h2>
+<p>Las dos últimas encuestas, publicadas el 18 de noviembre, dan una ligera ventaja a la reforma de la Ley federal sobre material de guerra, pero sin mayoría: 49 % a favor y 48 % en contra (Tamedia/20 Minuten, LeeWas, 11 y 12 de noviembre, más de 12.000 participantes) y 49 % a favor, 46 % en contra y 5 % de indecisos (SRG SSR, gfs.bern, del 4 al 11 de noviembre, 13.527 personas, margen de ±2,8 puntos). La ley, aprobada por el Parlamento en diciembre de 2025, permitiría exportar a 25 países, en su mayoría occidentales, incluso en conflicto, y daría al Gobierno un derecho de veto por motivos de neutralidad (Bloomberg en swissinfo). Los fabricantes suizos dicen que las restricciones por neutralidad les han llevado a trasladar capacidad al extranjero; perdieron negocio tras la invasión rusa de Ucrania y afrontan otra caída porque la guerra de Irán provocó la prohibición de envíos a EE. UU. La división es política (el FDP, a favor entre el 75 % y el 79 %; Verdes y socialistas en contra), de género (59 % de los hombres a favor y 38 % de las mujeres, según Tamedia) y de edad.</p>
+<p><strong>Por qué importa a Europa.</strong> Las empresas suizas forman parte de las cadenas de suministro europeas, y las negativas de Berna a que compradores europeos cedieran munición y equipos de fabricación suiza han sido un problema recurrente para los ejércitos europeos desde 2022. Un «sí» haría a los proveedores suizos más previsibles para los 25 socios de la lista. Es además el equivalente europeo del debate sobre la ITAR (la edición de las 07:30 del 18 de noviembre): quien controla las normas de reexportación controla el uso del producto.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.swissinfo.ch/eng/swiss-face-nail-biter-vote-on-allowing-more-weapon-exports/92397966">swissinfo (Bloomberg)</a>, <a href="https://www.swissinfo.ch/eng/votes/november-29-votes-opposition-to-pension-financing-plan-edging-ahead/92396495">swissinfo (encuesta SRG)</a>, <a href="https://www.srf.ch/news/zweite-srg-umfrage-kriegsmaterialgesetz-pattsituation-mit-leichtem-ja-vorteil">SRF</a>, <a href="https://www.20min.ch/fr/story/sondage-20-mintamedia-tva-et-initiative-du-centre-rejetes-materiel-de-guerre-incertain-103669075">20 Minutes</a>, Bloomberg (<a href="https://x.com/i/status/2122958029075128749">publicación</a>).</p>
+<p><strong>Qué vigilar.</strong> El resultado del 29 de noviembre; qué 25 países figuran en la lista; reacciones de los compradores alemanes y daneses.</p>
+<hr>
+<h2 id="s3">PLD Space firma su primer lanzamiento comercial: Mitsubishi Electric volará en el segundo vuelo del MIURA 5</h2>
+<p>La empresa española de lanzadores PLD Space anunció el 18 de noviembre su primer contrato comercial de lanzamiento: un satélite de demostración de Mitsubishi Electric para la futura megaconstelación del grupo japonés volará en el segundo vuelo de prueba del MIURA 5. Mitsubishi Electric es también inversor: aportó 50 millones de euros en marzo de 2026, liderando la Serie C de 180 millones, y encabezó el 1 de septiembre una ampliación de 108 millones, con «acceso prioritario» a los lanzamientos del MIURA 5. No hay fecha; el primer vuelo desde el Centro Espacial de la Guayana se aplazó en octubre al primer semestre de 2027 (European Spaceflight).</p>
+<p><strong>Por qué importa a Europa.</strong> Un segundo lanzador comercial europeo (tras el Spectrum de Isar, que alcanzó la órbita desde Andøya) forma parte de la respuesta a la escasez de lanzamientos causada por los retrasos del Vega C y el fallo del Vulcan (la edición de las 07:30 del 17 de noviembre). El cliente ancla y principal inversor es japonés, no europeo. Los clientes institucionales europeos (el European Launcher Challenge de la ESA, los Gobiernos nacionales) darían a estas empresas un mercado propio.</p>
+<p><strong>Fuentes:</strong> @PLD_Space (<a href="https://x.com/i/status/2122977305106567566">publicación</a>), <a href="https://europeanspaceflight.com/pld-space-investor-selects-miura-5-to-launch-demo-mission/">European Spaceflight</a>, SpaceNews (<a href="https://x.com/i/status/2122932907744317744">publicación</a>).</p>
+<p><strong>Qué vigilar.</strong> La cualificación del MIURA 5 y la fecha del primer vuelo; los contratos del Launcher Challenge de la ESA.</p>
+<hr>
+<h2 id="s4">El jefe del DLR pide un concurso europeo de lanzadores pesados y anuncia una prueba alemana de lanzamiento desde el mar</h2>
+<p>En la Space Tech Expo Europe de Bremen, Walther Pelzer, director de la Agencia Espacial Alemana en el DLR, recordó que Europa solo cuenta con el Ariane 6 para cargas pesadas y pidió extender el modelo del European Launcher Challenge a cohetes mayores. Dijo que Alemania podría probar el año próximo una capacidad de lanzamiento desde el mar con un cohete sonda disparado desde un buque, una opción en alta mar que más adelante podría situarse cerca del ecuador. También afirmó que la UE debería considerar europeas las bases de lanzamiento del Reino Unido y Noruega, y que Alemania trabaja con Canadá y España en infraestructuras de lanzamiento. Para calmar los temores de que Berlín vaya por libre en el espacio de seguridad, dijo que Alemania ha invitado a la UE y a la ESA a sumarse a su «Protocol Stack for Space» (Arquitectura Europea de Interoperabilidad Espacial) (Aviation Week).</p>
+<p><strong>Por qué importa a Europa.</strong> El acceso autónomo al espacio es condición previa de una capacidad de defensa europea (reconocimiento, comunicaciones, navegación). Un concurso de lanzadores pesados evitaría depender de un solo cohete, mientras que lo del Reino Unido y Noruega plantea hasta dónde llega la preferencia «europea». La oferta de interoperabilidad responde a la fricción franco-alemana recogida en la edición de las 07:30 del 18 de noviembre.</p>
+<p><strong>Fuentes:</strong> <a href="https://aviationweek.com/space/launch-vehicles-propulsion/dlr-boss-wants-european-heavy-lift-rocket-challenge">Aviation Week</a>, <a href="https://www.dlr.de/en/latest/news/2026/space-tech-expo-2026-dlr-showcases-technologies-for-the-future-of-spaceflight">DLR</a>, Aviation Week (<a href="https://x.com/i/status/2122973838270976034">publicación</a>).</p>
+<p><strong>Qué vigilar.</strong> Decisiones ministeriales de la ESA sobre lanzadores; fecha de una eventual prueba alemana desde el mar.</p>
+<hr>
+<h2 id="s5">Espacio europeo desde Bremen: el campo de pruebas ciberespacial de Estonia, la ronda de 27,2 millones de Dcubed y el procesado de ICEYE</h2>
+<p><strong>Estonia</strong> ofrece a países y empresas un Space Cyber Range para probar satélites, estaciones terrenas y operaciones frente a ciberataques, plenamente operativo en 2027 (la ministra de Economía e Industria, Liina Vahtras, en Aviation Week). Lo desarrollan, dentro del programa ARTES 4S de la ESA, Spaceit, CybExer Technologies, CGI Estonia y la fundación CR14 (centro de pruebas de NATO DIANA), con la Universidad de Tartu. Contexto: el ciberataque ruso contra Viasat en 2022. <a href="https://aviationweek.com/defense/sensors-electronic-warfare/estonia-offers-satellite-cybersecurity-test-range">Aviation Week</a>, <a href="https://spaceit.eu/services/space-cyber-range/">Spaceit</a>.</p>
+<p><strong>Dcubed</strong> (Alemania; actuadores de liberación, estructuras desplegables, paneles solares) cerró una Serie A+ de 27,2 millones de euros (unos 30 millones de dólares) liderada por el polaco Warsaw Equity Group, con el EIC Fund de la UE y HTGF. Cuadruplicará la producción en Alemania y en EE. UU. y volará su panel solar ARAQYS en 2027; tiene 87 empleados y más de 500 productos en el espacio. Una empresa financiada por la UE crece en parte en EE. UU., algo que encaja en el seguimiento del CEAFE de la tecnología europea financiada con fondos públicos que acaba en EE. UU. <a href="https://www.htgf.de/en/dcubed-raises-oversubscribed-27-2-million-round/">HTGF</a>, <a href="https://spacenews.com/dcubed-raises-30-million/">SpaceNews</a>.</p>
+<p><strong>ICEYE</strong> afirma que el procesado de su imagen SAR Spot Fine ha bajado en un año de unos 35 a unos 6 minutos (@iceye_global, <a href="https://x.com/i/status/2122963040786075743">publicación</a>).</p>
+<hr>
+<h2>Véase también</h2>
+<ul>
+<li>Cooperación europea en armamento: la OCCAR cumple 25 años y el EATC crece hasta 16 naciones — ver Actualidad.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

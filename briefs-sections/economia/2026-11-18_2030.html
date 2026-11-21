@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Wednesday, 18 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Wednesday, 18 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> 18 November 2026, about 12:00 to 19:20 Europe/Madrid: everything new since the 13:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<hr>
+<h2 id="s1">Update: US LNG for Slovakia and Hungary through Poland, signed at P-TEC in Warsaw</h2>
+<p>At the seventh Partnership for Transatlantic Energy Cooperation (P-TEC) in Warsaw, US Energy Secretary Chris Wright announced that &ldquo;today&rsquo;s agreements between @GrupaORLEN, Slovakia, and Hungary will help bring more American LNG into Central Europe through Poland&rdquo;. The company documents are more cautious and give no volumes: ORLEN and Slovakia&rsquo;s SPP signed an agreement that &ldquo;opens a new phase of talks on gas supplies using LNG imported into Poland&rdquo;, and ORLEN and Hungary&rsquo;s MVM ONEnergy signed a memorandum on possible deliveries via Polish terminals (ORLEN; PAP). ORLEN and Naftogaz also signed a contract for three partial cargoes of US LNG for Ukraine in the first quarter of 2027, implementing a September memorandum. At an Atlantic Council event Wright said Western European countries &ldquo;have lost their way&rdquo; and that &ldquo;the economic and energy future of Europe will not be written in Paris or London&rdquo; but in Warsaw, Prague, Bratislava, Sofia, Bucharest and Athens.</p>
+<p>The US Energy Information Administration (EIA) records that Europe took a record 10.3 billion cubic feet a day of US LNG in 2025, 68% of US LNG exports (34% in 2021); the EU energy regulator ACER says the US supplied 58% of the EU&rsquo;s LNG imports in 2025. The chart by Interior Secretary Doug Burgum, covered at 07:30, puts European gas at about 11 times the Henry Hub price.</p>
+<p><strong>Why it matters for Europe.</strong> Europe keeps raising its US energy purchases, so the goal of ending dependence on a single supplier has failed: Russia has been replaced by the United States, at a much higher price. At that gap European industry cannot compete. Volkswagen&rsquo;s CFO said four German plants have no economically viable follow-up production after the early 2030s (Reuters), Mercedes-Benz has halted new investment in its German plants (Reuters, 12 November), and British Steel survives only in public ownership since 16 July 2026 (GOV.UK); its workers&rsquo; union assessment put energy prices at the centre of its viability. Wright&rsquo;s list of capitals, without Paris, deals with Europe one capital at a time rather than with the Union.</p>
+<p>Figures that illustrate, once again, why European sovereignty is only credible if it is exercised together.</p>
+<p><strong>What to watch.</strong> Whether the SPP and MVM memoranda become contracts with volumes; the P-TEC ministerial on 19 November (long-term LNG, civil nuclear).</p>
+<p><strong>Sources:</strong> @SecretaryWright (<a href="https://x.com/i/status/2123071666318094568">post</a>), ORLEN, PAP, Naftogaz, <a href="https://www.eia.gov">EIA</a>, ACER, <a href="https://gsmglobalnews.com/article/d20261118-wrightptec1.html">GSM Global</a>, <a href="https://www.reuters.com/business/volkswagen-cfo-says-four-german-sites-lack-economic-case-future-production-2026-08-31/">Reuters (Volkswagen)</a>, <a href="https://live.euronext.com/en/financial-news/mercedes-benz-halts-german-investments-plant-closures-loom">Reuters via Euronext (Mercedes-Benz)</a>, <a href="https://www.gov.uk/government/news/government-brings-british-steel-into-public-ownership-to-protect-uk-steelmaking">GOV.UK (British Steel)</a>.</p>
+<hr>
+<h2 id="s2">US congressional commission calls for a single &ldquo;economic statecraft&rdquo; agency and holds up Dutch EUV controls as the model</h2>
+<p>The US-China Economic and Security Review Commission (USCC) released its 2026 Annual Report on 18 November with 30 recommendations. It says the People&rsquo;s Liberation Army is &ldquo;actively soliciting&rdquo; Nvidia&rsquo;s most advanced chips for AI-enabled weapons and that &ldquo;China is seeking to evade U.S. export controls&rdquo;, including through remote access to data centres in third countries such as Malaysia. It recommends a consolidated entity grouping BIS, OFAC, the State Department&rsquo;s export-control office and the Pentagon&rsquo;s DTSA, with Treasury-style enforcement powers; moving China licence reviews from a &ldquo;presumption of denial&rdquo; to a &ldquo;policy of denial&rdquo;; and requiring AI-chip exporters to certify, under criminal penalties, that sales to China do not divert US capacity. It names ASML as the &ldquo;gatekeeper&rdquo; of EUV lithography and cites the US–Netherlands–Japan coordinated controls as &ldquo;the strongest piece of evidence in support of allied cooperation&rdquo;. The same chapter notes that Beijing granted European firms fewer general licences for gallium, germanium and graphite than pledged. China&rsquo;s response: no MOFCOM or MFA statement on the report yet; Global Times argued that China&rsquo;s AI build-out rests on domestic chips.</p>
+<p><strong>Why it matters for Europe.</strong> A European monopoly is used as an instrument of US policy, with no European say over the target and no reciprocal leverage, while Europeans pay for Chinese counter-measures to controls decided in Washington. A US agency with Treasury-style powers would make that extraterritorial reach stronger still.</p>
+<p>We see once again how a power with global reach operates at a scale that no European state can match on its own.</p>
+<p><strong>What to watch.</strong> MOFCOM/MFA reaction; whether Congress takes up the export-control amendment; the Trump–Xi talks in Shenzhen.</p>
+<p><strong>Sources:</strong> <a href="https://www.uscc.gov/sites/default/files/2026-11/2026_Executive_Summary.pdf">USCC (executive summary)</a>, <a href="https://www.uscc.gov/sites/default/files/2026-11/Chapter_8--Silicon_to_Sovereignty_Chinas_Bid_to_Control_the_AI_Tech_Stack.pdf">USCC (chapter 8)</a>, <a href="https://www.investing.com/news/stock-market-news/china-seeks-advanced-nvidia-chips-for-ai-weapons-despite-us-curbs-report-says-5035787">Reuters via Investing.com</a>, <a href="https://www.cnbc.com/2026/11/18/nvidia-chips-china-military-ai.html">CNBC</a>, <a href="https://www.scmp.com/news/us/article/3374802/us-panel-proposes-tougher-ai-chip-export-rules-ahead-trump-xi-talks">South China Morning Post</a>, Global Times (<a href="https://x.com/i/status/2123078355088232535">post</a>).</p>
+<hr>
+<h2 id="s3">US ambassador Puzder wants EU climate and due-diligence rules cut under the Turnberry deal</h2>
+<p>US Ambassador to the EU Andrew Puzder, welcoming the US Chamber of Commerce to Brussels, wrote that &ldquo;there&rsquo;s still work to be done to uphold the historic Turnberry Agreement, because non-tariff barriers are effectively tariffs by another name&rdquo;. At a Fórum Europa event the day before he named the targets: the Carbon Border Adjustment Mechanism, the deforestation regulation, a three-year delay to the methane regulation for oil and gas importers, and the reach of the CSRD and CSDDD directives over US companies, which he called &ldquo;not acceptable&rdquo;. He would not say whether the US will cut its tariffs on steel and aluminium derivatives to 15% before the 31 December deadline, after which the Commission may suspend tariff preferences for the US.</p>
+<p><strong>Why it matters for Europe.</strong> The EU has already delivered the tariff side of Turnberry; Washington now asks it to change its own laws to suit US exporters, while keeping its own tariffs on steel and aluminium derivatives and its own extraterritorial rules.</p>
+<p><strong>What to watch.</strong> The 31 December steel and aluminium deadline; the Commission&rsquo;s answer on CBAM and the methane rule.</p>
+<p><strong>Sources:</strong> @USAmbEU (<a href="https://x.com/i/status/2123036760586293680">post</a>), <a href="https://forumeuropa.eu/news/us-ambassador-eu-says-european-regulation-does-not-promote-innovation-or-growth">Fórum Europa</a>, <a href="https://www.mlex.com/mlex/trade/articles/2550910/regulatory-barriers-imperil-future-of-eu-us-trade-deal-us-ambassador-says">MLex</a>, <a href="https://useu.usmission.gov/ambassador-puzders-remarks-for-amcham-luxembourg/">US Mission to the EU</a>.</p>
+<hr>
+<h2 id="s4">China and South Korea complete the second phase of their free-trade agreement</h2>
+<p>China&rsquo;s Ministry of Commerce announced on 18 November that the second phase of the China–South Korea FTA has been &ldquo;substantially concluded&rdquo; after more than eight years and 17 formal rounds. It covers investment, services, financial services and economic cooperation, with negative-list market access; the text now goes to legal review before signing. MOFCOM calls it a &ldquo;concrete action&rdquo; against unilateralism and protectionism. Xi Jinping and Lee Jae-myung met in Shenzhen, and Lee told the APEC CEO Summit that &ldquo;even as trade barriers rise, we must continue to open up&rdquo;. Chinese customs data reported by Global Times show China&rsquo;s trade with other APEC economies up 25.4% year on year to 27.08 trillion yuan ($4.06 trillion) in January–October 2026.</p>
+<p><strong>Why it matters for Europe.</strong> A close US ally is deepening its opening to China on its own terms, while the EU–China Comprehensive Agreement on Investment, concluded in principle in December 2020, remains frozen. Washington&rsquo;s Asian partners keep their options open with Beijing; Europe, with a larger market than South Korea, has chosen to align.</p>
+<p><strong>What to watch.</strong> Signing date and published text.</p>
+<p><strong>Sources:</strong> <a href="https://www.mofcom.gov.cn/syxwfb/art/2026/art_439696f30f74485a9a744bf07b09219c.html">MOFCOM</a>, <a href="https://www.globaltimes.cn/page/202611/1374589.shtml">Global Times (Chinese state media)</a>, <a href="https://www.mfa.gov.cn/eng/xw/zyxw/202611/t20261118_12062076.html">China MFA</a>, <a href="https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172421/view">South Korea MOTIR</a>.</p>
+<hr>
+<h2 id="s5">Brussels proposes an &ldquo;Advanced Materials for Europe&rdquo; agenda and admits European IP is draining abroad through foreign acquisitions</h2>
+<p>The European Commission proposed on 18 November a Council Recommendation to make the EU the world&rsquo;s leading innovator, producer and user of advanced materials by 2035, with three benchmarks: at least 20% more research investment, 20% more EU-based start-ups and scale-ups, and 20% of projects reaching higher deployment levels. Commissioner Ekaterina Zaharieva proposed at least five joint &ldquo;priority challenges&rdquo;, for example permanent magnets without rare earths and substitutes for PFAS in chips. The proposal&rsquo;s explanatory text cites &ldquo;technology leakage risks and the drain of European intellectual property (IP) in this sector due to foreign licensing or acquisitions of EU IP holders&rdquo;. EUobserver notes that the targets are voluntary.</p>
+<p><strong>Why it matters for Europe.</strong> The diagnosis matches CEAFE&rsquo;s: European-funded technology leaves through licensing and takeovers. The remedy is non-binding, with no screening of foreign purchases of EU IP holders, no ownership-retention clause and no mandatory European preference: the tools the US uses as a matter of course (CFIUS, ITAR, Buy American).</p>
+<p><strong>What to watch.</strong> Council discussion; any link to the revision of the FDI Screening Regulation and the Critical Raw Materials Act.</p>
+<p><strong>Sources:</strong> <a href="https://www.cna.org.cy/en/press_releases/article/11218870/press-release-european-commission">European Commission (via CNA)</a>, <a href="https://research-and-innovation.ec.europa.eu/document/download/e6f4c20d-f460-44fe-ad48-ebc58191f817_en">European Commission (draft Recommendation)</a>, <a href="https://euobserver.com/249748/eu-opts-for-voluntary-targets-to-secure-key-materials-used-in-high-tech-industries/">EUobserver</a>, @EZaharievaEU (<a href="https://x.com/i/status/2123041739682328676">post</a>).</p>
+<hr>
+<h2 id="s6">ECB warns of AI-valuation and sovereign-debt risks, as Apollo says Europe needs €1.4 trillion a year</h2>
+<p>The ECB&rsquo;s November Financial Stability Review says risks &ldquo;remain elevated, given persistent geoeconomic uncertainty and growing exposure to AI&rdquo;: AI valuations rely on &ldquo;ambitious earnings expectations&rdquo;, AI infrastructure is increasingly debt-funded, and fiscal imbalances in major economies could trigger a global repricing of sovereign risk. When volatility rose in March 2026, hedge funds cut euro-area repo positions by 13%, reducing net borrowing by about €50 billion, especially against Spanish and Italian collateral. The same day Apollo&rsquo;s head of Europe, Diego De Giorgi, told Bloomberg that Europe needs about €1.4 trillion of investment a year for AI, defence and power, above Mario Draghi&rsquo;s €800 billion estimate, and that its capital markets are not deep enough to supply it.</p>
+<p><strong>Why it matters for Europe.</strong> Without a savings and investments union, which the ECB again calls &ldquo;essential&rdquo;, the gap is filled by US asset managers and private-credit funds, which then shape what gets financed and keep the returns.</p>
+<p><strong>What to watch.</strong> The ECB&rsquo;s December meeting; progress on the savings and investments union.</p>
+<p><strong>Sources:</strong> <a href="https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html">ECB</a>, <a href="https://www.ecb.europa.eu/press/financial-stability-publications/fsr/focus/2026/html/ecb.fsrbox202611_07~d23692bb6f.en.html">ECB (FSR box)</a>, Bloomberg (<a href="https://x.com/i/status/2123036032211853552">post</a>), <a href="https://qz.com/apollo-europe-investment-needs-trillion-euros-111826">Quartz</a>.</p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CEAFE — Notas de Actualidad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  <style>
+    #ceafe-notas {
+      --silver: #999999;
+      --eu-blue: #003399;
+      --ink: #1c1c1c;
+      --muted: #5a5a5a;
+      --slate: #6D7B8D;
+      --rule: #d0d0d0;
+      --paper: #ffffff;
+      --wash: #f8f9fa;
+      --line: #e0e0e0;
+      --focus: #003399;
+      --radius: 12px;
+      --font-head: Montserrat, Cabin, "Source Sans Pro", Karla, Arial, Helvetica, sans-serif;
+      --font-body: "Source Sans Pro", Montserrat, Cabin, Karla, Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 8px 16px 36px;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: left;
+    }
+    #ceafe-notas *, #ceafe-notas *::before, #ceafe-notas *::after { box-sizing: border-box; }
+    #ceafe-notas a { color: var(--eu-blue); text-decoration: none; }
+    #ceafe-notas a:hover { text-decoration: underline; }
+    #ceafe-notas button {
+      font-family: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer;
+    }
+    #ceafe-notas button:focus-visible,
+    #ceafe-notas a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+    #ceafe-notas h1, #ceafe-notas h2, #ceafe-notas h3 {
+      font-family: var(--font-head);
+      color: var(--ink);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin: 0;
+    }
+    #ceafe-notas .cn-top {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; margin: 4px 0 16px; padding-bottom: 10px; border-bottom: 2px solid var(--silver);
+    }
+    #ceafe-notas .cn-brand { display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none; }
+    #ceafe-notas .cn-brand img { width: 32px; height: 32px; object-fit: contain; display: block; }
+    #ceafe-notas .cn-brand span {
+      font-family: var(--font-head); font-weight: 700; font-size: 15px;
+      letter-spacing: 0.08em; color: var(--silver);
+    }
+    #ceafe-notas .cn-lang {
+      display: inline-flex; border: 1px solid var(--line); border-radius: 999px;
+      overflow: hidden; background: var(--wash);
+    }
+    #ceafe-notas .cn-lang button {
+      padding: 5px 12px; font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; color: var(--muted);
+    }
+    #ceafe-notas .cn-lang button[aria-pressed="true"] { background: var(--eu-blue); color: #fff; }
+    #ceafe-notas .cn-title {
+      font-size: 28px; line-height: 1.2; margin: 8px 0 6px;
+    }
+    #ceafe-notas .cn-lede-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px 24px;
+      flex-wrap: wrap;
+      margin: 0 0 18px;
+    }
+    #ceafe-notas .cn-lede {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      flex: 1 1 16em;
+      min-width: 0;
+    }
+    #ceafe-notas .cn-archive-link {
+      margin: 0 0 0 auto;
+      font-size: 15px;
+      text-align: right;
+      flex: 0 1 auto;
+      white-space: nowrap;
+    }
+    #ceafe-notas .cn-dates {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      margin: 0 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--line);
+    }
+    #ceafe-notas .cn-arrow {
+      width: 32px; height: 32px; border-radius: 50%; background: #6D7B8D; color: #fff;
+      font-size: 18px; line-height: 1; display: inline-flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    #ceafe-notas .cn-arrow:hover { background: #5a6a7a; }
+    #ceafe-notas .cn-arrow:disabled { background: #c5c9ce; color: #f3f3f3; cursor: default; }
+    #ceafe-notas .cn-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    #ceafe-notas .cn-chip {
+      padding: 5px 10px; border: 1px solid var(--line); border-radius: 999px;
+      background: var(--wash); font-size: 13px; font-weight: 600; color: var(--muted);
+    }
+    #ceafe-notas .cn-chip[aria-pressed="true"] {
+      background: var(--eu-blue); color: #fff; border-color: var(--eu-blue);
+    }
+    #ceafe-notas .cn-edition { margin: 0 0 22px; }
+    #ceafe-notas .cn-edition > summary {
+      list-style: none; cursor: pointer;
+      display: flex; align-items: center; gap: 10px;
+      margin: 0 0 12px; padding: 8px 12px;
+      background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--eu-blue);
+      border-radius: 8px;
+      font-family: var(--font-head); font-weight: 700; font-size: 15px; color: var(--eu-blue);
+    }
+    #ceafe-notas .cn-edition > summary::-webkit-details-marker { display: none; }
+    #ceafe-notas .cn-edition > summary::before {
+      content: "\25B8"; display: inline-block; transition: transform .15s ease; color: var(--slate);
+    }
+    #ceafe-notas .cn-edition[open] > summary::before { transform: rotate(90deg); }
+    #ceafe-notas .cn-edition > summary .cn-ed-date { color: var(--muted); font-weight: 600; font-size: 13px; }
+    #ceafe-notas .cn-section {
+      background: var(--wash); border: 1px solid var(--line); border-top: 3px solid var(--eu-blue);
+      border-radius: var(--radius); padding: 18px 18px 16px; margin: 0 0 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    #ceafe-notas .cn-section-head {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 12px;
+    }
+    #ceafe-notas .cn-section h2 {
+      grid-column: 2;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--silver);
+    }
+    #ceafe-notas .cn-section-head .cn-btn {
+      grid-column: 3;
+      justify-self: end;
+    }
+    #ceafe-notas .cn-btn {
+      display: inline-block; padding: 7px 13px; background: var(--eu-blue); color: #fff !important;
+      border-radius: 6px; font-weight: 700; font-size: 13px; text-decoration: none !important;
+    }
+    #ceafe-notas .cn-btn:hover { background: #002266; text-decoration: none !important; }
+    #ceafe-notas .cn-article { margin: 0 0 18px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+    #ceafe-notas .cn-article:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    #ceafe-notas .cn-article h3 { font-size: 19px; line-height: 1.3; margin: 0 0 8px; }
+    #ceafe-notas .cn-article h3 a.cn-story {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    #ceafe-notas .cn-article h3 a.cn-story:hover { text-decoration: underline; }
+    #ceafe-notas .cn-article p { margin: 0 0 8px; }
+    #ceafe-notas .cn-why, #ceafe-notas .cn-watch {
+      margin: 8px 0 0; padding: 8px 10px; background: #fff; border-left: 3px solid var(--eu-blue);
+      font-size: 14px; color: var(--ink);
+    }
+    #ceafe-notas .cn-watch { border-left-color: var(--silver); }
+    #ceafe-notas .cn-label {
+      font-family: var(--font-head); font-weight: 700; font-size: 11px;
+      letter-spacing: 0.06em; text-transform: uppercase; color: var(--slate);
+      display: block; margin-bottom: 2px;
+    }
+    #ceafe-notas .cn-muted { color: var(--muted); font-size: 14px; }
+    #ceafe-notas .cn-error { color: #8a1f1f; }
+    /* 2x2 grid of the four sections (latest edition at a glance). */
+    #ceafe-notas .cn-edbar {
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+      gap: 8px 16px; margin: 0 0 14px;
+    }
+    #ceafe-notas .cn-edlabel {
+      font-family: var(--font-head); font-weight: 700; font-size: 16px; color: var(--eu-blue);
+    }
+    #ceafe-notas .cn-audio {
+      display: flex; align-items: center; gap: 8px;
+      flex: 1 1 16em; min-width: 0;
+    }
+    #ceafe-notas .cn-audio-label {
+      font-family: var(--font-head); font-weight: 700; font-size: 13px; color: var(--eu-blue);
+      white-space: nowrap;
+    }
+    #ceafe-notas .cn-audio audio {
+      height: 32px; flex: 1 1 220px; min-width: 160px; max-width: 380px;
+    }
+    #ceafe-notas .cn-edchips { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    #ceafe-notas .cn-edchips .cn-edhint { font-size: 13px; color: var(--muted); margin-right: 2px; }
+    #ceafe-notas .cn-grid {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: stretch;
+    }
+    #ceafe-notas .cn-box {
+      display: flex; flex-direction: column; min-width: 0;
+      background: var(--wash); border: 1px solid var(--line); border-top: 4px solid var(--eu-blue);
+      border-radius: var(--radius); padding: 16px 18px 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    #ceafe-notas .cn-box.is-open { grid-column: 1 / -1; }
+    #ceafe-notas .cn-box h2 {
+      font-size: 17px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
+      text-align: center; color: var(--ink); margin: 0;
+    }
+    #ceafe-notas .cn-stamp {
+      text-align: center; font-size: 13px; font-weight: 600; color: var(--slate);
+      margin: 4px 0 12px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
+    }
+    #ceafe-notas .cn-box .cn-article { margin: 0 0 10px; padding-bottom: 10px; }
+    #ceafe-notas .cn-box .cn-article h3 { font-size: 16px; line-height: 1.3; margin: 0 0 6px; }
+    #ceafe-notas .cn-box .cn-lede p { margin: 0; font-size: 14.5px; line-height: 1.45; }
+    #ceafe-notas .cn-box:not(.is-open) .cn-lede {
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    #ceafe-notas .cn-box .cn-lede strong { font-weight: 600; }
+    #ceafe-notas .cn-box:not(.is-open) .cn-more { display: none; }
+    #ceafe-notas .cn-box .cn-more { margin-top: 8px; }
+    #ceafe-notas .cn-box-foot {
+      margin-top: auto; padding-top: 10px; display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    }
+    #ceafe-notas .cn-toggle {
+      font-family: var(--font-head) !important; font-weight: 700; font-size: 13px; color: var(--eu-blue) !important;
+      padding: 7px 4px !important;
+    }
+    #ceafe-notas .cn-toggle:hover { text-decoration: underline; }
+    @media (max-width: 760px) {
+      #ceafe-notas .cn-grid { grid-template-columns: minmax(0, 1fr); }
+      #ceafe-notas .cn-box.is-open { grid-column: auto; }
+    }
+    @media (max-width: 640px) {
+      #ceafe-notas { padding: 8px 12px 28px; }
+      #ceafe-notas .cn-title { font-size: 22px; }
+      #ceafe-notas .cn-article h3 { font-size: 17px; }
+      #ceafe-notas .cn-archive-link { white-space: normal; }
+      #ceafe-notas .cn-section-head {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+      }
+      #ceafe-notas .cn-section h2,
+      #ceafe-notas .cn-section-head .cn-btn {
+        grid-column: 1;
+        justify-self: center;
+      }
+    }
+    #ceafe-notas { min-width: 0; }
+    #ceafe-notas .cn-grid, #ceafe-notas .cn-box, #ceafe-notas .cn-section, #ceafe-notas .cn-edition, #ceafe-notas .cn-article, #ceafe-notas .cn-edbar, #ceafe-notas .cn-audio { min-width: 0; max-width: 100%; }
+    @media (prefers-reduced-motion: reduce) {
+      #ceafe-notas * { transition: none !important; }
+    }
+  </style>
+</head>
+<body style="margin:0;background:#fff;">
+<div id="ceafe-notas" data-lang="es">
+  <div class="cn-top">
+    <a class="cn-brand" href="https://www.ceafe.eu/" target="_top">
+      <img alt="CEAFE" width="32" height="32" data-logo>
+      <span>CEAFE</span>
+    </a>
+    <div class="cn-lang" role="group" aria-label="Language / Idioma">
+      <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+  <h1 data-i18n="title">Notas de Actualidad</h1>
+  <div class="cn-lede-row">
+    <p class="cn-lede" data-i18n="lede">Resumen diario en cuatro secciones: tres ediciones los días laborables (8:30, 14:30 y 20:30) y dos los fines de semana (14:30 y 20:30). Elija una fecha de los últimos siete días.</p>
+    <p class="cn-archive-link"><a href="https://fceafe.github.io/ceafe-archivo/" target="_blank" rel="noopener noreferrer" data-i18n="archive">Archivo (notas anteriores)</a></p>
+  </div>
+  <div class="cn-dates">
+    <button type="button" class="cn-arrow" data-daystep="-1" aria-label="Día más reciente" disabled>&lsaquo;</button>
+    <div class="cn-chips" data-chips></div>
+    <button type="button" class="cn-arrow" data-daystep="1" aria-label="Día anterior" disabled>&rsaquo;</button>
+  </div>
+  <div data-sections></div>
+</div>
+<script>
+(function () {
+  "use strict";
+  var CONFIG = {
+    MANIFEST_URL: "https://fceafe.github.io/ceafe-media/manifest.json",
+    LOGO_URL: "https://cdn.website-editor.net/f7c65aed80b742b0abbdff1644ff11b2/dms3rep/multi/Logo+CEAFE.jpg",
+    DEFAULT_LANG: "es",
+    LANG_STORAGE_KEY: "ceafe-lang"
+  };
+  try {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get("manifest")) CONFIG.MANIFEST_URL = params.get("manifest");
+    if (params.get("lang")) CONFIG.URL_LANG = params.get("lang");
+    if (CONFIG.URL_LANG === "en" || CONFIG.URL_LANG === "es") {
+      var tg = document.querySelector("#ceafe-notas .cn-lang");   /* site-wide switch handles the language */
+      if (tg) tg.style.display = "none";
+    }
+    if (params.get("logo")) CONFIG.LOGO_URL = params.get("logo");
+  } catch (e) {}
+
+  var I18N = {
+    es: {
+      title: "Notas de Actualidad",
+      lede: "Resumen diario en cuatro secciones: tres ediciones los días laborables (8:30, 14:30 y 20:30) y dos los fines de semana (14:30 y 20:30). Elija una fecha de los últimos siete días.",
+      edition: "Edición de las {t}",
+      noEdition: "Sin novedades de esta sección en esta edición.",
+      readMore: "Leer más",
+      readLess: "Leer menos",
+      otherEditions: "Ediciones del día:",
+      listen: "Escuchar",
+      archive: "Archivo (notas anteriores)",
+      openPdf: "Abrir PDF completo",
+      loading: "Cargando…",
+      loadError: "No se han podido cargar las notas.",
+      noDay: "No hay notas para esta fecha.",
+      why: "Por qué importa para Europa",
+      watch: "Qué vigilar",
+      newer: "Día más reciente",
+      older: "Día anterior",
+      months: ["ene","feb","mar","abr","may","jun","jul","ago","sept","oct","nov","dic"]
+    },
+    en: {
+      title: "Daily Notes",
+      lede: "A daily briefing in four sections: three editions on weekdays (08:30, 14:30 and 20:30) and two at weekends (14:30 and 20:30). Choose a date from the last seven days.",
+      edition: "{t} edition",
+      noEdition: "No new items in this section in this edition.",
+      readMore: "Read more",
+      readLess: "Show less",
+      otherEditions: "Editions of the day:",
+      listen: "Listen",
+      archive: "Archive (older notes)",
+      openPdf: "Open full PDF",
+      loading: "Loading…",
+      loadError: "The notes could not be loaded.",
+      noDay: "There are no notes for this date.",
+      why: "Why it matters for Europe",
+      watch: "What to watch",
+      newer: "Newer day",
+      older: "Older day",
+      months: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"]
+    }
+  };
+
+  var root, state;
+
+  function t(key) {
+    var lang = (state && state.uiLang) || "es";
+    return (I18N[lang] && I18N[lang][key]) || I18N.es[key] || key;
+  }
+  function $(sel, base) { return (base || root).querySelector(sel); }
+  function $all(sel, base) { return Array.prototype.slice.call((base || root).querySelectorAll(sel)); }
+  function esc(value) {
+    return String(value == null ? "" : value)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+  function formatDay(ymd, lang, short) {
+    if (!ymd) return "";
+    var parts = String(ymd).split("-");
+    if (parts.length !== 3) return ymd;
+    var months = (I18N[lang] || I18N.es).months;
+    var month = months[Number(parts[1]) - 1] || parts[1];
+    if (short) return Number(parts[2]) + " " + month;
+    return Number(parts[2]) + " " + month + " " + parts[0];
+  }
+  function preferredLang() {
+    if (CONFIG.URL_LANG === "en" || CONFIG.URL_LANG === "es") return CONFIG.URL_LANG;
+    try {
+      var saved = localStorage.getItem(CONFIG.LANG_STORAGE_KEY || "ceafe-lang");
+      if (saved === "en" || saved === "es") return saved;
+    } catch (e) {}
+    try {
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      if (nav.indexOf("en") === 0) return "en";
+    } catch (e) {}
+    return CONFIG.DEFAULT_LANG === "en" ? "en" : "es";
+  }
+  function persistLang(lang) {
+    try { localStorage.setItem(CONFIG.LANG_STORAGE_KEY || "ceafe-lang", lang); } catch (e) {}
+  }
+  function sectionStore() {
+    return (state.manifest && (state.manifest.sections || state.manifest.briefs)) || {};
+  }
+  function sectionMeta() {
+    if (state.manifest && Array.isArray(state.manifest.section_list) && state.manifest.section_list.length) {
+      return state.manifest.section_list;
+    }
+    if (state.manifest && Array.isArray(state.manifest.lists) && state.manifest.lists.length) {
+      return state.manifest.lists;
+    }
+    return Object.keys(sectionStore()).map(function (id) {
+      return { id: id, slug: id, short_en: id, short_es: id, title_en: id, title_es: id };
+    });
+  }
+  function allDates() {
+    var seen = {};
+    var dates = [];
+    function add(d) { if (d && !seen[d]) { seen[d] = true; dates.push(d); } }
+    var store = sectionStore();
+    Object.keys(store).forEach(function (slug) {
+      ["en", "es"].forEach(function (lang) {
+        (((store[slug] || {})[lang] || {}).items || []).forEach(function (item) { add(item && item.date); });
+      });
+    });
+    dates.sort();
+    dates.reverse();
+    return dates.slice(0, 7);
+  }
+  function currentDate() {
+    var dates = state.dates || [];
+    var idx = state.dayIndex || 0;
+    if (!dates.length) return "";
+    if (idx < 0) idx = 0;
+    if (idx > dates.length - 1) idx = dates.length - 1;
+    state.dayIndex = idx;
+    return dates[idx];
+  }
+  /* Items are sorted newest edition first; legacy single daily items have edition "". */
+  function sectionItem(slug, lang, date, edition) {
+    var block = sectionStore()[slug] || {};
+    var items = (block[lang] || {}).items || [];
+    for (var i = 0; i < items.length; i++) {
+      if (!items[i] || items[i].date !== date) continue;
+      if (edition === undefined || (items[i].edition || "") === edition) return items[i];
+    }
+    return null;
+  }
+  /* All published editions of a day, newest first: [{edition, time, audio}]. */
+  function editionsFor(date) {
+    var seen = {};
+    var out = [];
+    function add(ed, time, audio) {
+      ed = ed || "";
+      if (seen[ed]) {
+        if (audio && !seen[ed].audio) seen[ed].audio = audio;
+        return;
+      }
+      var rec = { edition: ed, time: time || "", audio: audio || null };
+      seen[ed] = rec;
+      out.push(rec);
+    }
+    ((state.manifest && state.manifest.editions) || []).forEach(function (e) {
+      if (e && e.date === date) add(e.edition, e.time, e.audio);
+    });
+    var store = sectionStore();
+    Object.keys(store).forEach(function (slug) {
+      ["en", "es"].forEach(function (lang) {
+        (((store[slug] || {})[lang] || {}).items || []).forEach(function (item) {
+          if (item && item.date === date) add(item.edition, item.time, item.audio);
+        });
+      });
+    });
+    out.sort(function (a, b) {
+      var x = a.edition || "0000", y = b.edition || "0000";
+      return x < y ? 1 : x > y ? -1 : 0;
+    });
+    return out;
+  }
+  function storyPdfHref(item, art, index) {
+    if (art && art.pdf) return art.pdf;
+    var base = (item && item.pdf) || "";
+    if (!base) return "";
+    var id = (art && art.id) || ("s" + (index + 1));
+    var page = art && art.page;
+    var parts = [];
+    if (page) parts.push("page=" + page);
+    if (id) parts.push("nameddest=" + id);
+    return parts.length ? base.replace(/#.*$/, "") + "#" + parts.join("&") : base;
+  }
+  function paraHtml(text) {
+    return (text || "").split(/\n\n+/).map(function (p) {
+      return "<p>" + esc(p).replace(/\*\*([^*]+?)\*\*/g, "<strong>$1</strong>").replace(/\n/g, "<br>") + "</p>";
+    }).join("");
+  }
+  function postHeight() {
+    try {
+      var h = Math.max(
+        document.documentElement.scrollHeight,
+        document.body ? document.body.scrollHeight : 0,
+        root ? root.scrollHeight : 0,
+        400
+      );
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({ type: "ceafe-notas-height", height: h }, "*");
+      }
+    } catch (e) {}
+  }
+  function setLang(lang, persist) {
+    state.uiLang = lang === "en" ? "en" : "es";
+    if (persist !== false) persistLang(state.uiLang);
+    root.setAttribute("data-lang", state.uiLang);
+    root.lang = state.uiLang;
+    try { document.documentElement.lang = state.uiLang; } catch (e) {}
+    try { document.title = "CEAFE — " + t("title"); } catch (e) {}
+    $all("[data-set-lang]").forEach(function (btn) {
+      btn.setAttribute("aria-pressed", btn.getAttribute("data-set-lang") === state.uiLang ? "true" : "false");
+    });
+    $all("[data-i18n]").forEach(function (el) {
+      el.textContent = t(el.getAttribute("data-i18n"));
+    });
+    var newer = $('[data-daystep="-1"]');
+    var older = $('[data-daystep="1"]');
+    if (newer) newer.setAttribute("aria-label", t("newer"));
+    if (older) older.setAttribute("aria-label", t("older"));
+    render();
+  }
+  function renderNav() {
+    var dates = state.dates || [];
+    var idx = state.dayIndex || 0;
+    var lang = state.uiLang;
+    $all("[data-daystep]").forEach(function (btn) {
+      var step = Number(btn.getAttribute("data-daystep"));
+      btn.disabled = !dates.length || (step < 0 && idx <= 0) || (step > 0 && idx >= dates.length - 1);
+    });
+    $("[data-chips]").innerHTML = dates.map(function (d, i) {
+      return '<button type="button" class="cn-chip" data-day="' + i + '" aria-pressed="' +
+        (i === idx ? "true" : "false") + '">' + esc(formatDay(d, lang, true)) + "</button>";
+    }).join("");
+    $all("[data-day]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        state.dayIndex = Number(btn.getAttribute("data-day"));
+        state.edIndex = 0;
+        render();
+      });
+    });
+  }
+  function render() {
+    renderNav();
+    var box = $("[data-sections]");
+    var lang = state.uiLang;
+    var date = currentDate();
+    var metas = sectionMeta();
+    if (!date || !metas.length) {
+      box.innerHTML = '<p class="cn-muted">' + esc(t("noDay")) + "</p>";
+      postHeight();
+      return;
+    }
+    var editions = editionsFor(date);
+    if (!editions.length) editions = [{ edition: "", time: "" }];
+    var edIdx = state.edIndex || 0;
+    if (edIdx < 0 || edIdx > editions.length - 1) edIdx = 0;
+    state.edIndex = edIdx;
+    var ed = editions[edIdx];
+    var stamp = formatDay(date, lang) + (ed.time ? " · " + ed.time : "");
+    function boxHtml(meta) {
+      var slug = meta.id || meta.slug;
+      var title = lang === "en" ? (meta.title_en || meta.short_en || slug) : (meta.title_es || meta.short_es || slug);
+      var head = "<h2>" + esc(title) + '</h2><p class="cn-stamp">' + esc(stamp) + "</p>";
+      var item = sectionItem(slug, lang, date, ed.edition) || (lang === "es" ? sectionItem(slug, "en", date, ed.edition) : null);
+      if (!item) {
+        return '<section class="cn-box" data-slug="' + esc(slug) + '">' + head +
+          '<p class="cn-muted">' + esc(t(ed.edition ? "noEdition" : "noDay")) + "</p></section>";
+      }
+      var articles = item.articles && item.articles.length
+        ? item.articles
+        : (item.headlines || []).map(function (h) { return { headline: h, summary: "", why: "", watch: "" }; });
+      var hasMore = false;
+      var body = articles.map(function (art, i) {
+        var paras = (art.summary || "").split(/\n\n+/).filter(function (x) { return x.trim(); });
+        var lede = paras.length ? paraHtml(paras[0]) : "";
+        var rest = paras.slice(1).join("\n\n");
+        var why = art.why
+          ? '<div class="cn-why"><span class="cn-label">' + esc(t("why")) + "</span>" + esc(art.why) + "</div>"
+          : "";
+        var watch = art.watch
+          ? '<div class="cn-watch"><span class="cn-label">' + esc(t("watch")) + "</span>" + esc(art.watch) + "</div>"
+          : "";
+        var more = (rest ? paraHtml(rest) : "") + why + watch;
+        if (more || paras.length) hasMore = true;
+        var href = storyPdfHref(item, art, i);
+        var headline = esc(art.headline || "");
+        var heading = href
+          ? '<h3><a class="cn-story" href="' + esc(href) + '" target="_blank" rel="noopener noreferrer">' + headline + "</a></h3>"
+          : "<h3>" + headline + "</h3>";
+        return '<article class="cn-article">' + heading +
+          (lede ? '<div class="cn-lede">' + lede + "</div>" : "") +
+          (more ? '<div class="cn-more">' + more + "</div>" : "") + "</article>";
+      }).join("") || '<p class="cn-muted">' + esc(item.title || title) + "</p>";
+      var pdf = "";  /* No 'Open full PDF' button: each headline already links to the PDF. */
+      var toggle = hasMore
+        ? '<button type="button" class="cn-toggle" data-toggle aria-expanded="false">' + esc(t("readMore")) + " \u25BE</button>"
+        : "<span></span>";
+      return '<section class="cn-box" data-slug="' + esc(slug) + '">' + head + body +
+        '<div class="cn-box-foot">' + toggle + pdf + "</div></section>";
+    }
+    var label = ed.time ? t("edition").replace("{t}", ed.time) + " · " + formatDay(date, lang) : formatDay(date, lang);
+    /* Audio player only when the manifest lists a podcast (editions up to
+       19 Nov 2026 07:30). Later editions have a video instead; no empty player. */
+    var audioUrl = ed.audio && (ed.audio[lang] || ed.audio.en || ed.audio.es) || "";
+    var player = audioUrl
+      ? '<div class="cn-audio"><span class="cn-audio-label">' + esc(t("listen")) + "</span>" +
+        '<audio controls preload="none" src="' + esc(audioUrl) + '"></audio></div>'
+      : "";
+    var chips = editions.length > 1
+      ? '<div class="cn-edchips"><span class="cn-edhint">' + esc(t("otherEditions")) + "</span>" +
+        editions.map(function (e, i) {
+          return '<button type="button" class="cn-chip" data-ed="' + i + '" aria-pressed="' + (i === edIdx ? "true" : "false") + '">' +
+            esc(e.time || formatDay(date, lang, true)) + "</button>";
+        }).join("") + "</div>"
+      : "";
+    box.innerHTML = '<div class="cn-edbar"><span class="cn-edlabel">' + esc(label) + "</span>" + player + chips + "</div>" +
+      '<div class="cn-grid">' + metas.map(boxHtml).join("") + "</div>";
+    $all("[data-ed]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        state.edIndex = Number(btn.getAttribute("data-ed"));
+        render();
+      });
+    });
+    $all("[data-toggle]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var sec = btn.closest(".cn-box");
+        var open = !sec.classList.contains("is-open");
+        sec.classList.toggle("is-open", open);
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+        btn.textContent = t(open ? "readLess" : "readMore") + (open ? " \u25B4" : " \u25BE");
+        if (!open) { try { sec.scrollIntoView({ block: "nearest" }); } catch (e) {} }
+        setTimeout(postHeight, 50);
+      });
+    });
+    postHeight();
+  }
+  function stepDay(step) {
+    var dates = state.dates || [];
+    if (!dates.length) return;
+    var next = (state.dayIndex || 0) + step;
+    if (next < 0 || next >= dates.length) return;
+    state.dayIndex = next;
+    state.edIndex = 0;
+    render();
+  }
+  function boot() {
+    root = document.getElementById("ceafe-notas");
+    if (!root || root.getAttribute("data-ready") === "1") return;
+    root.setAttribute("data-ready", "1");
+    state = { uiLang: preferredLang(), manifest: null, dates: [], dayIndex: 0, edIndex: 0 };
+    $all("[data-logo]").forEach(function (img) {
+      if (CONFIG.LOGO_URL) img.src = CONFIG.LOGO_URL;
+      else img.style.display = "none";
+    });
+    $all("[data-set-lang]").forEach(function (btn) {
+      btn.addEventListener("click", function () { setLang(btn.getAttribute("data-set-lang")); });
+    });
+    $all("[data-daystep]").forEach(function (btn) {
+      btn.addEventListener("click", function () { stepDay(Number(btn.getAttribute("data-daystep"))); });
+    });
+    window.addEventListener("resize", postHeight);
+    $("[data-sections]").innerHTML = '<p class="cn-muted">' + esc(I18N[state.uiLang].loading) + "</p>";
+    postHeight();
+    fetch(CONFIG.MANIFEST_URL + (CONFIG.MANIFEST_URL.indexOf("?") < 0 ? "?" : "&") + "v=" + Math.floor(Date.now() / 60000),
+          { credentials: "omit", mode: "cors", cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (manifest) {
+        state.manifest = manifest || {};
+        state.dates = allDates();
+        state.dayIndex = 0;
+        setLang(state.uiLang, false);
+        setTimeout(postHeight, 200);
+      })
+      .catch(function () {
+        $("[data-sections]").innerHTML = '<p class="cn-error">' + esc(I18N[state.uiLang].loadError) + "</p>";
+        setLang(state.uiLang, false);
+      });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+  else boot();
+})();
+</script>
+<style id="ceafe-hide-top">#ceafe-notas .cn-brand{display:none!important} #ceafe-notas .cn-top{border-bottom:0!important;padding-bottom:0!important;margin-top:0!important}</style>
+<script>(function(){if(new URLSearchParams(location.search).get("lang")){var t=document.querySelector("#ceafe-notas .cn-top");if(t)t.style.display="none";}})();</script>
+</body>
+</html>

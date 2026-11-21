@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Wednesday, 18 November 2026 · 13:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Wednesday, 18 November 2026 · 13:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 18 November 2026, about 06:00 to 12:00 Europe/Madrid: everything new since the 07:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<hr>
+<h2 id="s1">Update: Trump lands in Shenzhen as Xi and Putin close ranks against &ldquo;coercion&rdquo; before Thursday&rsquo;s three-way summit</h2>
+<p>US President Donald Trump arrived in Shenzhen on Wednesday for the APEC summit and was greeted on the tarmac by Xi Jinping, with a flypast by Chinese fighter jets (Anadolu; Global Times/CCTV video). The first-ever trilateral meeting of the US, Chinese and Russian presidents is scheduled for Thursday 19 November, after the leaders address the APEC forum and a Trump–Xi bilateral; Beijing says they will discuss &ldquo;issues concerning global peace&rdquo;, and Anadolu reports nuclear disarmament, the Russia-Ukraine war, Iran and trade on the agenda. Earlier on Wednesday Xi and Putin held talks lasting over two hours, continued over a working breakfast with Lavrov and Ushakov (Kremlin; TASS). Kremlin aide Yury Ushakov said work on &ldquo;the text of a statement&rdquo; following the trilateral meeting &ldquo;is proceeding intensively&rdquo; and that Putin and Trump will have &ldquo;a full-fledged conversation&rdquo; regardless of format, possibly first at Wednesday evening&rsquo;s reception (TASS, Russian state agency). On Truth Social Trump wrote that he was &ldquo;heading to China, from the Philippines&rdquo;, announcing &ldquo;a new and completely different Trade Deal with the Philippines&rdquo; that would be &ldquo;great for our Farmers and those in the business of &lsquo;Energy&rsquo;&rdquo;.</p>
+<p><strong>Why it matters for Europe.</strong> The three powers are preparing a joint text on &ldquo;global peace&rdquo;, including the war in Ukraine, at a meeting where no European state or the EU is present. Bloomberg notes the summit has drawn comparisons with Yalta; Finland&rsquo;s president had warned on 17 November of a Yalta-style division if Europe relies on US-led talks. CEAFE&rsquo;s reading: a settlement of the war on the European continent should be pan-European, with Ukraine, Russia and the EU at the table, and only a Union acting as one has the weight to claim that seat. Putin&rsquo;s attack on the EU&rsquo;s economy in Shenzhen (below) shows how Europe&rsquo;s divisions and dependence are framed from outside.</p>
+<p><strong>Key facts.</strong></p>
+<ul>
+<li>Xi to Putin (TASS summary): China and Russia &ldquo;should take responsibility as major powers and contribute to building a multipolar world order&rdquo; and &ldquo;boost exchanges between government bodies and armed forces&rdquo;; Xinhua: China-Russia relations &ldquo;have brought greater stability and certainty to a world of turbulence&rdquo;.</li>
+<li>Putin at the APEC CEO Summit: &ldquo;the old instruments of economic dominance and de facto coercion have outlived their usefulness&rdquo;; sanctions &ldquo;can still slow growth&rdquo; but no longer halt it (Russian MFA; Anadolu). He also said &ldquo;the EU has been unable to adapt to the consequences of its own sanctions. Debt burdens are growing &amp; inflation is rising&rdquo; (Russian MFA, official Russian source). Eurostat on the same morning put euro-area annual inflation at 4.0% in October 2026.</li>
+<li>Putin to Xi: Russia-China trade &ldquo;has stood well above $200 billion&rdquo; for several years (Russian MFA transcript).</li>
+<li>Canada&rsquo;s Mark Carney, asked about Putin&rsquo;s claim that sanctions are &ldquo;a thing of the past&rdquo;: &ldquo;I think you&rsquo;ll find out that they&rsquo;re very real&rdquo; (Clash Report video); Anadolu: Canada says sanctions will keep increasing while the war continues. Carney said he would meet Trump later on Wednesday (Anadolu).</li>
+<li>Trump said he &ldquo;may&rdquo; meet Kim Jong Un during the tour; Pyongyang has not confirmed (Anadolu).</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://www.aa.com.tr/en/americas/trump-in-china-for-apec-summit-global-peace-meeting-with-xi-putin/4128576">Anadolu (Turkish state agency</a> (<a href="https://www.aa.com.tr/en/politics/economic-coercion-thing-of-past-putin-tells-apec-business-leaders-as-russian-president-meets-chinas-xi/4128504">2</a>), <a href="https://t.me/MFARussia/33422">Russian MFA</a> (<a href="https://t.me/MFARussia/33426">2</a>, <a href="https://x.com/i/status/2122973081345872354">3</a>), <a href="https://t.me/news_kremlin_eng/8428">Kremlin</a>, <a href="https://t.me/tassagency_en/99043">TASS</a> (<a href="https://t.me/tassagency_en/99048">2</a>, <a href="https://t.me/tassagency_en/99054">3</a>, <a href="https://t.me/tassagency_en/99055">4</a>), <a href="https://x.com/i/status/2122976121562234923">Xinhua</a>, <a href="https://x.com/i/status/2123005692047143369">@ChinaMilBugle</a>, <a href="https://x.com/i/status/2123007111840031143">Global Times (Chinese state media</a>, <a href="https://x.com/i/status/2122986954186744166">Bloomberg</a>, <a href="https://x.com/i/status/2123004151307084090">Clash Report (Carney</a>, <a href="https://x.com/i/status/2122993215775371336">Eurostat</a>, <a href="https://truthsocial.com/@realDonaldTrump/117636323928351024">Truth Social</a></p>
+<p><strong>What to watch.</strong> The trilateral meeting and any joint statement on Thursday 19 November; a Putin–Trump encounter on Wednesday evening; whether the text mentions Ukraine and a European role. Earlier coverage: Xi–Putin and Xi&rsquo;s free-trade speech.</p>
+<hr>
+<h2 id="s2">Update: Commission proposes a €45 billion Ukraine loan for 2027, financed by joint EU debt</h2>
+<p>The European Commission on 18 November adopted legislative proposals for an &ldquo;Instrument for Coordinated Support to Ukraine&rdquo;: a limited-recourse loan of up to €45 billion for 2027, financed by EU borrowing on capital markets and guaranteed by EU budget headroom (Commission release via Mirage News; Euronews). Up to €25 billion would go to military assistance and up to €20 billion to budget support conditional on reforms, covering about two thirds of an estimated €70 billion financing gap; Ukraine would repay the principal only after receiving Russian reparations, and &ldquo;the Union reserves its right to make use of the Russian assets immobilised in the Union&rdquo; if Moscow refuses (Politico, quoting the document). Ursula von der Leyen said the aim is to &ldquo;give Ukraine a strong hand at the negotiating table&rdquo; and that the proposal will be presented at Thursday&rsquo;s Coalition of the Willing meeting in Berlin and at the European Council in two weeks (Interfax-Ukraine). The same morning the 37th Ukraine Defense Contact Group meeting in Brussels ended with 15 countries announcing new packages, led by air defence for the winter (interceptors, radars, IRIS-T systems, drones), according to Ukraine&rsquo;s defence ministry; Sweden, Ukraine and the UK signed a Letter of Intent on ammunition and materiel for Ukraine&rsquo;s JAS aircraft (Swedish NATO delegation).</p>
+<p><strong>Why it matters for Europe.</strong> Joint borrowing (&ldquo;Eurobonds&rdquo;, in Euronews&rsquo; words) shows what the Union can do when it acts as one; but CEAFE&rsquo;s line is that more money for weapons prolongs and escalates the war, weakening and impoverishing Ukraine, Russia and the EU alike and raising the nuclear risk on the continent. Euronews notes soaring borrowing costs will make the credit costly, with member states paying the annual interest. The diplomatic step CEAFE highlights is the one missing from the package: a European mandate to negotiate a pan-European peace, rather than financing a &ldquo;strong hand&rdquo; for talks led by others.</p>
+<p><strong>Key facts.</strong></p>
+<ul>
+<li>Package: the new instrument; an amendment to the MFF Regulation so the EU budget guarantees the loan; up to €5 billion more in EU loans backed by AAA/Aaa-rated third countries via the Ukraine Facility; windfall profits from immobilised Russian assets could help repay the €45 billion and the existing €90 billion Ukraine Support Loan (Commission release).</li>
+<li>The EU and its member states have provided &ldquo;nearly €238 billion&rdquo; in overall support to Ukraine since 2022 (Commission). Russia&rsquo;s immobilised assets in the EU are worth €210 billion (Euronews).</li>
+<li>Kubilius: €25 billion &ldquo;will go for defence in 2027&rdquo;; the Commission says the loan will also support closer integration of Ukraine&rsquo;s and Europe&rsquo;s defence industries.</li>
+<li>The proposals go to the European Parliament and the Council; EU leaders discuss them at their summit at the end of next week (Politico).</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://www.miragenews.com/eu-proposes-e45-billion-in-ukraine-aid-for-2027-1779492/">European Commission (via Mirage News</a>, <a href="https://www.euronews.com/2026/11/18/von-der-leyen-proposes-45bn-loan-to-ukraine-backed-by-joint-debt">Euronews</a> (<a href="https://x.com/i/status/2123005221399846971">2</a>), <a href="https://www.politico.eu/article/russian-assets-in-play-to-repay-e45b-loan-to-ukraine/">Politico</a>, <a href="https://en.interfax.com.ua/news/general/1238445.html">Interfax-Ukraine</a>, <a href="https://x.com/i/status/2122994833836953756">@vonderleyen</a>, <a href="https://x.com/i/status/2122994136437682642">@KubiliusA</a>, <a href="https://x.com/i/status/2123005380254970198">France 24</a>, <a href="https://x.com/i/status/2122973462079611299">@DefenceU</a>, <a href="https://x.com/i/status/2122961284299715058">@SwedenNato (via @SweMFA</a></p>
+<p><strong>What to watch.</strong> Berlin Coalition of the Willing meeting (19 Nov), where US and European officials are expected to discuss security guarantees (Izvestia, via TASS); the European Council; positions of member states opposed to military aid such as Slovakia (Euronews on Fico).</p>
+<hr>
+<h2 id="s3">Abu Dhabi talks: EU security institute calls Russia&rsquo;s demands on Europe&rsquo;s security order &ldquo;preposterous&rdquo;</h2>
+<p>A commentary published by the EU Institute for Security Studies (EUISS, the EU&rsquo;s agency for security analysis) says the talks in Abu Dhabi &ldquo;produced no diplomatic breakthrough&rdquo;, and that Russia &ldquo;succeeded in placing a future European security architecture on the table&rdquo;, listing its demands as no further NATO enlargement, restrictions on allied forces in Eastern Europe and &ldquo;a weakened, neutralised Ukraine&rdquo;. The author argues the EU should see this as &ldquo;an attempt to sow discord&rdquo; and warns that Europeans &ldquo;may fear that, unless they get involved, the basic contours of a new architecture may be negotiated over their heads&rdquo;. Finland&rsquo;s President Alexander Stubb dismissed a Bild report that Russian proposals in Abu Dhabi included a demand that Finland leave NATO, saying he &ldquo;has never once heard&rdquo; such statements from Russians (TASS, Russian state agency). In Brussels, the US Ambassador to NATO wrote that the Alliance is being transformed so that &ldquo;Allies take primary responsibility for Europe&rsquo;s conventional defense&rdquo;.</p>
+<p><strong>Why it matters for Europe.</strong> Whether one reads Russia&rsquo;s proposals as a manoeuvre (EUISS) or as an opening, the European security order is being discussed in formats where the EU is not a party, while Washington tells Europeans to take &ldquo;primary responsibility&rdquo; for their conventional defence. CEAFE&rsquo;s conclusion is the same from both directions: Europe needs its own mandate to negotiate and its own capabilities (ultimately a European army) so that its security is not settled over its head.</p>
+<p><strong>Key facts.</strong></p>
+<ul>
+<li>EUISS: Russia seeks to use the months before winter &ldquo;both to weaken Ukraine and to raise the cost of supporting Kyiv for its partners&rdquo;; it describes &ldquo;increasingly impatient US negotiators&rdquo; and Kremlin envoy Kirill Dmitriev&rsquo;s business offers.</li>
+<li>The Schuman Security and Defence Forum continued in Brussels (600 participants, 85+ partner countries and organisations, per the EEAS), with EEAS Secretary-General Kajsa Ollongren opening on behalf of Kaja Kallas; NATO&rsquo;s representative at the forum (@NATORomeroC) said &ldquo;the EU is an essential partner for the Alliance&rdquo;.</li>
+<li>The EUISS also opened the EU-MED Peace &amp; Security Forum (regional security, maritime security, counterterrorism).</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://www.iss.europa.eu/publications/commentary/putins-preposterous-proposals-are-no-path-peace">EUISS</a> (<a href="https://x.com/i/status/2122981292296048724">2</a>), <a href="https://t.me/tassagency_en/99040">TASS</a>, <a href="https://x.com/i/status/2122955466984894526">@USAmbNATO</a>, <a href="https://x.com/i/status/2122925267198918828">@EUSec_Defence</a>, <a href="https://x.com/i/status/2122995611133698514">@eu_eeas</a>, <a href="https://x.com/i/status/2122999399169380649">@NATORomeroC</a>, <a href="https://x.com/i/status/2122997339187208324">@EU_ISS</a></p>
+<p><strong>What to watch.</strong> Whether Russia&rsquo;s proposals are confirmed by an official source; the Berlin meeting on 19 November; Norway&rsquo;s call for a European mandate.</p>
+<hr>
+<h2 id="s4">France&rsquo;s National Assembly writes protection from extraterritorial laws into its NIS2 cybersecurity law</h2>
+<p>On 17 November the French National Assembly adopted at first reading the bill on the resilience of critical infrastructure and cybersecurity, which transposes the EU&rsquo;s NIS2 and critical-entities directives and the DORA regulation, by 464 votes to 64 (Assemblée nationale, scrutin 9916). Against the government&rsquo;s advice, deputies adopted amendment 40 (36 votes to 29), requiring the entities concerned to use technical solutions protected from foreign extraterritorial laws; the Journal du Net reports further amendments giving preference to providers qualified by ANSSI and subject to French law, sovereignty criteria in the procurement of operators of vital importance, and the option, modelled on Germany&rsquo;s transposition, of banning components controlled by a third state from the most sensitive systems. About 15,000 entities, including 1,500 local authorities, will be covered (Assembly debate). The vote comes as the US Commerce Department&rsquo;s BIS extends licensing requirements to computing capacity supplied from data centres outside the United States (Souveraine Tech; see 07:30, story on the BIS &ldquo;remote access&rdquo; rule).</p>
+<p><strong>Why it matters for Europe.</strong> It is a direct response to the kill-switch and data-sovereignty risk CEAFE flags: US laws can reach data held by US providers even in Europe, and US export controls now reach data centres abroad. A national safeguard is a start, but 27 different transpositions fragment the market; the logic CEAFE defends is a common European rule, equivalent to what Washington applies to itself, so that sensitive European data and systems rely on European providers.</p>
+<p><strong>Key facts.</strong></p>
+<ul>
+<li>Amendment 40 passed with cross-party majorities against the government&rsquo;s advice (Journal du Net); it does not itself fix where data must be hosted (Polidix summary). The text now goes to a joint committee (commission mixte paritaire) with the Senate (Souveraine Tech).</li>
+<li>MEP Aurore Lalucq (S&amp;D) called Mistral &ldquo;one of our flagships&rdquo; facing American dominance.</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://www.assemblee-nationale.fr/dyn/17/scrutins/9916">Assemblée nationale</a>, <a href="https://www.journaldunet.com/cybersecurite/1557881-nis2-l-assemblee-adopte-enfin-la-transposition-et-la-reecrit-contre-l-avis-du-gouvernement/">Journal du Net</a>, <a href="https://polidix.fr/votes/9787">Polidix</a>, <a href="https://x.com/i/status/2122976329595306255">@SouveraineTech</a> (<a href="https://x.com/i/status/2122976867179261954">2</a>), <a href="https://x.com/i/status/2122965435553628556">@AuroreLalucq</a></p>
+<p><strong>What to watch.</strong> The joint committee with the Senate; the European Commission&rsquo;s reaction (single-market compatibility); whether other member states follow.</p>
+<hr>
+<h2 id="s5">European armaments cooperation: OCCAR turns 25 and the EATC grows to 16 nations</h2>
+<p>France&rsquo;s procurement agency DGA marked 25 years of OCCAR, the Organisation for Joint Armament Co-operation, which runs 28 programmes in the land, air, naval, space and cyber domains, from the A400M, FREMM frigates and Tiger helicopter to the COBRA radar and the ASTER systems (SAMP/T and PAAMS); the DGA says these programmes strengthen the European defence technological and industrial base (BITDE), its competitiveness and interoperability. OCCAR celebrated the anniversary in Petersberg in October with German State Secretary Jens Plötner and director Joachim Sucker. The European Air Transport Command (EATC) marked 10 years of tactical airlift cooperation at the ETAC in Spain and announced that Denmark and Poland are joining, bringing membership to 16 nations. Spain&rsquo;s defence ministry marked &ldquo;25 years&rdquo; of the Airbus C295 in its service, from the veteran transport aircraft to the new search-and-rescue variant.</p>
+<p><strong>Why it matters for Europe.</strong> These are the examples CEAFE presents as positive: weapons and enablers designed, built and operated together by Europeans, with jobs and R&amp;D kept in Europe and no external permission needed to use them. The contrast with purchases of US systems, which bring ITAR controls and kill-switch risks, is the case for scaling OCCAR-type programmes and joint commands up to a European army.</p>
+<p><strong>Key facts.</strong></p>
+<ul>
+<li>OCCAR: 28 programmes; Stéphane Kammerer named as future director (DGA).</li>
+<li>EATC: 16 member nations after Denmark and Poland join (EATC).</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2122991698779517140">@DGA</a> (<a href="https://x.com/i/status/2122991702038503614">2</a>, <a href="https://x.com/i/status/2122991703741051064">3</a>), <a href="https://x.com/i/status/2122947920538268087">@EATC_</a>, <a href="https://x.com/i/status/2122962900226568203">@Defensagob</a></p>
+<p><strong>What to watch.</strong> Which new programmes OCCAR takes on under SAFE/EDIP; Poland&rsquo;s EATC membership versus its US purchases.</p>
+<hr>
+<h2>See also</h2>
+<ul>
+<li>Germany accuses Russia at the OPCW of chemical-weapons use in Ukraine — see Conflicts.</li>
+<li>Update: ICEYE–Avio, Brussels applauds and Rome hesitates — see Defence Industry.</li>
+<li>Xi and Putin denounce sanctions; euro-area inflation at 4.0% — see Economy.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

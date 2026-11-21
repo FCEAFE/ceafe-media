@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Saturday, 21 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Saturday, 21 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> Friday 20 November about 19:00 to Saturday 21 November about 13:00 Europe/Madrid: everything new since Friday’s 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Washington restricts military ties with Canada in a secret memo; Ottawa signs a naval pact with Germany and Norway</h2>
+<p><strong>US Defense Secretary Pete Hegseth circulated a classified memo last week imposing &ldquo;new restrictions&rdquo; on the US–Canada defence relationship, the Washington Post reported on Friday, citing officials; one called it certain to be seen as &ldquo;a slap in the face&rdquo; (Washington Post, Anadolu).</strong></p>
+<p>Pentagon spokesman Sean Parnell said the guidance &ldquo;does not impact defence intelligence co-operation, our binational NORAD command, or our co-operation through NATO&rdquo;, and that the Pentagon wants engagements with Canada to &ldquo;advance tangible U.S. defence objectives&rdquo; (Globe and Mail, Xinhua — Chinese state media). Canada&rsquo;s military leadership learned of the memo from the press, and Ottawa says it has received no communication about it; military exchange programmes are one possible target (Globe and Mail). At his Friday press conference Trump said Canada feels &ldquo;emboldened&rdquo; and Washington can no longer let it feel that way (Anadolu, AP).</p>
+<p><strong>Context:</strong> The same evening Canada&rsquo;s Department of National Defence announced an MOU on naval defence materiel cooperation with Germany and Norway, &ldquo;to develop, procure, and maintain naval defence equipment and systems&rdquo; (@NationalDefence). Canada, Germany and Norway had already launched a joint planning phase with TKMS for the Type 212CD submarine (TKMS). Minister David McGuinty opened the 18th Halifax International Security Forum the same day (@NationalDefence). The Globe links the friction to Ottawa holding off on buying the US F-35 and to the trade war; in May Washington suspended the Permanent Joint Board on Defense.</p>
+<p><strong>Why it matters for Europe.</strong> A NATO ally that pauses a US fighter purchase and turns to a European submarine is being punished by Washington. That is the kill-switch and dependency risk CEAFE warns about, in practice. Canada&rsquo;s choice of a German–Norwegian design shows that European industry can be the alternative partner for allies, provided Europe offers a full, sovereign supply chain.</p>
+<p><strong>What to watch.</strong> Whether the memo&rsquo;s content leaks (exchanges, training, procurement); Canada&rsquo;s response at Halifax; the next steps on the 212CD and on Canada joining European instruments such as SAFE.</p>
+<p><strong>Sources:</strong> <a href="https://www.washingtonpost.com/national-security/2026/11/20/secret-hegseth-memo-restricts-us-canada-defense-relationship/">paywalled; headline and lede</a>, <a href="https://www.theglobeandmail.com/world/us-politics/article-no-change-to-canada-us-defence-co-operation-military-sources-say-amid/">paywalled; headline and lede</a>, <a href="https://www.aa.com.tr/en/americas/us-defense-chief-imposed-new-limits-on-military-ties-with-canada-report/4132656">paywalled; headline and lede</a>, <a href="https://english.news.cn/northamerica/20261121/7ad991f2ec8e4b07ba3189f791c3a574/c.html">paywalled; headline and lede</a>, <a href="https://x.com/i/status/2123978459625992241">@washingtonpost</a>, <a href="https://x.com/i/status/2123902538265006236">@NationalDefence MOU</a>, <a href="https://x.com/i/status/2123884359614706005">Halifax</a>, <a href="https://www.tkmsgroup.com/news/article/launch-of-trilateral-cooperation-germany-norway-canada-and-tkms-begin-planning-phase-for-the-212cd-program">TKMS</a>, <a href="https://x.com/i/status/2123897564143734877">TKMS</a></p>
+<hr>
+<h2 id="s2">EU budget 2028–2034: Costa proposes €1.78 trillion, €204 billion below the Commission, with defence up 232%</h2>
+<p><strong>European Council President António Costa on Saturday tabled a new &ldquo;negotiating box&rdquo; for the 2028–2034 long-term budget (Consilium).</strong></p>
+<p>According to Rapporteur and Politico, it sets commitments at €1.78 trillion, a cut of €204 billion (10.2%) from the Commission&rsquo;s July 2025 proposal of almost €2 trillion. Costa says that, compared with the current 2021–2027 budget, defence funding rises by 232%, competitiveness by 120%, money for migration and border control doubles, external action rises 23% and Horizon Europe 57%. National contributions would rise on average from 0.80% to 0.82% of GNI. Five new own resources (large digital companies&rsquo; revenues, CBAM, non-recycled e-waste, tobacco and the ETS) would, with existing ones, raise about €60 billion a year. Against the Commission&rsquo;s plan, competitiveness is cut by €95 billion (16%) and external action by €45 billion (21%), and cohesion faces a cut for the first time (Rapporteur, Politico).</p>
+<p><strong>Context:</strong> The French presidency rejected the text at once as &ldquo;very disappointing&rdquo; and &ldquo;not a basis for an agreement&rdquo;, above all on farm income support (franceinfo). For the EPP, negotiator Siegfried Mureșan called it &ldquo;unacceptable to the European Parliament&rdquo; (Politico). Leaders hold a special summit next week, and Costa aims for a deal at the European Council from 17 December.</p>
+<p><strong>Why it matters for Europe.</strong> For the first time the EU budget is built around defence. But a 232% rise starts from a small base, and the cut to competitiveness (where the defence-industrial and R&amp;D lines sit) falls on the instruments that would let Europe build its own capabilities. A smaller common budget leaves defence spending in national hands, and too often that money goes on non-European systems.</p>
+<p><strong>What to watch.</strong> The split between the frugal countries and the cohesion group at next week&rsquo;s summit; how much of the defence heading goes to joint European procurement (EDIP/SAFE-type tools) rather than national envelopes.</p>
+<p><strong>Sources:</strong> <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/11/21/multiannual-financial-framework-president-costa-s-proposal/">consilium.europa.eu</a>, <a href="https://www.rapporteur.com/news/costa-proposes-e204-billion-cut-to-eu-budget/">rapporteur.com</a>, <a href="https://www.politico.eu/article/costa-cuts-proposed-eu-budget-by-44billion-euros/">politico.eu</a>, <a href="https://www.franceinfo.fr/monde/europe/sommet-de-l-ue/le-president-du-conseil-europeen-propose-un-budget-de-l-ue-en-baisse-de-204-milliards-d-euros-aussitot-rejete-par-la-france_8293637.html">franceinfo.fr</a>, <a href="https://x.com/i/status/2124083354823725327">@eucopresident</a>, <a href="https://x.com/i/status/2124103074931261778">@business</a></p>
+<hr>
+<h2 id="s3">Update: Europe closes ranks after the Danish murder plot; Macron speaks of Russia&rsquo;s &ldquo;new aggressiveness&rdquo;</h2>
+<p><strong>Ursula von der Leyen on Saturday condemned &ldquo;the assassination attempt against a US-Ukrainian citizen in Denmark, orchestrated by Russian intelligence services.</strong></p>
+<p>This was an attack on EU soil. And it is unacceptable&rdquo; (@vonderleyen). António Costa said the EU stands &ldquo;in full solidarity&rdquo; with Mette Frederiksen (@eucopresident). Emmanuel Macron, in a statement reposted by @F_CEAFE, said several European partners and allies had faced &ldquo;serious incidents&rdquo; in 24 hours &ldquo;that show a new aggressiveness on Russia&rsquo;s part&rdquo;, expressed solidarity with Poland and support for Copenhagen, and called Russia&rsquo;s strategy &ldquo;an irresponsible gamble&rdquo; (@EmmanuelMacron; France 24, Le Parisien). NATO&rsquo;s spokesperson spoke of &ldquo;another sign of Russia&rsquo;s willingness to put security in Allied territory at risk&rdquo; (@NATOpress). The Netherlands, Norway and the UK issued similar statements. @F_CEAFE quoted Frederiksen&rsquo;s statement: &ldquo;Denmark&rsquo;s PM attributes an assassination attempt of an American-Ukrainian citizen on Danish soil to Russia&rdquo;.</p>
+<p><strong>Context:</strong> This follows the 20:30 brief and the Kh-101 in Poland (14:30, story 1). <strong>Russia&rsquo;s response:</strong> no official Russian reaction to the Danish charges appeared in the Russian MFA posts read in this window. The MFA instead protested Romania&rsquo;s refusal of visas to Russian child athletes, and its embassy in Warsaw denounced the planned demolition of a Soviet monument in Olsztyn (reposted by @F_CEAFE).</p>
+<p><strong>Why it matters for Europe.</strong> For the first time the Commission President frames a Russian intelligence operation as &ldquo;an attack on EU soil&rdquo;. That raises the question of a common EU response (sanctions on intelligence officers, travel limits on Russian nationals, as Denmark and Poland propose) rather than 27 national expulsions.</p>
+<p><strong>What to watch.</strong> Proposals at the next Foreign Affairs Council; any Russian MFA or embassy reply to Copenhagen.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124059842029531346">@vonderleyen</a>, <a href="https://x.com/i/status/2123860656109559883">@eucopresident</a>, <a href="https://x.com/i/status/2123865506499252318">@EmmanuelMacron</a>, <a href="https://x.com/i/status/2123918493418721547">@EmmanuelMacron</a>, <a href="https://www.france24.com/fr/info-en-continu/20261120-macron-d%C3%A9nonce-un-agenda-agressif-de-la-russie-sur-le-territoire-europ%C3%A9en-un-pari-irresponsable">@EmmanuelMacron</a>, <a href="https://x.com/i/status/2123850200553042257">@NATOpress</a>, <a href="https://x.com/i/status/2123867744151986383">Dutch PM</a>, <a href="https://x.com/i/status/2123863606676865138">Norway</a>, <a href="https://x.com/i/status/2123878345620476187">Norway</a>, <a href="https://x.com/i/status/2123845911012938029">Norway</a>, <a href="https://x.com/i/status/2124071933558026305">Russian MFA on Romania</a>, <a href="https://x.com/i/status/2123919216101212591">Russian MFA on Romania</a>, <a href="https://x.com/i/status/2124109099512275245">Euronews</a></p>
+<hr>
+<h2 id="s4">EU and Indonesia sign their trade and investment agreements after ten years of talks</h2>
+<p><strong>Ursula von der Leyen announced on Saturday: &ldquo;After 10 years of negotiations, we did it…</strong></p>
+<p>We have signed the EU-Indonesia Comprehensive Economic Partnership Agreement… connecting 730 million people&rdquo; (@vonderleyen). Trade Commissioner Maroš Šefčovič signed with Trade Minister Budi Santoso, and an Investment Protection Agreement was signed with Minister Airlangga Hartarto (CNBC Indonesia). According to the Council, once fully applied up to 98.5% of tariff lines will be liberalised and 96% of Indonesian tariffs will go within five years, saving about €600 million a year in duties. Indonesian duties of up to 50% on EU cars will go within five years, and 221 EU geographical indications will be protected. Rice, sugar and ethanol are excluded, and the deal includes cooperation on energy and raw materials. Bilateral trade is about $30 billion a year (Airlangga).</p>
+<p><strong>Context:</strong> The Council authorised signature and provisional application on 18 November. The Parliament must still give its consent. Both sides aim for provisional application in early 2027, when Indonesia leaves the EU&rsquo;s GSP scheme (Council, CNBC Indonesia).</p>
+<p><strong>Why it matters for Europe.</strong> This is a trade deal negotiated as 27, with &ldquo;450 million people behind you&rdquo;, as the Commission put it the same morning. It contrasts with the &ldquo;buy 100% from us&rdquo; bilateralism in story 4. Access to Indonesian nickel and other raw materials is a supply-chain asset for European batteries and defence.</p>
+<p><strong>What to watch.</strong> The European Parliament&rsquo;s consent vote; the raw-materials chapter in practice; Chinese and US reactions.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124111154100228461">@vonderleyen</a>, <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/11/18/eu-indonesia-council-greenlights-signature-of-landmark-trade-and-investment-agreements/">@vonderleyen</a>, <a href="https://www.cnbcindonesia.com/news/20261121085713-4-787157/ieu-cepa-cepa-diteken-hari-ini-menko-airlangga-matangkan-implementasi">@vonderleyen</a>, <a href="https://x.com/i/status/2124050184212803956">@EU_Commission</a></p>
+<hr>
+<h2 id="s5">UN: deadlock over the next Secretary-General as the UK, France and China block the UAE candidate; states agree to draft &ldquo;killer robot&rdquo; rules by 2028</h2>
+<p><strong>In the Security Council&rsquo;s ninth straw poll on Friday, the UAE&rsquo;s Lana Nusseibeh again received seven &ldquo;encourage&rdquo;, six &ldquo;discourage&rdquo; and two &ldquo;no opinion&rdquo; votes.</strong></p>
+<p>According to Middle East Eye, three of the &ldquo;discourage&rdquo; votes came from the UK, France and China; the Guardian says London and Paris objected over the UAE&rsquo;s alleged links to atrocities in Sudan, which the UAE denies. Front-runner Rebeca Grynspan (Costa Rica) got ten &ldquo;encourage&rdquo; votes but two P5 &ldquo;discourage&rdquo; votes, believed to be Russia and the US. Rafael Grossi (Argentina) had three P5 &ldquo;discourage&rdquo; votes (Middle East Eye, Al-Monitor). At more than 100 days, this is the longest selection in UN history, and Guterres&rsquo;s term ends on 31 December (Guardian). US Ambassador Mike Waltz says Washington wants a Secretary-General from the Western Hemisphere (Al-Monitor). In Geneva, the 7th Review Conference of the Convention on Certain Conventional Weapons (CCW) agreed, among 128 parties, to &ldquo;elaborate&rdquo; an instrument on lethal autonomous weapons systems by 2028. There is no commitment to a legally binding treaty (AFP, AP, Al Jazeera).</p>
+<p><strong>Why it matters for Europe.</strong> Here France and the UK use their permanent seats on a line different from Washington&rsquo;s. On autonomous weapons, the slow consensus means European rules and European industry will decide what is acceptable on Europe&rsquo;s battlefields before any treaty does.</p>
+<p><strong>What to watch.</strong> The next straw poll; whether a compromise candidate emerges before 31 December.</p>
+<p><strong>Sources:</strong> <a href="https://www.middleeasteye.net/news/uk-france-and-china-vote-against-uaes-lana-nusseibeh-un">middleeasteye.net</a>, <a href="https://www.theguardian.com/world/2026/nov/20/uk-france-veto-uae-choice-lana-nusseibeh-next-un-secretary-general">theguardian.com</a>, <a href="https://www.al-monitor.com/originals/2026/11/us-seeks-un-leader-western-hemisphere-says-waltz-amid-gridlock">al-monitor.com</a>, <a href="https://www.securitycouncilreport.org/whatsinblue/2026/11/ninth-security-council-straw-poll-on-un-secretary-general-candidates.php">securitycouncilreport.org</a>, <a href="https://x.com/i/status/2124106761330180332">@clashreport</a>, <a href="https://www.aljazeera.com/news/2026/11/21/nations-agree-to-draft-rules-for-killer-robots-at-arms-control-summit">@clashreport</a>, <a href="https://x.com/i/status/2124106843068764211">@Reuters</a>, <a href="https://x.com/i/status/2124100655312941310">@UN_News_Centre / @UNGeneva</a></p>
+<hr>
+<h2 id="s6">Iran: Araghchi says the Islamabad memorandum is off the table as Washington tightens &ldquo;Operation Economic Outcast&rdquo;</h2>
+<p><strong>Iranian Foreign Minister Abbas Araghchi said Tehran will not accept a deal &ldquo;simply to end the current deadlock&rdquo; and that any agreement must prevent a renewal of the war (Al Jazeera, reposted by @F_CEAFE).</strong></p>
+<p>According to reports of his remarks, the Islamabad memorandum of understanding with Washington is &ldquo;no longer on the table&rdquo;. About 400 kg of uranium enriched to 60% &ldquo;will not leave&rdquo; Iran, though Tehran is open to a negotiated formula within a broader package (Al Jazeera; IRNA — Iranian state media). Trump said Iran wants a deal but not on terms Washington accepts (Reuters, Xinhua — Chinese state media). On Friday the US Treasury designated four Iranians under &ldquo;Operation Economic Outcast&rdquo;, including oil &ldquo;trustees&rdquo;. Bessent says Iran has &ldquo;no oil on the water&rdquo; outside the US blockade (US Treasury/OFAC; reposted by @F_CEAFE). IRNA calls the measure a &ldquo;hostile campaign&rdquo;. Iranian forces say they shot down a US MQ-9 over the Strait of Hormuz (Al Jazeera).</p>
+<p><strong>Why it matters for Europe.</strong> British officials fear new US strikes could hit the UK&rsquo;s economy and energy security (via @clashreport). Europe pays for a war it does not direct and has no seat at the table.</p>
+<p><strong>What to watch.</strong> Whether the CBS-reported US–Israeli plan for a new operation moves forward.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123914750098649467">X</a>, <a href="https://www.saba.ye/en/news3839849.htm">saba.ye</a>, <a href="https://x.com/i/status/2124052471441916366">@IrnaEnglish</a>, <a href="https://x.com/i/status/2124040261449740556">@IrnaEnglish</a>, <a href="https://home.treasury.gov/news/press-releases/sb0697">@IrnaEnglish</a>, <a href="https://ofac.treasury.gov/recent-actions/20261120">@IrnaEnglish</a>, <a href="https://x.com/i/status/2123885407938998420">@IrnaEnglish</a>, <a href="https://x.com/i/status/2123916878296895695">@IrnaEnglish</a>, <a href="https://x.com/i/status/2124065333891711252">@Reuters</a>, <a href="https://x.com/i/status/2124085991480955377">@AJEnglish MQ-9</a>, <a href="https://x.com/i/status/2124062821834989668">UK fears</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

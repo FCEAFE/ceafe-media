@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — martes, 17 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+@page {
+  /* Extra bottom margin so body text clears the stamped steel bar (~21 mm from the edge). */
+  margin: 12mm 14mm 24mm 14mm;
+}
+@media print {
+  .steel-footer { display: none !important; }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">martes, 17 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Window covered:</strong> martes 17 de noviembre de 2026, de 06:00 a 18:58 (hora de Madrid)</li>
+<li><strong>Compiled from:</strong> el informe diario de la sección Industria de Defensa de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">La OTAN arranca Starlift, programa de lanzamientos con once países, sin Francia ni EE. UU.</h2>
+<p><strong>La OTAN ha empezado a ejecutar Starlift, un proyecto multinacional para asegurar lanzamientos militares de satélites en cohetes comerciales desde puertos espaciales del territorio aliado y de Corea del Sur.</strong></p>
+<p>Diez aliados (Bélgica, Canadá, Finlandia, Alemania, Italia, Países Bajos, Noruega, Suecia, Turquía y Reino Unido) y Corea del Sur se comprometieron a financiarlo a través de la agencia de apoyo y adquisiciones de la OTAN (NSPA). Cuatro participantes originales, Francia, Hungría, Luxemburgo y Estados Unidos, no figuran en el anuncio; la OTAN no dio razones ni costes, según Breaking Defense.</p>
+<p><strong>Por qué importa a Europa.</strong> El lanzamiento rápido es una carencia que Europa ha cubierto comprando plazas a SpaceX. Starlift podría generar demanda para los microlanzadores y puertos espaciales europeos (Andøya en Noruega, Spaceport Cornwall en Reino Unido), pero es un marco de la OTAN, no de la UE, incluye a Corea del Sur y no está Francia, dueña del principal puerto espacial europeo, Kurú. Leído junto al tema 1, refuerza la necesidad de una capacidad de lanzamiento europea, en manos europeas y comprada por europeos.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122715781695729917">X post 2122715781695729917</a></li>
+<li><a href="https://breakingdefense.com/2026/11/nato-kicks-off-11-nation-starlift-satellite-launch-program/">breakingdefense.com</a></li>
+</ul>
+<hr>
+<h2 id="s2">Italia encarga a Thales Alenia Space SAR-L, un satélite radar nacional en banda L</h2>
+<p><strong>La Agencia Espacial Italiana (ASI) ha firmado con Thales Alenia Space (Thales 67 %, Leonardo 33 %), como contratista principal, el satélite SAR-L: un radar de apertura sintética en banda L de 2,2 toneladas, en órbita heliosíncrona y con una antena desplegable de más de 26 m².</strong></p>
+<p>Thales Alenia Space fabricará todo el sistema, incluida la electrónica del radar y la antena. SAR-L dará continuidad a los datos en banda L que Italia recibe hoy de los satélites argentinos SAOCOM y complementará a la constelación COSMO-SkyMed (banda X) y a Copernicus, para vigilar deformaciones del terreno, riesgos geológicos, protección civil y «seguridad del territorio». No se ha publicado el importe.</p>
+<p><strong>Por qué importa a Europa.</strong> Es un activo soberano de observación con usos de seguridad, fabricado íntegramente por una empresa francoitaliana, que pone fin a la dependencia de una fuente no europea para los datos en banda L.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122701723395399762">X post 2122701723395399762</a></li>
+<li><a href="https://www.thalesaleniaspace.com/en/press-releases/thales-alenia-space-develop-l-band-synthetic-aperture-radar-satellite-italian-space">thalesaleniaspace.com</a></li>
+<li><a href="https://www.astrospace.it/2026/11/17/lasi-e-thales-alenia-space-firmano-un-contratto-per-sar-l-il-nuovo-satellite-radar-italiano-in-banda-l/">astrospace.it</a></li>
+<li><a href="https://www.ansa.it/canale_scienza/notizie/spazio_astronomia/2026/11/17/per-litalia-un-nuovo-satellite-che-monitorera-i-movimenti-del-terreno_778335de-22e8-4eae-aefd-4226878b63d1.html">ansa.it</a></li>
+</ul>
+<hr>
+<h2 id="s3">Exportaciones europeas: WASS fabricará torpedos en India, misiles de MBDA para un dron sudafricano y un banco de pruebas libre de ITAR</h2>
+<p><strong>India: WASS Submarine Systems, de Fincantieri, firmó en Nueva Delhi un memorando con la estatal Bharat Dynamics (BDL) para estudiar la producción india de torpedos pesados y contramedidas (componentes, secciones energéticas, montaje final, pruebas y mantenimiento).</strong></p>
+<ul>
+<li><strong>India:</strong> WASS Submarine Systems, de Fincantieri, firmó en Nueva Delhi un memorando con la estatal Bharat Dynamics (BDL) para estudiar la producción india de torpedos pesados y contramedidas (componentes, secciones energéticas, montaje final, pruebas y mantenimiento). Sigue al contrato de más de 200 millones de euros (diciembre de 2025) por 48 torpedos Black Shark Advanced para los seis submarinos Scorpène (clase Kalvari) indios; indiaeuropa habla de más de 200 torpedos adicionales fabricados en India con BDL.</li>
+<li><strong>Sudáfrica:</strong> MBDA y Milkor firmaron un memorando (en AAD 2026, Pretoria) para integrar misiles de MBDA en el dron MALE Milkor 380, exhibido con dos misiles antibuque Sea Venom/ANL (120 kg, cabeza de 30 kg, hasta 30 km). Es un marco, no un contrato: faltan la integración, los disparos de prueba y las licencias de exportación.</li>
+<li><strong>Francia:</strong> MBDA y el CEA presentaron IRRIS, un sistema de pruebas de escenas infrarrojas «soberano y libre de ITAR».</li>
+</ul>
+<p><strong>Por qué importa a Europa.</strong> El armamento europeo gana mercados donde compiten EE. UU., Turquía y China (Military Africa recuerda que los drones armados africanos son sobre todo turcos y chinos), y un producto libre de ITAR significa que Washington no puede vetar su reexportación.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122655138116427788">X post 2122655138116427788</a></li>
+<li><a href="https://www.fincantieri.com/en/newsroom/press-releases/2026/fincantieri-wass-submarine-system-and-bharat-dynamics-limited-sign-agreement-to-support-indian-underwater-defense-capabilities">fincantieri.com</a></li>
+<li><a href="https://indiaeuropa.com/wass-and-bdl-sign-mou-to-build-indias-torpedo-manufacturing-base/">indiaeuropa.com</a></li>
+<li><a href="https://x.com/i/status/2122701780907597850">X post 2122701780907597850</a></li>
+<li><a href="https://defenceweb.co.za/aerospace/aerospace-aerospace/milkor-and-mbda-collaborating-on-uav-weapons-integration/">defenceweb.co.za</a></li>
+<li><a href="https://www.military.africa/2026/11/milkor-and-mbda-sign-mou-to-arm-the-milkor-380-drone/">military.africa</a></li>
+<li><a href="https://x.com/i/status/2122607130955927772">X post 2122607130955927772</a></li>
+</ul>
+<hr>
+<h2 id="s4">Compensaciones del Patriot polaco: Lockheed Martin entrega a MESKO software de diseño de motores cohete</h2>
+<p><strong>Lockheed Martin y la estatal polaca MESKO (grupo PGZ) han completado el primer proyecto de compensaciones de la fase II del programa WISŁA: MESKO recibe software avanzado, formación y apoyo técnico para diseñar con rapidez motores cohete de combustible sólido, también de mayor calibre.</strong></p>
+<p>Es uno de los ocho compromisos de Lockheed Martin (más cinco de Raytheon, unos 1.000 millones de esloti en total) ligados a la compra polaca de seis baterías Patriot más (48 lanzadores), radares LTAMDS y hasta 644 misiles PAC-3 MSE, según Portal Obronny y defence24. @F_CEAFE ha reposteado el anuncio.</p>
+<p><strong>Por qué importa a Europa.</strong> Las compensaciones son el premio de consolación de comprar a EE. UU.: algo de conocimiento queda en Polonia, pero el sistema, sus códigos, sus mejoras y los permisos de exportación siguen en Washington. La alternativa europea existía: el SAMP/T NG francoitaliano (Eurosam: MBDA y Thales), con interceptores Aster fabricados en Europa. Ese mismo día, el ministro alemán Pistorius anunció que Alemania y Noruega comprarán juntas otro paquete de armas estadounidenses para Ucrania (reposteado por @F_CEAFE, https://x.com/i/status/2122658548798660659): más dinero europeo para la industria de EE. UU. La israelí Elbit, gran proveedora de los ejércitos europeos, presentó además una cartera récord de 33.000 millones de dólares y un crecimiento de ingresos del 17 % en el tercer trimestre (https://x.com/i/status/2122584225605943500).</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122685864148865296">X post 2122685864148865296</a></li>
+<li><a href="https://defence24.pl/przemysl/lockheed-martin-i-mesko-pracuja-nad-programem-wisla-firma-o-postepach">defence24.pl</a></li>
+<li><a href="https://portalobronny.se.pl/przemysl-zbrojeniowy/lockheed-martin-i-mesko-z-pierwszym-sukcesem-w-fazie-ii-offsetu-wisla-polski-przemysl-obronny-zyskuje-kluczowe-technologie-aa-2DAV-5nab-e3iw.html">portalobronny.se.pl</a></li>
+<li><a href="https://mesko.com.pl/en/news/offset-agreements-under-phase-ii-of-the-wisla-program-signed">mesko.com.pl</a></li>
+</ul>
+<hr>
+<h2 id="s5">Industria estadounidense en breve</h2>
+<p><strong>Bombardero B-1: el soporte modular LAM de Boeing superó la revisión crítica de diseño, un paso hacia más armamento externo en el B-1 (https://x.com/i/status/2122746596198613406).</strong></p>
+<ul>
+<li><strong>Bombardero B-1:</strong> el soporte modular LAM de Boeing superó la revisión crítica de diseño, un paso hacia más armamento externo en el B-1 (https://x.com/i/status/2122746596198613406).</li>
+<li><strong>F-35:</strong> un F-35A con Technology Refresh 3 se preparó para disparo real en el programa WSEP (https://x.com/i/status/2122728973968781554); cuatro simuladores de F-35 se conectaron en tiempo real con seis F/A-18 en vuelo, «una primicia» según Lockheed Martin (https://x.com/i/status/2122679343755280483).</li>
+<li><strong>Antidrones:</strong> Northrop Grumman muestra defensa antidrones de corto alcance con cañones Bushmaster y el sistema M-ACE (https://news.northropgrumman.com/bushmaster/northrop-grumman-proves-short-range-counter-uas-dominance-with-bushmaster-chain-guns-and-m-ace-system).</li>
+<li><strong>Nuclear:</strong> Breaking Defense sobre una nueva bomba nuclear B94 revelada en documentos del Senado (https://breakingdefense.com/2026/11/senate-docs-reveal-new-b94-nuclear-bomb-but-what-is-it/; no consultado).</li>
+<li><strong>Mercados:</strong> Reuters señala caídas de las acciones de defensa a ambos lados del Atlántico tras la victoria demócrata en las elecciones de mitad de mandato (https://x.com/i/status/2122749105554567632).</li>
+</ul>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

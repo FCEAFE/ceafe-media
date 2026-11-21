@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — lunes, 16 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">lunes, 16 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Window covered:</strong> lunes 16 de noviembre de 2026, de 12:00 a 19:00 (hora de Madrid)</li>
+<li><strong>Compiled from:</strong> el informe diario de la sección Industria de Defensa de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Italia asegura que apoya la entrada rápida de Alemania en el caza GCAP</h2>
+<p><strong>El Ministerio de Defensa italiano emitió el 16 de noviembre un comunicado inusualmente largo para desmentir una información del Financial Times según la cual el ministro Guido Crosetto se habría opuesto a dar a Alemania la condición de socio del GCAP, el caza de sexta generación de Italia, Reino Unido y Japón.</strong></p>
+<p>Roma afirma que propuso para Alemania el estatus de observador solo como paso inmediato para compartir información con vistas a su plena adhesión posterior, con el fin de acelerarla sin retrasar el calendario. Berlín estudia sumarse tras el fracaso de sus conversaciones con Francia sobre el FCAS. Los tres socios adjudicaron en julio un contrato de desarrollo de 4.600 millones de libras (6.100 millones de dólares) a sus campeones nacionales, e Italia ha gastado este año 875 millones de euros. Canadá ya es observador.</p>
+<p><strong>Por qué importa a Europa.</strong> Con el FCAS paralizado, el GCAP se convierte en el principal hogar europeo del caza de nueva generación, y la entrada de Alemania uniría en un programa dos de los tres mayores presupuestos de defensa de la UE: bueno para la escala europea. Pero el GCAP no es un programa de la UE: lo lidera un país de fuera de la UE (Reino Unido), incluye a un socio no europeo (Japón) y deja a Francia en otro camino. Dos cazas europeos paralelos repetirían la división Eurofighter–Rafale que Europa ya no puede permitirse.</p>
+<p><strong>Qué vigilar.</strong> la decisión alemana sobre el GCAP y la reacción francesa sobre el futuro del FCAS.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://www.defensenews.com/global/europe/2026/11/16/italy-backs-rapid-german-membership-path-into-gcap-fighter-program/">Defense News, 16 nov.). El artículo del Financial Times (14 nov.) no se consultó (de pago).</a></li>
+</ul>
+<hr>
+<h2 id="s2">La UE paga 1.710 millones más para drones, munición y defensa aérea de Ucrania, un 40 % para fabricantes de la UE</h2>
+<p><strong>La Comisión desembolsó el 16 de noviembre 1.710 millones de euros a Ucrania con cargo al Préstamo de Apoyo a Ucrania de 90.000 millones, el octavo pago de su componente de defensa.</strong></p>
+<p>Financiará drones, munición y sistemas de defensa aérea, incluidos radares de alerta temprana y misiles, de fabricantes ucranianos y europeos; alrededor del 40 % irá a contratos con empresas establecidas en la UE. Quedan disponibles 23.600 millones de apoyo de la UE para el resto de 2026, de ellos unos 19.200 millones del préstamo (10.200 para la capacidad industrial de defensa ucraniana y 9.000 de apoyo presupuestario). El comisario Andrius Kubilius informó del pago al primer ministro ucraniano Koretskyi y ambos seguirán trabajando en el Pacto de Defensa UE–Ucrania y en la integración de sus industrias. Kubilius recibió además a la presidenta moldava, Maia Sandu: Moldavia ya participa en proyectos europeos de defensa y se integrará gradualmente en la arquitectura europea de defensa.</p>
+<p><strong>Por qué importa a Europa.</strong> El dinero de la UE compra armas a empresas ucranianas y europeas, no a través de las ventas militares estadounidenses (FMS): la preferencia europea que defiende el CEAFE, y refuerza una industria ucraniana que la UE quiere integrar en la suya.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122318907432177782">X post 2122318907432177782</a></li>
+<li><a href="https://x.com/i/status/2122356075425108351">X post 2122356075425108351</a></li>
+<li><a href="https://www.cna.org.cy/en/press_releases/article/11207014/press-release-european-commission">cna.org.cy</a></li>
+<li><a href="https://mod.gov.ua/en/news/ukraine-support-loan-tranche-1-71-billion-defence">mod.gov.ua</a></li>
+<li><a href="https://2eu.brussels/en/news/commission-disburses-another-1-71-billion-to-ukraine-for-drones-ammunition-and-air-defence">2eu.brussels</a></li>
+</ul>
+<hr>
+<h2 id="s3">El número dos del Pentágono orientó a Lockheed y RTX hacia su banquero de Goldman en los megacontratos de misiles, según Bloomberg</h2>
+<p><strong>Según Bloomberg (16 nov., fuentes anónimas), el subsecretario de Defensa de EE. UU., Steve Feinberg, sugirió a Lockheed Martin y RTX que contrataran a Jim Donovan, banquero de Goldman Sachs que trabajó durante años con él y con su antigua firma, Cerberus, mientras negociaban contratos multimillonarios con el Pentágono.</strong></p>
+<p>Ambas lo contrataron. Donovan asesoró el acuerdo de 59.000 millones de dólares de Lockheed para triplicar en siete años la producción de interceptores Patriot y sus planes de venta récord de F-35, además de dos contratos de misiles de RTX por más de 45.000 millones. Algunos directivos habrían sentido presión del Pentágono; Goldman limitó sus honorarios tras una revisión interna. El portavoz Sean Parnell calificó las acusaciones de &ldquo;completamente falsas&rdquo;. Los demócratas, que van a controlar el Congreso, prevén investigar posibles conflictos de interés.</p>
+<p><strong>Por qué importa a Europa.</strong> Son los contratos que fijan precio y plazos de los interceptores Patriot que los gobiernos europeos hacen cola para comprar, negociados en Washington con reglas y presiones políticas en las que Europa no tiene voz. Otro argumento para producir en Europa la capacidad equivalente (SAMP/T NG, IRIS-T SLM) en condiciones que fijen los europeos.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122333882427085287">X post 2122333882427085287</a></li>
+<li><a href="https://news.bgov.com/mergers-and-acquisitions/goldman-banker-won-deals-after-backing-from-pentagons-feinberg">e pago, solo entradill</a></li>
+<li><a href="https://se.marketscreener.com/nyheter/kallor-pentagonchef-pekas-ut-for-att-ha-styrt-miljardaffarer-till-goldman-sachs-bankir-bn-ce785edfdb8af32c">se.marketscreener.com</a></li>
+<li><a href="https://www.eremnews.com/news/world/wavabey">eremnews.com</a></li>
+</ul>
+<hr>
+<h2 id="s4">Actualización: la producción de interceptores Patriot recibe un pedido de motores de 1.600 millones a un segundo proveedor</h2>
+<p><strong>Northrop Grumman anunció el 16 de noviembre un pedido plurianual de 1.600 millones de dólares para motores cohete de propulsante sólido y dispositivos de seguridad de ignición del interceptor PAC-3 MSE de Lockheed Martin, fabricados en Allegany Ballistics Laboratory (Virginia Occidental).</strong></p>
+<p>Northrop se convierte así en segunda fuente junto a L3Harris. El pedido forma parte de los acuerdos marco de más de 3.000 millones de agosto y respalda el plan de Lockheed de pasar de unos 600 a unos 2.000 PAC-3 MSE al año en siete años. No se han publicado cantidades ni ritmos de entrega.</p>
+<p><strong>Por qué importa a Europa.</strong> Continúa el análisis de Bruegel sobre la dependencia europea del Patriot (nota de las 07:30): EE. UU. resuelve su cuello de botella en la propulsión, y los compradores europeos dependen de esa cadena y de sus prioridades (primero EE. UU.).</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122344311362621687">X post 2122344311362621687</a></li>
+<li><a href="https://news.northropgrumman.com/missiles/northrop-grumman-lands-1-6-billion-award-to-scale-pac-3-mse-propulsion-production">news.northropgrumman.com</a></li>
+<li><a href="https://defence-industry.eu/northrop-grumman-receives-1-6-billion-multiyear-order-for-rocket-motors-for-lockheed-martins-pac-3-mse-interceptors/">defence-industry.eu</a></li>
+</ul>
+<hr>
+<h2 id="s5">Misiles coreanos fabricados en Polonia: Hanwha–WB inicia la planta de cohetes CGR-080</h2>
+<p><strong>WB Group difundió el inicio de las obras (4 de noviembre) de la planta de Hanwha WB Advanced System (HWBAS) en Gorzów Wielkopolski, empresa conjunta 51:49 de Hanwha Aerospace y WB Electronics.</strong></p>
+<p>Fabricará cohetes guiados CGR-080 para los lanzadores Homar-K (K239 Chunmoo) polacos, con contratos plurianuales firmados en diciembre de 2025. Los primeros lotes de prueba llegarán en 2029 y la producción en serie hacia 2029/2030, con &ldquo;varios miles de misiles al año&rdquo;, según un portavoz de WB citado por Janes. Incluye transferencia de tecnología, mantenimiento, más de 60 edificios y más de 250 empleos. WB dice que podrá abastecer a usuarios del Chunmoo de todo el mundo, &ldquo;con especial atención al mercado europeo&rdquo;.</p>
+<p><strong>Por qué importa a Europa.</strong> Fabricar en el país y recibir tecnología es mejor que comprar sin más, pero la autoridad de diseño y la mayoría del capital siguen siendo coreanas, y la planta aspira a vender cohetes coreanos a otros europeos: un misil no europeo que entra en la cadena de suministro europea. La alternativa europea en artillería de cohetes de largo alcance es el programa soberano francés FLP-T, y la industria polaca podría haber sido socia de un programa europeo.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122337623326769329">X post 2122337623326769329</a></li>
+<li><a href="https://www.wbgroup.pl/en/aktualnosci/groundbreaking-ceremony-for-rocket-production-facility-in-gorzow-wielkopolski/">wbgroup.pl</a></li>
+<li><a href="https://hanwha-aerospace.eu/cgr080-plant-construction-begins-in-poland/">hanwha-aerospace.eu</a></li>
+<li><a href="https://www.janes.com/defence-intelligence-insights/defence-news/weapons/hanwha-wb-advanced-system-breaks-ground-for-missile-plant-in-poland">janes.com</a></li>
+</ul>
+<hr>
+<h2 id="s6">Industria europea y espacio</h2>
+<p><strong>Airbus entregó el segundo C295 de búsqueda y salvamento al Ejército del Aire y del Espacio: avión europeo para una fuerza aérea europea. https://x.com/i/status/2122334570641084425</strong></p>
+<ul>
+<li><strong>Airbus</strong> entregó el segundo C295 de búsqueda y salvamento al Ejército del Aire y del Espacio: avión europeo para una fuerza aérea europea. https://x.com/i/status/2122334570641084425</li>
+<li><strong>EU SST:</strong> tres nuevas licitaciones (datos comerciales, SBSS y coordinación del tráfico espacial), para reforzar la vigilancia espacial propia de la UE. https://www.eusst.eu/about-us/procurement</li>
+<li><strong>ESA Hera:</strong> primeras imágenes detalladas del asteroide Dimorphos desde DART; rueda de prensa el 25 de noviembre en Berlín. https://x.com/i/status/2122363483354280353</li>
+<li><strong>KNDS France</strong> promociona el CAESAR MK2. https://x.com/i/status/2122374141529469361</li>
+<li><strong>BAE Systems</strong> reacondicionará el portaaviones HMS Prince of Wales en Portsmouth. https://x.com/i/status/2122369437471035640</li>
+<li><strong>UE–Japón:</strong> Kubilius afirma que la cooperación de defensa se profundiza tras reunirse con el secretario de Estado japonés Nakanishi (diálogo industrial, apoyo a Ucrania, suministro seguro de componentes); solo consta la publicación. https://x.com/i/status/2122385519019487599</li>
+<li><strong>Thierry Breton:</strong> &ldquo;Los europeos están hoy solos frente a los neoimperios estadounidense, chino y ruso&rdquo;. https://x.com/i/status/2122342160531955888</li>
+<li><strong>Indra</strong> difunde un artículo de El Debate sobre su apuesta industrial por la autonomía europea. https://www.eldebate.com/ed-branded/20261115/europa-busca-autonomia-estrategica-la-apuesta-tecnologica-e-industrial-de-indra-group_480515.html</li>
+</ul>
+<hr>
+<h2>Véase también</h2>
+<ul>
+<li>Movimientos en Asia-Pacífico: EE. UU. y Rusia contra negociar sobre armas autónomas — véase Conflictos.</li>
+<li>El lugar de Europa en las negociaciones sobre Ucrania: dinero de la UE para armas europeas — véase Conflictos.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

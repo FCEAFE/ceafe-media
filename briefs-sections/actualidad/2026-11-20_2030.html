@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Friday, 20 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Friday, 20 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 20 November 2026 about 13:00 to 19:15 Europe/Madrid: everything new since the 14:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Denmark: Russian intelligence plotted to kill a Ukrainian-American on Danish soil; Copenhagen expels Russia&rsquo;s defence attaché</h2>
+<p><strong>Danish prosecutors told a court in Lyngby on Friday that two Danish men, linked to the banned Loyal to Familia gang, were hired by Russian intelligence to kill the Ukrainian-American rapper Kyivstoner (Albert Vasiliev) at a concert in Charlottenlund on 25 September; police stopped their car in Hellerup about five minutes before the show and found two loaded pistols and two knives (DR, TV 2, Hromadske).</strong></p>
+<p>The Security and Intelligence Service (PET) says the plot was &ldquo;planned and initiated&rdquo; by Russian intelligence. Foreign Minister Lars Løkke Rasmussen announced that Russia&rsquo;s defence attaché must leave Denmark within seven days (Euronews). TV 2 called it the first time Danish police have so clearly charged that a Russian intelligence service planned a killing in Denmark.</p>
+<p><strong>Context:</strong> It is the second attempt on the same man: Poland foiled the first in August 2026 and arrested a Russian national (Polish MFA, DR). Russia&rsquo;s FSB has accused Vasiliev of organising a drone supply chain for attacks on the Moscow region, an allegation that has not been independently established, and Russian state TV said killing him would be &ldquo;a matter of honour&rdquo; for the service (DR). Both suspects deny the charges. The Polish MFA said Warsaw supports the measures Denmark proposed &ldquo;to limit the access and freedom of travel of Russian nationals on the EU territory&rdquo; and called for a &ldquo;robust and coordinated&rdquo; EU and NATO reaction to &ldquo;any further Russian provocation or act of state terrorism&rdquo;. Germany&rsquo;s Foreign Office called the plot &ldquo;appalling&rdquo; and said Denmark &ldquo;can count on our unwavering solidarity&rdquo;.</p>
+<p><strong>Why it matters for Europe.</strong> On the same day as the missile in Poland, an EU capital reports a state-organised murder plot outsourced to local criminals. Each country expels diplomats and closes its own borders alone; a common EU answer (Schengen-wide limits on Russian nationals&rsquo; travel, joint counter-intelligence) only works if the 27 act together, which is what Denmark and Poland are now asking for.</p>
+<p><strong>What to watch.</strong> Russia&rsquo;s response (tit-for-tat expulsion); whether the Danish proposal on Russian nationals&rsquo; travel reaches the Council agenda; any link between the Polish and Danish plots (not established so far).</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123836740339171436">Polish MFA</a>, <a href="https://x.com/i/status/2123836093703528741">German Foreign Office</a>, <a href="https://www.euronews.com/2026/11/20/two-danes-suspected-of-russian-backed-plot-to-kill-ukrainian-rapper">Euronews</a>, <a href="https://apnews.com/article/denmark-russia-ukraine-intelligence-tensions-poland-plot-03494b78067c9572120deac038addd23">AP</a>, <a href="https://www.dr.dk/nyheder/udland/det-ved-vi-om-rapperen-som-rusland-angiveligt-ville-have-draebt-i-danmark">DR</a>, <a href="https://nyheder.tv2.dk/krimi/2026-11-20-rusland-hyrede-to-maend-bosat-i-danmark-til-at-draebe-ukrainsk-rapper-lyder-sigtelse">TV 2</a>, <a href="https://hromadske.ua/en/europa/274710-two-danish-men-accused-of-plotting-to-kill-ukrainian-rapper-kyivstoner-for-russian-intelligence">Hromadske</a></p>
+<hr>
+<h2 id="s2">&ldquo;NATO for Donbas&rdquo;: US envoys float membership for Ukraine in exchange for territory; Washington wants a deal by early January</h2>
+<p><strong>The Wall Street Journal reports that Steve Witkoff and Jared Kushner have raised two end-of-war scenarios with Ukrainian and European officials: Ukraine withdraws from the part of Donbas it still holds in exchange for full NATO membership, or the front is frozen, Ukraine stays outside NATO and receives treaty-based security guarantees from the US and possibly European allies (WSJ via Kyiv Post, Anadolu, DW).</strong></p>
+<p>Kushner raised the idea in Abu Dhabi on 10–11 November, with a Russian delegation present, and with Zelensky and European national security advisers at a Dublin military airfield on 12 November. A US official said many ideas are under discussion and both Moscow and Kyiv must agree. Separately, the Financial Times reports that the administration wants a Ukraine–Russia peace deal by early January 2027 (via @clashreport).</p>
+<p><strong>Context:</strong> Zelensky confirmed the question: &ldquo;What if Ukraine joins NATO? Would Ukraine withdraw from Donbas?&rdquo;, and repeated that Ukraine &ldquo;is not giving up its land&rdquo;. According to a Russian position paper seen by the WSJ, Moscow wants NATO aspirations removed from Ukraine&rsquo;s constitution, no allied troops or equipment in Ukraine, an end to Western arms deliveries and NATO infrastructure in Eastern Europe rolled back to 1997 levels; European negotiators call these maximalist opening positions (DW, Anadolu). Macron said after Berlin on 18 November that it was time to discuss Ukraine&rsquo;s NATO membership, while Merz reportedly told aides he does not expect it in his lifetime (DW, citing WSJ). Kushner said in Berlin on Thursday that Trump is open to an Article 5-like guarantee (Türkiye Today).</p>
+<p><strong>Why it matters for Europe.</strong> Washington is putting NATO membership, which requires the unanimous consent of all 32 allies under Article 10, on the table as a bargaining chip, while Europeans, who would carry most of any guarantee, are told about it in side meetings. Europe is divided (Paris open, Berlin sceptical) on the very offer the US is making in its name. A Europe with its own defence would negotiate as a principal, not as the guarantor of last resort.</p>
+<p><strong>What to watch.</strong> Allied reactions in the NATO Council; Kremlin answer (Russia has rejected Ukraine&rsquo;s NATO membership throughout); whether the January target is confirmed by the White House.</p>
+<p><strong>Sources:</strong> <a href="https://www.kyivpost.com/post/90709">Kyiv Post</a>, <a href="https://www.aa.com.tr/en/americas/us-floats-possible-nato-membership-for-ukraine-in-exchange-for-territorial-concessions-report/4131927">Kyiv Post</a>, <a href="https://www.dw.com/ru/wsj-ssa-obsuzdaut-vstuplenie-ukrainy-v-nato-v-obmen-na-donbass/a-79999651">DW</a>, <a href="https://www.turkiyetoday.com/world/nato-for-donbas-us-envoys-float-ukraine-membership-if-kyiv-cedes-territory-report-3232821">Türkiye Today</a>, <a href="https://x.com/i/status/2123781999118721299">@clashreport</a>, <a href="https://x.com/i/status/2123815709771714741">and</a>, <a href="https://x.com/i/status/2123763301050093766">Anadolu on X</a></p>
+<hr>
+<h2 id="s3">Update: Trump calls Russian missiles in Poland &ldquo;little&rdquo; and &ldquo;by mistake&rdquo;; Europe&rsquo;s leaders answer that Russia is choosing confrontation</h2>
+<p><strong>New since 14:30: in a Fox News phone interview aboard Air Force One on Thursday, hours before Friday&rsquo;s Kh-101 impact, Trump said: &ldquo;Putin has been landing drones in Poland and a couple of little missiles, by mistake&rdquo;, while answering Tusk&rsquo;s &ldquo;God, protect us from such friends&rdquo; with &ldquo;I like the Polish prime minister.</strong></p>
+<p>Don&rsquo;t forget I endorsed him&rdquo; (Fox News, Kyiv Post, Hromadske). Speaking in Washington on Friday about his Asia trip, Trump said &ldquo;President Putin of Russia clearly expressed his desire to see the war between Russia and Ukraine end by diplomatic means&rdquo; and &ldquo;I get along with Russia. I get along with China&rdquo; (clips by @atrupar, @clashreport, @Acyn). Putin, in Tajikistan, said he has &ldquo;no doubt&rdquo; Trump &ldquo;is genuinely committed to resolving conflicts, including the conflict in Ukraine&rdquo; (Russian Embassy in the US, reposted by the Russian MFA).</p>
+<p><strong>Context:</strong> The 14:30 edition covered the missile near Nowy Lipowiec and Tusk&rsquo;s &ldquo;intentional provocation&rdquo;. This afternoon European Council President António Costa said &ldquo;Russia continues to threaten EU Member States. Russia is going in the wrong direction&rdquo;; Kaja Kallas: &ldquo;If Moscow wants peace, its actions tell a different story&rdquo;; Germany&rsquo;s Foreign Office spoke of &ldquo;yet another example of Russia&rsquo;s ongoing provocations&rdquo;; Poland&rsquo;s MFA spokesman said &ldquo;Poland will neither be intimidated nor provoked… We will act on our own terms&rdquo;. Sweden said its JAS Gripens flew overnight with Polish F-16s and an allied tanker. In Nowa Dęba, Polish Defence Minister Kosiniak-Kamysz thanked the defence ministers of France, the UK, Lithuania and Estonia for attending the Coalition of the Willing exercise; UK Defence Secretary Wes Streeting: &ldquo;We will not allow Putin to divide our continent.&rdquo;</p>
+<p><strong>Why it matters for Europe.</strong> The ally whose guarantee underpins NATO describes as accidental the strikes that frontline governments call deliberate. Europe&rsquo;s reaction came from a coalition of individual states (Poland, UK, France, Sweden, Baltics) plus EU statements; the shield over the eastern flank still depends on how Washington reads Russian intent.</p>
+<p><strong>What to watch.</strong> Whether Poland requests Article 4 consultations; any White House clarification; Kremlin comment on the Polish impacts.</p>
+<p><strong>Sources:</strong> <a href="https://www.foxnews.com/live-news/trump-to-meet-xi-in-shenzhen-ahead-of-high-stakes-trilateral-talks-with-putin">Fox News</a>, <a href="https://www.kyivpost.com/post/90744">Kyiv Post</a>, <a href="https://hromadske.ua/en/world/274725-trump-calls-russian-missiles-entering-poland-little-says-they-landed-by-mistake">Hromadske</a>, <a href="https://x.com/i/status/2123837168363745527">@atrupar</a>, <a href="https://x.com/i/status/2123837396420817269">@Acyn</a>, <a href="https://x.com/i/status/2123837327080632679">@Acyn</a>, <a href="https://x.com/i/status/2123825904941990006">Costa</a>, <a href="https://x.com/i/status/2123820392145998144">Kallas via EEAS</a>, <a href="https://x.com/i/status/2123770450845069326">German Foreign Office</a>, <a href="https://x.com/i/status/2123790881568293253">Polish MFA</a>, <a href="https://x.com/i/status/2123767246690660408">Swedish Armed Forces</a>, <a href="https://x.com/i/status/2123824222455644473">Kosiniak-Kamysz via Streeting</a>, <a href="https://x.com/i/status/2123818645512126817">Streeting</a></p>
+<hr>
+<h2 id="s4">EU money for Ukraine: €1 billion for joint procurement from the Peace Facility and a record €7.9 billion budget payment</h2>
+<p><strong>The Council adopted two decisions mobilising €1 billion under the European Peace Facility (EPF) for the joint procurement of drones, air-defence equipment, ammunition, electronic-warfare equipment, radar systems and explosives for Ukraine&rsquo;s armed forces, to be delivered by the end of 2027 (Council press release).</strong></p>
+<p>It is the last part of the €6.6 billion EPF package agreed on 25 September 2026, which ended Hungary&rsquo;s block on the facility (Kyiv Independent, Kyiv Post). The same day the Commission released €7.9 billion under the Ukraine Facility, &ldquo;our largest single payment&rdquo;, to keep Ukraine&rsquo;s public administration running (European Commission; von der Leyen: &ldquo;nearly €8 billion&rdquo;, reposted by @F_CEAFE).</p>
+<p><strong>Context:</strong> According to the Council, EPF support to Ukraine reaches €11.8 billion since 2021, including €9.9 billion to reimburse member states&rsquo; bilateral aid and €950 million for EUMAM training; €3.5 billion of windfall profits from immobilised Russian assets have also been channelled through the EPF, of which more than €1.5 billion bought equipment directly from Ukraine&rsquo;s defence industry. Kallas: &ldquo;There are zero signs Russia wants peace… Ukraine can count on Europe to strengthen its hand on the battlefield and at the negotiating table&rdquo; (Ukrainska Pravda).</p>
+<p><strong>Why it matters for Europe.</strong> Joint procurement through a common EU instrument, rather than 27 separate national purchases, is the model CEAFE argues for. The press release does not say where the equipment will be bought; whether this €1 billion goes to European and Ukrainian industry, or to US systems as with PURL, is the test.</p>
+<p><strong>What to watch.</strong> Tender rules and any European-preference clause; next Ukraine Facility tranches.</p>
+<p><strong>Sources:</strong> <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/11/20/european-peace-facility-council-mobilises-additional-1-billion-in-new-military-aid-to-ukraine/">Council</a>, <a href="https://x.com/i/status/2123792676487037116">@EUCouncilPress</a>, <a href="https://x.com/i/status/2123820392145998144">Kallas via EEAS</a>, <a href="https://x.com/i/status/2123807521743819135">Ukraine MoD</a>, <a href="https://x.com/i/status/2123819288817451345">European Commission</a>, <a href="https://x.com/i/status/2123756500565020815">European Commission</a>, <a href="https://kyivindependent.com/eu-greenlights-1-billion-euros-in-military-support-for-ukraine-as-top-diplomat-says-russia-rejects-peace/">Kyiv Independent</a>, <a href="https://www.kyivpost.com/post/90751">Kyiv Post</a>, <a href="https://www.pravda.com.ua/eng/news/2026/11/20/8063845/">Ukrainska Pravda</a></p>
+<hr>
+<h2 id="s5">Bosnia and Herzegovina: Constitutional Court strikes down a Serb veto; Dodik announces a blockade of state institutions</h2>
+<p><strong>At its 176th plenary session (19–20 November) the Constitutional Court of Bosnia and Herzegovina annulled the vital-national-interest veto of Serb Presidency member Željka Cvijanović against the appointment of members of the Commission to Preserve National Monuments, and the Republika Srpska National Assembly decision confirming it (7 July, 59 votes to 2).</strong></p>
+<p>It also found unconstitutional the Republika Srpska criminal-code article that criminalises displaying symbols of the Army of the Republic of Bosnia and Herzegovina (Constitutional Court; Nezavisne novine; Avaz). SNSD leader Milorad Dodik said &ldquo;this is the demolition of Dayton… we will not get past this&rdquo;, and that no SNSD minister will take any decision in the state Council of Ministers until the ruling is withdrawn; on X he wrote that Bosnia &ldquo;died today… euthanasia was carried out by the Constitutional Court&rdquo;.</p>
+<p><strong>Context:</strong> Cvijanović called the ruling &ldquo;a coup against the constitutional order&rdquo;. Dodik will ask for a Republika Srpska National Assembly session to reject the decisions, and called them &ldquo;a typical Muslim conspiracy to destroy Republika Srpska&rdquo; (SRNA, Republika Srpska agency). Greece hosts the &ldquo;Friends of the Western Balkans&rdquo; foreign ministers in Athens on 23 November (Greek MFA).</p>
+<p>Background (CEAFE archive): @F_CEAFE has followed Dodik&rsquo;s challenge to the Bosnian state since March 2023, when he threatened secession and CEAFE noted that territorial integrity is treated in opposite ways depending on the country; in August 2025 the Central Election Commission terminated Dodik&rsquo;s mandate as Republika Srpska president.</p>
+<p><strong>Why it matters for Europe.</strong> Bosnia is an EU candidate where the EU runs the EUFOR Althea mission; a boycott of the Council of Ministers by the main Serb party blocks the reforms the accession path requires and tests whether the EU can keep stability in its own neighbourhood without relying on Washington, as it did at Dayton.</p>
+<p><strong>What to watch.</strong> RS Assembly session; reaction of the EU delegation, the High Representative and EUFOR; Athens meeting on 23 November.</p>
+<p><strong>Sources:</strong> <a href="https://www.ustavnisud.ba/en/176th-plenary-session">Constitutional Court</a>, <a href="https://www.nezavisne.com/novosti/bih/Ustavni-sud-BiH-srusio-veto-Narodne-skupstine-Dodik-najavio-odgovor/993449">Nezavisne novine</a>, <a href="https://avaz.ba/vijesti/bih/1089580/dodik-bijesan-zbog-odluka-ustavnog-suda-bih-blokirat-cemo-vijece-ministara">Avaz</a>, <a href="https://www.srna.rs/en/novost/1450105/dodik:-incomplete-bih-constitutional-court-rulings-will-not-stand">SRNA</a>, <a href="https://x.com/i/status/2123817393377997293">Dodik on X</a>, <a href="https://x.com/i/status/2123812224993239358">Greek MFA</a>, <a href="https://x.com/i/status/1634875717010980864">@F_CEAFE</a>, <a href="https://x.com/i/status/1953401283529900347">@F_CEAFE</a></p>
+<hr>
+<h2 id="s6">US and Chinese militaries hold maritime safety talks in Shanghai while Beijing presses Tokyo and Washington on Taiwan</h2>
+<p><strong>From 18 to 20 November the Chinese and US militaries held the 2nd working-group meeting and the 2026 annual session of the Military Maritime Consultative Agreement (MMCA) in Shanghai, reviewing the memorandum on rules of behaviour for air and maritime encounters and discussing measures to improve maritime military security, in &ldquo;candid, pragmatic and constructive&rdquo; talks (China Military, PLA outlet; Global Times, reposted by @F_CEAFE).</strong></p>
+<p>At the same time China&rsquo;s MFA told Japan that &ldquo;the pressing priority is to correct the erroneous words and moves on the Taiwan question&rdquo;, and Global Times said PM Takaichi&rsquo;s statement that Japan&rsquo;s stance is &ldquo;unchanged&rdquo; did little to ease concerns. The South China Morning Post (owned by Alibaba) reports that Xi pressed Trump to do &ldquo;the right thing&rdquo; on Taiwan and asks where that leaves US arms sales.</p>
+<p><strong>Context:</strong> Taiwan has flagged nearly 2,700 suspected China-linked accounts to Meta ahead of its 28 November local elections (via @clashreport). @F_CEAFE also reposted Global Times criticising US politicians who want Washington to stop certifying Chinese-made aircraft and to withdraw contracts from foreign defence firms that invest in China&rsquo;s aerospace sector, which Beijing calls &ldquo;politicizing normal business&rdquo;.</p>
+<p><strong>Why it matters for Europe.</strong> Washington and Beijing build crisis-management channels between themselves; Europe, whose trade depends on the Taiwan Strait and the South China Sea, has no equivalent seat. The threat to strip US contracts from foreign defence firms that invest in China would hit European companies through US extraterritorial rules.</p>
+<p><strong>What to watch.</strong> Any US arms-sale notification to Taiwan; Japan–China contacts; Taiwan&rsquo;s election.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123750248824893609">China Military</a>, <a href="https://x.com/i/status/2123760276181037510">China Military</a>, <a href="https://x.com/i/status/2123760310716973464">and</a>, <a href="https://x.com/i/status/2123764509621780490">China MFA</a>, <a href="https://x.com/i/status/2123810058530324821">Global Times</a>, <a href="https://www.scmp.com/news/china/diplomacy/article/3375260/xi-presses-trump-do-right-thing-taiwan-where-does-leave-us-arms-sales">SCMP</a>, <a href="https://x.com/i/status/2123757161326968851">@clashreport</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

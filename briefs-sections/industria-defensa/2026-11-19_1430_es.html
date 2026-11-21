@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — jueves, 19 de noviembre de 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">jueves, 19 de noviembre de 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Window covered:</strong> 19 de noviembre de 2026, de las 06:00 a las 13:15 aproximadamente (hora de Madrid): todo lo nuevo desde la edición de las 07:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Industria de Defensa de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">BAE Systems prevé recortar hasta 1.070 empleos en el Reino Unido con una cartera de 33.000 millones de libras</h2>
+<p><strong>BAE Systems comunicó a su plantilla el 18 de noviembre que abre consultas para suprimir hasta 1.070 puestos, unos 940 en su negocio aeronáutico del noroeste de Inglaterra (Warton y Samlesbury, en Lancashire) y el resto en su sede, según Aviation Week y la prensa local.</strong></p>
+<p>La empresa dice que quiere ser «eficiente, ágil y asequible» y busca hacerlo con bajas voluntarias; quedan fuera la fabricación en planta, el mantenimiento de aviones en bases de la RAF y los jóvenes en formación. El anuncio llega seis días después de una actualización al mercado con 33.000 millones de libras en pedidos en 2026 y una previsión de subida del 10–12 % del beneficio operativo subyacente. El sindicato Unite, que destapó el plan, acusa al Gobierno de «no tomar decisiones críticas» y pide nuevos contratos de Eurofighter Typhoon y de aviones de combate colaborativos (CCA). El Ministerio de Defensa recuerda la ampliación de 708 millones de libras del contrato GCAP para BAE y la venta de 8.000 millones de Typhoon a Turquía.</p>
+<p><strong>Por qué importa a Europa.</strong> La división aeronáutica de BAE fabrica el Eurofighter Typhoon, monta el demostrador del GCAP y produce piezas del F-35 estadounidense. Recortar ingenieros y personal de apoyo en el corazón de la base europea de aviación de combate, mientras los gobiernos dicen rearmarse, demuestra que el presupuesto no basta: hacen falta pedidos firmes y plurianuales. Cada pedido europeo de un caza estadounidense es un pedido que no reciben Typhoon, Rafale, Gripen o, más adelante, GCAP y FCAS. Sin una demanda europea común, la industria propia seguirá encogiendo incluso en plena expansión del gasto.</p>
+<p><strong>Qué vigilar.</strong> Decisiones británicas sobre nuevos Typhoon y un avión de combate colaborativo propio; financiación del GCAP.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123362650704756975">@AviationWeek</a>, <a href="https://aviationweek.com/defense/budget-policy-operations/bae-systems-eyes-more-1000-job-cuts">18 nov 2026</a>, <a href="https://www.itv.com/news/granada/2026-11-18/bae-systems-set-to-cut-around-900-jobs-across-sites-in-north-west">ITV News Granada</a>, <a href="https://www.lep.co.uk/news/almost-1000-jobs-to-go-at-bae-systems-in-warton-and-samlesbury-9359654">Lancashire Post</a>, <a href="https://www.thebusinessdesk.com/northwest/news/2183065-more-than-1000-jobs-set-to-be-axed-at-bae-systems-aircraft-plants/">TheBusinessDesk</a>, <a href="https://www.business-live.co.uk/manufacturing/bae-systems-cut-up-1070-34934625">Business Live</a></p>
+<hr>
+<h2 id="s2">Los Países Bajos se suman al programa europeo de blindados CAVS</h2>
+<p><strong>Los Países Bajos firmaron el 19 de noviembre el Acuerdo Técnico del programa Common Armoured Vehicle System (CAVS) en la feria NEDS 2026 de Róterdam, de la mano del secretario de Estado de Defensa, Derk Boswijk.</strong></p>
+<p>Es el primer paso para convertirse en el octavo país participante, tras Finlandia, Letonia, Suecia, Alemania, Dinamarca, Noruega y el Reino Unido. La finlandesa Patria dirige el desarrollo del vehículo 6x6; dentro de CAVS acumula pedidos de casi 2.000 vehículos con opciones y ha entregado casi 500, con buena parte de la producción en la industria de los propios países participantes. El programa recibió 60 millones de euros del instrumento europeo de adquisición conjunta EDIRPA. Según respuestas parlamentarias neerlandesas, el Patria 6x6 es candidato a sustituir los vehículos de reconocimiento NBQ; aún no hay cifras ni costes.</p>
+<p>Antecedentes: CEAFE sigue CAVS desde su arranque en 2020 como programa liderado por Finlandia en torno al Patria 6x6; Suecia se sumó en 2021, Alemania pasó a miembro de pleno derecho en enero de 2025 y Dinamarca fue la quinta nación en abril de 2025, con un pedido de 129 vehículos a través del programa. #BuyEuropean en la práctica.</p>
+<p><strong>Por qué importa a Europa.</strong> Es el modelo que defiende el CEAFE: Estados europeos que compran juntos un vehículo europeo, comparten requisitos, reparten la producción entre sus industrias y aseguran el suministro. Con cofinanciación de la UE, CAVS abarca ya los países nórdicos y bálticos, Alemania, el Reino Unido y pronto los Países Bajos. Ningún Estado miembro de la UE tiene escala suficiente por sí solo; la demanda conjunta es el camino.</p>
+<p><strong>Qué vigilar.</strong> El pedido neerlandés (número, variante NBQ) y nuevas adhesiones.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123368930546790482">@group_patria</a>, <a href="https://news.cision.com/patria-group/r/the-netherlands-joins-the-cavs-programme">19 nov 2026</a>, <a href="https://www.edrmagazine.eu/the-netherlands-joins-the-cavs-programme">EDR Magazine</a>, <a href="https://nordicdefencesector.com/en/article/netherlands-joins-the-cavs-programme">Nordic Defence Sector</a>, <a href="https://defence24.com/armed-forces/talks-with-several-countries-the-netherlands-is-interested-in-finlands-export-hit">Defence24</a>, <a href="https://x.com/i/status/1470802036715409409">@F_CEAFE</a>, <a href="https://x.com/i/status/1944726802351403368">@F_CEAFE</a></p>
+<hr>
+<h2 id="s3">La ESA firma 102 millones con OHB para la misión ClearSpace-1 de retirada de basura espacial</h2>
+<p><strong>La ESA ha adjudicado a la alemana OHB un contrato de 102 millones de euros para construir ClearSpace-1, una nave que capturará y sacará de órbita el satélite Proba-1 de la agencia cuando termine su vida útil, según European Spaceflight.</strong></p>
+<p>El contrato se firmó el 17 de noviembre en la Space Tech Expo Europe de Bremen y abre la fase de ejecución; el lanzamiento está previsto para 2030. OHB asumió el liderazgo en 2024, con la start-up suiza ClearSpace a cargo de las operaciones de aproximación y captura, después de que el objetivo original, un adaptador del Vega, fuera impactado por basura espacial en 2023. El lanzamiento, contratado al principio en un Vega C, se hará ahora en un microlanzador dedicado; una presentación de OHB de julio parece mostrar el RFA ONE de Rocket Factory Augsburg, del que OHB posee el 56,8 %, aunque ni la ESA ni OHB lo han confirmado.</p>
+<p>Antecedentes: la ESA eligió en 2020 a la start-up suiza ClearSpace para la primera misión de retirada de basura espacial y, como señaló CEAFE en abril de 2024, pasó el liderazgo de la misión a la alemana OHB.</p>
+<p><strong>Por qué importa a Europa.</strong> La retirada activa de basura y el servicio en órbita forman parte de la seguridad espacial, y la misma tecnología de captura sirve para el acercamiento e inspección en órbita. Mantenerla en una cadena industrial europea, quizá con un microlanzador europeo, crea conocimiento soberano en un campo donde EE. UU. y China avanzan deprisa.</p>
+<p><strong>Qué vigilar.</strong> Confirmación del lanzador; cobertura de la Space Tech Expo de Bremen (<a href="2026-11-17_0730.md">2026-11-17_0730.md</a>).</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123312062151467300">@AndrewParsonson</a>, <a href="https://europeanspaceflight.com/esa-awards-ohb-e102m-contract-for-clearspace-1-debris-removal-mission/">19 nov 2026</a>, <a href="https://x.com/i/status/1784224485693899049">@F_CEAFE</a></p>
+<hr>
+<h2 id="s4">Ariane 6 lanzará 36 satélites Amazon Leo el 23 de noviembre</h2>
+<p><strong>La ESA ha anunciado que Ariane 6 despegará del puerto espacial europeo de Kurú el 23 de noviembre con 36 satélites Amazon Leo, con retransmisión desde las 12:39 CET.</strong></p>
+<p>La agencia ha informado también de que sus Estados miembros se reunirán en Roma el 15 de diciembre «para dar forma al futuro de Europa en la exploración espacial»; su director general, Josef Aschbacher, escribió que «el mundo no espera a Europa» y que Europa «tiene que elegir».</p>
+<p><strong>Por qué importa a Europa.</strong> Que el lanzador pesado europeo gane dinero con una megaconstelación estadounidense ayuda a la cadencia y las cuentas de Ariane 6. Pero también significa que el cohete europeo ayuda a desplegar la red de banda ancha de un competidor estadounidense mientras IRIS², la constelación soberana de la UE, sigue a años de entrar en servicio. La reunión del 15 de diciembre en Roma decidirá cuánta ambición tendrá Europa en exploración.</p>
+<p><strong>Qué vigilar.</strong> Resultado del lanzamiento; reunión de Roma.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123360778350977184">@esa</a>, <a href="https://youtube.com/live/k2adMyxSoJE">directo</a>, <a href="https://x.com/i/status/2123357437956940275">@esa</a>, <a href="https://x.com/i/status/2123354957164208591">citando a @AschbacherJosef</a></p>
+<hr>
+<h2 id="s5">La comisión de Industria del Parlamento Europeo adopta su posición sobre la Ley Espacial de la UE</h2>
+<p><strong>El comisario de Defensa y Espacio, Andrius Kubilius, felicitó a la comisión de Industria del Parlamento Europeo (ITRE) por adoptar su posición sobre la Ley Espacial de la UE y agradeció el trabajo de la ponente Elena Donazzan.</strong></p>
+<p>Escribió que, a medida que la UE amplía sus ambiciones en el espacio, «necesita un mercado único espacial que funcione», y que espera la posición del Consejo y el inicio de los trílogos. El texto de la comisión no se ha revisado en esta ejecución.</p>
+<p><strong>Por qué importa a Europa.</strong> Unas normas únicas de la UE sobre seguridad, resiliencia y sostenibilidad de las actividades espaciales sustituirían a 27 regímenes nacionales, condición para que las empresas europeas ganen escala. También afectan a los operadores de fuera de la UE que sirven al mercado europeo, incluidas las constelaciones estadounidenses.</p>
+<p><strong>Qué vigilar.</strong> Votación en el pleno y orientación general del Consejo.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123381079130485148">@KubiliusA</a></p>
+<hr>
+<h2 id="s6">Botadura en Estonia del buque semiautónomo Euroguard, financiado por el Fondo Europeo de Defensa</h2>
+<p><strong>Florian Arbault, de la DG DEFIS de la Comisión, representó a la Comisión junto a la presidenta de Estonia, Ülle Madise, en la botadura del buque Euroguard.</strong></p>
+<p>Este proyecto del Fondo Europeo de Defensa reúne a 29 socios de 10 países para desarrollar un buque semiautónomo polivalente. No se han verificado más detalles en esta ejecución.</p>
+<p><strong>Por qué importa a Europa.</strong> Un dron naval multinacional y financiado por la UE es el tipo de programa conjunto que puede dar a Europa su propia respuesta a las ofertas estadounidenses de buques no tripulados.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123335389221970006">@ArbaultF</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

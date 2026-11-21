@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Tuesday, 17 November 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Tuesday, 17 November 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> new items since the 20:30 edition, i.e. from 18:45 on 16 November to 05:45 on 17 November 2026, Europe/Madrid (incremental reads from the last post seen).</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Brussels sets a precedent: EU anti-dumping duties now count the knock-on effect of Chinese overcapacity</h2>
+<p><strong>The European Commission imposed definitive anti-dumping duties on 16 November on cold-rolled flat steel from India, Japan, Taiwan, Türkiye and Vietnam.</strong></p>
+<p>For the first time in an EU trade-defence case it established “Particular Market Situations”, which let it construct the normal value instead of using distorted domestic prices. In India the distortion came from government measures on the price of iron ore. In Taiwan, the Commission found that Chinese overcapacity had pushed Chinese cold-rolled steel into the Taiwanese market, depressing local prices and the profitability of Taiwanese producers. In other words, Brussels now treats the price-depressing effect of Chinese overcapacity on third countries as something it can correct for (the “push-out” effect, in the words of the law firm Gide, which worked on the case). The Commission calls the investigation “of systemic importance for trade defence, beyond the products and industry sectors it concerns”, and Bloomberg reports that it is preparing further tools and assessing safeguards for chemicals and machinery.</p>
+<p><strong>China’s reaction (linked):</strong> No MOFCOM statement on this case was found by 05:45 Madrid. MOFCOM has already criticised France and Germany’s request for stronger EU trade-defence tools (10 October) and reports of a European “Section 301”-style instrument (30 September). Watch MOFCOM’s next briefing.</p>
+<p><strong>Why it matters for Europe.</strong> This is the EU using its own legal toolbox to protect a strategic industry (12 producing member states, more than 8,600 jobs), rather than copying Washington’s tariffs. The duties hit partners, not China directly, so the real test is whether Brussels uses the same reasoning against the source of the overcapacity, and against anyone else, including the US, whose subsidies distort markets. A Union of 27 can set precedents like this. No member state alone could.</p>
+<p><strong>What to watch.</strong> MOFCOM reaction; whether the new trade-defence tools and the chemicals and machinery safeguards are announced; whether partners such as India or Japan challenge the duties at the WTO.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://policy.trade.ec.europa.eu/news/commission-imposes-anti-dumping-duties-certain-cold-rolled-flat-steel-products-2026-11-16_en">policy.trade.ec.europa.eu</a></li>
+<li><a href="https://www.gide.com/en/news-insights/trade-relations-between-the-eu-and-the-rest-of-the-world-the-case-published-today-in-the-cold-rolled-flat-steel-crf-case-sets-a-landmark-precedent/">gide.com</a></li>
+<li><a href="https://newspillar.live/en/international/eu-takes-aim-at-knock-on-effects-of-chinese-trade-overcapacity">Bloomberg reprint</a></li>
+<li><a href="https://x.com/i/status/2122399333601395024">Bloomberg</a></li>
+<li><a href="https://english.mofcom.gov.cn/News/SpokesmansRemarks/index.html">english.mofcom.gov.cn</a></li>
+</ul>
+<hr>
+<h2 id="s2">Update: The chip rule hits Asian markets as Trump’s aides fight over China</h2>
+<p><strong>New facts since the 20:30 edition: Monday’s sell-off in Taiwan was the second-largest one-day point loss in the TAIEX’s history, at −6.03% to 41,040.</strong></p>
+<p>TSMC fell 5.74%, Foxconn 9.34% and MediaTek 7.89%, with 17 high-priced stocks limit-down (Taiwan News). Barclays blamed forced retail liquidation. On Tuesday morning, after the BIS rule, the Nikkei was down 0.9% (Advantest −3.9%, SoftBank −3.8%), the Kospi was down 1.0% (Samsung −2.0%, SK hynix −1.1%) and Singapore was down 0.6% (Dow Jones/MarketScreener). UOB estimates that the move erased about $960 bn in US tech market value. Bloomberg reports that Chinese model developer Z.ai has fallen 85% from its peak as chip fears hit Chinese AI firms. In Washington, the Washington Post and WSJ describe an open feud between Treasury Secretary Bessent and Commerce Secretary Lutnick over Nvidia chips. Hours after the crackdown, Trump said he understood “both sides”.</p>
+<p><strong>China’s reaction (linked):</strong> Still no MOFCOM statement on the final rule by 05:45 Madrid. The latest official line found is the Foreign Ministry’s of 13 November: China “opposes abuse of export control measures” and urges both sides to deliver on the “common understandings between the two presidents”. Watch the Shenzhen summit.</p>
+<p><strong>Why it matters for Europe.</strong> Washington’s chip policy now moves markets across Asia and is being made through a personal fight inside the cabinet. That is a fragile base for European clouds and for ASML, which must comply with it. Europe still has no equivalent lever of its own.</p>
+<p><strong>What to watch.</strong> Trump–Xi summit in Shenzhen; MOFCOM; European chip stocks (ASML, Infineon, STMicro) at today’s open.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.taiwannews.com.tw/news/6477193">taiwannews.com.tw</a></li>
+<li><a href="https://www.marketscreener.com/news/asian-equities-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-ce785edfdf8cff23">marketscreener.com</a></li>
+<li><a href="https://www.washingtonpost.com/technology/2026/11/16/fight-between-bessent-lutnick-over-nvidia-chips-heats-up/">washingtonpost.com</a></li>
+<li><a href="https://exportcompliancedaily.com/article/2026/11/16/china-warns-us-against-imposing-new-chip-controls-2611130009">exportcompliancedaily.com</a></li>
+<li><a href="https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/">arstechnica.com</a></li>
+<li><a href="https://x.com/i/status/2122547789150212357">WaPo</a></li>
+<li><a href="https://x.com/i/status/2122530491408560381">WSJ</a></li>
+<li><a href="https://x.com/i/status/2122531439765790804">Bloomberg, Barclays</a></li>
+<li><a href="https://x.com/i/status/2122540249498681850">Bloomberg, Z.ai</a></li>
+<li><a href="https://x.com/i/status/2122513833457557740">Bloomberg</a></li>
+<li><a href="https://x.com/i/status/2122479917568782534">Bloomberg, Southeast Asia</a></li>
+</ul>
+<hr>
+<h2 id="s3">Macron in Kuala Lumpur: rare earths and defence, as Malaysia questions Western suppliers</h2>
+<p><strong>President Emmanuel Macron is meeting Prime Minister Anwar Ibrahim on 17 November, on his first visit to Malaysia since 2017, to upgrade relations to a “strategic partnership” and sign several MoUs on defence, trade, the energy transition and critical minerals.</strong></p>
+<p>Macron said that a key aim is to diversify France’s sources of rare earths: “having several sources of supply means reducing the risk of having to halt production lines”. The French firm Carester and the Malaysian miner Malaco are working on a mining and processing project that includes a separation plant in Perak with an estimated capacity of about 13,000 tonnes of rare earths a year. France is also offering help on Malaysia’s move from chip packaging into chip design. Malaysia is reassessing foreign arms suppliers after Norway revoked an export licence for missiles for its navy. Its defence minister said this raised questions about the trustworthiness of Western and NATO partners (France 24/Reuters).</p>
+<p><strong>Why it matters for Europe.</strong> It is a concrete European move to break China’s grip on rare earths without relying on US-led clubs. But it is still one member state acting alone, and it competes with Germany’s and others’ efforts. The Norway episode shows how export-licence politics can close markets to European industry. Pooled EU purchasing and stockpiling of critical raw materials, and predictable European export rules, would carry more weight than national deals.</p>
+<p><strong>What to watch.</strong> Texts of the MoUs signed today; any defence contract; EU Critical Raw Materials Act projects.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.france24.com/en/asia-pacific/20261117-macron-malaysia-france-defence-rare-earths-trade-energy">france24.com</a></li>
+<li><a href="https://x.com/i/status/2122536660022018281">France 24</a></li>
+<li><a href="https://x.com/i/status/2122535256154644611">Reuters</a></li>
+</ul>
+<hr>
+<h2 id="s4">Update: Oil drops below $93 despite more tanker attacks; Houthis close in on Bab el-Mandeb</h2>
+<p><strong>New facts since the 20:30 edition: Brent settled down 3.6% at $92.44 a barrel on Monday and WTI 3.2% lower at $85.72.</strong></p>
+<p>In Asian trading on Tuesday Brent was around $92. Recovering Middle East exports point to a surplus: the IEA expects the market to return to surplus in Q4, and Saudi Arabia pumped 10.5 mb/d in October (ANZ). The risks have not gone away, though. The IRGC claims that two more tankers hit mines (not independently verified), UKMTO reported two tanker attacks off Khasab, Oman, and the IMO has recorded 136 security incidents involving vessels in the region since 1 March, 35 of them in October. In Yemen, Houthi fighters have advanced to about 100 km from Aden after government forces left positions near the Bab el-Mandeb, the strait used by Saudi crude shipped from Yanbu, which has been the kingdom’s main export outlet since the Iran war began. Iran warns of severe gas shortages this winter (Al Jazeera, Reuters).</p>
+<p><strong>Why it matters for Europe.</strong> Cheaper oil hides a fragile supply: both chokepoints feeding Europe and Asia are contested at once. Europe has no naval or energy-security instrument of its own at that scale, and it depends on Saudi rerouting and on US decisions. The US Strategic Petroleum Reserve is at its lowest since 1982 after a 172 m-barrel release, so Washington’s buffer is thinner too.</p>
+<p><strong>What to watch.</strong> TTF and EU storage today; OPEC+ on 29 November; Houthi moves around Aden.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.iranintl.com/en/202611177182">iranintl.com</a></li>
+<li><a href="https://www.cnbc.com/2026/11/17/oil-slips-on-supply-surplus-outlook-despite-gulf-tensions.html">cnbc.com</a></li>
+<li><a href="https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field">aljazeera.com</a></li>
+<li><a href="https://oilprice.com/Energy/Energy-General/Houthi-Advance-Puts-Saudi-Crude-Exports-at-Risk.html">oilprice.com</a></li>
+<li><a href="https://x.com/i/status/2122431337776767098">Al Jazeera</a></li>
+<li><a href="https://x.com/i/status/2122486944638849359">Al Jazeera, Bab al-Mandeb</a></li>
+<li><a href="https://x.com/i/status/2122428250894799058">Reuters, Iran gas</a></li>
+<li><a href="https://x.com/i/status/2122520123160330516">Reuters, OPEC</a></li>
+<li><a href="https://x.com/i/status/2122445875096002924">Bloomberg, diesel</a></li>
+<li><a href="https://x.com/i/status/2122473046371950969">@F_CEAFE RT Al Jazeera</a></li>
+</ul>
+<hr>
+<h2 id="s5">A US Pentagon loan props up Wolfspeed, Infineon’s silicon carbide wafer supplier</h2>
+<p><strong>Wolfspeed (Durham, North Carolina), the silicon carbide (SiC) materials and power-chip maker, reported revenue of $155 m for the quarter to 27 September.</strong></p>
+<p>That is down 21% year on year but up 3.6% on the previous quarter. Its net loss was $111.4 m. AI data centres were its fastest-growing market. The company is building its recovery on a conditional 30-year, $1.5 bn loan commitment from the US Department of War “to advance the domestic supply chain for wide-bandgap semiconductors”. The first $600 m tranche refinances costly debt, and later tranches would fund domestic GaN power devices, GaN-on-SiC RF materials and radiation-hardening capabilities. During the quarter Wolfspeed extended its long-term SiC wafer supply agreement with Germany’s Infineon from 150 mm to 200 mm wafers (Semiconductor Today).</p>
+<p><strong>Why it matters for Europe.</strong> Washington treats SiC and GaN, which are key to electric vehicles, radar and electronic warfare, as national security and funds its champion through the defence budget. Europe’s largest power-semiconductor maker, Infineon, deepens its reliance on that US-backed supplier. Europe has SiC capacity of its own (STMicro in Catania, Soitec), and the EU Chips Act and EDF should treat this as a sovereignty issue in the same way.</p>
+<p><strong>What to watch.</strong> Final terms of the US government loan; Infineon’s SiC sourcing strategy.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.semiconductor-today.com/news_items/2026/nov/wolfspeed-161126.shtml">semiconductor-today.com</a></li>
+<li><a href="https://x.com/i/status/2122435892346560978">Semiconductor Today, R&amp;D list</a></li>
+</ul>
+<hr>
+<h2>See also</h2>
+<ul>
+<li>Carney meets Xi in Shenzhen: more tariff relief and a strategic partnership — see World.</li>
+<li>Update: Hormuz tanker attacks continue as Iran sets terms — see Conflicts.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

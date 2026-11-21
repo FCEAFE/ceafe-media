@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — lunes, 16 de noviembre de 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">lunes, 16 de noviembre de 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Window covered:</strong> 15–16 de noviembre de 2026</li>
+<li><strong>Compiled from:</strong> el informe diario de la sección Industria de Defensa de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Bruegel: la apuesta europea por la tecnología estadounidense para la superioridad aérea «se está desmoronando»</h2>
+<p><strong>Un análisis de Bruegel del 10 de noviembre (Burilkov, Ospital y Wolff), difundido en la lista europea por @AresGroup_EU, sostiene que depender de la base industrial de EE. UU. para la defensa aérea y antimisiles se ha convertido en «un importante lastre estratégico».</strong></p>
+<p>Los países europeos encargaron 1.519 misiles Patriot entre febrero de 2022 y finales de 2025, frente a 1.026 en los siete años anteriores. Europa concentró el 84 % de los Patriot pedidos en el mundo entre 2022 y 2025. Las entregas de PAC-3 MSE subieron de 385 (2023) a 620 (2025), pero la cartera pendiente alcanzó los 4.300 misiles en mayo de 2026, al menos un 35 % para Europa. Al ritmo actual, eso equivale a casi siete años de producción. A principios de 2026, Washington avisó además de nuevos retrasos por la guerra con Irán. Los Patriot suponen el 67 % de los lanzadores europeos de largo alcance (182 de 304, según datos del IISS). Francia e Italia, que operan el SAMP/T europeo (Aster 30, Eurosam), no tienen pedidos de Patriot.</p>
+<p><strong>Por qué importa a Europa.</strong> Es la tesis del CEAFE con cifras. Comprar a EE. UU. debía garantizar disponibilidad y compromiso estadounidense. En la práctica ha creado una dependencia tecnológica y una cola de siete años sujeta a las prioridades de otro país. Bruegel concluye que, si Europa hubiera apostado en 2022 por alternativas propias, hoy la diferencia «ya sería enorme». Pide carteras de pedidos a largo plazo para el SAMP/T y para el nuevo sistema <strong>Freyja</strong>, impulsado por diez países (prototipo posible a mediados de 2027). Alemania, con 70 lanzadores Patriot, es la más expuesta. La alternativa europea existe; lo que le faltan son pedidos.</p>
+<p><strong>Qué vigilar.</strong> calendario y financiación de Freyja (FED/SAFE) y las próximas decisiones alemanas en defensa aérea.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2121175629060022704">X post 2121175629060022704</a></li>
+<li><a href="https://www.bruegel.org/analysis/europes-strategic-bet-us-technology-air-superiority-unravelling">bruegel.org</a></li>
+</ul>
+<hr>
+<h2 id="s2">GLOBSEC: el 71 % de los europeos apoya un ejército de la UE</h2>
+<p><strong>Según POLITICO (13 de noviembre), el informe Trends 2026 de GLOBSEC, con encuestas en 14 países, recoge que el 71 % quiere que la UE tenga su propio ejército.</strong></p>
+<p>El apoyo llega al 82 % en Rumanía, el 78 % en Lituania y el 75 % en Francia, y es del 70 % en Polonia y Bulgaria y del 69 % en Alemania. El 78 % de los encuestados en la UE apoya capacidades propias junto a la OTAN, y el 77 % en países de la OTAN seguiría en la Alianza. Más de un tercio de los europeos ve ya a EE. UU. como una amenaza para su seguridad. Alemania es el único país donde esa opinión es mayoritaria. El comisario Kubilius lo compartió en la lista: los europeos quieren «más Europa» y «una Europa más fuerte» dentro de la OTAN.</p>
+<p><strong>Por qué importa a Europa.</strong> La opinión pública va por delante de los gobiernos. Un ejército europeo, y la industria europea que debería equiparlo, cuenta con mayoría incluso en países tradicionalmente reticentes. Eso da cobertura política a la preferencia europea en EDIP y SAFE.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2121321977881227680">X post 2121321977881227680</a></li>
+<li><a href="https://www.politico.eu/article/european-citizens-overwhelmingly-back-creation-of-an-eu-army-survey-finds/">politico.eu</a></li>
+</ul>
+<hr>
+<h2 id="s3">Italia eleva a 875 millones su gasto en GCAP y recorta vehículos del Ejército (Defense News)</h2>
+<p><strong>Defense News (Tom Kington, 13 de noviembre) informa, a partir del presupuesto de defensa italiano de 2026 enviado al Parlamento, de que Roma ha gastado <strong>875 millones de euros en GCAP</strong>.</strong></p>
+<p>La cifra compara con 625 millones en 2025 y una previsión de 275 millones, y para 2027 se prevén 696 millones. El programa Lynx/Panther con Rheinmetall (1.050 Lynx y 272 Panther, 23.000 millones) más la modernización del Ariete se queda en 177 millones, frente a 425 previstos, y debería subir a 872 millones en 2027. El F-35 (115 aviones) costó 782 millones, por debajo de los 961 previstos.</p>
+<p><strong>Por qué importa a Europa.</strong> El dinero se desplaza hacia un caza soberano de sexta generación, hecho por la industria europea y aliada (Leonardo y BAE Systems, con Japón), y se aleja del F-35 estadounidense. Es positivo para la I+D y el empleo europeos. Según Defense News, Alemania sopesa sumarse a GCAP tras el fracaso del FCAS con Francia. Sería positivo para la integración industrial, pero Europa sigue teniendo dos esfuerzos rivales y ningún programa único de caza europeo.</p>
+<p><strong>Qué vigilar.</strong> decisión alemana sobre GCAP (Italia propone primero estatus de observador) y aprobación parlamentaria.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://www.defensenews.com/global/europe/2026/11/13/italy-boosts-gcap-fighter-spending-as-army-vehicles-take-a-hit-in-budget/">defensenews.com</a></li>
+<li><a href="https://www.aviomedia.net/gcap-nel-2026-l-italia-porta-lo-stanziamento-a-875-milioni-di-euro">aviomedia.net</a></li>
+</ul>
+<hr>
+<h2 id="s4">Movimientos industriales intraeuropeos: WB Group entra en Alemania, Diehl estrena línea de proyectiles y España autoriza los PEM</h2>
+<p><strong>WB Group (Polonia) inauguró el 10 de noviembre WB GERMANY en Berlín, frente al Ministerio de Defensa según Handelsblatt.</strong></p>
+<ul>
+<li><strong>WB Group (Polonia)</strong> inauguró el 10 de noviembre WB GERMANY en Berlín, frente al Ministerio de Defensa según Handelsblatt. También anunció su primera compra en Alemania, Smoto (Ratisbona), que fabricará motores para sus drones. Apela al acuerdo de cooperación de defensa germano-polaco de junio y a unas pruebas de la Bundeswehr en septiembre con un 100 % de aciertos del WARMATE (dato de la empresa).</li>
+<li><strong>Diehl Metall y Diehl Defence</strong> difundieron la inauguración en Röthenbach de una nueva línea de cuerpos de proyectil DiNa de 155 mm.</li>
+<li><strong>España:</strong> TEDAE celebró la autorización de los Programas Especiales de Modernización (PEM) por el Consejo de Ministros. Destaca la certidumbre presupuestaria plurianual, el empleo cualificado y las «capacidades industriales soberanas». No da importes.</li>
+<li><strong>Reino Unido–Noruega:</strong> Londres comprará tres buques de diseño noruego P1118 como nodrizas de sistemas no tripulados de cazaminas (90 millones de libras; el primero en 2031). El acuerdo se cerró en Oslo el 12 de noviembre (GOV.UK; Breaking Defense).</li>
+<li><strong>La EDA</strong> realizó en Suiza su primera campaña de experimentación fuera de la UE, con drones y robots terrestres para abastecimiento y evacuación en combate urbano.</li>
+</ul>
+<p><strong>Por qué importa a Europa.</strong> Son los casos positivos de la línea editorial: capital y producción europeos que cruzan fronteras, munición fabricada en Europa y programas nacionales planteados como autonomía europea.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2121209758266917208">X post 2121209758266917208</a></li>
+<li><a href="https://www.wbgroup.pl/en/aktualnosci/wb-group-expands-into-germany/">wbgroup.pl</a></li>
+<li><a href="https://www.handelsblatt.com/politik/international/verteidigung-polens-groesste-private-ruestungsfirma-expandiert-nach-deutschland/100268433.html">handelsblatt.com</a></li>
+<li><a href="https://x.com/i/status/2121139501825237231">X post 2121139501825237231</a></li>
+<li><a href="https://tedae.org/defensa/tedae-valora-positivamente-la-autorizacion-de-los-programas-especiales-de-modernizacion-pem-para-reforzar-la-inversion-y-la-planificacion-en-defensa-y-seguridad/">tedae.org</a></li>
+<li><a href="https://www.gov.uk/government/news/uk-growth-and-security-boosted-as-royal-navy-agrees-export-deal-for-new-mine-hunting-motherships">gov.uk</a></li>
+<li><a href="https://eda.europa.eu/news-and-events/news/2026/11/13/eda-tests-drones-in-switzerland-to-support-troops-in-urban-combat">eda.europa.eu</a></li>
+</ul>
+<hr>
+<h2 id="s5">La industria estadounidense corteja a Europa: Gambit en Baviera, V-BAT para Grecia vía OTAN, F-16 y Redwire en Riga</h2>
+<p><strong>General Atomics recibió a Markus Söder en Oberpfaffenhofen para promocionar su avión de combate colaborativo Gambit ante la Luftwaffe.</strong></p>
+<ul>
+<li><strong>General Atomics</strong> recibió a Markus Söder en Oberpfaffenhofen para promocionar su avión de combate colaborativo <strong>Gambit</strong> ante la Luftwaffe. Ofrece «sistemas de misión soberanos alemanes y europeos» y posible producción en Baviera si hay pedidos.</li>
+<li><strong>Shield AI:</strong> la NSPA encargó más <strong>V-BAT</strong> para el Ejército de Tierra y la Armada griegos, sin cifra ni importe. Grecia aprobó 10 más en julio y las primeras entregas llegarán en enero de 2027 (Janes).</li>
+<li><strong>Lockheed Martin Europe</strong> promocionó el F-16 («Reforzando la defensa de Europa»), el ATACMS y el <strong>PAC-3 ACE</strong>. <strong>Redwire</strong> recibió en Riga a la embajadora estadounidense.</li>
+</ul>
+<p><strong>Por qué importa a Europa.</strong> Los contratistas estadounidenses usan el montaje local y los «sistemas de misión soberanos» para captar presupuestos europeos. El diseño, el control de exportaciones (ITAR) y el software siguen en EE. UU. Cada Gambit o V-BAT es un pedido menos para las alternativas europeas, como los proyectos de aviones de combate no tripulados de Airbus o Helsing, o el Camcopter S-100 austriaco de Schiebel para vigilancia marítima. Contraste: una empresa europea que quiera contratos del Pentágono debe crear una filial estadounidense bajo régimen FOCI, con consejo de ciudadanos estadounidenses y productos sujetos a ITAR.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2121589104647319590">X post 2121589104647319590</a></li>
+<li><a href="https://www.ga-ats.com/de/news-und-messen/news/news-detail/ministerpraesident-soeder-besucht-general-atomics">ga-ats.com</a></li>
+<li><a href="https://shield.ai/shield-receives-nspa-order-for-additional-v-bats-for-hellenic-army-and-navy/">shield.ai</a></li>
+<li><a href="https://www.janes.com/defence-intelligence-insights/defence-news/sea/nspa-orders-more-v-bat-uavs-for-greece-delivery-in-january-2027">janes.com</a></li>
+<li><a href="https://x.com/i/status/2121232918441800178">X post 2121232918441800178</a></li>
+<li><a href="https://x.com/i/status/2121257181139886412">X post 2121257181139886412</a></li>
+</ul>
+<hr>
+<h2 id="s6">Espacio: primer fallo del Vulcan, primera captura de la nave Starship y la brecha europea en lanzadores</h2>
+<p><strong>Vulcan (ULA) falló el 15 de noviembre en su primera misión para Amazon Leo (40 satélites perdidos), por una anomalía en la etapa Centaur unos 10 minutos tras el despegue.</strong></p>
+<ul>
+<li><strong>Vulcan (ULA)</strong> falló el 15 de noviembre en su primera misión para Amazon Leo (40 satélites perdidos), por una anomalía en la etapa Centaur unos 10 minutos tras el despegue. Es el primer fallo total de ULA desde 2006. Amazon tiene contratados 38 Vulcan, 24 New Glenn (en tierra desde mayo), <strong>24 Ariane 6</strong> y 13 Falcon 9.</li>
+<li><strong>Starship, vuelo 15</strong> (13 de noviembre): desplegó 26 satélites Starlink V3. El 14 de noviembre la torre capturó por primera vez la nave (Ship 42), tras unas 22,5 horas en órbita. El propulsor no regresó a la torre.</li>
+<li><strong>Rocket Lab</strong> completó su lanzamiento número 100 del Electron (14 de noviembre, para iQPS) tras una misión HASTE para la iniciativa de espacio táctico de respuesta rápida <strong>VICTUS HAZE</strong> de la Fuerza Espacial.</li>
+<li><strong>Europa:</strong> el próximo Vega C (seis satélites IRIDE italianos) se retrasa «muy cerca del día de Navidad» por la entrega tardía de satélites (Avio). ESA y ArianeGroup aclaran que las pruebas de Prometheus de octubre no tienen relación con el salto de Themis. Kubilius, de gira por la industria espacial italiana: «Más producción de satélites exige soluciones europeas de acceso al espacio».</li>
+</ul>
+<p><strong>Por qué importa a Europa.</strong> EE. UU. avanza hacia el lanzador pesado totalmente reutilizable (SpaceX: 127 lanzamientos y unas 1.787 t en órbita en 2026, según Flight Atlas), mientras Europa suma 6 misiones de Ariane 6 y Vega C. Con Vulcan y New Glenn en tierra, los 24 Ariane 6 de Amazon son un ancla comercial estratégica. La cadencia de Ariane 6 y los reutilizables europeos son una cuestión de soberanía.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122034531658076417">X post 2122034531658076417</a></li>
+<li><a href="https://spaceflightnow.com/2026/11/15/ula-suffers-first-total-mission-failure-with-loss-of-vulcan-rocket-carrying-40-amazon-leo-satellites/">spaceflightnow.com</a></li>
+<li><a href="https://x.com/i/status/2121715216597827756">X post 2121715216597827756</a></li>
+<li><a href="https://www.spacex.com/launches/starship-flight-15/">spacex.com post</a></li>
+<li><a href="https://x.com/i/status/2121501709285638267">X post 2121501709285638267</a></li>
+<li><a href="https://europeanspaceflight.com/next-vega-c-launch-edges-closer-to-christmas-day-as-satellites-arrive-late/">europeanspaceflight.com</a></li>
+<li><a href="https://x.com/i/status/2121342038352503051">X post 2121342038352503051</a></li>
+</ul>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

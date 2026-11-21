@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMÍA — lunes, 16 de noviembre de 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMÍA</h1>
+      <p class="list-date">lunes, 16 de noviembre de 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> 15–16 de noviembre de 2026</li>
+<li><strong>Compiled from:</strong> el informe diario de la sección Economía de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">La crisis de Nvidia se convierte en una prueba del control de exportaciones de EE. UU.; Pekín habla de pretexto</h2>
+<p><strong>Jensen Huang dimitió como consejero delegado de Nvidia el jueves 12 de noviembre tras conocerse su relación con Alice Huang, exdirectiva de Megaspeed, empresa de centros de datos con sede en Singapur, a quien funcionarios estadounidenses consideran sospechosa de espiar para China; se sospecha que Megaspeed desvió chips de Nvidia a China vulnerando los controles de exportación.</strong></p>
+<p>La directora financiera, Colette Kress, es consejera delegada interina. El domingo 15, el secretario del Tesoro, Scott Bessent, dijo en Fox News que el consejo debe buscar un CEO externo, que Nvidia necesita «una sacudida drástica» y que quiere respuestas «en los próximos 10 días» sobre si se usaron sociedades pantalla para vender chips restringidos a China (CNBC, Axios, Al Jazeera). The Washington Post informó el 13 de noviembre de un choque abierto entre Bessent y el secretario de Comercio, Howard Lutnick, por no haber incluido a Megaspeed en la lista negra. Una revisión de Reuters del 13 de noviembre halló más de 3.000 millones de dólares (unos 23.000 millones de yuanes) en proyectos chinos de computación que especifican procesadores H100/H200/H800 restringidos; Reuters subraya que la cifra abarca proyectos completos y no prueba entregas.</p>
+<p><strong>Reacción de China (vinculada):</strong> el Ministerio de Asuntos Exteriores chino calificó las acusaciones de «espía chino» de «puras calumnias» (CCTV, 9-10 de noviembre) y el 12 de noviembre pidió a Washington que deje de usar relatos de espionaje para justificar restricciones tecnológicas (China Daily, Lianhe Zaobao; medios estatales chinos). No consta aún ninguna contramedida del MOFCOM; atención a la cumbre Trump–Xi–Putin del 19 de noviembre en Shenzhen anunciada por Exteriores chino.</p>
+<p><strong>ALERTA — aún no reposteado por @F_CEAFE:</strong> caso de coerción económica y control de exportaciones con ángulo de reciprocidad (ASML). Enlace: https://www.aljazeera.com/news/2026/11/15/us-treasury-chief-calls-for-outsider-to-lead-embattled-tech-firm-nvidia</p>
+<p><strong>Por qué importa a Europa.</strong> Washington trata la aplicación de sus controles de chips como asunto de Estado, hasta el punto de orientar públicamente la dirección de una empresa privada. Empresas europeas como ASML aplican esas restricciones impulsadas por EE. UU. contra China, mientras la UE no impone nada recíproco a EE. UU. ni siquiera donde tiene palanca (la litografía). El caso demuestra además que las normas estadounidenses viajan con su hardware: un argumento a favor de capacidad de cómputo de diseño europeo y de instrumentos propios de control de exportaciones y de filtrado de inversiones, no prestados.</p>
+<p><strong>Qué vigilar.</strong> resultados de Nvidia (18 de noviembre); respuesta del consejo al plazo (~25 de noviembre); posible inclusión de Megaspeed en listas de Comercio; contramedidas chinas; enmiendas sobre chips en la NDAA.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122109911538790452">Al Jazeera English</a></li>
+<li><a href="https://x.com/i/status/2122117463135375607">Bloomberg</a></li>
+<li><a href="https://x.com/i/status/2121172104099860481">Reuters Tech</a></li>
+<li><a href="https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html">cnbc.com</a></li>
+<li><a href="https://www.axios.com/2026/11/15/bessent-nvidia-earnings-china-chip-sales-ceo">axios.com</a></li>
+<li><a href="https://www.channelnewsasia.com/world/us-treasury-chief-nvidia-ai-chips-china-jensen-huang-6553411">channelnewsasia.com</a></li>
+<li><a href="https://www.washingtonpost.com/business/2026/11/13/treasury-secretary-points-commerce-secretary-failure-restrict-nvidia-customer/">washingtonpost.com</a></li>
+<li><a href="https://www.investing.com/news/stock-market-news/chinas-3-billionplus-pipeline-of-nvidiapowered-ai-data-centres-5024599">reproducción de Reuters; reuters.com no accesible</a></li>
+<li><a href="https://www.chinadaily.com.cn/a/202611/12/WS6af586c3e4b03ebf8519c104.html">medio estatal chino</a></li>
+<li><a href="https://english.cctv.cn/2026/11/10/ARTIEbArHqUrmULEJMIqoO5q261110.shtml">medio estatal chino</a></li>
+</ul>
+<hr>
+<h2 id="s2">El petróleo vuelve al excedente y el GNL estadounidense bate récords: la factura energética europea depende de guerras ajenas</h2>
+<p><strong>El informe mensual de la AIE de noviembre señala que el mercado mundial vuelve al excedente a medida que se recuperan las exportaciones del Golfo: 15 mb/d de crudo en octubre, el 82 % del nivel previo a la guerra; los inventarios subieron 52 millones de barriles en octubre y la agencia prevé un excedente de unos 2 mb/d en el cuarto trimestre, mayor en 2027.</strong></p>
+<p>Goldman Sachs también anticipa un «excedente considerable» en 2027 (unos 2 mb/d, según Mint). Bloomberg informa de un nuevo máximo de exportaciones de GNL de EE. UU., que alivia la escasez provocada por la guerra en Oriente Medio. Persisten los riesgos: Zelenski afirmó el 15 de noviembre que Ucrania ha inutilizado «más del 55 %» de la capacidad de refino rusa (reposteado por @F_CEAFE), y los hutíes de Yemen reivindicaron ataques con drones contra las estaciones de bombeo 5 y 6 del oleoducto saudí Este-Oeste (reivindicación del portavoz militar hutí, reposteada por @F_CEAFE; sin confirmación independiente).</p>
+<p><strong>Por qué importa a Europa.</strong> un crudo más barato ayuda a la industria europea, pero el equilibrio gasista de Europa pasa cada vez más por el GNL estadounidense, el mismo proveedor que exige a Europa comprar su energía y sus armas mientras practica el nacionalismo energético. Diversificar proveedores y acelerar la generación europea es una cuestión de soberanía, no solo de precio.</p>
+<p><strong>Qué vigilar.</strong> STEO de la EIA e informe de gas de la AIE; reacción del Brent; almacenamiento de gas en la UE. Vertiente militar: ver Conflictos.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://www.iea.org/reports/oil-market-report-november-2026">iea.org</a></li>
+<li><a href="https://x.com/i/status/2122175334762025055">X post 2122175334762025055</a></li>
+<li><a href="https://x.com/i/status/2122176592096944561">X post 2122176592096944561</a></li>
+<li><a href="https://www.livemint.com/market/goldman-sachs-predicts-sizeable-surplus-for-oil-market-in-2027-11794801634263.html">livemint.com</a></li>
+<li><a href="https://x.com/i/status/2122082673250460095">X post 2122082673250460095</a></li>
+<li><a href="https://x.com/i/status/2122082632695533925">X post 2122082632695533925</a></li>
+</ul>
+<hr>
+<h2 id="s3">Los motores asiáticos fallan: Japón se contrae y China decepciona en octubre</h2>
+<p><strong>El PIB japonés cayó un 0,1 % anualizado en julio-septiembre (−0,02 % trimestral), primera contracción en cuatro trimestres, frente a previsiones de crecimiento; el consumo privado bajó un 0,3 % y la inversión empresarial subió un 1,6 % por la IA y la automatización (Oficina del Gabinete vía Nikkei, Reuters, Kyodo, AP).</strong></p>
+<p>El encarecimiento del crudo importado tras el cierre de facto de Ormuz restó 0,6 puntos por el sector exterior. En China, la producción industrial de octubre creció un 4,8 % interanual (5,5 % en septiembre), las ventas minoristas solo un 0,4 % y la inversión en activos fijos cayó un 8,1 % en enero-octubre, con la inmobiliaria en −21,6 % (Oficina Nacional de Estadística). La manufactura de alta tecnología creció un 17,6 % y la producción de semiconductores un 21,9 %.</p>
+<p><strong>Por qué importa a Europa.</strong> una demanda interna china débil junto con una manufactura de alta tecnología y unas entregas para exportación en auge (+18,6 %, ING) anticipan más sobrecapacidad china hacia terceros mercados, Europa incluida. Solo una respuesta comercial común de la UE, y no 27 nacionales, tiene la escala necesaria.</p>
+<p><strong>Qué vigilar.</strong> reunión de diciembre del Banco de Japón; señales de estímulo chino en torno a APEC Shenzhen; datos de Eurostat esta semana.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122145666315227623">Kyodo</a></li>
+<li><a href="https://x.com/i/status/2122126183219273883">WSJ</a></li>
+<li><a href="https://x.com/i/status/2122151431591354705">Bloomberg</a></li>
+<li><a href="https://www.nikkei.com/article/DGXZQOUA138F50T11C26A1000000/">nikkei.com</a></li>
+<li><a href="https://apnews.com/article/japan-economy-growth-oil-energy-inflation-263988f2ec1894d3bf88522fd12500a6">apnews.com</a></li>
+<li><a href="https://english.www.gov.cn/archive/statistics/202611/16/content_WS6afa6dccc6d00ca5f9a0e4b3.html">tos oficiales chinos</a></li>
+<li><a href="https://think.ing.com/articles/china-october-domestic-activity-data-disappoints-across-the-board/">think.ing.com</a></li>
+</ul>
+<hr>
+<h2 id="s4">«Furia Económica»: Washington pronostica un hundimiento del 25 % de la economía iraní</h2>
+<p><strong>Bessent dijo el 15 de noviembre que la economía iraní se contraerá en torno a un 25 % entre marzo de 2026 y marzo de 2027 por las sanciones y el bloqueo naval, «uno de los colapsos más rápidos de la historia» (Al Jazeera, Iran International).</strong></p>
+<p>El CENTCOM afirma que el bloqueo ha impedido exportar más de 25.000 millones de dólares en crudo (cifra no verificada), y la Task Force Iron Gate, creada el 7 de noviembre, extiende la presión a las fronteras terrestres y al Caspio. Un tercer portaaviones, el USS Theodore Roosevelt, entró el 15 de noviembre en la zona del CENTCOM (reposteado por @F_CEAFE vía Al Jazeera).</p>
+<p><strong>Por qué importa a Europa.</strong> las sanciones secundarias de EE. UU. deciden qué comercio pueden mantener las empresas europeas con Irán, al margen de la posición de la UE; en 2018 el estatuto de bloqueo europeo no las protegió. Europa paga en precios de la energía y en mercados perdidos por una política que no decide.</p>
+<p><strong>Qué vigilar.</strong> respuesta oficial iraní (Tasnim/IRNA en Telegram); efecto en el petróleo. Vertiente militar: ver Conflictos.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122170310703342065">X post 2122170310703342065</a></li>
+<li><a href="https://www.iranintl.com/en/202611151817">iranintl.com</a></li>
+<li><a href="https://www.iranintl.com/en/202611154375">iranintl.com</a></li>
+<li><a href="https://x.com/i/status/2122164105867825187">X post 2122164105867825187</a></li>
+</ul>
+<hr>
+<h2 id="s5">Nexperia: Wingtech recurre la orden de la Sala de Empresas neerlandesa (en curso)</h2>
+<p><strong>Wingtech anunció el 15 de noviembre que se opone a la última orden cautelar de la Ondernemingskamer de Ámsterdam en el caso Nexperia y que la recurrirá, alegando falta de base fáctica y graves defectos jurídicos (Bloomberg, Reuters).</strong></p>
+<p>Tratado en detalle en el informe R&amp;D del 15 de noviembre; sin nuevas medidas de los Gobiernos neerlandés o chino desde entonces.</p>
+<p><strong>Por qué importa a Europa.</strong> Nexperia pone a prueba si Europa puede conservar el control de un fabricante de chips estratégico con sus propias herramientas jurídicas, y si las aplica con el mismo rigor a compradores estadounidenses que a chinos.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2121918643332112741">X post 2121918643332112741</a></li>
+<li><a href="https://x.com/i/status/2121923685841785009">X post 2121923685841785009</a></li>
+<li>informe R&amp;D del 15 de noviembre (tema 1)</li>
+</ul>
+<hr>
+<h2 id="s6">Polonia en el G20: su supuesta relación privilegiada con EE. UU. frente a su verdadero peso</h2>
+<p><strong>El vice primer ministro y ministro de Defensa polaco, Władysław Kosiniak-Kamysz, escribió el 15 de noviembre que el PIB de Polonia supera el billón de dólares y que el país tiene asiento en el G20. @F_CEAFE le respondió con las clasificaciones mundiales, donde apenas aparecen empresas polacas: 8 en el Forbes Global 2000 de 2026, 1 entre los 2.000 mayores inversores en I+D del mundo (EU Industrial R&amp;D Investment Scoreboard 2025) y 1 en el Defense News Top 100.</strong></p>
+<p>Estas clasificaciones las encabezan, en primer lugar, las empresas de EE. UU. y, después, las chinas; frente a ellas, la presencia polaca es marginal, por mucho que aspire al G20 o presuma de una relación privilegiada con Washington.</p>
+<p><strong>Por qué importa a Europa.</strong> Es la línea editorial de CEAFE en cifras: incluso la gran economía de la UE que más crece carece de una base de empresas de escala mundial e inversores en I+D. Ningún Estado miembro tiene por sí solo un peso real frente a EE. UU. y China; solo lo tiene la escala europea.</p>
+<p><strong>Qué vigilar.</strong> El Scoreboard de I+D 2026 del JRC (diciembre).</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122006655865160155">@F_CEAFE</a></li>
+<li><a href="https://twitter.com/KosiniakKamysz/status/2121967695650300163">Władysław Kosiniak-Kamysz</a></li>
+</ul>
+<hr>
+<h2 id="s7">China usa su poder de compra en el mineral de hierro</h2>
+<p><strong>La ministra australiana de Recursos, Madeleine King, advirtió de que el uso del poder de compra de la estatal China Mineral Resources Group para rebajar el precio del mineral de hierro podría vulnerar las normas comerciales internacionales (Bloomberg, CNA, AFR).</strong></p>
+<p><strong>Por qué importa a Europa.</strong> Un único comprador estatal da a China una palanca que ningún mercado fragmentado puede igualar; Europa solo negocia de igual a igual cuando actúa unida.</p>
+<p><strong>Qué vigilar.</strong> La reacción china a las palabras de Canberra.</p>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122116195339907343">Bloomberg</a></li>
+<li><a href="https://www.channelnewsasia.com/world/australia-calls-out-china-iron-ore-trade-manipulation-6554051">channelnewsasia.com</a></li>
+<li><a href="https://www.minister.industry.gov.au/king/media/doorstop-perth">minister.industry.gov.au</a></li>
+</ul>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Economía. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — miércoles, 18 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">miércoles, 18 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 18 de noviembre de 2026, de las 12:00 a las 19:05 aproximadamente (hora de Madrid): todo lo nuevo desde la edición de las 13:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Actualidad de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<hr>
+<h2 id="s1">Actualización: víspera de Shenzhen: una hora para la reunión Trump–Xi–Putin y un aviso de «última oportunidad» de EE. UU. a Moscú</h2>
+<p>En la víspera de la primera reunión de líderes de EE. UU., China y Rusia, el portavoz del Kremlin, Dmitri Peskov, dijo que «se ha reservado una hora» para la cumbre trilateral y que no hay previstas negociaciones completas entre Putin y Trump el 19 de noviembre; el asesor Yuri Ushakov afirmó que habrá un encuentro Putin–Trump tras el plenario de APEC (TASS, agencia estatal rusa). Los enviados estadounidenses Steve Witkoff y Jared Kushner han advertido a Rusia de que esta ronda puede ser su última oportunidad para un acuerdo favorable, según el periodista Tim Zadorozhnyy, difundido por el Kyiv Independent. The New York Times informa de que la inteligencia occidental prevé que Putin siga combatiendo durante el invierno. El asesor militar de Putin confirmó que el «maletín nuclear» viajó con él a China (según @DD_Geopolitics). Putin ocupó el centro de la «foto de familia» de APEC junto a Xi y Trump, la primera en nueve años, lo que Bloomberg calificó de «poderoso rechazo a los esfuerzos occidentales por aislarlo».</p>
+<p>Las potencias medias trabajaron en los márgenes. El canadiense Mark Carney se reunió con Trump sobre un acuerdo comercial y dijo que Canadá ha recuperado el acceso a China para «más del 90 %» del comercio antes castigado con aranceles; también acusó a Putin de «mentir» cuando este dijo que las sanciones occidentales eran «cosa del pasado» (Al Jazeera). La japonesa Sanae Takaichi se reunió unos 30 minutos con Putin, el primer encuentro cara a cara entre líderes de ambos países desde 2019 (South China Morning Post).</p>
+<p><strong>Por qué importa a Europa.</strong> Continúa la noticia de las 13:30 sobre la llegada de Trump. Canadá, Japón y Corea del Sur aprovechan Shenzhen para cerrar sus propios acuerdos, mientras ningún líder europeo se sienta a la mesa donde se hablará de Ucrania. CEAFE defiende una paz paneuropea con Ucrania, Rusia y la UE, sin potencias externas que decidan por ellos. El maletín nuclear recuerda una dimensión nuclear que muchos dirigentes europeos minimizan.</p>
+<p>Ningún Estado miembro, por sí solo, alcanza la escala de las potencias con las que pretende sentarse en la misma mesa.</p>
+<p><strong>Qué vigilar.</strong> La trilateral del 19 de noviembre y cualquier texto conjunto; si incluye Ucrania y la vía de Abu Dabi; un posible cara a cara Putin–Trump.</p>
+<p><strong>Fuentes:</strong> TASS, Kremlin, Kyiv Independent (<a href="https://x.com/i/status/2123103040878297295">publicación</a>), NYT vía Clash Report (<a href="https://x.com/i/status/2123036161140805969">publicación</a>), @DD_Geopolitics (<a href="https://x.com/i/status/2123061715323490376">publicación</a>), Bloomberg (<a href="https://x.com/i/status/2123085109825823189">publicación</a>), @MarkJCarney (<a href="https://x.com/i/status/2123045894790459874">publicación</a>), Al Jazeera (<a href="https://x.com/i/status/2123107718793703910">publicación</a>), <a href="https://www.scmp.com/news/china/diplomacy/article/3374961/japans-takaichi-meets-putin-rare-talks-amid-strained-ties-russia">South China Morning Post</a>, <a href="https://t.me/tassagency_en/99076">TASS en Telegram</a>.</p>
+<hr>
+<h2 id="s2">La vía propia de Europa: la Coalición de Voluntarios se reúne el jueves en Berlín</h2>
+<p>El secretario general de la OTAN, Mark Rutte, viajará el 19 de noviembre a Berlín para una reunión de la Coalición de Voluntarios copresidida por el canciller Friedrich Merz, el presidente Emmanuel Macron y el primer ministro británico, Andy Burnham (oficina de prensa de la OTAN); asistirá también el presidente finlandés, Alexander Stubb. La reunión coincide con la trilateral de Shenzhen. Rutte dijo que la OTAN «hace su parte para que las conversaciones de paz tengan éxito» y celebró «cientos de millones de dólares» de nuevas aportaciones al mecanismo PURL. El presidente Zelenski agradeció a Ursula von der Leyen el Instrumento de Apoyo Coordinado a Ucrania propuesto (hasta 45 000 millones de euros para 2027, de ellos hasta 25 000 millones para defensa) y pidió al Parlamento y al Consejo una «adopción rápida». En París, el ministro de Exteriores, Jean-Noël Barrot, acusó a Marine Le Pen y Jean-Luc Mélenchon de compartir la misma línea: «capitulación de Ucrania y complacencia con el Kremlin». En Washington, los republicanos de la Cámara amenazaron con eliminar de una gran ley de defensa las disposiciones sobre Ucrania, incluido el intercambio de inteligencia (Clash Report).</p>
+<p><strong>Por qué importa a Europa.</strong> El equipo negociador europeo acordado en Dublín el 13 de noviembre (instituciones de la UE más Francia, Alemania, Italia, Polonia y el Reino Unido) se reúne en Berlín mientras la reunión decisiva se celebra en Shenzhen. Un equipo de siete sin una sola voz europea pesa menos que una Unión que habla como una. Para CEAFE, más dinero para armas prolonga la guerra; lo relevante es si Europa consigue un asiento en las negociaciones de paz.</p>
+<p><strong>Qué vigilar.</strong> El resultado de Berlín (garantías de seguridad, secuencia del alto el fuego); el instrumento de 45 000 millones en el Parlamento y el Consejo.</p>
+<p><strong>Fuentes:</strong> oficina de prensa de la OTAN (<a href="https://x.com/i/status/2123027373608026541">publicación</a>), <a href="https://www.nato.int/en/news-and-events/events/media-advisories/2026/11/18/participation-by-the-nato-secretary-general-in-a-meeting-of-leaders-on-ukraine">aviso de la OTAN</a>, <a href="https://www.presidentti.fi/en/president-stubb-to-attend-meeting-of-the-leaders-of-the-coalition-of-the-willing-in-berlin/">Presidencia de Finlandia</a>, @ZelenskyyUa (<a href="https://x.com/i/status/2123033090452795604">publicación</a>), Ministerio de Defensa de Ucrania (<a href="https://x.com/i/status/2123059097780076896">publicación</a>), @jnbarrot (<a href="https://x.com/i/status/2123069600241783248">publicación</a>), Clash Report (<a href="https://x.com/i/status/2123068381066645995">publicación</a>), <a href="https://www.euronews.com/2026/11/13/eu-leaders-bring-italy-and-poland-into-ukraine-peace-talks-team-as-kallas-fights-for-spot">Euronews</a>.</p>
+<hr>
+<h2 id="s3">Actualización: Washington presiona a Europa para que compre estadounidense: publicado el discurso de Colby sobre el F-35 y un foro para más de 80 empresas de EE. UU.</h2>
+<p>El Departamento de Guerra ha publicado el discurso preparado del subsecretario Elbridge Colby ante el Consejo de Asuntos Exteriores (Defensa) de la UE del 17 de noviembre: «nos oponemos firmemente a las medidas para excluir a las empresas estadounidenses de la competencia en los mercados europeos», extensible a «otros aliados de la OTAN no miembros de la UE». Sobre los cazas dijo que «es imposible que una reunión de dispares supuestas potencias medias construya a tiempo un competidor del F-35» y que el intento «casi con certeza acabaría en un despilfarro de dinero europeo y canadiense, con un resultado inferior». Tras una reunión en la sede de la OTAN dijo a Reuters que «si se quiere una Europa segura en la OTAN 3.0, se necesitan cosas como el F-35», aunque añadió que EE. UU. no exige producción solo estadounidense y propuso empresas conjuntas y coproducción bajo licencia. Ese mismo día, el embajador de EE. UU. ante la OTAN dijo haber dirigido un «Foro de Acceso a la Industria de Defensa Transatlántica» que conectó a «más de 80 empresas estadounidenses con socios europeos», y añadió: «con el compromiso aliado de gastar el 5 % en defensa, estamos eliminando trabas y alimentando el empleo estadounidense». El Departamento de Estado habló con Vilna del «reparto de cargas» y del plan lituano de llegar al 5 % del PIB. El comisario europeo de Defensa, Andrius Kubilius, dijo en la European Business Summit que Europa debe «gastar más que Rusia y producir más que ella», y que la industria europea de defensa aérea solo podrá entregar a Ucrania «en 2028 o 2029».</p>
+<p><strong>Por qué importa a Europa.</strong> Actualiza la noticia de las 07:30 sobre Colby en Bruselas: el aviso ya consta en el texto oficial. Washington utiliza abiertamente el compromiso europeo del 5 % como mercado para su industria y su empleo, y sostiene que Europa no debe construir su propio caza, aunque ya lo hace (GCAP: Italia, Reino Unido, Japón; y FCAS). Un caza cuyo software, repuestos y mejoras dependen de la autorización de EE. UU. es el ejemplo más claro a favor de la preferencia europea.</p>
+<p>La UE en su conjunto sí puede compararse; cada capital por separado, no. Esa es la diferencia que importa.</p>
+<p><strong>Qué vigilar.</strong> La revisión del despliegue de fuerzas de EE. UU., prevista para el 1 de diciembre (unos 80 000 militares estadounidenses en Europa, según Reuters); las normas de «preferencia europea» en EDIP y SAFE.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.war.gov/News/Speeches/Speech/Article/4649777/remarks-by-under-secretary-of-war-for-policy-elbridge-colby-at-the-european-uni/">Departamento de Guerra de EE. UU. (discurso de Colby)</a>, <a href="https://www.investing.com/news/stock-market-news/pentagons-colby-warns-nato-allies-against-shutting-us-firms-out-of-arms-deals-5033782">Reuters vía Investing.com</a>, @USAmbNATO (<a href="https://x.com/i/status/2123065147266568514">publicación</a>), @StateDeptPM (<a href="https://x.com/i/status/2123102591483568266">publicación</a>), <a href="https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2506">Comisión Europea (discurso de Kubilius)</a>, <a href="https://aviationweek.com/defense/budget-policy-operations/italy-ramp-gcap-spending-2030s">Aviation Week</a>.</p>
+<hr>
+<h2 id="s4">Rusia pregunta si los Países Bajos «se suman abiertamente al conflicto» por el ataque al puente de Crimea</h2>
+<p>La embajada rusa en La Haya publicó: «Moscú ha sido debidamente informada de la implicación de los Países Bajos. La confesión ha quedado registrada. ¿Se suma La Haya abiertamente al conflicto?». Respondía a un comunicado de Destinus, empresa con sede en los Países Bajos, según el cual sus misiles fueron las únicas armas de fabricación extranjera usadas en el ataque ucraniano del 17 de noviembre contra el puente de Crimea (Reuters vía The Moscow Times). El presidente de Destinus, Oleksandr Danyliuk, dijo que se lanzaron nueve misiles de crucero Ruta Block 1 y que siete alcanzaron el puente (Clash Report). El ministro neerlandés de Exteriores, Tom Berendsen, dijo a los diputados que esos mensajes de la embajada buscan dividir a los países occidentales y que el hecho de que empresas neerlandesas exporten a Ucrania no significa que los Países Bajos estén en guerra con Rusia. Por otra parte, la ministra delegada francesa para las Fuerzas Armadas, Alice Rufo, dijo a RMC que una misión de defensa adscrita a la embajada francesa trabaja en Ucrania, con especialistas que mantienen aviones Mirage y obuses Caesar (TASS, citando a RMC).</p>
+<p><strong>Por qué importa a Europa.</strong> Moscú señala a un Estado miembro de la UE y a un fabricante europeo; en abril el Ministerio de Defensa ruso ya había incluido en una lista a empresas europeas, entre ellas instalaciones de Destinus en Hengelo. Las advertencias rusas apuntan a Estados europeos y no a EE. UU., y por eso CEAFE se toma en serio sus señales nucleares. Armas, según lo publicado: misiles de crucero Ruta Block 1 y drones de ataque profundo Da Vinci (LORD) de Destinus (Países Bajos), y el FP-5 Flamingo de Fire Point (Ucrania). La versión de Destinus no se ha verificado de forma independiente.</p>
+<p><strong>Qué vigilar.</strong> Una gestión diplomática formal de Rusia ante La Haya; una declaración del Gobierno neerlandés; la reacción de Moscú a la misión francesa.</p>
+<p><strong>Fuentes:</strong> @rusembassynl (<a href="https://x.com/i/status/2122976975320990148">publicación</a>), <a href="https://www.themoscowtimes.com/2026/11/18/russia-asks-if-netherlands-is-joining-ukraine-war-after-dutch-companys-missiles-used-in-bridge-attack-a94298">The Moscow Times (Reuters)</a>, <a href="https://www.dutchnews.nl/2026/11/russian-embassy-responds-to-nl-role-in-crimea-bridge-attack/">DutchNews.nl</a>, <a href="https://clashreport.com/defense/articles/russia-asks-netherlands-joining-war-j3w4df768t">Clash Report</a>, <a href="https://t.me/tassagency_en/99092">TASS</a>.</p>
+<hr>
+<h2 id="s5">La UE crea una Oficina de Sanciones bajo la comisaria Albuquerque, fuera de las competencias de Kallas</h2>
+<p>La Comisión Europea ha creado una Oficina de Sanciones de la UE en su Secretaría General, supervisada por la comisaria Maria Luís Albuquerque, para cubrir todo el ciclo de las sanciones, desde el diseño hasta su aplicación y la lucha contra la elusión, sobre todo en los regímenes de Rusia y Bielorrusia; los cambios entran en vigor el 16 de enero de 2027 (Brussels Times; Sofia Globe). TASS señaló que la oficina no depende de la alta representante, Kaja Kallas. El Consejo autorizó además la firma de los acuerdos de comercio e inversión UE–Indonesia, que según él «impulsarán la competitividad de la UE y diversificarán el comercio». Los líderes de la UE y el Reino Unido se reúnen en Bruselas el viernes 20 de noviembre en la segunda cumbre UE–Reino Unido, sobre «asociación estratégica» y «seguridad en Europa y fuera de ella». Seis países de la UE (Austria, Croacia, Alemania, Lituania, Eslovaquia y Eslovenia) estudiarán la compra conjunta de equipos de vigilancia NRBQ a través de la Agencia Europea de Defensa.</p>
+<p><strong>Por qué importa a Europa.</strong> Las sanciones y el comercio son los terrenos en los que la Unión ya actúa con una sola voz y peso real; centralizar su aplicación refuerza una herramienta que solo la UE en su conjunto puede usar. El acuerdo con Indonesia diversifica las cadenas de suministro frente a la dependencia de EE. UU. y China, y la compra conjunta NRBQ es el tipo de adquisición intraeuropea que CEAFE valora.</p>
+<p><strong>Qué vigilar.</strong> El nombre y el mandato del nuevo enviado de la UE para las sanciones; los resultados en seguridad de la cumbre UE–Reino Unido; la conferencia de adhesión de Montenegro del 19 de noviembre.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.brusselstimes.com/eu-affairs/2412656/eu-revamps-sanctions-strategy-with-new-office-and-envoy-for-enforcement/">Brussels Times</a>, <a href="https://sofiaglobe.com/2026/11/18/european-commission-sets-up-new-eu-sanctions-office-appoints-new-eu-sanctions-envoy/">Sofia Globe</a>, <a href="https://t.me/tassagency_en/99089">TASS</a>, Consejo de la UE (<a href="https://x.com/i/status/2123093508643021034">publicación</a>), Consejo Europeo (<a href="https://x.com/i/status/2123109187085590736">publicación</a>), @EUDefenceAgency (<a href="https://x.com/i/status/2123012350001234073">publicación</a>).</p>
+<hr>
+<h2 id="s6">Estonia se dispone a cerrar indefinidamente su frontera con Rusia</h2>
+<p>El primer ministro estonio, Kristen Michal, pidió cerrar indefinidamente la frontera entre Estonia y Rusia y dijo que la guardia fronteriza está preparada para un posible «ataque migratorio» (TASS, citando a Delfi). Defense News informa de que Estonia prevé cerrar sus pasos por carretera tras un intento de incendio provocado contra el fabricante de drones Threod Systems. El alcalde de Narva criticó la propuesta de cerrar el paso de Narva, porque afectaría también a ciudadanos letones y finlandeses (TASS, citando a ERR).</p>
+<p><strong>Por qué importa a Europa.</strong> Un sabotaje contra un fabricante europeo de drones en el flanco oriental es una amenaza híbrida contra la base industrial de defensa de la propia UE, y cerrar una frontera exterior concierne a todo el espacio Schengen, no solo a Tallin.</p>
+<p><strong>Qué vigilar.</strong> La decisión formal del Gobierno y la fecha de cierre; la respuesta rusa.</p>
+<p><strong>Fuentes:</strong> <a href="https://t.me/tassagency_en/99082">TASS</a>, <a href="https://www.defensenews.com/global/europe/">Defense News</a>.</p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTOS — miércoles, 18 de noviembre de 2026 · 13:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTOS</h1>
+      <p class="list-date">miércoles, 18 de noviembre de 2026 · 13:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> 18 de noviembre de 2026, de las 06:00 a las 12:00 aproximadamente (hora de Madrid): todo lo nuevo desde la edición de las 07:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Conflictos de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<hr>
+<h2 id="s1">Actualización: se multiplican los ataques a buques en Ormuz mientras los países del Golfo condenan los golpes iraníes contra Kuwait y Baréin</h2>
+<p>Novedades desde la edición de las 07:30: ADNOC informó de que uno de sus buques fue atacado al cruzar el estrecho de Ormuz, con 11 tripulantes heridos y uno desaparecido, y UKMTO registró con retraso el aviso de un petrolero alcanzado por un proyectil a 13 millas náuticas al norte de Jasab. Kuwait, el secretario general del CCG, Catar y los Emiratos condenaron los ataques iraníes con drones, mientras el jefe del ejército iraní advertía de una respuesta «sin restricciones geográficas» y Teherán aseguraba haber derribado un MQ-9 estadounidense. El ministro de Exteriores iraní, Abás Araghchi, calificó de «basura» las informaciones de CNN y The New York Times sobre un supuesto plan iraní de «bomba sucia» contra Washington (IRNA); según France 24, Trump dijo que se toman en serio, mientras que Rubio había afirmado antes que no veía una amenaza inminente para la capital (Reuters).</p>
+<p><strong>Por qué importa a Europa.</strong> Los precios de la energía y los seguros marítimos europeos dependen de un estrecho donde, según la analista del Atlantic Council Elisabeth Braw, las escoltas navales de EE. UU. no pueden proteger a todos los buques. Europa no tiene un papel naval ni diplomático propio en la escalada; el mediador que cita Teherán es Catar, no la UE.</p>
+<p><strong>Datos clave.</strong> 11 heridos y 1 desaparecido en el buque de ADNOC (Al Jazeera); incidente a 13 millas al norte de Jasab (UKMTO, según Tasnim); la mayoría de las bolsas del Golfo cayeron (Reuters, https://x.com/i/status/2122983198401482978); un tribunal de EE. UU. condenó a más de 27 años de cárcel al empresario paquistaní Asif Merchant por un complot que, según él, dirigía la Guardia Revolucionaria iraní (Anadolu); el primer ministro catarí dijo que siguen los esfuerzos diplomáticos para un acuerdo entre Irán y EE. UU. (IRNA). El jefe de la Armada estadounidense recibió duras críticas en una audiencia por la guerra con Irán y su coste para los marineros (titular de Reuters; el artículo devolvió error 401). Un dossier estratégico del IISS sostiene que Ormuz no puede reabrirse fácilmente por medios militares frente a las amenazas asimétricas iraníes (@IISS_org).</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2122954637150236892">Al Jazeera</a> (<a href="https://x.com/i/status/2122950475049812314">2</a>, <a href="https://x.com/i/status/2122970567481659743">3</a>, <a href="https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks">4</a>), <a href="https://x.com/i/status/2122929041288372363">Reuters</a> (<a href="https://x.com/i/status/2122937895962984821">2</a>, <a href="https://x.com/i/status/2122921491587010836">3</a>), <a href="https://x.com/i/status/2122993594604650782">France 24</a>, <a href="https://x.com/i/status/2122978367372984748">Anadolu</a>, <a href="https://t.me/s/Irna_en">IRNA (agencia estatal iraní)</a>, <a href="https://t.me/s/Tasnimnews_en">Tasnim (agencia estatal iraní)</a>, <a href="https://x.com/i/status/2122961521739259966">@IISS_org</a></p>
+<p><strong>Qué vigilar.</strong> Nombres de los buques alcanzados y cifras de víctimas; confirmación o desmentido de EE. UU. sobre el MQ-9 y sobre bajas en Ali Al Salem; si Ormuz entra en la cumbre a tres de Shenzhen.</p>
+<hr>
+<h2 id="s2">Polonia habría frustrado un complot ruso de falsa bandera en la frontera con Kaliningrado</h2>
+<p>El diario polaco Rzeczpospolita, citando a altos cargos de seguridad, informa de que la inteligencia rusa planeaba una operación de sabotaje en territorio polaco junto a Kaliningrado a finales de octubre o principios de noviembre, posiblemente con un cruce de frontera y un ataque simulado, para atribuirla a Ucrania con numerosas víctimas. Una de las fuentes la comparó con la provocación de Gleiwitz de 1939; el objetivo declarado era frenar la ayuda a Kiev. Los avisos llegaron de servicios aliados y de analistas polacos, y se trasladaron también a Lituania, Letonia y Estonia. Tomasz Siemoniak, ministro coordinador de los servicios especiales, confirmó medidas adicionales «porque consideramos que la amenaza era real», pero no confirmó detalles y advirtió de que las evaluaciones no publicadas no son hechos probados.</p>
+<p><strong>Por qué importa a Europa.</strong> Un incidente fabricado en una frontera de la UE y de la OTAN es justo el tipo de provocación que podría arrastrar a Europa a la guerra. También muestra que Polonia y los países bálticos dependieron de avisos de inteligencia aliados: un argumento a favor de una inteligencia y una protección de fronteras europeas comunes, en lugar de 27 sistemas separados.</p>
+<p><strong>Datos clave.</strong> Unos 180 policías de unidades de prevención, equipos antiterroristas, refuerzos de la Guardia de Fronteras y de la Agencia de Seguridad Interior, y fuerzas especiales GROM, NIL y AGAT desplegados en Varmia y Masuria (Rzeczpospolita, según Hromadske, Ukrainska Pravda y Polsat). El 3 de noviembre el primer ministro Donald Tusk informó de «movimientos sospechosos» en la frontera con Kaliningrado (Meduza). Las autoridades polacas no han publicado pruebas; los miembros de la lista @mazzenilsson y @GeromanAT calificaron la información de no probada.</p>
+<p><strong>Fuentes:</strong> <a href="https://hromadske.ua/en/europa/274576-poland-thwarted-suspected-russian-false-flag-plot-to-blame-ukraine-for-deadly-attack-report-says">Hromadske</a>, <a href="https://meduza.io/en/news/2026/11/18/russia-planned-false-flag-operation-with-mass-casualties-on-polish-territory-rzeczpospolita-reports">Meduza</a>, <a href="https://www.pravda.com.ua/eng/news/2026/11/18/8063407/">Ukrainska Pravda</a>, <a href="https://wiadomosci.onet.pl/kraj/rosyjska-prowokacja-na-granicy-z-polska-dziennikarze-ujawniaja-kulisy-operacji/j448987">Onet</a>, <a href="https://www.polsatnews.pl/wiadomosc/2026-11-18/rosja-chciala-przeprowadzic-dywersje-w-polsce-miala-przypominac-prowokacje-gliwicka/">Polsat News</a>, <a href="https://x.com/i/status/2122980716698869763">@InsiderGeo</a>, <a href="https://x.com/i/status/2122997817312440792">@mazzenilsson</a></p>
+<p><strong>Qué vigilar.</strong> Cualquier declaración oficial polaca o báltica con pruebas; reacción del Ministerio de Exteriores ruso (ninguna en su canal de Telegram al cierre).</p>
+<hr>
+<h2 id="s3">Rusia bombardea el centro de Odesa y dice haber alcanzado el puerto de Izmaíl y un carguero</h2>
+<p>Rusia golpeó en repetidas ocasiones el centro de Odesa el 18 de noviembre, con 4 muertos y 9 heridos según el recuento actualizado del Kyiv Independent. La Fuerza Aérea ucraniana informó de que Rusia lanzó de madrugada 141 drones de ataque de largo alcance, 73 de ellos a reacción, y los ataques rusos mataron a 5 personas e hirieron a 15 en todo el país en la última jornada, incluido un ataque contra un mercado de Zlatopil (región de Járkov) con al menos 11 heridos. El Ministerio de Defensa ruso afirma que sus drones alcanzaron instalaciones portuarias de Izmaíl usadas para carga militar y, en el mar, un carguero de carga seca que, según Moscú, transportaba material de doble uso al puerto de Yuzhny (fuente estatal rusa, afirmación).</p>
+<p><strong>Por qué importa a Europa.</strong> Izmaíl está en el Danubio, frente a Rumanía, y los puertos de Odesa son el enlace de Ucrania con los mercados de la UE; con el GAS HUSKY hundido en la ZEE búlgara (edición de las 07:30), la guerra marítima se acerca a aguas de la UE. La línea del CEAFE: son razones para una paz negociada paneuropea, con Ucrania, Rusia y la UE, no para una nueva escalada.</p>
+<p><strong>Datos clave.</strong> 141 drones, 73 de ellos a reacción (Fuerza Aérea ucraniana, según el Kyiv Independent); 4 muertos y 9 heridos en Odesa; Zlatopil, atacada por segunda vez en siete días. Ministerio de Defensa ruso: alcanzadas infraestructuras portuarias de Izmaíl y un carguero con destino a Yuzhny (sin nombre).</p>
+<p><strong>Fuentes:</strong> <a href="https://kyivindependent.com/russian-strikes-central-odesa-kills-3-injures-7/">Kyiv Independent</a> (<a href="https://kyivindependent.com/russian-attacks-kill-5-injure-15-across-ukraine-over-past-day-as-russia-continues-energy-assault/">2</a>, <a href="https://x.com/i/status/2122992024999592181">3</a>), <a href="https://t.me/s/mod_russia_en">Ministerio de Defensa ruso fuente estatal rusa</a></p>
+<p><strong>Qué vigilar.</strong> Identidad y bandera del buque que Rusia dice haber alcanzado; reacción rumana a los ataques contra Izmaíl.</p>
+<hr>
+<h2 id="s4">Alemania respalda las pruebas ucranianas del uso ruso de armas químicas y pide responsabilidades en la OPAQ</h2>
+<p>El Ministerio de Exteriores alemán acusó a Rusia de «graves violaciones de la Convención sobre Armas Químicas» y exigió que Moscú rinda cuentas ante la OPAQ. Una investigación ucraniana de 76 páginas, realizada con asistencia técnica de la OPAQ, concluye que un dron dejó caer una granada RG-Vo con gas CS en una trinchera ucraniana cerca de Illinka el 20 de septiembre de 2024, y que no fue un hecho aislado, sino parte de un sistema organizado de fabricación, suministro y uso. Ucrania dice haber documentado 14.009 casos; Rusia niega usar armas químicas y acusa a Ucrania de hacerlo.</p>
+<p><strong>Por qué importa a Europa.</strong> La atribución en materia de armas químicas es una de las pocas herramientas jurídicas que Europa puede usar de forma colectiva; la conferencia anual de la OPAQ de la próxima semana es una ocasión para que la UE hable con una sola voz.</p>
+<p><strong>Datos clave.</strong> Incidente del 20 de septiembre de 2024 cerca de Illinka (zona de la central nuclear de Zaporiyia); la OPAQ distribuyó el informe a los Estados parte esta semana; Nueva Zelanda también se declaró «profundamente preocupada» (RNZ).</p>
+<p><strong>Fuentes:</strong> <a href="https://aa.com.tr/en/europe/germany-accuses-russia-of-using-prohibited-chemicals-against-ukraine/4128823">Anadolu (agencia estatal turca)</a> (<a href="https://x.com/i/status/2123000780739273167">2</a>), <a href="https://www.upi.com/Top_News/World-News/2026/11/18/ukraine-Russia-chemical-weapons/8141794983599/">UPI</a>, <a href="https://www.rnz.co.nz/news/politics/2660780/deeply-concerned-peters-reacts-to-russia-s-chemical-weapons-attacks">RNZ</a></p>
+<p><strong>Qué vigilar.</strong> Votación sobre atribución en la conferencia de la OPAQ; respuesta del Ministerio de Exteriores ruso.</p>
+<hr>
+<h2 id="s5">Actualización: los hutíes lanzan un misil de crucero contra Riad y amenazan Adén</h2>
+<p>Novedades desde la edición de las 07:30: la coalición liderada por Arabia Saudí afirmó haber interceptado y destruido un misil de crucero hutí lanzado hacia la región de Riad (el portavoz de la coalición, Turki al Maliki, según Anadolu). Reuters informa de que las fuerzas hutíes amenazan Adén tras conquistar territorio en la costa yemení del mar Rojo, lo que preocupa al Gobierno respaldado por Riad y al tráfico marítimo por el estrecho de Bab el Mandeb. Al Jazeera detalla cómo financian los hutíes su esfuerzo de guerra con mítines y donaciones de dinero y armas.</p>
+<p><strong>Por qué importa a Europa.</strong> Con Ormuz en disputa, el mar Rojo y Bab el Mandeb son la otra arteria energética y comercial de Europa; que los hutíes controlen más costa aumenta el riesgo para la operación naval europea Aspides y para el tráfico de Suez.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2122982750042898856">Anadolu (agencia estatal turca)</a> (<a href="https://x.com/i/status/2122932955651756408">2</a>), <a href="https://x.com/i/status/2122926524680622252">Reuters</a>, <a href="https://x.com/i/status/2122958857945399309">Al Jazeera</a>, <a href="https://x.com/i/status/2122976418149650589">@ClashReport</a></p>
+<p><strong>Qué vigilar.</strong> Combates en torno a Adén; avisos de UKMTO para el sur del mar Rojo.</p>
+<hr>
+<h2 id="s6">Drones ucranianos alcanzan refinerías de Krasnodar mientras Rusia anuncia cifras récord de interceptaciones</h2>
+<p>Dos refinerías del distrito de Seversky, en el territorio de Krasnodar, Ilsky y Afipsky, habrían sido atacadas por drones ucranianos en la noche del 17 al 18 de noviembre (Kyiv Independent). El Ministerio de Defensa ruso afirma haber interceptado de madrugada 184 drones ucranianos de ala fija sobre Bélgorod, Rostov, Krasnodar, Crimea y el mar de Azov, y 310 en la última jornada; las autoridades de Krasnodar informaron de cuatro heridos e incendios en dos instalaciones industriales (TASS). El diputado ucraniano Fiódor Venislavski dijo, citando a la inteligencia ucraniana, que Rusia prueba un dron Geran-6 capaz de alcanzar 1.000 km/h (según @MilitarySummary).</p>
+<p><strong>Por qué importa a Europa.</strong> La guerra energética de golpe por golpe mantiene volátiles los precios del petróleo y eleva el riesgo de escalada. La línea del CEAFE: informar de los ataques con neutralidad e impulsar un marco paneuropeo de alto el fuego en lugar de más armas de largo alcance.</p>
+<p><strong>Datos clave.</strong> 184 drones de madrugada y 310 en 24 horas, según el Ministerio de Defensa ruso (fuente estatal); ambas refinerías han sido atacadas en repetidas ocasiones (Kyiv Independent). Reuters describe la «Operación Vivaldi» ucraniana, que combina robots terrestres, drones e interferencias para frenar los asaltos rusos.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2122917678767824980">Kyiv Independent</a>, <a href="https://t.me/s/tassagency_en">TASS (agencia estatal rusa)</a>, <a href="https://x.com/i/status/2122971269188448396">@MilitarySummary vía @GeromanAT</a>, <a href="https://x.com/i/status/2122959240381759927">Reuters</a></p>
+<p><strong>Qué vigilar.</strong> Daños en Ilsky y Afipsky (imágenes de satélite); cualquier confirmación del Geran-6 en combate.</p>
+<hr>
+<h2>Véase también</h2>
+<ul>
+<li>Actualización: la Comisión propone un préstamo de 45.000 millones a Ucrania para 2027 — ver Actualidad.</li>
+<li>Bombarderos rusos Tu-95MS siguen en Vietnam y EE. UU. probó un Minuteman III en vísperas de la cumbre a tres de Shenzhen — ver Actualidad (Shenzhen).</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Conflictos. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTS — Thursday, 19 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTS</h1>
+      <p class="list-date">Thursday, 19 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> 19 November 2026, about 13:00 to 19:15 Europe/Madrid: everything new since the 14:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Conflicts section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Putin vows “much more painful” retaliation for the Crimean Bridge strike, rules out an energy ceasefire</h2>
+<p><strong>At his press conference closing the China visit, Putin said Russia&rsquo;s response to Ukraine&rsquo;s Neptune strike on the Crimean (Kerch) Bridge “will be much more painful than what Kyiv did to the Crimean Bridge”; the Kremlin&rsquo;s own channel quotes him: “The Crimean Bridge will be rebuilt…</strong></p>
+<p>It all comes down to retaliation. And there will be retaliation.” He said Russia will protect drivers on the land route to Crimea (the “Novorossiya Highway”) while the bridge is repaired. Putin also said he had discussed a possible ceasefire in several areas with the Security Council, but after the bridge strike Russia will not negotiate any form of energy ceasefire (@ClashReport, @FaytuksNetwork). He added that Russia has invited EU representatives to Moscow to discuss security for Ukraine, Russia and Europe. A Western satellite image circulating on X shows the damaged road arch of the bridge (unverified).</p>
+<p><strong>Why it matters for Europe.</strong> An announced reprisal raises the risk of a heavy Russian strike on Ukraine&rsquo;s energy grid as winter starts, precisely while the Coalition of the Willing meets (topic 2); the Moscow invitation is an attempt to split the EU from Kyiv.</p>
+<p><strong>What to watch.</strong> Size and targets of the next Russian combined strike; repair timeline; EU reply to the Moscow invitation.</p>
+<p><strong>Sources:</strong> <a href="https://t.me/s/news_kremlin_eng">posts 8459–8464</a>, <a href="https://x.com/i/status/2123413441989820688">posts 8459–8464</a>, <a href="https://x.com/i/status/2123413895725359512">posts 8459–8464</a>, <a href="https://x.com/i/status/2123461732756529484">posts 8459–8464</a>, <a href="https://x.com/i/status/2123464416108712094">posts 8459–8464</a>, <a href="https://t.me/s/tassagency_en">posts 8459–8464</a></p>
+<hr>
+<h2 id="s2">Russian drone damages the Dutch Embassy in Kyiv during hours-long daytime attack</h2>
+<p><strong>A Russian drone struck or crashed in the courtyard of the Dutch Embassy in Kyiv on 19 November, damaging cars, a security post and the building&rsquo;s windows; it is unclear whether the area was targeted or the drone was shot down (Kyiv Independent, OSINTtechnical).</strong></p>
+<p>Kyiv authorities report one man, 26, killed and four injured in the hours-long daytime drone attack, and a three-storey building hit in broad daylight. Russia&rsquo;s MoD (state source) claims daytime UAV strikes on port infrastructure and vessels “used in the interests of the AFU”.</p>
+<p><strong>Why it matters for Europe.</strong> An EU member&rsquo;s embassy was hit days after Moscow&rsquo;s diplomatic attack on the Netherlands over Dutch firm Destinus and the Crimean Bridge strike (07:30 edition); watch for a Dutch and EU response.</p>
+<p><strong>What to watch.</strong> Dutch government reaction; summoning of the Russian ambassador.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123402819344486736">X</a>, <a href="https://x.com/i/status/2123419655846953333">X</a>, <a href="https://x.com/i/status/2123430773130948913">X</a>, <a href="https://x.com/i/status/2123454157583434191">X</a>, <a href="https://x.com/i/status/2123419424174542977">X</a>, <a href="https://t.me/s/mod_russia_en">t.me</a></p>
+<hr>
+<h2 id="s3">Update: Houthi strike on Riyadh&rsquo;s PIF Tower confirmed; Saudi Arabia “will not tolerate” attacks; GCC and Kuwait condemn</h2>
+<p><strong>Saudi Civil Defence said a Houthi attack damaged several floors of a tower in Riyadh&rsquo;s King Abdullah Financial District and nearby buildings, with no injuries; the 80-storey Public Investment Fund Tower houses the $900 billion sovereign wealth fund (@ClashReport).</strong></p>
+<p>Saudi Arabia&rsquo;s Foreign Ministry said it “will not tolerate” attacks on its territory. The GCC called it a dangerous escalation; Kuwait condemned Houthi attacks on Saudi Arabia with ballistic and cruise missiles and drones. New alerts were sounded over Riyadh in the afternoon (Early warning).</p>
+<p><strong>Why it matters for Europe.</strong> Houthi strikes on Gulf financial centres widen the Iran war&rsquo;s economic front and raise risks for Red Sea and Gulf shipping and energy supplies to Europe.</p>
+<p><strong>What to watch.</strong> Saudi-led coalition retaliation in Yemen; further launches at Riyadh, Jizan and Abha.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123441993011376635">@ClashReport</a>, <a href="https://x.com/i/status/2123448848656023643">@ClashReport</a>, <a href="https://x.com/i/status/2123434361320034717">@ClashReport</a>, <a href="https://x.com/i/status/2123470449220661454">@ClashReport</a>, <a href="https://x.com/i/status/2123472072399634674">@ClashReport</a>, <a href="https://x.com/i/status/2123430570466128321">@ClashReport</a></p>
+<hr>
+<h2 id="s4">Update: Iran — IRGC says blockade must end before any nuclear talks; oil-export breakout signals; Bloomberg: US strikes more likely</h2>
+<p><strong>IRGC spokesman Hossein Mohebbi said Iran will not allow the US-imposed blockade to continue and will not discuss its nuclear programme until the Strait of Hormuz issue is resolved (Al Jazeera); IRNA (state agency) quotes the IRGC claiming a significant upgrade of air defences, and Iranian accounts relay a claim that missile range has risen to 4,500 km (unverified).</strong></p>
+<p>The IRGC-affiliated Sabereen News says Iran is considering resuming oil exports despite the blockade, after TankerTrackers said Iran appears to be preparing to ship oil again. Bloomberg reports Western officials see an increased likelihood of renewed large-scale US strikes on Iran; Tasnim relays Trump telling Israel&rsquo;s Channel 12 there is “no rush” and “we&rsquo;ll see what happens after the new year begins”. At the IAEA Board, Iran&rsquo;s envoy Reza Najafi warned that information gathered at Iranian sites “will certainly be used for further attacks” and Iran rejected “unrestricted inspections under threat”.</p>
+<p><strong>Why it matters for Europe.</strong> A blockade-running attempt could trigger the next US–Iran clash at Hormuz; the E3 are directly involved at the IAEA Board.</p>
+<p><strong>What to watch.</strong> Movement of Iranian tankers through Hormuz; IAEA Board resolution; US force posture.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123438653946958109">X</a>, <a href="https://x.com/i/status/2123474871707406629">X</a>, <a href="https://x.com/i/status/2123395922306764992">X</a>, <a href="https://x.com/i/status/2123478390283837780">X</a>, <a href="https://x.com/i/status/2123432897206002124">X</a>, <a href="https://t.me/s/Irna_en">t.me</a>, <a href="https://t.me/s/Tasnimnews_en">t.me</a></p>
+<hr>
+<h2 id="s5">Military movements: NATO surge over the Black Sea, Russian naval convoy in the Mediterranean, Turkish Black Sea base plan</h2>
+<p><strong>Beyond the Early warning items, ItaMilRadar describes today&rsquo;s NATO air activity over the Black Sea as the heaviest in some time, combining drones, AWACS, tankers, SIGINT aircraft and fighters.</strong></p>
+<p>In the Mediterranean, the frigate <em>Admiral Golovko</em> and the tanker <em>Yelnya</em> are being tracked moving east. A post relayed on the list says the Turkish Naval Forces plan a new Black Sea base, with 5,000 personnel to arrive in Rize for training and 500 apartments to be built (not checked against an official Turkish source). Russian Tu-95 bombers flew through Taiwan&rsquo;s ADIZ for the second time in three days.</p>
+<p><strong>Why it matters for Europe.</strong> NATO surveillance over the Black Sea coincides with Putin&rsquo;s retaliation threat and the Kerch strikes; the Russian presence in the Mediterranean touches Italy and Spain&rsquo;s area of interest.</p>
+<p><strong>What to watch.</strong> Whether the Russian convoy heads for Tartus or Libya; Turkish MoD confirmation.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123477288088195346">X</a>, <a href="https://x.com/i/status/2123451401766424649">X</a>, <a href="https://x.com/i/status/2123456878071947753">X</a>, <a href="https://x.com/i/status/2123425763932180760">X</a></p>
+<hr>
+<h2 id="s6">Defense News: Ukraine plans to double drone supplies and triple deep strikes, with European backing</h2>
+<p><strong>Defense News reports Ukraine is pressing ahead with its long-range strike campaign with support from European partners, despite Washington asking Kyiv to prioritise front-line defence and mid-range strikes; Kyiv plans to double drone supplies and triple deep strikes.</strong></p>
+<p>This is the new item in the defensenews.com Europe section this window.</p>
+<p><strong>Why it matters for Europe.</strong> European funding of Ukraine&rsquo;s deep-strike capacity (e.g. Destinus) is now a point of friction with Washington and a stated reason for Moscow&rsquo;s threats.</p>
+<p><strong>What to watch.</strong> US reaction; European financing for long-range drones.</p>
+<p><strong>Sources:</strong> <a href="https://www.defensenews.com/global/europe/2026/11/19/ukraine-plans-to-double-drone-supplies-triple-deep-strikes/">defensenews.com</a>, <a href="https://x.com/i/status/2123407258813960409">X</a></p>
+<hr>
+<p><strong>See also:</strong> Update: Berlin Coalition of the Willing: Macron reopens Ukraine&rsquo;s NATO path, Kushner reports progress on guarantees — see World.</p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Conflicts. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

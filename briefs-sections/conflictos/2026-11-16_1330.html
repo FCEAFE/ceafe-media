@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTS — Monday, 16 November 2026 · 13:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTS</h1>
+      <p class="list-date">Monday, 16 November 2026 · 13:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> 16 November 2026, 05:37 to 12:00 Europe/Madrid (2026-11-16T04:37Z to 11:00Z), continuing from the 07:30 edition</li>
+<li><strong>Compiled from:</strong> the CEAFE Conflicts section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<blockquote>
+<p><strong>EARLY WARNING</strong></p>
+<p><strong>Observed / officially reported</strong>
+- <strong>Strait of Hormuz:</strong> UKMTO warning 207-26 says an outbound tanker was hit by an “unknown projectile” at 05:58 UTC on 16 November, causing an engine-room fire. All crew are accounted for, and the damage and environmental impact are not yet known. Iran&rsquo;s Navy (via IRNA, Iranian state media) says a “violating” tanker hit a naval mine in a “prohibited zone” east of the strait.
+- <strong>Kerch Strait:</strong> Russian authorities say a Ukrainian drone hit the Crimean (Kerch) Bridge overnight. Road traffic was suspended and rail kept running (Russian Transport Ministry via TASS). Russia&rsquo;s MoD says it downed 1,336 Ukrainian drones overnight, about 600 of them heading for the Moscow region (Sobyanin). These are Russian official figures.
+- <strong>Black Sea shipping:</strong> Russia&rsquo;s MoD says its drones hit a dry cargo ship carrying “military and dual-use cargo” to Chornomorsk, plus a locomotive at Zaporizhzhia (official Russian source). This follows last week&rsquo;s four ships hit off Sulina.
+- <strong>Gulf:</strong> All six GCC states approved a headquarters in Kuwait for their new Unified Military Command on 10 November. Troop numbers and timelines have not been disclosed (Reuters via @FaytuksNetwork).</p>
+<p><strong>Unverified OSINT leads / claims</strong>
+- The IRGC Navy claims it used electronic warfare to take control of a US MQM-170 drone south of Qeshm Island and land it intact. It says this is the fourth such capture (via Fars, @AJEnglish, @clashreport). There is no US comment.
+- @MenchOsint reports “dozens” of USAF C-17A transports landing in Shenzhen and Manila ahead of Trump&rsquo;s trips (Philippines on 17 November, China on 19 November). This is presidential-visit airlift, not a combat indicator.</p>
+<p><strong>Interpretation:</strong> The Hormuz incident is the first independent (UKMTO) confirmation of the tanker attacks that Iran has claimed since 14 November. It contradicts the market view that the strait is back to normal. That is an assessment. Absence of tracking data proves nothing, because many military aircraft fly without transponders.</p>
+<p><strong>Counter-space:</strong> No new rendezvous or proximity operation was found in this window. The watch on Russia&rsquo;s Kosmos 2612 sibling satellites drifting toward ICEYE-X37 continues. ICEYE (Finland) unveiled its Gen5 SAR satellite today (see Defence Industry).</p>
+</blockquote>
+<h2 id="s1">Ukraine hits the Crimean Bridge and sends one of the largest drone barrages of the war toward Moscow</h2>
+<p><strong>Ukraine struck the bridge linking Russia and occupied Crimea across the Kerch Strait overnight on 15–16 November, Crimea&rsquo;s Russian-installed head Sergei Aksyonov said on Telegram.</strong></p>
+<p>Road traffic was restricted “until approximately midday” and an operational headquarters was set up in Kerch. The Russian Transport Ministry said repairs were under way, that it was considering alternating one-way traffic, that rail services were running normally and that preliminary reports showed no injuries. Kremlin spokesman Dmitry Peskov spoke of “minor damage”. Kyiv Post, citing a bridge information channel, said traffic stopped at about 02:22 Moscow time and that four passenger trains were delayed. Pro-Kremlin channel Mash reported about 2,000 cars queuing (via Politico).</p>
+<p>The bridge strike came in a mass drone raid. Russia&rsquo;s Defence Ministry claimed 1,336 fixed-wing drones were intercepted overnight over 17 regions, Crimea and the Black and Azov seas, and 2,049 drones plus four “Flamingo” long-range cruise missiles in 24 hours. Moscow Mayor Sergei Sobyanin said about 600 drones flew toward the capital region between 17:00 on Sunday and 08:00 on Monday, 191 of them near Moscow. Regional officials reported injuries in Krasnodar (six people) and at an oil depot and gas station in Azov, Rostov (three). All of these are Russian official claims and were not independently verified. Peskov said air defence was working “very effectively” but that “no system can provide 100% protection in the face of such massive strikes”. He added that Moscow “will not give the Kiev regime a break to heal its wounds” and wants a lasting peace, not a short truce. Russian Ombudswoman Yana Lantratova said a prisoner exchange is being prepared (TASS).</p>
+<p><strong>Why it matters for Europe.</strong> Ukraine&rsquo;s long-range drones, increasingly built at home and with European money, can now strike Russia&rsquo;s most symbolic logistics link while talks happen without Europe in the room. This is the kind of sovereign strike capability (see ELSA, topic 5) that Europe itself still lacks at scale.</p>
+<p><strong>What to watch.</strong> The Russian Transport Ministry&rsquo;s damage report, the Ukrainian General Staff&rsquo;s claim, and Russia&rsquo;s retaliation pattern against Ukrainian energy and Black Sea ports.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.france24.com/en/europe/20261116-live-600-ukrainian-drones-target-moscow-strike-crimea-bridge-halts-traffic;">@France24_e (1)</a></li>
+<li><a href="https://x.com/i/status/2122224191030374630">@France24_e (2)</a></li>
+<li><a href="https://x.com/i/status/2122268583040290888">@France24_e (3)</a></li>
+<li><a href="https://www.politico.eu/article/russia-claims-ukraine-attacked-crimean-bridge-moscow/">politico.eu</a></li>
+<li><a href="https://www.kyivpost.com/post/90199">kyivpost.com</a></li>
+<li><a href="https://tass.com/emergencies/2218521;">posts 98792, 98796, 98800, 98803; Russian state agenc (1)</a></li>
+<li><a href="https://t.me/s/tassagency_en">posts 98792, 98796, 98800, 98803; Russian state agenc (2)</a></li>
+<li><a href="https://x.com/i/status/2122230558373900592">@XHNews citing RIA Novosti; Chinese state media); (@CGTNOfficial, Chinese state medi (1)</a></li>
+<li><a href="https://x.com/i/status/2122226354892779558">@XHNews citing RIA Novosti; Chinese state media); (@CGTNOfficial, Chinese state medi (2)</a></li>
+<li><a href="https://t.me/s/mod_russia_en">posts 30629–30633; official Russian source</a></li>
+</ul>
+<hr>
+<h2 id="s2">Update: Iran war, UKMTO confirms a tanker hit in Hormuz, Iran claims a captured US drone, and Araghchi rallies ECO</h2>
+<p><strong>New since 07:30: UKMTO confirmed an attack for the first time in this run of claims.</strong></p>
+<p>Warning 207-26 says a tanker sailing outbound through the Strait of Hormuz was struck by an “unknown projectile” at 05:58 UTC, causing an engine-room fire, with all crew accounted for. Iran&rsquo;s Army Navy, via IRNA (Iranian state media), said another “violating” tanker caught fire and stopped after hitting a naval mine in a “prohibited zone” east of the strait. It warned that ships which switch off tracking or enter unauthorised zones “face serious risks” and that owners are responsible for the consequences. IRNA repeated that Iran closed the strait after alleged US violations of the “Islamabad MoU”. The IRGC Navy separately claimed it brought down a US MQM-170 target/surveillance drone intact by electronic warfare south of Qeshm Island, its fourth such claim (Fars via @IranObserver0, Al Jazeera). There was no US response.</p>
+<p>On the diplomatic side, Foreign Minister Abbas Araghchi told the ECO foreign ministers in Islamabad that Iran&rsquo;s strikes are “directed exclusively at the targets and military bases of the aggressors” and not at neighbouring peoples or governments. He said ECO members welcomed Iran&rsquo;s “two-day proposal” to end the war (IRNA). Al Jazeera reported Tehran&rsquo;s claim that it has at least six months of essential food reserves despite the US “sea-and-land blockade”. Trump shared a message saying “May God protect our troops” as USS Theodore Roosevelt joined two other US carriers in the region (Al Jazeera). @F_CEAFE reposted an @HormuzLetter report that Mossad chief Roman Gofman briefed Netanyahu and the security cabinet on possible military action against Iran after meetings with CIA Director Ratcliffe and envoy Witkoff. The meetings were reported by the Times of Israel (via @FaytuksNetwork); the cabinet briefing is unconfirmed.</p>
+<p><strong>Why it matters for Europe.</strong> A confirmed projectile strike on an outbound tanker undercuts the calm that oil markets had priced in (Brent around $95 in this morning&rsquo;s brief). European importers and shipowners carry the risk, while European navies have no say in the US-run escort and blockade.</p>
+<p><strong>What to watch.</strong> The vessel&rsquo;s identity and flag, CENTCOM comment on the drone claim, any Israeli cabinet decision, and the Shenzhen summit&rsquo;s Iran item on 19 November.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.ukmto.org/-/media/ukmto/products/20261116-ukmto_warning_207-26.pdf">ukmto.org</a></li>
+<li><a href="https://www.arabnews.com/middle-east/british-authority-tanker-targeted-by-unknown-projectile-in-strait-of-hormuz-fire-erupts-3012196">Reuters</a></li>
+<li><a href="https://x.com/i/status/2122238536266989790">@MenchOsint (1)</a></li>
+<li><a href="https://x.com/i/status/2122215804519235779">@MenchOsint (2)</a></li>
+<li><a href="https://t.me/s/Irna_en">posts 42285, 42286, 42287, 42292; Iranian state medi</a></li>
+<li><a href="https://x.com/i/status/2122270781510218123">@AJEnglish, MQM-170); (@clashreport); (@IranObserver0, citing Fars (1)</a></li>
+<li><a href="https://x.com/i/status/2122262646846337149">@AJEnglish, MQM-170); (@clashreport); (@IranObserver0, citing Fars (2)</a></li>
+<li><a href="https://x.com/i/status/2122266156442566763">@AJEnglish, MQM-170); (@clashreport); (@IranObserver0, citing Fars (3)</a></li>
+<li><a href="https://x.com/i/status/2122253345889104192">@AJEnglish (1)</a></li>
+<li><a href="https://x.com/i/status/2122258734487617927">@AJEnglish (2)</a></li>
+<li><a href="https://x.com/i/status/2122262273964285953">@F_CEAFE repost of @HormuzLetter; unverified); (@FaytuksNetwork, Times of Israel (1)</a></li>
+<li><a href="https://x.com/i/status/2122197083125940563">@F_CEAFE repost of @HormuzLetter; unverified); (@FaytuksNetwork, Times of Israel (2)</a></li>
+<li><a href="https://x.com/i/status/2122220374662246645">@ForeignAffairs, “Only the Gulf can end the Iran war”, opinio</a></li>
+</ul>
+<hr>
+<h2 id="s3">Russia&rsquo;s offer to sign separate non-aggression pacts with NATO members, while Europe fields a seven-member peace team</h2>
+<p><strong>Al Jazeera&rsquo;s analysis today revisits the proposal made on 11 November by Alexei Drobinin, head of the Russian Foreign Ministry&rsquo;s policy planning department: bilateral “non-aggression” agreements with individual NATO member states, which would receive “additional individual security guarantees” from Russia.</strong></p>
+<p>Reported terms include pledges not to provide territory, transit routes or industrial capacity for military action against the other party (Kyiv Post citing Reuters, Verkkouutiset). Former Russian diplomat Boris Bondarev told Al Jazeera that “NATO will collapse, and European nations will be face to face with Russia”. Euronews reports that Moscow is again demanding that NATO roll back its presence in Europe to its 1997 positions. EU foreign policy chief Kaja Kallas said that in 2021 Russia&rsquo;s list of demands was “a clear pretext for war” and that the same demands now are “a pretext for keeping the war going” (video via @clashreport). Peskov said European statements show an “unwillingness to contribute” to the peace process (TASS). Latvia&rsquo;s PM Andris Kulbergs told Euronews that Russia “is losing in Ukraine” and is in no position to set terms.</p>
+<p>Europe&rsquo;s answer is still plural. After the Dublin summit, leaders chose a seven-member team (France, Germany, the UK, Italy, Poland, the EU institutions and NATO) instead of a single envoy, leaving Kallas out (Euronews, Politico). Reuters also reports that the US and Russia will oppose talks on limiting autonomous weapons.</p>
+<p><strong>Why it matters for Europe.</strong> Separate pacts are a textbook divide-and-rule offer. They work only if Europe stays a collection of states rather than a single security actor. A seven-member delegation is better than none, but it confirms the problem: no Member State, nor a small group of them, carries the weight of a united EU with a common defence.</p>
+<p><strong>What to watch.</strong> The Coalition of the Willing meeting in Berlin on 19 November (Zelenskyy&rsquo;s deadline on European representation), and whether any NATO capital engages with Drobinin&rsquo;s offer.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.aljazeera.com/news/2026/11/16/nato-will-collapse-russia-stalls-ukraine-talks-seeks-to-divide-europe;">@AJEnglish (1)</a></li>
+<li><a href="https://x.com/i/status/2122280086191677640">@AJEnglish (2)</a></li>
+<li><a href="https://www.kyivpost.com/post/89822;">kyivpost.com</a></li>
+<li><a href="https://www.verkkouutiset.fi/a/en/russia-proposes-non-aggression-pacts-with-individual-nato-states/">verkkouutiset.fi</a></li>
+<li><a href="https://x.com/i/status/2122268536894578708">@euronews (1)</a></li>
+<li><a href="https://x.com/i/status/2122248094192701835">@euronews (2)</a></li>
+<li><a href="https://www.euronews.com/2026/11/16/substance-over-style-as-europe-debates-ukraine-peace-role">@euronews (3)</a></li>
+<li><a href="https://x.com/i/status/2122241464461644144">@clashreport, Kallas video; quote consistent with Politico&rsquo;s report (1)</a></li>
+<li><a href="https://www.politico.eu/article/eu-chief-diplomat-kallas-blasts-russian-peace-demands-as-absurd/">@clashreport, Kallas video; quote consistent with Politico&rsquo;s report (2)</a></li>
+<li><a href="https://x.com/i/status/2122218119103914316">@Reuters, autonomous weapons</a></li>
+<li><a href="https://t.me/s/tassagency_en">post 98803; Russian state agenc</a></li>
+</ul>
+<hr>
+<h2 id="s4">Update: Estonia sabotage case, the Kremlin &ldquo;categorically&rdquo; rejects the accusation and Tallinn weighs an open-ended border closure</h2>
+<p><strong>Russia&rsquo;s response to Estonia&rsquo;s version (07:30 edition, topic 4) has now come.</strong></p>
+<p>Peskov said Estonia and other European countries are “baselessly accusing Russia of sabotage” and that Moscow “categorically” rejects this. He added that Estonia is building a “wall” with Russia, and “history shows that walls bring nothing good to their builders” (TASS, Russian state agency). TASS, citing Delfi, reports that PM Kristen Michal now wants the border closed indefinitely and says the border guard is ready for a possible “migration attack”. Breaking Defense also covered the attempted attack on Threod Systems. A European intelligence officer told journalist Holger Roonemaa that FSB officers are questioning travellers entering Russia from Europe about their knowledge of and contacts in military industries (via @RALee85). This is a single-source report.</p>
+<p><strong>Why it matters for Europe.</strong> The attack was aimed at a drone maker that supplies Ukraine. Russia&rsquo;s flat denial and border threats make it a test of whether the EU treats sabotage on one member&rsquo;s defence industry as an attack on the common industrial base.</p>
+<p><strong>What to watch.</strong> The Estonian government&rsquo;s decision on the duration of the closure, and any Latvian or Finnish response.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://t.me/s/tassagency_en">posts 98801, 98803; Russian state agenc</a></li>
+<li><a href="https://breakingdefense.com/2026/11/estonian-drone-company-targeted-in-sabotage-attempt-as-part-of-russias-hybrid-war-against-europe-prime-minister-michal/;">breakingdefense.com</a></li>
+<li><a href="https://x.com/i/status/2122275751533728167">X post 2122275751533728167</a></li>
+<li><a href="https://x.com/i/status/2122280587864273103">@RALee85 repost of @holger_r; single source</a></li>
+</ul>
+<hr>
+<h2 id="s5">Europe&rsquo;s own firepower: 155 mm output up fivefold, ELSA moves to delivery, and Sweden eyes a French cruise missile</h2>
+<p><strong>IISS says NATO Europe&rsquo;s 155 mm ammunition production capacity has grown fivefold since 2022 and will more than double again by 2030 if current plans are realised, although order backlogs have grown faster than production.</strong></p>
+<p>A separate IISS Missile Dialogue Initiative paper (Matthew Bint) says the European Long-Range Strike Approach (ELSA) has moved from requirement planning to implementation, and that “timely delivery is now the challenge”. Sweden&rsquo;s navy chief told La Tribune he is “interested” in the MBDA MdCN naval cruise missile for the Naval Group FDI frigates that Sweden is considering. Spain&rsquo;s Indra unveiled its Prisma-S fully digital AESA naval radar at Euronaval 2026. By contrast, the UK will test the US YFQ-48A “Talon Blue” autonomous jet from a Queen Elizabeth-class carrier in 2027 (Navy Recognition), while Tekever&rsquo;s AR5 drone has completed trials aboard HMS Queen Elizabeth (Defence Post).</p>
+<p><strong>Why it matters for Europe.</strong> Swedish interest in a French frigate armed with a French missile, Spanish radars and European long-range strike are the intra-European procurement that builds sovereign capability, jobs and R&amp;D. ELSA&rsquo;s delivery problem and the UK&rsquo;s choice of a US drone for its carriers show how quickly that gap is filled from outside when Europe is slow.</p>
+<p><strong>What to watch.</strong> The Swedish frigate decision, and ELSA milestones at the EU and NATO defence ministers&rsquo; meetings on 17–18 November.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122251333377876251">@IISS_org, 155 mm</a></li>
+<li><a href="https://go.iiss.org/47W9rcj;">@IISS_org, ELSA (1)</a></li>
+<li><a href="https://x.com/i/status/2122237489687454186">@IISS_org, ELSA (2)</a></li>
+<li><a href="https://www.latribune.fr/article/defense-aerospatiale/defense/69167827867758/je-suis-interesse-par-le-missile-de-croisiere-mdcn-chef-detat-major-de-la-marine-royale-suedoise">via @MCABIROL</a></li>
+<li><a href="https://x.com/i/status/2122272561329303976">@defpostmedia, Indra Prisma-S); (@defpostmedia, Tekever AR5 (1)</a></li>
+<li><a href="https://x.com/i/status/2122212879042556005">@defpostmedia, Indra Prisma-S); (@defpostmedia, Tekever AR5 (2)</a></li>
+<li><a href="https://www.armyrecognition.com/news/navy-news/2026/uk-to-test-us-yfq-48a-talon-blue-autonomous-jet-from-queen-elizabeth-class-aircraft-carrier-in-2027">armyrecognition.com</a></li>
+</ul>
+<hr>
+<h2 id="s6">Update: Yemen, the Houthis say their Lahj push aims at a Bab al-Mandab &ldquo;buffer zone&rdquo; as fighting moves toward Aden</h2>
+<p><strong>New since 07:30: Reuters carried Houthi video said to show clashes with pro-government troops in Lahj province.</strong></p>
+<p>Pro-Houthi trackers report advances around Khor Omaira, Ras al-Ara and Al-Madaribah; this is unverified. Mohammed Al-Bukhaiti, a member of the Ansarullah political bureau, told Tasnim (Iranian state-affiliated) that “the objective of this military operation in Lahj Province is to ensure the security of Bab el-Mandeb” through a buffer zone, after what he called Saudi attempts to retake the strait. France 24 repeats that the Houthis are about 60 km from Aden.</p>
+<p><strong>Why it matters for Europe.</strong> The Houthis now openly say the Lahj offensive is about holding the Bab al-Mandab chokepoint. That directly shapes Suez traffic to European ports and the environment for the EU&rsquo;s Aspides naval mission.</p>
+<p><strong>What to watch.</strong> Whether the front stops at the Lahj coastal districts or moves on Al-Anad and Aden, and the Saudi air response.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122239498159346010">@Reuters, video</a></li>
+<li><a href="https://t.me/s/Tasnimnews_en">post 47356; tasnimnews.ir/3749904; Iranian state-affiliate</a></li>
+<li><a href="https://x.com/i/status/2122253516597018900">@France24_e</a></li>
+<li><a href="https://x.com/i/status/2122266707490422861">repost of pro-Houthi tracker; unverifie</a></li>
+</ul>
+<hr>
+<h2>See also</h2>
+<ul>
+<li>UK–EU summit on Friday with a defence commitment — see World.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Conflicts. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

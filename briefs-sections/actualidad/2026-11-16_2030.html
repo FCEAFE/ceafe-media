@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Monday, 16 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Monday, 16 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 16 November 2026, about 12:00 to 19:00 Europe/Madrid (11:00–18:00 UTC): only items new since the 13:30 brief.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Update: Moscow confirms Putin&rsquo;s Shenzhen trip as Trump leaves for Asia and says he &ldquo;may&rdquo; meet Kim Jong Un</h2>
+<p><strong>Russia&rsquo;s Foreign Ministry announced that President Putin will pay a working visit to China on 18–19 November, attend the APEC summit in Shenzhen and take part in a planned trilateral meeting with the leaders of China and the US, then visit Tajikistan on 19–20 November (official Russian source).</strong></p>
+<p>Departing the White House, Donald Trump said: &ldquo;we&rsquo;re also going to meet with President Putin, and we may meet with Kim Jong Un also&rdquo;, adding that Kim&rsquo;s presence was &ldquo;up to President Xi&rdquo; (Reuters, Yonhap). Senior US officials told ABC News that denuclearisation will be the focus of the trilateral, that they expect no concrete agreement, and that Trump and Putin will not meet one-on-one; ABC reports Ukraine is not meant to be discussed in the trilateral, while AP reports Trump said he plans to raise the war. Before China, Trump stops in Manila for a Quad meeting, a trade deal with Thailand and the ASEAN summits. North Korea has publicly said it has no intention of meeting the US president at this time (Reuters).</p>
+<p><strong>Why it matters for Europe.</strong> Nuclear arms control, the Iran war and, possibly, Ukraine will be discussed by Washington, Beijing and Moscow in a room with no European present, three days after 40 European states declared in Dublin that no decision on Europe&rsquo;s security can be taken without Europeans. Only a Union speaking and acting as one has the weight to be invited to such a table.</p>
+<p><strong>What to watch.</strong> Whether Xi invites Kim; whether Ukraine enters the trilateral agenda; any European reaction before Thursday.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122371551781921090">Russian MFA, Shenzhen); (Russian MFA, Tajikistan); (EAS (1)</a></li>
+<li><a href="https://x.com/i/status/2122386995288944653">Russian MFA, Shenzhen); (Russian MFA, Tajikistan); (EAS (2)</a></li>
+<li><a href="https://x.com/i/status/2122353443889168458">Russian MFA, Shenzhen); (Russian MFA, Tajikistan); (EAS (3)</a></li>
+<li><a href="https://www.investing.com/news/world-news/trump-says-he-might-meet-with-north-koreas-kim-jong-un-in-china-5030327">Reuters</a></li>
+<li><a href="https://en.yna.co.kr/view/AEN20261116010000315">Yonhap</a></li>
+<li><a href="https://abcnews.com/Politics/trump-heads-asia-2nd-high-stakes-meeting-chinese/story?id=138059807">ABC News</a></li>
+<li><a href="https://apnews.com/article/trump-china-manila-xi-putin-ffc5e5a2d384f00960034ec10087502e">AP</a></li>
+<li><a href="https://x.com/i/status/2122376738369880402">@F_CEAFE repost of the White House clip); (chip loophole); (Reuters (1)</a></li>
+<li><a href="https://x.com/i/status/2122362196621418573">@F_CEAFE repost of the White House clip); (chip loophole); (Reuters (2)</a></li>
+<li><a href="https://x.com/i/status/2122348969321746931">@F_CEAFE repost of the White House clip); (chip loophole); (Reuters (3)</a></li>
+</ul>
+<hr>
+<h2 id="s2">Pax Silica: the US signs a tech-security declaration with nine partners, the UK among them, as Germany, Sweden, the Netherlands and the Commission line up to join</h2>
+<p><strong>On 15 November in San Francisco, the United States and nine Pax Silica participants (Australia, India, Israel, Japan, South Korea, Qatar, Singapore, the UAE and the United Kingdom) signed the &ldquo;San Francisco Declaration on the Secure Foundations of Enduring Prosperity&rdquo;, convened by Under Secretary of State Jacob Helberg (State Department).</strong></p>
+<p>It states that &ldquo;economic security is fundamental to national security&rdquo;, sets a common understanding of the sensitive technologies and critical infrastructure behind &ldquo;Super Intelligence&rdquo; supply chains, from materials and know-how to ports, networks and energy, and creates five working groups to deliver results within six months. Reuters describes Pax Silica as a US push for allies&rsquo; joint projects and export controls to cut reliance on &ldquo;adversaries&rdquo; in critical minerals, AI models and chips, in the context of the rivalry with China. The FT, cited by Reuters, reports that Germany, Sweden, the Netherlands and the European Commission are set to sign next week.</p>
+<p><strong>Why it matters for Europe.</strong> This is the US double standard in plain text: Washington defines economic security as national security and organises others&rsquo; supply chains and export controls around its own lead, while asking Europe not to protect its own markets. The UK has already signed alone, and three Member States are set to sign one by one alongside the Commission. Europe&rsquo;s leverage (ASML, materials, its market) only counts if it negotiates as one, sets its own conditions and asks for reciprocity.</p>
+<p><strong>What to watch.</strong> The exact terms Germany, Sweden, the Netherlands and the Commission sign next week; China&rsquo;s response (MOFCOM/MFA): none found yet.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity">state.gov</a></li>
+<li><a href="https://www.investing.com/news/world-news/us-allies-team-up-to-protect-ai-tech-and-infrastructure-amid-china-rivalry-5028738">Reuters</a></li>
+<li><a href="https://x.com/i/status/2122338545105076470">@UnderSecE); (@IsraeliPM (1)</a></li>
+<li><a href="https://x.com/i/status/2122320265136713731">@UnderSecE); (@IsraeliPM (2)</a></li>
+<li><a href="https://x.com/i/status/2122322510792560874">@UnderSecE); (@IsraeliPM (3)</a></li>
+</ul>
+<hr>
+<h2 id="s3">Update: EU lists 140 more targets over Russia&rsquo;s war, including its largest set yet against disinformation and cyberattacks</h2>
+<p><strong>After the Foreign Affairs Council, High Representative Kaja Kallas said ministers approved 140 new listings targeting &ldquo;Russian refineries, banks, e-commerce, and companies in the Gulf and East Asia&rdquo; that support the shadow fleet, including &ldquo;the largest set of listings to date&rdquo; against those behind Russia&rsquo;s cyber and disinformation attacks; the 22nd sanctions package will be presented &ldquo;in the coming days&rdquo; (EEAS).</strong></p>
+<p>The Council&rsquo;s FIMI and cyber decision covers 30 individuals and two entities: the Moscow-based Social Design Agency and 24 of its staff, propagandists including RT International&rsquo;s Chay Bowes, and the pro-Russian hacker group NoName057(16) for DDoS attacks on critical infrastructure and election-related targets (Council; Kyiv Independent). The EEAS says nearly 50 Russian banks were added to the more than 100 banks and financial institutions already cut off. Ministers also called for tighter visa policies and for keeping Russian athletes out of sports events held in the EU.</p>
+<p><strong>Response:</strong> Chay Bowes said the &ldquo;authoritarian EU&rdquo; had sanctioned him with &ldquo;no hearing, no evidence&rdquo; and that he would fight it. @F_CEAFE reposted his statement and a post by Max Blumenthal citing former MEP Clare Daly, who argues the listing freezes his accounts and bans travel without due process. No official Russian reaction yet; MFA spokeswoman Zakharova briefs on Friday 20 November.</p>
+<p><strong>Why it matters for Europe.</strong> Sanctions are the EU&rsquo;s main collective instrument and today showed it can act fast and at scale. Listing a journalist, however, puts the Union&rsquo;s credibility on free expression at stake: the evidence behind each listing must be public and open to challenge before the EU Court.</p>
+<p><strong>What to watch.</strong> The 22nd package; Moscow&rsquo;s countermeasures; any legal challenge by Bowes.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.eeas.europa.eu/eeas/foreign-affairs-council-press-conference-high-representative-kaja-kallas-6_en">eeas.europa.eu</a></li>
+<li><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/11/16/russia-s-fimi-and-malicious-cyber-activities-council-imposes-sanctions-on-30-individuals-and-two-entities/">consilium.europa.eu</a></li>
+<li><a href="https://kyivindependent.com/eu-sanctions-kremlin-troll-factory-hacker-group-in-new-push-against-russian-hybrid-activities-2/">kyivindependent.com</a></li>
+<li><a href="https://www.rte.ie/news/europe/2026/1116/1599321-eu-ukraine-politics/">RTÉ</a></li>
+<li><a href="https://x.com/i/status/2122344538127708194">EEAS banks); (Council); (Bowes); (@F_CEAFE repost); (Kubilius (1)</a></li>
+<li><a href="https://x.com/i/status/2122292302358126906">EEAS banks); (Council); (Bowes); (@F_CEAFE repost); (Kubilius (2)</a></li>
+<li><a href="https://x.com/i/status/2122358868529254508">EEAS banks); (Council); (Bowes); (@F_CEAFE repost); (Kubilius (3)</a></li>
+<li><a href="https://x.com/i/status/2122376614348791899">EEAS banks); (Council); (Bowes); (@F_CEAFE repost); (Kubilius (4)</a></li>
+<li><a href="https://x.com/i/status/2122318907432177782">EEAS banks); (Council); (Bowes); (@F_CEAFE repost); (Kubilius (5)</a></li>
+</ul>
+<hr>
+<h2 id="s4">China&rsquo;s defence minister in Italy: first visit in more than 18 years, and a Chinese delegation aboard an Italian navy ship</h2>
+<p><strong>Italian Defence Minister Guido Crosetto received his Chinese counterpart, Admiral Dong Jun, calling it &ldquo;particularly significant, the first by a Chinese defence minister to Italy in over 18 years&rdquo;; they agreed to follow up the understandings reached by their leaders, strengthen dialogue &ldquo;including between the armed forces&rdquo; and contribute to regional and global security (Italian MoD).</strong></p>
+<p>China&rsquo;s MoD says the two sides agreed to &ldquo;push the deepening of military relations&rdquo; (Chinese MoD, state source). Italian press reports Dong Jun will meet Italian Navy leaders on Tuesday aboard the logistics ship Atlante in Brindisi, in a closed, two-hour programme that may include the arsenal (Quotidiano di Puglia, Corriere).</p>
+<p><strong>Why it matters for Europe.</strong> A Member State opening military-to-military channels with China on its own, days before Washington, Moscow and Beijing meet without Europe, shows the pull of national bilateralism. Contacts with China are legitimate, but they carry weight only when they follow a common EU line; otherwise Beijing can play capitals against each other, just as Washington does.</p>
+<p><strong>What to watch.</strong> Any statement after the Brindisi visit; Rome&rsquo;s coordination with EU partners.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122370995038101886">Italian MoD</a></li>
+<li><a href="http://www.mod.gov.cn/gfbw/qwfb/16500085.html">Chinese MoD</a></li>
+<li><a href="https://www.quotidianodipuglia.it/regione/brindisi_visita_ministro_cinese_marina_militare_cosa_succede-9891845.html">quotidianodipuglia.it</a></li>
+<li><a href="https://bari.corriere.it/notizie/politica/26_novembre_16/la-doppia-missione-sull-asse-puglia-cina-il-ministro-dong-jun-a-brindisi-e-il-governatore-decaro-vola-a-shangai-e-pechino-6811e602-f74b-4a4f-ae51-4bb87e45fxlk.shtml">bari.corriere.it</a></li>
+</ul>
+<hr>
+<h2 id="s5">Le Pen tells Ukraine&rsquo;s ambassador France would stop new financial aid to Kyiv if she is elected</h2>
+<p><strong>Marine Le Pen told Ukraine&rsquo;s ambassador in Paris that, if elected president in 2027, France&rsquo;s public finances would no longer allow financial aid to Ukraine (Le Monde, Le Figaro, AFP).</strong></p>
+<p>According to the reports, she would keep equipment donations, humanitarian aid and diplomatic support, and honour existing commitments, including the EU&rsquo;s €90bn loan. The same day Barrot, citing the Dublin declaration of 40 European states, said &ldquo;no one can dictate&rdquo; Ukraine&rsquo;s security choices (Anadolu), and Germany&rsquo;s Foreign Minister (@AussenMinDE) said in Brussels that &ldquo;no decision on Europe without Europe… We do not need a new security architecture, but respect for existing principles&rdquo;.</p>
+<p><strong>Why it matters for Europe.</strong> Europe now carries Ukraine&rsquo;s financing almost alone (see the 13:30 brief, item 1). A national veto on that effort by a future French government would weaken the whole Union&rsquo;s leverage at the negotiating table; common, EU-level instruments are what protect Ukraine&rsquo;s support from changes in national politics.</p>
+<p><strong>What to watch.</strong> Reaction from Kyiv and other French parties.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.lemonde.fr/politique/article/2026/11/16/marine-le-pen-assure-aupres-de-l-ambassadeur-ukrainien-que-la-france-ne-pourrait-plus-aider-financierement-kiev-si-elle-est-elue-presidente-de-la-republique_6812229_823448.html">lemonde.fr</a></li>
+<li><a href="https://www.lefigaro.fr/politique/marine-le-pen-reitere-aupres-de-l-ambassadeur-ukrainien-a-paris-que-la-france-ne-pourra-plus-aider-financierement-kiev-si-elle-est-elue-20261116">lefigaro.fr</a></li>
+<li><a href="https://www.aa.com.tr/en/europe/no-one-can-dictate-ukraines-security-choices-french-foreign-minister-says/4126546">aa.com.tr</a></li>
+<li><a href="https://x.com/i/status/2122368291725582845">@ClashReport); (German FM (1)</a></li>
+<li><a href="https://x.com/i/status/2122301198221074871">@ClashReport); (German FM (2)</a></li>
+</ul>
+<hr>
+<h2 id="s6">Enlargement Forum: Costa expects Moldova&rsquo;s last two accession clusters to open by year-end</h2>
+<p><strong>European Council President António Costa said he was &ldquo;confident that the two remaining accession clusters will be opened by the end of the year&rdquo; for Moldova, and discussed Moldova&rsquo;s security &ldquo;in light of the recent surge in drone incursions and hybrid attacks&rdquo;; Commissioner Andrius Kubilius said Moldova &ldquo;already today participates in European defence projects&rdquo; and discussed its gradual integration into the European defence architecture.</strong></p>
+<p>Costa called enlargement &ldquo;the best geopolitical investment in Europe&rsquo;s peace, security, democracy, stability and prosperity&rdquo;. Reuters reports diplomats are privately cautious about Kyiv&rsquo;s path, saying elections in key Member States could make progress harder. At the FAC, Ministers also backed moving ahead with an EU–Syria Association Agreement; Kallas said &ldquo;a stable Syria is in Europe&rsquo;s interest&rdquo; (EEAS).</p>
+<p><strong>Why it matters for Europe.</strong> Enlargement extends the Union&rsquo;s weight and its security perimeter eastwards; bringing Moldova into common defence projects is the kind of integration that makes a larger Union stronger.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122329825847222283">Costa); (Kubilius (1)</a></li>
+<li><a href="https://x.com/i/status/2122356075425108351">Costa); (Kubilius (2)</a></li>
+<li><a href="https://x.com/i/status/2122364073085981054">Costa); (Kubilius (3)</a></li>
+<li><a href="https://x.com/i/status/2122366634841030945">Reuters podcast); (EUISS (1)</a></li>
+<li><a href="https://x.com/i/status/2122295361062809635">Reuters podcast); (EUISS (2)</a></li>
+<li><a href="https://www.eeas.europa.eu/eeas/foreign-affairs-council-press-conference-high-representative-kaja-kallas-6_en">eeas.europa.eu</a></li>
+</ul>
+<hr>
+<h2>See also</h2>
+<ul>
+<li>EU sanctions nearly 50 more Russian banks, the Wildberries and Ozon owners, refineries and the shadow fleet — see Economy.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

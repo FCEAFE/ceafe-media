@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — jueves, 19 de noviembre de 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">jueves, 19 de noviembre de 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 19 de noviembre de 2026, de las 06:00 a las 13:15 aproximadamente (hora de Madrid): todo lo nuevo desde la edición de las 07:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Actualidad de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<p><strong>TEMA DEL DÍA</strong></p>
+<h2 id="s1">Actualización: «Declaración hacia la Paz» de Shenzhen: Trump, Xi y Putin pactan sobre la ONU, la CPI, los derivados del petróleo y el riesgo nuclear, con Europa fuera de la mesa</h2>
+<p><strong>La primera reunión de la historia entre los líderes de Estados Unidos, China y Rusia terminó el jueves en Shenzhen con una «Declaración de los Jefes de Estado hacia la Paz» (texto íntegro difundido por el Ministerio de Exteriores ruso, fuente estatal rusa).</strong></p>
+<p>Sus cuatro puntos: (1) como miembros permanentes del Consejo de Seguridad, los tres se comprometen a «reformar la ONU» para que responda con más eficacia a los desafíos globales; (2) prevén «aumentar la producción y el suministro de productos petrolíferos refinados» y reafirman la importancia de unos flujos energéticos estables; (3) reconocen como «de importancia capital» el principio del consentimiento del Estado y el respeto a las inmunidades de los cargos públicos, y coinciden en que «la Corte Penal Internacional y otros órganos similares no deben abusar de su jurisdicción»; (4) reafirman que «una guerra nuclear no se puede ganar y nunca debe librarse» y abrirán un diálogo sobre reducción de riesgos nucleares y no proliferación. Antes de la declaración, Trump dijo a Xi y Putin que propondría fórmulas para proteger a sus países de la CPI (vídeo vía @Acyn). Putin afirmó que los tres están «unidos por su condición de potencias vencedoras de la Segunda Guerra Mundial» y que, a iniciativa de Trump, buena parte de su bilateral se dedicó a Ucrania. Xi calificó la cumbre de «positiva, constructiva y fructífera» y dijo que «la interacción positiva entre grandes países no es opcional, sino obligada» (portavoz de Exteriores chino; Global Times, medio estatal chino). Trump salió de China poco después (Anadolu, agencia estatal turca).</p>
+<p><strong>Contexto:</strong> cierra la historia que abría la edición de las 07:30 (bilateral Putin–Trump). Como señalamos entonces, Europa no está en la mesa y sigue sin ponerse de acuerdo sobre quién habla por ella: la fórmula de Dublín del 13 de noviembre entregó las negociaciones a «las instituciones de la UE y el E5», y no a la Alta Representante, Kaja Kallas, cuyas propias palabras sobre Rusia («si hubiera más bien naciones pequeñas, no sería malo que la gran potencia fuera en realidad mucho más pequeña», Conferencia Lennart Meri, 18 de mayo de 2024) han pesado en su contra como negociadora (edición de las 07:30, noticia 2).</p>
+<p><strong>Reacciones europeas en este periodo:</strong> el excomisario Michel Barnier: «En Chine aujourd&rsquo;hui il manque un drapeau, un continent : l&rsquo;Union européenne» («Hoy en China falta una bandera, un continente: la Unión Europea»). El excomisario Thierry Breton: «Seuls, face aux empires» («Solos, frente a los imperios»). El ministro polaco de Exteriores, Radosław Sikorski, en Budapest: «No aceptaremos nuevas esferas de influencia en Europa», y sobre Shenzhen: «¿Qué se supone que es esto, otra Yalta?» (vídeo vía Clash Report). El ministro alemán para Europa, Gunther Krichbaum, en el Consejo de Asuntos Generales: «Nada sobre Ucrania sin Ucrania, nada sobre Europa sin Europa».</p>
+<p><strong>Por qué importa a Europa.</strong> Tres potencias acaban de firmar, sin ningún europeo presente, un texto sobre la reforma de la ONU, la justicia internacional y el riesgo nuclear, asuntos que la UE y sus Estados miembros consideran propios. El punto 3 socava directamente a la CPI, que la UE apoya como política y que mantiene una orden de detención contra Putin desde marzo de 2023; el punto 2 compromete a Washington, Moscú y Pekín a suministrar más derivados del petróleo cuando la UE intenta aún recortar los ingresos energéticos rusos (véase la noticia 4). Ningún Estado miembro tiene por sí solo peso para ser invitado a esa mesa: es el argumento del CEAFE a favor de una sola voz europea en lugar de formatos E3/E5 y enviados que compiten entre sí.</p>
+<p><strong>Qué vigilar.</strong> Si el «diálogo sobre reducción de riesgos nucleares» tiene fecha y formato; las reacciones de la UE y de la CPI al punto 3; lo que Witkoff y Kushner cuenten esta tarde a la Coalición de Voluntarios en Berlín.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123372469461328015">X</a>, <a href="https://t.me/MFARussia/33494">t.me</a>, <a href="https://t.me/MFARussia/33490">t.me</a>, <a href="https://x.com/i/status/2123351927945634175">X</a>, <a href="https://x.com/i/status/2123382291363971240">China Military Bugle</a>, <a href="https://x.com/i/status/2123354920699191354">portavoz de Exteriores chino</a>, <a href="https://x.com/i/status/2123377920182026430">Global Times</a>, <a href="https://x.com/i/status/2123359138617172080">@RapidResponse47</a>, <a href="https://x.com/i/status/2123357612280328697">@RapidResponse47</a>, <a href="https://x.com/i/status/2123358513850155283">@Acyn</a>, <a href="https://x.com/i/status/2123371188147622122">Anadolu</a>, <a href="https://x.com/i/status/2123308738043949119">Anadolu</a>, <a href="https://x.com/i/status/2123376434542416321">Anadolu</a>, <a href="https://x.com/i/status/2123321849245565393">Michel Barnier</a>, <a href="https://x.com/i/status/2123310308294812085">Thierry Breton</a>, <a href="https://x.com/i/status/2123351790766965043">Exteriores de Polonia</a>, <a href="https://x.com/i/status/2123329229643268420">Clash Report</a>, <a href="https://x.com/i/status/2123383156879294510">Alemania en la UE</a>, <a href="https://www.scmp.com/news/china/diplomacy">South China Morning Post</a>, <a href="https://x.com/i/status/2123369338979971373">Euronews</a></p>
+<hr>
+<h2 id="s2">Berlín: la Coalición de Voluntarios se reúne con Witkoff y Kushner mientras termina Shenzhen</h2>
+<p><strong>El canciller Friedrich Merz acoge en la Cancillería a la Coalición de Voluntarios bajo el lema «Unidos por la paz en Ucrania y la seguridad europea», en copresidencia con Francia y el Reino Unido (E3), con jefes de Estado o de Gobierno de 37 países más António Costa, Ursula von der Leyen, Kaja Kallas y el secretario general de la OTAN, Mark Rutte (Gobierno federal alemán).</strong></p>
+<p>El presidente Zelenski llegó con su equipo: «Estarán representados más de 40 socios, incluido el equipo del presidente estadounidense. Las prioridades de Ucrania son reforzar la defensa aérea, el apoyo energético y financiero, la vía diplomática…». Los enviados estadounidenses Jared Kushner y Steve Witkoff viajaron a Berlín «para consultar con el presidente Zelenski y los líderes europeos»; se espera que informen de las conversaciones de Trump en China (Interfax-Ucrania, Kyiv Post). Las garantías de seguridad tienen tres componentes: apoyo a las Fuerzas Armadas ucranianas, una Fuerza Multinacional para Ucrania y garantías jurídicas y políticas (Interfax-Ucrania).</p>
+<p><strong>Por qué importa a Europa.</strong> El mismo día, los líderes europeos se reúnen en Berlín y conocen de segunda mano, por enviados estadounidenses, lo acordado en Shenzhen. El E3 copreside el formato y las instituciones de la UE asisten como invitadas: otra muestra de la representación europea fragmentada que describe la noticia 1.</p>
+<p><strong>Qué vigilar.</strong> La declaración final y cifras sobre la fuerza multinacional; el relato de los enviados de EE. UU. sobre Shenzhen.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123377054158643397">@ZelenskyyUa</a>, <a href="https://x.com/i/status/2123319813883748586">@jaredkushner</a>, <a href="https://www.bundeskanzler.de/bk-de/aktuelles/koalition-der-willigen-in-berlin-2461162">Gobierno federal</a>, <a href="https://www.kyivpost.com/post/90536">Kyiv Post</a>, <a href="https://en.interfax.com.ua/news/general/1239165.html">Interfax-Ucrania</a>, <a href="https://www.dw.com/en/ukraines-allies-gather-in-berlin-for-coalition-of-the-willing-summit/live-79986520">DW</a></p>
+<hr>
+<h2 id="s3">Instituciones de la UE: gran ciberataque con ayuda de IA contra la Comisión; el diplomático sueco Lars Danielsson, enviado para las sanciones</h2>
+<p><strong>La Comisión Europea sufrió un ciberataque contra sus sistemas internos de personal y de reembolsos médicos (Sysper, MyPMO, JSIS), revelado el jueves por Politico Europe.</strong></p>
+<p>El portavoz Thomas Regnier dijo que se usó «una herramienta de IA de acceso público», que se detectó el 22 de octubre, que no hubo petición de rescate y que no hay «pruebas de una filtración que afecte al conjunto del personal»; no lo atribuyó a nadie (Euronews). Según Politico, el CERT-UE identificó la herramienta como ARTEX, se reunió el máximo órgano interno de gestión de crisis y la comisaria Henna Virkkunen informó al Colegio el miércoles. Por otra parte, la Comisión ha creado una Oficina de Sanciones bajo la comisaria Maria Luís Albuquerque (operativa el 16 de enero de 2027) y ha nombrado a Lars Danielsson, ex representante permanente de Suecia ante la UE (2016–2023), enviado especial para la aplicación de las sanciones a partir del 6 de febrero de 2027, en sustitución de David O&rsquo;Sullivan (Brussels Times, Kyiv Post; felicitado por el primer ministro sueco).</p>
+<p><strong>Por qué importa a Europa.</strong> Es el tercer ataque grave contra la Comisión este año (enero, infraestructura de móviles; marzo, nube de Europa.eu; ahora, sistemas de personal, según Euronews). Los datos de personal (nombres, grados, domicilios) pueden alimentar campañas dirigidas contra funcionarios: la soberanía digital y la ciberdefensa propia de la UE son cuestiones de seguridad, no de informática. Lo de las sanciones continúa la noticia de las 20:30 sobre la nueva Oficina.</p>
+<p><strong>Qué vigilar.</strong> La atribución del ataque; si se robaron datos personales; el 22.º paquete de sanciones contra Rusia.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.politico.eu/newsletter/brussels-playbook/cyberattack-hits-the-commission/">Politico Europe</a>, <a href="https://www.euronews.com/2026/11/19/eu-commission-hit-by-large-scale-cyberattack-with-data-leakage-unknown">Euronews</a>, <a href="https://www.gmanetwork.com/news/topstories/world/1010091/european-commission-targeted-in-cyberattack-politico-reports/story/">Reuters vía GMA</a>, <a href="https://x.com/i/status/2123348325961240987">@SouveraineTech</a>, <a href="https://x.com/i/status/2123295237754048568">primer ministro sueco vía @SweMFA</a>, <a href="https://www.brusselstimes.com/2412656/eu-revamps-sanctions-strategy-with-new-office-and-envoy-for-enforcement">Brussels Times</a>, <a href="https://www.kyivpost.com/post/90535">Kyiv Post</a></p>
+<hr>
+<h2 id="s4">Indopacífico: «2+2» Japón–India en Tokio, bombarderos rusos cerca de Taiwán y diálogo militar Alemania–Japón</h2>
+<p><strong>Japón e India celebraron en Tokio su 4.ª reunión de ministros de Exteriores y Defensa («2+2») (Motegi, Koizumi, Jaishankar y Rajnath Singh) y emitieron una declaración conjunta sobre un Indopacífico libre y abierto y la cooperación en defensa, incluida la seguridad marítima, seguida del 19.º Diálogo Estratégico de ministros de Exteriores.</strong></p>
+<p>El Ministerio de Defensa de Taiwán informó de dos salidas de bombarderos rusos Tu-95 que entraron en su ADIZ por el sur y salieron al noreste de Keelung el jueves por la mañana, durante la cumbre de Shenzhen. Japón y Alemania celebraron su 18.º diálogo militar en Tokio. Japón informó también de que la fragata canadiense HMCS Regina completó la 16.ª misión de Canadá de vigilancia de trasbordos ilícitos con buques norcoreanos.</p>
+<p><strong>Por qué importa a Europa.</strong> Las potencias medias de Asia estrechan lazos de defensa entre sí mientras se reúnen las grandes; el diálogo de Alemania con Japón es una vía nacional, cuando la política común de seguridad de la UE hacia el Indopacífico sigue siendo escasa.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123362045945090055">@MofaJapan_en</a>, <a href="https://x.com/i/status/2123384371898130480">@MofaJapan_en</a>, <a href="https://x.com/i/status/2123369979856953726">@MofaJapan_en</a>, <a href="https://x.com/i/status/2123356253460238657">@SpokespersonMoD</a>, <a href="https://x.com/i/status/2123309207638413732">@ModJapan_en</a>, <a href="https://x.com/i/status/2123305270394994777">@MoNDefense</a></p>
+<hr>
+<h2 id="s5">OMC: récord de restricciones comerciales en 2026</h2>
+<p><strong>El informe anual de seguimiento comercial de la directora general de la OMC señala que el ritmo de nuevos aranceles y otras medidas no facilitadoras «aumentó bruscamente en el primer semestre de 2026» y que el acumulado alcanzó un récord.</strong></p>
+<p>Los miembros adoptaron 333 nuevas medidas restrictivas solo en el primer semestre de 2026, más que las 300 de todo 2025, pero también 466 medidas facilitadoras (391 en 2025); las medidas de facilitación de exportaciones cubrieron un récord de 570.000 millones de dólares (2,3 %) de las exportaciones mundiales, en buena parte medidas temporales ligadas a las perturbaciones en el estrecho de Ormuz.</p>
+<p><strong>Por qué importa a Europa.</strong> La UE, el mayor bloque comercial del mundo, depende de reglas abiertas; el auge de las restricciones y del comercio como arma premia la escala y la capacidad de negociación colectiva, que solo tiene la Unión en su conjunto.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.wto.org/english/news_e/news26_e/tmwto_17nov26_552_e.htm">OMC</a>, <a href="https://x.com/i/status/2123380117111980526">@wto</a></p>
+<hr>
+<p><strong>Véase también:</strong> Actualización: la UE aplaza dos años sus normas sobre metano para importadores tras la presión de EE. UU. — véase Economía.</p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

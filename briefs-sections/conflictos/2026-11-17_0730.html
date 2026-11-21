@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTS — Tuesday, 17 November 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTS</h1>
+      <p class="list-date">Tuesday, 17 November 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> 16 November 2026, 18:54 to 17 November 2026, 05:57 Europe/Madrid (2026-11-16T17:54Z to 2026-11-17T04:57Z), continuing from the 20:30 edition</li>
+<li><strong>Compiled from:</strong> the CEAFE Conflicts section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<blockquote>
+<p><strong>EARLY WARNING</strong></p>
+<p><strong>Observed / officially reported</strong>
+- <strong>Japan / Korea / Taiwan:</strong> Two aircraft that Japan&rsquo;s Defence Ministry believes were Russian violated Japanese airspace northwest of Okinoshima (Fukuoka) between 04:07 and 04:12 local time on 17 November, about three minutes each; JASDF fighters scrambled and Tokyo lodged a “very stern protest”. It is the first Russian violation of Japanese airspace since 23 September 2024. The aircraft then flew through the Tsushima Strait and between Yonaguni and Taiwan into the Pacific. Taiwan&rsquo;s MND tracked two Russian military aircraft through its ADIZ east of the island, and South Korea&rsquo;s JCS said Russian aircraft entered and left the KADIZ over the East Sea without violating its airspace (Kyodo/Nikkei, Jiji, CNA, Straits Times; @TaiwanMonitor).
+- <strong>Strait of Hormuz:</strong> UKMTO warning 208-26: a tanker was attacked about 7 NM north of Khasab (Oman) at 19:00 UTC on 16 November, disabled with an engine-room fire; crew safe. Iran&rsquo;s Navy (via state TV) says a fourth tanker in 24 hours hit a mine in a “restricted area” east of the strait; UKMTO has not linked the two.
+- <strong>US carriers:</strong> CENTCOM confirmed USS Theodore Roosevelt (CVN-71) has entered its area, giving three US carrier strike groups in the region with USS George H.W. Bush and USS George Washington. The US Army is seeking contractors to build 17 reinforced concrete bunkers in Israel (10), Saudi Arabia (5) and Lebanon (2) within 45 days (Military.com via @FaytuksNetwork).
+- <strong>Black Sea:</strong> The drifting cargo ship MIRIAM M is beached between Capul Midia and Vadu, north of Constanța (Romanian SAR, via @Schizointel). Romanian Navy divers&rsquo; mission to the drifting drones was postponed by bad weather.
+- <strong>Iraq:</strong> Sirens sounded at the Khor Mor gas field (Kurdistan) after a drone overflight (Reuters).</p>
+<p><strong>Unverified OSINT leads / claims</strong>
+- The IRGC says it has captured a ninth US MQM-170 drone near Qeshm Island (Iranian claim via Al Jazeera; no US comment).
+- Ukrainian intelligence sources told the FT the ballistic missiles that hit Kyiv&rsquo;s bridges were supplied by North Korea; one pro-Russian account claims a Zircon was used. Neither is confirmed.
+- Houthi-run Saba reports Saudi airstrikes on residential areas of Sanaa on the morning of 17 November.</p>
+<p><strong>Interpretation:</strong> The Russian flight past Japan, Korea and Taiwan came on the eve of Putin&rsquo;s trip to the APEC summit in Shenzhen (18–19 November) and looks like a pressure signal toward Tokyo rather than a strike indicator. In the Gulf, three carriers plus urgent bunker building point to US preparation for a long Iranian campaign against shipping and bases. These are assessments; many military aircraft fly without transponders, so absence of tracking data proves nothing.</p>
+<p><strong>Counter-space:</strong> No new rendezvous or proximity operation was found in this window. The Kosmos 2612 / ICEYE watch continues. Industry note: LeoLabs (US space-tracking firm) has acquired FishEye to expand into missile defence (Breaking Defense).</p>
+</blockquote>
+<h2 id="s1">Update: Ukraine hits the Kerch bridge again overnight as part of its largest drone campaign of the war</h2>
+<p><strong>Ukraine struck the Crimean (Kerch) Bridge for the second time in less than 24 hours.</strong></p>
+<p>Sergey Aksyonov, the Russian-installed head of Crimea, said on Telegram at about 01:34 local time on 17 November that “the enemy attacked the Crimean Bridge again” and that traffic was suspended (relayed by TASS, Russian state agency). OSINT accounts reported more than 15 strikes in the evening, several waves after midnight and intense Russian air-defence fire; a Faytuks Network clip appears to show structural movement of the span. The damage from the new strikes is not yet known: TWZ says it is unclear, while satellite imagery after the first strike on 16 November showed a deformed road arch, reportedly tilted about 4.9 degrees, and damaged roadway in at least two places. The Kremlin called the earlier damage “minor”. Overnight, Ukrainian drones also hit the Gazprom Neftekhim Salavat petrochemical complex in Bashkortostan, deep inside Russia, causing a fire (Kyiv Independent).</p>
+<p><strong>Why it matters for Europe.</strong> The bridge is Russia&rsquo;s main road and rail link to occupied Crimea and its southern front. A lasting cut would weaken the forces that threaten Black Sea shipping off Romania and Bulgaria. Ukraine is doing this mostly with its own long-range drones, which shows the value of European funding for Ukrainian-made strike weapons over waiting for US permission.</p>
+<p><strong>What to watch.</strong> Daylight imagery of the span and rail section; Russian MoD figures on drones downed; whether Russia shuts the Kerch–Yenikale shipping channel. Earlier coverage: 13:30 and 20:30 editions of 16 November.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122463622018273740">X post 2122463622018273740</a></li>
+<li><a href="https://x.com/i/status/2122478132703965374">@FaytuksNetwork</a></li>
+<li><a href="https://x.com/i/status/2122518511226372374">@shashj</a></li>
+<li><a href="https://x.com/i/status/2122464365605491111">@ClashReport</a></li>
+<li><a href="https://x.com/i/status/2122490460564283686">Kyiv Independent</a></li>
+<li><a href="https://www.twz.com/news-features/kerch-bridge-struck-for-the-second-time-in-less-than-24-hours-russia">twz.com</a></li>
+<li><a href="https://meduza.io/en/news/2026/11/16/after-ukraine-s-latest-attack-moscow-calls-damage-to-the-crimean-bridge-insignificant-but-osint-analysts-say-its-main-road-span-is-visibly-deformed">meduza.io</a></li>
+<li><a href="https://x.com/i/status/2122546869666824285">Kyiv Independent, Salavat</a></li>
+<li><a href="https://x.com/i/status/2122530075052753172">@FaytuksNetwork</a></li>
+<li>TASS (Russian state agency) Telegram, post 98878</li>
+</ul>
+<hr>
+<h2 id="s2">Russia hits Kyiv&rsquo;s North and South bridges with ballistic missiles</h2>
+<p><strong>Late on 16 November, Russian ballistic missiles struck Kyiv&rsquo;s Northern and Southern bridges over the Dnipro, Mayor Vitali Klitschko said, damaging critical infrastructure and cutting water and heating in parts of the city.</strong></p>
+<p>Explosions were also reported in Kharkiv, Zaporizhzhia (six strikes, an industrial site hit), Dnipro, Cherkasy, Smila (three injured) and Pavlohrad, and further blasts were heard in Kyiv on the morning of 17 November (Kyiv Independent, Kyiv Post, BBC, France 24/Reuters). Zelensky had warned hours earlier of imminent strikes and of “extremely dangerous” North Korean missile development; a senior Ukrainian official told the FT the missiles used may have come from North Korea. ISW assessed on 14 November that strikes on Kyiv&rsquo;s bridges may aim to split the capital&rsquo;s power grid along the Dnipro.</p>
+<p><strong>Why it matters for Europe.</strong> Kyiv&rsquo;s three million residents depend on eight Dnipro bridges, and Russia is now targeting them as winter starts. Ukraine&rsquo;s air defence relies heavily on scarce US interceptors; the IMF now puts Ukraine&rsquo;s funding gap at $32–34 billion in 2027 (TASS, citing the IMF review). Europe is paying for most of it. A new €1.71 billion tranche of the EU&rsquo;s Ukraine Support Loan, with about 40% for European-made items according to Ukraine&rsquo;s MoD, shows the right direction: European money for European air defence and ammunition.</p>
+<p><strong>What to watch.</strong> Damage assessment of the bridges; any confirmation of North Korean missiles; EU air-defence deliveries. Linked action–reaction: the Kyiv strikes and the Kerch strikes came within the same hour.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://kyivindependent.com/key-bridges-in-kyiv-struck-in-massive-russian-ballistic-missile-attack-across-ukraine/">kyivindependent.com</a></li>
+<li><a href="https://www.kyivpost.com/post/90297">kyivpost.com</a></li>
+<li><a href="https://www.bbc.com/news/articles/cw772jk4rvmxo">bbc.com</a></li>
+<li><a href="https://www.france24.com/en/europe/20261117-live-russian-attacks-target-bridges-in-kyiv-knocking-out-heating-and-water-ukraine">france24.com</a></li>
+<li><a href="https://x.com/i/status/2122463622773538847">FT report via @ChristopherJM</a></li>
+<li><a href="https://x.com/i/status/2122442272998367724">Kyiv Independent, Zelensky warning</a></li>
+<li><a href="https://x.com/i/status/2122459165432193250">@DefenceU, reposted by @F_CEAFE</a></li>
+<li>TASS Telegram post 98883 (IMF figures; Russian state agency, primary IMF document not yet checked)</li>
+</ul>
+<hr>
+<h2 id="s3">Update: Hormuz tanker attacks continue as Iran sets terms and a third US carrier arrives</h2>
+<p><strong>UKMTO confirmed a second tanker attack on 16 November (warning 208-26, 7 NM north of Khasab, 19:00 UTC): the vessel was disabled with an engine-room fire and its crew is safe.</strong></p>
+<p>That follows the 05:58 UTC projectile strike covered at 13:30. Iran&rsquo;s Navy claims a fourth tanker in 24 hours struck a mine after entering a “restricted route” with its navigation systems off; UKMTO has not confirmed the link or the cause. Army spokesman Brig. Gen. Mohammad Akraminia said the strait “will only be reopened by accepting Iran&rsquo;s conditions” (IRNA, Iranian state media). Foreign Minister Araghchi travelled from Islamabad to Muscat for talks with Oman&rsquo;s Badr Al-Busaidi on navigation in Hormuz, after regional support for Tehran&rsquo;s proposed two-day ceasefire (Al Jazeera, Tasnim). In Washington, CNN reported US intelligence that Iran is developing preliminary plans to target senior officials with a dirty bomb or chemical weapon; officials stressed the plotting appears preliminary. Vice President Vance said the war will not become a “10 or 15 year commitment”, and a Reuters/Ipsos poll puts US support for the war at 31%.</p>
+<p><strong>Why it matters for Europe.</strong> Europe pays for the Hormuz crisis through energy prices and inflation (Euronews reports Japan&rsquo;s economy stalled because of it) but has no seat at the table. The UK&rsquo;s Andy Burnham says London supports mediators seeking a deal to end the US-Israel war on Iran and reopen the strait. The EU as a bloc has no comparable role, while Oman, Pakistan and China act as intermediaries; China&rsquo;s UN envoy called the attack on Iranian nuclear sites illegal (Tasnim).</p>
+<p><strong>What to watch.</strong> Identity and flag of the tankers; Oman mediation outcome; US response to the MQM-170 and MQ-1 claims. Earlier coverage: all three 16 November editions.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.ukmto.org/-/media/ukmto/products/20261116-ukmto_warning_208-26.pdf">ukmto.org</a></li>
+<li><a href="https://gcaptain.com/ukmto-reports-two-tanker-attacks-in-strait-of-hormuz/">gcaptain.com</a></li>
+<li><a href="https://www.arabnews.com/middle-east/irans-army-navy-says-fourth-tanker-hit-by-mine-east-of-hormuz-3012325">arabnews.com</a></li>
+<li><a href="https://x.com/i/status/2122448010437394806">X post 2122448010437394806</a></li>
+<li><a href="https://x.com/i/status/2122431337776767098">Al Jazeera; the latter reposted by @F_CEAFE</a></li>
+<li>IRNA (Iranian state media) Telegram post 42315; Tasnim (Iranian state-affiliated) posts 47536, 47552</li>
+<li><a href="https://x.com/i/status/2122416542206071044">CENTCOM / Theodore Roosevelt, via @FaytuksNetwork</a></li>
+<li><a href="https://x.com/i/status/2122431510364278923">bunkers</a></li>
+<li><a href="https://x.com/i/status/2122491142453199195">CNN report via @shashj</a></li>
+<li><a href="https://x.com/i/status/2122504997015572632">Vance, Al Jazeera</a></li>
+<li><a href="https://x.com/i/status/2122476695634510325">poll, @ClashReport</a></li>
+<li><a href="https://x.com/i/status/2122487380972351628">Burnham, Al Jazeera</a></li>
+</ul>
+<hr>
+<h2 id="s4">Russian aircraft violate Japanese airspace and probe Korea&rsquo;s and Taiwan&rsquo;s air zones before APEC</h2>
+<p><strong>Japan says two suspected Russian aircraft entered its airspace northwest of Okinoshima, Fukuoka, for about three minutes each between 04:07 and 04:12 on 17 November, the first such violation since September 2024.</strong></p>
+<p>Chief Cabinet Secretary Minoru Kihara called it “completely unacceptable” and Defence Minister Shinjiro Koizumi promised close watch of Russian military movements. The aircraft continued through the Tsushima Strait and between Yonaguni and Taiwan; Taiwan&rsquo;s MND tracked two Russian military aircraft through its ADIZ, and South Korea scrambled fighters after Russian aircraft entered the KADIZ. Relations between Tokyo and Moscow have soured after a Japanese journalist&rsquo;s arrest and the seizure of Japan Tobacco&rsquo;s Russian assets, and the flight came on the eve of Putin&rsquo;s visit to China for APEC (18–19 November; Russian MFA).</p>
+<p><strong>Why it matters for Europe.</strong> Russia is showing it can pressure US allies in Asia at the same time as it attacks Ukraine and harasses NATO&rsquo;s Black Sea flank. For Europe, the lesson is that the US must spread its forces across several theatres. Only a European defence able to act alone can guarantee Europe&rsquo;s own security.</p>
+<p><strong>What to watch.</strong> Aircraft type (Japan has not yet published it); any Russian explanation; a possible Takaichi–Putin meeting in Shenzhen.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://asia.nikkei.com/politics/defense/suspected-russian-aircraft-violate-japan-airspace-as-bilateral-ties-sour">Kyodo</a></li>
+<li><a href="https://www.nippon.com/en/articles/-/57542">Jiji</a></li>
+<li><a href="https://www.channelnewsasia.com/east-asia/japan-scrambles-jets-russia-planes-enter-airspace-6557516">channelnewsasia.com</a></li>
+<li><a href="https://www.straitstimes.com/asia/taiwan-says-two-russian-military-aircraft-detected-off-its-east-coast">straitstimes.com</a></li>
+<li><a href="https://x.com/i/status/2122553460574871789">@TaiwanMonitor</a></li>
+<li>TASS Telegram post 98887; Russian MFA Telegram post 33383 (Putin&rsquo;s APEC visit), both Russian official sources</li>
+</ul>
+<hr>
+<h2 id="s5">Update: Saudi air campaign over Sanaa as the Houthis claim Bab al-Mandab</h2>
+<p><strong>Houthi-run Saba reported Saudi airstrikes on residential areas of Sanaa on the morning of 17 November, after strikes reported on 16 November in Sanaa (Bani al-Harith: one child killed, 11 wounded), Saada (a migrants&rsquo; shelter), Taiz and Lahj.</strong></p>
+<p>These figures come from the Sanaa authorities and cannot be verified independently. Al Jazeera reports the Houthis now claim control of the Bab al-Mandab Strait, while Saudi-backed southern forces, the Giants Brigades and Nation&rsquo;s Shield announced a “redeployment” from Dhubab airport toward Khor Umayra and Lahj to protect Aden. Iranian state media present it as a Saudi defeat with “100 km liberated” (Tasnim). Houthi spokesman Yahya Saree earlier claimed Saudi F-15 and Typhoon jets fly the raids from Khamis Mushait and Taif.</p>
+<p><strong>Why it matters for Europe.</strong> Bab al-Mandab carries Europe&rsquo;s trade with Asia through Suez. Losing its Yemeni coast to the Houthis would put EU Aspides ships and Djibouti-based forces next to a hostile shore. If Saree&rsquo;s claim is right, European-built Typhoons are part of the Saudi campaign, which raises export-control and reputational questions for the Eurofighter partners (Germany, the UK, Italy and Spain).</p>
+<p><strong>What to watch.</strong> Saudi or coalition statement on the Sanaa strikes; Aspides posture; shipping notices for Bab al-Mandab. Earlier coverage: 16 November, 07:30, 13:30 and 20:30.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.saba.ye/ar/news3836316.htm">saba.ye</a></li>
+<li><a href="https://www.saba.ye/en/news3835868.htm">Saba, Houthi-run</a></li>
+<li><a href="https://alyemenalghad.com/breaking-news/sanaa-airstrikes-november-17-2026/">alyemenalghad.com</a></li>
+<li><a href="https://x.com/i/status/2122486944638849359">Al Jazeera</a></li>
+<li><a href="https://www.ilkha.com/english/world/yemen-says-saudi-arabia-carried-out-94-airstrikes-in-24-hours-566485">Saree claims</a></li>
+<li>Tasnim Telegram posts 47541, 47546 (Iranian state-affiliated)</li>
+<li><a href="https://x.com/i/status/2122416007180370068">Houthi sniper attacks in Lahj, via @MenchOsint</a></li>
+</ul>
+<hr>
+<h2>See also</h2>
+<ul>
+<li>Update: Europe&rsquo;s full negotiating team joins the Ukraine talks for the first time — see World.</li>
+<li>US Senate proposes a $1.1 trillion defence bill — see Defence Industry.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Conflicts. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+</body>
+</html>

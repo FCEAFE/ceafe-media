@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Thursday, 19 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Thursday, 19 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> 19 November 2026, about 13:00 to 19:15 Europe/Madrid: everything new since the 14:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Update: the US chip rule takes effect and TSMC and Samsung cut off Chinese chip designers</h2>
+<p><strong>The Commerce Department’s interim final rule on remote access to advanced semiconductors was published in the Federal Register and took effect on 19 November.</strong></p>
+<p>Reuters reports, citing two people familiar with the matter, that TSMC has told staff to halt affected orders from Chinese chip designers on processes of 16 nanometres and below unless the customer obtains a US export licence, generally limiting them to 28 nm and 40 nm chips without high-bandwidth memory or advanced packaging. The Financial Times reports (via StockAnalysis) that TSMC and Samsung have also paused some shipments to Chinese customers, including smartphone-chip clients, while licence applications are pending. The rule removes the verification route that let foundries and packagers ship Chinese-designed chips judged to fall outside US controls; now any advanced chip designed by a company headquartered in China is presumed controlled unless the designer is on a US-approved list, which includes Nvidia, AMD, Apple, MediaTek and Realtek but no mainland Chinese firm. TSMC’s guidance also requires checks on ownership, packaging providers and shipping routes, extending to orders placed through subsidiaries or intermediaries in Taiwan, the US, Europe, Japan and Southeast Asia.</p>
+<p><strong>Why it matters for Europe.</strong> A US national rule now decides what a Taiwanese and a Korean foundry may make for Chinese customers anywhere, including orders routed through European subsidiaries. European data centres and chip intermediaries must run the same due diligence on Chinese ownership. The rule also adds licence requirements for Singapore, Malaysia, Indonesia, Thailand and Brazil and threatens “import restrictions” and a downgraded export-control status for countries that “tolerate evasion”. The EU had no say in it and will have to comply. China has already said it will take countermeasures (MOFCOM, 17–18 November, covered on 17 November).</p>
+<p><strong>What to watch.</strong> Licence decisions for Chinese designers; whether MOFCOM announces concrete countermeasures; ASML and other European suppliers’ guidance; the EU’s reaction (if any) to the extraterritorial reach of the rule.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123439953979830412">Reuters</a>, <a href="https://x.com/i/status/2123441680552428011">·</a>, <a href="https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors">·</a>, <a href="https://www.investing.com/news/stock-market-news/tsmc-tightens-china-ai-chip-curbs-as-new-us-rules-close-manufacturing-loophole-sources-say-5038806">·</a>, <a href="https://stockanalysis.com/news/tsmc-samsung-suspend-chip-shipments-china/">·</a>, <a href="https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology">·</a>, <a href="https://www.mofcom.gov.cn/syxwfb/art/2026/art_3a69f2058b724dd39cd8ecddcaa4ab87.html">·</a></p>
+<hr>
+<h2 id="s2">Two investigations show US chips still reaching blacklisted Chinese buyers, and AMD shares fall</h2>
+<p><strong>Short-seller-affiliated Hunterbrook Media published “AMD Has Its Own China Problem” on 19 November, disclosing that Hunterbrook Capital is short AMD.</strong></p>
+<p>It reports that Chinese server maker IEIT Systems, placed on the US Entity List in March 2025, has since incorporated at least six newer versions of AMD firmware into its products, and that three IEIT-linked companies (Maginfra in China, Kaytus in Singapore and Aivres in California) offer nearly identical firmware. AMD said the claims misrepresent its practices; no export-control violation has been established, and Hunterbrook could not say how IEIT obtained the firmware. AMD shares fell about 7% (CNBC), with @F_CEAFE reposting a report of a 13% intraday drop. Separately, a CNN review of nearly 300 Chinese procurement records found at least six US-blacklisted Chinese universities, including the military-linked Harbin Institute of Technology and Northwestern Polytechnical University, reported buying restricted Nvidia chips (A100 to H200), mostly in small quantities through little-known suppliers; CNN could not verify delivery.</p>
+<p><strong>Why it matters for Europe.</strong> The enforcement net is widening from Nvidia to AMD, and with it the pressure on every company in the chain, including European distributors, server integrators and cloud operators, to prove that no US chip or code reaches a listed Chinese entity. The more porous the controls appear, the stronger Washington’s case for tighter extraterritorial rules that Europeans must apply.</p>
+<p><strong>What to watch.</strong> Any BIS inquiry or congressional letter on AMD; the 10 January 2027 expiry of the affiliates-rule suspension.</p>
+<p><strong>Sources:</strong> <a href="https://newsletter.hntrbrk.com/p/amd-has-its-own-china-problem">newsletter.hntrbrk.com</a>, <a href="https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html">·</a>, <a href="https://www.roic.ai/news/hunterbrook-report-alleges-blacklisted-chinese-server-maker-continued-receiving-amd-firmware-raising-export-control-questions-11-19-2026">·</a>, <a href="https://x.com/i/status/2123460609538768924">·</a>, <a href="https://x.com/i/status/2123439006578798636">·</a>, <a href="https://qz.com/chinese-universities-blacklist-nvidia-chips-purchases-111926">·</a></p>
+<hr>
+<h2 id="s3">France’s Sanofi weighs a takeover of US drugmaker Insmed worth more than $30 billion</h2>
+<p><strong>Paris-based Sanofi is working with advisers on a possible acquisition of Insmed, a New Jersey biopharma company specialised in lung and respiratory treatments, Bloomberg reported on 19 November.</strong></p>
+<p>Talks are ongoing and a deal could be weeks away; Sanofi does not comment on rumours. Insmed shares rose as much as 24%, valuing it at about $30 billion, while Sanofi fell about 3–4% in Paris. Sanofi, led since early 2026 by Belén Garijo, has said it will use acquisitions to offset the coming patent expiry of Dupixent, and has about €10 billion from the sale of control of Opella to Clayton, Dubilier &amp; Rice.</p>
+<p><strong>Why it matters for Europe.</strong> This is the opposite of the flow CEAFE usually flags: a European buyer of a US firm, as with EQT–Flatiron (18 November). It would be among the largest biopharma deals in years, but it also shows where European capital goes to find innovation: the pipeline Sanofi needs was built in the US. <strong>Takeover alert check:</strong> no new purchase of a European strategic company by a US buyer was found in this window.</p>
+<p><strong>What to watch.</strong> A formal offer; rival bidders; US review (CFIUS rarely blocks pharma deals by allied buyers).</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123473940475457743">Reuters</a>, <a href="https://www.investing.com/news/stock-market-news/sanofi-weighs-takeover-of-us-drugmaker-insmed-bloomberg-news-reports-5039450">·</a>, <a href="https://www.handelsblatt.com/unternehmen/industrie/pharma-sanofi-erwaegt-uebernahme-des-us-pharmakonzerns-insmed/100271371.html">·</a>, <a href="https://www.ilsole24ore.com/art/sanofi-valuta-l-acquisizione-insmed-oltre-30-miliardi-dollari-AJqwJGMC">·</a></p>
+<hr>
+<h2 id="s4">EU countries paid Russia as much for energy as they gave Ukraine in aid, 2022 to mid-October 2026</h2>
+<p><strong>In a written answer to German liberal MEP Moritz Körner, EU Enlargement Commissioner Marta Kos stated that, since the start of Russia&rsquo;s war of aggression against Ukraine, from 2022 to mid-October 2026, the EU and its member states mobilised €231.5 billion in support for Ukraine, while €232.05 billion left the EU for Russia over the same period, mainly as payment for energy imports such as gas (Der Spiegel).</strong></p>
+<p>Körner called it “a confession of European inconsistency”. An earlier Kos answer put EU payments for Russian fossil fuels at €213 billion for January 2022 to December 2025, falling to €17 billion in 2025 (5% of EU fossil-fuel imports) from €144 billion in 2022; the EU aims to end Russian energy imports by September 2027. @F_CEAFE posted the figures. In Warsaw the same day, US Energy Secretary Chris Wright said he has “not heard a single European nation interested in reengaging in energy imports from Russia”, and declined to confirm reports of talks on bringing a US investor into Nord Stream.</p>
+<p><strong>Why it matters for Europe.</strong> The two figures measure different flows (public aid against company and consumer energy bills), but together they show how slowly Europe freed itself from a single supplier, and that it did so by shifting to another one: the US now supplies most of the EU’s LNG. Meanwhile Washington keeps open its own options with Moscow (a diesel deal, Nord Stream ownership talk) while asking Europeans to buy American.</p>
+<p><strong>What to watch.</strong> The EU’s end-2026 LNG and late-2027 pipeline phase-out; any US move on Nord Stream sanctions.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123436933116211380">@F_CEAFE</a>, <a href="https://www.spiegel.de/politik/deutschland/eu-mitglieder-zahlten-weiter-milliarden-fuer-gas-aus-russland-a-721c0e79-f355-4e2e-bf0f-e4297580e9f4">·</a>, <a href="https://www.eunews.it/en/2026/11/06/eu-paid-russia-213-billion-euros-for-energy-since-the-start-of-the-war-in-ukraine/">·</a>, <a href="https://boereport.com/2026/11/19/us-energy-chief-wright-sees-no-sign-europe-wants-return-to-russia-energy/">·</a></p>
+<hr>
+<h2 id="s5">OFAC extends the window to negotiate a sale of Lukoil’s international assets</h2>
+<p><strong>On 19 November the US Treasury’s Office of Foreign Assets Control issued Russia-related General License 131L, replacing 131K, with updated FAQs 1224 and 1225.</strong></p>
+<p>It authorises negotiations and contingent contracts for the sale of Lukoil International GmbH or its majority-owned subsidiaries until 19 December 2026, but not the completion of a sale without separate OFAC authorisation, and allows maintenance and wind-down activities until 20 February 2027, with no transfers to Russia. The same day OFAC also designated cyber-scam operators and armed-group facilitators in Southeast Asia and counter-narcotics targets.</p>
+<p>Background: OFAC designated Lukoil on 22 October 2025. Since then CEAFE has tracked the race for its foreign assets: Carlyle and Chevron in November 2025, Kazakhstan&rsquo;s formal bid in January 2026 and a Todd Boehly-led consortium in November 2026.</p>
+<p><strong>Why it matters for Europe.</strong> Lukoil International holds refining and retail assets inside the EU. Who may buy them, on what timetable, is being decided by a US licence, not by EU authorities, a clear case of extraterritorial sanctions shaping ownership of European energy infrastructure.</p>
+<p><strong>What to watch.</strong> Named bidders for Lukoil’s European assets; whether any EU government seeks control of the refineries.</p>
+<p><strong>Sources:</strong> <a href="https://ofac.treasury.gov/recent-actions/20261119">ofac.treasury.gov</a>, <a href="https://ofac.treasury.gov/media/937386/download">·</a>, <a href="https://ofac.treasury.gov/faqs/updated/2026-11-19">·</a>, <a href="https://x.com/i/status/2123466757318848592">·</a>, <a href="https://x.com/i/status/1989099688885354892">@F_CEAFE</a>, <a href="https://x.com/i/status/2117741726509199821">@F_CEAFE</a></p>
+<hr>
+<h2 id="s6">Critical minerals: Kenya picks a US consortium for the Mrima Hill rare-earths project after Chinese bidders withdraw</h2>
+<p><strong>Kenya’s mining ministry issued a notice of intention to award the Mrima Hill niobium and rare-earths project in Kwale County to the Frontier Minerals consortium (Frontier Minerals LLC, Bunker Hill Mining, ReElement Technologies and American Resources), stressing the notice is not a licence.</strong></p>
+<p>US officials had named Mrima Hill as a key target of the Trump administration’s critical-minerals drive. The two Chinese firms among seven shortlisted bidders withdrew without giving a reason. Losing bidders, Australia’s RareX (with Iluka) and Mrima Earth (including Critical Metals Corp. and European Lithium), say they will challenge the award; RareX alleges Frontier missed the expression-of-interest deadline.</p>
+<p><strong>Why it matters for Europe.</strong> The US is locking up African critical-mineral deposits for its own supply chain while Europe’s Critical Raw Materials Act strategic projects advance slowly. A European-linked bid lost here; Europe risks depending on US-controlled supply instead of Chinese.</p>
+<p><strong>What to watch.</strong> The procurement complaints; the Minerals Security Partnership and EU raw-materials diplomacy in Africa.</p>
+<p><strong>Sources:</strong> <a href="https://apnews.com/article/kenya-mrima-hills-minerals-510f8850db4308eefdfac88996f6116b">apnews.com</a>, <a href="https://www.mining.com/web/kenya-picks-us-consortium-to-develop-mrima-hill-critical-minerals-project/">·</a>, <a href="https://www.bbc.com/news/articles/cm9q84gp0gr3o">·</a>, <a href="https://x.com/i/status/2123434500793475084">·</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

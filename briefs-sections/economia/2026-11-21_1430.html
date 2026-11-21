@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Saturday, 21 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Saturday, 21 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> Friday 20 November about 19:00 to Saturday 21 November about 13:00 Europe/Madrid: everything new since Friday’s 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Lutnick demanded a 51% US government stake in battery start-up Pure Lithium, using $1 billion of Japan’s investment pledge</h2>
+<p><strong>US Commerce Secretary Howard Lutnick asked battery start-up Pure Lithium in July to give Washington a 51% controlling stake in exchange for funds to build a manufacturing plant that the company would neither own nor control, Reuters reported on 20 November from documents and a source.</strong></p>
+<p>The plant would have been owned by a special-purpose vehicle controlled by Tokyo and Washington and financed with $1 billion from Japan’s $550 billion investment pledge under its tariff deal; Pure Lithium would only have operated it and received a share of revenue after debt service. Lutnick said the US government needed to control the company so its lithium-metal battery could be used by the US military and other agencies. The company refused (“51% is far outside precedent and invites scrutiny”, its counsel Skadden Arps wrote on 22 August) and Commerce rejected its 9.9% counter-offer. @F_CEAFE reposted the Reuters exclusive at 09:23 and a reply noting that Pure Lithium works with Canada’s E3 Lithium on batteries using Canadian lithium (09:24).</p>
+<p><strong>Takeover ALERT check:</strong> no new acquisition of a European strategic company by a US firm or fund in this window. @F_CEAFE has already posted the Pure Lithium story, so no ALERT. Other deals: KKR (US) negotiating a majority stake in EdgeCore Digital Infrastructure (US data centres) (Bloomberg https://x.com/i/status/2123864009396940978); early takeover interest in UK lender Metro Bank (Bloomberg Deals https://x.com/i/status/2123916845665120457).</p>
+<p><strong>Why it matters for Europe.</strong> This is US industrial policy by equity: Washington takes control of strategic technology, and an ally (Japan) pays for the factory through a tariff-linked investment pledge. The EU signed its own tariff deal with a US investment pledge. Europe should expect the same leverage on its pledged money, and should note the model: a state that secures control of critical battery technology for its military. The EU has no equivalent instrument at Union level.</p>
+<p><strong>What to watch.</strong> Commerce reply; congressional oversight of equity stakes (Intel, MP Materials precedent); use of Japan’s and the EU’s pledges.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124056146403016808">X</a>, <a href="https://x.com/i/status/2123992347717329173">original @Reuters</a>, <a href="https://x.com/i/status/2124056255429849544">original @Reuters</a>, <a href="https://money.usnews.com/investing/news/articles/2026-11-20/exclusive-lutnick-asked-battery-startup-pure-lithium-to-accept-us-takeover-documents-and-source-say">· Reuters via US News</a>, <a href="https://www.investing.com/news/stock-market-news/exclusivelutnick-asked-battery-startup-pure-lithium-to-accept-us-takeover-documents-and-source-say-5042851">· Investing.com reprint</a></p>
+<hr>
+<h2 id="s2">Trump threatens a “tremendous tax” on US firms that build AI data centres abroad; “only older chips” for China</h2>
+<p><strong>At his White House press conference on 20 November, President Trump said US companies would not be allowed to build data centres in other countries and that those that do would face “a tremendous tax”.</strong></p>
+<p>He gave no rate, legal basis or date and said he had not yet told his own officials (AP, CNBC, Axios). “Whoever wins SI [super intelligence] wins… We’re not allowing data centers to go into other countries — because China will take…”, he said. On chips for China: “We want only older chips — and we don’t mind if none go”. @F_CEAFE reposted these remarks between 19:32 and 20:48 on Friday, and Al Jazeera and Bloomberg on Saturday framed them together with this week’s chip curbs, which hit data-centre hubs in Malaysia, Singapore and Thailand.</p>
+<p><strong>Why it matters for Europe.</strong> Microsoft, Amazon, Google, Meta and Oracle are building much of the EU’s AI and cloud capacity. A US penalty on investing abroad, on top of the 16 November BIS remote-access rule that already covers EU data centres, would make Europe’s computing capacity dependent on Washington’s permission and taxes. It is the US double standard: “America First” for its own infrastructure, open markets demanded of others. The lesson is sovereign European compute and cloud, as Spain’s new data-centre rules on digital sovereignty begin to signal.</p>
+<p><strong>What to watch.</strong> Any executive order or bill; reactions from Brussels and EU capitals hosting US hyperscaler projects; MOFCOM countermeasures.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123847020427284662">X</a>, <a href="https://x.com/i/status/2123836545346285698">@RapidResponse47</a>, <a href="https://x.com/i/status/2123865998780432419">@RapidResponse47</a>, <a href="https://x.com/i/status/2123858517777928355">@CBSNews</a>, <a href="https://x.com/i/status/2123863207047578023">@CBSNews</a>, <a href="https://x.com/i/status/2123845477829673077">@RapidResponse47</a>, <a href="https://x.com/i/status/2124015156795699309">· @AJEnglish</a>, <a href="https://x.com/i/status/2124108094783287541">· @business</a>, <a href="https://x.com/i/status/2123945122857361820">· @euronews</a>, <a href="https://apnews.com/article/trump-artificial-intelligence-data-centers-f1ac03b73d13445400eeed8631d9d879">· AP</a>, <a href="https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html">· CNBC</a>, <a href="https://www.axios.com/2026/11/20/us-ai-trump-data-centers-overseas">· Axios</a>, <a href="https://www.ibtimes.co.uk/trump-tax-ai-data-centres-abroad-legal-questions-1833720">· IBTimes UK</a>, <a href="https://news.bloomberglaw.com/artificial-intelligence/asias-data-center-hotbed-hit-by-us-chip-curbs-as-trump-visits">· Bloomberg Law</a>, <a href="https://www.mofcom.gov.cn/syxwfb/art/2026/art_3a69f2058b724dd39cd8ecddcaa4ab87.html">· MOFCOM 17 Nov</a></p>
+<hr>
+<h2 id="s3">OFAC’s “Operation Economic Outcast” targets Iran’s “oil trustees”; Treasury presses Singapore and Malaysia; Tehran speaks of a “silent economic war”</h2>
+<p><strong>On 20 November OFAC designated four Iranians: Mohammad Javad Bavand, a former IRGC intelligence officer, and Majid Taj, accused of recovering Iran’s oil revenue held in third countries (E.O.</strong></p>
+<p>13902), and Mohammadhossein Servati and Mojtaba Arabnejad, linked to the front company Sepehr Energy Jahan Nama Pars and to Mahan Air (E.O. 13224). Treasury says there is “no oil on the water outside of the U.S. military blockade” and that the regime “may never see the revenue from the oil it has already sold” (Bessent). The same day Treasury officials met regulators in Singapore and Malaysia to warn them of the risks of not enforcing US sanctions on Iran; Singapore said it was strengthening safeguards, Malaysia did not respond (Reuters). Reaction: President Pezeshkian said Iran faces a “silent economic war” that is “tougher than a war with missiles” (Al Jazeera, citing Iranian state media). @F_CEAFE reposted the Treasury and Bessent posts (00:18–01:55 Saturday).</p>
+<p><strong>Why it matters for Europe.</strong> Treasury states that it works “with partners across the U.S. government, the European Union, United Kingdom, Gulf partners” and has “expanded sanctions exposure for non-U.S. persons”. European banks, shippers and insurers are bound by US secondary sanctions whether or not the EU agrees, the core of the extraterritoriality problem. Bessent also cited a “consensus between the U.S., Russia, and China in Shenzhen” on oil supply, a sign that the great powers are settling energy markets among themselves, with Europe as a price-taker.</p>
+<p><strong>What to watch.</strong> Chinese response on teapot refineries; EU position on Iranian oil enforcement; oil prices.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123918858167742844">X</a>, <a href="https://x.com/i/status/2123885407938998420">@USTreasury</a>, <a href="https://x.com/i/status/2123920605322121330">@USTreasury</a>, <a href="https://x.com/i/status/2123885854716252526">@SecScottBessent</a>, <a href="https://x.com/i/status/2123943226113499252">@SecScottBessent</a>, <a href="https://x.com/i/status/2123916878296895695">@USTreasury</a>, <a href="https://x.com/i/status/2123854076022575489">· @Reuters</a>, <a href="https://x.com/i/status/2124065050000519666">· @AJEnglish</a>, <a href="https://x.com/i/status/2123950026418475324">· @AJEnglish</a>, <a href="https://x.com/i/status/2124085991480955377">· @AJEnglish</a>, <a href="https://home.treasury.gov/news/press-releases/sb0697">· Treasury</a>, <a href="https://ofac.treasury.gov/recent-actions/20261120">· OFAC</a>, <a href="https://www.freemalaysiatoday.com/category/highlight/2026/11/20/us-treasury-presses-singapore-malaysia-on-iran-sanctions-compliance">· Reuters via FMT</a></p>
+<hr>
+<h2 id="s4">EU finalising “ReadyEU”, a tool to block market access quickly; Beijing warns of “institutionalized protectionism”</h2>
+<p><strong>The EU is finalising a new instrument, working name “ReadyEU”, that would let the European Commission rapidly block selected goods and services from the 450-million-consumer single market, Bloomberg reported on 20 November.</strong></p>
+<p>It could be triggered if a country interferes in EU trade decisions, breaks WTO or trade-agreement rules and refuses to settle, or poses an immediate and serious economic threat. It is part of a package to address the EU’s €360 billion trade deficit with China (2025), including more flexible trade-defence tools and a diversification mechanism for strategic sectors, to be presented on 9 December before the 17–18 December European Council. Reaction: Global Times (Chinese state media), quoting Chinese analysts, says “institutionalized protectionism” will raise costs for European businesses without restoring industrial strength.</p>
+<p><strong>Why it matters for Europe.</strong> It answers the CEAFE complaint about Europe’s lack of reciprocity under economic coercion. Politico reports that a qualified majority of EU member states would be needed to block its use, a far lower hurdle than for the never-used Anti-Coercion Instrument. The tool is not country-specific, so it could also apply to US coercion (Greenland threats in January).</p>
+<p><strong>What to watch.</strong> 9 December package; MOFCOM reaction; EU–China talks on chemicals and machinery (January, March).</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123926903140602034">@business</a>, <a href="https://x.com/i/status/2124069971353583774">· @globaltimesnews</a>, <a href="https://x.com/i/status/2123860618583110114">·</a>, <a href="https://www.bloombergtv.bg/a/2-novini/167227-es-e-blizo-do-nov-instrument-za-blokirane-na-dostapa-do-edinniya-pazar">· Bloomberg via Bloomberg TV Bulgaria</a>, <a href="https://www.globaltimes.cn/page/202611/1374757.shtml">· Global Times</a>, <a href="https://www.politico.eu/article/eu-commission-eyes-rule-change-to-retaliate-faster-against-china/">· Politico</a></p>
+<hr>
+<h2 id="s5">Europe’s second energy crisis reaches the power market: steel mills stop at peak hours</h2>
+<p><strong>Bloomberg (21 November) reports that Europe’s second major energy crisis in under five years is taking hold in wholesale electricity: power for each of the next three months trades around €200/MWh, roughly double last winter, because European gas prices have tripled year-on-year as the Middle East war tightened global supply.</strong></p>
+<p>A German steel mill owned by Italy’s Feralpi halts production at expensive hours despite full order books. Two German suppliers, Grüüün and Stromee, stopped delivering power; Austria’s Verbund took a €120 million hit and Spain’s Acerinox €16 million in one quarter. In a severe scenario monthly contracts could reach €300/MWh (BB Energy).</p>
+<p><strong>Why it matters for Europe.</strong> The CEAFE energy line: high gas prices are pushing energy-intensive industry towards stoppages and relocation, while Europe has swapped dependence on Russian gas for dependence on US LNG (P-TEC, 18 Nov). Germany is preparing to bring coal and oil plants back from reserve.</p>
+<p><strong>What to watch.</strong> TTF and power forwards next week; German grid-reserve law; ECB 17 December meeting.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124067828487598317">@business</a>, <a href="https://x.com/i/status/2123949571457888570">@business</a>, <a href="https://x.com/i/status/2123845110869700796">@business</a>, <a href="https://x.com/i/status/2123911510884041197">· @euronews</a>, <a href="https://www.energyconnects.com/news/utilities/2026/november/europe-s-power-market-is-flashing-a-warning-to-its-economy/">· Bloomberg via Energy Connects</a></p>
+<hr>
+<h2 id="s6">Mercedes-Benz nearly caught by a US ban on Chinese cars because of its Chinese shareholders</h2>
+<p><strong>US lawmakers are close to a deal on a bill to ban Chinese cars from the US market, after last-minute talks aimed partly at sparing Mercedes-Benz, which is nearly 20% owned by Chinese entities, above a proposed 15% threshold (Bloomberg Law, WSJ).</strong></p>
+<p>The fix under negotiation exempts passive Chinese stakes without voting power. Sponsors from auto-producing states want a bill on Trump’s desk by year-end.</p>
+<p><strong>Why it matters for Europe.</strong> A European champion’s access to the US market depends on Congress drafting a carve-out, showing how US–China rivalry is turned into rules on European companies’ shareholder registers. It also shows the risk of Chinese stakes in strategic European firms.</p>
+<p><strong>What to watch.</strong> Final text; Daimler Truck, BMW and supplier exposure; German government reaction.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123940249432739868">@WSJ</a>, <a href="https://news.bloomberglaw.com/international-trade/us-lawmakers-near-deal-to-ban-chinese-cars-in-lame-duck-session">· Bloomberg Law</a></p>
+<hr>
+<h2 id="s7">US trade deals tied to energy purchases: Thailand, the Philippines, Mexico</h2>
+<p><strong>Trump announced trade deals with Thailand (eliminating tariffs on 99% of US exports and buying an additional $2.6 billion of US farm goods) and the Philippines, and said a deal with Mexico is close while talks with Canada lag (Bloomberg).</strong></p>
+<p>Recounting his talk with Philippine President Marcos: “Where do you buy your energy?” “From the Middle East.” “Not anymore, you don’t. You’re going to buy 100% of your energy…” from the US. @F_CEAFE reposted both clips (20:38–20:45 Friday).</p>
+<p><strong>Why it matters for Europe.</strong> The same pattern as P-TEC in Warsaw: US trade deals packaged with energy purchases, making allies dependent on a single supplier. US double standard: demands open markets and energy purchases while restricting its own firms’ investment abroad (topic 2).</p>
+<p><strong>What to watch.</strong> Published texts of the agreements; Mexico deal and USMCA review.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123863584178622840">X</a>, <a href="https://x.com/i/status/2123837956054261930">@RapidResponse47</a>, <a href="https://x.com/i/status/2123865421493207425">@RapidResponse47</a>, <a href="https://x.com/i/status/2123836288260268278">@clashreport</a>, <a href="https://x.com/i/status/2123892929643094283">· @business</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

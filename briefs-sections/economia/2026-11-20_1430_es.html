@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMÍA — viernes, 20 de noviembre de 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMÍA</h1>
+      <p class="list-date">viernes, 20 de noviembre de 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> 20 de noviembre de 2026, de las 07:00 a las 13:50 aproximadamente (hora de Madrid): todo lo nuevo desde la edición de las 08:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Economía de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">El Comité de la Cámara sobre China pide no certificar aviones chinos, limitar la inversión en la aeroespacial china y someter a «escrutinio reforzado» las compras francesas de empresas aeroespaciales de EE. UU.</h2>
+<p><strong>El Comité Selecto sobre el PCCh de la Cámara de Representantes (presidido por John Moolenaar) publicó el 19 de noviembre una investigación de un año, «China’s wingmen: How Western government policy enabled China’s rise in the skies».</strong></p>
+<p>Sostiene que contratistas aeroespaciales estadounidenses y europeos transfirieron tecnología y conocimiento a empresas chinas mediante empresas conjuntas y licencias que acabaron reforzando el poder aéreo militar chino. Recomienda que el Tesoro restrinja la inversión en el sector aeroespacial chino (y que el Congreso lo incluya en la ley COINS), que la FAA no certifique aviones fabricados en China, que se retiren contratos federales a los contratistas (Reuters cita a Airbus) que sigan invirtiendo en la base aeroespacial china, y que las compras de empresas aeroespaciales estadounidenses por firmas francesas se sometan a «escrutinio reforzado y presunción de denegación» hasta que corten sus lazos con el ecosistema cívico-militar chino. @F_CEAFE lo publicó a las 08:10.</p>
+<p><strong>Por qué importa a Europa.</strong> Es una propuesta explícita de usar contratos, control de inversiones (CFIUS) y certificación como palanca sobre una empresa europea y un Estado europeo. Airbus, el gran campeón aeroespacial europeo, compite con Boeing en China, y el informe señala a Francia: sus empresas aeroespaciales tendrían «lazos mucho más fuertes con la base industrial aeroespacial china que las estadounidenses» y se anunciarían como «fuera del alcance de las restricciones de EE. UU.» (por ejemplo, Airbus vendiendo imágenes de satélite sin restricciones estadounidenses). Si se aplica, los compradores franceses de activos aeroespaciales de EE. UU. partirían de una presunción de denegación, mientras que los compradores estadounidenses de empresas europeas no afrontan nada parecido en Europa. Es el doble rasero estadounidense y la falta de reciprocidad europea que describe nuestra línea editorial. Una vez más se señala a un Estado europeo en solitario; solo una respuesta común de la UE en control de inversiones tendría un peso comparable.</p>
+<p><strong>Qué vigilar.</strong> Reacción de Airbus y del Gobierno francés; si el Tesoro amplía el programa de inversión exterior a la aeroespacial; respuesta del MOFCOM y Exteriores chinos (ninguna en la rueda de prensa del 20 de noviembre).</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123675385913319706">@F_CEAFE</a>, <a href="https://chinaselectcommittee.house.gov/media/reports/investigation-details-how-western-government-policy-enabled-china-s-rise-in-the-skies">· Comité Selecto sobre China</a>, <a href="https://www.investing.com/news/stock-market-news/exclusiveus-should-not-certify-chinese-aircraft-restrict-investments-in-chinas-aerospace-sector-lawmakers-say-5039601">· Comité Selecto sobre China</a>, <a href="https://www.straitstimes.com/world/united-states/us-should-not-certify-chinese-aircraft-restrict-investments-in-chinas-aerospace-sector-lawmakers-say">· The Straits Times</a>, <a href="https://insidetrade.com/daily-news/house-panel-calls-extensive-restrictions-chinas-aerospace-sector">· The Straits Times</a></p>
+<hr>
+<h2 id="s2">Actualización: los controles de chips de EE. UU. golpean a China: Alibaba podría recortar su objetivo de 20 GW, se hunden las start-ups chinas de IA y TSMC suspende pedidos chinos</h2>
+<p><strong>Reuters (20 de noviembre) informa de que la serie de medidas estadounidenses de esta semana (la norma de BIS sobre acceso remoto, la suspensión de algunos envíos de Nvidia a China y una propuesta para que las empresas de EE. UU. declaren el uso de modelos chinos de IA) ha «machacado» a las tecnológicas chinas en bolsa.</strong></p>
+<p>El consejero delegado de Alibaba, Eddie Wu, dijo que la norma afectará a sus productos el año próximo, que podría obligarle a rebajar su objetivo de 20 gigavatios de capacidad de cómputo y que el crecimiento de la nube podría bajar al 30–45% en 2027 desde el 53% del último trimestre. El presidente de Tencent, Martin Lau, dijo que frenará su próximo modelo y acelerará el paso a chips nacionales. Z.AI ha caído un 22% y MiniMax un 34% en dos semanas; Iluvatar CoreX (proveedor de ByteDance), un 17%. TSMC suspendió algunos pedidos avanzados de clientes chinos tras la nueva licencia para centros de datos en el extranjero.</p>
+<p><strong>Por qué importa a Europa.</strong> La norma alcanza a centros de datos en terceros países, incluida la UE, de modo que los operadores europeos de nube con clientes chinos quedan dentro de un régimen de licencias estadounidense. Que una norma de EE. UU. decida qué puede hacer una fundición taiwanesa o un centro de datos europeo es el núcleo del alcance extraterritorial. La respuesta china es acelerar la autosuficiencia, lo que a la larga reduce el mercado de fabricantes europeos de equipos como ASML. Europa paga el coste de una pugna entre dos potencias en la que no tiene ni asiento ni voto.</p>
+<p><strong>Qué vigilar.</strong> Respuesta del MOFCOM; si los operadores europeos de centros de datos piden licencias.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123743208446267802">@Reuters</a>, <a href="https://money.usnews.com/investing/news/articles/2026-11-20/us-ai-chip-curbs-hit-china-tech-stocks-spur-self-sufficiency-push">@Reuters</a>, <a href="https://www.swissinfo.ch/eng/stocks-suffer-worst-run-since-2023%2C-havens-gain%3A-markets-wrap/92410554">@Reuters</a>, <a href="https://www.fmprc.gov.cn/mfa_eng/xw/fyrbt/202611/t20261120_12064156.html">20 nov</a></p>
+<hr>
+<h2 id="s3">Controles de exportación en sentido inverso: entra en vigor la licencia china para motores y piezas de drones; Kiev lo celebra y el objetivo es la cadena de los Shahed rusos</h2>
+<p><strong>Desde el 18 de noviembre los exportadores chinos necesitan una licencia de doble uso del MOFCOM para una lista de artículos de drones: pilotos automáticos, drones con autonomía de 30 minutos o más, motores de más de 16 kW, turborreactores de 400 N o más de empuje, módulos de radio de alta potencia, motores sin escobillas pesados (≥48 V, ≥3 kW), variadores, palas grandes de fibra de carbono y el software y la tecnología asociados (Anuncio n.º 49 de 2026 del MOFCOM, Aduanas y el Departamento de Desarrollo de Equipamiento de la Comisión Militar Central, publicado el 19 de octubre).</strong></p>
+<p>Algunos de los motores incluidos se usan en los drones Shahed/Geran que Rusia monta en Alabuga. El comisionado ucraniano de sanciones, Vladyslav Vlasiuk, dio las gracias a China pero advirtió de que antenas antiinterferencias, módulos de navegación, cámaras estabilizadas y servos siguen fuera («solo una parte de lo que importa… pero es un comienzo»). @F_CEAFE compartió la noticia del Kyiv Independent a las 08:34.</p>
+<p><strong>Por qué importa a Europa.</strong> La medida entró en vigor el día en que Putin llegó a Shenzhen para la reunión trilateral con Trump y Xi; Pekín usó su propia ley de control de exportaciones, no un régimen de sanciones occidental. Europa, que sanciona a empresas chinas por abastecer a Rusia, depende ahora de una decisión de Pekín para el volumen de drones que golpean la infraestructura energética de Ucrania. El MOFCOM lo presenta como no proliferación y «ajuste dinámico», y dice que aprobará las solicitudes conformes. Un recordatorio de que las palancas sobre las cadenas de suministro de la guerra están en Washington y Pekín, no en Bruselas.</p>
+<p><strong>Qué vigilar.</strong> Datos de licencias concedidas; si la UE ajusta sus listas de proveedores chinos.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123681258433622481">repost de @KyivIndependent</a>, <a href="https://x.com/i/status/2123502594156871891">original</a>, <a href="https://www.mofcom.gov.cn/zcfb/blgg/art/2026/art_0d3312d7762d486bb4a7626e85b9dbed.html">original</a>, <a href="https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2026/art_3522f2c8fa074f34a6644192642228b9.html">original</a>, <a href="https://kyivindependent.com/china-tightens-export-controls-on-components-for-russian-drones/">· Kyiv Independent</a>, <a href="https://www.themoscowtimes.com/2026/11/19/china-tightens-export-controls-on-drone-parts-used-by-russia-a94318">· The Moscow Times</a></p>
+<hr>
+<h2 id="s4">Se extiende la venta masiva ligada a la IA: las bolsas mundiales encadenan su peor racha desde septiembre de 2023</h2>
+<p><strong>El índice MSCI All Country World cayó un 0,7% el 20 de noviembre, su séptima bajada seguida y la racha más larga desde septiembre de 2023, mientras se deshace la apuesta por la IA (Bloomberg).</strong></p>
+<p>Anthropic cedía casi un 6% en las primeras operaciones, tras subir un 17% en su estreno. El Stoxx Europe 600 caía un 1,1% a media mañana (más de 430 valores a la baja, encabezados por la tecnología), su quinta sesión negativa; el MSCI Asia Pacífico, un 3,3%, camino de su peor semana desde el inicio de la pandemia; la bolsa australiana firmó su peor semana en más de cuatro años. Los inversores compraron bonos: el rendimiento del bono alemán a 10 años bajó 8 pb hasta el 3,33% y el del estadounidense 6 pb hasta el 4,99%. El dólar ronda máximos de 19 meses y va camino de su cuarta semana al alza; el yen lideró el G10.</p>
+<p><strong>Por qué importa a Europa.</strong> La caída de la IA llega a Europa a través de las tecnológicas, y la financiación muestra la asimetría: SpaceX colocó 32.000 millones de dólares de deuda en un día para comprar chips de IA (parte con rentabilidades superiores al 8%), mientras que las emisiones de bonos en Europa, que superan por primera vez los 2 billones de euros este año (2026), responden sobre todo a la deuda pública. Un dólar fuerte y una subida de tipos de la Fed casi segura en diciembre (y dos más descontadas para 2027) encarecen a los europeos la energía y las armas que compran en dólares a EE. UU.</p>
+<p><strong>Qué vigilar.</strong> Cierre de Wall Street esta noche; Fed el 9 de diciembre; reunión del BCE de diciembre.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123748606066733242">@business</a>, <a href="https://x.com/i/status/2123679472364700026">@business</a>, <a href="https://x.com/i/status/2123671467489374455">@business</a>, <a href="https://x.com/i/status/2123695377110937813">@business</a>, <a href="https://x.com/i/status/2123661413721743847">· @ReutersBiz</a>, <a href="https://x.com/i/status/2123715519224111459">· @Reuters</a>, <a href="https://x.com/i/status/2123660144915480816">· @Reuters</a>, <a href="https://x.com/i/status/2123672826381017206">· @FT</a>, <a href="https://x.com/i/status/2123664755462393929">· @euronews</a>, <a href="https://x.com/i/status/2123748561716171182">· @euronews</a>, <a href="https://www.swissinfo.ch/eng/stocks-suffer-worst-run-since-2023%2C-havens-gain%3A-markets-wrap/92410554">· @euronews</a>, <a href="https://www.investing.com/news/economy-news/asian-shares-head-for-worst-week-since-2020-as-ai-trade-gloom-fails-to-abate-5040496">· @euronews</a></p>
+<hr>
+<h2 id="s5">Actualización: Commerzbank eleva su previsión de beneficio ante la inminente absorción por UniCredit</h2>
+<p><strong>La consejera delegada de Commerzbank, Bettina Orlopp, dijo el 20 de noviembre que el banco espera ya «claramente» 3.500 millones de euros de beneficio neto en 2026, por encima del «al menos 3.400 millones» previo.</strong></p>
+<p>En sus primeras palabras desde el acuerdo de esta semana entre Berlín y UniCredit, celebró la claridad sobre la sede de Fráncfort y la cotización; el consejero delegado de UniCredit, Andrea Orcel, había dado al ministro de Finanzas Lars Klingbeil ocho compromisos vinculantes (cotización en Fráncfort, decisiones clave en Alemania, ampliación del negocio con el Mittelstand) (Reuters; Reuters en alemán vía onvista).</p>
+<p><strong>Por qué importa a Europa.</strong> Una fusión bancaria italo-alemana es la consolidación intraeuropea que la línea editorial considera positiva: escala dentro de la unión bancaria, en lugar de bancos o fondos estadounidenses quedándose con entidades europeas. La duda es el plan de UniCredit de recortar la red internacional de Commerzbank, que sirve a los exportadores alemanes.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123744471443509459">@ReutersBiz</a>, <a href="https://money.usnews.com/investing/news/articles/2026-11-20/commerzbank-ceo-raises-2026-profit-outlook-as-unicredit-takeover-nears">@ReutersBiz</a>, <a href="https://www.rte.ie/news/business/2026/1120/1600004-commerzbank-ceo-on-unicredit-deal/">· RTÉ</a>, <a href="https://www.onvista.de/news/2026/11-20-commerzbank-chefin-sieht-klarheit-fuer-ihr-institut-bei-unicredit-0-20-26578823">· RTÉ</a>, <a href="https://x.com/i/status/2123685308201898407">· Mr Price</a>, <a href="https://x.com/i/status/2123738181723902050">· Mr Price</a></p>
+<hr>
+<h2 id="s6">Dependencia energética: el GNL ruso sigue llegando a la UE mientras Turquía firma un nuevo contrato con Novatek</h2>
+<p><strong>Bloomberg (20 de noviembre) recuerda que, pese al esfuerzo de la UE por dejar la energía rusa desde 2022, el GNL ruso sigue entrando en el bloque a la espera de la prohibición total.</strong></p>
+<p>La rusa Novatek anunció el 18 de noviembre un contrato de suministro de GNL con Turquía y negocia más volumen e inversiones gasistas; no se conocen comprador, volumen, precio ni fecha de inicio (TASS, RIA, Anadolu; medios estatales rusos, atribuido). @F_CEAFE compartió la comparación de la analista turca Gizem Özpinar: Turquía, fuera de la UE, firma con Novatek por su seguridad energética mientras se critica a Grecia, Estado miembro (su enfoque).</p>
+<p><strong>Por qué importa a Europa.</strong> Europa sustituye el gas ruso por GNL estadounidense a precios muy superiores a los de EE. UU. (la brecha de 11 veces tratada el 18 de noviembre), mientras vecinos como Turquía siguen comprando a Rusia y pueden revender energía y bienes industriales a la UE. Irán prepara además un convoy de petroleros en la isla de Jark para desafiar el bloqueo petrolero de EE. UU. (Euronews); cualquier incidente afectaría al Brent, todavía cerca de 90 dólares. La dependencia ha cambiado de proveedor, no de naturaleza.</p>
+<p><strong>Qué vigilar.</strong> Calendario de la UE para la prohibición total del GNL ruso; convoy de Jark.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2123682794853319005">@business</a>, <a href="https://x.com/i/status/2123735639749239291">· @euronews</a>, <a href="https://x.com/i/status/2123695400133722410">repost de @zgizemozpinar</a>, <a href="https://x.com/i/status/2123507335314198542">original</a>, <a href="https://www.aa.com.tr/tr/enerjiterminali/lng-lpg/rus-enerji-sirketi-novatek-turkiyede-dogal-gaz-yatirimlarini-gorusuyor/61097">original</a>, <a href="https://tass.com/economy/2220487">original</a>, <a href="https://x.com/i/status/2123724947524608144">original</a></p>
+<hr>
+<p><strong>Véase también:</strong> La cumbre UE–Reino Unido sella los primeros acuerdos de relanzamiento desde el Brexit — véase Actualidad.</p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Economía. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

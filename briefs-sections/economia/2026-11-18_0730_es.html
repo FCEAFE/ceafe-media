@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMÍA — miércoles, 18 de noviembre de 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMÍA</h1>
+      <p class="list-date">miércoles, 18 de noviembre de 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> 17 de noviembre de 2026, hacia las 18:50, al 18 de noviembre, hacia las 06:00 (hora de Madrid): todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Economía de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Actualización: Nvidia deja de enviar a China sus chips Hopper con licencia estadounidense, dos días después de la norma de Washington sobre acceso remoto</h2>
+<p><strong>La consejera delegada interina de Nvidia, Colette Kress, dijo a los analistas el 17 de noviembre (hora de EE. UU.) que la empresa «ya no envía a China productos Hopper para centros de datos con licencia» y que sus previsiones no incluyen ninguno.</strong></p>
+<p>Nvidia vendió en el tercer trimestre 2.400 millones de dólares de esos chips con licencia: el H200, que el presidente Trump autorizó para China el año pasado en un acuerdo negociado por Jensen Huang, con envío a través de EE. UU. y un gravamen del 25 %. Kress no dio explicaciones. TechCrunch, citando al CSET de Georgetown, recuerda que Pekín ya se negaba en gran medida a aceptar los H200 porque prefiere impulsar la demanda de chips chinos. La misma conferencia trajo resultados récord: ingresos de 115.800 millones de dólares (+103 % interanual), 107.600 millones en centros de datos y una previsión de 130.000 millones (±3 %) para el cuarto trimestre. El presidente del consejo, Harvey Jones, afirmó que Nvidia «no tiene intención de restituir a Jensen como consejero delegado». Por otra parte, el WSJ informó de que la SEC investiga a Nvidia, y un directivo de Microsoft dijo a Bloomberg que la crisis puede empujar a los clientes hacia chips rivales.</p>
+<p><strong>Acción–reacción:</strong> norma del Departamento de Comercio/BIS sobre acceso remoto a chips avanzados de IA (16 de noviembre) → el MFA chino la califica de «coerción económica y jurisdicción de brazo largo» y el MOFCOM amenaza con contramedidas (17 de noviembre; edición de las 20:30) → Nvidia suspende sus últimas ventas con licencia a China (17 de noviembre, hora de EE. UU.). <strong>Respuesta china a la suspensión: ninguna por ahora</strong> en las webs del MOFCOM y del MFA; Global Times (medio estatal chino) enmarcó los resultados en el «endurecimiento de las restricciones de Washington a los chips avanzados». Atención a la rueda de prensa del MFA de hoy (tarde en Pekín).</p>
+<p><strong>Por qué importa a Europa.</strong> El mercado de chips lo fijan ya una norma estadounidense, el consejo de una empresa estadounidense y la política de compras de Pekín, y Europa no decide en ninguno de los tres, aunque la norma sobre acceso remoto alcanza también a los centros de datos de la UE. El superordenador más rápido de Europa, JUPITER (EuroHPC/Jülich), funciona con chips NVIDIA GH200 (TOP500, noviembre de 2026): un proveedor cuyas ventas dependen abiertamente de la supervisión de seguridad nacional de EE. UU. es una dependencia, no un vendedor neutral. Jefferies calcula que la norma de acceso remoto podría restar entre 44.000 y 62.000 millones de dólares a los ingresos de centros de datos de Nvidia el año próximo (TechCrunch); Kress sostiene que la cartera de pedidos evitará cualquier efecto en la facturación. Lo que estos datos ponen de manifiesto es una asimetría de poder, no una diferencia de talento o de voluntad política.</p>
+<p><strong>Qué vigilar.</strong> Reacción del MFA y del MOFCOM; si la BIS formaliza la suspensión como cambio de licencia; la comparecencia del 1 de diciembre; la reunión Trump–Xi en Shenzhen.</p>
+<p><strong>Fuentes:</strong> <a href="https://news.bloomberglaw.com/international-trade/nvidia-stops-selling-ai-chips-to-china-despite-us-approval">Bloomberg Law</a>, <a href="https://www.business-standard.com/world-news/nvidia-stops-shipping-hopper-ai-chips-to-china-despite-us-approval-126111800204_1.html">Business Standard</a>, <a href="https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/">TechCrunch</a>, <a href="https://x.com/i/status/2122882390510964817">@business</a>, <a href="https://x.com/i/status/2122832200475283825">X</a>, <a href="https://x.com/i/status/2122796879725363307">X</a>, <a href="https://x.com/i/status/2122825237431480364">X</a>, <a href="https://x.com/i/status/2122894848806236342">X</a>, <a href="https://x.com/i/status/2122873274564485559">@ReutersTech</a>, <a href="https://x.com/i/status/2122853628436164666">X</a></p>
+<hr>
+<h2 id="s2">AMD completa la compra de la canadiense Taalas por 2.900 millones de dólares, otra startup de chips aliada absorbida por un gigante estadounidense</h2>
+<p><strong>AMD (Santa Clara, EE. UU.) anunció el 17 de noviembre que ha completado la adquisición de Taalas (Toronto, Canadá), diseñadora de chips de inferencia de IA hechos a medida para modelos concretos (su primer chip estaba adaptado a Llama, de Meta).</strong></p>
+<p>AMD integrará la tecnología de Taalas en su hoja de ruta de aceleradores junto a sus GPU Instinct. En un documento del 4 de noviembre, AMD valoró la operación, en efectivo y acciones, en unos 2.900 millones de dólares, de los que 1.400 millones son contingentes. The Globe and Mail la sitúa entre las mayores compras de una tecnológica canadiense, tras la de CoolIT por Ecolab (4.750 millones) este año. Taalas, fundada en 2023 por exingenieros de AMD, había captado más de 225 millones de dólares y tenía 24 empleados en febrero; en noviembre de 2025 su valoración implícita superaba los 750 millones. AMD compró además la californiana World Labs por 8.200 millones en septiembre y contrató en 2025 a los ingenieros de Untether, de Toronto.</p>
+<p><strong>Por qué importa a Europa.</strong> Es el patrón que sigue CEAFE. Una startup prometedora de chips en un país aliado crece con talento y capital riesgo locales y acaba dentro de un grupo estadounidense, de modo que su tecnología y su propiedad intelectual quedan sujetas a decisiones de EE. UU., incluidos los controles a la exportación. Las startups europeas sufren la misma atracción: el informe de Atomico publicado hoy cifra en 450.000 millones de dólares la financiación de las startups estadounidenses este año, frente a 81.000 millones en Europa. <strong>Alerta de adquisiciones:</strong> desde la edición anterior no se ha detectado ninguna compra nueva de una empresa estratégica europea por un comprador estadounidense. Sí hubo el flujo contrario: la sueca EQT acordó comprar Flatiron Energy, promotora estadounidense de almacenamiento en baterías con una cartera de 24 GWh (cierre previsto en el cuarto trimestre de 2026).</p>
+<p><strong>Qué vigilar.</strong> Planes de integración de AMD; debate canadiense sobre control de inversiones; cualquier oferta estadounidense por startups europeas de chips o IA (Helsing, Neura Robotics y Quantum Systems han captado más de 1.000 millones cada una en los últimos meses, según Atomico).</p>
+<p><strong>Fuentes:</strong> <a href="https://newsroom.amd.com/news/amd-completes-acquisition-taalas-advance-ai-inference-innovation/">AMD</a>, <a href="https://www.theglobeandmail.com/business/article-amd-to-pay-29-billion-for-ai-chip-firm-taalas/">The Globe and Mail</a>, <a href="https://eqtgroup.com/news/eqt-to-acquire-flatiron-energy-a-leading-developer-and-operator-of-battery-energy-storage-in-the-eastern-us-2026-11-17">EQT</a></p>
+<hr>
+<h2 id="s3">BASF prepara una nueva oferta por Evonik con garantías de empleo y plantas para ganarse a Berlín y a Düsseldorf</h2>
+<p><strong>BASF prepara otra oferta por su competidora alemana Evonik, después de que esta rechazara una propuesta mejorada de más de 11.000 millones de euros (24 euros por acción), según informaron Bloomberg y Reuters el 17 de noviembre.</strong></p>
+<p>En un borrador de carta al Gobierno de Renania del Norte-Westfalia, a diputados del Bundestag y a la Fundación RAG, primer accionista de Evonik con un 43 %, BASF ofrece descartar despidos durante un plazo por fijar, mantener todas las plantas alemanas e invertir en I+D y en una producción más limpia. Las cifras y los años aparecen en blanco. «En una empresa combinada, los compromisos actuales con los empleados y las plantas se respetarán y ampliarán», dice la carta. La nueva oferta podría llegar en días. El Gobierno regional reiteró que debe protegerse la independencia de Evonik, y el máximo representante sindical de Evonik dijo que las promesas de BASF «no aportan valor adicional» si solo repiten las garantías existentes. En octubre, el consejero delegado de BASF, Markus Kamieth, prometió respetar las garantías de empleo de Evonik hasta 2032 y seguir operando los parques químicos de Marl y Wesseling (unos 3.500 empleos), que Evonik quiere vender.</p>
+<p><strong>Por qué importa a Europa.</strong> Es una concentración europea en un sector estratégico, la química, presionado por unos precios de la energía muy superiores a los de EE. UU. y por la sobrecapacidad china. Un campeón europeo de mayor tamaño encaja con el argumento de escala que defiende CEAFE. La prueba será si trae inversión y no cierres, que es lo que negocian ahora el Gobierno regional y los sindicatos. Llega tras los planes de Berlín de reformar su ley de opas después del caso UniCredit–Commerzbank (edición de las 20:30).</p>
+<p><strong>Qué vigilar.</strong> Precio de la nueva oferta; decisión del patronato de la Fundación RAG; si se aplican las nuevas normas alemanas sobre opas.</p>
+<p><strong>Fuentes:</strong> <a href="https://live.euronext.com/en/financial-news/basf-considers-further-concessions-bid-evonik-sources-say">live.euronext.com</a>, <a href="https://ca.marketscreener.com/news/insider-basf-makes-another-push-at-evonik-with-further-concessions-ce785edcdd8bfe23">MarketScreener</a>, <a href="https://www.investing.com/news/stock-market-news/evonik-shares-rise-on-report-basf-prepares-renewed-takeover-offer-5033438">investing.com</a>, <a href="https://www.basf.com/global/en/evonik">BASF</a>, <a href="https://x.com/i/status/2122877500799746119">@business</a></p>
+<hr>
+<h2 id="s4">Washington vende su GNL en Varsovia y Manila, mientras sus ministros presumen de que Europa paga el gas 11 veces más caro que EE. UU.</h2>
+<p><strong>El secretario de Energía de EE. UU., Chris Wright, llegó a Varsovia el 17 de noviembre («Encantado de volver a Varsovia para P-TEC») para la séptima Asociación para la Cooperación Energética Transatlántica, que organizan el Departamento de Energía de EE. UU., el Atlantic Council y el Ministerio de Energía polaco: un foro empresarial hoy, 18 de noviembre, y una reunión ministerial mañana, con sesiones sobre la seguridad del suministro de GNL a largo plazo, la cooperación transatlántica en GNL y la energía nuclear civil.</strong></p>
+<p>Entre los invitados figuran el comisario europeo de Energía, Dan Jørgensen, y los vicepresidentes de los Gobiernos de Chequia, Eslovaquia y Hungría. Wright escribió que Washington trabaja «junto a nuestros aliados europeos» para «liberar la abundancia energética». Y ahora, con nuestro nuevo proveedor principal, el gas en Europa es 11 veces más caro que en EE. UU.». Lo ilustró con un gráfico de octubre del secretario de Interior, Doug Burgum, que compara el Henry Hub con el TTF europeo y el JKM asiático. Esa misma tarde, en Manila, el presidente Trump dijo que «gracias a una inversión histórica de Corea del Sur, acabamos de aprobar un colosal gasoducto de gas natural licuado en Alaska». Yonhap recuerda que la Casa Blanca ha vinculado 54.000 millones de dólares al proyecto, mientras Seúl insiste en que su participación sigue pendiente de un estudio de viabilidad comercial, y que Trump amenazó con «cobrarles más» si Corea no invertía.</p>
+<p><strong>Por qué importa a Europa.</strong> El GNL estadounidense ha sustituido al gas ruso por gasoducto como principal suministro de Europa. Los dirigentes estadounidenses presentan la diferencia de precio como un argumento de venta de su energía, mientras que para la industria europea es una desventaja competitiva. Washington propone el mismo trato a sus aliados asiáticos y vincula compromisos de inversión a condiciones comerciales. La dependencia energética ya no es de Moscú, sino de la política de exportación y precios de Washington.</p>
+<p><strong>Qué vigilar.</strong> Reunión ministerial de P-TEC del 19 de noviembre (posibles acuerdos de GNL o nucleares, postura de la Comisión); evolución de las reservas de gas de la UE (AIE, edición de las 20:30: las más bajas desde 2013); tráfico en Ormuz; decisión coreana sobre Alaska LNG.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.gov.pl/web/energia/p-tec-w-warszawie-polska-w-centrum-transatlantyckiego-dialogu-o-bezpieczenstwie-energetycznym">gov.pl</a>, <a href="https://x.com/i/status/2122746320259584408">@SecretaryWright</a>, <a href="https://x.com/i/status/2122793141610672500">X</a>, <a href="https://en.yna.co.kr/view/AEN20261117010700315">Yonhap</a>, <a href="https://x.com/i/status/2122783455452778725">X</a>, <a href="https://www.cnbc.com/2026/11/18/oil-prices-fall-as-higher-us-crude-stocks-temper-supply-risks.html">CNBC</a>, <a href="https://x.com/i/status/2122815860477747591">X</a></p>
+<hr>
+<h2 id="s5">Las startups europeas captarán 81.000 millones de dólares este año, menos de una quinta parte de los 450.000 millones de las estadounidenses</h2>
+<p><strong>El informe anual State of European Tech de Atomico, publicado el 18 de noviembre, prevé que las startups tecnológicas europeas capten 81.000 millones de dólares en 2026.</strong></p>
+<p>Es un 62 % más que el año pasado y la segunda cifra más alta desde que comenzó la serie en 2015, pero muy lejos de los 450.000 millones previstos para las startups estadounidenses. Las alemanas captarán 13.400 millones (+89 %), sobre todo en empresas ya consolidadas. Helsing (IA militar), Neura Robotics (robótica) y Quantum Systems (drones) han levantado más de 1.000 millones cada una en los últimos meses. «Todos los ingredientes están ahí: talento, capital y demanda. Pero están bloqueados o mal asignados», dijo a Reuters Tom Wehmeier, socio de Atomico. Los europeos tienen 50 billones de dólares en ahorro, pero «solo el 0,01 % llega al capital riesgo europeo».</p>
+<p><strong>Por qué importa a Europa.</strong> La brecha explica por qué las startups europeas acaban vendiéndose a compradores estadounidenses o trasladándose a EE. UU. El ahorro existe, pero está repartido en 27 mercados nacionales sin un mercado de capitales único que lo canalice hacia la tecnología europea. Europa tiene recursos; lo que le falta, una y otra vez, es la escala que solo da la acción conjunta.</p>
+<p><strong>Qué vigilar.</strong> El informe completo de Atomico (desglose por países, peso de la tecnología de defensa); la unión de ahorros e inversiones de la Comisión.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.channelnewsasia.com/business/european-tech-startups-set-second-strongest-funding-year-6560591">channelnewsasia.com</a>, <a href="https://x.com/i/status/2122859922408841709">@ReutersTech</a></p>
+<hr>
+<h2>Véase también</h2>
+<ul>
+<li>Washington relaja sus propias normas de exportación de armas (reforma ITAR) — véase Industria de Defensa.</li>
+<li>Xi abre APEC en Shenzhen defendiendo el libre comercio — véase Actualidad.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Economía. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

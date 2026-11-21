@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMÍA — jueves, 19 de noviembre de 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMÍA</h1>
+      <p class="list-date">jueves, 19 de noviembre de 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> 19 de noviembre de 2026, de las 06:00 a las 13:15 aproximadamente (hora de Madrid): todo lo nuevo desde la edición de las 07:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Economía de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">El World Energy Outlook 2026 de la AIE califica la crisis de Ormuz como «el mayor shock de suministro energético de la historia» y advierte de no cambiar una dependencia por otra</h2>
+<p><strong>La Agencia Internacional de la Energía publicó el 19 de noviembre su World Energy Outlook 2026, que su director ejecutivo, Fatih Birol, presentó en directo a las 11:00 (hora de Madrid).</strong></p>
+<p>El informe sostiene que el conflicto de Oriente Próximo y la interrupción del tráfico por el estrecho de Ormuz han provocado el mayor shock de suministro energético de la historia y que la crisis probablemente dejará huella duradera, con la seguridad y la asequibilidad de la energía en el centro de las decisiones. Identifica tres respuestas comunes: diversificar suministros, rutas, combustibles y cadenas de suministro tecnológicas; preferir los recursos propios; y acelerar la electrificación. La advertencia de Birol interpela directamente a Europa: «En la búsqueda de una mayor seguridad energética, los países deben tener cuidado de no sustituir una dependencia por otra». Si el conflicto se resuelve con claridad, la AIE prevé que una ola retrasada de oferta de GNL cree un mercado comprador de petróleo y gas.</p>
+<p><strong>Por qué importa a Europa.</strong> La cautela de la AIE describe la propia trayectoria europea desde 2022: la dependencia del gas ruso por gasoducto se ha sustituido en gran parte por la dependencia del GNL estadounidense, el asunto de los acuerdos del P-TEC que recogimos el 18 de noviembre. Los ganadores de un giro hacia la energía propia son, según el informe, las renovables (con la solar fotovoltaica a la cabeza), la nuclear y la eficiencia; todas pueden desarrollarse dentro de la UE, pero solo con un esfuerzo industrial y financiero común que ningún Estado miembro de la UE puede sostener en solitario. La misma crisis que asfixia a la industria europea con un gas caro es también un argumento a favor de la unión energética europea que defiende CEAFE.</p>
+<p><strong>Qué vigilar.</strong> Capítulos del WEO sobre la oferta de GNL y el balance de gas europeo; Perspectivas Económicas de la OCDE el 4 de diciembre (anunciadas por @OECD, https://x.com/i/status/2123385841284243615). Cobertura anterior: aviso de la AIE sobre almacenamiento de gas (3 de noviembre) e informe sobre fenómenos extremos y transporte marítimo (18 de noviembre, 20:30). <strong>Aún no reposteado por @F_CEAFE (nota interna).</strong></p>
+<p><strong>Fuentes:</strong> <a href="https://www.iea.org/news/as-an-unprecedented-shock-reshapes-the-energy-world-its-duration-will-determine-the-scale-of-the-change">comunicado de la AIE</a>, <a href="https://x.com/i/status/2123321628050292938">@IEA</a>, <a href="https://x.com/i/status/2123302784510439646">@IEA</a>, <a href="https://x.com/i/status/2123358155128119652">@Reuters</a>, <a href="https://x.com/i/status/2123328392770523461">@AJEnglish</a>, <a href="https://x.com/i/status/2123285533954916455">@France24_en</a></p>
+<hr>
+<h2 id="s2">Actualización: la UE aplaza dos años sus normas sobre metano para importadores de petróleo, gas y carbón tras meses de presión de EE. UU.</h2>
+<p><strong>En la noche del 18 al 19 de noviembre, el Consejo de la UE y el Parlamento Europeo alcanzaron un acuerdo provisional para aplazar las obligaciones del reglamento sobre metano para los importadores de crudo, gas natural y carbón.</strong></p>
+<p>Las obligaciones de seguimiento, notificación y verificación se aplicarán desde el 1 de enero de 2029 en lugar del 1 de enero de 2027, y la notificación de la intensidad de metano para importadores y productores de la UE desde el 5 de agosto de 2030 en lugar del 5 de agosto de 2028. El aplazamiento de dos años supera el año que propuso la Comisión y respaldaban los Gobiernos de la UE; el Parlamento pedía tres. Según POLITICO, el acuerdo llega «tras meses de presión de EE. UU. y de las compañías de combustibles fósiles», y se descartó una propuesta para mantener las normas para las importaciones rusas.</p>
+<p>Antecedentes: la presión no es nueva; en noviembre de 2024 funcionarios de la Administración Biden ya pidieron por carta a la UE alinear sus normas de metano con las estadounidenses para facilitar el flujo de GNL (Reuters), como recogió entonces CEAFE.</p>
+<p><strong>Por qué importa a Europa.</strong> El 18 de noviembre (edición de las 20:30) contamos cómo el embajador estadounidense Andrew Puzder pedía a la UE cambiar sus propias leyes de clima, diligencia debida y metano en el marco del acuerdo comercial de Turnberry. Un día después, Bruselas cede en el metano, la norma que más importaba a los exportadores de GNL de EE. UU., su principal proveedor. Europa adapta su legislación a las exigencias de su proveedor mientras Washington mantiene sus aranceles sobre el acero y el aluminio europeos. Otra vez la falta de reciprocidad se presenta como pragmatismo.</p>
+<p><strong>Qué vigilar.</strong> Votaciones de ratificación en el Parlamento y el Consejo; si EE. UU. apunta ahora al CBAM y a la CSDDD. <strong>ALERTA (coerción económica, aún no publicada por @F_CEAFE; interna):</strong> legislación de la UE suavizada tras la presión estadounidense.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/methane-regulation-eu-agrees-targeted-amendment-to-safeguard-security-of-supply/">Consejo de la UE</a>, <a href="https://www.politico.eu/article/eu-extends-delay-of-key-methane-rules-to-two-years-after-us-pressure/">POLITICO Europe</a>, <a href="https://www.euronews.com/2026/11/19/eu-pushes-methane-rules-back-two-years-in-win-for-oil-and-gas-industry">Euronews</a>, <a href="https://www.aa.com.tr/en/europe/eu-reaches-provisional-deal-to-delay-methane-rules-for-fossil-fuel-importers-by-2-years/4130192">Anadolu</a>, <a href="https://x.com/i/status/2123343056015409304">@business</a>, <a href="https://x.com/i/status/1856839118690390442">@F_CEAFE</a></p>
+<hr>
+<h2 id="s3">El Congreso intenta impedir que Microsoft venda modelos de OpenAI a ByteDance, mientras Washington estudia obligar a las empresas a declarar su uso de IA china</h2>
+<p><strong>El Comité Selecto de la Cámara de Representantes sobre China pidió el 18 de noviembre a Microsoft una reunión informativa bipartidista sobre las conversaciones para que ByteDance use modelos de OpenAI a través de la nube Azure, un acuerdo que The Information cifró en unos 500 millones de dólares.</strong></p>
+<p>Su presidente, John Moolenaar, afirmó que «Microsoft no debería vender herramientas de IA a ByteDance» y que es inaceptable que una empresa con contratos con el Pentágono «arme» a ByteDance. Microsoft dijo que hace cumplir sus condiciones de servicio y que no comenta negociaciones confidenciales; según la misma información, busca acuerdos similares con Alibaba. Por otra parte, Reuters informó de que la Administración Trump estudia una norma que obligaría a las empresas estadounidenses a declarar su uso de modelos de IA chinos. El Global Times (medio estatal chino) recogió la opinión de Xiang Ligang, presidente del Instituto de Pekín de la Industria de la Era Inteligente, para quien el plan politiza decisiones comerciales, empujará a las empresas a modelos más caros y debilitará la competitividad estadounidense.</p>
+<p><strong>Por qué importa a Europa.</strong> La red de control estadounidense ya no abarca solo los chips y el acceso remoto a centros de datos (la norma del BIS del 16 de noviembre, que alcanza a los centros de datos de la UE), sino también los servicios en la nube e incluso qué modelos de IA puede usar una empresa. Europa no tiene una palanca comparable: aloja nubes y modelos estadounidenses, y sus empresas tendrán que seguir la misma lógica de declaración. Solo una nube y una pila de IA europeas soberanas permitirían decidir estas cuestiones en Europa.</p>
+<p><strong>Qué vigilar.</strong> La reunión informativa de Microsoft; una posible norma formal de declaración; reacción del MOFCOM y del Ministerio de Asuntos Exteriores chino. Cobertura anterior: norma del BIS sobre acceso remoto (16 y 17 de noviembre), informe de la USCC (18 de noviembre, 20:30), Nvidia y Blackwell (19 de noviembre, 07:30).</p>
+<p><strong>Fuentes:</strong> <a href="https://chinaselectcommittee.house.gov/media/press-releases/moolenaar-microsoft-should-not-sell-ai-to-bytedance">Comité Selecto sobre China</a>, <a href="https://www.channelnewsasia.com/world/us-microsoft-bytedance-openai-access-6563751">CNA</a>, <a href="https://www.globaltimes.cn/page/202611/1374619.shtml">Global Times</a>, <a href="https://www.investing.com/news/stock-market-news/exclusivetrump-administration-weighs-forcing-us-firms-to-disclose-chinese-ai-use-5035455">Reuters vía Investing.com</a>, <a href="https://www.straitstimes.com/business/alibaba-megaspeed-financing-link-traced-via-spore-malaysia-units-allegedly-to-buy-nvidia-servers">The Straits Times</a>, <a href="https://www.miti.gov.my/miti/resources/Speech/MEDIA_STATEMENT_13112026.pdf">MITI</a>, <a href="https://www.justice.gov/opa/pr/joint-statement-department-commerce-and-department-justice-megaspeed-investigation">Departamento de Justicia de EE. UU</a>, <a href="https://x.com/i/status/2123358289425797405">reposts de @F_CEAFE</a>, <a href="https://x.com/i/status/2123332380517949795">reposts de @F_CEAFE</a>, <a href="https://x.com/i/status/2123274021458301375">@clashreport</a></p>
+<hr>
+<h2 id="s4">Corea del Sur se convierte en el cuarto país que exporta más de un billón de dólares al año, tras EE. UU., China y Alemania</h2>
+<p><strong>Las exportaciones acumuladas de Corea del Sur en 2026 superaron el billón de dólares a las 14:09 (hora de Seúl) del 19 de noviembre, según anunció el Ministerio de Comercio, Industria y Recursos.</strong></p>
+<p>Es el primer país que entra en ese club en 19 años, después de EE. UU. y Alemania (2006) y China (2007). Los semiconductores impulsaron el récord: sus exportaciones casi se triplicaron hasta 397.700 millones de dólares entre enero y octubre, el 42,7 % del total, por la demanda de centros de datos de IA, que disparó los precios y los envíos de memorias. El ministerio prevé 1,17 billones para todo el año, un 65 % más que los 709.300 millones de 2025, y advierte del proteccionismo en EE. UU. y la UE y de la dependencia del precio de los chips. El presidente Lee Jae-myung celebró el hito en X; @F_CEAFE lo reposteó.</p>
+<p><strong>Por qué importa a Europa.</strong> Alemania es el único Estado miembro de la UE en el club del billón exportador, y su modelo de energía barata y exportaciones a China está en crisis. Corea del Sur ha llegado ahí dominando un eslabón clave de la cadena de la IA (los chips de memoria). Europa solo tiene la escala para hacer lo mismo en tecnologías estratégicas como Unión; las cifras muestran la ventaja que ya llevan los líderes.</p>
+<p><strong>Qué vigilar.</strong> Incorporarlo al archivo de clasificaciones si se publica un ranking de exportadores; evolución del precio de los chips en 2027.</p>
+<p><strong>Fuentes:</strong> <a href="https://en.yna.co.kr/view/AEN20261119003900320">Yonhap</a>, <a href="https://en.yna.co.kr/view/AEN20261118005700320">Yonhap</a>, <a href="https://www.koreaherald.com/article/10942838">The Korea Herald</a>, <a href="https://x.com/i/status/2123374514805338133">@business</a>, <a href="https://x.com/i/status/2123316572349452661">repost de @F_CEAFE</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Economía. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — viernes, 20 de noviembre de 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">viernes, 20 de noviembre de 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> del 19 de noviembre de 2026 hacia las 19:00 al 20 de noviembre hacia las 07:15 (hora de Madrid): todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Actualidad de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Actualización: Trump llama a Berlín —«Friedrich, puedes llamar a Putin»— y Kushner asegura que Rusia acepta a los europeos en la mesa</h2>
+<p><strong>En su vuelo de regreso desde China, Donald Trump intervino por teléfono en la reunión de la Coalición de Voluntarios en Berlín y dijo a los líderes europeos y a Zelenski: «Putin quiere acabar la guerra, quiere cerrar el acuerdo, se está cansando de esto», y les animó a hablar directamente con él: «Friedrich, puedes llamar a Putin y eso cerrará un acuerdo» (Axios, según asistentes).</strong></p>
+<p>En la rueda de prensa final, el enviado estadounidense Jared Kushner afirmó que «Rusia ha aceptado participar en el formato multilateral con los europeos» y que Moscú se siente «cómodo» con garantías de seguridad «basadas en el artículo 5»; ofrecerlas «es algo muy, muy importante… que el presidente Trump está dispuesto a considerar, pero obviamente tiene que ser en interés de Estados Unidos» (The Guardian; AP; Channel 8). Kushner: «El presidente Trump quiere cerrar un acuerdo con Europa a su lado. No pretende imponer nada unilateralmente» (Axios). Friedrich Merz dijo que las mejores perspectivas de paz están en unas conversaciones con «Ucrania, Rusia, Estados Unidos y Europa», fijó el orden «primero la paz en Ucrania, después los acuerdos sobre la seguridad euroatlántica» y destacó los más de 11.000 millones de euros prometidos por el Reino Unido, junto a los 45.000 millones propuestos por la Comisión para 2027 (Gobierno federal). En X, Merz: «Presidente Putin, ponga fin a la guerra contra Ucrania… No queremos volver a vivir en una Europa dividida»; cada invitado recibió un fragmento del Muro de Berlín.</p>
+<p><strong>Contexto:</strong> La reunión y la propuesta de Macron de reabrir la vía de Ucrania a la OTAN se trataron en la edición de las 20:30; la oferta de Putin de «venir a Moscú», en el tema 1. Tras la marcha de los líderes, Kushner y Witkoff se reunieron con Zelenski y con los asesores de seguridad nacional de Alemania, Reino Unido, Francia, Italia y Polonia, además de altos cargos de la UE y la OTAN, para preparar la próxima ronda con Rusia, «posiblemente la semana que viene» (Axios). Por la UE asistió la secretaria general del SEAE «en nombre de la AR/VP Kallas» (@EEAS_SecGen vía @eu_eeas).</p>
+<p><strong>Por qué importa a Europa.</strong> Washington quiere ahora a Europa en la mesa, pero la puerta la abren los enviados estadounidenses y la llamada va a un líder nacional («Friedrich»), no a la Unión. El grupo que prepara las conversaciones vuelve a ser el de las cinco capitales del E5, con las instituciones de la UE como asistentes. Una garantía «basada en el artículo 5» ofrecida solo si conviene «a los intereses de Estados Unidos» es el mejor argumento para que Europa construya su propia capacidad de disuasión en lugar de alquilarla.</p>
+<p><strong>Qué vigilar.</strong> La rueda de prensa de Trump en la Casa Blanca hoy (12:00, hora de Washington); fecha y formato de la próxima ronda con Rusia; una posible llamada Merz–Putin; la versión rusa sobre el «artículo 5» (no hay confirmación rusa por ahora).</p>
+<p><strong>Fuentes:</strong> <a href="https://www.axios.com/2026/11/20/trump-pushes-putin-ukraine-war-deal">Axios</a>, <a href="https://www.bundeskanzler.de/bk-de/aktuelles/-wir-haben-eine-klare-idee-vom-frieden--2461988">Gobierno federal</a>, <a href="https://www.theguardian.com/world/live/2026/nov/19/russia-ukraine-war-coalition-of-the-willing-europe-latest-news-updates">The Guardian</a>, <a href="https://apnews.com/article/russia-ukraine-war-kerch-bridge-putin-crimea-7b4a86809dcd466bba97d374045a1a78">AP</a>, <a href="https://x.com/i/status/2123538056275783718">@jaredkushner</a>, <a href="https://x.com/i/status/2123538445746524459">y</a>, <a href="https://x.com/i/status/2123557907107045790">@SEPeaceMissions</a>, <a href="https://x.com/i/status/2123495382839919025">@bundeskanzler</a>, <a href="https://x.com/i/status/2123478423511159169">y</a>, <a href="https://x.com/i/status/2123517012739862634">@ZelenskyyUa</a>, <a href="https://x.com/i/status/2123533578235510903">@eu_eeas</a>, <a href="https://x.com/i/status/2123647093181239634">@MofaJapan_en</a></p>
+<hr>
+<h2 id="s2">El dinero del préstamo de la UE podrá comprar armas estadounidenses para Ucrania a través del PURL de la OTAN</h2>
+<p><strong>El Gobierno ucraniano aprobó un acuerdo marco general con la OTAN que permite destinar parte del Préstamo de Apoyo a Ucrania de la UE para 2026–2027 a paquetes PURL de armamento fabricado en Estados Unidos (Ministerio de Defensa de Ucrania).</strong></p>
+<p>Cada aportación se ingresa en una cuenta de la OTAN, va ligada a un paquete concreto y a la lista de productos que Ucrania presenta a la Comisión Europea en el marco del préstamo, y sigue siendo de Ucrania hasta que la OTAN cierre el documento con el Departamento de Guerra de EE. UU. y Washington confirme el paquete. La OTAN actúa «solo como intermediario financiero autorizado», no como comprador, vendedor ni garante. El PURL, lanzado en julio de 2025, reunió casi 7.000 millones de dólares en su primer año, y Ucrania recibe por esta vía alrededor del 95 % de sus interceptores Patriot, incluidos los PAC-3 (Ministerio de Defensa de Ucrania).</p>
+<p><strong>Contexto:</strong> La decisión se anunció el 18 de noviembre y @F_CEAFE la republicó tras la reunión de Berlín, donde Von der Leyen presentó el nuevo préstamo de 45.000 millones de euros (edición de las 20:30, tema 2).</p>
+<p>Antecedentes: CEAFE cuestiona el mecanismo PURL de la OTAN desde su puesta en marcha en 2025: en diciembre de 2025 preguntó si SAFE era «otro programa al estilo PURL para canalizar nuestro dinero hacia los fabricantes de armas de EE. UU.», y en mayo de 2026 advirtió de que pagar armas estadounidenses vía PURL vacía los arsenales europeos y convierte a la industria europea en proveedora de piezas de los grandes grupos de EE. UU.</p>
+<p><strong>Por qué importa a Europa.</strong> Dinero de los contribuyentes europeos, captado como préstamo de la UE, irá a la industria estadounidense a través de una cuenta de la OTAN. El propio ministerio reconoce que el PURL cubre armas que «no siempre pueden sustituirse con rapidez por equivalentes europeos»: ese es precisamente el hueco que debería cerrar la compra europea. Cada euro gastado así crea empleo, I+D y líneas de producción en Estados Unidos, no en Europa, y mantiene la defensa antiaérea ucraniana pendiente de la autorización de exportación de Washington. La alternativa europea existe (SAMP/T NG, IRIS-T SLM), pero le falta la escala que le darían pedidos conjuntos de la UE.</p>
+<p><strong>Qué vigilar.</strong> Qué parte de los 45.000 millones se destina al PURL; si las reglas de la Comisión sobre la lista de productos (preferencia europea) lo limitan.</p>
+<p><strong>Fuentes:</strong> <a href="https://mod.gov.ua/en/news/purl-us-weapons-eu-loan-funds">Ministerio de Defensa de Ucrania</a>, <a href="https://www.ukrinform.net/rubric-economy/4186159-ukraine-to-use-eu-loan-funds-to-pay-for-us-weapons-through-purl.html">Ukrinform</a>, <a href="https://x.com/i/status/2123501815622750636">@DefenceU</a>, <a href="https://x.com/i/status/2123506696467128687">@F_CEAFE</a>, <a href="https://x.com/i/status/1995634348343865560">@F_CEAFE</a>, <a href="https://x.com/i/status/2059868875567591442">@F_CEAFE</a></p>
+<hr>
+<h2 id="s3">El ministro de Defensa chino, en Londres: primera visita de este tipo en 26 años</h2>
+<p><strong>El ministro de Defensa chino, almirante Dong Jun, se reunió en Londres el 19 de noviembre con el ministro de Defensa británico, Wes Streeting; ambos acordaron «poner en práctica el importante consenso alcanzado por los dos jefes de Estado» e impulsar unas relaciones militares «estables, sanas y sostenibles» (Ministerio de Defensa Nacional de China, fuente estatal).</strong></p>
+<p>Antes de la reunión, Streeting escribió en The Times que el Reino Unido debe «tender la mano de la diplomacia» sin «bajar la guardia», recordó que China es su tercer socio comercial y tiene el mayor ejército en activo del mundo, y dijo que Xi podría ser «una influencia moderadora sobre los peores instintos de la maquinaria de guerra de Putin» (Anadolu; VOA). En una declaración escrita al Parlamento señaló que es la primera visita de un ministro de Defensa chino en 26 años (VOA). Ninguna de las partes publicó la agenda ni resultados concretos (VOA).</p>
+<p><strong>Por qué importa a Europa.</strong> Londres abre su propio canal militar con Pekín un día después de la cumbre de Shenzhen, y Streeting lo comparó con los contactos directos de los ministros de Defensa de EE. UU., Francia, Alemania e Italia (VOA). Cada capital europea habla con China por separado, y ninguna tiene por sí sola el tamaño de China. Un canal común de la UE pesaría más que una serie de canales nacionales.</p>
+<p><strong>Qué vigilar.</strong> Un comunicado británico; si se acuerda una línea directa permanente para crisis.</p>
+<p><strong>Fuentes:</strong> <a href="http://www.mod.gov.cn/gfbw/qwfb/16500971.html">mod.gov.cn</a>, <a href="https://x.com/i/status/2123613719766901142">@ChinaMilBugle</a>, <a href="https://www.aa.com.tr/en/europe/britain-seeks-closer-ties-with-china-while-guarding-against-espionage-cyberattacks/4131405">@ChinaMilBugle</a>, <a href="https://www.voachinese.com/a/china-defense-minister-visit-uk-streeting-said-dialogue-will-not-lower-uk-s-guard-20261119/8225739.html">VOA en chino</a></p>
+<hr>
+<h2 id="s4">Cumbre UE–Reino Unido hoy en Bruselas: acuerdos sobre alimentos, mercado de carbono y jóvenes</h2>
+<p><strong>António Costa y Ursula von der Leyen reciben hoy en Bruselas al primer ministro británico, Andy Burnham, en la segunda cumbre UE–Reino Unido (rueda de prensa hacia las 13:25) (Consejo de la UE).</strong></p>
+<p>Ambas partes esperan anunciar tres acuerdos iniciados con Keir Starmer: uno agroalimentario (sanitario y fitosanitario), por el que el Reino Unido se alinea con las normas de la UE y que no se espera que entre en vigor antes de 2028; la conexión de los sistemas de comercio de emisiones de la UE y el Reino Unido, y un programa de movilidad juvenil (The Guardian; borrador de declaración conjunta publicado por Agence Europe). El borrador afirma que ambas partes están «aplicando la Asociación de Seguridad y Defensa UE–Reino Unido» y que el Acuerdo de Comercio y Cooperación «funciona eficazmente, pese a ciertas barreras» (Agence Europe). La cumbre estaba prevista para julio, pero se aplazó al dimitir Starmer (The Guardian).</p>
+<p><strong>Por qué importa a Europa.</strong> El Reino Unido vuelve a llamar a la puerta de la UE en seguridad y comercio, y Francia y Alemania quieren un «estatus especial» para él en las futuras reglas de «Made in Europe» (Reuters). Turquía reclama lo mismo: su ministro de Comercio, Ömer Bolat, advirtió en Berlín de que dejar a Turquía fuera del «Made in EU» erosionaría tres décadas de cadenas de suministro integradas (Reuters vía Euronext). Quién cuenta como «europeo» en las compras públicas es ya la cuestión central de la preferencia europea.</p>
+<p><strong>Qué vigilar.</strong> La declaración conjunta final; si se menciona la participación británica en las compras de defensa SAFE.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/20/">Consejo de la UE</a>, <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/11/18/media-advisory-eu-united-kingdom-summit/">nota a los medios</a>, <a href="https://www.theguardian.com/politics/2026/nov/19/eu-uk-summit-explainer-burnham-brexit-brussels">The Guardian</a>, <a href="https://aeur.eu/f/ohe">The Guardian</a>, <a href="https://live.euronext.com/en/financial-news/turkeys-trade-minister-urges-eu-include-it-made-europe-rules">Reuters vía Euronext</a>, <a href="https://x.com/i/status/2123612309079851471">@anadoluagency</a>, <a href="https://x.com/i/status/2123569549836509495">@Reuters</a></p>
+<hr>
+<h2 id="s5">Irán en la Junta del OIEA: Occidente exige inspecciones; Rusia, China e Irán ponen condiciones</h2>
+<p><strong>En la Junta de Gobernadores del OIEA en Viena, Estados Unidos y el E3 (Francia, Alemania y Reino Unido) presionaron a Irán para que deje volver a los inspectores a sus instalaciones de enriquecimiento bombardeadas y rinda cuentas de su uranio altamente enriquecido, con un proyecto de resolución sobre las salvaguardias iraníes (Al-Monitor; declaración conjunta de la misión de EE. UU. en Viena; declaración de la UE).</strong></p>
+<p>Rusia, hablando también en nombre de China e Irán, dijo que las inspecciones solo podrán reanudarse cuando terminen las hostilidades y haya garantías contra nuevos ataques (@mission_rf; Anadolu). La misión iraní: «No se pueden bombardear instalaciones nucleares y seguir amenazando…» (@PMIRAN_Vienna). El portavoz de Exteriores iraní rechazó las nuevas acusaciones de EE. UU. de que Irán desarrolla armas biológicas o químicas («Las acusaciones van cambiando»), después de que el ministro de Exteriores israelí, Gideon Sa&rsquo;ar, hablara de esfuerzos iraníes «con armas no convencionales» (@IRIMFA_SPOX; Sa&rsquo;ar vía @ClashReport). El ministro Araghchi respondió a unas palabras del embajador israelí en Washington: «No sabíamos que el embajador israelí en Washington era el comandante en jefe del ejército de EE. UU.». Trump dijo que Xi y Putin quieren que termine la guerra con Irán y se lo están transmitiendo a Teherán (Al Jazeera).</p>
+<p><strong>Por qué importa a Europa.</strong> El E3 actúa como trío nacional junto a Washington, mientras la UE habla en una declaración aparte. El embajador ruso Uliánov se quejó de que X «restringe artificialmente» la difusión de su intervención en el OIEA. Las inspecciones siguen congeladas hasta que acabe una guerra que Europa no controla.</p>
+<p><strong>Qué vigilar.</strong> La votación de la Junta sobre el proyecto de EE. UU. y el E3; la reacción iraní.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.al-monitor.com/originals/2026/11/west-presses-iran-iaea-let-inspections-resume-bombed-nuclear-sites">Al-Monitor</a>, <a href="https://vienna.usmission.gov/joint-statement-agenda-item-3f-iaea-board-of-governors-meeting-november-2026/">misión de EE. UU. en Viena</a>, <a href="https://www.aa.com.tr/en/eurasia/moscow-beijing-tehran-say-un-nuclear-watchdog-can-resume-inspections-in-iran-after-hostilities-end/4129946">Anadolu</a>, <a href="https://x.com/i/status/2123503994597224580">@Amb_Ulyanov</a>, <a href="https://x.com/i/status/2123537218304135254">y</a>, <a href="https://x.com/i/status/2123613667677851889">@PMIRAN_Vienna vía @Amb_Ulyanov</a>, <a href="https://x.com/i/status/2123500205517467688">@IRIMFA_EN</a>, <a href="https://x.com/i/status/2123636912392994951">@araghchi</a>, <a href="https://x.com/i/status/2123500453715648819">@ClashReport</a>, <a href="https://x.com/i/status/2123511097772982312">@AJEnglish</a></p>
+<hr>
+<h2 id="s6">Horas después de Shenzhen, EE. UU. veta a las telecos chinas el acceso a números de teléfono estadounidenses</h2>
+<p><strong>La Comisión Federal de Comunicaciones de EE. UU. (FCC) votó el 19 de noviembre prohibir a China Mobile, China Telecom, China Unicom y otros proveedores IP el acceso directo a números de teléfono estadounidenses por motivos de seguridad nacional, «apenas horas después» de las conversaciones de Trump con Xi en Shenzhen (SCMP).</strong></p>
+<p>La FCC exigirá nuevas «certificaciones centradas en la seguridad nacional» antes de dar acceso a numeración a proveedores de VoIP. Respuesta china a esta votación: no se ha encontrado aún; cuando la FCC actuó contra operadores y laboratorios chinos a finales de octubre, el portavoz de Exteriores Guo Jiakun lo calificó de «abuso del poder del Estado» y dijo que China tomaría «las medidas necesarias» (China Daily, 30 de octubre).</p>
+<p><strong>Por qué importa a Europa.</strong> Washington excluye a operadores chinos de sus propias redes por seguridad mientras pide a los europeos que mantengan sus mercados abiertos a las empresas estadounidenses; la UE no aplica ningún instrumento equivalente con la misma rapidez.</p>
+<p><strong>Qué vigilar.</strong> La respuesta del Ministerio de Exteriores o de Comercio chino; posibles represalias contra empresas estadounidenses.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.scmp.com/news/china/diplomacy/article/3375128/fcc-votes-ban-chinese-telecoms-direct-access-us-phone-numbers">scmp.com</a>, <a href="https://global.chinadaily.com.cn/a/202610/30/WS6ae47e5ce4b06d4aa0566286.html">China Daily</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

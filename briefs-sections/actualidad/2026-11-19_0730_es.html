@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — jueves, 19 de noviembre de 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">jueves, 19 de noviembre de 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> 18 de noviembre de 2026, hacia las 19:00, al 19 de noviembre, hacia las 06:00 (hora de Madrid): todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Actualidad de CEAFE, los registros compartidos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Actualización: Shenzhen: Trump y Putin abren su bilateral a horas de la primera reunión de líderes de EE. UU., China y Rusia</h2>
+<p><strong>Vladímir Putin y Donald Trump iniciaron el jueves por la mañana una reunión bilateral al margen de la cumbre de APEC en Shenzhen; la prensa pudo entrar durante un minuto antes de que la conversación siguiera a puerta cerrada (TASS, agencia estatal rusa).</strong></p>
+<p>Trump dijo al comenzar que tiene una relación excelente con Putin y que se pueden lograr «grandes resultados» (TASS). Antes había declarado: «Espero con interés una reunión trilateral histórica con el presidente Xi y el presidente Putin hoy más tarde» (vídeo de Clash Report). En una entrevista con Fox News previa calificó a China y Rusia de «enemigos naturales» cuya asociación «nunca debió permitirse» (South China Morning Post) y dijo sobre la guerra de Ucrania: «No nos afecta. De hecho, se podría decir que ganamos mucho dinero» (vídeo de Aaron Rupar). En el pleno de APEC, Xi Jinping pidió eliminar barreras al comercio y la inversión y anunció 20 millones de dólares para la cooperación práctica de APEC (Xinhua, medio estatal chino); Putin dijo que Rusia apoya el borrador de declaración final (TASS).</p>
+<p><strong>Por qué importa a Europa.</strong> El futuro de una guerra en el continente europeo se discute entre tres líderes, ninguno europeo. La frase de Trump de que la guerra «no nos afecta» muestra que Washington la ve como un problema ajeno mientras vende las armas.</p>
+<p><strong>Qué vigilar.</strong> Comunicados del Kremlin y la Casa Blanca sobre la bilateral; la trilateral y un posible texto conjunto; reacción de Ucrania. Nota: el South China Morning Post es propiedad de Alibaba; se cita aquí solo para hechos.</p>
+<p><strong>Fuentes:</strong> <a href="https://t.me/tassagency_en/99144">TASS</a>, <a href="https://t.me/tassagency_en/99145">TASS</a>, <a href="https://t.me/tassagency_en/99137">TASS</a>, <a href="https://t.me/news_kremlin_eng/8449">Kremlin</a>, <a href="https://x.com/i/status/2123275940205850837">@mfa_russia</a>, <a href="https://x.com/i/status/2123261832278520318">Clash Report</a>, <a href="https://x.com/i/status/2123261130596311226">Clash Report</a>, <a href="https://x.com/i/status/2123215452604182532">Aaron Rupar</a>, <a href="https://x.com/i/status/2123213787427639558">Aaron Rupar</a>, <a href="https://www.scmp.com/news/china/diplomacy/article/3374980/natural-enemies-trump-china-russia-ties-he-plays-down-nvidia-tragedy">South China Morning Post</a>, <a href="https://www.scmp.com/news/china/military/article/3374979/us-launched-unarmed-icbm-test-hours-trumps-air-force-one-landed-china">South China Morning Post</a>, <a href="https://x.com/i/status/2123244396951040157">Xinhua</a>, <a href="https://x.com/i/status/2123279575132131466">Al Jazeera</a>, <a href="https://x.com/i/status/2123277624667447752">Bloomberg</a></p>
+<hr>
+<h2 id="s2">Europa, ausente de la mesa de Shenzhen y todavía dividida sobre quién la representa</h2>
+<p><strong>El día en que tres líderes se reúnen en Shenzhen para intentar acabar con la guerra de Ucrania, ni la UE ni ningún Estado miembro de la UE está en la sala: por separado, ninguno tiene el peso global para sentarse en ella.</strong></p>
+<p>Los europeos tampoco se ponen de acuerdo sobre quién los representa. En el Consejo Europeo informal de Dublín del 13 de noviembre, los líderes rechazaron nombrar un enviado único; António Costa dijo: «Los líderes acordaron que nuestro equipo europeo para las negociaciones de paz en Ucrania son las instituciones de la Unión Europea y el E5 de la Coalición de Voluntarios» (Francia, Alemania, Reino Unido, Italia y Polonia) (Euronews). Friedrich Merz defendió el formato anterior: «El formato E3 ha demostrado ser muy eficaz. Por cierto, siempre incluimos a Italia y Polonia». La Alta Representante, Kaja Kallas, sostuvo que el papel de enviada formaba parte de su mandato y admitió que «los rusos no me quieren»; Ursula von der Leyen no la respaldó: «Hemos tomado nuestra decisión» (Euronews). Entre los nombres barajados este año como posibles enviados o representantes europeos figuran Kallas, Costa, von der Leyen, el presidente finlandés Alexander Stubb («Si me lo piden, probablemente es una pregunta que no se puede responder con un no»), Mario Draghi y Angela Merkel (Irish Times, 29 de mayo de 2026), además de Sauli Niinistö y Jean-Claude Juncker (Politico, vía Kyiv Post).</p>
+<p><strong>Por qué importa a Europa.</strong> Formatos como el E3 o el E5, y una lista de nombres que compiten entre sí, debilitan la idea de construcción europea: la Unión ya tiene un Alto Representante para la política exterior. Pero el escaso margen de Kallas y sus declaraciones antirrusas la han descalificado como negociadora ante Moscú. En la Conferencia Lennart Meri de Tallin, el 18 de mayo de 2024, dijo (en inglés): «La derrota de Rusia no es algo malo, porque entonces podría haber realmente un cambio en la sociedad, y ahora mismo hay muchas naciones distintas que también forman parte de Rusia. Creo que si hubiera más naciones pequeñas, no sería malo que la gran potencia fuera en realidad mucho más pequeña». El excomisario Thierry Breton escribió anoche: «Frente a Trump, Putin y Xi Jinping, es absolutamente indispensable que los europeos estén unidos. No veo mucho futuro para un país aislado en este mundo brutal». Los europeos, o actuamos juntos, o nos quedamos fuera de la sala donde se decide el futuro de nuestro propio continente.</p>
+<p><strong>Qué vigilar.</strong> Si el informe de los enviados de EE. UU. en Berlín cambia el papel del equipo europeo; si Rusia acepta negociar directamente con los europeos.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.euronews.com/2026/11/13/eu-leaders-bring-italy-and-poland-into-ukraine-peace-talks-team-as-kallas-fights-for-spot">Euronews</a>, <a href="https://www.consilium.europa.eu/en/meetings/european-council/2026/11/13/">Consejo Europeo</a>, <a href="https://www.politico.eu/article/eu-kaja-kallas-fights-to-find-a-role-in-ukraine-peace-talks/">Politico</a>, <a href="https://www.politico.eu/article/eu-deal-on-ukraine-talks-overshadows-ai-focused-summit-in-dublin/">Politico</a>, <a href="https://www.irishtimes.com/world/europe/2026/05/29/its-like-trying-to-grasp-a-wet-bar-of-soap-eu-prepares-for-potential-talks-with-slippery-putin/">Irish Times</a>, <a href="https://www.kyivpost.com/post/76888">Kyiv Post</a>, <a href="https://euobserver.com/248871/eu-leaders-hand-ukraine-peace-talks-to-france-germany-uk-italy-poland-plus-brussels-instead-of-a-single-envoy/">EUobserver</a>, <a href="https://www.youtube.com/watch?v=PcFUnybWftM">Lennart Meri Conference</a>, <a href="https://x.com/i/status/2123144301719007421">@ThierryBreton</a>, <a href="https://x.com/i/status/2123133098627928241">@ZelenskyyUa</a>, <a href="https://www.dw.com/en/ukraines-allies-gather-in-berlin-for-coalition-of-the-willing-summit/live-79986520">DW</a>, <a href="https://www.bundeskanzler.de/bk-de/aktuelles/treffen-der-koalition-der-willigen-2460904">Cancillería federal alemana</a></p>
+<hr>
+<h2 id="s3">Actualización: Trump en Fox: «Vendemos equipo a la Unión Europea… ganamos mucho dinero»</h2>
+<p>Preguntado por la guerra de Ucrania en una entrevista con Fox News en Shenzhen, Trump dijo: «Vendemos equipo a la Unión Europea. Hacen con él lo que quieren. Supongo que en su mayor parte se lo dan a Ucrania, pero nosotros lo vendemos… Se podría decir que cobramos el precio completo. No hacemos descuentos. Así que se podría decir que ganamos mucho dinero con eso» (citado por TASS, agencia estatal rusa; también The Mirror y el directo de The Guardian). La frase llegó horas después de que Elbridge Colby, del Pentágono, abandonara una reunión del Grupo de Contacto para la Defensa de Ucrania en la OTAN tras criticar los ataques ucranianos en profundidad contra Rusia (The Independent, The Hill; primero lo publicó The Telegraph). El ministro de Exteriores portugués, Paulo Rangel, dijo en Kiev a su homólogo ucraniano que Lisboa no puede entregar más F-16, que necesita para su propio espacio aéreo y marítimo, aunque está abierta a formar pilotos ucranianos (Ukrinform, Kyiv Post).</p>
+<p><strong>Por qué importa a Europa.</strong> El propio presidente de EE. UU. dice que el dinero europeo para la guerra de Ucrania acaba como ingreso a precio completo para su industria. CEAFE defiende una paz paneuropea con Ucrania, Rusia y la UE en la mesa; cada euro gastado en armas estadounidenses son también empleo e I+D que no se quedan en Europa.</p>
+<p><strong>Qué vigilar.</strong> Reacciones europeas a la frase de Trump hoy en Berlín; la postura de la Comisión sobre la preferencia europea en el instrumento de 45 000 millones de euros.</p>
+<p><strong>Fuentes:</strong> <a href="https://t.me/tassagency_en/99130">TASS</a>, <a href="https://www.themirror.com/news/us-news/donald-trump-declares-we-make-2115479">The Mirror</a>, <a href="https://www.theguardian.com/us-news/live/2026/nov/18/donald-trump-mary-peltola-alaska-hakeem-jeffries-democrats-republicans-congress-house-senate-midterms-latest-news-updates">The Guardian</a>, <a href="https://www.independent.co.uk/news/world/europe/pentagon-elbridge-colby-walks-out-nato-talks-ukraine-b3087554.html">The Independent</a>, <a href="https://thehill.com/policy/international/6229395-colby-criticizes-ukraine-long-range-strikes/">The Hill</a>, <a href="https://x.com/i/status/2123169448593097071">Clash Report</a>, <a href="https://www.ukrinform.net/rubric-polytics/4186065-portugal-unable-to-provide-ukraine-with-additional-f16s-but-open-to-discussing-pilot-training-foreign-minister.html">Ukrinform</a>, <a href="https://www.kyivpost.com/post/90515">Kyiv Post</a>, <a href="https://x.com/i/status/2123152336130658716">@MFA_Ukraine</a></p>
+<hr>
+<h2 id="s4">Hegseth en Caracas: EE. UU. y Venezuela restablecen la cooperación militar suspendida desde 2005</h2>
+<p><strong>El secretario de Guerra de EE. UU., Pete Hegseth, hizo una visita sin anunciar a Caracas el miércoles y firmó un acuerdo de cooperación técnico-militar con el ministro de Defensa venezolano, Gustavo González López, en presencia de la presidenta interina Delcy Rodríguez (Radio Nacional de Venezuela; AP).</strong></p>
+<p>El acuerdo abarca entrenamiento conjunto, intercambio de inteligencia, equipamiento, acceso a tecnología y la lucha contra las redes de narcotráfico; Hegseth dijo que Venezuela «ha pasado de ser nuestra amenaza regional más agresiva a un socio de seguridad dócil» (AP). También afirmó que el acuerdo petrolero con Venezuela «hace del estrecho de Ormuz un factor irrelevante para el hemisferio occidental». Después viajó a Colombia y respaldó a su presidente frente a una información de The New York Times («Totalmente falso»).</p>
+<p><strong>Por qué importa a Europa.</strong> Es la visita estadounidense de más alto nivel desde que fuerzas de EE. UU. capturaron a Nicolás Maduro el 3 de enero. Washington basa su seguridad en el control del hemisferio occidental, energía incluida, mientras pide a Europa que compre sus armas y su energía. Europa no tiene una presencia comparable en un país cuyas reservas de petróleo importan para su propio suministro.</p>
+<p><strong>Qué vigilar.</strong> Publicación de los términos del acuerdo; etapa colombiana del viaje.</p>
+<p><strong>Fuentes:</strong> <a href="https://apnews.com/article/hegseth-venezuela-maduro-trump-e02dd6173e575c644a37dd417d84296d">AP</a>, <a href="https://rnv.gob.ve/venezuela-y-ee-uu-acuerdo-cooperacion-tecnico-militar/">Radio Nacional de Venezuela</a>, <a href="https://www.upi.com/Top_News/World-News/2026/11/18/latam-venezuela-us-military-cooperation/5731795032282/">UPI</a>, <a href="https://www.afp.com/en/hegseth-makes-surprise-trip-venezuela-inks-defense-pact">AFP</a>, <a href="https://x.com/i/status/2123171948872040559">@DeptofWar</a>, <a href="https://x.com/i/status/2123238686510776325">@PeteHegseth</a></p>
+<hr>
+<h2 id="s5">La UE aplaza dos años las normas sobre metano en las importaciones de petróleo, gas y carbón</h2>
+<p><strong>El Consejo y el Parlamento Europeo alcanzaron de madrugada un acuerdo provisional para aplazar dos años las obligaciones de seguimiento, notificación y verificación de metano para los importadores de crudo, gas natural y carbón, del 1 de enero de 2027 al 1 de enero de 2029; la notificación de la intensidad de metano pasa del 5 de agosto de 2028 al 5 de agosto de 2030 (Consejo).</strong></p>
+<p>La Comisión había propuesto un año; el aplazamiento fue mayor tras la presión de Gobiernos como el francés y de Estados Unidos, según Reuters (vía ETLegalWorld). La Comisión revisará la aplicación antes del 1 de enero de 2028.</p>
+<p><strong>Por qué importa a Europa.</strong> El aplazamiento se justifica por las perturbaciones de la guerra de EE. UU. e Israel con Irán. Suaviza normas que pesaban sobre los exportadores de GNL estadounidenses cuando la UE compra cada vez más energía a EE. UU.: un proveedor ha sustituido a otro.</p>
+<p><strong>Qué vigilar.</strong> Refrendo formal del Consejo y el Parlamento.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/methane-regulation-eu-agrees-targeted-amendment-to-safeguard-security-of-supply/">Consejo de la UE</a>, <a href="https://x.com/i/status/2123247536366592162">@EUCouncilPress</a>, <a href="https://legal.economictimes.indiatimes.com/news/international/eu-parliament-agree-to-delay-methane-regulation-by-two-years/135976321">legal.economictimes.indiatimes.com</a>, <a href="https://www.europarl.europa.eu/news/en/press-room/20261021IPR48321/methane-rules-parliament-backs-longer-delay-for-energy-importers-and-producers">Parlamento Europeo</a></p>
+<hr>
+<h2 id="s6">Amigos de la Cohesión: 17 Estados miembros de la UE rechazan recortes en sus asignaciones del próximo presupuesto</h2>
+<p><strong>Los ministros de Asuntos Europeos de los 17 Estados miembros de la UE «Amigos de la Cohesión» adoptaron una declaración conjunta sobre el Marco Financiero Plurianual 2028-2034 antes del Consejo de Asuntos Generales, en la que rechazan cualquier reducción de las asignaciones nacionales de los Planes Nacionales y Regionales de Asociación en la próxima «caja de negociación» (Ministerio de Asuntos Exteriores; EFE vía Infobae).</strong></p>
+<p>España acogió la reunión.</p>
+<p><strong>Por qué importa a Europa.</strong> La pelea por el próximo presupuesto decide cuánto podrá pagar la Unión por la defensa común y la política industrial. Los países de la cohesión defienden su parte, mientras la Unión necesita también fondos comunes para la defensa (SAFE, FED, EDIP).</p>
+<p><strong>Qué vigilar.</strong> Próxima «caja de negociación» de la presidencia del Consejo.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.exteriores.gob.es/es/Comunicacion/Comunicados/Paginas/2026_COMUNICADOS/Declaracion-conjunta-sobre-el-Marco-Financiero-Plurianual-2028-2034.aspx">Ministerio de Asuntos Exteriores</a>, <a href="https://x.com/i/status/2123195661294391772">@MAECgob</a>, <a href="https://www.infobae.com/america/agencias/2026/11/18/paises-amigos-de-la-cohesion-refirman-su-oposicion-a-recortes-en-financiacion-de-la-ue/">infobae.com</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

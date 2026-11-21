@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Thursday, 19 November 2026 · 07:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Thursday, 19 November 2026 · 07:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> 18 November 2026 about 19:00 to 19 November about 06:00 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<h2 id="s1">Update: Berlin drops its opposition to UniCredit’s takeover of Commerzbank, opening the way to one of the largest cross-border bank mergers in the euro area</h2>
+<p><strong>Germany and UniCredit have settled the main sticking points in the Italian bank’s two-year bid for Commerzbank, according to a Reuters exclusive published at 04:25 Madrid.</strong></p>
+<p>In a letter dated 18 November, UniCredit chief executive Andrea Orcel told Finance Minister Lars Klingbeil he was “prepared to commit” to binding principles: Commerzbank stays a listed company headquartered in Frankfurt, major decisions are taken in Germany, its business with the Mittelstand is expanded and it keeps adequate capital. UniCredit will propose two independent supervisory-board members and put German nationals on its own board; in return Berlin gives up its demand to name two supervisory-board members itself. Klingbeil told Reuters that Germany “supports a swift process and an orderly transition of control”. The letter does not rule out compulsory redundancies, and Klingbeil made no commitment to sell the state’s 13.3% stake (n-tv; Tagesschau).</p>
+<p><strong>Why it matters for Europe.</strong> This is the opposite of the deals CEAFE usually flags: a European buyer taking control of a European strategic company, with the European Commission itself arguing on 16 November, when it cleared the deal unconditionally, that cross-border bank consolidation “can help overcome national economic fragmentation, unlock economies of scale, and strengthen the Single Market”. A combined group with more than €1.3 trillion in assets is the kind of scale Europe needs to finance its own industry instead of relying on US capital. Berlin spent two years resisting a fellow EU member state’s bank in the name of national control. The EU as a whole can bear comparison; each capital on its own cannot. That is the difference that matters.</p>
+<p><strong>What to watch.</strong> Whether Berlin sells its 13.3% stake; Commerzbank works-council reaction to possible job cuts; the BaFin/ECB steps for control above 50%.</p>
+<p><strong>Sources:</strong> <a href="https://www.investing.com/news/stock-market-news/exclusiveunicredit-and-germany-reach-broad-agreement-on-commerzbank-takeover-5037328">Reuters via Investing.com</a>, <a href="https://www.n-tv.de/wirtschaft/Berlin-macht-Weg-fuer-Commerzbank-Uebernahme-frei-id31550967.html">n-tv</a>, <a href="https://www.tagesschau.de/wirtschaft/unternehmen/unicredit-bundesregierung-100.html">Tagesschau</a>, <a href="https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2440/IP_26_2440_EN.pdf">European Commission</a>, <a href="https://x.com/i/status/2123256218101633340">@Reuters</a>, <a href="https://x.com/i/status/2123217257769615499">@Reuters</a></p>
+<hr>
+<h2 id="s2">Trump says Nvidia’s Blackwell chips could be sold to China “in two to three years” and plays down the Huang affair before his talks with Xi</h2>
+<p><strong>On the eve of his bilateral talks with Xi Jinping in Shenzhen, Donald Trump said he had spoken with Xi “the whole evening” about artificial intelligence at dinner, and that the situation of former Nvidia chief executive Jensen Huang came up only “briefly” (Reuters; India Today).</strong></p>
+<p>He called Huang’s departure a “tragedy”, described the woman at the centre of the scandal as a “businesswoman” and said he had not heard she was a spy (Newsquawk). He also said the United States could allow sales of Nvidia’s Blackwell chips to China in two to three years, once they are no longer among the most advanced on the market (Bloomberg). Current policy still bars Blackwell sales to China, and on 16 November the Commerce Department’s Bureau of Industry and Security (BIS) tightened rules on remote access to such chips through data centres in third countries (BIS). Inside Nvidia, interim chief executive Colette Kress told staff at a town hall that she remained confident in the company, while Bloomberg reports that the board’s headhunter, Heidrick &amp; Struggles, has approached Arm chief executive Rene Haas about the job. Alibaba, Bloomberg adds, is under pressure to show it can deliver its AI plans despite new limits on its access to data-centre chips.</p>
+<p><strong>China’s response:</strong> no new statement from MOFCOM or the foreign ministry on Trump’s remarks by 05:45 Madrid; MOFCOM’s latest export-control remarks predate the window. The foreign ministry’s regular press conference today (about 08:00 Madrid) is the next point to watch.</p>
+<p><strong>Why it matters for Europe.</strong> The rules that decide which AI chips Europe, China or anyone else may use are set in Washington and can be relaxed or tightened according to a US president’s bargaining with Beijing. The BIS remote-access rule of 16 November also reaches data centres in the EU. Europe applies these controls through ASML and its own companies, but has no voice in when they are traded away. Technological dependence is not abstract: it shows up in the number of companies, in spending and in who writes the rules.</p>
+<p><strong>What to watch.</strong> The Trump–Xi bilateral in Shenzhen today; any MOFCOM/MFA answer on Blackwell; Nvidia CEO appointment.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2123237385336930554">@Reuters</a>, <a href="https://x.com/i/status/2123253305656697056">@ReutersTech</a>, <a href="https://x.com/i/status/2123271333618303315">@ReutersTech</a>, <a href="https://x.com/i/status/2123275113562792260">@ReutersTech</a>, <a href="https://x.com/i/status/2123207162197397975">@ReutersTech</a>, <a href="https://x.com/i/status/2123170678849278096">@ReutersTech</a>, <a href="https://x.com/i/status/2123262527442223190">@ReutersTech</a>, <a href="https://www.indiatoday.in/world/story/donald-trump-xi-jinping-ai-talks-jensen-huang-mentioned-only-briefly-us-president-calls-nvidia-ceos-exit-tragedy-3042033-2026-11-19">India Today</a>, <a href="https://www.newsquawk.com/headlines/us-president-trump-says-he-discussed-chips-and-ai-with-chinese-president-xi-but-did-not-talk-to-xi-about-jensen-huang-adds-some-people-cannot-be-replaced-and-we-have-to-take-care-of-people-like-jensen-and-elon">Newsquawk</a>, <a href="https://finance.biggo.com/news/2133fd59-24de-4b0c-af7c-f928d08b74bb">BigGo Finance</a>, <a href="https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology">BIS</a></p>
+<hr>
+<h2 id="s3">Anthropic prices the largest IPO in history: $81.3 billion in one day, about what all European start-ups raise in a year</h2>
+<p><strong>Anthropic, the US developer of the Claude models, priced its initial public offering at $83 a share late on 18 November, above the marketed range, selling 980 million Class A shares; trading on the Nasdaq Global Select Market under the symbol “ANT” starts today and the offering closes on 20 November (Anthropic).</strong></p>
+<p>AP and NPR put the proceeds at about $81.3 billion and the valuation at about $1.5 trillion. Bloomberg reports that, with a $26 billion private placement, Anthropic and its co-founders raised $107.3 billion, and that the IPO tops the $75 billion raised by SpaceX. South Korea’s SK Telecom, an early investor, stands to book a multibillion-dollar gain (Bloomberg; Yonhap Infomax).</p>
+<p><strong>Why it matters for Europe.</strong> Atomico’s State of European Tech, covered in the 18 November 07:30 edition, expected European start-ups to raise about $81 billion in the whole of 2026, against roughly $450 billion for US start-ups. A single US AI company has now raised that amount on one exchange in one day. Europe’s fragmented capital markets cannot fund champions on this scale, so its best AI firms either stay small or end up in US hands. We see once again how a power with global reach operates at a scale that no European state can match on its own.</p>
+<p><strong>What to watch.</strong> First-day trading today; Nvidia and AI-valuation risk flagged by the ECB’s Financial Stability Review.</p>
+<p><strong>Sources:</strong> <a href="https://www.anthropic.com/news/anthropic-prices-initial-public-offering">Anthropic</a>, <a href="https://apnews.com/article/anthropic-ipo-pricing-70b660ddf900d90bbf484ecdf1fb441c">AP</a>, <a href="https://www.npr.org/2026/11/18/nx-s1-6046212/anthropic-record-ipo-price">NPR</a>, <a href="https://en.infomaxai.com/news/articleView.html?idxno=149062">Yonhap Infomax</a>, <a href="https://x.com/i/status/2123196808675405860">@AnthropicAI</a>, <a href="https://x.com/i/status/2123245612757840382">@business</a>, <a href="https://x.com/i/status/2123272610565746758">@business</a>, <a href="https://x.com/i/status/2123185285487796681">@AP</a>, <a href="https://x.com/i/status/2123235012938027302">@Reuters</a></p>
+<hr>
+<h2 id="s4">Orlen reopens LNG talks with QatarEnergy days after cancelling a contract, while it buys about 90% of its LNG from the United States</h2>
+<p><strong>Poland’s Orlen and QatarEnergy have begun talks on a new long-term LNG supply deal, three people told Reuters on 18 November, days after Orlen terminated an oil-linked contract signed in 2009.</strong></p>
+<p>The talks are at an early stage; one source said a volume of about 1 million tonnes a year was discussed, similar to the cancelled contract, and that US LNG is among the options. Orlen terminated the contract on 10 November, citing ongoing force majeure that prevented deliveries; it was worth about €570 million in 2026 and ran to 2034, and a second Qatari contract of up to 1 million tonnes a year remains in force (Orlen). Reuters reports that Orlen currently buys about 90% of its LNG from the United States and wants Qatari gas to diversify its suppliers. Separately, Bain &amp; Company now expects the global LNG glut to arrive around 2030 rather than late 2028, because the Middle East war has disrupted Gulf exports and delayed projects. EU Energy Commissioner Dan Jørgensen told Euronews that Europe must “prepare for a difficult winter”.</p>
+<p><strong>Why it matters for Europe.</strong> A day after the P-TEC deals in Warsaw, the numbers show the problem: the company Washington presents as the gateway for US LNG into Central Europe already depends on the United States for about nine-tenths of its LNG. Replacing Russia with a single new supplier is not diversification. Figures that illustrate, once again, why European sovereignty is only credible if it is exercised together, including joint gas purchasing.</p>
+<p><strong>What to watch.</strong> IEA World Energy Outlook 2026, launched today at 11:00 CET.</p>
+<p><strong>Sources:</strong> <a href="https://live.euronext.com/en/financial-news/exclusive-orlen-qatarenergy-talks-new-lng-deal-days-after-contract-termination">Reuters via Euronext</a>, <a href="https://www.orlen.pl/en/investor-relations/reports-and-publications/regulatory-announcements/2026/03/Regulatory-announcement-no-39-2026">Orlen</a>, <a href="https://wbj.pl/business/orlen-and-qatarenergy-revisit-lng-supply-negotiations-1034136">WBJ</a>, <a href="https://x.com/i/status/2123176969747439731">@Reuters</a>, <a href="https://x.com/i/status/2123254990319874212">@Reuters</a>, <a href="https://x.com/i/status/2123116576131915884">@Reuters</a>, <a href="https://x.com/i/status/2123128536873500676">@Reuters</a></p>
+<hr>
+<h2 id="s5">The EU authorises signature of its trade and investment agreements with Indonesia, Southeast Asia’s largest economy</h2>
+<p><strong>The Council of the EU authorised on 18 November the signature and provisional application of the Comprehensive Economic Partnership Agreement (CEPA) and the Investment Protection Agreement (IPA) with Indonesia.</strong></p>
+<p>Once fully implemented, up to 98.5% of tariff lines will be liberalised and 96% of Indonesian tariffs will disappear within five years, saving about €600 million a year in customs duties (Council of the EU). Signature is expected on 21 November (Agence Europe). The agreements still need the European Parliament’s consent before formal conclusion. The rush is driven by Indonesia’s graduation from the EU’s generalised scheme of preferences on 1 January 2027.</p>
+<p><strong>Why it matters for Europe.</strong> This is trade policy done as a bloc: the EU negotiates as one market of about 450 million people, which no EU member state could do alone with a country of more than 280 million. Diversifying towards the Indo-Pacific on European terms, rather than within US-led blocs, widens Europe’s options. This is the kind of decision that should guide European policy: not the narrative, but measurable weight.</p>
+<p><strong>What to watch.</strong> Signature on 21 November; European Parliament consent vote.</p>
+<p><strong>Sources:</strong> <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/11/18/eu-indonesia-council-greenlights-signature-of-landmark-trade-and-investment-agreements/">Council of the EU</a>, <a href="https://agenceurope.eu/en/bulletin/article/13984/22/eu-council-gives-green-light-to-signing-free-trade-and-investment-agreements">Agence Europe</a>, <a href="https://www.eunews.it/en/2026/11/18/eu-council-gives-provisional-approval-to-economic-partnership-agreements-with-indonesia/">Eunews</a>, <a href="https://x.com/i/status/2123185783427256637">@Reuters</a></p>
+<hr>
+<h2 id="s6">Canada widens its tariff truce with China while ties with Washington stay strained</h2>
+<p><strong>Canada and China agreed in Shenzhen to expand mutual tariff relief: China will remove its 25% tariffs on most frozen pork cuts and several seafood products from 1 January 2027 to 31 December 2028, and Canada will extend exemptions for certain Chinese steel and aluminium products to the end of 2028 and add 32 more tariff items to its remission list (CBC; Euronews).</strong></p>
+<p>Prime Minister Mark Carney said the US midterm elections had not changed the trade outlook and that only US policy decisions would shift Canada’s view of its neighbour (Bloomberg).</p>
+<p><strong>Why it matters for Europe.</strong> A close US ally is negotiating its own terms with Beijing while under US tariff pressure. Middle powers are hedging; Europe should do the same as a bloc.</p>
+<p><strong>What to watch.</strong> Whether the EU revisits its own frozen agenda with China (CAI).</p>
+<p><strong>Sources:</strong> <a href="https://www.euronews.com/2026/11/18/canada-and-china-expand-tariff-relief-on-pork-seafood-and-metals-amid-us-trade-tensions">Euronews</a>, <a href="https://www.cbc.ca/news/politics/china-canada-tariffs-deal-extended-expanded-trade-pork-seafood-9.7424993">CBC</a>, <a href="https://www.pm.gc.ca/en/news/news-releases/2026/11/17/prime-minister-carney-advances-canadas-strategic-partnership-china">Prime Minister of Canada</a>, <a href="https://x.com/i/status/2123112076457509049">@euronews</a>, <a href="https://x.com/i/status/2123163135804645664">@euronews</a>, <a href="https://x.com/i/status/2123127749959463223">@MarkJCarney</a></p>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

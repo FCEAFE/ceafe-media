@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTS — Tuesday, 17 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+@page {
+  /* Extra bottom margin so body text clears the stamped steel bar (~21 mm from the edge). */
+  margin: 12mm 14mm 24mm 14mm;
+}
+@media print {
+  .steel-footer { display: none !important; }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTS</h1>
+      <p class="list-date">Tuesday, 17 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> new items since the 13:30 edition, up to about 18:55 on 17 November 2026, Europe/Madrid.</li>
+<li><strong>Compiled from:</strong> the CEAFE Conflicts section brief, the shared logs and @F_CEAFE posts.</li>
+</ul>
+<blockquote>
+<p><strong>EARLY WARNING</strong></p>
+<p><strong>Observed / officially reported</strong>
+- <strong>Moldova:</strong> Moldova&rsquo;s Defence Minister said 7 drones violated Moldovan airspace between 15:45 and 18:10 local time on 17 November (via @InsiderGeo). Authorities closed the national airspace and sent bomb-disposal teams after police logged three emergency calls between 17:09 and 17:35 reporting explosions in several districts (Chișinău, Orhei, Florești reported) (@FaytuksNetwork). A Gerbera-type decoy drone was filmed over Chișinău (@FaytuksNetwork, video).
+- <strong>Hungary / Ukraine border:</strong> Hungary suspended rail traffic with Ukraine on 17–18 November after a Russian drone struck near Mukachevo station (western Ukraine), about 300 m from a train with a Hungarian crew (@ClashReport).
+- <strong>Western Black Sea:</strong> ItaMilRadar tracked a US Navy P-8A and a French Beechcraft 350ER ALSR “Vador” ISR aircraft over the western Black Sea; the Vador arrived at Constanța on 16 November. An OSINT tally (@Schizointel) counts 18 Russian attacks on ships in Romanian and Bulgarian waters since 21 July 2026, 15 since 5 October and 6 since Friday 13 November (compilation, not an official figure).
+- <strong>Persian Gulf:</strong> Iranian state media (Mehr, Fars via TASS) reported US strikes and several explosions near Qeshm on 17 November; Russia&rsquo;s MFA spokeswoman confirmed “hits” on Qeshm Island and on Bahrain&rsquo;s territory. Iran&rsquo;s Navy says a third “offending” tanker of the day hit a mine east of the Strait of Hormuz; the IRGC Navy says a supertanker and an LPG carrier caught fire after hitting mines (IRNA). The UAE-owned LPG carrier TARA GAS was reported out of service after being hit (@MenchOsint, video).
+- <strong>Gulf of Aden:</strong> UKMTO: a cargo ship 50 NM southwest of Al Mukalla (Yemen) was approached by a skiff carrying weapons and ladders; the armed security team fired a warning shot and the skiff withdrew (UKMTO, relayed by TASS).
+- <strong>Asia-Pacific:</strong> OSINT tracking shows two Russian Tu-95MS bombers and an Il-76TD landing in Vietnam on 17 November, apparently the aircraft that crossed Japanese, Korean and Taiwanese air zones (@MenchOsint). The first permanently assigned USAF F-15EX arrived at Kadena (Japan) on 15 November (@defpostmedia).</p>
+<p><strong>Unverified OSINT leads / claims</strong>
+- IRGC claims it shot down an 18th US MQ-1 over Qeshm, and Iran&rsquo;s Army claims it destroyed a US “LUCAS” drone over Hormuz (IRNA; no US comment found).
+- IRGC says it struck a US radar and fired Shahed-238 jet drones at Sheikh Isa Air Base in Bahrain (IRGC claims via OSINT accounts).
+- Five missiles reportedly launched from Iran&rsquo;s Khuzestan province (@FaytuksNetwork citing “Shin”); unconfirmed.
+- A claim that three Tu-95MS and three Il-78M flew an 11-hour sortie over the Sea of Japan (@avivector via @MenchOsint); not confirmed by Japan&rsquo;s MoD at time of writing.
+- A post says the head of the US Navy cited Hormuz tanker insurance rising from $54,000 to $64 million per transit (@IranObserver0); the primary remarks were not found.</p>
+<p><strong>Interpretation:</strong> The Moldovan incursions and the Mukachevo strike show Russia&rsquo;s drone campaign spilling onto NATO and EU-candidate borders on the same day Russia warned France that its troops in Ukraine are “legitimate targets”. In the Gulf, US strikes on Qeshm and Iranian mine and drone attacks point to escalation rather than a pause before the APEC meetings. These are assessments; many military aircraft fly without transponders, so absence of tracking data proves nothing.</p>
+<p><strong>Counter-space:</strong> No new rendezvous or proximity operation was found in this window; the Kosmos 2612 / ICEYE watch continues. Ukrainian officials report a seventh day of speed restrictions on Starshield terminals in occupied territories (@DenysSienik via @shashj). NATO started its Starlift launch project (topic 8).</p>
+</blockquote>
+<h2 id="s1">Update: Kerch bridge road span collapses; Zelensky says it ended a seven-phase operation</h2>
+<p><strong>New since the 07:30 edition: images at dawn showed a whole section of the road part of the Crimean (Kerch) Bridge had collapsed.</strong></p>
+<p>The Kyiv Independent reports it was hit by a Ukrainian Flamingo cruise missile overnight on 17 November, the final part of what President Zelensky called a seven-phase operation over “several weeks” using Flamingo and Neptune missiles and Ukrainian long-range drones. OSINT mapping estimates the fallen roadway at about 270 m. Russia&rsquo;s Transport Ministry suspended road and rail traffic; by midday rail traffic had resumed on one track and a passenger-only ferry was running. Russia answered with a large overnight missile and drone attack: Russia&rsquo;s MoD claims it hit drone plants in Kyiv (Techno-Links, Ukrplastic), the Yuzhny and Severny road bridges in Kyiv and the Motor Sich and Ivchenko-Progress engine plants in Zaporizhzhia (Russian state source). OSINT accounts counted about 30 missiles and about 300 Geran-2 drones, many aimed at western Ukraine. Nuclear safety regulators from 38 countries warned the risk of a nuclear accident in Ukraine is rising this winter because of attacks on the power grid (Reuters).</p>
+<p><strong>Why it matters for Europe.</strong> Ukraine destroyed Russia&rsquo;s most protected target with Ukrainian-made missiles, without needing anyone&rsquo;s permission to use them. ItaMilRadar notes the cut also blocks Russian naval movement between the Caspian and the Black Sea. Europe should keep funding Ukrainian production of such weapons.</p>
+<p><strong>What to watch.</strong> Russian repair timeline for the road span; whether Kyiv&rsquo;s bridges reopen (partial traffic resumed on the Southern Bridge); 7:30 edition story linked: “Update: Kerch bridge hit again; Salavat petrochemical fire”.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122636567361523896">X post 2122636567361523896</a></li>
+<li><a href="https://x.com/i/status/2122745069379657902">Kyiv Independent</a></li>
+<li><a href="https://x.com/i/status/2122560219423310297">@FaytuksNetwork</a></li>
+<li><a href="https://x.com/i/status/2122667802058199311">@AMK_Mapping_ via @GeromanAT</a></li>
+<li><a href="https://x.com/i/status/2122670195009335570">@GeromanAT</a></li>
+<li><a href="https://x.com/i/status/2122653101156917513">@ItaMilRadar</a></li>
+<li><a href="https://x.com/i/status/2122564945304858991">X post 2122564945304858991</a></li>
+<li><a href="https://x.com/i/status/2122595131182489836">OSINT counts via @GeromanAT</a></li>
+<li><a href="https://t.me/s/mod_russia_en">posts 30644, 30646; Russian MoD, state source</a></li>
+<li><a href="https://x.com/i/status/2122635859958632823">Reuters</a></li>
+</ul>
+<hr>
+<h2 id="s2">France&rsquo;s secret “Volia” military mission in Ukraine; Moscow calls French troops “legitimate targets”</h2>
+<p><strong>Radio France Internationale reported that French troops have been working in Ukraine in non-combat roles since at least summer 2026, maintaining French equipment (Caesar howitzers, Mirage 2000 jets, precision missiles) and training Ukrainian soldiers.</strong></p>
+<p>The mission, called Volia, is led by a French general and deployed under the cover of the Gerfaut training mission in Poland; France Télévisions says several dozen soldiers are involved and that parliament has not been informed (Defense News, citing RFI). Le Monde was told by a source that small French contingents rotate in Ukraine for training and repairs. Russia&rsquo;s Foreign Ministry said it was aware of French troops in Ukraine and called it “direct participation” in the war (Euronews). The Russian Embassy in France said France had “de facto become embroiled” in the conflict and that foreign contingents would be “legitimate targets” (Russian MFA Telegram, state source). Separately, troops from an 11-nation force led by the UK and France tested drone defences in Poland to prepare to support Ukraine after a ceasefire (Reuters).</p>
+<p><strong>Why it matters for Europe.</strong> The French mission shows how European weapons need European people on the ground to keep them working. It also tests whether Europe will stand together behind a member state threatened by Moscow. A European framework would make such missions less exposed than one country acting alone.</p>
+<p><strong>What to watch.</strong> Paris&rsquo;s official response; French parliamentary questions; any Russian strike on sites linked to foreign personnel.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://www.defensenews.com/global/europe/2026/11/17/french-troops-operating-in-non-combat-roles-in-ukraine-broadcaster-rfi-reports/">defensenews.com</a></li>
+<li><a href="https://x.com/i/status/2122728513283457254">@FaytuksNetwork, Le Monde</a></li>
+<li><a href="https://x.com/i/status/2122694932750033140">Euronews</a></li>
+<li><a href="https://t.me/s/MFARussia">posts 33415, 33416; Russian MFA, state source</a></li>
+<li><a href="https://x.com/i/status/2122569169975796181">Reuters</a></li>
+</ul>
+<hr>
+<h2 id="s3">Russian drones over Moldova and Hungary&rsquo;s rail halt: the war spills onto Europe&rsquo;s borders</h2>
+<p><strong>Moldova closed its airspace on 17 November after its Defence Minister said 7 drones entered between 15:45 and 18:10 local time; police received calls about explosions in several districts and bomb-disposal teams were sent out.</strong></p>
+<p>A Gerbera-type drone was filmed over Chișinău. Earlier, Hungary suspended rail traffic with Ukraine for 17–18 November after a Russian drone struck near Mukachevo station, about 300 m from a train with a Hungarian crew. In the Black Sea, an OSINT tally counts six Russian attacks on ships in Romanian and Bulgarian waters since 13 November, as NATO ISR flights (a US P-8A and a French ALSR Vador out of Constanța) patrol the area.</p>
+<p><strong>Why it matters for Europe.</strong> Russian drones are now hitting or crossing the borders of an EU candidate (Moldova) and touching EU members&rsquo; transport (Hungary) and waters (Romania, Bulgaria). No single small state can defend its skies alone; a common European air-defence and drone-wall effort is the answer.</p>
+<p><strong>What to watch.</strong> Moldovan statement on the drones&rsquo; origin and debris; Romanian and NATO response at sea.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122749900513485112">@InsiderGeo via @Schizointel</a></li>
+<li><a href="https://x.com/i/status/2122725745713901766">X post 2122725745713901766</a></li>
+<li><a href="https://x.com/i/status/2122710224209608839">@FaytuksNetwork</a></li>
+<li><a href="https://x.com/i/status/2122728197364044157">@InsiderGeo</a></li>
+<li><a href="https://x.com/i/status/2122673795303686636">@ClashReport</a></li>
+<li><a href="https://x.com/i/status/2122749551257805061">@Schizointel; image: chart of Black Sea ship attacks</a></li>
+<li><a href="https://pbs.twimg.com/media/HXWFdsPX0AAe0C2.jpg">@Schizointel; image: chart of Black Sea ship attacks (original)</a></li>
+<li><a href="https://x.com/i/status/2122747723497517070">@ItaMilRadar; image: flight track over the western Black Sea</a></li>
+<li><a href="https://pbs.twimg.com/media/HXWDzOQWoAEHDKU.jpg">@ItaMilRadar; image: flight track over the western Black Sea (original)</a></li>
+</ul>
+<hr>
+<h2 id="s4">Update: US strikes near Qeshm, more Iranian mine hits on tankers, and “dirty bomb” claims</h2>
+<p><strong>New since 07:30: Iranian state agencies (Mehr, Fars) reported US strikes and explosions near Qeshm on 17 November, and Russia&rsquo;s MFA confirmed “hits” on Qeshm and Bahrain, calling on “above all the US” to stop (Russian state source).</strong></p>
+<p>Iran&rsquo;s Navy said a third tanker of the day hit a mine east of Hormuz; the IRGC Navy said a supertanker and an LPG carrier caught fire after hitting mines (IRNA). The IRGC says it shot down an 18th US MQ-1, and Iran&rsquo;s Army says it destroyed a US LUCAS drone (Iranian claims). The IRGC also warned Bahrain over “hostile actions”. In Washington, Trump said the US is looking into a reported Iranian “dirty bomb” threat against the capital (CBS via @FaytuksNetwork) and warned Iran would “pay a price”. Foreign Minister Araghchi called the chemical-weapon and “missile bases under dams” reports “RUBBISH”, and Speaker Ghalibaf called them war propaganda (IRNA). Czech Prime Minister Babiš said Europe must cooperate closely with Israel against Iran&rsquo;s missiles (Euronews).</p>
+<p><strong>Why it matters for Europe.</strong> Every day of mine and drone attacks keeps energy prices and shipping insurance high for Europe, which has no naval force of its own able to secure Hormuz. Europe pays the costs of a US–Iran war it did not decide.</p>
+<p><strong>What to watch.</strong> CENTCOM confirmation of the Qeshm strikes; UKMTO notices on the new tanker hits. 07:30 story linked: “Update: Hormuz tanker attacks”.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122719037322866901">@FaytuksNetwork, Mehr; image: smoke over Qeshm</a></li>
+<li><a href="https://pbs.twimg.com/media/HXVpkaVWIAAIklE.jpg">@FaytuksNetwork, Mehr; image: smoke over Qeshm (original)</a></li>
+<li><a href="https://x.com/i/status/2122683383914369368">@FaytuksNetwork</a></li>
+<li><a href="https://t.me/s/tassagency_en">post 98951); (post 33414) — Russian state sources (1)</a></li>
+<li><a href="https://t.me/s/MFARussia">post 98951); (post 33414) — Russian state sources (2)</a></li>
+<li><a href="https://t.me/s/Irna_en">posts 42351, 42355, 42360, 42361, 42362, 42364) — Iranian state agenc</a></li>
+<li><a href="https://x.com/i/status/2122633342780936694">Al Jazeera</a></li>
+<li><a href="https://x.com/i/status/2122629035427872971">@ClashReport</a></li>
+<li><a href="https://x.com/i/status/2122727105628688395">@MenchOsint, TARA GAS</a></li>
+<li><a href="https://x.com/i/status/2122657294764917046">@FaytuksNetwork</a></li>
+<li><a href="https://x.com/i/status/2122720826000642447">@ClashReport, Araghchi</a></li>
+<li><a href="https://x.com/i/status/2122702972727546014">Euronews</a></li>
+</ul>
+<hr>
+<h2 id="s5">Update: Yemen — Houthis close in on Aden and claim drone strikes on Saudi pipeline</h2>
+<p><strong>France 24 reports, citing military and government sources, that Houthi forces are getting closer to Aden, seat of the internationally recognised government, which has stepped up security in the port city.</strong></p>
+<p>Saudi aircraft carried out four strikes on northern Sanaa (@ILRedAlert via @GeromanAT). Houthi military spokesman Yahya Saree claimed drone attacks on Pumping Stations No. 8 and No. 9 of Saudi Arabia&rsquo;s East-West pipeline west of Riyadh (via Tasnim, Iranian state agency); Saudi Arabia has not confirmed. Off Al Mukalla, UKMTO reported an attempted boarding of a cargo ship by an armed skiff, repelled by warning shots.</p>
+<p><strong>Why it matters for Europe.</strong> A Houthi push on Aden and attacks on Saudi oil infrastructure threaten the Bab al-Mandab and Red Sea route to Suez, which is vital for European trade, while EU naval mission Aspides is small.</p>
+<p><strong>What to watch.</strong> Front line north of Aden; Saudi Aramco statement on the pipeline.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://x.com/i/status/2122631086211842508">France 24</a></li>
+<li><a href="https://x.com/i/status/2122647657722073415">@ILRedAlert via @GeromanAT</a></li>
+<li><a href="https://t.me/s/Tasnimnews_en">post 47792; Iranian state agency relaying Houthi claim</a></li>
+<li><a href="https://t.me/s/tassagency_en">post 98941, relaying UKMTO</a></li>
+</ul>
+<hr>
+<h2 id="s6">Update: Putin in Shenzhen as Kremlin says Trump–Putin–Xi meeting is agreed; Stubb wants Europe at the table</h2>
+<p><strong>Putin arrived in Shenzhen for the APEC leaders&rsquo; meeting on 18–19 November (CGTN, Chinese state media).</strong></p>
+<p>Kremlin spokesman Peskov said “everything is agreed” for a Putin–Trump–Xi meeting on the sidelines (TASS, Russian state agency); Trump, now in the Philippines, said he would also like a bilateral meeting with Putin (@MilitarySummary via @GeromanAT). Finnish President Alexander Stubb urged European leaders to talk to Putin directly, calling Europe&rsquo;s reliance on US-led talks “irresponsible” and warning of a Yalta-style division of Europe (Kyiv Independent, @ClashReport). Breaking Defense reports that Russia reportedly wants Finland to leave NATO as part of a Ukraine deal. Trump, speaking about the wars, said “25,000 lives a month are lost” (@ClashReport, @atrupar).</p>
+<p><strong>Why it matters for Europe.</strong> A deal on Europe&rsquo;s security could be shaped by Washington, Moscow and Beijing with no European present. A demand that Finland leave NATO shows what is at stake. Only a united EU voice has the weight to be heard.</p>
+<p><strong>What to watch.</strong> Outcome of the trilateral meeting; talks of 19 November. 07:30 story linked: “Update: Ukraine talks 19 Nov, Kallas rejected, E5+EU”.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://t.me/s/tassagency_en">posts 98950, 98955</a></li>
+<li><a href="https://x.com/i/status/2122749243014385756">CGTN</a></li>
+<li><a href="https://x.com/i/status/2122627257264914560">Kyiv Independent</a></li>
+<li><a href="https://x.com/i/status/2122649155877114353">@ClashReport</a></li>
+<li><a href="https://breakingdefense.com/2026/11/russia-reportedly-wants-finland-to-leave-nato-as-part-of-ukraine-deal-history-geography-explain-why/">breakingdefense.com</a></li>
+<li><a href="https://x.com/i/status/2122644329567309962">@ClashReport</a></li>
+<li><a href="https://x.com/i/status/2122680660527653169">@atrupar</a></li>
+</ul>
+<hr>
+<h2>See also</h2>
+<ul>
+<li>Winter air defence for Ukraine: UK and German packages at the Ukraine Defence Contact Group — see World.</li>
+<li>NATO launches the Starlift satellite-launch project — see Defence Industry.</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Conflicts. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>
