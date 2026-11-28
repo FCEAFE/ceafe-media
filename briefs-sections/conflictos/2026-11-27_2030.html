@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTS — Friday, 27 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTS</h1>
+      <p class="list-date">Friday, 27 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> from about 12:55 to about 18:55 on Friday 27 November, Europe/Madrid: everything new since the 14:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Conflicts section brief, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">Update: US naval blockade of Iran — CENTCOM disables the Pacific Archer and the IRGC proclaims &ldquo;zero hour&rdquo;</h2>
+<p>US forces disabled the propulsion of the bulk carrier <em>Pacific Archer</em> in the Gulf of Oman as it tried to run the blockade, according to Faytuks. The OSINT account @MenchOsint says the ship is Chinese-owned. It also disputes the US Central Command (CENTCOM) claim that the ship came from the Iranian port of Bandar Abbas: it says ship-tracking (AIS) data showed it leaving Sohar, in Oman, seven days ago. Neither claim has been independently checked. The pro-Iranian account @IranObserver0 calls it a strike on an &ldquo;Iranian vessel&rdquo;. It recalls that the last such strike was followed by more than 25 ballistic missiles fired at US bases. Earlier, the same account quoted the commander of the Missile Force of Iran&rsquo;s Islamic Revolutionary Guard Corps (IRGC): &ldquo;Zero hour for breaking the naval blockade has arrived&rdquo;. The quote has not been checked against an original IRGC source.</p>
+<p>Meanwhile, Turkey extended its gas import agreement with Iran to 2032, according to Bloomberg. The previous deal, for 10 billion cubic metres a year, expired in July. In Washington, the Atlantic Council think tank set out options for President Trump. They range from &ldquo;keep the blockade up and wait a month or two&rdquo; to &ldquo;end the war and remove the blockade&rdquo; and &ldquo;finish the job&rdquo;.</p>
+<p><strong>Background (CEAFE archive):</strong> the US blockade of Iran has been in force since April. On 29 April CENTCOM&rsquo;s commander, Admiral Brad Cooper, praised its &ldquo;success&rdquo; (@CENTCOM, <a href="https://x.com/i/status/2049603844049396160">https://x.com/i/status/2049603844049396160</a>). On 7 November CENTCOM disabled another commercial ship in the Gulf of Oman after its crew ignored warnings (@CENTCOM, <a href="https://x.com/i/status/2119349657406980489">https://x.com/i/status/2119349657406980489</a>). The Iran–Turkey gas renewal was first reported on 26 November (@IranObserver0, <a href="https://x.com/i/status/2126080338744967674">https://x.com/i/status/2126080338744967674</a>). The 14:30 edition reported an Iranian claim of fire on a US F-16 near Hormuz.</p>
+<p><strong>Why it matters for Europe:</strong> the blockade now reaches Chinese-owned shipping, so a US–China incident at sea is possible. Iran threatens retaliation against Gulf bases. Europe&rsquo;s energy prices and Hormuz shipping depend on decisions taken in Washington and Tehran, and the options debated are American ones. Turkey, a NATO ally, keeps buying Iranian gas despite US pressure. No single European state carries weight in this crisis; only a common EU position could.</p>
+<p><strong>What to watch:</strong> a CENTCOM statement on the <em>Pacific Archer</em>; any Chinese reaction; IRGC missile launches at US bases; Brent prices.</p>
+<p>Sources: Faytuks <a href="https://x.com/i/status/2126362888927625362">https://x.com/i/status/2126362888927625362</a>, @MenchOsint <a href="https://x.com/i/status/2126360383124328684">https://x.com/i/status/2126360383124328684</a>, @IranObserver0 <a href="https://x.com/i/status/2126361441154269190">https://x.com/i/status/2126361441154269190</a>, <a href="https://x.com/i/status/2126336205973254569">https://x.com/i/status/2126336205973254569</a>, Bloomberg via Faytuks <a href="https://x.com/i/status/2126324958746022220">https://x.com/i/status/2126324958746022220</a>, Atlantic Council <a href="https://x.com/i/status/2126339017377542429">https://x.com/i/status/2126339017377542429</a>, <a href="https://x.com/i/status/2126340955036938739">https://x.com/i/status/2126340955036938739</a>, @CENTCOM <a href="https://x.com/i/status/2049603844049396160">https://x.com/i/status/2049603844049396160</a>, <a href="https://x.com/i/status/2119349657406980489">https://x.com/i/status/2119349657406980489</a>.</p>
+<p><strong>CEAFE:</strong> An invitation to an international table does not change the proportions: size does matter here, and it is measured in capacity.</p>
+<h2 id="s2">Update: Saudi Arabia under pressure — tanker GHAZAL reported hit and Houthi claims of deep raids</h2>
+<p>The Saudi-owned supertanker <em>GHAZAL</em> was reportedly struck by a projectile in the Gulf, according to @MenchOsint. The account says the ship changed its name and flag in August and had its ship-tracking (AIS) signal off for 47 days. There is no official confirmation. Airspace disruption was also reported over Saudi Arabia&rsquo;s Eastern region at 13:47, after the midday disruption over Riyadh and the west. Satellite imagery shows Terminal 4 at Riyadh airport still unrepaired after an impact between 20 and 25 November. A pro-Houthi Arabic account claims that the air arm of the Sanaa forces (the Houthis) carried out raids deep inside Saudi Arabia &ldquo;for the first time in history&rdquo; and returned safely. This is an unverified partisan claim; no Saudi or independent confirmation has been seen.</p>
+<p><strong>Background (CEAFE archive):</strong> on 25 November Houthi-aligned accounts reported a drone strike on the Ras Tanura refinery, Saudi Arabia&rsquo;s largest (@IranObserver0, <a href="https://x.com/i/status/2125570010856751598">https://x.com/i/status/2125570010856751598</a>). In September the EU&rsquo;s High Representative, Kaja Kallas, called Houthi attacks on Saudi Arabia &ldquo;unacceptable&rdquo; (@kajakallas, <a href="https://x.com/i/status/2100981772230033534">https://x.com/i/status/2100981772230033534</a>). The 14:30 edition reported a drone intercepted near Riyadh.</p>
+<p><strong>Why it matters for Europe:</strong> strikes on Saudi tankers and energy sites, together with the Hormuz blockade, raise oil prices for Europe. France and the United Kingdom have sent military support to Saudi Arabia country by country. The EU still has no common Gulf posture of its own.</p>
+<p><strong>What to watch:</strong> confirmation of the <em>GHAZAL</em> incident by the UK Maritime Trade Operations (UKMTO) or the owner; Saudi statements; Saudi strikes in Yemen.</p>
+<p>Sources: @MenchOsint <a href="https://x.com/i/status/2126367909865779667">https://x.com/i/status/2126367909865779667</a>, <a href="https://x.com/i/status/2126296784645345525">https://x.com/i/status/2126296784645345525</a>, Riyadh airport imagery <a href="https://x.com/i/status/2126299580757049359">https://x.com/i/status/2126299580757049359</a>, @bint_qatar1999 <a href="https://x.com/i/status/2126320986836607037">https://x.com/i/status/2126320986836607037</a>, @IranObserver0 <a href="https://x.com/i/status/2125570010856751598">https://x.com/i/status/2125570010856751598</a>, @kajakallas <a href="https://x.com/i/status/2100981772230033534">https://x.com/i/status/2100981772230033534</a>, @clashreport (Macron) <a href="https://x.com/i/status/2103411650514530781">https://x.com/i/status/2103411650514530781</a>, @DefenceHQ <a href="https://x.com/i/status/2112621230771827080">https://x.com/i/status/2112621230771827080</a>.</p>
+<h2 id="s3">Ukraine war: Russia&rsquo;s advance slowed in 2026 while Ukraine&rsquo;s long-range strikes multiplied</h2>
+<p>Military analyst Rob Lee says Russia&rsquo;s rate of advance slowed in 2026. In his view, Ukraine has shown more offensive potential than in 2024 and 2025, Russian infiltration tactics are less effective and Ukrainian command and control is improving. He says Russia has fewer than 20 soldiers in Dobropillia, mainly in the east of the city, and that Ukraine periodically clears the infiltrators. He also warns that open-source maps of the front are increasingly inaccurate. The conflict-data project ACLED counts nearly 500 Ukrainian strikes more than 500 km from the front in 2026, up to 20 November. That is more than in the previous four years combined, according to Faytuks.</p>
+<p>OSINT accounts share imagery from 25 November that they say suggests damage to the Kerch bridge to Crimea. They also report more traffic on the R-280 road at Berdiansk &ldquo;because the Crimean bridge can&rsquo;t be crossed&rdquo;. Both claims are unverified. The aggregator @MilitarySummary reports that Ukraine is discussing removing mobilisation exemptions for up to 300,000 men; this is also unverified.</p>
+<p><strong>Background (CEAFE archive):</strong> in September Russian troops were reported inside Bilytske, 6 km from Dobropillia (@IuliiaMendel, <a href="https://x.com/i/status/2100979421247119763">https://x.com/i/status/2100979421247119763</a>). The 08:30 edition reported that Berlin and Rome had urged Kyiv not to widen the war.</p>
+<p><strong>Why it matters for Europe:</strong> Ukraine&rsquo;s long-range strikes are now a large part of the war, and they are the subject of European pressure from Berlin and Rome. If the front is slowing, Europe&rsquo;s support decides how long Ukraine can hold. That support is weaker when 27 capitals act separately.</p>
+<p><strong>What to watch:</strong> official confirmation of any damage to the Kerch bridge; Ukraine&rsquo;s mobilisation decisions; the front at Dobropillia.</p>
+<p>Sources: Rob Lee <a href="https://x.com/i/status/2126359414756069588">https://x.com/i/status/2126359414756069588</a>, <a href="https://x.com/i/status/2126354479758921983">https://x.com/i/status/2126354479758921983</a>, <a href="https://x.com/i/status/2126356643197722830">https://x.com/i/status/2126356643197722830</a>, ACLED via Faytuks <a href="https://x.com/i/status/2126345612597571954">https://x.com/i/status/2126345612597571954</a>, OSINT accounts <a href="https://x.com/i/status/2126333000421933333">https://x.com/i/status/2126333000421933333</a>, <a href="https://x.com/i/status/2126361793014468814">https://x.com/i/status/2126361793014468814</a>, @MilitarySummary <a href="https://x.com/i/status/2126343764444868985">https://x.com/i/status/2126343764444868985</a>, @IuliiaMendel <a href="https://x.com/i/status/2100979421247119763">https://x.com/i/status/2100979421247119763</a>.</p>
+<h2 id="s4">IISS: Russian sabotage incidents in Europe up 16%, most of them against critical infrastructure</h2>
+<p>The International Institute for Strategic Studies (IISS) says Russian sabotage incidents in Europe rose 16% in the year to September 2026. Of these, 57% targeted critical infrastructure. A separate study by the Center for Strategic and International Studies (CSIS) counts an elevenfold rise in Russian attacks between 2022 and 2024, according to Faytuks. An OSINT account also flagged the large Russian naval convoy that left Baltiysk, in Kaliningrad, a month ago; the post reached us truncated. The Italian military-aviation tracker ItaMilRadar reports almost daily Western surveillance flights over the Black Sea. It also reports recent deployments of French Mirage 2000 jets with signals-intelligence pods.</p>
+<p><strong>Background (CEAFE archive):</strong> CEAFE has followed attacks on Europe&rsquo;s critical infrastructure since the Nord Stream sabotage of 2022. The EU Council then promised a &ldquo;united&rdquo; response to any hybrid action (@EUCouncilPress, <a href="https://x.com/i/status/1583450086532468736">https://x.com/i/status/1583450086532468736</a>). The 08:30 edition reported seizures in the Baltic.</p>
+<p><strong>Why it matters for Europe:</strong> sabotage targets the same infrastructure across many member states: cables, pipelines, energy and transport. No state can protect a shared network alone. A common European response in intelligence, protection and attribution is the only answer of the right scale.</p>
+<p><strong>What to watch:</strong> publication of the full IISS figures; new incidents in the Baltic and the North Sea; the course of the Baltiysk convoy.</p>
+<p>Sources: IISS and CSIS via Faytuks <a href="https://x.com/i/status/2126350081792090213">https://x.com/i/status/2126350081792090213</a>, OSINT account <a href="https://x.com/i/status/2126342268034400307">https://x.com/i/status/2126342268034400307</a>, ItaMilRadar <a href="https://x.com/i/status/2126357412630413450">https://x.com/i/status/2126357412630413450</a>, @EUCouncilPress <a href="https://x.com/i/status/1583450086532468736">https://x.com/i/status/1583450086532468736</a>.</p>
+<h2 id="s5">Indo-Pacific: CSIS reads PLA activity in the Western Pacific as several overlapping operations</h2>
+<p>The CSIS ChinaPower project says the activity of China&rsquo;s People&rsquo;s Liberation Army (PLA) in the Western Pacific in October and November was likely several overlapping operations, not one coordinated exercise. At the Airshow China in Zhuhai, an H-6K bomber led the arrivals, according to the Chinese state broadcaster CGTN. CGTN also reports regional criticism of Japan&rsquo;s defence build-up; this is Chinese state-media framing. The US Naval Institute (USNI) reports that the amphibious ships USS <em>Makin Island</em> and USS <em>John P. Murtha</em> left Singapore on Tuesday for the Indian Ocean with elements of the 13th Marine Expeditionary Unit.</p>
+<p><strong>Background (CEAFE archive):</strong> on 14 October China sent the <em>Liaoning</em> carrier group to the Western Pacific, according to Chinese state media (@globaltimesnews, <a href="https://x.com/i/status/2110304361842627045">https://x.com/i/status/2110304361842627045</a>).</p>
+<p><strong>Why it matters for Europe:</strong> much of Europe&rsquo;s trade with Asia crosses these waters. US naval assets are being moved between the Pacific and the Middle East. Europe has no naval weight of its own in the region and depends on how Washington and Beijing manage their rivalry.</p>
+<p><strong>What to watch:</strong> further PLA activity near Japan and Taiwan; Japan&rsquo;s response; the deployment of the <em>Makin Island</em> group.</p>
+<p>Sources: CSIS ChinaPower <a href="https://x.com/i/status/2126315220054192199">https://x.com/i/status/2126315220054192199</a>, CGTN (Chinese state media) <a href="https://x.com/i/status/2126315109534552269">https://x.com/i/status/2126315109534552269</a>, <a href="https://x.com/i/status/2126284922583228671">https://x.com/i/status/2126284922583228671</a>, USNI via Faytuks <a href="https://x.com/i/status/2126338230911971471">https://x.com/i/status/2126338230911971471</a>, @globaltimesnews <a href="https://x.com/i/status/2110304361842627045">https://x.com/i/status/2110304361842627045</a>.</p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Conflicts. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

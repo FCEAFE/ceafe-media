@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTS — Monday, 23 November 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTS</h1>
+      <p class="list-date">Monday, 23 November 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> Sunday 22 November about 19:00 to Monday 23 November about 07:30 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Conflicts and World section briefs and the posts of @F_CEAFE.</li>
+</ul>
+<p><em>Topic of the day</em></p>
+<h2 id="s1">Update: Benghazi: the <em>Merkury</em> sinks, a second ship is hit and the UN calls for an independent investigation</h2>
+<p><strong>The Russian corvette <em>Merkury</em>, struck in the port of Benghazi on Sunday, has sunk: satellite images from Vantor and those obtained by The War Zone show the Project 20380 ship capsized at the pier with only the bow above water.</strong></p>
+<p>A health official of the eastern Libyan government told Anadolu that 10 port workers were moderately injured in the first attack. Later on Sunday, according to a Libyan military source, explosive-laden drone boats struck a Maltese-flagged cargo ship off Benghazi; its crew was evacuated, and Libyan forces say they destroyed several boats (Arab News, citing military sources, says more than 20 were intercepted). ItaMilRadar and OSINT accounts identify the ship hit offshore as the ro-ro <em>Ascalon</em>, part of a Russian military cargo convoy; no official source has confirmed its identity, and Libyan statements only speak of a Maltese vessel.</p>
+<p><strong>Reactions:</strong> the eastern government of Osama Hammad filed a complaint with the UN General Assembly and Security Council, asked for an international investigation and demanded an explanation from Ukraine about its &ldquo;military activities&rdquo; in Libya. Libya&rsquo;s House of Representatives rejected any use of Libyan territory or waters for foreign conflicts. The UN Support Mission in Libya (UNSMIL) called for an &ldquo;immediate, independent and transparent investigation&rdquo; and warned that Libya &ldquo;must not become a battleground for foreign conflicts&rdquo;. Reuters reports that no one has claimed responsibility; a Ukrainian source told The War Zone that the SBU carried out the strike, while Kyiv has made no official comment. By 07:00 Madrid, the official Russian channels (TASS, MFA, MoD, Kremlin) had published nothing on Benghazi.</p>
+<p><strong>Unconfirmed:</strong> OSINT accounts note that a US &ldquo;ARTEMIS II&rdquo; ISTAR aircraft (N159L) flew missions towards the Libyan coast in the days before the attack. A flight pattern is not evidence of involvement, and no official source has confirmed any link.</p>
+<p><strong>Context:</strong> the attack follows the drone strike on the <em>Sparta II</em> in the Gulf of Finland on 21 November. With <em>Boikiy</em> and <em>Merkury</em> out of action, OSINT counts say half of the Baltic Fleet&rsquo;s four operational Project 20380 corvettes are disabled.</p>
+<p><strong>Why it matters for Europe:</strong> a drone boat hitting a ship under the flag of Malta, an EU member state, brings the Ukraine war into shipping lanes near Italy and Malta in the central Mediterranean. The EU, which runs Operation IRINI off Libya, had issued no statement by 07:00 Madrid. As Libyan analyst Emad Badi wrote, the attacks test the Turkish–Russian balance in Libya.</p>
+<p><strong>What to watch:</strong> Russia&rsquo;s official version; the ship&rsquo;s identity and flag; Malta&rsquo;s and the EU&rsquo;s reactions; whether the Security Council takes up the Libyan complaint.</p>
+<p><strong>Sources:</strong> <a href="https://v.aa.com.tr/4133874">Anadolu</a>, <a href="https://www.aa.com.tr/en/middle-east/un-warns-libya-must-not-become-a-battleground-for-foreign-conflicts-after-benghazi-attacks/4133896">Anadolu (UNSMIL)</a>, <a href="https://www.arabnews.com/middle-east/un-urges-probe-into-benghazi-attacks-warns-libya-against-becoming-battleground-3013640">Arab News</a>, <a href="https://www.twz.com/sea/ukraines-campaign-against-russian-naval-assets-far-beyond-the-black-sea-enters-a-new-phase">The War Zone</a>, <a href="https://x.com/i/status/2124717207166882204">AFP</a>, <a href="https://x.com/i/status/2124744758937657851">Reuters</a>, <a href="https://www.itamilradar.com/">ItaMilRadar</a>, <a href="https://x.com/i/status/2124572456396673489">satellite image</a>, <a href="https://x.com/i/status/2124524174618120541">Emad Badi</a>, <a href="https://x.com/i/status/2124531738357477714">@DefenceGeek</a></p>
+<h2 id="s2">Ukraine war: overnight drone strikes on the Novoshakhtinsk and Perm refineries and a Tatarstan pumping station</h2>
+<p><strong>Ukrainian drones set fire to the Novoshakhtinsk refinery in Rostov region (about 7.5 million tonnes a year) overnight, according to the Kyiv Independent.</strong></p>
+<p>In the morning, drones reportedly hit the LUKOIL refinery in Perm, and the Kaleykino oil pumping station near Almetyevsk, in Tatarstan, was also reportedly attacked. Russian sources had not confirmed the damage.</p>
+<p><strong>Why it matters for Europe:</strong> strikes on Russian refining and pipelines add to the risk premium on oil and fuel markets that Europe buys from.</p>
+<p><strong>What to watch:</strong> Russian MoD statements; any confirmed damage to refining capacity.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124674348472549608">Kyiv Independent</a>, <a href="https://x.com/i/status/2124746015093776697">@ClashReport</a>, <a href="https://x.com/i/status/2124662037720494290">@sentdefender</a>, <a href="https://x.com/i/status/2124749095982002683">Perm refinery</a>, <a href="https://x.com/i/status/2124712692984263119">Kaleykino</a></p>
+<h2 id="s3">Ukraine war: death toll in Kyiv region strike rises; Odesa left without power</h2>
+<p><strong>The death toll from the Russian strike on an apartment block in Kyiv region rose to six, according to the Kyiv Independent; a seven-year-old boy was pulled alive after 14 hours under the rubble in Dymer.</strong></p>
+<p>Russian attacks left Odesa without power (AFP). A Geran-5 jet drone reportedly hit the railway station in Lyubotyn, Kharkiv region, causing a large fire and casualties (not independently confirmed).</p>
+<p><strong>What to watch:</strong> Ukraine&rsquo;s energy grid as winter begins; <em>Foreign Affairs</em> warns this winter could be &ldquo;the most brutal yet&rdquo; for Ukraine.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124622931112157629">Kyiv Independent</a>, <a href="https://x.com/i/status/2124725922045837642">Al Jazeera</a>, <a href="https://x.com/i/status/2124680642067583385">AFP</a>, <a href="https://x.com/i/status/2124731674457940444">AFP (Odesa)</a>, <a href="https://x.com/i/status/2124724625632268664">Foreign Affairs</a></p>
+<h2 id="s4">Update: Iran war: Trump links Iran&rsquo;s attacks to oil prices; Tehran sues in US and European courts</h2>
+<p><strong>In a Truth Social post on Sunday night, Trump wrote that Iran &ldquo;has launched more drones and missiles in the last week than at any time for over a year&rdquo; and that &ldquo;they&rsquo;ve all been knocked down, and done no damage&rdquo;.</strong></p>
+<p>He also claimed that Iran had killed &ldquo;81,000 protestors as of today&rdquo; (his figure, not independently verified) and blamed the Democrats and Iran for high oil prices. Democrats in Congress plan to use funding to force an end to the US–Israel war on Iran as early as December (Al Jazeera). In Tehran, Vice President for Legal Affairs Majid Ansari said Iran has started legal proceedings in the US and four European countries, not named, over alleged war crimes during the US–Israeli attacks (Anadolu). Iran&rsquo;s IRGC deputy commander says two tankers caught fire in the Strait of Hormuz (Al Jazeera). Bahrain says two people were wounded in Saturday&rsquo;s Iranian strike on a &ldquo;civilian industrial site&rdquo; (AFP). Yemen&rsquo;s Houthis claimed an attack on Saudi Arabia&rsquo;s Rabigh refinery (Reuters; Houthi claim).</p>
+<p><strong>Why it matters for Europe:</strong> four European countries are set to become venues for Iran&rsquo;s lawsuits, while every incident in Hormuz and the Red Sea raises Europe&rsquo;s energy bill (see Economy).</p>
+<p><strong>What to watch:</strong> which European courts receive the complaints; any US move to resume strikes; Saudi confirmation of damage at Rabigh.</p>
+<p><strong>Sources:</strong> <a href="https://truthsocial.com/@realDonaldTrump/117662290160182921">Truth Social</a>, <a href="https://www.aa.com.tr/en/middle-east/iran-files-war-crime-lawsuits-in-american-european-courts-over-us-israeli-attacks/4133788">Anadolu</a>, <a href="https://x.com/i/status/2124655417347166603">Al Jazeera (Congress)</a>, <a href="https://x.com/i/status/2124660802301067277">Al Jazeera (Hormuz)</a>, <a href="https://x.com/i/status/2124597573117722764">AFP (Bahrain)</a>, <a href="https://x.com/i/status/2124588778505343239">Reuters (Houthis)</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Conflicts. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

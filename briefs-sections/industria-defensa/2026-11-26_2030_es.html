@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — jueves, 26 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">jueves, 26 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Industria de Defensa / Defence Industry</li>
+<li><strong>Periodo cubierto:</strong> desde las 13:15 hasta las 19:20 aprox. del jueves 26 de noviembre (hora de Madrid): todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Industria de Defensa de CEAFE, las publicaciones de @F_CEAFE y el archivo de CEAFE en X.</li>
+</ul>
+<h2 id="s1">Italia encarga un tercer buque de apoyo logístico LSS: Fincantieri–Leonardo a través de OCCAR (~500 M€)</h2>
+<p>La agrupación temporal (RTI) liderada por Fincantieri con Leonardo firmó el 26 de noviembre en Muggiano una enmienda al contrato con OCCAR del programa LSS para construir una tercera unidad de apoyo logístico para la Marina Militare. Valor publicado: unos 500 M€, incluidos 88 M€ en opciones (Fincantieri ~414 M€, Leonardo ~85 M€). <strong>Valoración (positiva):</strong> astillero e integrador europeos y adquisición a través de OCCAR, la agencia europea de adquisiciones conjuntas.
+Fuentes: https://x.com/Fincantieri/status/2126011073484472829 · https://www.fincantieri.com/it/newsroom/news-e-comunicati-stampa/2026/fincantieri-nuovo-contratto-per-la-costruzione-della-terza-unit-lss-per-la-marina-militare · https://www.bairdmaritime.com/security/naval/naval-auxiliary-support/italian-navy-logistic-support-ship</p>
+<h2 id="s2">Actualización: Tusk: «una Europa barata podría resultar un error muy caro»; Kubilius en el JSEC de la OTAN antes del trílogo final de Movilidad Militar</h2>
+<p>El primer ministro polaco, Donald Tusk, escribió que «una Europa barata podría resultar un error muy caro. La seguridad tiene un precio». El comisario de Defensa y Espacio, Andrius Kubilius, respondió: «No podría estar más de acuerdo». Kubilius pasó además la jornada en el cuartel general del JSEC de la OTAN en Ulm (Alemania) antes del trílogo final sobre Movilidad Militar, advirtiendo de que «la UE y la OTAN no pueden permitirse desajustes». Enlaza con la disputa del MFP (25 nov, 14:30: aviso de un recorte de ~39.000 M€ en defensa y espacio). <strong>Valoración:</strong> ningún Estado miembro puede financiar esto solo.
+Fuentes: https://x.com/KubiliusA/status/2125990273519952123 · https://twitter.com/donaldtusk/status/2125984390484226064 · https://x.com/KubiliusA/status/2125989475402633678</p>
+<h2 id="s3">Thales Alenia Space creará una sociedad específica (SPV) para su servicio de carga de retorno a la ISS</h2>
+<p>Según European Spaceflight (26 nov), que cita un comunicado del 13 de noviembre de los sindicatos italianos FIM, FIOM y UILM, Thales Alenia Space espera que la ESA termine de evaluar su propuesta ALADDIN a finales de noviembre; si resulta elegida, captaría inversores privados y crearía una SPV para desarrollar, financiar y comercializar su nave de carga. <strong>A vigilar:</strong> quiénes son los inversores; una capacidad financiada por la ESA debe seguir bajo control europeo.
+Fuente: https://europeanspaceflight.com/thales-alenia-space-to-establish-dedicated-company-for-cargo-return-services/</p>
+<h2 id="s4">Dinamarca ratifica su acuerdo de seguridad con EE. UU. sobre Groenlandia</h2>
+<p>Defense News informa de que el Parlamento danés ratificó por unanimidad el jueves el acuerdo de seguridad con Estados Unidos sobre Groenlandia, con la esperanza de cerrar el pulso sobre el futuro de la isla. <strong>Valoración:</strong> un Estado miembro de la UE acepta condiciones bajo presión estadounidense sobre su propio territorio; asunto de soberanía y coerción económica que conviene seguir.
+Fuente: https://www.defensenews.com/global/europe/ (titular y resumen)</p>
+<h2 id="s5">Francia y Suecia celebran su primer ejercicio conjunto de disuasión nuclear</h2>
+<p>Según Defense News, los ministerios señalaron que no intervinieron armas nucleares reales y que no iba dirigido contra ningún país. <strong>Valoración (positiva):</strong> la dimensión europea de la disuasión francesa toma forma práctica.
+Fuente: https://www.defensenews.com/global/europe/</p>
+<h2 id="s6">Espacio / contraespacio: un informe alemán afirma que Rusia podría poner en órbita un satélite con arma nuclear antes de fin de año</h2>
+<p>Defense News, citando a medios públicos alemanes y fuentes de inteligencia. <strong>No verificado</strong> más allá del informe.
+Fuente: https://www.defensenews.com/global/europe/</p>
+<h2 id="s7">Embraer y el Ejército brasileño concluyen el desarrollo del radar SABER M200 Vigilante (Resto del Mundo)</h2>
+<p>Anunciado en la Mostra BID (Brasilia, 26 nov): concluye el ciclo de I+D del Centro Tecnológico del Ejército (CTEx) tras los ejercicios TÍNIA, SAGITTA PRIMUS y PERSEU; la segunda unidad en configuración de serie está en producción.
+Fuente: https://www.embraer.com/media-center/en/?mediatype=NEWS&amp;detail=34112-Embraer-and-Brazilian-Army-Conclude-Development-and-Operational-Validation-of-the-SABER-M200-Vigilante-Radar</p>
+<h2 id="s8">Breton sobre Nvidia y los controles de exportación de chips: «relación de fuerzas»</h2>
+<p>El excomisario Thierry Breton afirma que la prensa y legisladores estadounidenses hablan de escándalo por la posible elusión de las prohibiciones de exportar chips a China, y que Europa debe dejar de hablar de competitividad y «asumir la relación de fuerzas». Contexto del hilo de controles extraterritoriales. Afirmaciones suyas, no verificadas.
+Fuentes: https://x.com/ThierryBreton/status/2125978447285542950 · https://x.com/ThierryBreton/status/2125980487206256812</p>
+<h2 id="s9">Espacio y aeroespacial</h2>
+<ul>
+<li>ESA: imágenes de Hera de dos asteroides; la mayor publicación de datos de Gaia, el miércoles 2 de diciembre a las 14:45 (hora peninsular).</li>
+<li>Arianespace agradece a sus equipos los «10 vuelos» desde Kurú este año.</li>
+<li>El motor TP400 del A400M supera el millón de horas de vuelo — Europrop International (Safran, MTU, ITP Aero, Rolls-Royce): éxito motor intraeuropeo.</li>
+<li>El JEF-IPCEI de la UE adopta su programa de trabajo 2027 con nuevas candidaturas en robótica y tecnologías espaciales.</li>
+<li>Thales: KLM elige el Light Cockpit Satcom para sus A350; módulo de TAS a bordo de la Cygnus NG-25 hacia la ISS.</li>
+</ul>
+<h2 id="s10">Breves</h2>
+<ul>
+<li>Polonia: aterrizan dos F-35 más en la 32.ª Base de Aviación Táctica. <strong>Negativo:</strong> compra no europea; existen alternativas europeas (Rafale, Gripen, Eurofighter; GCAP/FCAS para la próxima generación).</li>
+<li>F-35 neerlandeses operando desde autopistas en Finlandia (Protective Fence 26, ya tratado); F-16 belgas sobre Riga con cohetes guiados FZ275 (fabricación belga, Thales Belgium) contra drones.</li>
+<li>KNDS France promociona la torre ARX30; WB Group (Polonia): municiones merodeadoras Warmate en el concepto «Model 44» y en Athens C4ISR.</li>
+<li>Lista EE. UU.: jornada tranquila por Acción de Gracias; BlackSky completó la compra de EpochGeo (operación entre empresas estadounidenses).</li>
+<li><strong>Fusiones y adquisiciones:</strong> ninguna nueva toma de control de una empresa estratégica europea en esta ventana. <strong>Ventas de armas/FMS:</strong> nada nuevo encontrado (web del Departamento de Estado no consultada).</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

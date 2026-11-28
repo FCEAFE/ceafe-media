@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — lunes, 23 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">lunes, 23 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> del lunes 23 de noviembre hacia las 13:00 a las 19:00 (hora de Madrid): todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Compiled from:</strong> los informes de las secciones Actualidad y Conflictos de CEAFE y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Rutte, contra un ejército europeo: «no se pueden tener también ejércitos nacionales»; Merz quiere «una OTAN más fuerte y más europea»</h2>
+<p><strong>En Berlín, al margen de la Asamblea Parlamentaria de la OTAN, el secretario general Mark Rutte afirmó: «Si tienes un ejército europeo, no puedes tener también ejércitos nacionales. Estados Unidos tiene un solo ejército… Si Europa es capaz de lograrlo, bien. No creo que ocurra pronto, porque tiene que ver con esa gran cuestión de la soberanía».</strong></p>
+<p>Rutte dijo que «desaconsejaría» que los ejércitos nacionales trabajen juntos en la OTAN «y, además, tener encima una gran estructura europea». Su argumento: «si Putin ataca, primero necesitaremos dos o tres semanas para acordar quién hace qué, y probablemente acabará en Róterdam antes de que hayamos decidido». Añadió que no hay «ningún problema de principio contra un ejército europeo», pero tampoco «un gran impulso» a favor. Tras reunirse con Rutte, el canciller Friedrich Merz escribió que la lección «quizá más importante» de Alemania de la guerra de Ucrania es que «estamos construyendo, a gran velocidad, una OTAN más fuerte y más europea». @F_CEAFE comentó que Rutte es «un empleado —importante— de la OTAN, una organización dirigida por EE. UU.», y que Washington no quiere que la UE «acabe teniendo su propio ejército y pueda actuar con independencia de EE. UU.».</p>
+<p><em>CEAFE:</em> Cuando se comparan capacidades —económicas, tecnológicas o militares— la unidad europea deja de ser un lema y se convierte en una condición.</p>
+<p><strong>Contexto:</strong> Antecedentes: el 15 de octubre de 2019 @F_CEAFE escribió que los objetivos de defensa de la UE eran «imposibles de alcanzar sin un Ejército Europeo (#PESCO) dotado de sistemas europeos» (<a href="https://x.com/i/status/1184143817735397376">X, 2019</a>). El comandante militar de la OTAN (SACEUR) es siempre un oficial estadounidense.</p>
+<p><strong>Por qué importa para Europa:</strong> el jefe de la Alianza se pronuncia públicamente contra un ejército europeo, el objetivo que CEAFE defiende como vía hacia la soberanía europea. El argumento de «Róterdam» da por hecho que Europa seguirá siendo un conjunto de ejércitos nacionales coordinados por la OTAN. «Una OTAN más europea» (Merz) deja aún en Washington las decisiones estratégicas, el paraguas nuclear y las capacidades clave. Estados Unidos tiene un solo ejército porque es un único Estado federal, el paso de integración que los europeos no han dado.</p>
+<p><strong>Qué vigilar:</strong> las reacciones del Parlamento Europeo (pleno en Estrasburgo esta semana) y de la cartera de Defensa de la Comisión; si algún Gobierno de la UE responde a Rutte públicamente.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2124845537463582917">Rutte (vídeo 1)</a>, <a href="https://x.com/i/status/2124846712158089700">Rutte (vídeo 2)</a>, <a href="https://x.com/i/status/2124921466114232709">@F_CEAFE</a>, <a href="https://x.com/i/status/2124897355417989623">Merz</a>, <a href="https://x.com/i/status/2124918810004312139">OTAN</a></p>
+<h2 id="s2">Actualización: Kh-101 en Polonia: la OTAN se reúne y Merz exige el fin de las «provocaciones peligrosas»; Finlandia convoca al embajador ruso y Moscú protesta por el cierre de la frontera estonia</h2>
+<p><strong>Los aliados de la OTAN celebraron el lunes una reunión urgente sobre una posible respuesta a los misiles rusos que cayeron en territorio polaco el viernes (Washington Post). La fiscalía de Lublin afirma que los tres objetos eran misiles de crucero rusos Kh-101.</strong></p>
+<p>Según dpa, se fabricaron en el cuarto trimestre de este año en una planta de Dubná, al norte de Moscú, y Polonia convocará al embajador ruso. En rueda de prensa conjunta con Rutte, Merz dijo que Rusia «debe cesar de inmediato sus provocaciones peligrosas. Polonia puede contar con nuestra plena solidaridad. Si es necesario, la OTAN defenderá, por supuesto, cada centímetro de territorio». También pidió reforzar la protección de las fronteras exteriores de la UE y de la OTAN. Rutte afirmó que el incidente «tuvo claramente su origen en Rusia». El Ministerio de Exteriores francés expresó igualmente su solidaridad con Polonia. Finlandia convocó al embajador ruso, Pável Kuznetsov, y calificó de inaceptables las «acciones peligrosas e irresponsables de Rusia en Europa». Citó una presunta incursión de un helicóptero ruso frente a Loviisa el sábado (hasta 4,1 km, según el Ministerio de Defensa finlandés). Moscú, por su parte, convocó al encargado de negocios de Estonia, Marek Ühtegi, por la decisión de Tallin de suspender todos los pasos por carretera (Narva-1, Narva-2, Koidula, Luhamaa, Saatse) desde el 1 de diciembre durante seis meses. El Ministerio de Exteriores ruso calificó la medida de «abiertamente hostil», acusó a Estonia de permitir tácitamente que Ucrania use su espacio aéreo para drones (Estonia lo niega) y advirtió del «borde de una guerra abierta» (TASS, agencia estatal rusa). Sigue sin haber una declaración rusa sobre los misiles en Polonia (tagesschau).</p>
+<p><strong>Contexto:</strong> Antecedentes: el 15 de noviembre de 2022 el Ministerio de Exteriores polaco afirmó que un misil de fabricación rusa había caído en Przewodów y convocó al embajador ruso (<a href="https://x.com/i/status/1592662645056081920">X, 2022</a>). Polonia, Finlandia y Estonia son Estados miembros de la UE y de la OTAN.</p>
+<p><strong>Por qué importa para Europa:</strong> tres Estados miembros de la UE responden por separado el mismo día, con convocatorias de embajadores y cierres de frontera. Abundan las declaraciones de solidaridad; sigue faltando un instrumento común de la UE para la protección de fronteras y la defensa aérea en el flanco oriental.</p>
+<p><strong>Qué vigilar:</strong> el resultado de las consultas de la OTAN (posible petición del artículo 4); la convocatoria del embajador ruso en Polonia; las «medidas de represalia» rusas contra Estonia; la rueda de prensa de Zajárova el jueves 26 de noviembre.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.tagesschau.de/ausland/europa/merz-rutte-nato-104.html">tagesschau.de</a>, <a href="https://www.freiepresse.de/nachrichten/welt/merz-warnt-russland-vor-gefaehrlichen-provokationen-artikel14494075">Freie Presse/dpa</a>, <a href="https://x.com/i/status/2124913878090060221">Merz</a>, <a href="https://x.com/i/status/2124922190160122078">Washington Post</a>, <a href="https://x.com/i/status/2124852808050483379">Diplomacia francesa</a>, <a href="https://www.euronews.com/2026/11/23/finland-summons-russian-ambassador-as-it-condemns-russias-dangerous-and-reckless-actions-i">Euronews (Finlandia)</a>, <a href="https://www.aa.com.tr/en/eurasia/finland-summons-russian-ambassador-calls-moscows-dangerous-irresponsible-actions-in-europe-unacceptable/4134835">Anadolu</a>, <a href="https://x.com/i/status/2124895755072684312">Ministerio de Exteriores ruso</a>, <a href="https://tass.com/politics/2223407">TASS</a>, <a href="https://www.themoscowtimes.com/2026/11/23/moscow-summons-estonian-diplomat-over-border-closure-a94352">The Moscow Times</a>, <a href="https://www.kriis.ee/en/suspension-border-crossings">Gobierno de Estonia</a>, <a href="https://news.err.ee/1610201515/estonia-to-close-land-border-with-russia-from-december-1">ERR</a></p>
+<h2 id="s3">Actualización: la vía de paz: Merz dice que Europa está dispuesta a negociar con Rusia y califica 2008 de «error»</h2>
+<p><strong>Merz afirmó que «Europa está dispuesta a negociar con Rusia» y que se espera que las conversaciones «se celebren de nuevo pronto a nivel de asesores, en un formato con Ucrania, Rusia, Europa y Estados Unidos», posiblemente otra vez en Abu Dabi.</strong></p>
+<p>Respaldó unas garantías para Ucrania «similares al artículo 5» que se acercarían «mucho a la pertenencia a la OTAN» (Der Spiegel). Dijo además que, en retrospectiva, no seguir la propuesta estadounidense de la cumbre de Bucarest de 2008 de admitir a Ucrania fue «un error… probablemente esta guerra se podría haber evitado». Zelenski, por vídeo ante la Asamblea, volvió a defender que la adhesión es mejor que unas garantías que solo se parecen al artículo 5. Rutte respondió que ahora mismo «no hay unanimidad» entre los aliados sobre la adhesión de Ucrania y que «solo la OTAN decide quién puede ser miembro». Dijo que Estados Unidos hace «enormes esfuerzos» para iniciar conversaciones, pero que «Putin también debe colaborar». Rutte afirmó también que Ucrania está «matando o hiriendo gravemente hasta a 50.000 rusos al mes». Kyiv Independent, citando un análisis periodístico de datos filtrados del Gobierno ruso, sitúa los muertos rusos en «probablemente cerca de 700.000»; Bloomberg cita documentos pirateados que muestran al menos 470.000 muertos (ambas cifras sin verificar y con métodos distintos). El ex primer ministro ucraniano Arseni Yatseniuk calificó las conversaciones lideradas por EE. UU. de «negociaciones de pantomima» (C-SPAN). La Conferencia de Seguridad de Múnich publicó un informe sobre el liderazgo en defensa del E5 (Alemania, Francia, Italia, Polonia y Reino Unido).</p>
+<p><strong>Contexto:</strong> Antecedentes: el 13 de noviembre el viceministro ruso de Exteriores, Serguéi Riabkov, afirmó que incorporar a los europeos a las conversaciones de Abu Dabi «podría deshacer los avances» (<a href="https://x.com/i/status/2121304238127263892">X, 2026</a>). La trilateral de Shenzhen del 19 de noviembre dejó fuera a Europa.</p>
+<p><strong>Por qué importa para Europa:</strong> Merz sitúa a Europa como parte en la mesa («Ucrania, Rusia, Europa y Estados Unidos») tras Shenzhen. No aclara si «Europa» es la UE o un grupo de capitales, y el formato sigue marcado por Washington.</p>
+<p><strong>Qué vigilar:</strong> fecha y sede de la ronda de asesores; quién representa a Europa (UE, E3/E5 o asesores nacionales); la respuesta de Moscú.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2124891126318387547">Merz (vídeo 1)</a>, <a href="https://x.com/i/status/2124889679468065247">Merz (vídeo 2)</a>, <a href="https://www.spiegel.de/politik/deutschland/nato-treffen-in-berlin-friedrich-merz-und-mark-rutte-bekraeftigen-sicherheitsgarantien-fuer-die-ukraine-a-8466115a-c858-4447-907a-07adb51289ee">Der Spiegel</a>, <a href="https://x.com/i/status/2124890067822883290">Rutte</a>, <a href="https://x.com/i/status/2124920476359442573">TASS</a>, <a href="https://x.com/i/status/2124925147576422809">Kyiv Independent</a>, <a href="https://x.com/i/status/2124911003171233996">Bloomberg</a>, <a href="https://x.com/i/status/2124923969635758086">C-SPAN (Yatseniuk)</a>, <a href="https://x.com/i/status/2124904307698938279">Conferencia de Seguridad de Múnich</a></p>
+<h2 id="s4">Actualización: Tayikistán, cuarto país que abandona la CPI desde la presión de EE. UU.; la UE y la Asamblea de Estados Partes se oponen</h2>
+<p><strong>El depositario de la ONU recibió la notificación de retirada de Tayikistán el 20 de noviembre de 2026; surtirá efecto el 20 de noviembre de 2027. Según Reuters, Tayikistán es el cuarto país que se retira desde que EE. UU. lanzó una ofensiva diplomática contra la Corte.</strong></p>
+<p>Una declaración de la UE de la alta representante Kaja Kallas afirma que la CPI «no se dirige contra Estados soberanos ni constituye una amenaza para su soberanía». Pide a Dusambé que revierta la decisión y recuerda las retiradas iniciadas este año por Níger, Burkina Faso, Malí, Chad, Venezuela y Nauru. El SEAE ya había criticado a Tayikistán el 22 de noviembre por recibir a Vladímir Putin los días 19 y 20 de noviembre pese a la orden de detención de la CPI. La Presidencia de la Asamblea de Estados Partes advirtió de que estas decisiones «amenazan con socavar la búsqueda colectiva de la justicia».</p>
+<p><strong>Contexto:</strong> Antecedentes: en octubre de 2025 Alemania afirmó que Hungría seguía obligada a ejecutar la orden de la CPI contra Putin durante el plazo de doce meses de su retirada (<a href="https://x.com/i/status/1979508795819557121">X, 2025</a>).</p>
+<p><strong>Por qué importa para Europa:</strong> la CPI es uno de los pilares del orden basado en normas que la UE defiende casi en solitario entre las grandes potencias. EE. UU., Rusia y China no son miembros, y EE. UU. presiona a otros para que se vayan.</p>
+<p><strong>Qué vigilar:</strong> nuevas retiradas; la sesión de la Asamblea de Estados Partes en diciembre.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/11/23/tajikistan-statement-by-the-high-representative-on-behalf-of-the-european-union-on-tajikistan-s-withdrawal-from-the-rome-statute-of-the-international-criminal-court/">Consejo de la UE</a>, <a href="https://www.icc-cpi.int/news/statement-presidency-assembly-states-parties-withdrawal-rome-statute-tajikistan">CPI/AEP</a>, <a href="https://x.com/i/status/2124898311559610727">Reuters</a>, <a href="https://2eu.brussels/en/news/eu-urges-tajikistan-to-reverse-its-withdrawal-from-the-rome-statute">2eu.brussels</a></p>
+<h2 id="s5">Londres: Burnham descarta volver a la UE sin referéndum</h2>
+<p><strong>El primer ministro británico, Andy Burnham, afirmó que sería «impensable» volver a la UE sin un nuevo referéndum.</strong></p>
+<p>No lo propone por ahora. Dijo que consultaría a la ciudadanía si su Gobierno recomendara más adelante el reingreso, y que unos lazos más estrechos no significan volver a entrar (Politico, ITV, Anadolu).</p>
+<p><strong>Contexto:</strong> Antecedentes: el 24 de octubre de 2026 el alcalde de Londres, Sadiq Khan, calificó el Brexit de «catastrófico» y afirmó que «es hora de volver a la UE» (<a href="https://x.com/i/status/2114026146811478017">X, 2026</a>).</p>
+<p><strong>Por qué importa para Europa:</strong> el Reino Unido busca una relación más estrecha con la UE sin ser miembro.</p>
+<p><strong>Qué vigilar:</strong> el alcance de la agenda de «relanzamiento» de las relaciones entre el Reino Unido y la UE.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.politico.eu/article/rejoining-eu-without-referendum-unthinkable-andy-burnham/">Politico Europe</a>, <a href="https://www.itv.com/news/2026-11-23/reversing-brexit-unthinkable-without-referendum-pm-says">ITV</a>, <a href="https://www.aa.com.tr/en/europe/uk-premier-says-unthinkable-to-rejoin-eu-without-referendum/4135011">Anadolu</a></p>
+<h2 id="s6">Indicaciones geográficas: Italia y otros 16 Estados miembros de la UE piden una estrategia común frente a la presión de EE. UU.</h2>
+<p><strong>Italia, respaldada por otros 16 Estados miembros de la UE, pide a la Unión una estrategia común para defender las indicaciones geográficas europeas (Feta, Asiago, Gorgonzola, Parmigiano, Jerez…) frente a textos legislativos de EE. UU. que las tratarían como «nombres comunes» de libre uso (Bloomberg; Ministerio de Agricultura de Italia).</strong></p>
+<p><em>CEAFE:</em> Ningún Estado miembro, por sí solo, alcanza la escala de las potencias con las que pretende sentarse en la misma mesa.</p>
+<p><strong>Contexto:</strong> Antecedentes: el 14 de septiembre de 2020, el día en que la UE y China firmaron un acuerdo que protege 100 indicaciones geográficas europeas, @F_CEAFE señaló que «otros aliados clave no reconocen las indicaciones geográficas… adivinen quién» (<a href="https://x.com/i/status/1305574930851954689">X, 2020</a>).</p>
+<p><strong>Por qué importa para Europa:</strong> un caso de coerción económica sobre las normas comerciales de la UE, al que responde un grupo de Estados miembros y no una sola capital.</p>
+<p><strong>Qué vigilar:</strong> la respuesta de la Comisión; si el asunto entra en las negociaciones comerciales entre la UE y EE. UU.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2124919692519157803">Bloomberg</a>, <a href="https://www.masaf.gov.it/IG-Lollobrigida-strategia-comune-UE">Masaf</a>, <a href="https://www.eunews.it/en/2026/11/23/italy-urges-the-eu-to-provide-greater-protection-for-geographical-indications-gis-against-unfair-us-practices/">Eunews</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

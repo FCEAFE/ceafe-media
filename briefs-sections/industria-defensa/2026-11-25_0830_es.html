@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — miércoles, 25 de noviembre de 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">miércoles, 25 de noviembre de 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Periodo cubierto:</strong> del martes 24 de noviembre hacia las 19:00 al miércoles 25 de noviembre hacia las 07:00 (hora de Madrid): todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Industria de Defensa de CEAFE y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Polonia y EE. UU. firman un acuerdo de I+D de defensa tras 17 años de negociación</h2>
+<p>El viceministro de Defensa polaco Cezary Tomczyk y el subsecretario de Guerra para Investigación e Ingeniería de EE. UU., Emil Michael, firmaron el 24 de noviembre en el Pentágono un acuerdo RDT&amp;E (investigación, desarrollo, pruebas y evaluación), según el Ministerio de Defensa polaco y Anadolu. Pone fin a 17 años de negociaciones y crea un marco para proyectos conjuntos de investigación, desarrollo tecnológico e intercambio de datos técnicos. Universidades, institutos y empresas polacas podrán participar en programas estadounidenses; el primer ámbito piloto serán los materiales de alta energía y la munición. En la misma visita, Varsovia trató con Lockheed Martin la aceleración de los simuladores del F-35, la plena capacidad operativa de sus F-35, un centro europeo de mantenimiento de misiles PAC-3 Patriot en Polonia y la transferencia de tecnología del HIMARS.</p>
+<p>No se trata de restar mérito a este país, sino de medir su peso real frente a quien ya opera a escala continental o global.</p>
+<p><strong>Por qué importa para Europa:</strong> Polonia, el mayor comprador de material estadounidense de la UE, ancla su investigación de defensa en un marco bilateral con Washington y no en los europeos (FED, AED, CEP). La investigación conjunta en fase temprana define los requisitos futuros, tiende a fijar estándares y proveedores estadounidenses, y lo desarrollado en común queda sujeto a las normas de exportación de EE. UU. (ITAR), sin equivalente europeo. Un centro PAC-3 en Polonia sería un nodo bajo control estadounidense; la alternativa europea en defensa antiaérea es el SAMP/T NG (Eurosam: MBDA y Thales), y Polonia ya codesarrolla el CAMM-MR con MBDA UK (véase la nota de las 20:30 del 24 de noviembre).</p>
+<p><strong>Datos clave:</strong> firmado el 24 de noviembre de 2026 en el Pentágono; firmantes Tomczyk (Polonia) y Emil Michael (EE. UU.); primer ámbito piloto: materiales de alta energía y munición.</p>
+<p><strong>Qué vigilar:</strong> los primeros proyectos conjuntos; si el centro PAC-3 y la transferencia del HIMARS se traducen en contratos con PGZ.</p>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125461984258777466 (Anadolu); https://www.gov.pl/web/obrona-narodowa/od-badan-do-nowych-zdolnosci-polska-wzmacnia-wspolprace-obronna-z-usa ; https://www.aa.com.tr/en/americas/poland-us-sign-defense-research-agreement-after-17-years-of-negotiations/4136545</p>
+<h2 id="s2">Raytheon lleva a la fase de desarrollo el misil de crucero nuclear naval (SLCM-N)</h2>
+<p>Raytheon (RTX) ha recibido de la Marina de EE. UU. un acuerdo OTA para pasar el misil de crucero nuclear lanzado desde el mar (SLCM-N) de los estudios de concepto a una fase de desarrollo que madurará el diseño, integrará subsistemas y preparará demostraciones de prototipos (comunicado de RTX, 24 de noviembre). Participan Anduril Rocket Motor Systems, Divergent (que afirma fabricar la estructura) y Williams International. No se ha publicado el importe.</p>
+<p><strong>Por qué importa para Europa:</strong> el SLCM-N añade una opción nuclear no estratégica en el mar, relevante para la disuasión extendida en Europa, cuando Francia y Suecia acaban de celebrar su primer ejercicio conjunto de disuasión nuclear (Defense News). La cadena de suministro muestra además hasta qué punto las nuevas empresas estadounidenses (Anduril, Divergent) están ya dentro de los programas estratégicos.</p>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125390434004500859 ; https://www.prnewswire.com/news-releases/rtxs-raytheon-selected-to-advance-development-of-new-submarine-launched-missile-for-us-navy-302948503.html</p>
+<h2 id="s3">La surcoreana KAI aspira a sustituir al Hawk británico con el T-50</h2>
+<p>Korea Aerospace Industries ha empezado a promocionar el T-50 (ofrecido como «TF-50») en el Reino Unido como sustituto del BAE Systems Hawk de la RAF, con anuncios en AirForces Monthly; Lockheed Martin figura solo como socio de desarrollo y KAI dice que explora alianzas con empresas británicas (Aviation Week, 23 de noviembre). El concurso británico Jet Training System aún se está definiendo.</p>
+<p><strong>Por qué importa para Europa:</strong> el fin del Hawk deja sin sucesor en su propio mercado al primer exportador europeo de entrenadores a reacción. Un entrenador coreano-estadounidense sería una compra no europea; la opción europea, en servicio en Italia, Polonia y Grecia, es el M-346 de Leonardo. Un mercado fragmentado país a país permite a los proveedores de fuera ganar los requisitos uno a uno.</p>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125372394894155941 ; https://aviationweek.com/defense/light-attack-advanced-training/kai-begins-uk-t-50-marketing-push</p>
+<h2 id="s4">Boeing: 15 cisternas KC-46A más por 2.820 millones de dólares; Malaysia Airlines elige el 787</h2>
+<p>La Fuerza Aérea de EE. UU. ha añadido 2.820 millones de dólares al contrato de Boeing para 15 KC-46A del lote 13, más apoyo, suscripciones y licencias, con trabajos en Seattle hasta el 30 de junio de 2030 (MarketWatch, DefenseBook; Boeing en X). Por otro lado, Malaysia Aviation Group ha elegido el Boeing 787 Dreamliner para ampliar su flota de fuselaje ancho, rompiendo el dominio de Airbus en su largo radio (Bloomberg en X; artículo no consultado).</p>
+<p><strong>Por qué importa para Europa:</strong> el KC-46 es el cisterna estadounidense que se impuso al Airbus A330 MRTT; el MRTT sigue siendo el avión cisterna europeo (flota multinacional MMF). Perder un cliente de largo radio en Asia es un golpe comercial para Airbus mientras Boeing se recupera.</p>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125351764916396442 ; https://www.marketwatch.com/story/boeing-gets-2-82b-added-to-air-force-contract-15f148d6 ; https://x.com/i/status/2125436851108397238</p>
+<h2 id="s5">Espacio: primer astronauta extranjero en Tiangong; el SR-1 nuclear de la NASA; el próximo Ariane 6, el 17 de diciembre</h2>
+<ul>
+<li><strong>Shenzhou-24</strong> despegó el 25 de noviembre con un Larga Marcha-2F desde Jiuquan y se acopló a la estación espacial china con Tang Hongbo, Wu Yi y el astronauta paquistaní Muhammad Zeeshan Ali, piloto de caza y primer extranjero en visitar Tiangong, en virtud de un acuerdo entre China y Pakistán (Xinhua, Global Times, Al Jazeera, Anadolu). https://x.com/i/status/2125407596974841992 ; https://x.com/i/status/2125467550893092923 ; https://x.com/i/status/2125389000990941416</li>
+<li><strong>NASA SR-1 Freedom:</strong> tras una revisión de diseño en octubre, la NASA ha fijado las características de la primera nave de fisión que irá más allá de la órbita terrestre; lanzamiento previsto a finales de 2028, con propulsión eléctrica nuclear para llevar a Marte la cápsula SkyFall con tres helicópteros. https://x.com/i/status/2125349905409438136 ; https://go.nasa.gov/3XMCRaI</li>
+<li><strong>Actualización Ariane 6:</strong> tras el VA271 (36 satélites Amazon Leo, 24 de noviembre), Arianespace ha lanzado ya 136 satélites Amazon Leo; el próximo y probablemente último Ariane 6 de 2026 se espera el 17 de diciembre con MetOp-SG-B1, y una nueva prueba de motor a principios de diciembre validará la corrección de la turbobomba (European Spaceflight, citando a La Tribune). https://x.com/i/status/2125319140865134905 ; https://europeanspaceflight.com/arianespace-completes-10th-ariane-6-flight-with-next-expected-on-17-december/</li>
+<li><strong>Hera:</strong> Redwire recuerda que la sonda Hera de la ESA, cuya primera imagen detallada del asteroide desviado por DART se presenta hoy a las 19:45 (hora de Madrid), funciona con el ordenador ADPMS-3 de su equipo en Bélgica. https://x.com/i/status/2125319000569548965</li>
+<li><strong>Atmos Space Cargo</strong> (Alemania) inicia el diseño de una versión mayor de su vehículo de reentrada Phoenix (Aviation Week). https://x.com/i/status/2125306471818649914</li>
+<li><strong>Lockheed Martin JOINS</strong> probará soldadura robótica en el vacío a bordo de la ISS. https://x.com/i/status/2125292565087780972</li>
+</ul>
+<h2 id="s6">Breves de EE. UU.</h2>
+<ul>
+<li><strong>El inspector general del Pentágono</strong> abre una gran auditoría de contratos, préstamos y participaciones accionariales del departamento (Bloomberg en X; no consultado). https://x.com/i/status/2125305997610611059</li>
+<li><strong>La Fuerza Aérea de EE. UU.</strong> firma un contrato de 48,7 millones de dólares para datos meteorológicos de globos autónomos (Air &amp; Space Forces Magazine). https://x.com/i/status/2125346048268726287</li>
+<li><strong>GDLS</strong> presenta a STC (Arcfield) como socio de su XM30; <strong>L3Harris</strong> promociona su antidrones Drone Guardian; <strong>Vantor</strong> anuncia avances de navegación sin GPS con Raptor. https://x.com/i/status/2125308996139557035 ; https://x.com/i/status/2125319352832372960 ; https://x.com/i/status/2125313370349834596</li>
+<li><strong>AeroVironment</strong> defiende una base industrial de defensa transatlántica más fuerte. https://x.com/i/status/2125312755976884542</li>
+<li><strong>F-35 en Europa:</strong> F-35 neerlandeses practican operaciones dispersas en el ejercicio Protective Fence 26 (la publicación lleva banderas de Países Bajos y Finlandia). https://x.com/i/status/2125363944164405537</li>
+</ul>
+<h2 id="s7">Breves del resto del mundo y Europa</h2>
+<ul>
+<li><strong>Turquía:</strong> un helicóptero AS-532 Cougar (modelo de Airbus Helicopters) de la Fuerza Aérea turca se estrelló en un vuelo de instrucción en Eskişehir; murieron cinco militares. ASELSAN, Roketsan, Baykar, STM, HAVELSAN y FNSS expresaron sus condolencias. https://x.com/i/status/2125300147076939971</li>
+<li><strong>India–Francia:</strong> Naval Group celebra el aniversario de la entrada en servicio del INS Vela, submarino clase Kalvari (Scorpène) construido en la India. https://x.com/i/status/2125439648273215966</li>
+<li><strong>Canadá:</strong> Éric Martel, consejero delegado de Bombardier, nombrado consejero delegado del año por The Globe and Mail. https://x.com/i/status/2125370389576474842</li>
+<li><strong>Ventas de armas:</strong> no se ha encontrado ninguna nueva notificación FMS (la DSCA remite al Departamento de Estado, cuya página no respondió). <strong>Fusiones y adquisiciones:</strong> ninguna nueva operación en defensa o espacio en la ventana.</li>
+</ul>
+<hr>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMÍA — domingo, 22 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMÍA</h1>
+      <p class="list-date">domingo, 22 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> del domingo 22 de noviembre hacia las 13:00 a hacia las 19:30 (hora de Madrid): todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Economía de CEAFE, transcripciones oficiales y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Actualización: el jefe de la inteligencia de EE. UU. dice que los mejores chips de Nvidia se quedan en EE. UU.; Pekín responde que los controles ya no frenan a China</h2>
+<p><strong>En los programas políticos del domingo, el director de Inteligencia Nacional de EE. UU., Jay Clayton, expuso la línea del Gobierno sobre la exportación de chips: «Queremos reservar la capacidad de computación más exquisita para EE. UU. […] Así que sí queremos chips estadounidenses, solo que no los más exquisitos» (Fox News).</strong></p>
+<p>En <em>This Week</em>, de ABC, dijo que las normas de exportación de tecnología avanzada «son restricciones, no prohibiciones», que Comercio y el Tesoro se dedican a «dosificar» el acceso, y confirmó que el Departamento de Justicia investiga a Alice Huang, exdirectiva de Megaspeed International, con sede en Singapur, y a su empresa. El secretario del Tesoro, Scott Bessent, dijo a CBS que el Gobierno «aún necesita respuestas» de Nvidia sobre sus ventas de chips (Bloomberg). Un editorial de <em>Global Times</em> (medio estatal chino) respondió que «el impacto marginal de nuevos controles de exportación estadounidenses sobre la industria china de IA disminuye rápidamente» y que las restricciones debilitarán a los fabricantes de chips de EE. UU. en los mercados mundiales.</p>
+<p><strong>Contexto:</strong> la norma de la BIS del 16 de noviembre sobre acceso remoto abarca también a centros de datos en la UE; California investiga si Nvidia vendió ilegalmente chips avanzados a China.</p>
+<p><strong>Por qué importa para Europa:</strong> Washington decide qué nivel de capacidad de computación recibe cada país, y Europa, sin un chip propio de gama alta, recibe el nivel «menos exquisito» salvo licencia.</p>
+<p><strong>Qué vigilar:</strong> los próximos pasos de Comercio para hacer cumplir las licencias; la investigación del Departamento de Justicia; un posible comunicado del MOFCOM el lunes.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2124531991085207941">Jay Clayton en Fox News</a>, <a href="https://abcnews.com/Politics/week-transcript-11-22-26-director-national-intelligence/story?id=138345755">transcripción de ABC News</a>, <a href="https://x.com/i/status/2124543467439174101">Bloomberg</a>, <a href="https://www.straitstimes.com/world/united-states/spy-chief-says-us-probing-alleged-spy-tied-to-former-nvidia-ceo">The Straits Times</a>, <a href="https://www.globaltimes.cn/page/202611/1374822.shtml">Global Times</a></p>
+<hr>
+<h2 id="s2">El grupo estadounidense IQVIA, cerca de comprar la británica Quotient Sciences por unos 1.100 millones de dólares</h2>
+<p><strong>IQVIA Holdings, el grupo estadounidense de investigación clínica, está a punto de cerrar la compra, por unos 1.100 millones de dólares, de Quotient Sciences (Nottingham, Reino Unido), empresa de desarrollo y fabricación por contrato de medicamentos en fase temprana, y el acuerdo podría anunciarse el lunes 23 de noviembre, según fuentes conocedoras citadas por Bloomberg.</strong></p>
+<p>Quotient ayuda a las farmacéuticas a formular nuevos medicamentos, fabricarlos para ensayos clínicos y comprobar cómo se comportan. Pertenece desde 2019 al fondo de capital riesgo Permira. IQVIA y Permira declinaron hacer comentarios.</p>
+<p><strong>Contexto:</strong> la edición de las 14:30 recogió las compras estadounidenses de proveedores europeos de defensa (Steyr Motors, Truflo Marine, Tekne); CEAFE sigue las adquisiciones estadounidenses de empresas europeas estratégicas.</p>
+<p><strong>Por qué importa para Europa:</strong> otro eslabón de una cadena de suministro europea estratégica, el desarrollo temprano de fármacos y la fabricación para ensayos clínicos, pasaría a manos estadounidenses.</p>
+<p><strong>Qué vigilar:</strong> el anuncio formal; una posible revisión al amparo de la ley británica de Seguridad Nacional e Inversiones o de la CMA.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2124514525453959419">Bloomberg</a>, <a href="https://news.bloomberglaw.com/private-equity/iqvia-said-to-near-1-1-billion-deal-for-uks-quotient-sciences">Bloomberg Law</a></p>
+<hr>
+<h2 id="s3">Tailandia prevé restringir la exportación de químicos usados en la minería de tierras raras de Birmania</h2>
+<p><strong>Tailandia restringirá la exportación y el tránsito de productos químicos usados en la extracción y el procesado de tierras raras hacia Birmania y otros «países afectados», según el vice primer ministro Yodchanan Wongsawat, después de que la contaminación por arsénico de los ríos Kok, Sai y Ruak, en el norte de Tailandia, se vinculara a la minería de tierras raras en el estado birmano de Shan (Reuters).</strong></p>
+<p>La medida está prevista, pero aún no en vigor: el Consejo de Seguridad Nacional elabora una lista de productos químicos, sin fecha de inicio publicada. Tailandia, China y Birmania celebran conversaciones ministeriales el 24 de noviembre y técnicas el 25 y 26.</p>
+<p><strong>Por qué importa para Europa:</strong> las minas birmanas son una fuente importante de las tierras raras pesadas que se refinan en China; una restricción podría tensar el suministro de los imanes de los que dependen las industrias eólica, automovilística y de defensa europeas, y Europa apenas tiene capacidad propia de refinado.</p>
+<p><strong>Qué vigilar:</strong> las conversaciones trilaterales; la lista de productos químicos.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2124488153146835338">Reuters</a>, <a href="https://www.bangkokpost.com/thailand/general/3359296/riverarsenic-control-plan-advances-public-confidence-low">Bangkok Post</a>, <a href="https://www.nationthailand.com/news/general/40073770">The Nation</a>, <a href="https://www.thaipbsworld.com/world/573123">Thai PBS World</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Economía. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

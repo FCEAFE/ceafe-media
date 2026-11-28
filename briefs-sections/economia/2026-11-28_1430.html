@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Saturday, 28 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Saturday, 28 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> from about 18:55 on Friday 27 November to about 13:30 on Saturday 28 November, Europe/Madrid: everything new since the Friday 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">Honeywell now owns the SABRE engine patents of Britain’s collapsed Reaction Engines, bought for £884,000 after about £60m of UK public funding</h2>
+<p>US patent records show that on 28 July 2026 the patents of Reaction Engines Ltd, the British developer of the SABRE air-breathing rocket engine and its micro-tube pre-cooler, were assigned to Honeywell Aerospace US LLC by the administrators PwC (Google Patents record for US11162424B2, “Heat exchangers”, inventors Alan Bond and Richard Varvill). Reaction Engines went into administration in October 2024, owing more than £160m. PwC’s progress report (covering to end-April 2026, dated 29 May) said the IP sale was concluded in April with £884,000 in non-refundable deposits, the value the directors had put on the IP, but did not name the buyer (FlightGlobal, 14 June; Oxford Chronicle, 9 July). The buyer’s identity surfaced on X on 27 November from the patent assignment. The UK Space Agency put about £60m into SABRE, and ESA validated the pre-cooler in 2019 (Inngot, 16 June). Before it collapsed, Reaction Engines supplied heat exchangers to a Honeywell-led consortium in an EU Clean Aviation hydrogen fuel-cell project (FlightGlobal). Reaction: no statement from Honeywell, the UK government or ESA found.</p>
+<p><strong>Why it matters for Europe:</strong> this is the pattern the owner has flagged for years: technology started with European money (the EU-funded LAPCAT project in 2008, then ESA from 2010, as @F_CEAFE recalled in 2021) ends in US hands. Here thirty years of hypersonic and thermal-management know-how went for less than £1m, a small fraction of the public money invested, through an insolvency sale that no European buyer contested. Neither the UK nor ESA had a mechanism to keep the IP in Europe. Once again, Europe pays for the research and the US collects the results.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>Patent assignment to Honeywell Aerospace US LLC recorded 28 Jul 2026; assignors PwC and Reaction Engines Ltd (in administration) (Google Patents).</li>
+<li>IP sale concluded April 2026; £884,000 deposits; buyer not named in PwC’s report (FlightGlobal, Inngot).</li>
+<li>Public funding: about £60m from the UK Space Agency for SABRE (Inngot); about 170 of 208 staff were made redundant in 2024 (Oxford Chronicle).</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>@F_CEAFE (repost and reply with patent record): <a href="https://x.com/i/status/2126474612347142501">https://x.com/i/status/2126474612347142501</a> , <a href="https://x.com/i/status/2126475440177008915">https://x.com/i/status/2126475440177008915</a> ; his 2021 post on LAPCAT/ESA/DARPA: <a href="https://x.com/i/status/1352920660490780674">https://x.com/i/status/1352920660490780674</a></li>
+<li>Original post (@udderbruva): <a href="https://x.com/i/status/2126338750951129493">https://x.com/i/status/2126338750951129493</a></li>
+<li>Google Patents: <a href="https://patents.google.com/patent/US11162424B2/ko">https://patents.google.com/patent/US11162424B2/ko</a></li>
+<li>FlightGlobal: <a href="https://www.flightglobal.com/archive/2026/06/undisclosed-buyer-finalises-deal-for-reaction-engines-assets/">https://www.flightglobal.com/archive/2026/06/undisclosed-buyer-finalises-deal-for-reaction-engines-assets/</a></li>
+<li>Oxford Chronicle: <a href="https://www.oxfordchronicle.co.uk/2026/07/09/culham-hypersonic-pioneer-reaction-engines-ip-sold-after-170-of-208-staff-made-redundant/">https://www.oxfordchronicle.co.uk/2026/07/09/culham-hypersonic-pioneer-reaction-engines-ip-sold-after-170-of-208-staff-made-redundant/</a></li>
+<li>Inngot: <a href="https://inngot.com/news-views/pwc-administrators-says-%C2%A3884-000-deal-to-sell-ip-of-hypersonic-flight-pioneer-reaction-engines-completed-">https://inngot.com/news-views/pwc-administrators-says-%C2%A3884-000-deal-to-sell-ip-of-hypersonic-flight-pioneer-reaction-engines-completed-</a></li>
+</ul>
+<p><strong>What to watch:</strong> whether Honeywell uses the pre-cooler in US hypersonic or defence programmes; any UK parliamentary question; PwC’s next progress report. Candidate row for the US-takeovers tracker (IP/asset purchase, UK target).</p>
+<h2 id="s2">Update: France joins the Netherlands against the US MATCH Act, while Beijing keeps its side of the truce</h2>
+<p>French Trade Minister Nicolas Forissier told Bloomberg on 27 November that France shares Dutch concerns over the extraterritorial reach of the proposed US MATCH Act, which would force allies to tighten controls on chip equipment such as ASML’s immersion DUV machines sold to and serviced in China. “All European Union instruments remain available,” he said, “but we will not react impulsively.” The bill is being considered for the annual US defence package, which usually passes in December. EU trade ministers meet in Brussels on Monday 30 November, with US Trade Representative Jamieson Greer joining remotely. Forissier also warned of the “gradual erosion of the benefits of the Turnberry agreement” (Bloomberg via Mint). The Dutch prime minister plans to raise the MATCH Act with Trump at the G20 (Reuters, X). The Dutch minister Sjoerd Sjoerdsma said he works with the Commission, Germany and France against the bill; an expert cited by Reuters mentions the EU Blocking Statute (TrendForce). Reaction side: China has so far not retaliated against the latest US chip curbs. Its MOFCOM Announcement No. 59 keeps the suspension of the gallium, germanium and antimony ban on the US in force from today, 28 November, to 27 January 2027 (covered 24 Nov); Bloomberg reads this as Beijing “holding up its side of the bargain — for now”.</p>
+<p><strong>Why it matters for Europe:</strong> two large member states now say openly that US law should not dictate what European firms sell. A credible response needs the EU as a bloc: Monday’s trade council is the first test. This is the reciprocity CEAFE has called for.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>ASML: China expected to be about a fifth of revenue in 2026 (Bloomberg).</li>
+<li>MATCH Act: bipartisan; would extend restrictions from EUV to immersion DUV sales and servicing (Bloomberg, TrendForce).</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>@F_CEAFE: <a href="https://x.com/i/status/2126633034845745553">https://x.com/i/status/2126633034845745553</a></li>
+<li>Bloomberg via Mint: <a href="https://www.livemint.com/politics/france-joins-the-dutch-in-opposing-proposed-us-export-curbs-11795806545216.html">https://www.livemint.com/politics/france-joins-the-dutch-in-opposing-proposed-us-export-curbs-11795806545216.html</a></li>
+<li>Reuters (X): <a href="https://x.com/i/status/2126458603028512918">https://x.com/i/status/2126458603028512918</a></li>
+<li>TrendForce: <a href="https://www.trendforce.com/news/2026/11/27/news-netherlands-opposes-match-acts-tighter-curbs-on-asmls-china-sales-eyes-eu-countermeasures/">https://www.trendforce.com/news/2026/11/27/news-netherlands-opposes-match-acts-tighter-curbs-on-asmls-china-sales-eyes-eu-countermeasures/</a></li>
+<li>Bloomberg (X, China and the truce): <a href="https://x.com/i/status/2126511928931455309">https://x.com/i/status/2126511928931455309</a></li>
+<li>China SCIO (suspension extended): <a href="http://english.scio.gov.cn/pressroom/2026-11/25/content_118788378.html">http://english.scio.gov.cn/pressroom/2026-11/25/content_118788378.html</a></li>
+</ul>
+<p><strong>What to watch:</strong> EU trade council 30 Nov; G20 talks; NDAA text in December; MFA/MOFCOM comment on the European stance.</p>
+<h2 id="s3">Update: EU sanctions — Bulgaria blocks the 22nd Russia package to reopen imports of Russian pig iron</h2>
+<p>Bulgaria is holding up the EU’s 22nd sanctions package against Russia and asks for earlier bans on imports of Russian pig iron and mining equipment to be lifted (Kyiv Independent, 27 Nov). It also opposes listing a Russian chemicals company, citing fertiliser supplies, and a person linked to a dual-use nuclear facility. EU and Ukrainian officials suspect a commercial motive. Italy has also raised objections, to the proposed ban on Europeans sitting on Russian company boards.</p>
+<p><strong>Why it matters for Europe:</strong> sanctions need unanimity, so one member state can stall the package. Pig iron is an input for steel, a sector where Ukraine’s industry is under Russian attack.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Kyiv Independent (X, reposted by @F_CEAFE): <a href="https://x.com/i/status/2126390538945613857">https://x.com/i/status/2126390538945613857</a> ; article: <a href="https://kyivindependent.com/bulgaria-holding-eus-22nd-russia-sanctions-package-hostage-in-bid-to-extract-concessions/">https://kyivindependent.com/bulgaria-holding-eus-22nd-russia-sanctions-package-hostage-in-bid-to-extract-concessions/</a></li>
+</ul>
+<p><strong>What to watch:</strong> Coreper discussions next week.</p>
+<h2 id="s4">US trade — goods deficit widens to $149.5bn in October as AI imports hit a record</h2>
+<p>The US advance goods trade deficit widened 10.7% to $149.5bn in October; imports rose 6.1% to a record $365.3bn, led by capital goods (+8.5% to $171.4bn, up about 80% on a year earlier) linked to AI data centres; exports rose 3.2% to $215.8bn (US Census Bureau; Anadolu; Reuters). It is the fourth straight monthly widening (Bloomberg).</p>
+<p><strong>Why it matters for Europe:</strong> despite the tariffs, the US deficit keeps growing, which strengthens the case in Washington for more Section 301 tariffs on partners, the EU included.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Reuters (X): <a href="https://x.com/i/status/2126444738995749352">https://x.com/i/status/2126444738995749352</a></li>
+<li>US Census Bureau: <a href="https://www.census.gov/econ/indicators/2026/advance_report2610.pdf">https://www.census.gov/econ/indicators/2026/advance_report2610.pdf</a></li>
+<li>Anadolu: <a href="https://aa.com.tr/en/economy/us-goods-trade-deficit-widens-to-1495b-in-october-exceeding-forecasts/4140528">https://aa.com.tr/en/economy/us-goods-trade-deficit-widens-to-1495b-in-october-exceeding-forecasts/4140528</a></li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — viernes, 27 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">viernes, 27 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Industria de Defensa / Defence Industry</li>
+<li><strong>Periodo cubierto:</strong> desde las 12:55 hasta las 18:55, aproximadamente, del viernes 27 de noviembre, hora de Madrid: todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Elaborado a partir de:</strong> los informes de las secciones Industria de Defensa y Conflictos de CEAFE, las publicaciones de @F_CEAFE y el archivo de X de CEAFE.</li>
+</ul>
+<h2 id="s1">Actualización: cinco países firman la compra conjunta de CV90 por 5.500 millones de euros, la mayor adquisición común de vehículos terrestres de Europa</h2>
+<p>Finlandia, Lituania, los Países Bajos, Noruega y Suecia firmaron los contratos en Estocolmo el 27 de noviembre. El acuerdo asciende a 5.500 millones de euros (6.000 millones de dólares). Abarca más de 400 vehículos de combate de infantería CV9035 MkIV «Nordic Edition» de BAE Systems Hägglunds, con sede en Örnsköldsvik (Suecia). Cada país firma su propio pedido dentro de un único acuerdo marco. Ese acuerdo fija una configuración común. BAE Systems lo califica de «primicia mundial». Según los comunicados nacionales, Finlandia recibirá 160 vehículos, Lituania 100, Noruega 70 y Suecia 60. Las fuentes consultadas no dan la cifra neerlandesa. La producción se repartirá entre proveedores de los cinco países, con transferencia de tecnología y garantía de suministro. Lituania se estrena como usuaria del CV90. Hägglunds tiene su sede en Suecia, pero pertenece a la británica BAE Systems.</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> la edición de las 20:30 del 26 de noviembre informó del pedido finlandés de 160 vehículos, que CEAFE compartió desde @DefenceFinland (https://x.com/i/status/2125940016216158499). En diciembre de 2024, BAE Systems obtuvo contratos de CV90 por 2.500 millones de dólares con Dinamarca y Suecia (https://x.com/i/status/1868598853655765379).</p>
+<p><strong>Por qué importa para Europa:</strong> cinco Estados suman su demanda en torno a un único vehículo fabricado en Europa, con una sola configuración y una logística compartida. Ninguno de ellos habría alcanzado esta escala por sí solo. Es el modelo que defiende CEAFE: la compra conjunta da peso a los Estados pequeños ante los grandes proveedores y mantiene en Europa la producción y el conocimiento.</p>
+<p><strong>Qué vigilar:</strong> la parte neerlandesa del pedido; los plazos de entrega; si otros países se suman al acuerdo marco.</p>
+<p>Fuentes: republicación de @F_CEAFE de @BAESystemsplc <a href="https://x.com/F_CEAFE/status/2126305753048785375">https://x.com/F_CEAFE/status/2126305753048785375</a>, @BAESystemsplc <a href="https://x.com/BAESystemsplc/status/2126300308661743690">https://x.com/BAESystemsplc/status/2126300308661743690</a>, BAE Systems (GlobeNewswire) <a href="https://www.globenewswire.com/news-release/2026/11/27/3411210/1953/en/bae-systems-secures-five-nation-landmark-agreement-worth-6b-for-new-cv90-combat-vehicles.html">https://www.globenewswire.com/news-release/2026/11/27/3411210/1953/en/bae-systems-secures-five-nation-landmark-agreement-worth-6b-for-new-cv90-combat-vehicles.html</a>, Gobierno de Suecia <a href="https://www.government.se/press-releases/2026/11/joint-procurement-of-cv-90-combat-vehicles-with-several-allies/">https://www.government.se/press-releases/2026/11/joint-procurement-of-cv-90-combat-vehicles-with-several-allies/</a>, Agencia Noruega de Material de Defensa <a href="https://www.fma.no/aktuelt-og-media/2026/norge-kjoper-nye-kampvogner-til-haeren">https://www.fma.no/aktuelt-og-media/2026/norge-kjoper-nye-kampvogner-til-haeren</a>, Ministerio de Defensa Nacional de Lituania <a href="https://kam.lt/r-kaunas-svedijoje-lietuva-isigijo-naujausios-kartos-pestininku-kovos-masinas-cv-90/">https://kam.lt/r-kaunas-svedijoje-lietuva-isigijo-naujausios-kartos-pestininku-kovos-masinas-cv-90/</a>, EDR Magazine <a href="https://www.edrmagazine.eu/bae-systems-hagglunds-finland-lithuania-the-netherlands-norway-and-sweden-sign-the-contract-for-400-cv9035-mkiv-infantry-combat-vehicles">https://www.edrmagazine.eu/bae-systems-hagglunds-finland-lithuania-the-netherlands-norway-and-sweden-sign-the-contract-for-400-cv9035-mkiv-infantry-combat-vehicles</a>.</p>
+<p><strong>CEAFE:</strong> Datos que demuestran cómo el tamaño de los Estados europeos les impide competir en solitario frente a potencias globales de mucho mayor tamaño.</p>
+<h2 id="s2">Kubilius en Vilna: una industria europea de defensa sin «dependencias peligrosas»</h2>
+<p>El comisario europeo de Defensa y Espacio, Andrius Kubilius, intervino en la reunión COPRES de BusinessEurope en Vilna. Dio tres mensajes a la industria. Primero, la industria de defensa de la UE debe quedar libre de dependencias peligrosas en sus cadenas de suministro. Segundo, las Fuerzas Armadas de la UE necesitan suficiente combustible procedente de refinerías de la UE. Tercero, la Comisión trabajará por un mercado de defensa integrado en la UE.</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> el 20 de octubre CEAFE comentó una publicación anterior de Kubilius señalando que reducir los proveedores ajenos a la OTAN supone más dependencia de Estados Unidos: en sistemas de armas, acceso al espacio, minerales, energía, chips y servicios digitales (https://x.com/i/status/2112508233541624302). La edición de las 08:30 informó de que París y Berlín están divididos sobre las reglas de «fabricado en Europa» en el próximo presupuesto de defensa de la UE.</p>
+<p><strong>Por qué importa para Europa:</strong> la dependencia no es solo de China. También lo es de Estados Unidos, en armas, programas informáticos y espacio. Un mercado integrado es la única vía para que los Estados miembros pequeños cuenten con una industria de defensa de escala suficiente. La prueba será si el «fabricado en Europa» sobrevive en el próximo presupuesto de la UE.</p>
+<p><strong>Qué vigilar:</strong> las propuestas de la Comisión sobre el mercado de defensa integrado; la cláusula de «fabricado en Europa» en la negociación presupuestaria.</p>
+<p>Fuentes: @KubiliusA <a href="https://x.com/KubiliusA/status/2126315335011934356">https://x.com/KubiliusA/status/2126315335011934356</a>.</p>
+<h2 id="s3">Casi toda la plantilla de ArianeGroup en Bremen se suma a una huelga de 24 horas</h2>
+<p>Cerca de 650 empleados de ArianeGroup en Bremen se sumaron el 24 de noviembre a una huelga de advertencia de 24 horas convocada por el sindicato IG Metall, según European Spaceflight. En Bremen se fabrican las etapas superiores del Ariane 6. La huelga formó parte de un paro de unos 39.000 trabajadores en 22 centros del norte de Alemania. ArianeGroup aseguró que el calendario de entregas de las etapas superiores del Ariane 6 no se vio afectado y que la producción se «adaptó». El 26 de noviembre IG Metall cerró un acuerdo salarial: +2 % desde mayo de 2027 y +2,3 % desde abril de 2028, con compromisos de inversión y de mantenimiento del empleo.</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> el Ariane 6 realizó su primer lanzamiento el 9 de julio de 2024 (ESA, <a href="https://x.com/i/status/1798596621871317087">https://x.com/i/status/1798596621871317087</a>). En mayo de 2024 CEAFE compartió que el jefe del Mando Espacial francés temía que los retrasos del Ariane 6 afectaran a un satélite militar de patrulla (https://x.com/i/status/1791098980178252249).</p>
+<p><strong>Por qué importa para Europa:</strong> el único lanzador pesado de Europa depende de unos pocos centros únicos. Cualquier parón en ellos afecta al acceso autónomo de Europa al espacio, frente a la escala de SpaceX.</p>
+<p><strong>Qué vigilar:</strong> las entregas de etapas superiores y el ritmo de lanzamientos del Ariane 6 en los próximos meses.</p>
+<p>Fuentes: European Spaceflight <a href="https://europeanspaceflight.com/hundreds-of-arianegroup-workers-strike-in-bremen/">https://europeanspaceflight.com/hundreds-of-arianegroup-workers-strike-in-bremen/</a>, @AndrewParsonson <a href="https://x.com/AndrewParsonson/status/2126324094043865136">https://x.com/AndrewParsonson/status/2126324094043865136</a>.</p>
+<h2 id="s4">Suecia e ICEYE firman un nuevo acuerdo de capacidad espacial soberana</h2>
+<p>La empresa finlandesa de satélites ICEYE afirma haber firmado un nuevo acuerdo con la Administración de Material de Defensa de Suecia (FMV). Lo firmaron el general de brigada Carl-Fredrik Edström y Seppo Aaltonen, de ICEYE. Según ICEYE, el acuerdo «refuerza aún más la capacidad soberana de Suecia en el espacio». La publicación no detalla su alcance ni su valor. Se basa en un contrato de enero de 2026 por el que las Fuerzas Armadas suecas poseen y operan satélites radar de ICEYE (SAR, radar de apertura sintética). Ese contrato se amplió en agosto.</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> en mayo CEAFE compartió la publicación de ICEYE según la cual Finlandia, Suecia, Polonia y los Países Bajos construyen sistemas soberanos de vigilancia diseñados para funcionar juntos (https://x.com/i/status/2056512636095795334). El 25 de noviembre CEAFE compartió la visita de la coalición HALO de la OTAN a la sede de ICEYE en Finlandia (https://x.com/i/status/2125479902506066313).</p>
+<p><strong>Por qué importa para Europa:</strong> un proveedor finlandés da a un cliente sueco imágenes radar propias desde el espacio. Europa gana capacidad de observación que no depende de proveedores comerciales estadounidenses.</p>
+<p><strong>Qué vigilar:</strong> el alcance y el valor del acuerdo; nuevos pedidos de países nórdicos y bálticos.</p>
+<p>Fuentes: @iceye_global <a href="https://x.com/iceye_global/status/2126330329585570005">https://x.com/iceye_global/status/2126330329585570005</a>, ICEYE <a href="https://www.iceye.com/newsroom/press-releases/iceye-to-deliver-sovereign-space-based-intelligence-capabilities-to-the-swedish-armed-forces">https://www.iceye.com/newsroom/press-releases/iceye-to-deliver-sovereign-space-based-intelligence-capabilities-to-the-swedish-armed-forces</a>.</p>
+<h2 id="s5">Fire Point (Ucrania): Stubb elogia su producción y su consejero delegado pide garantías «escritas en acero»</h2>
+<p>El fabricante ucraniano de drones y misiles Fire Point cita al presidente finlandés, Alexander Stubb, tras su visita a sus plantas. Según la empresa, Stubb dijo que Ucrania ha pasado de «cero drones» hace cuatro años y medio a «una capacidad para producir 10 millones de drones» este año. La consejera delegada de Fire Point, Iryna Terekh, dijo en la Web Summit que las garantías de seguridad «deberían estar escritas en acero… no en ningún tipo de papel o tinta». Fire Point asegura además que los ataques ucranianos contra unidades de destilación AVT dejaron fuera de servicio más del 60 % de la capacidad de refino de Rusia en un mes. Es una afirmación de la empresa y no está verificada.</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> el 28 de octubre CEAFE compartió una publicación que recordaba que en 2024 el presidente Zelenski anunció que Ucrania, a través de Fire Point, produciría 3.000 misiles de crucero a finales de 2025 (https://x.com/i/status/2115399051977834979).</p>
+<p><strong>Por qué importa para Europa:</strong> la industria ucraniana ha alcanzado una escala de producción de drones que Europa necesita. Integrarla en la base europea de defensa añadiría una capacidad que ningún Estado miembro tiene por sí solo.</p>
+<p><strong>Qué vigilar:</strong> acuerdos de producción conjunta entre Fire Point y Estados de la UE; datos independientes sobre los ataques a refinerías.</p>
+<p>Fuentes: @FirePointUA <a href="https://x.com/FirePointUA/status/2126290241631748215">https://x.com/FirePointUA/status/2126290241631748215</a>, <a href="https://x.com/FirePointUA/status/2126326317587087639">https://x.com/FirePointUA/status/2126326317587087639</a>, <a href="https://x.com/FirePointUA/status/2126369886150578581">https://x.com/FirePointUA/status/2126369886150578581</a>.</p>
+<h2 id="s6">Reino Unido encarga drones submarinos REMUS 620 estadounidenses para la lucha antiminas de la Royal Navy</h2>
+<p>Reino Unido ha encargado vehículos submarinos no tripulados REMUS 620 a la empresa estadounidense HII para la lucha antiminas de la Royal Navy, según Navy Recognition. La fuente no da el valor del pedido.</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> en enero de 2024 CEAFE compartió una información del UK Defence Journal según la cual la Royal Navy compraría más drones REMUS 300 a HII (https://x.com/i/status/1748851009600860469).</p>
+<p><strong>Por qué importa para Europa:</strong> otra compra naval europea va a parar a un proveedor estadounidense. Cada pedido nacional de este tipo aumenta la dependencia de la tecnología y el apoyo de Estados Unidos.</p>
+<p><strong>Qué vigilar:</strong> el número de unidades, el valor y los plazos de entrega.</p>
+<p>Fuentes: Navy Recognition <a href="https://x.com/i/status/2126297452802429056">https://x.com/i/status/2126297452802429056</a>.</p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

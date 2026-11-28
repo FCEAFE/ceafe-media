@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTS — Tuesday, 24 November 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTS</h1>
+      <p class="list-date">Tuesday, 24 November 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> Monday 23 November about 19:00 to Tuesday 24 November about 07:00 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Conflicts and World section briefs and the posts of @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Update: Iran war — IRGC says three tankers under US escort hit mines in Hormuz; Iran vows “all tools” against the blockade</h2>
+<p>Iran’s Islamic Revolutionary Guard Corps says three “non-compliant” oil tankers sailing under US aerial escort suffered “severe explosions and fire” after hitting naval mines in the Strait of Hormuz; the Iranian Navy said the US escort “was unable to prevent these incidents” and promised images (Al Jazeera). These are Iranian claims; no US confirmation was found in the window. Foreign Ministry spokesman Esmaeil Baghaei said Iran will use “all the tools” at its disposal against the US naval blockade, which it calls aggression, while Tehran also said security in the strait could be restored quickly if the US met its conditions. On the diplomatic track, Axios reports that Vice President JD Vance met Qatar’s Prime Minister Sheikh Mohammed bin Abdulrahman Al Thani on the Iran negotiations, and Qatar says it continues to work on de-escalation. Separately, the WSJ reports that the US is investigating cyberattacks on up to 50 ships, some with bomb threats, with Iran and Russia as possible suspects; the US says it has no evidence of Iranian involvement (Reuters; Al Jazeera). The IRGC also says it has shot down its 58th MQ-9.</p>
+<p><strong>Context:</strong> Antecedentes: the Strait of Hormuz has been blockaded since the spring of 2026; on 17 April 2026 @F_CEAFE commented on President Emmanuel Macron&rsquo;s announcement that France, alongside more than fifty countries, was leading an initiative for freedom of navigation in the strait (<a href="https://x.com/i/status/2045202134480638071">X, 2026</a>).</p>
+<p><strong>Why it matters for Europe:</strong> mines and cyberattacks on merchant shipping raise insurance and energy costs for Europe and test whether escorts alone can keep the strait open.</p>
+<p><strong>What to watch:</strong> US confirmation or denial of the mine hits; tanker names and flags; UKMTO advisories.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124984786498281551">X (1)</a>, <a href="https://x.com/i/status/2125080719227494502">X (2)</a>, <a href="https://x.com/i/status/2124983403749466497">X (3)</a>, <a href="https://x.com/i/status/2124994660905218223">X (4)</a>, <a href="https://x.com/i/status/2125026612714319920">X (5)</a>, <a href="https://x.com/i/status/2125004055013392481">X (6)</a>, <a href="https://x.com/i/status/2125050893733154952">X (7)</a>, <a href="https://x.com/i/status/2125082018589368516">X (8)</a>, <a href="https://x.com/i/status/2125088850083295612">X (9)</a>, <a href="https://x.com/i/status/2125018031248347478">X (10)</a></p>
+<h2 id="s2">Poland and Moldova: Russian drone violates Polish airspace days after missile incursion</h2>
+<p>A Russian one-way attack drone briefly entered Polish airspace during the overnight attack on western Ukraine; Polish air defence was activated and air-raid sirens sounded near Lublin (@visegrad24). It follows the Kh-101 debris found at three Polish sites last week. In Moldova, local media report a drone burst into flames after crashing in the Russian-occupied Transnistria region on the evening of 23 November (Kyiv Independent).</p>
+<p><strong>Why it matters for Europe:</strong> repeated incursions test NATO’s eastern air defence and its rules of engagement.</p>
+<p><strong>What to watch:</strong> Polish government statement on debris; any NATO Article 4 request; confirmation of AWACS forward deployment.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124991594957009253">X (1)</a>, <a href="https://x.com/i/status/2125003063308251529">X (2)</a>, <a href="https://x.com/i/status/2125058619175510306">X (3)</a></p>
+<h2 id="s3">Ukraine war: drone raid on the Moscow area; Russian missile output; casualty estimate</h2>
+<p>@OSINTtechnical reports that Ukrainian forces mounted a large attack-drone raid into the Moscow area overnight, with local channels describing drones harassing air defences and heading towards deeper targets; no official Russian damage figures were found in the window. Ukrainian Defence Minister Yevhenii Khmara says Russia produces one ballistic missile every five hours and is speeding up (@ClashReport). A new estimate cited by the New York Times’ Peter Baker puts Russian soldiers killed in the war at more than 700,000. Zelensky said Ukraine will receive its first JAS-39C/D Gripen fighters in January, and at the NATO Parliamentary Assembly he asked whether it would not be more effective “to simply admit Ukraine into NATO” (Kyiv Independent).</p>
+<p><strong>Why it matters for Europe:</strong> Russia’s ballistic-missile output drives Europe’s air-defence demand; the Gripen transfer is a European capability delivered by a European supplier.</p>
+<p><strong>What to watch:</strong> Russian MoD and Moscow mayor statements on the raid; damage at targets.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2125015560849100918">X (1)</a>, <a href="https://x.com/i/status/2124982025673470311">X (2)</a>, <a href="https://x.com/i/status/2124961792568983897">X (3)</a>, <a href="https://x.com/i/status/2124990271129821530">X (4)</a>, <a href="https://x.com/i/status/2125014804800717106">X (5)</a></p>
+<h2 id="s4">Russian warplanes near Ulleung: South Korea orders residents to shelter and scrambles F-15Ks; Seoul will protest to Moscow</h2>
+<p>At 07:52 local time on Tuesday (23:52 Madrid on Monday), South Korea&rsquo;s interior ministry ordered residents of Ulleung island to take shelter underground after several Russian military aircraft entered the Korea Air Defence Identification Zone (KADIZ) over the East Sea (Sea of Japan). The alert was lifted about five minutes later. The Joint Chiefs of Staff said the aircraft came &ldquo;to the point just before violating&rdquo; the island&rsquo;s airspace and then left; there was no violation. F-15Ks were scrambled before the aircraft entered the zone. A provincial message wrongly called them &ldquo;suspected North Korean aircraft&rdquo; and was corrected later. The defence ministry will summon a Russian embassy official to lodge a formal complaint (Yonhap, JoongAng Daily, The Guardian). In Brussels the previous week, Japan&rsquo;s State Minister of Defence Odawara told the EU Schuman Security and Defence Forum that Euro-Atlantic and Indo-Pacific security are &ldquo;inseparable&rdquo;.</p>
+<p><strong>Why it matters for Europe:</strong> the pattern of Russian probes now runs from Poland and the Baltic to the Korean peninsula. The same pressure on air-defence systems and public nerves that Poland, Finland and Estonia faced last week now appears on the far side of Eurasia. It reinforces the case for Europe to build its own airspace-surveillance and air-defence capabilities, rather than relying on others&rsquo; alert systems.</p>
+<p><strong>What to watch:</strong> Russia&rsquo;s response to Seoul&rsquo;s protest; any joint Russia–China air patrol pattern (previous ones have crossed the KADIZ); Japanese reports of the same flight.</p>
+<p><strong>Sources:</strong> <a href="https://en.yna.co.kr/view/AEN20261124002251315">Yonhap</a>, <a href="https://www.koreajoongangdaily.com/korea/russian-aircraft-prompt-brief-ulleung-air-raid-warning-alert-mistakenly-identifies-them-as-north-korean/12987159">Korea JoongAng Daily</a>, <a href="https://www.theguardian.com/world/2026/nov/24/south-korea-tells-island-residents-to-take-shelter-after-russian-military-aircraft-approach">The Guardian</a>, <a href="https://x.com/i/status/2125074478786846973">Reuters</a>, <a href="https://x.com/i/status/2125103119046426829">dpa</a>, <a href="https://x.com/i/status/2125098507589779512">Japan MoD (Odawara at the Schuman Forum)</a></p>
+<h2 id="s5">Yemen–Saudi war: launches from Yemen toward southern Saudi Arabia</h2>
+<p><strong>Pro-Houthi accounts report missile and drone launches from Yemen with Saudi air defences active in the south, and flights to Jeddah and Dammam placed in holding patterns (@MenchOsint; video via). The same accounts accuse Saudi Arabia of new strikes on civilians in Yemen. These are unverified, partisan sources; no Saudi official confirmation was found in the window.</strong></p>
+<p><strong>What to watch:</strong> Saudi coalition statement; GACA flight notices.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124964288821436526">X (1)</a>, <a href="https://x.com/i/status/2124989938844246140">X (2)</a>, <a href="https://x.com/i/status/2124942788638781675">X (3)</a></p>
+<h2 id="s6">Technology and procurement: counter-drone and rockets</h2>
+<p><strong>The German-Ukrainian joint venture Quantum WIY Industries released video of its new SPYS interceptor drone, an example of intra-European–Ukrainian production. Lockheed Martin completed a third test of its Joint Reduced Range Rocket (JR3) at Yuma Proving Ground (Defence Post; image: JR3 test launch).</strong></p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124960775668142371">X (1)</a>, <a href="https://x.com/i/status/2125106164299952386">X (2)</a>, <a href="https://pbs.twimg.com/media/HX3kyOoXAAAPC4Y.jpg">pbs.twimg.com</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Conflicts. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

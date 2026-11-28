@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Sunday, 22 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Sunday, 22 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> Saturday 21 November about 19:30 to Sunday 22 November about 13:30 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, official documents and the posts of @F_CEAFE.</li>
+</ul>
+<h2 id="s1">China demands the US revoke the FCC ban on Chinese telecom operators and threatens &ldquo;necessary measures&rdquo;</h2>
+<p><strong>China&rsquo;s Ministry of Commerce (MOFCOM) on Sunday urged the United States to &ldquo;immediately revoke&rdquo; the Federal Communications Commission&rsquo;s ban on China Telecom, China Unicom, China Mobile and other carriers on its &ldquo;Covered List&rdquo; obtaining US internet telephone-number resources, and said China &ldquo;will take necessary measures&rdquo; to defend its interests.</strong></p>
+<p>MOFCOM said the FCC, which voted on 19 November, &ldquo;abused its regulatory power&rdquo; and generalised &ldquo;so-called national-security risks&rdquo; without a factual basis, pushing US–China &ldquo;decoupling&rdquo; in telecoms, testing and certification against the &ldquo;important consensus&rdquo; reached by the two heads of state. The FCC justified the order by the fight against illegal robocalls (The Straits Times).</p>
+<p><strong>Context:</strong> the dispute is the latest step in a chain of action and reaction: FCC bans on Huawei and other Chinese equipment; an October 2026 decision to bar Chinese laboratories from testing US-bound electronics from December 2028; the optical-transceiver import ban; the numbering-resources ban of 19 November; and now MOFCOM&rsquo;s threat of countermeasures, days after Xi hosted Trump in Shenzhen.</p>
+<p><strong>Why it matters for Europe:</strong> Washington and Beijing are splitting telecoms, testing and certification into two blocs, one regulatory decision at a time. European operators and test labs working in both markets may be asked to choose, and Europe has no say in either the FCC&rsquo;s lists or China&rsquo;s countermeasures.</p>
+<p><strong>What to watch:</strong> whether China names concrete countermeasures (unreliable entity list, export controls on critical minerals); any EU position on the FCC testing-lab rule.</p>
+<p><strong>Sources:</strong> <a href="https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_a8a703480a3a4720a247c584d9f77eeb.html">MOFCOM</a>, <a href="https://www.straitstimes.com/asia/east-asia/china-slams-malicious-us-ban-on-telecom-firms-phone-number-access">The Straits Times</a>, <a href="https://www.scmp.com/news/china/diplomacy/article/3375364/beijing-vows-defend-interests-us-bars-chinese-telecoms-accessing-phone-numbers">South China Morning Post</a>, <a href="https://x.com/i/status/2124322059748806687">Global Times</a></p>
+<hr>
+<h2 id="s2">Update: Iran&rsquo;s &ldquo;line-breaker&rdquo; tanker turns out to be a spoof as tankers gather at Kharg</h2>
+<p><strong>Early on Sunday MarineTraffic showed a vessel named &ldquo;Khat Shekan&rdquo; (Persian for &ldquo;line-breaker&rdquo;) sailing through the Strait of Hormuz, which was widely read as Iran&rsquo;s first attempt to break the US naval blockade; TankerTrackers said it was a spoof.</strong></p>
+<p>Satellite imagery showed no vessel, the call sign belongs to a Liberian-flagged tanker and the listed destination implied an impossible transit time (Iran International, Euronews). Satellite images and tracking data show more than 14 tankers gathered around Kharg Island, Iran&rsquo;s main export terminal, and Foreign Minister Abbas Araghchi said on Friday that &ldquo;the blockade must be broken&rdquo;. President Masoud Pezeshkian said Iran faces a &ldquo;silent economic war&rdquo; tougher than the missile war.</p>
+<p><strong>Context:</strong> the US blockade reached its 130th day on Saturday 21 November (Euronews). No crude-laden tanker has been confirmed crossing the blockade line since 12 July, according to UANI figures. Turkish Foreign Minister Hakan Fidan said a ceasefire is needed to ease the war&rsquo;s &ldquo;economic burden&rdquo;.</p>
+<p><strong>Why it matters for Europe:</strong> the blockade is a US sanctions instrument enforced at sea, and its course sets the oil prices Europe pays, without Europe having a say in it.</p>
+<p><strong>What to watch:</strong> a satellite-confirmed tanker leaving Kharg and the US response; the Qatari mediation; Monday&rsquo;s oil-market reaction.</p>
+<p><strong>Sources:</strong> <a href="https://www.euronews.com/2026/11/22/tracking-site-says-iranian-tanker-reportedly-sailing-through-strait-of-hormuz-does-not-exi">Euronews</a>, <a href="https://www.iranintl.com/en/202611211549">Iran International</a>, <a href="https://www.theweek.in/news/middle-east/2026/11/22/the-mystery-of-khat-shekan-alleged-iranian-oil-tanker-challenging-us-blockade-does-not-exist.html">The Week</a>, <a href="https://www.aa.com.tr/en/middle-east/iran-facing-silent-economic-war-that-is-tougher-than-missile-war-says-president-pezeshkian/4132988">Anadolu, Pezeshkian</a>, <a href="https://x.com/i/status/2124355960420663559">Al Jazeera, Fidan</a></p>
+<hr>
+<h2 id="s3">COP31 in Antalya ends its overtime without agreement after fossil fuels are dropped from the text</h2>
+<p><strong>On its second day of overtime, the COP31 presidency (Türkiye, with Australia as co-host) published a new draft that does not mention fossil fuels, and on Sunday COP31 President Murat Kurum told the closing plenary: &ldquo;I understand that there&rsquo;s no agreement on this text. For that reason, these decisions have not been adopted&rdquo;; at 12:37 GMT he said there would be no new draft (BBC).</strong></p>
+<p>The EU, Panama, the Pacific states and others had demanded explicit fossil-fuel language; observers said Saudi Arabia and other oil producers pushed to keep it out (Al Jazeera, BBC). Speaking for the EU, Irish Climate Minister Darragh O&rsquo;Brien said: &ldquo;We will not endorse a cover decision, or an Antalya Pact, that does not even mention fossil fuels&rdquo; (AFP); France&rsquo;s Monique Barbut called the proposal a &ldquo;backward&rdquo; step. The draft kept a target of 35% of energy consumption from electricity by 2035 and, for the first time, acknowledged that the world is on course to exceed 1.5 °C (BBC, Carbon Copy).</p>
+<p><strong>Context:</strong> the first draft, on Monday, mentioned fossil fuels six times; the second, on Thursday, none (BBC).</p>
+<p><strong>Why it matters for Europe:</strong> the EU is the main bloc pushing a transition away from fossil fuels while it imports most of its oil and gas and pays crisis prices because of Hormuz; without a global agreement its industry carries costs that competitors do not share.</p>
+<p><strong>What to watch:</strong> the formal closure of COP31 and the next steps under the UN climate process; previous COP obligations remain in force.</p>
+<p><strong>Sources:</strong> <a href="https://www.bbc.co.uk/news/live/crly5w901n20t">BBC live</a>, <a href="https://www.bbc.com/news/articles/cq7827z2841zo">BBC</a>, <a href="https://www.aljazeera.com/news/2026/11/22/fossil-fuel-impasse-pushes-cop31-climate-talks-into-second-day-of-overtime">Al Jazeera</a>, <a href="https://apnews.com/article/climate-un-turkey-fossil-fuels-global-warming-f6e36c4caf13ec6fed57c9f077cbd067">AP</a>, <a href="https://www.carboncopy.info/cop-31-final-text-no-transition-away-from-fossil-fuels-no-120-billion-adaptation-finance-target-includes-35-by-35-electrification-and-ccus">Carbon Copy</a>, <a href="https://x.com/i/status/2124460588382179822">dpa</a>, <a href="https://www.afp.com/en/eu-will-not-endorse-climate-deal-throwing-cop31-deal-doubt">AFP</a></p>
+<hr>
+<h2 id="s4">Japan plans to list organic chemicals as critical products because of Hormuz</h2>
+<p><strong>Japan&rsquo;s government is considering adding organic chemical products, such as ethylene and propylene made from naphtha, to the list of &ldquo;specified critical products&rdquo; under its Economic Security Promotion Act, sources told Jiji (The Japan Times).</strong></p>
+<p>They are inputs for plastics and for high-performance materials used in semiconductor manufacturing. A panel of experts will discuss it, with the aim of amending the Cabinet order by the end of fiscal 2026 (March 2027). The trigger is the disruption of shipping through the Strait of Hormuz: Japan imports most of the oil used to make naphtha from the Middle East, domestic chemical output is falling and dependence on China is rising. Designated products receive state support for stable supply; the current list has 12 categories, including semiconductors, batteries, permanent magnets and critical minerals.</p>
+<p><strong>Why it matters for Europe:</strong> Japan has a single national law and list for critical supply chains, with support attached, and updates it within months of a shock; Europe&rsquo;s chemical industry faces the same energy-price pressure with tools spread across the Critical Raw Materials Act, the Chips Act and national schemes.</p>
+<p><strong>What to watch:</strong> the panel&rsquo;s list and the Cabinet order.</p>
+<p><strong>Sources:</strong> <a href="https://www.japantimes.co.jp/news/2026/11/22/japan/organic-chemicals-critical-items/">The Japan Times</a>, <a href="https://www.japaneselawtranslation.go.jp/en/laws/view/5008/en">Japanese Law Translation</a></p>
+<hr>
+<h2 id="s5">US senators propose a five-year extension of the 48D chip-investment tax credit</h2>
+<p><strong>Senators John Cornyn (R-TX) and Mark Kelly (D-AZ) introduced bill S.5809 on 19 November to extend the Section 48D advanced manufacturing investment credit for five years; the credit, created by the CHIPS Act, is due to expire at the end of 2026 (Congress.gov).</strong></p>
+<p>The Semiconductor Industry Association says the incentive has helped catalyse more than $825 billion in private semiconductor investment (SIA figure; it does not state the period). The bill has been referred to the Senate Finance Committee.</p>
+<p><strong>Why it matters for Europe:</strong> the US keeps paying to attract chip plants, including those of European and Asian firms, while restricting where they can sell; the EU Chips Act has no comparable tax credit.</p>
+<p><strong>What to watch:</strong> the Finance Committee&rsquo;s handling of the bill.</p>
+<p><strong>Sources:</strong> <a href="https://www.semiconductors.org/sia-applauds-introduction-of-bipartisan-legislation-to-extend-semiconductor-investment-credit/">SIA</a>, <a href="https://x.com/i/status/2124222653602889949">SIA on X</a>, <a href="https://www.congress.gov/bill/119th-congress/senate-bill/5809">Congress.gov</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

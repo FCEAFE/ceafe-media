@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Thursday, 26 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Thursday, 26 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> from about 07:30 to about 13:15 on Thursday 26 November, Europe/Madrid: everything new since the 08:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">Update: European Council — Merz rejects Costa&rsquo;s €1.781 trillion budget as &ldquo;too high&rdquo;, the Netherlands says &ldquo;a good deal or no deal&rdquo;, and Latvia says Europeans lack the nerve to use Russian assets</h2>
+<p><strong>Lede.</strong> At the special European Council in Brussels (26–27 November), German Chancellor Friedrich Merz said &ldquo;the proposals currently on the table do not provide a basis for an agreement. The overall volume remains too high&rdquo;, and ruled out new EU borrowing: &ldquo;We cannot—and must not—incur further debt within the European Union&rdquo; (Anadolu Agency, Turkish state agency). He said he hears &ldquo;a lot of support&rdquo; for linking Ukraine financing to the budget talks, and that aid to Ukraine is meant to end the war &ldquo;as quickly as possible&rdquo; (POLITICO Europe). Dutch Prime Minister Rob Jetten wrote that for the Netherlands it is &ldquo;either a good deal or no deal. The current proposal is not acceptable.&rdquo;</p>
+<p><strong>Context.</strong> The Commission proposed €1.985 trillion for 2028–2034 in July; Council President António Costa&rsquo;s compromise is €1.781 trillion, and German media say Berlin wants about €400 billion cut from the Commission plan (Anadolu). The summit agenda is the MFF, Ukraine&rsquo;s financing needs for 2027 and ECB leadership (Council of the EU). Latvian PM Andris Kulbergs called on the EU to &ldquo;look fully&rdquo; at immobilised Russian assets (POLITICO) and told Euronews that Europeans &ldquo;don&rsquo;t have balls&rdquo; to use them; Euronews reported that Bulgaria&rsquo;s prime minister says Sofia will contribute to the Ukraine loan, after it was among the four EU member states objecting (08:30 brief, story 2). Cyprus&rsquo; President Nikos Christodoulides called Türkiye &ldquo;the champion of the violation of sanctions against Russia&rdquo; as the 22nd sanctions package is pending (Kyiv Independent). @F_CEAFE reposted Bloomberg on leaders being &ldquo;divided about who should pay&rdquo; for the loan, and Defence24&rsquo;s comparison of Germany&rsquo;s planned €140 billion defence spending in 2027 with France&rsquo;s €63.4 billion.</p>
+<p><strong>Why it matters for Europe:</strong> the largest net contributor wants a smaller common budget while asking it to fund defence and Ukraine — a contradiction CEAFE has pointed to before: national budgets alone cannot reach the scale of the US or China, and a German defence budget double France&rsquo;s is no substitute for common European capabilities. The four-way split over the Ukraine loan and the opt-out logic weaken the Union precisely when it is excluded from the peace table (story 3).</p>
+<p><strong>What to watch:</strong> the second day of the summit (27 November); whether the loan keeps all 27 on board; the size of the defence and space line; the 22nd sanctions package; the follow-up summit in December.</p>
+<p><strong>Sources:</strong> Anadolu Agency: https://www.aa.com.tr/en/europe/germany-s-merz-rejects-eu-budget-proposal-demands-deeper-cuts/4138517 ; POLITICO Europe (Merz): https://x.com/i/status/2125889710497124577 ; POLITICO Europe (Kulbergs): https://x.com/i/status/2125883263910637749 ; Rob Jetten: https://x.com/i/status/2125878945618784303 ; Council of the EU agenda: https://x.com/i/status/2125847018568372396 ; Costa: https://x.com/i/status/2125917683526816236 ; Euronews (Kulbergs, Bulgaria): https://x.com/i/status/2125899433745285556 , https://x.com/i/status/2125887516813238485 ; Kyiv Independent (Cyprus): https://kyivindependent.com/cyprus-takes-aim-at-turkeys-role-in-helping-russia-evade-sanctions/ ; @F_CEAFE reposts: https://x.com/i/status/2125896511045120421 , https://x.com/i/status/2125913906904260755</p>
+<figure class="brief-figure">
+<img src="../../assets/media-cache/663be68a0873ca7c.png" alt="Anadolu graphic on Merz's remarks ()." />
+<figcaption>Anadolu graphic on Merz's remarks ().</figcaption>
+</figure>
+
+<h2 id="s2">Washington warns EU leaders against a Big Tech tax as the summit looks for new budget revenue</h2>
+<p><strong>Lede.</strong> &ldquo;We oppose the EU proposal for an EU-wide digital levy just as we have opposed (and continue to oppose) other digital services taxes that discriminate against US companies while hurting consumers as well,&rdquo; a US State Department spokesperson told POLITICO on 26 November, as EU leaders opened the budget summit (POLITICO Europe, 12:21 Madrid).</p>
+<p><strong>Context.</strong> Costa proposed on Saturday reviving an EU digital tax to help finance the €2 trillion budget; it would target companies with global turnover above €750 million, including at least €50 million in Europe, which would catch Google, Meta and Amazon. France, Denmark, Spain and Italy are in favour; Ireland, Sweden, Malta, Germany and the Netherlands are cautious, and Taoiseach Micheál Martin repeated Ireland&rsquo;s &ldquo;strong opposition&rdquo;. An EU diplomat said: &ldquo;We cannot say that our American partner thinks about our feelings when it takes measures for itself.&rdquo; A German government note seen by POLITICO says Berlin will examine the idea &ldquo;with an open mind&rdquo;. Eleven trade associations, including CCIA Europe, DOT Europe and ITI, warned that digital taxes &ldquo;have repeatedly triggered threats of retaliation measures from third countries&rdquo;. The warning came a day after USTR proposed a 15% tariff on all EU goods under Section 301 (25 Nov 20:30 brief, story 1). In 2025 Canada rescinded its digital tax to restart trade talks with Washington (@F_CEAFE archive, 30 June 2025).</p>
+<p><strong>Why it matters for Europe:</strong> the US is telling the EU how it may finance its own budget, a day after threatening it with tariffs. Here the EU has leverage — the single market from which US platforms earn heavily — yet unanimity lets one or two governments veto a common answer. China, by contrast, answers US measures in kind (Global Times, Chinese state media, wrote that the Commission &ldquo;waved the white flag&rdquo; on tariffs). This is a test of whether the Union defends its fiscal sovereignty or once more yields to pressure.</p>
+<p><strong>What to watch:</strong> whether the summit conclusions keep the digital levy among the new own resources; US threats of retaliation (Section 301 or others); Ireland&rsquo;s veto; the Foreign Affairs Council (Trade) on 30 November.</p>
+<p><strong>Sources:</strong> POLITICO Europe: https://www.politico.eu/article/us-fires-warning-shot-ahead-of-eu-leaders-big-tech-tax-talks/ ; POLITICO on X: https://x.com/i/status/2125913927661900104 ; Global Times opinion (Chinese state media): https://www.globaltimes.cn/page/202611/1375114.shtml ; @F_CEAFE archive (Canada, 2025): https://x.com/i/status/1939555021827584355</p>
+<h2 id="s3">Update: peace table — Pistorius says Europeans should not turn down Putin&rsquo;s Moscow invitation; the Kremlin says the EU&rsquo;s &ldquo;ultimatums&rdquo; disqualify it</h2>
+<p><strong>Lede.</strong> German Defence Minister Boris Pistorius said &ldquo;refusing an invitation to Moscow would send a completely inappropriate signal&rdquo;, while insisting that what counts is &ldquo;not announcements or invitations, but results&rdquo; and that a ceasefire must be part of any talks (AFP via Clash Report). Kremlin spokesman Dmitry Peskov said the EU &ldquo;can hardly claim the role of a mediator or a participant&rdquo; with &ldquo;ultimatums like these&rdquo;, referring to von der Leyen&rsquo;s call for a winter energy truce and unrestricted access to Ukrainian ports (TASS, Russian state agency).</p>
+<p><strong>Context.</strong> Putin said on 19 November in Shenzhen that Moscow had invited Europeans to come and set out their position. Deputy Foreign Minister Sergei Ryabkov said the E3 (UK, France, Germany) &ldquo;will rule itself out&rdquo; if it sets preconditions, and that a visit would not mean inclusion in the US-mediated talks (TASS). France&rsquo;s embassy in Moscow said Paris would accept only with &ldquo;a full seat at the negotiating table&rdquo;; a Commission spokesperson said Brussels remains focused on a multilateral format (Clash Report, citing RBC). TASS&rsquo;s press review, citing Izvestia, says a European diplomat indicated readiness to talk about the Baltic, tied to a halt in hostilities. Italy&rsquo;s Foreign Minister Antonio Tajani condemned Ukraine&rsquo;s attacks on Russian ships in Libyan waters: &ldquo;It was a mistake to violate Libya&rsquo;s sovereignty&rdquo; (Clash Report). @F_CEAFE quoted Jeffrey Sachs: &ldquo;Make peace with your neighbors because you cannot depend on the US&rdquo; (see Other perspectives).</p>
+<p><strong>Why it matters for Europe:</strong> the E3 format, national ministers answering Moscow one by one and a separate Commission line are exactly what lets the Kremlin pick its interlocutors. The Union has a High Representative for foreign policy; a single European position, not three capitals, is what would earn a seat at a table set by Washington and Moscow.</p>
+<p><strong>What to watch:</strong> whether the E3 or the EU replies to the invitation; Kremlin aide Ushakov&rsquo;s next statement; the prisoner exchange Kushner announced; Zelensky&rsquo;s warning of a new mass Russian strike on energy infrastructure (Kyiv Independent).</p>
+<p><strong>Sources:</strong> Clash Report (Pistorius): https://clashreport.com/world/articles/pistorius-moscow-invitation-putin-europe-93jqxx77p6j ; TASS (Peskov): https://tass.com/politics/2225067 ; TASS (Ryabkov): https://x.com/i/status/2125850174975017050 ; TASS press review: https://tass.com/pressreview/2225057 ; Clash Report (Tajani): https://x.com/i/status/2125855649628082419 ; Kyiv Independent (Zelensky): https://x.com/i/status/2125920242475893147</p>
+<figure class="brief-figure">
+<img src="../../assets/media-cache/a3803cfd48af41f3.jpg" alt="TASS photo of Peskov ()." />
+<figcaption>TASS photo of Peskov ().</figcaption>
+</figure>
+
+<h2 id="s4">Update: NATO publishes the Trump–Rutte joint statement; Rutte says &ldquo;American leadership remains essential&rdquo;; Moscow attacks his casualty figures</h2>
+<p><strong>Lede.</strong> NATO published the joint statement of President Trump and Secretary General Mark Rutte after their meeting at Mar-a-Lago on 25 November: the war in Ukraine and &ldquo;the conflict in Iran&rdquo; were &ldquo;the primary subjects&rdquo;; they &ldquo;discussed the importance of Russia avoiding any actions that intentionally, or unintentionally, expand the war&rdquo;, and of &ldquo;a peaceful resolution to the war as rapidly as possible&rdquo;, as well as &ldquo;continuing to expand defense spending and investment in our industrial base, both in the United States and across NATO&rdquo;. Rutte wrote: &ldquo;It&rsquo;s clearer than ever that American leadership remains essential as we build a stronger Europe in a stronger NATO&rdquo; (@F_CEAFE reposted him).</p>
+<p><strong>Context.</strong> The 08:30 brief cited the statement through RTÉ before NATO posted the full text. Russia&rsquo;s Security Council Secretary Sergei Shoigu accused Rutte of &ldquo;juggling with figures&rdquo; on Russian casualties (TASS), and the Russian Foreign Ministry relayed the Security Council&rsquo;s reply that Rutte, comparing them with US losses in Vietnam, &ldquo;omits the 3.4 million Vietnamese killed&rdquo; (MFA Russia).</p>
+<p><strong>Why it matters for Europe:</strong> NATO&rsquo;s Secretary General presents US leadership as indispensable, and the joint text asks for more spending on the industrial base &ldquo;in the United States and across NATO&rdquo; — that is, also on US arms. CEAFE reads it the other way: a stronger Europe means European capabilities bought from European industry, not a deeper dependence.</p>
+<p><strong>What to watch:</strong> the US decision on troop levels in Europe (08:30 brief, story 4); any NATO follow-up on Iran.</p>
+<p><strong>Sources:</strong> NATO joint statement: https://www.nato.int/en/news-and-events/articles/news/2026/11/26/joint-statement-by-the-president-of-the-united-states-of-america-and-the-nato-secretary-general ; NATO on X: https://x.com/i/status/2125911680052011259 ; @F_CEAFE repost of Rutte: https://x.com/i/status/2125897179474575610 ; TASS (Shoigu): https://x.com/i/status/2125881412947411051 ; MFA Russia: https://x.com/i/status/2125888489304539620</p>
+<figure class="brief-figure">
+<img src="../../assets/media-cache/f4f286eeb7e43450.jpg" alt="MFA Russia card (); TASS photo of Shoigu ()." />
+<figcaption>MFA Russia card (); TASS photo of Shoigu ().</figcaption>
+</figure>
+
+<figure class="brief-figure">
+<img src="../../assets/media-cache/78acb447a2f71e0c.jpg" alt="MFA Russia card (); TASS photo of Shoigu ()." />
+<figcaption>MFA Russia card (); TASS photo of Shoigu ().</figcaption>
+</figure>
+
+<h2 id="s5">North Korea pauses arms deliveries to Russia after a row over Seoul, says Ukrainian intelligence</h2>
+<p><strong>Lede.</strong> Ukraine&rsquo;s military intelligence (HUR) said on 26 November that North Korea has temporarily suspended military aid to Russia, including deliveries of KN-23 ballistic missiles and artillery shells, and banned Russian military transport aircraft from its airspace (Kyiv Independent). There is no confirmation from Pyongyang or Moscow.</p>
+<p><strong>Context.</strong> HUR said the dispute began in October when Russian Deputy Foreign Minister Andrei Rudenko reportedly offered to help de-escalate tensions between Seoul and Pyongyang; Foreign Minister Choe Son Hui allegedly demanded clarification of Russia&rsquo;s policy toward South Korea, and the halt was a personal decision of Kim Jong Un (Kyiv Independent, citing HUR). North Korea sent an estimated 14,000 troops to Kursk, of whom more than 6,000 have been killed, according to South Korean, Ukrainian and Western officials. The same day Kim called for tactical nuclear weapons &ldquo;for a variety of missions and domains&rdquo; (The Japan Times). In Beijing, the defence ministry criticised the first overseas deployment of US F-15EX fighters, in Japan (Global Times, Chinese state media; @F_CEAFE reposted it).</p>
+<p><strong>Why it matters for Europe:</strong> if confirmed, a pause in North Korean missiles and shells would directly affect the intensity of strikes on Ukraine, which Europe largely finances. It is a claim by a party to the war and needs corroboration.</p>
+<p><strong>What to watch:</strong> Russian and North Korean responses (none found at the time of writing); South Korean intelligence (NIS) assessments; strike data from Ukraine.</p>
+<p><strong>Sources:</strong> Kyiv Independent: https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says/ ; Clash Report: https://x.com/i/status/2125891366936863228 ; The Japan Times: https://x.com/i/status/2125921178149671367 ; @F_CEAFE repost of Global Times: https://x.com/i/status/2125913969831686341</p>
+<h2 id="s6">Armenia: Pashinyan says Russian border guards will leave &ldquo;in the coming years&rdquo;</h2>
+<p><strong>Lede.</strong> &ldquo;I believe the time has come for us to fully take responsibility for our borders in the coming years,&rdquo; Armenian Prime Minister Nikol Pashinyan told a briefing in Yerevan, thanking the Russian border guards (Interfax via Clash Report; Anadolu Agency). He gave no date and was answering a question rather than announcing a formal decision.</p>
+<p><strong>Context.</strong> Russia&rsquo;s FSB Border Directorate has guarded Armenia&rsquo;s borders with Türkiye and Iran under a 1992 treaty. Russian officers left Zvartnots airport in August 2024 and the Agarak (Iran) and Margara (Türkiye) crossings in 2025; Russia keeps its 102nd base in Gyumri, which Pashinyan said in September was not vital to Armenia&rsquo;s security (Clash Report).</p>
+<p><strong>Why it matters for Europe:</strong> Russia&rsquo;s withdrawal from the South Caucasus opens room for the EU (its civilian mission in Armenia, connectivity and energy projects), but also for Türkiye, Iran and the US. Whether Europe fills it as one actor is a test of its neighbourhood policy.</p>
+<p><strong>What to watch:</strong> the Kremlin&rsquo;s reaction (none yet); a timetable; the future of the Gyumri base.</p>
+<p><strong>Sources:</strong> Clash Report: https://clashreport.com/world/articles/pashinyan-russian-border-guards-leave-6ei8ommgkt ; Anadolu Agency: https://x.com/i/status/2125899883651510436</p>
+<h2 id="s7">In brief</h2>
+<ul>
+<li><strong>UK reservists:</strong> the Ministry of Defence has written to about 100,000 strategic reservists asking them to prepare for a possible call-up, the first such letters since the Cold War (The Telegraph via Anadolu Agency). Defence Secretary Wes Streeting announced an £8 billion contract with Babcock for submarine availability (see Defence Industry). https://www.aa.com.tr/en/world/uk-tells-100-000-strategic-reservists-to-prepare-for-possible-call-up-report/4138594</li>
+<li><strong>Update: Poland&rsquo;s border no-fly zone:</strong> @F_CEAFE reposted a post saying Poland announced a no-fly zone 10 km deep along its border with Ukraine and that Foreign Minister Radosław Sikorski called it &ldquo;legitimate&rdquo; for Poland to shut down objects inside Ukraine (claim from the reposted account; official text not yet found). https://x.com/i/status/2125914047417815356</li>
+<li><strong>Moldova:</strong> the Russian embassy in Chișinău urged the government to &ldquo;refrain from provocations&rdquo; and avoid escalating tensions with Moscow (TASS). https://tass.com/politics/2224951</li>
+<li><strong>EU Military Committee:</strong> the Netherlands&rsquo; Chief of Defence announced his candidacy to chair the EU Military Committee from 2028. https://x.com/i/status/2125870371740041494</li>
+<li><strong>Union for the Mediterranean:</strong> HR/VP Kaja Kallas co-chaired the 11th UfM Regional Forum in Barcelona with Jordan&rsquo;s Ayman Safadi; Spain&rsquo;s José Manuel Albares hosted. https://x.com/i/status/2125891258291798038</li>
+<li><strong>Türkiye–US:</strong> Defence Minister Yaşar Güler will meet Pete Hegseth in the US next week to resolve the S-400 dispute (Bloomberg). https://x.com/i/status/2125879768184742243</li>
+<li><strong>Kenya:</strong> the High Court ruled that allowing a US-backed Ebola quarantine site breached the constitution (Reuters; dpa). https://x.com/i/status/2125918785580257770</li>
+</ul>
+<h2 id="s8">Also in this edition</h2>
+<ul>
+<li>Iran: tankers hit near Khasab and Israel&rsquo;s threat to strike &ldquo;even independently&rdquo; — see Conflicts (Strait of Hormuz)</li>
+<li>Gulf energy shock: Brent towards $95 — see Economy</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

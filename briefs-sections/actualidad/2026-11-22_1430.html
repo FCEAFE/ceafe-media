@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Sunday, 22 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Sunday, 22 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> Saturday 21 November about 19:30 to Sunday 22 November about 13:30 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the official transcript of Elbridge Colby&rsquo;s speech, a dedicated research note and the posts of @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Update: Colby&rsquo;s &ldquo;NATO 3.0&rdquo;: Europe to lead its own defence, but inside a US-led NATO and open to US arms</h2>
+<p><strong>Elbridge Colby, US Under Secretary of War for Policy, told EU defence ministers in Brussels on 17 November that Europe must take the lead in its own conventional defence while the United States reduces its role on the continent — but that this must happen inside NATO, an organisation led by Washington.</strong></p>
+<p>The first idea runs through the speech: the US is &ldquo;prioritizing our military&rsquo;s focus on our own homeland and hemisphere and on deterrence by denial along the First Island Chain&rdquo;, and in Europe it is &ldquo;looking to our allies to take the lead in their conventional defense, with U.S. forces providing critical but more limited support&rdquo; (official transcript, as prepared). The second idea conditions the first: &ldquo;Our goal is for Europe to step up to assume the primary responsibility for its conventional defense in NATO.&rdquo; That NATO framework is shaped by the US at every level. The 5% of GDP target, which Colby credits to NATO leaders acting &ldquo;under President Trump&rsquo;s leadership&rdquo;, is described in the US National Security Strategy as a &ldquo;new global standard&rdquo; that &ldquo;President Trump has set&rdquo;. NATO&rsquo;s military commander, the Supreme Allied Commander Europe (SACEUR), is by tradition a US general who also heads US European Command and is appointed by the US President (NATO); today it is General Alexus Grynkewich. And force planning is located there: Colby said US and SHAPE staff adjusted the NATO Force Model, that NATO is updating its capability targets to &ldquo;SACEUR&rsquo;s Theory of Victory&rdquo;, and that Washington works with &ldquo;the fastest movers&rdquo; through the Bergen Group. Defence efforts at EU level are welcome only &ldquo;provided they are focused on military efficacy and efficiency and therefore open across the transatlantic defense industrial base&rdquo;.</p>
+<p><strong>The weapons question.</strong> In the passages highlighted by CEAFE on its X account, Colby said &ldquo;we strongly oppose measures to exclude American firms from competition in European markets&rdquo; and that &ldquo;many European states share our opposition to this counter-productive approach&rdquo;. He quoted SACEUR Grynkewich: &ldquo;I do caution against codifying preferences as to where military hardware is made.&rdquo; His concrete example was the US fighter: &ldquo;Take the F-35&rdquo;, &ldquo;the key capability that would allow a NATO 3.0 Europe to fight effectively&rdquo;, adding that &ldquo;there is no way that a gathering of disparate so-called middle powers would ever be able to build a competitor to the F-35 in a timely fashion&rdquo;. He presented this approach as &ldquo;a more credible alternative for Europe compared to the so-called &lsquo;middle powers strategy&rsquo;&rdquo;.</p>
+<p><strong>Context:</strong> the call for an open European market sits alongside US rules that keep the American one protected: the Buy American statute restricts federal purchases of goods that are not domestic end products (FAR 25.1); the ITAR regulations (22 C.F.R. 120–130) control exports and re-transfers of US defence articles; and the 2025 National Security Strategy states that &ldquo;the United States must never be dependent on any outside power for core components&rdquo; of its defence or economy. In the same weeks, US buyers have taken control of three European defence suppliers (see Defence Industry). On 21 November CEAFE pointed out that the key issue in Colby&rsquo;s 23-post thread is not the share of GDP spent but where that money goes and within which organisation European defence policy is made.</p>
+<p><strong>Why it matters for Europe:</strong> Washington asks Europeans to carry more of the burden but within a structure whose spending target, military command, force planning and preferred weapons are set or led by the US. Whether European money builds a European industrial base or buys US systems is the decision at stake.</p>
+<p><strong>What to watch:</strong> the EU&rsquo;s European preference rules in SAFE and future defence programmes; the US Europe Posture Review; Monday&rsquo;s North Atlantic Council.</p>
+<p><strong>Sources:</strong> <a href="https://www.war.gov/News/Speeches/Speech/Article/4649777/remarks-by-under-secretary-of-war-for-policy-elbridge-colby-at-the-european-uni/">US Department of War, Colby transcript (as prepared), 17 Nov</a>, <a href="https://x.com/USWPColby/status/2123916165550350452">Colby thread</a>, <a href="https://x.com/i/status/2124129513030177201">CEAFE commentary</a>, <a href="https://x.com/i/status/2124131666826527136">CEAFE highlights</a>, <a href="https://x.com/i/status/2124134027489661278">CEAFE highlights, F-35</a>, <a href="https://www.nato.int/en/about-us/organization/nato-structure/supreme-allied-commander-europe-saceur">NATO, SACEUR</a>, <a href="https://shape.nato.int/page214845858">SHAPE</a>, <a href="https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf">US National Security Strategy 2025</a>, <a href="https://www.acquisition.gov/far/subpart-25.1">FAR 25.1</a>, <a href="https://www.ecfr.gov/current/title-22/chapter-I/subchapter-M">ITAR</a></p>
+<hr>
+<h2 id="s2">Sikorski on the Shenzhen summit: &ldquo;Let us remember what Yalta was&rdquo;</h2>
+<p><strong>Poland&rsquo;s Foreign Minister Radosław Sikorski compared the 19 November Trump–Xi–Putin meeting in Shenzhen with Yalta: &ldquo;It was the confirmation and legitimization of spheres of influence that American and Soviet troops already had under their control.&rdquo;</strong></p>
+<p>He added: &ldquo;Today, two great powers, the United States and Russia, at least in our region…&rdquo; (the clip cuts the sentence), and said &ldquo;Vladimir Putin will not remember this summit with nostalgia, because it was reportedly organized at his request&rdquo;. Slovak Prime Minister Robert Fico said European leaders decided in Dublin that they want to sit down with the US, Russian and Ukrainian presidents to negotiate an early end to the war (relayed report).</p>
+<p><strong>Context:</strong> Zelensky said on Saturday that Putin &ldquo;didn&rsquo;t get his Yalta 2&rdquo;. Xinhua (Chinese state media) called the first face-to-face meeting of the three heads of state &ldquo;unexpected and historic&rdquo;. Mira Milosevich of the Elcano Royal Institute argues that the meeting puts Putin back as an indispensable security interlocutor.</p>
+<p><strong>Why it matters for Europe:</strong> a Polish foreign minister now uses the image of Yalta for a meeting on Europe&rsquo;s security at which neither the EU nor any of its member states sat at the table. For as long as Europeans keep measuring our weight country by country, the comparison with the United States or China is lost in advance.</p>
+<p><strong>What to watch:</strong> whether the European Council or the High Representative adopt a common line on the Shenzhen declaration; any European format for talks with Washington, Moscow and Kyiv.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124413002208137358">Sikorski clip via Clash Report</a>, <a href="https://x.com/i/status/2124412540746703111">Sikorski clip</a>, <a href="https://x.com/i/status/2124379549827809681">Fico</a>, <a href="https://x.com/i/status/2124392166793658546">Xinhua</a>, <a href="https://x.com/i/status/2124465638223552963">Milosevich</a></p>
+<hr>
+<h2 id="s3">China deals with Europe capital by capital: a security dialogue in Germany and the Swiss foreign minister in Beijing</h2>
+<p><strong>China&rsquo;s top security official, Chen Wenqing, a Politburo member who heads the Communist Party&rsquo;s Central Political and Legal Affairs Commission, is attending the sixth China–Germany high-level security dialogue and visiting Germany and Austria from 22 November, China&rsquo;s Foreign Ministry announced.</strong></p>
+<p>Separately, Swiss Federal Councillor and Foreign Minister Ignazio Cassis visits China on 23–24 November at the invitation of Wang Yi.</p>
+<p><strong>Context:</strong> the visits follow the Shenzhen summit and Canada&rsquo;s reset with China, and come as Beijing demands that Washington withdraw the FCC ban on Chinese telecom operators (see Economy).</p>
+<p><strong>Why it matters for Europe:</strong> Beijing deals with Europe capital by capital, on security as well as trade. When the largest EU member state holds a security dialogue with China on its own, it carries less weight than the Union would together. These contrasts explain why CEAFE insists that Europeans organise ourselves as a single actor, not as twenty-seven markets.</p>
+<p><strong>What to watch:</strong> the readouts of the dialogue in Germany; Chen&rsquo;s meetings in Austria; whether the EU institutions are briefed.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124370116901315029">China Foreign Ministry</a>, <a href="https://x.com/i/status/2124399275912339959">China Foreign Ministry, Cassis</a></p>
+<hr>
+<h2 id="s4">Canada diversifies: China reset, Asian trade deals and entry into the NATO Innovation Fund</h2>
+<p><strong>Canadian Prime Minister Mark Carney said that in Shenzhen Canada &ldquo;expanded our strategic partnership with China — restoring market access for more than 90% of trade previously subject to tariffs&rdquo;.</strong></p>
+<p>In Manila Canada concluded negotiations on free trade agreements with the Philippines and with ASEAN, &ldquo;a market of nearly 700 million people&rdquo;, and at the European Political Community summit in Dublin it deepened ties with European allies. &ldquo;Sovereignty is built on strength at home and diverse partnerships abroad,&rdquo; Carney wrote. On 21 November Defence Minister David McGuinty announced that Canada has formally joined the NATO Innovation Fund, the 25th ally and the first in North America to do so, with more than CAD 100 million; the US is not a member (Canada&rsquo;s Department of National Defence).</p>
+<p><strong>Context:</strong> the moves come in the same week that the Pentagon restricted military ties with Canada.</p>
+<p><strong>Why it matters for Europe:</strong> a US ally under pressure from Washington is responding by diversifying — reopening trade with China, signing with Asia and moving closer to Europe in defence industry — on its own terms.</p>
+<p><strong>What to watch:</strong> Washington&rsquo;s reaction to the Canada–China deal; ratification of the ASEAN and Philippines agreements; Canada&rsquo;s role in European defence programmes.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124232555654480094">Mark Carney</a>, <a href="https://x.com/i/status/2124232532304810070">Mark Carney</a>, <a href="https://x.com/i/status/2124232520539783440">Mark Carney</a>, <a href="https://www.canada.ca/en/department-national-defence/news/2026/11/canada-to-join-the-nato-innovation-fund.html">Canada National Defence</a>, <a href="https://www.nif.fund/news/canada-to-join-the-nato-innovation-fund-to-advance-the-local-defence-security-and-resilience-ecosystem/">NATO Innovation Fund</a>, <a href="https://x.com/i/status/2124342097537114127">Xinhua</a></p>
+<hr>
+<h2 id="s5">Israel: Prime Minister-designate Eisenkot calls West Bank settler arson &ldquo;Jewish terrorism&rdquo;</h2>
+<p><strong>Overnight, settlers set fire to vehicles and homes in several Palestinian villages near Ramallah, including Deir as-Sudan, Deir Abu Mash&rsquo;al and Kafr Malik, according to the Israel Defense Forces, which sent soldiers and Border Police.</strong></p>
+<p>Prime Minister-designate Gadi Eisenkot condemned the attacks as &ldquo;Jewish terrorism&rdquo;, urged a crackdown and accused ministers Itamar Ben-Gvir and Bezalel Smotrich of fuelling them (Times of Israel). Opposition figure Yair Golan warned that the West Bank is &ldquo;on the brink of explosion&rdquo;.</p>
+<p><strong>Context:</strong> Eisenkot has until early December to form a government after neither bloc won a majority in October&rsquo;s election; Naftali Bennett backs a unity government under Eisenkot including Likud but without Netanyahu. Separately, Greece and Israel are discussing up to €1 billion in new defence deals, Kathimerini reports (relayed, not verified).</p>
+<p><strong>Why it matters for Europe:</strong> the EU is the Palestinians&rsquo; main donor and Israel&rsquo;s main trading partner; the next Israeli government&rsquo;s line on the West Bank will shape the EU&rsquo;s debates on the association agreement and on sanctions against violent settlers.</p>
+<p><strong>What to watch:</strong> coalition talks; action by the army and police against settler violence; EU statements.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124405460367249838">Times of Israel</a>, <a href="https://x.com/i/status/2124472996781813826">Times of Israel</a>, <a href="https://x.com/i/status/2124398018895941922">IDF</a>, <a href="https://x.com/i/status/2124472972408770724">Anadolu</a>, <a href="https://x.com/i/status/2124409601965621379">Yair Golan</a>, <a href="https://x.com/i/status/2124474223380890033">Kathimerini via Clash Report</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — domingo, 22 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">domingo, 22 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Window covered:</strong> del domingo 22 de noviembre hacia las 13:00 a hacia las 19:30 (hora de Madrid): todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Industria de Defensa de CEAFE, webs de empresas y gobiernos y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">El Ejército alemán prueba en Lituania municiones merodeadoras de Helsing y Stark y la herramienta de IA Clarity de Helsing</h2>
+<p><strong>El Ejército alemán inició el 22 de noviembre sus primeras pruebas tácticas de municiones merodeadoras en el campo de maniobras de Rudninkai, en Lituania, cerca de la frontera con Bielorrusia, donde el jefe del Ejército, el teniente general Christian Freuding, vio cómo municiones de las empresas alemanas Helsing y Stark, con cabezas inertes, alcanzaban blancos de carros de combate (Reuters).</strong></p>
+<p>Las pruebas forman parte de Freedom Shield, las mayores maniobras alemanas en Lituania hasta la fecha. Días antes, las tropas probaron por primera vez el software de selección de objetivos con IA de Helsing, Clarity, que fusiona datos de satélites, drones y sensores y recomienda acciones. Alemania no decidió comprar municiones merodeadoras hasta 2025; la Panzerbrigade 45 (unos 5.000 militares y 2.000 vehículos) debe estar plenamente operativa a finales de 2027.</p>
+<p><strong>Contexto:</strong> el 20 de noviembre Defense News informó de que dos variantes alemanas de drones de ataque de un solo uso superaron pruebas de fuego real antes de las primeras entregas. La edición de las 14:30 del 20 de noviembre presentó Clarity de Helsing como alternativa europea al Maven Smart System de Palantir adoptado por la OTAN.</p>
+<p><strong>Por qué importa para Europa:</strong> tanto las municiones como la capa de IA para la selección de objetivos proceden de empresas europeas, en un ámbito en el que el proveedor de software de referencia para la OTAN ha sido la estadounidense Palantir.</p>
+<p><strong>Qué vigilar:</strong> volúmenes de pedido y fechas de entrega; la adopción de Clarity más allá de la brigada de Lituania.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2124518458842878407">Reuters</a>, <a href="https://www.straitstimes.com/world/europe/german-army-starts-testing-kamikaze-drones-and-ai-targeting-tool-in-lithuania">The Straits Times (Reuters)</a>, <a href="https://www.presseportal.de/pm/127975/6385256">Bundeswehr</a>, <a href="https://www.defensenews.com/global/europe/">Defense News</a></p>
+<hr>
+<h2 id="s2">Reino Unido financiará la producción en su territorio de drones de ataque de diseño ucraniano</h2>
+<p><strong>El ministro ucraniano de Defensa, Evgeniy Khmara, y el ministro británico de Defensa, Wes Streeting, firmaron el 21 de noviembre en Kiev acuerdos de proyecto para producir conjuntamente en el Reino Unido drones de ataque de medio y largo alcance de diseño ucraniano, financiados por Londres y destinados a las Fuerzas Armadas de Ucrania (Ministerio de Defensa de Ucrania).</strong></p>
+<p>Ambas partes hablaron también de las capacidades ucranianas de largo alcance y de la modernización de misiles de fabricación ucraniana; no se precisaron los modelos de drones. Por otra parte, Khmara se reunió con el jefe de las Fuerzas Armadas suecas, el general Michael Claesson, para tratar los próximos pasos del traspaso de cazas Gripen a Ucrania, su armamento (incluidos misiles Meteor) y el calendario de entregas (Ministerio de Defensa de Ucrania).</p>
+<p><strong>Por qué importa para Europa:</strong> el acuerdo traslada la producción de diseños ucranianos a un país europeo fuera de la UE; si esas líneas podrán conectarse con SAFE y otros instrumentos de la UE es una cuestión abierta para la base industrial de defensa europea.</p>
+<p><strong>Qué vigilar:</strong> qué empresas y plantas fabricarán los drones y en qué volumen; fechas y número de Gripen.</p>
+<p><strong>Fuentes:</strong> <a href="https://mod.gov.ua/en/news/deep-strike-middle-strike-drone-production-uk">Ministerio de Defensa de Ucrania</a>, <a href="https://www.kyivpost.com/post/90832">Kyiv Post</a>, <a href="https://www.gov.uk/government/news/defence-secretary-meets-president-zelensky-and-minister-khmara-in-kyiv-as-uk-deepens-industrial-support-for-ukraine">GOV.UK</a>, <a href="https://x.com/i/status/2124546586294243756">Defence of Ukraine</a>, <a href="https://x.com/i/status/2124541416269385918">Ministerio de Defensa de Ucrania, Gripen</a></p>
+<hr>
+<h2 id="s3">El plan de la UE para la banda satelital de 2 GHz, en parte para IRIS², provoca presiones de EE. UU. a favor de Starlink</h2>
+<p><strong>La UE prevé reasignar la banda de 2 GHz de servicios móviles por satélite antes de que expiren las licencias de Viasat/EchoStar en mayo de 2027: según Space Law Journal, un tercio iría a un sistema seguro vinculado a IRIS², otro tercio a nuevos operadores europeos y el último quedaría abierto, con Starlink como posible candidato.</strong></p>
+<p>Los aspirantes necesitarían una notificación ante la UIT de un Estado miembro de la UE (o acceso contractual a ella); Starlink tendría un tope de 10 MHz y debería controlar sus satélites desde la UE. La comisión ITRE del Parlamento Europeo ya ha votado y los ministros aspiran a un acuerdo el 1 de diciembre. Les Echos informa de que Washington ha amenazado con represalias y de que Europa responde que «no cambiará de posición».</p>
+<p><strong>Contexto:</strong> la edición de las 14:30 recogió la dependencia de las fuerzas armadas de la OTAN de redes privadas como Starshield.</p>
+<p><strong>Por qué importa para Europa:</strong> el espectro es la base de la conectividad satelital soberana; el resultado mostrará si la UE puede reservar capacidad para IRIS² y para operadores europeos bajo la presión de EE. UU. y de su proveedor dominante.</p>
+<p><strong>Qué vigilar:</strong> el Consejo del 1 de diciembre; cualquier medida comercial formal de EE. UU.</p>
+<p><strong>Fuentes:</strong> <a href="https://spacelawjournal.com/eu-2-ghz-mobile-satellite-services-itre-vote/">Space Law Journal</a>, <a href="https://www.lesechos.fr/tech-medias/hightech/nous-ne-changerons-pas-de-position-leurope-repond-aux-menaces-americaines-sur-ses-projets-de-souverainete-satellitaire-2259189">Les Echos</a>, <a href="https://x.com/i/status/2124543915437219982">XploraSpace</a></p>
+<hr>
+<h2 id="s4">Boom Supersonic enciende el primer prototipo del núcleo de su motor</h2>
+<p><strong>Boom Supersonic encendió el 21 de noviembre el primer prototipo del núcleo de su motor, el «Sprint Core» compartido, que alcanzó 6.500 rpm; el turbofán completo Symphony aún no ha funcionado (Aviation Week).</strong></p>
+<p>Boom presenta este núcleo de 42 MW como fuente de energía, primero para centros de datos de IA y después para aviones supersónicos, y presentó una «Superpower Superfactory». Su fundador, Blake Scholl, escribió: «Hoy ha nacido un nuevo motor».</p>
+<p><strong>Por qué importa para Europa:</strong> una empresa emergente estadounidense desarrolla su propio motor y un negocio energético de doble uso; Rolls-Royce abandonó el motor de Boom en 2022, y el conocimiento europeo en motores civiles sigue en manos de Safran y Rolls-Royce.</p>
+<p><strong>Qué vigilar:</strong> el primer encendido del motor Symphony completo.</p>
+<p><strong>Fuentes:</strong> <a href="https://aviationweek.com/aerospace/emerging-technologies/boom-fires-first-superpower-engine-core-prototype">Aviation Week</a>, <a href="https://boomsupersonic.com/press-release/superpower-superfactory">Boom Supersonic</a>, <a href="https://x.com/i/status/2124529594006995296">Blake Scholl</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

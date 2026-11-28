@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Wednesday, 25 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Wednesday, 25 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> Wednesday 25 November from about 07:00 to about 13:30 Europe/Madrid: everything new since the 08:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">German gas overcost: the German-Russian Chamber of Commerce puts the extra bill since 2022 at €134 billion</h2>
+<p>A calculation by the German-Russian Chamber of Foreign Trade (AHK), published on 16 November 2026, estimates that Germany paid some €134 billion extra for gas between January 2022 and September 2026, against the 2015–2020 average import price (€16.50/MWh): about €1,600 per inhabitant. The costliest year was 2022, at some €59 billion. In 2023–2025 the annual extra cost ran between €17.5 billion and €21.6 billion; in the first nine months of 2026 the chamber already counts some €17 billion. After inflation, it leaves the total at around €120 billion.</p>
+<p>The method multiplies consumption (Federal Network Agency data) by the gap in Destatis import prices. That price covers pipeline gas only, not LNG, so the chamber itself presents it as an approximation. It also warns that the rise cannot be attributed solely to the loss of Russian gas (transit through Nord Stream 1 was already zero in early September 2022, before the 26 September explosions).</p>
+<p>In a model scenario, restarting Nord Stream 2’s still-intact string B — 27.5 billion cubic metres a year — would cut the European gas price by around 16% and save Germany some €9.5 billion a year, starting from the 2027 forward price of €71/MWh (BDEW, 11 November). Under other assumptions the chamber’s range is €6.5–12.4 billion, falling to €4.9 billion if prices normalise to the 2025 wholesale average. These are scenarios, not a guaranteed saving. On 19 October 2026 the German government told the Bundestag that “the question of commissioning Nord Stream 2 therefore does not arise”; the European Commission rejected a restart on 28 October, including for the period after a cessation of hostilities.</p>
+<p><strong>Antecedentes (CEAFE archive):</strong> the CEAFE X archive holds 311 posts on Nord Stream since October 2019, peaking in 2021 (72) and around the September 2022 explosions; see also the CEAFE Nord Stream dossier.</p>
+<p><strong>Why it matters for Europe:</strong> Germany is the EU’s largest gas market; an extra bill of this size, even as a chamber calculation rather than an official aggregate, sits alongside the fossil-fuel overcost already estimated for the Union as a whole and the shift of imports towards LNG, much of it American. This item does not prescribe a course of action on the pipeline.</p>
+<p><strong>Key facts:</strong></p>
+<ul>
+<li>€134 billion extra cost, Jan. 2022–Sep. 2026 (AHK; ~€1,600 per inhabitant); ~€120 billion after inflation.</li>
+<li>2022: ~€59 billion; 2023–2025: €17.5–21.6 billion a year; Jan.–Sep. 2026: ~€17 billion.</li>
+<li>One intact string: ~16% fall in the European price and ~€9.5 billion a year for Germany (range €6.5–12.4 billion; €4.9 billion if prices return to the 2025 average).</li>
+</ul>
+<p><strong>Sources:</strong></p>
+<ul>
+<li>https://www.kammer-russland.ru/de/analyse/nord-stream-k-nnte-j-hrlich-9-5-mrd-euro-sparen-aber-kein-neustart-in-sicht/ (AHK Russland, Fokusanalyse, 16 Nov. 2026 — original source)</li>
+<li>https://www.berliner-zeitung.de/article/nord-stream-2-oeffnen-deutschland-wuerde-laut-studie-jaehrlich-95-milliarden-euro-beim-gas-sparen-10631680 (Berliner Zeitung, Jonas Prien, 24 Nov. 2026 — report of the calculation)</li>
+<li>https://x.com/berlinerzeitung/status/2125305001564119341 (original post on X)</li>
+<li>https://x.com/F_CEAFE/status/2125503851562496406 (@F_CEAFE repost, 25 Nov. 2026, 09:16 Madrid)</li>
+<li>https://dserver.bundestag.de/btd/21/087/2108720.pdf (German government reply to the Bundestag, published 19 Oct. 2026)</li>
+</ul>
+<h2 id="s2">Update (extraterritorial sanctions) — China answers the Huawei verdict: Beijing “firmly opposes” US suppression of Chinese companies</h2>
+<p>Asked about the Brooklyn jury verdict at Wednesday’s regular briefing in Beijing, Foreign Ministry spokesperson Guo Jiakun said: “The Chinese government firmly opposes the US suppression and containment of Chinese companies and firmly supports Chinese companies in safeguarding their legitimate rights and interests” (Reuters via Investing.com; AFP; ANSA; The Straits Times). The ministry announced no countermeasure. Huawei, in a statement posted on X, said the remaining charges are “without legal or factual merit” and that it will “take all necessary legal actions”; it argues that the five trade-secret disputes cited by prosecutors were civil matters settled over the past two decades and that no court had previously found it liable for wilful misappropriation (Reuters). The jury convicted Huawei on 10 of 12 counts on 24 November (bank fraud, wire fraud, sanctions violations, conspiracy to steal trade secrets); sentencing is set for 14 September 2027 (topic 1 of the 08:30 edition). The Chinese MFA’s English transcript for 25 November was not yet online at 13:05.</p>
+<p><strong>Antecedentes (CEAFE archive):</strong> @F_CEAFE has tracked US pressure on European governments over Huawei since at least January 2020, when it reported that key Republicans sought a ban on intelligence sharing with countries using Huawei (<a href="https://x.com/i/status/1221932500928339968">X, Jan. 2020</a>); in February 2020 it reposted that Britain had admitted the &ldquo;high risk&rdquo; vendor, a decision London later reversed under US pressure.</p>
+<p><strong>Why it matters for Europe:</strong> this is the action–reaction pair in full: a US court applies US sanctions law to a Chinese company’s business with Iran because the money went through US-dollar clearing, and Beijing answers with a verbal protest, for now without retaliation. Europe has neither half of the pair: it does not project its own law in this way, and when its companies are hit by US secondary sanctions it does not answer either.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>MFA spokesperson Guo Jiakun, 25 November: China “firmly opposes the US suppression and containment of Chinese companies”.</li>
+<li>Huawei: will “thoroughly review the relevant verdicts” and appeal; its lawyer Brian Heberlig said the acquittal on racketeering vindicates its “good-faith compliance culture”.</li>
+<li>@F_CEAFE reposted the Justice Department’s posts (with images of a T-Mobile “Tappy” robot arm and a CNEX solid-state drive board presented as stolen technology) and Huawei’s statement.</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>@F_CEAFE repost of @TheJusticeDept: https://x.com/i/status/2125477367388770669 ; https://x.com/i/status/2125477360854077713</li>
+<li>@F_CEAFE repost of @Huawei statement (25 Nov, 08:01 Madrid): https://x.com/i/status/2125484944654778518 ; original: https://x.com/i/status/2125348584875053277</li>
+<li>Reuters via Investing.com: https://www.investing.com/news/economy-news/chinas-huawei-convicted-at-us-criminal-trial-stemming-from-iran-business-5048943</li>
+<li>AFP: https://www.afp.com/en/beijing-slams-us-suppressing-chinese-firms-after-huawei-conviction</li>
+<li>ANSA: https://www.ansa.it/sito/notizie/mondo/2026/11/25/pechino-sul-caso-huawei-ci-opponiamo-a-repressione-di-nostre-aziende-dagli-usa_5ecb6989-cc80-4183-84b5-bfc3adf85b3c.html</li>
+</ul>
+<p><strong>Follow-up:</strong> MFA transcript; any MOFCOM statement or countermeasure (unreliable entity list); appeal filings.</p>
+<h2 id="s3">Update (tariffs / economic coercion) — China rejects the reported US Section 301 “overcapacity” tariffs before they are published</h2>
+<p>Asked about reports that the United States is about to announce tariffs on goods from China and other countries, Guo Jiakun said on Wednesday that “tariff wars and trade wars serve no one’s interests”, that “the so-called issue of overcapacity is a false proposition” and that China “opposes using it as a pretext for political manipulation”. He called on both sides to “deliver on the important common understandings between the two heads of state” and keep China–US trade growing steadily (Xinhua, Chinese state media; Global Times, Chinese state media; Asia Financial). The reports say the levies would also hit the EU, Japan and South Korea (Asia Financial). At the 08:30 edition USTR’s latest press release was dated 19 November; this run did not re-check USTR.</p>
+<p><strong>Why it matters for Europe:</strong> China is answering in advance, on the record, a measure that will also hit the EU. Brussels has said nothing comparable in public about tariffs that, by the reports, would hit European exporters just as directly.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>MFA, 25 November: “overcapacity” is “a false proposition” and “a pretext for political manipulation”.</li>
+<li>The reported US tariffs would cover China, the EU, Japan, South Korea and others (Asia Financial; topic 2 of the 08:30 edition).</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Xinhua (Chinese state media): https://x.com/i/status/2125511778297950622 ; https://english.news.cn/ (article “Tariff and trade wars serve no one’s interests”, 25 Nov, via https://xhtxs.cn/bgMG)</li>
+<li>Global Times (Chinese state media): https://x.com/i/status/2125497480993525899</li>
+<li>Asia Financial: https://www.asiafinancial.com/huawei-found-guilty-in-trade-fraud-case-china-warns-on-tariffs</li>
+</ul>
+<p><strong>Follow-up:</strong> USTR publication of the Section 301 determination; EU Commission reaction; MOFCOM countermeasures.</p>
+<h2 id="s4">Update (trade defence) — EU hybrid-car safeguard: provisional quotas from 1 December, China gets the largest share</h2>
+<p>The European Commission on Tuesday 24 November issued provisional safeguard measures setting import quotas for certain hybrid vehicles from 1 December, for up to 200 days, saying they are meant to “protect EU industry against a sharp recent increase in imports of such vehicles” (Commission press release as quoted by Global Times, Chinese state media). Per Global Times the 200-day quotas are: China 192,000 units (350,000 annualised), Japan 171,000, Turkey 126,000, UK 105,000, South Korea 68,000, Mexico 34,000, Morocco 24,000, Serbia 19,000, US 18,000; all other countries 822 units. A Chinese chamber of commerce official says the EU first wanted to use the 2022–24 import average, which would have given China only about 70,000 units a year, and that China secured more than its 2025 exports to the EU (302,000 units). MOFCOM urged the EU to honour the bilateral consensus and WTO rules and “reserves all rights”, including WTO dispute settlement and compensation. Global Times reports that Japan, the UK, South Korea and Turkey complained at the WTO about the EU’s “separate pre-initiation consultations” with one partner.</p>
+<p><strong>Why it matters for Europe:</strong> the EU protects its car industry with a quota that applies to everyone, but the partner that negotiated hardest, China, came out with the largest share, while allies such as Japan and South Korea feel penalised. The quotas are also a measure of how far Europe’s carmakers have already lost ground in hybrids.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>Provisional quotas from 1 December 2026, up to 200 days; nine named partners.</li>
+<li>China: 192,000 units in 200 days (350,000 a year), above its 302,000 units exported to the EU in 2025.</li>
+<li>US quota: 18,000 units.</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Global Times (Chinese state media): https://www.globaltimes.cn/page/202611/1375029.shtml ; https://x.com/i/status/2125510610402386181</li>
+<li>Image: assembly line at a Shenyang plant (VCG via Global Times): https://www.globaltimes.cn/Portals/0/attachment/2026/2026-11-04/ac095c3a-0b94-4292-91e6-1076d49d00eb.jpeg</li>
+</ul>
+<p><strong>Follow-up:</strong> Commission press release and implementing regulation (not fetched this run); definitive measures.</p>
+<h2 id="s5">Energy — UK energy price cap jumps 26% from January as Europe outbids Asia for LNG</h2>
+<p>Ofgem announced on 25 November that the household energy price cap will rise 26% for 1 January–31 March 2027: a typical direct-debit household goes from £1,723 to £2,166 a year. Gas unit rates rise from 7.97p to 10.96p per kWh and electricity from 26.32p to 32.69p. Ofgem blames “the continued conflict in the Middle East”; it says wholesale gas prices have “roughly tripled” since the conflict began, compounded by “historically low European gas storage” entering winter. The wholesale allowance rises 50% and now makes up 56% of the cap (47% last quarter). Adjusted for inflation the new cap is 31.8% higher than in the same period of 2026. Separately, Bloomberg reports that Europe’s high prices are drawing LNG tankers away from Asia across the Atlantic. @F_CEAFE reposted Reuters’ Ofgem story and a Berliner Zeitung post on a study saying Germany has paid €134 billion more for gas since 2022.</p>
+<p><strong>Why it matters for Europe:</strong> households and industry are paying for a gas market in which Europe, having cut Russian pipeline supply, competes with Asia for seaborne LNG, much of it American. Higher energy costs feed directly into the competitiveness gap with the US and into deindustrialisation.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>UK cap: £2,166 a year from 1 January 2027 (+26%); gas bills +33%, electricity +19% vs the October cap.</li>
+<li>Wholesale allowance +50%, 56% of the cap.</li>
+<li>Germany: €134 billion more paid for gas since 2022 (study cited by Berliner Zeitung, reposted by @F_CEAFE; study not verified this run).</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Ofgem: https://www.ofgem.gov.uk/press-release/energy-price-cap-rise-26-january-2027 ; summary of changes: https://www.ofgem.gov.uk/sites/default/files/2026-11/summary-of-changes-to-energy-price-cap-1-January-to-31-March-2027.pdf</li>
+<li>Reuters on X: https://x.com/i/status/2125511075860828637 (reposted by @F_CEAFE: https://x.com/i/status/2125511776317985211 ); Berliner Zeitung post reposted by @F_CEAFE: https://x.com/i/status/2125503851562496406</li>
+<li>Bloomberg on X (Europe beating Asia for LNG): https://x.com/i/status/2125502280711524732 (article paywalled, not fetched)</li>
+</ul>
+<p><strong>Follow-up:</strong> TTF prices; EU gas storage; Commission energy measures before the December summit.</p>
+<h2 id="s6">Export controls — Asia’s data centres try to sell China-bound Nvidia capacity to US and Western European buyers</h2>
+<p>Data-centre operators across Asia are trying to resell to US buyers computing capacity originally committed to Chinese customers, after the US required licences for advanced chip shipments to Singapore, Malaysia, Indonesia and Thailand and announced a global clampdown, from February 2027, on remote access by Chinese firms (Bloomberg via The Edge Malaysia and Bloomberg Law). Liquid Compute, a New York start-up that tracks over 200 “neoclouds”, says the cost of Nvidia B300 GPUs fell 7%, from $7.72 to $7.19 per GPU-hour between the end of October and 24 November; its CEO says many neoclouds want to remarket capacity “into the US and Western Europe”. Banks including Citigroup, Standard Chartered, DBS, OCBC and UOB are reviewing data-centre clients for compliance (Bloomberg via NDTV Profit). Singapore’s Prime Minister Lawrence Wong: “We do not enforce America’s export controls, but we do not want Singapore to be used and abused as a conduit.”</p>
+<p><strong>Why it matters for Europe:</strong> the remote-access rule (lead story of the 17 November 13:30 edition) is already reshaping the market: capacity built for Chinese clients is flowing to the US and Western Europe, and third countries such as Singapore align with US enforcement. European data centres are covered by the same rule.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>B300 rental price: $7.72 → $7.19 per GPU-hour (−7%), end-October to 24 November 2026 (Liquid Compute index).</li>
+<li>Licence requirement for advanced US chips to Singapore, Malaysia, Indonesia and Thailand; remote-access clampdown from February 2027.</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Bloomberg on X: https://x.com/i/status/2125483403671707893</li>
+<li>The Edge Malaysia (Bloomberg reprint): https://theedgemalaysia.com/node/827218</li>
+<li>NDTV Profit (Bloomberg reprint, banks’ reviews): https://www.ndtvprofit.com/markets/banks-put-data-center-clients-under-the-microscope-on-ai-chips-12373123</li>
+</ul>
+<p><strong>Follow-up:</strong> China’s response to the Southeast Asia licence rule; EU data-centre exposure.</p>
+<h2 id="s7">Macro — German growth revised down to 0.1% in the third quarter as machinery investment and exports fall</h2>
+<p>Destatis revised Germany’s third-quarter 2026 GDP growth from 0.2% to 0.1% on the previous quarter (price, seasonally and calendar adjusted), citing weaker September exports and retail sales. Gross fixed capital formation fell 1.2%, and investment in machinery and equipment fell 3.5%, deepening a decline seen in the first half of the year. Total exports fell 1.0% (goods −0.8%, services −1.7%), with lower exports of motor vehicles, chemicals and metals. Year on year GDP grew 1.2% (price adjusted).</p>
+<p><strong>Why it matters for Europe:</strong> Europe’s largest economy is barely growing, and the weakness is in industrial investment and exports, the sectors most exposed to energy prices and US tariffs.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>Q3 2026: +0.1% q/q (first estimate +0.2%); +1.2% y/y.</li>
+<li>Machinery and equipment investment −3.5% q/q; exports −1.0% q/q.</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Destatis press release No. 409, 25 Nov 2026: https://www.destatis.de/EN/Press/2026/11/PE26_409_811.html</li>
+<li>Bloomberg on X: https://x.com/i/status/2125489699061916004</li>
+</ul>
+<h2 id="s8">Briefly noted</h2>
+<ul>
+<li><strong>Patents:</strong> WIPO says global patent filings reached a record 3.9 million in 2025 (+6%) https://x.com/i/status/2125484631692882026 ; @F_CEAFE reposted a post saying China filed more than the next nine countries combined https://x.com/i/status/2125512141033574699 (already in rankings from WIPI 2026, 20 Nov).</li>
+<li><strong>Nvidia:</strong> Reuters exclusive: companies linked to Alice Huang raised financing against computing equipment for AI data centres https://x.com/i/status/2125492499380584823 ; Washington Post analysis on Trump’s intervention in Nvidia’s boardroom https://x.com/i/status/2125560176681853300</li>
+<li><strong>Big Tech regulation:</strong> Australia passes law with fines up to 5% of global revenue https://x.com/i/status/2125495971844849792 ; Malaysia’s regulator sues Google for $145.84 million https://x.com/i/status/2125477654832746981</li>
+<li><strong>Takeovers:</strong> EasyJet’s annual profit falls on fuel costs ahead of its takeover by Apollo (US) (Reuters) https://x.com/i/status/2125495996322898044 ; BYD in exclusive talks for INEOS Automotive’s Hambach plant (Euronews; no new development) https://x.com/i/status/2125519486560448929</li>
+<li><strong>Oil:</strong> prices fall over 1% despite Hormuz tanker incidents (Al Jazeera) https://x.com/i/status/2125550387247616442 ; Russia’s Syzran refinery probably hit by Ukrainian drones (Bloomberg) https://x.com/i/status/2125546319104094616</li>
+<li><strong>Raw materials:</strong> Botswana to take a free 5% stake in mines on state concessions (Bloomberg) https://x.com/i/status/2125516330518397080</li>
+<li><strong>North Korea sanctions:</strong> NK News analysis on why Pyongyang targeted Switzerland and the UK but not EU states https://x.com/i/status/2125515095966941694 ; US says Kim Ju-ae’s ski gear may breach UN sanctions (SCMP) https://x.com/i/status/2125523597993099744</li>
+<li><strong>Space (cross-reference, CEAFE Industria de Defensa):</strong> Shenzhou-24 docked with Tiangong carrying Pakistan’s first astronaut.</li>
+</ul>
+<h2 id="s9">Also in this edition</h2>
+<ul>
+<li>Indra&rsquo;s Forward2030: €12bn revenue target by 2030 — see Defence Industry</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

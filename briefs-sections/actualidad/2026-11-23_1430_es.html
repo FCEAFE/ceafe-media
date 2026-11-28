@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — lunes, 23 de noviembre de 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">lunes, 23 de noviembre de 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> del lunes 23 de noviembre hacia las 07:00 a las 13:00 (hora de Madrid): todo lo nuevo desde la edición de las 08:30.</li>
+<li><strong>Compiled from:</strong> los informes de las secciones Actualidad y Conflictos de CEAFE y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Asamblea Parlamentaria de la OTAN en Berlín: Rutte alerta de «actividades malignas cada vez más intensas» y el principal militar de la UE dice que la defensa de Europa corresponde a la OTAN</h2>
+<p><strong>En la sesión anual de la Asamblea Parlamentaria de la OTAN en Berlín, el secretario general Mark Rutte alertó de «actividades malignas cada vez más intensas contra nuestras naciones»: incendios provocados, drones sobre aeropuertos, sabotajes ferroviarios, buques de carga atacados en el mar y ciberataques «incesantes».</strong></p>
+<p>Rutte citó el «peligroso incidente» del viernes en Polonia y el mar Negro, donde la OTAN trabaja con Rumanía, Bulgaria y Turquía. Pidió más gasto en defensa (se prevé que varios aliados alcancen o superen este año el objetivo del 5 %) y más producción de defensa aérea, drones, sistemas antidrón y armas de ataque en profundidad, y afirmó que la OTAN podrá producir unos 4 millones de proyectiles de artillería al año a partir del próximo, casi el doble que en 2025. El ministro alemán de Asuntos Exteriores, Johann Wadephul, dijo que la OTAN «defenderá cada centímetro» de su territorio, pidió a Putin que «detenga esta guerra» y «venga a la mesa de negociación», y afirmó que Rusia «no se plantea seriamente atacar territorio de la OTAN a corto plazo… porque somos fuertes». Esa misma mañana, el presidente del Comité Militar de la UE, el general Seán Clancy, declaró a Euronews: «La defensa y la disuasión en el área euroatlántica, incluida Europa, son responsabilidad de la OTAN». En Bélgica, el ministro de Defensa, Theo Francken, atribuyó a un colectivo de extrema izquierda tres presuntos incendios provocados contra proveedores de defensa cerca de Lieja, entre ellos BATS, fabricante de radares y sistemas antidrón; los servicios de inteligencia aún verifican la reivindicación (Anadolu).</p>
+<figure class="brief-figure">
+<img src="charts/gasto_militar_ue_es.png" alt="Gasto militar: EE. UU., China, la UE-27 y tres Estados miembros de la UE" />
+<figcaption>Gasto militar: EE. UU., China, la UE-27 y tres Estados miembros de la UE</figcaption>
+</figure>
+
+<p><em>CEAFE:</em> Sin una base industrial, tecnológica y de defensa común, Europa seguirá dependiendo de decisiones tomadas en Washington o en Pekín.</p>
+<p><strong>Contexto:</strong> Antecedentes: ya en octubre de 2019 @F_CEAFE defendía un ejército europeo como respuesta a la exposición de Europa, con la etiqueta #EUdefence (<a href="https://x.com/i/status/1182634766744592384">X, 2019</a>). El objetivo del 5 % se acordó en la cumbre de la OTAN de 2025 por insistencia de Estados Unidos.</p>
+<p><strong>Por qué importa para Europa:</strong> el militar de mayor rango de la UE afirma que la defensa de Europa corresponde a la OTAN, una alianza cuyo comandante militar (SACEUR) es un oficial estadounidense, el mismo día en que Rutte enumera las amenazas en suelo europeo. Según el SIPRI, los Estados miembros de la UE gastaron en conjunto en 2025 aproximadamente la mitad que Estados Unidos.</p>
+<p><strong>Qué vigilar:</strong> las decisiones de la OTAN tras el Consejo del Atlántico Norte de este lunes sobre Polonia; la investigación de los incendios en Bélgica; el pleno del Parlamento Europeo de esta semana.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.aa.com.tr/en/europe/nato-chief-warns-of-intensifying-malign-activities-targeting-alliance-nations/4134472">Anadolu (Rutte)</a>, <a href="https://x.com/i/status/2124812694624592166">OTAN</a>, <a href="https://www.aa.com.tr/en/europe/germany-warns-russia-against-provocations-targeting-nato-territory-urges-peace-talks-on-ukraine/4134221">Anadolu (Wadephul)</a>, <a href="https://x.com/i/status/2124784922707574890">Euronews (Clancy)</a>, <a href="https://www.aa.com.tr/en/europe/intelligence-services-investigate-3-suspicious-fires-at-defense-companies-in-belgium-minister-accuses-left-wing-group/4134311">Anadolu (Bélgica)</a>, <a href="https://www.sipri.org/databases/milex">SIPRI</a></p>
+<h2 id="s2">Señales nucleares desde Moscú: Medvédev habla de la «obligación» de usar armas nucleares y Alemania alerta de un satélite con arma nuclear</h2>
+<p><strong>Dmitri Medvédev, vicepresidente del Consejo de Seguridad de Rusia, escribió este lunes que Ucrania y los países de la OTAN «ya han creado situaciones» en las que Rusia se plantea un ataque nuclear, aunque los acontecimientos aún «no han creado un estado de necesidad directa» de usar armas nucleares.</strong></p>
+<p>Medvédev sostuvo que, si se cumplen las condiciones de la doctrina rusa, el jefe del Estado «no solo tiene derecho, sino la obligación» de usarlas, y que la entrega occidental de armas nucleares a Kiev, «abierta o encubierta», o un uso masivo de medios no nucleares podrían justificar un ataque preventivo (Anadolu; TASS, agencia estatal rusa). Por otra parte, NDR, WDR y el Süddeutsche Zeitung informaron de que el BND y socios occidentales advierten de que Rusia podría lanzar antes de fin de año un satélite con arma nuclear, «Sputnik-S»; el ministro de Defensa, Boris Pistorius, ha sido informado. La Embajada rusa en Berlín rechazó las informaciones como «acusaciones infundadas» y «parte de una campaña de propaganda».</p>
+<p><strong>Contexto:</strong> Antecedentes: en enero de 2023 @F_CEAFE publicó la advertencia de Medvédev a la OTAN de una guerra nuclear si Rusia era derrotada en Ucrania (<a href="https://x.com/i/status/1616049330573701122">X, 2023</a>).</p>
+<p><strong>Por qué importa para Europa:</strong> muchos dirigentes europeos consideran inutilizable el arsenal ruso; CEAFE sostiene lo contrario, porque Moscú repite que una guerra con Europa sería breve y nuclear, y sus advertencias suelen excluir a Estados Unidos. La escalada actual en el mar (Libia, Báltico, mar Negro) se produce bajo esa retórica. Una detonación nuclear en órbita baja dejaría inutilizados satélites durante meses, según las informaciones alemanas.</p>
+<p><strong>Qué vigilar:</strong> comentarios de la OTAN y la UE sobre el satélite; cualquier aviso ruso de lanzamiento; si otros dirigentes rusos repiten el planteamiento de Medvédev.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.aa.com.tr/en/eurasia/russia-has-right-and-in-some-cases-obligation-to-use-nuclear-weapons-medvedev-says/4134527">Anadolu (Medvédev)</a>, <a href="https://x.com/i/status/2124777339469127782">TASS</a>, <a href="https://www.aa.com.tr/en/europe/russia-may-put-nuclear-weapon-in-orbit-this-year-german-intelligence-warns/4134351">Anadolu (satélite)</a></p>
+<h2 id="s3">Cinco Estados europeos lanzan en Rennes un centro de IA para la defensa, mientras Washington corteja a la industria polaca e italiana</h2>
+<p><strong>El Ministerio de las Fuerzas Armadas de Francia anunció la puesta en marcha del Centro Internacional de Inteligencia Artificial para la Defensa (ICAID): Alemania, Italia, Polonia y Suecia anunciaron formalmente su intención de sumarse a Francia en una conferencia en Rennes los días 19 y 20 de noviembre.</strong></p>
+<p>El centro busca acelerar la adopción de la IA militar y compartir buenas prácticas y lecciones de las operaciones, y está abierto a otros Estados «afines». Esa misma mañana, el embajador de EE. UU. ante la OTAN promocionó el «Transatlantic Defense Industry Access Forum», que reunió a más de 500 participantes de la industria de defensa estadounidense con homólogos de Polonia, Italia y Ucrania «para forjar nuevas alianzas y ampliar oportunidades de negocio».</p>
+<p><strong>Contexto:</strong> Francia, Alemania, Italia, Polonia y Suecia son Estados miembros de la UE y miembros de la OTAN. La OTAN eligió el sistema Maven de Palantir como plataforma de selección de objetivos con IA.</p>
+<p><strong>Por qué importa para Europa:</strong> el ICAID es el tipo de cooperación intraeuropea que CEAFE considera positiva: Estados que construyen juntos una capacidad en lugar de comprarla. Polonia e Italia aparecen el mismo día en ambos lados; que la IA de defensa europea siga siendo europea o dependa de software estadounidense decidirá quién controla los datos.</p>
+<p><strong>Qué vigilar:</strong> qué otros Estados se suman al ICAID; su presupuesto y gobernanza; los contratos que salgan del foro estadounidense.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.defense.gouv.fr/sites/default/files/ministere-armees/Communiqu%C3%A9_A_Lancement%20de%20l%27ICAID%20%20quatre%20nations%20rejoignent%20la%20France%20pour%20cr%C3%A9er%20l%E2%80%99International%20center%20for%20artificial%20intelligence%20in%20defence.pdf">Ministère des Armées</a>, <a href="https://x.com/i/status/2124819143371186179">Ministère des Armées en X</a>, <a href="https://x.com/i/status/2124787857365606875">Embajador de EE. UU. ante la OTAN</a></p>
+<h2 id="s4">Actualización: garantías «similares al artículo 5»: Zelenski pregunta quién combatiría; Moscú dice que sondeará a las capitales europeas</h2>
+<p><strong>Tras las garantías «similares al artículo 5» planteadas por Washington (edición de las 08:30), Zelenski preguntó: «¿Qué países apoyarán a Ucrania si vuelve a ser atacada? ¿Qué harán exactamente nuestros socios en respuesta? ¿Qué tropas se desplegarán de antemano en nuestro territorio?».</strong></p>
+<p>El portavoz del Kremlin, Dmitri Peskov, dijo que Moscú «iniciará contactos con países europeos para determinar su disposición a contribuir a los esfuerzos de paz» (TASS), y declaró a Védomosti que Rusia no tiene prisa por nombrar embajadores en el Reino Unido y Francia porque «no hay relaciones con esos países» (Anadolu). Calificó de «mesurada» la oposición del primer ministro belga a confiscar los activos rusos congelados.</p>
+<p><strong>Contexto:</strong> las garantías en discusión descansarían sobre todo en las tropas y el dinero de los Estados participantes en la Coalición de Voluntarios.</p>
+<p><strong>Por qué importa para Europa:</strong> Moscú elige hablar con capitales europeas por separado; los europeos solo cuentan en la mesa de la paz si hablan con una sola voz, no como una lista de gobiernos nacionales.</p>
+<p><strong>Qué vigilar:</strong> las respuestas del E5 y de los participantes en la Coalición de Voluntarios; a qué capitales contacta Moscú.</p>
+<p><strong>Fuentes:</strong> <a href="https://x.com/i/status/2124826721849356629">Zelenski</a>, <a href="https://x.com/i/status/2124828072218128894">Zelenski (2)</a>, <a href="https://t.me/tassagency_en/99523">TASS</a>, <a href="https://www.aa.com.tr/en/europe/russia-in-no-rush-to-appoint-ambassadors-to-uk-france-amid-strained-ties-kremlin/4133948">Anadolu</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

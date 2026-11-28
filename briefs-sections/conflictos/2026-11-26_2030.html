@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTS — Thursday, 26 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTS</h1>
+      <p class="list-date">Thursday, 26 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> from about 13:15 to about 19:20 on Thursday 26 November, Europe/Madrid: everything new since the 14:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Conflicts section brief, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">Two Italian air-defence technicians killed in drone strike in Kuwait; Iran denies</h2>
+<p>Two Italian technicians were killed and two other people injured when drones hit an air-defence detection station at a Kuwaiti military base, a source told Reuters. ANSA reports the two worked for Rheinmetall Italia; Italy&rsquo;s Defence Ministry confirmed they were on the base. Iran&rsquo;s Foreign Minister Abbas Araghchi, in a call with his Kuwaiti counterpart, “categorically denied” that an Iranian drone was involved; Iranian military officials called it a possible “false flag”. Italian PM Giorgia Meloni commented on the deaths.</p>
+<p><strong>Context:</strong> Italy has air-refuelling aircraft in Egypt (Luxor, Hurghada) and Saudi Arabia (Taif), according to @MenchOsint (unverified). OSINT accounts suggest a Rheinmetall Skynex battery deployed in Kuwait may have been hit (unverified); another hypothesis circulating is that the deaths date from the 18 November IRGC strikes on Ali Al Salem Air Base (speculation, unverified).</p>
+<p><strong>Background (CEAFE archive):</strong> It is not the first Iranian strike on Italian forces in Kuwait: in March 2026 @F_CEAFE reposted ItaMilRadar&rsquo;s satellite analysis of the aftermath of the Iranian attack on the Italian Predator base in Kuwait (https://x.com/i/status/2036886151416398301).</p>
+<p><strong>Why it matters for Europe:</strong> European personnel and European-built air defences are now direct casualties of the Gulf war. That raises political pressure in Rome and on EU partners and tests how Europe protects contractors deployed with partner forces.</p>
+<p><strong>What to watch:</strong> an official attribution by Kuwait or the US; Italy&rsquo;s response (Parliament, posture of Italian assets in the Gulf); further Iranian statements.</p>
+<p><strong>Sources:</strong> Reuters https://x.com/i/status/2126015681116123368; Al Jazeera English https://x.com/i/status/2126014235515687421; @FaytuksNetwork (ANSA) https://x.com/i/status/2125950566555951156; @MenchOsint https://x.com/i/status/2125983457067040922, https://x.com/i/status/2126009957204025390, https://x.com/i/status/2125953050443382915, https://x.com/i/status/2125989586753003905, https://x.com/i/status/2125979886162514055</p>
+<h2 id="s2">Update: Hormuz — another tanker on fire, seven attacks in four days</h2>
+<p>Video posted on the evening of 26 November appears to show a tanker burning near Khasab, at the mouth of the Strait (unverified). Earlier footage released by the IRGC Navy shows two tankers exploding after what it says were naval mines north of Khasab (relayed by @MilitarySummary). A UKMTO advisory issued for the Joint Maritime Information Center lists seven attacks on vessels between 22 and 25 November. The IISS notes that war-risk premiums for Gulf voyages rose from 0.10–0.25% before the war to 2.5–7%: up to US$17.5m for a tanker carrying a US$250m cargo.</p>
+<p><strong>Why it matters for Europe:</strong> Higher insurance and freight costs feed straight into European energy prices. Mines widen the threat from single attacks to the whole area.</p>
+<p><strong>What to watch:</strong> the UKMTO original advisory and ship names; any naval mine-countermeasures deployment, including European ships.</p>
+<p><strong>Sources:</strong> @MenchOsint https://x.com/i/status/2126008159525282044, https://x.com/i/status/2126007905367544292; @GeromanAT repost of @MilitarySummary https://x.com/i/status/2125948005811720227; @sentdefender https://x.com/i/status/2125986712203432276; @IISS_org https://x.com/i/status/2125999558773604751</p>
+<h2 id="s3">Update: Saudi–Yemen — Jizan refinery hit, casualties confirmed</h2>
+<p>The Saudi military spokesperson said the Jizan refinery was struck by a projectile fired from Yemen. @MenchOsint notes this is the third time in a week Riyadh has acknowledged an interception failure. The Saudi Ministry of Energy reported at least one dead and several workers injured. Satellite images shared by @tom_bike show two damaged storage tanks at the Ras Tanura terminal, not the crude export facilities (unverified). Long fuel queues were reported in Jizan (unverified).</p>
+<p><strong>Why it matters for Europe:</strong> Strikes on Saudi refining and export sites add to the Hormuz disruption and threaten supply to European markets.</p>
+<p><strong>What to watch:</strong> Saudi retaliation in Yemen; the status of Ras Tanura exports.</p>
+<p><strong>Sources:</strong> @MenchOsint https://x.com/i/status/2125966901142536613, https://x.com/i/status/2126015013907280328; @tom_bike via @MenchOsint https://x.com/i/status/2125985070284484797</p>
+<h2 id="s4">Ukraine war: strikes on Ukrainian infrastructure, warning of a new massive attack; Rome and Berlin warn on Mediterranean strikes</h2>
+<p>Russian drones reportedly hit the National Bank of Ukraine&rsquo;s banknote-paper factory in Zhytomyr region (@DD_Geopolitics, unverified). Russia&rsquo;s Defence Ministry announced new strikes, including in Kharkiv. A Ukrainian statement relayed by @MilitarySummary says that, according to intelligence, Russia is completing preparations for another massive attack (original not checked). Donetsk regional police say only about 10,000 civilians remain in Kramatorsk. Italy&rsquo;s Meloni and Germany&rsquo;s Foreign Minister Johann Wadephul cautioned against the “geographical expansion” of the war while reaffirming support for Ukraine (Kyiv Independent). Reuters reports that Meloni warned Ukraine over its strike in the Mediterranean, after Italy said Ukrainian attacks on Russian vessels in Libyan waters violated Libya&rsquo;s sovereignty (Al Jazeera). Polish Foreign Minister Radosław Sikorski said Russia is not winning on the battlefield and that Ukraine strikes military targets while Russia strikes civilian ones (clips via @clashreport).</p>
+<p><strong>Why it matters for Europe:</strong> Ukraine&rsquo;s maritime campaign has reached the central Mediterranean, and Rome objects. This splits Europe over how far Ukraine may take the war at sea.</p>
+<p><strong>What to watch:</strong> a large Russian missile and drone strike in the coming nights; Kyiv&rsquo;s response to the Italian and German warnings.</p>
+<p><strong>Sources:</strong> @DD_Geopolitics via @GeromanAT https://x.com/i/status/2126016421994090745; @MilitarySummary via @GeromanAT https://x.com/i/status/2125992768577192191, https://x.com/i/status/2125986095691178299, https://x.com/i/status/2125986487942652038; Kyiv Independent https://x.com/i/status/2125999006098624612; Reuters https://x.com/i/status/2125988005047357615; Al Jazeera https://x.com/i/status/2126005565407293824; @clashreport https://x.com/i/status/2126003283600826760, https://x.com/i/status/2126003538103062772</p>
+<h2 id="s5">Hybrid threats in Europe: Russian sabotage up 16%, Iranian operations under scrutiny</h2>
+<p>The IISS reports that recorded Russian-linked sabotage in Europe rose 16% in the 12 months to September 2026, even as overall recorded Russian activity fell, with surges concentrated on Poland, Germany and the Baltic states. A second IISS paper examines about 80 Iranian external operations in Europe and says less-protected targets were pinpointed after the Gulf war began. British security experts warn that Tehran and Moscow could cooperate on covert operations in Europe (report via @clashreport).</p>
+<p><strong>Why it matters for Europe:</strong> The Gulf war and the Ukraine war meet on European soil through sabotage. Frontline states carry most of the exposure.</p>
+<p><strong>What to watch:</strong> joint attribution by EU or NATO; protection of critical infrastructure.</p>
+<p><strong>Sources:</strong> @IISS_org https://x.com/i/status/2125957777147277740, https://x.com/i/status/2125983079856570608; @clashreport https://x.com/i/status/2125981453276110967</p>
+<h2 id="s6">Strategic and space competition</h2>
+<p>A report widely shared on the list says the US has entered an “unprecedented three-way nuclear rivalry” with China and Russia (@KingstonAReif https://x.com/i/status/2125989101656535218). CSIS warns that China, which has landed a reusable rocket and plans massive LEO constellations, challenges US satellite leadership ahead of the 2027 World Radiocommunication Conference in Shanghai (https://x.com/i/status/2125983046553714724). Chinese state broadcaster CGTN says several major types of military equipment will make their public debut at Airshow China (https://x.com/i/status/2125962294316470351; state media). No new counter-space (RPO or shadowing) incident was found in this window.</p>
+<p><strong>Why it matters for Europe:</strong> Europe has neither a nuclear deterrent nor a satellite constellation of matching scale. Spectrum and orbit decisions at WRC-27 will shape IRIS².</p>
+<p><strong>What to watch:</strong> new types shown at Airshow China; European positions ahead of WRC-27.</p>
+<p><strong>Sources:</strong> as linked above.</p>
+<h2 id="s7">Also in this edition</h2>
+<ul>
+<li>Euro Summit, ECB pick, EU budget and Ukraine loan; Meloni, Wadephul and Trump on the Mediterranean — see World</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Conflicts. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — miércoles, 25 de noviembre de 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">miércoles, 25 de noviembre de 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Industria de Defensa / Defence Industry</li>
+<li><strong>Periodo cubierto:</strong> miércoles 25 de noviembre, de las 07:00 a las 13:30 aprox. (hora de Madrid): todo lo nuevo desde la edición de las 08:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Industria de Defensa de CEAFE, las publicaciones de @F_CEAFE y el archivo de CEAFE en X.</li>
+</ul>
+<h2 id="s1">Forward2030: Indra aspira a más que duplicar su tamaño en 2030</h2>
+<p>En su Día del Inversor, el 25 de noviembre, Indra Group presentó el plan estratégico Forward2030 (nota de prensa de Indra). Objetivos: ingresos de más de 12.000 millones de euros en 2030 (más del doble que al cierre de 2025), EBIT superior a 1.500 millones con margen por encima del 12,5 %, generación de caja de más de 3.100 millones entre 2026 y 2030, y la ambición de 20.000 millones de ingresos en 2035, la mitad en el exterior. Indra destinará 1.000 millones de euros propios a I+D+i y 240 millones a la recualificación de su plantilla. El grupo se organiza en tres ejes —Defensa y Espacio, Tecnología inteligente e Infraestructuras críticas— con IndraMind (IA soberana, mando y control e integración; cartera de 400 millones) como capa transversal. Su cartera de pedidos supera los 22.000 millones. Según Bloomberg, Indra elevó sus previsiones al presentar el nuevo presidente, Ángel Simón, la estrategia.</p>
+<p><strong>Contexto:</strong> Antecedentes: @F_CEAFE sigue el papel de Indra en los programas europeos: en julio de 2024 reposteó los pedidos de fabricación del radar SPY-7 de Lockheed Martin a Indra para las fragatas F-110 españolas (un radar estadounidense en el corazón de un buque español); en febrero de 2026, la OCCAR firmó el contrato de cofinanciación del programa de ataque electrónico REACT II, liderado por Indra (<a href="https://x.com/i/status/2020096115614335173">X, feb. 2026</a>); y el 9 de noviembre de 2026 reposteó que España negocia con Alemania producir el caza del futuro, con Airbus e Indra al frente del proyecto (<a href="https://x.com/i/status/2119759031082315902">X, nov. 2026</a>).</p>
+<p>El contraste de escala deja claro que las estrategias nacionales, por ambiciosas que sean, no bastan frente a competidores de otro orden de magnitud.</p>
+<p><strong>Por qué importa a Europa:</strong> que un grupo español quiera convertirse en «empresa de producto» en defensa y espacio suma escala europea. Aun así, con 12.000 millones Indra seguiría muy lejos de los grandes contratistas estadounidenses; los planes de crecimiento solo cierran esa brecha si se suman a programas comunes (FCAS, ESSOR, FED) y no como campeones nacionales aislados.</p>
+<p>Fuentes: <a href="https://www.indragroup.com/es/noticias/indra-group-da-un-salto-al-futuro-y-doblara-su-tamano-como-lider-global-en-tecnologia-dual-para-sectores-criticos-conectando-sus-capacidades-y-potenciandolas-con-indramind">Indra Group</a>; <a href="https://x.com/business/status/2125487178926997732">Bloomberg</a>; <a href="https://x.com/IndraCompany/status/2125552743159095401">@IndraCompany</a>.</p>
+<h2 id="s2">Bélgica inaugura la mayor fábrica de satélites de Europa, que fabricará satélites de IRIS²</h2>
+<p>El rey Felipe inauguró el 24 de noviembre la «megafábrica» de Aerospacelab en Charleroi, presentada como la mayor fábrica de satélites de la UE, con capacidad para unos 500 satélites al año (Euronews/AFP). Producirá satélites para la constelación europea de conectividad segura IRIS², la respuesta europea a Starlink, cuya producción comenzará antes de finales de 2028. Su consejero delegado, Benoit Deper, dijo que la empresa ha pasado de ser una «pequeña startup» en 2018 a tener un papel en la «soberanía espacial» europea.</p>
+<p><strong>Contexto:</strong> Antecedentes: @F_CEAFE sigue IRIS² desde noviembre de 2022, cuando defendió que la UE dotara instalaciones de I+D para que las nuevas tecnologías se desarrollen y dominen en Europa, «como con Galileo e IRIS²» (<a href="https://x.com/i/status/1594387040610623490">X, nov. 2022</a>). En diciembre de 2024, la ESA acordó apoyar el desarrollo de la constelación; el 31 de agosto de 2026, SES adjudicó a OHB un contrato de casi 1.000 millones de euros para 18 plataformas de satélites MEO (<a href="https://x.com/i/status/2094485921127170265">X, ago. 2026</a>); y el 1 de noviembre de 2026, la canadiense MDA Space obtuvo un acuerdo de 64 millones de euros para antenas de IRIS².</p>
+<p><strong>Por qué importa a Europa:</strong> la producción en serie de satélites en una antigua ciudad industrial es capacidad intraeuropea que reduce la dependencia de SpaceX y Starlink; solo dará fruto si IRIS² mantiene su financiación (véase el punto 3).</p>
+<p>Fuentes: <a href="https://l.euronews.com/eLw0">Euronews</a> (vía <a href="https://x.com/euronews/status/2125526486501228975">@euronews</a>).</p>
+<h2 id="s3">Actualización: Kubilius advierte de que un recorte del 30 % en defensa y espacio en el próximo presupuesto de la UE pondría en peligro IRIS² y los proyectos de defensa</h2>
+<p>El comisario europeo de Defensa y Espacio, Andrius Kubilius, escribió en X que los «drásticos recortes» en defensa y espacio en el próximo Marco Financiero Plurianual (un 30 %, 39.000 millones de euros menos) pondrían en peligro los programas paneuropeos más importantes: IRIS², el Servicio Gubernamental Europeo de Observación de la Tierra (EOGS) y los Proyectos Europeos de Defensa de Interés Común (Vigilancia del Flanco Este, la iniciativa antidrones, los escudos aéreo, marítimo y espacial) y los habilitadores estratégicos. «Putin escala, la UE recorta. ¡Señal equivocada!». Las cifras son suyas; no se han revisado en esta pasada los textos del Consejo y el Parlamento.</p>
+<p>Europa tiene recursos; lo que le falta, una y otra vez, es la escala que solo da la acción conjunta.</p>
+<p><strong>Por qué importa a Europa:</strong> ningún Estado miembro puede financiar solo IRIS² o un escudo aéreo; recortar el presupuesto común empuja a las capitales a volver a compras nacionales, a menudo de material estadounidense ya disponible.</p>
+<p>Fuentes: <a href="https://x.com/KubiliusA/status/2125565352578859346">@KubiliusA 1/2</a>, <a href="https://x.com/KubiliusA/status/2125565356127268997">2/2</a>.</p>
+<h2 id="s4">El presupuesto alemán de 2027 eleva el gasto en defensa a 139.400 millones de euros</h2>
+<p>Alemania prevé un gasto total en defensa de 139.400 millones de euros en 2027, 31.200 millones más que los 108.200 millones de 2026: 109.700 millones del presupuesto ordinario más 29.600 millones del fondo especial para la Bundeswehr creado en 2022 (Anadolu, según el presupuesto aprobado por la comisión de presupuestos del Bundestag, que se vota esta semana). Las adquisiciones superarán los 60.000 millones. La ayuda al desarrollo baja a 9.580 millones desde 10.050 millones y se recortan las contribuciones a la ONU.</p>
+<p><strong>Por qué importa a Europa:</strong> el mayor presupuesto de adquisiciones de Europa marcará el mercado; que esos más de 60.000 millones vayan a proveedores europeos o a sistemas estadounidenses (F-35, P-8, Arrow, Patriot) decidirá cuánto gana la industria europea.</p>
+<p>Fuentes: <a href="https://v.aa.com.tr/4137005">Anadolu</a>.</p>
+<h2 id="s5">La checa PBS Aerospace quiere duplicar su capacidad de producción en EE. UU.</h2>
+<p>Según Defense News, el fabricante checo de motores a reacción PBS Aerospace aspira a duplicar como mínimo su capacidad de fabricación en Estados Unidos para crecer como proveedor de pequeños turborreactores para drones y misiles estadounidenses. Defense News informa también de que responsables italianos afirman que Italia alcanzó en 2026 un gasto en defensa y seguridad interior equivalente al 2,8 % del PIB, cifra que no aparece en el propio presupuesto de defensa. (Solo resúmenes del índice; artículos completos no consultados.)</p>
+<p><strong>Por qué importa a Europa:</strong> un fabricante europeo de motores que crece en EE. UU. sirve a programas estadounidenses bajo normas estadounidenses; los programas europeos de drones y misiles necesitan esa misma capacidad de pequeños motores en casa.</p>
+<p>Fuentes: <a href="https://www.defensenews.com/global/europe/">Defense News Europa</a>.</p>
+<h2 id="s6">Espacio: la búlgara EnduroSat contrata dos lanzamientos de New Glenn; la Casa Blanca pide 2.000 millones más para Artemis</h2>
+<ul>
+<li><strong>EnduroSat y New Glenn:</strong> el fabricante búlgaro de satélites ha contratado dos lanzamientos dedicados del New Glenn de Blue Origin a partir de 2029 para sus clientes, mientras SpaceX va cerrando su programa de viajes compartidos en Falcon 9 (SpaceNews). Otra empresa europea recurre a un lanzador estadounidense; Vega C, Ariane 6 y los futuros microlanzadores europeos (Isar, RFA, MaiaSpace) son las alternativas europeas.</li>
+<li><strong>Artemis:</strong> la Casa Blanca pide al Congreso hasta 2.000 millones de dólares más para el programa Artemis de la NASA en 2027, sin apenas detalles sobre su uso (SpaceNews).</li>
+<li><strong>Centros de datos orbitales:</strong> empresas europeas buscan papeles de apoyo en proyectos estadounidenses y chinos de centros de datos en órbita en lugar de competir directamente (SpaceNews, Bremen): otra señal de que Europa se conforma con ser subcontratista.</li>
+<li><strong>Hera:</strong> la ESA publica esta noche, a las 19:45 (hora peninsular), desde Berlín, las primeras imágenes cercanas del asteroide Dimorphos tomadas por Hera; en la misión participan la española GMV y el instrumento TIRI de la JAXA.</li>
+</ul>
+<figure class="brief-figure">
+<img src="charts/lanzamientos_es.png" alt="Lanzamientos orbitales: Europa frente a EE. UU. y China" />
+<figcaption>Lanzamientos orbitales: Europa frente a EE. UU. y China</figcaption>
+</figure>
+
+<p>Datos que demuestran cómo el tamaño de los Estados europeos les impide competir en solitario frente a potencias globales de mucho mayor tamaño.</p>
+<p>Fuentes: <a href="https://spacenews.com/satellite-maker-endurosat-books-two-dedicated-new-glenn-launches/">SpaceNews EnduroSat</a>; <a href="https://spacenews.com/white-house-seeks-an-additional-2-billion-for-artemis-in-2027/">SpaceNews Artemis</a>; <a href="https://spacenews.com/european-companies-seek-supporting-roles-on-orbital-data-center-projects/">SpaceNews centros de datos</a>; <a href="https://x.com/esa/status/2125545327159869615">@esa</a>.</p>
+<h2 id="s7">Resumen europeo</h2>
+<ul>
+<li><strong>Avio Aero (filial italiana de GE Aerospace, no el fabricante de lanzadores Avio SpA):</strong> el equipo HYDEA, financiado por la UE, completó la primera campaña de reencendido en altitud simulada de un combustor de hidrógeno en el DLR de Lampoldshausen; las pruebas pasan ahora a Italia (<a href="https://x.com/AvioAero/status/2125558374460776912">@AvioAero</a>).</li>
+<li><strong>BAE Systems:</strong> inicia una serie de vídeos sobre los aviones de combate colaborativos (CCA) emparejados con el Typhoon (<a href="https://x.com/BAESystemsAir/status/2125499733846200634">@BAESystemsAir</a>).</li>
+<li><strong>EU SST</strong> publica su ficha de prioridades (<a href="https://x.com/EU_SST/status/2125561433849004393">@EU_SST</a>); <strong>ARES Group</strong> publica un documento sobre extender la seguridad de la cadena de suministro en la financiación europea de defensa a las materias primas (<a href="https://www.iris-france.org/en/extending-supply-chain-security-in-eu-defence-funding-from-components-to-raw-materials/">IRIS</a>).</li>
+<li><strong>Fire Point (Ucrania)</strong> afirma que sus drones FP-1 alcanzaron las refinerías de Kuibyshev y Syzran, en la región de Samara (<a href="https://x.com/FirePointUA/status/2125542700459966684">@FirePointUA</a>); afirmación de la empresa, para Conflictos.</li>
+</ul>
+<h2 id="s8">Resto del mundo</h2>
+<ul>
+<li><strong>Turquía:</strong> el dron AKINCI de Baykar completó el primer disparo de prueba de la munición TOLUN-L con buscador láser de ASELSAN (<a href="https://x.com/BaykarTech/status/2125551906181263440">@BaykarTech</a>, <a href="https://x.com/aselsan/status/2125554970833613257">@aselsan</a>).</li>
+<li><strong>India:</strong> el Times of India perfila a Apollyon Dynamics, una startup de tecnología de defensa de Hyderabad con contratos de drones con el Ejército indio (<a href="https://x.com/timesofindia/status/2125529947204624567">@timesofindia</a>).</li>
+<li><strong>África:</strong> Reuters sobre insurgentes en Malí, Burkina Faso y Níger que usan drones comerciales baratos contra las fuerzas gubernamentales (<a href="https://reut.rs/4ARFZjW">Reuters</a>).</li>
+<li><strong>Israel:</strong> Elbit promociona sus cámaras espaciales para satélites de inteligencia (<a href="https://x.com/ElbitSystemsLtd/status/2125481601282736444">@ElbitSystemsLtd</a>).</li>
+</ul>
+<p><strong>Ventas de armamento / fusiones y adquisiciones:</strong> no se han encontrado nuevas operaciones que afecten a empresas europeas de defensa o espacio ni nuevas notificaciones de ventas de armamento; las páginas de FMS/DCS se revisarán a las 20:30.</p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

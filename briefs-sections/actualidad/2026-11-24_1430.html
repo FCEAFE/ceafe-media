@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Tuesday, 24 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Tuesday, 24 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> Tuesday 24 November about 07:00 to 13:00 Europe/Madrid: everything new since the 08:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief and the posts of @F_CEAFE.</li>
+</ul>
+<h2 id="s1">The EU tables its 22nd sanctions package: Russian banks, crypto platforms, a ban on Russian teams at EU sports events and a visa ban on ex-combatants</h2>
+<p>On Monday 23 November the Commission proposed the 22nd package of sanctions against Russia, and on Tuesday President Ursula von der Leyen presented it in a statement. She said the package presses Russia &ldquo;in three ways&rdquo;: it strikes &ldquo;harder at Russia&rsquo;s ways to finance its war by targeting its banks and crypto platforms&rdquo;, it isolates the country further by &ldquo;shutting the door&rdquo; to its participation in European sports and cultural events, and it tightens visa rules and enforcement. For sport, it would ban Russian teams and athletes competing under the Russian flag at any sports event in the EU, ban the display of official Russian symbols, restrict financial flows from Russian sponsors to European sports and cultural associations, and restrict Russians holding posts in the governing bodies of European sports federations. Von der Leyen also proposed a visa ban for Russian ex-combatants, citing &ldquo;an escalation in non-conventional kinetic activities of Russian operatives in Europe&rdquo;: &ldquo;Russian ex-combatants pose a security risk to Europe.&rdquo;</p>
+<p>Alongside the package, the Commission adopted revised visa guidelines: member states should no longer recognise non-biometric Russian passports, apply a &ldquo;very strict approach&rdquo; to tourist visas, run interviews and systematic fingerprint checks against the Schengen Information System at the external border, and give specific attention to Russian-sponsored individual artists. The package has to be approved unanimously by the Council. A letter dated 23 November from the leaders of Denmark, Estonia, Finland, Latvia, Lithuania, Poland and Sweden to von der Leyen and Council President António Costa, seen by the Kyiv Independent, calls the visa guidelines &ldquo;crucial&rdquo; and says the matter &ldquo;is too urgent to wait&rdquo; for the 2027 visa-code reform. TASS (Russian state agency) reported the tourist-visa proposal; no Russian government reaction to the sports and visa measures had been found by 12:55.</p>
+<p><strong>Why it matters for Europe:</strong> the package shows two things at once: the Union keeps adding sanctions on its own initiative, and it is the one actor that has chosen to link the war to Europe&rsquo;s internal security (sabotage, hybrid operations, ex-combatants moving freely in Schengen). Border and visa policy is still national, so the package is only as strong as its weakest border guard and the unanimity of 27 governments. The bloc is also still outside the negotiating room on the war itself (story 2).</p>
+<p><strong>What to watch:</strong> Council discussions before the 26–27 November European Council; the position of Hungary (now under Péter Magyar) and Slovakia; a Russian reaction; enforcement against third-country crypto platforms.</p>
+<p><strong>Sources:</strong> EEAS, statement by President von der Leyen on the 22nd package: https://www.eeas.europa.eu/delegations/ukraine/statement-president-von-der-leyen-22nd-package-sanctions-against-russia_en, European Commission press release IP/26/2521 (visa guidelines, 23 Nov): https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2521/IP_26_2521_EN.pdf ; Commission visa measures page: https://commission.europa.eu/topics/eu-solidarity-ukraine/eu-sanctions-against-russia-following-invasion-ukraine/visa-measures_en, Kyiv Independent (seven leaders&rsquo; letter; package summary): https://kyivindependent.com/exclusive-7-countries-back-eu-push-to-limit-russian-visas-for-tourists-sports/ ; https://kyivindependent.com/eu-proposes-package-of-russian-sports-sanctions-visa-bans-and-a-krygyzstan-crypto-blockade/, Euronews explainer on the sports targeting (on X): https://x.com/i/status/2125195081611391162 ; TASS (Russian state agency) on the tourist-visa proposal (on X): https://x.com/i/status/2125154102804132002</p>
+<h2 id="s2">Peace table: Moscow says it &ldquo;does not understand&rdquo; what Europe could add to the Abu Dhabi talks, as Rutte flies to Mar-a-Lago and the EU leaders prepare their summit</h2>
+<p>Kremlin spokesman Dmitry Peskov, speaking in Minsk, said that &ldquo;Europeans insist on a four-party format&rdquo; for the Abu Dhabi talks, but &ldquo;so far, we don&rsquo;t understand what added value the Europeans could bring to the peaceful settlement process&rdquo;; the date of the next round has not been set (TASS, RIA Novosti, Vedomosti: Russian state or Russian-language outlets). The previous trilateral round (Russia, Ukraine, United States) took place in Abu Dhabi on 10–11 November (APA). Vedomosti recalls that on 23 November the Commission spokesperson Paula Pinho said Europe is not ready to negotiate a new security architecture before a ceasefire and that any such talks must involve NATO and EU member states. TASS adds that Russia expects new contacts with the United States at the G20 summit in Miami in mid-December and that &ldquo;the EU rejects Moscow&rsquo;s proposal on security dialogue&rdquo;.</p>
+<p>On the Western side, NATO announced that Secretary General Mark Rutte will travel to Florida on 24–25 November and meet President Donald Trump at Mar-a-Lago on 25 November, with senior administration officials. Costa announced that EU leaders will meet on 26–27 November to discuss his proposal for the next long-term budget (MFF) and Ukraine&rsquo;s financing needs. Bloomberg reports that Volodymyr Zelenskyy told it he has a plan if Trump cannot convince Putin to end the war by the end of the year, including looking to a new US Congress.</p>
+<p><em>CEAFE:</em> An invitation to an international table does not change the proportions: size does matter here, and it is measured in capacity.</p>
+<p><strong>Why it matters for Europe:</strong> this is the clearest statement yet of the peace-table problem: the party that is funding, arming and bordering Ukraine is told by Russia that it adds no value, while Washington talks directly to Moscow and Kyiv. Europe asks for a seat; it does not yet have a single voice or a single envoy to occupy it. Rutte&rsquo;s trip to Florida the day before the Brussels summit shows where the decisions are taken.</p>
+<p><strong>What to watch:</strong> the Rutte–Trump meeting on 25 November; the European Council of 26–27 November (MFF, Ukraine financing, the 22nd package, Russia&rsquo;s space threat); the date and format of the next Abu Dhabi round; whether Moscow&rsquo;s invitation to a European delegation in Moscow (Putin, 19 November) is taken up.</p>
+<p><strong>Sources:</strong> TASS (Russian state agency): https://tass.com/politics/2223897 ; RIA Novosti: https://ria.ru/20261124/peregovory-2133603537.html ; Vedomosti: https://www.vedomosti.ru/politics/news/2026/11/24/1414733-peskov-moskve-poka-neyasna ; APA: https://en.apa.az/cis-countries/kremlin-spokesperson-next-round-of-abu-dhabi-peace-talks-has-yet-to-be-scheduled-538239, NATO press (Rutte to Mar-a-Lago, on X): https://x.com/i/status/2125178725884920130 ; European Council President Costa (on X): https://x.com/i/status/2125137726999597483 ; Bloomberg on Zelenskyy&rsquo;s plan (on X, @business): https://x.com/i/status/2125183973546455288 ; TASS (G20 Miami, EU rejection of Moscow&rsquo;s security-dialogue proposal; Russian state agency, on X): https://x.com/i/status/2125172645884788805</p>
+<h2 id="s3">Berlin and NATO answer reports that Russia is readying a nuclear-armed satellite, &ldquo;Sputnik-S&rdquo;; Moscow calls them propaganda</h2>
+<p>German public broadcasters NDR and WDR and the Süddeutsche Zeitung reported on Monday, citing Western intelligence and Bundeswehr sources including the BND, that Russia could launch a satellite called Sputnik-S carrying a nuclear warhead within 60 days of early November, possibly in December. The satellite is said to have been fully built and stored near Moscow for years; a detonation in low orbit would disable satellites in that zone within months. Chancellor Friedrich Merz, at a joint press conference with Rutte in Berlin, called the news &ldquo;nothing new, but … no less shocking&rdquo;, saying it &ldquo;shows the extent to which Russia is evidently prepared to escalate&rdquo; (DW relayed it on X on Tuesday). Government spokesman Stefan Kornelius said Berlin takes the reports &ldquo;very seriously&rdquo; but sees no &ldquo;immediate threat&rdquo; and warned against &ldquo;undue anxiety&rdquo;; the Foreign Office said such a deployment would be &ldquo;a flagrant breach&rdquo; of the 1967 Outer Space Treaty. Rutte answered that &ldquo;we will always make sure that we defend every inch of NATO territory, and that includes … the space element&rdquo;. ESA Director General Josef Aschbacher called nuclear weapons in space &ldquo;the ultimate nightmare scenario&rdquo; (Handelsblatt, via BBC).</p>
+<p>Russia&rsquo;s side: the Russian embassy in Berlin rejected &ldquo;unfounded allegations&rdquo; as &ldquo;part of a propaganda campaign&rdquo;; Peskov said he had not seen the reports and that stories citing &ldquo;unknown sources&rdquo; are &ldquo;hardly worth taking seriously&rdquo; (BBC). No official Russian military statement had been found. Merz said European leaders will discuss the matter in Brussels this week.</p>
+<p><strong>Why it matters for Europe:</strong> Europe&rsquo;s civil and military life depends on orbit (navigation, communications, Earth observation, Galileo, IRIS²), yet it has no autonomous capability to defend its satellites. The report adds a space item to the 26–27 November summit agenda and strengthens the case for common European space defence rather than national programmes.</p>
+<p><strong>What to watch:</strong> a Russian launch notice in December; a NATO North Atlantic Council discussion; Russian statements at the UN on the Outer Space Treaty; whether the EU puts space resilience into the summit conclusions.</p>
+<p><strong>Sources:</strong> BBC: https://www.bbc.com/news/articles/c9x2er1ry2mzo ; DPA via Yahoo: https://www.yahoo.com/news/politics/articles/merz-report-russia-may-put-184846535.html ; Anadolu (Turkish state agency): https://www.aa.com.tr/en/politics/nato-chief-says-space-part-of-defense-pledge-as-russia-reportedly-readies-nuclear-satellite/4134906 ; AeroTime: https://www.aerotime.aero/articles/russia-nuclear-armed-satellite-launch-warning, DW (Merz), on X: https://x.com/i/status/2125181690796441952 ; France 24 (on X): https://x.com/i/status/2125152619031068975</p>
+<h2 id="s4">Update: Washington holds up about 60 Patriot interceptors already paid for by Europeans</h2>
+<p>The Financial Times reported on Tuesday (Reuters and Interfax-Ukraine relayed it) that US Defense Secretary Pete Hegseth has not approved the transfer of about 60 Patriot interceptors to Ukraine: 40 PAC-3 (eight due in September, ten in October, ten in November, twelve in December, none yet cleared) and about 20 older PAC-2. Some are held in European arsenals and are financed by Kyiv&rsquo;s Western allies, but because they are US-made Washington must authorise their re-export. A separate approval for Ukraine to build its own Patriot interceptors is also reported to be delayed. A Pentagon spokesperson told the FT &ldquo;there has been no change in the Department of Defense&rsquo;s policy regarding support for Ukraine&rdquo;; the NASAMS missiles that were also awaiting approval have since been cleared. Zelenskyy said on Sunday: &ldquo;It is very important that America allows the transfer of missiles for Patriot systems that our partners have already paid for&rdquo;, and on Monday warned of intelligence that Russia is preparing new strikes; Anadolu reports he urged Washington to authorise the transfers. Russian attacks over the past day killed 9 and injured 77 across Ukraine and hit a residential building in Zaporizhzhia (Kyiv Independent); Zelenskyy said the strikes targeted electricity distribution in the Zhytomyr region.</p>
+<p>@F_CEAFE reposted the FT scoop and Zelenskyy&rsquo;s coordination-call summary.</p>
+<p><strong>Background (CEAFE archive):</strong> in July 2025 @F_CEAFE flagged that the US diverted Patriot systems ordered by Switzerland to Ukraine (Defense News); in June 2026 it noted the NATO PURL scheme, under which European allies and Canada pay for US weapons that are then transferred to Ukraine. Delivery stays a decision taken in Washington.</p>
+<p><strong>Why it matters for Europe:</strong> the clearest example this week of the US double standard on control: European money, European stockpiles and a European priority (Ukraine&rsquo;s air defence) are all blocked by a US export-control decision, while Washington asks Europe to buy more American weapons. It argues for a European air-defence supply chain (SAMP/T, IRIS-T, common interceptor production) that does not need a US signature.</p>
+<p><strong>What to watch:</strong> Hegseth&rsquo;s decision; the PURL funding discussion at the European Council; a European interceptor production announcement.</p>
+<p><strong>Sources:</strong> Reuters (via Investing.com): https://www.investing.com/news/world-news/usdefense-chief-has-yet-to-approve-patriot-missiles-already-allocated-to-ukraine-ft-reports-5047103 ; Interfax-Ukraine: https://en.interfax.com.ua/news/general/1241316.html ; Kyiv Post: https://www.kyivpost.com/post/91035 ; LIGA.net: https://news.liga.net/en/war/news/ft-pentagon-delaying-delivery-of-about-60-patriot-missiles-to-ukraine, FT (reposted by @F_CEAFE): https://x.com/i/status/2125097631416299748 ; Zelenskyy (reposted by @F_CEAFE): https://x.com/i/status/2125159968995176659 ; Kyiv Independent (on X): https://x.com/i/status/2125194936035238171, <a href="https://x.com/i/status/1945863519997460741">CEAFE, Jul 2025</a>, <a href="https://x.com/i/status/2069076784142823919">CEAFE, Jun 2026</a></p>
+<h2 id="s5">China pauses its mineral export ban for the US until 27 January while it threatens the EU with the WTO over hybrid-car quotas</h2>
+<blockquote>
+<p><strong>ALERT (economic coercion and reciprocity rule): not posted or reposted by @F_CEAFE.</strong> China&rsquo;s Ministry of Commerce extended, to 27 January 2027, the suspension of its ban on exports of gallium, germanium, antimony and superhard materials to the US, and of the stricter graphite checks, just hours after Trump helped reinstate Jensen Huang at Nvidia. On the same day it warned the EU, which will cap hybrid-vehicle imports from 1 December, that it will &ldquo;resolutely safeguard&rdquo; its industries. Washington gets a bargain; Europe gets a threat of retaliation.</p>
+</blockquote>
+<p><strong>China and the US.</strong> MOFCOM said on Tuesday that the suspension of the second clause of its December 2024 dual-use announcement, which was due to expire on 27 November, will stay in effect from 28 November 2026 to 27 January 2027. The measure generally bars exports of dual-use items related to gallium, germanium, antimony and superhard materials to the US; a separate ban on dual-use exports to US military users stays in force (MLex, Chinese state media China Daily, SCMP, Bloomberg Law). The decision follows the Trump–Xi summit in Shenzhen last week and the reinstatement of Nvidia&rsquo;s chief executive Jensen Huang, who had resigned 11 days earlier. Reuters reports the board acted &ldquo;following pressure from President Donald Trump and US assurances&rdquo;; Anadolu reports Trump said he spoke to board members &ldquo;directly and indirectly&rdquo;. Bloomberg says Beijing is holding back a response to Washington&rsquo;s latest chip curbs. China&rsquo;s Foreign Ministry spokesman Guo Jiakun was asked about Huang&rsquo;s return at the regular briefing (Global Times, Chinese state media); Bloomberg reports Beijing warns his return does not remove the risk of more US chip controls. Singapore is meanwhile investigating the Nvidia-linked cloud firm Megaspeed after US blacklisting (Reuters).</p>
+<p><strong>China and the EU.</strong> The EU announced provisional import quotas on hybrid vehicles from 1 December, including a Chinese cap of about 191,780 vehicles over 200 days (roughly 350,000 a year), also applying to other large exporters (DW, Lianhe Zaobao). The Commission&rsquo;s account: &ldquo;We have to restore a level playing field that has been distorted by global overcapacity.&rdquo; China&rsquo;s MOFCOM says the EU must honour the bilateral understanding reached in consultations (under which, it says, China&rsquo;s quota could not be lower than any other source&rsquo;s), follow WTO rules and the principle of non-discrimination, and reserves WTO dispute settlement and compensation rights; Xinhua and Global Times (Chinese state media) carried the statement.</p>
+<p><strong>Why it matters for Europe:</strong> the contrast is the point of the owner&rsquo;s reciprocity line. Beijing answers Washington&rsquo;s controls with calibrated pauses and keeps its own export bans as a lever; it answers a European trade-defence measure with a legal and political threat. Europe applies US-driven restrictions on China without a reciprocal lever against Washington, and has few levers of its own on critical minerals. Both the Chinese pause and the Nvidia reversal were decided in a US–China channel, without Europe.</p>
+<p><strong>What to watch:</strong> whether China files at the WTO or targets EU goods; Washington&rsquo;s next chip-control step; the Chinese Foreign Ministry on the EU quotas; the EU–China summit calendar.</p>
+<p><strong>Sources:</strong> MLex: https://www.mlex.com/mlex/articles/2559003/china-extends-suspension-of-tighter-us-bound-dual-use-export-controls-until-jan-2027 ; China Daily (Chinese state media): https://www.chinadaily.com.cn/a/202611/24/WS6b0569ade4b03ebf8519e6c2.html ; SCMP (owned by Alibaba): https://www.scmp.com/economy/global-economy/article/3375609/china-approves-2-month-extension-select-us-export-restrictions ; Bloomberg Law: https://news.bloomberglaw.com/environment-and-energy/china-extends-pause-on-us-minerals-ban-to-maintain-truce-1 ; TradingView/Dow Jones: https://www.tradingview.com/news/DJN_DN20261124001683:0-china-to-suspend-some-critical-material-export-curbs-to-u-s-until-january/, EU hybrid quotas: Lianhe Zaobao: https://www.zaobao.com.sg/en/news/china/eu-announces-temporary-limits-hybrid-car-imports-china-urges-bloc-honour-consensus ; China Daily: https://www.chinadaily.com.cn/a/202611/24/WS6b05765ae4b03ebf8519e6cd.html ; MOFCOM: https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2026/art_9c5d95356d984390af922150976cc853.html ; MLex: https://www.mlex.com/mlex/trade/articles/2559001/china-signals-possible-wto-challenge-to-eu-safeguards-on-hybrid-vehicle-imports ; DW: https://www.dw.com/en/eu-imposes-import-quotas-for-hybrid-vehicles-from-china/a-80029981, European Commission (on X): https://x.com/i/status/2125194573626343593 ; Xinhua (on X): https://x.com/i/status/2125196047580578021 ; Anadolu on Trump and Nvidia (on X): https://x.com/i/status/2125171377745318193 ; Reuters on Megaspeed (on X): https://x.com/i/status/2125163766589640900</p>
+<h2 id="s6">Hungary&rsquo;s Magyar meets Zelenskyy in Zakarpattia: Russia is &ldquo;the aggressor&rdquo;, but no weapons or troops; Strasbourg debates the rule of law in Hungary</h2>
+<p>Hungarian Prime Minister Péter Magyar is holding talks with Zelenskyy in western Ukraine and will meet leaders of the ethnic Hungarian community in Zakarpattia, a region hit by a Russian drone attack near Mukachevo in mid-November (Euronews; security is tight). His first bilateral meeting with Zelenskyy had been conditional on Kyiv meeting Budapest&rsquo;s demands on minority rights. Magyar told parliament on Monday that Russia is the aggressor and Ukraine the victim, and that Hungary will support Ukraine &ldquo;not with weapons or troops, but with humanitarian aid and diplomatic backing&rdquo;; he accused Viktor Orbán&rsquo;s government of a &ldquo;hate-inciting&rdquo; campaign against Ukraine. Foreign Minister Anita Orbán accompanies him. In Strasbourg the European Parliament held a debate (09:00 Madrid) on &ldquo;the restoration of the rule of law and fundamental values of the Union in Hungary&rdquo; following the 2026 parliamentary elections, with Commissioner Michael McGrath and the Irish Presidency, and an 18:45 debate on eastern border security.</p>
+<p><strong>Why it matters for Europe:</strong> a Hungarian government that names Russia as the aggressor and visits Zelenskyy removes a long-standing veto risk from the sanctions and enlargement files, which helps the 22nd package (story 1). The limit (no arms) shows that even a pro-EU Budapest will not join a common military effort without a common framework.</p>
+<p><strong>What to watch:</strong> the outcome of the minority-rights file between Kyiv and Budapest; Hungary&rsquo;s vote on the 22nd package and the MFF; the Strasbourg debate&rsquo;s conclusions.</p>
+<p><strong>Sources:</strong> Euronews: https://www.euronews.com/2026/11/24/hungarys-magyar-meets-zelenskyy-in-ukraine-in-sharp-break-with-orban-era ; RBC-Ukraine: https://newsukraine.rbc.ua/news/magyar-calls-russia-an-aggressor-confirms-1795442808.html, European Parliament press (on X, plenary &ldquo;EP today&rdquo;, 07:40 UTC): https://x.com/i/status/2125132525441823194</p>
+<h2 id="s7">Indo-Pacific: Solomon Islands drop their security pact with China, Russian aircraft near Korea draw a protest, Japan snubs the nuclear-ban conference</h2>
+<ul>
+<li><strong>Solomon Islands.</strong> The Solomon Islands told China it will not renew its 2022 security agreement, which expires in April 2027, while its prime minister is in Canberra to sign a new treaty with Australia (ABC News, AFR). Albanese welcomed the visit; Beijing says its Pacific cooperation &ldquo;does not target third parties&rdquo; (Lianhe Zaobao; Global Times, Chinese state media, was asked to confirm the report). Sources: https://www.abc.net.au/news/2026-11-24/china-solomon-islands-security-pact-australia/107421976 ; https://www.afr.com/politics/federal/solomon-islands-ends-security-pact-with-china-in-strategic-win-for-australia-20261124-p61gvb ; https://www.zaobao.com.sg/en/news/china/solomon-islands-plans-end-china-pact-and-turn-australia-beijing-says-cooperation-should-not-target</li>
+<li><strong>Update — Russian aircraft near Ulleung.</strong> South Korea&rsquo;s Defence Ministry lodged a &ldquo;strong protest&rdquo; over the unannounced entry of several Russian military aircraft into its air defence zone (KADIZ) and near Ulleung&rsquo;s airspace on Tuesday; Seoul scrambled fighters and briefly issued a shelter alert (ROK MND on X; Yonhap, Reuters, Al Jazeera). Russia&rsquo;s response not yet found. https://x.com/i/status/2125140585887756576</li>
+<li><strong>Japan.</strong> Foreign Minister Toshimitsu Motegi said Japan will not attend the first review conference of the UN Treaty on the Prohibition of Nuclear Weapons even as an observer (Kyodo, Anadolu; @F_CEAFE posted the story); Prime Minister Sanae Takaichi told ICC President Akane Tomoko that Japan will keep supporting the court, which is under US sanctions (Kyodo, @F_CEAFE; MOFA Japan). Reuters, reposted by @F_CEAFE: Japan is using its auto industry&rsquo;s manufacturing expertise for its biggest military build-up since 1945. Sources: https://english.kyodonews.net/articles/-/92473 ; https://english.kyodonews.net/articles/-/92466 ; https://x.com/i/status/2125164977090936992</li>
+<li><strong>China.</strong> Xinhua, Global Times (Chinese state media), SCMP (owned by Alibaba) and Bloomberg report that Shanghai party chief Chen Jining, a Politburo member, is under investigation for suspected serious violations of discipline and law. https://www.scmp.com/news/china/politics/article/3375640/shanghai-party-chief-faces-corruption-probe ; The Chinese and Cambodian militaries will hold the &ldquo;Golden Dragon-2026&rdquo; exercise in Cambodia from late November to mid-December (China Military Bugle, on X: https://x.com/i/status/2125169384109093026).</li>
+</ul>
+<p><strong>Why it matters for Europe:</strong> the Solomon Islands reversal shows that a middle power can turn to a security partner and away from Beijing when the offer is credible; Japan&rsquo;s refusal to attend the nuclear-ban meeting follows the US nuclear umbrella logic that Europeans also depend on.</p>
+<h2 id="s8">In brief</h2>
+<ul>
+<li><strong>Rutte on resilience.</strong> On 23 November, the NATO Secretary General told the NATO Parliamentary Assembly that societies must be resilient so that, in a war, &ldquo;the lights stay on, homes stay warm and communications keep working&rdquo; (quoted in French by Florian Philippot, whose post @F_CEAFE reposted, calling the speech &ldquo;absurd&rdquo;; NATO transcript below). https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/address-by-the-secretary-general-to-the-npa</li>
+<li><strong>Poland: third Miecznik frigate.</strong> @F_CEAFE quoted PGZ&rsquo;s post on the keel-laying of the third Miecznik frigate in Gdynia: the ships are built on Babcock&rsquo;s British Arrowhead 140 design, with PGZ leading a consortium with CRIST, Thales UK and MBDA UK (contract signed 27 July 2021). https://x.com/i/status/2125168956558147941 (also relevant to the Defence Industry section).</li>
+<li><strong>Ariane 6 launch.</strong> ESA&rsquo;s Ariane 6 lifted off from French Guiana carrying 36 Amazon Leo satellites: a European launcher lifting a US constellation (ESA on X). https://x.com/i/status/2125188391474229624</li>
+<li><strong>Germany first to get DELTA.</strong> Ukraine&rsquo;s Defence Ministry says Germany will be the first country with access to DELTA, Ukraine&rsquo;s combat digital ecosystem; the Bundeswehr will use it (Clash Report on X).</li>
+<li><strong>Norway–Germany gas.</strong> Norway&rsquo;s Equinor signed an 18-year gas supply deal with Germany&rsquo;s VNG (Reuters on X; see Economy).</li>
+<li><strong>Spain.</strong> The People&rsquo;s Party (Feijóo) would take a more hawkish approach to trade with China if it wins the 29 November election (Bloomberg on X); the postal-vote deadline for the 29N election has been extended to 26 November (Moncloa).</li>
+<li><strong>EU Mozambique mission.</strong> The EU extended its military assistance to Mozambique&rsquo;s forces in gas-rich Cabo Delgado (Bloomberg on X).</li>
+<li><strong>Russia–Brunei.</strong> Lavrov met Brunei&rsquo;s second foreign minister in Moscow (Russian MFA, official Russian source).</li>
+<li><strong>US–NATO.</strong> The US Ambassador to NATO met Bulgaria&rsquo;s PM Rumen Radev, President Iliana Iotova and Defence Minister Stoyanov in Sofia and welcomed Bulgaria&rsquo;s commitment to higher defence spending (US Mission to NATO on X).</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CEAFE — vídeos, resúmenes y X</title>
+  <!--
+    On www.ceafe.eu the site already loads Montserrat, Cabin, Source Sans Pro and Karla.
+    Keep this <link> when opening the file on its own; you can omit it when pasting into IONOS.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+</head>
+<body style="margin:0;background:#fff;">
+
+<!-- CEAFE WIDGET START
+     Paste from here through “CEAFE WIDGET END” into an IONOS MyWebsite
+     HTML / custom-code element. MANIFEST_URL is already set to the public
+     GitHub Pages feed. Change it only if the host moves.
+-->
+<style>
+  #ceafe-mw {
+    --silver: #999999;
+    --eu-blue: #003399;
+    --ink: #1c1c1c;
+    --muted: #5a5a5a;
+    --slate: #6D7B8D;
+    --slate-dark: #5a6a7a;
+    --rule: #d0d0d0;
+    --paper: #ffffff;
+    --wash: #f8f9fa;
+    --line: #e0e0e0;
+    --focus: #003399;
+    --radius: 12px;
+    --font-head: Montserrat, Cabin, "Source Sans Pro", Karla, Arial, Helvetica, sans-serif;
+    --font-body: "Source Sans Pro", Montserrat, Cabin, Karla, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px 12px 28px;
+    color: var(--ink);
+    background: var(--paper);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.45;
+    text-align: left;
+  }
+  #ceafe-mw *, #ceafe-mw *::before, #ceafe-mw *::after { box-sizing: border-box; }
+  #ceafe-mw a { color: var(--eu-blue); text-decoration: none; }
+  #ceafe-mw a:hover { text-decoration: underline; }
+  #ceafe-mw button {
+    font-family: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  #ceafe-mw button:focus-visible,
+  #ceafe-mw a:focus-visible,
+  #ceafe-mw [tabindex]:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+  #ceafe-mw img { max-width: 100%; height: auto; display: block; }
+  #ceafe-mw h2, #ceafe-mw h3 {
+    font-family: var(--font-head) !important;
+    color: var(--ink) !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em;
+    margin: 0;
+    text-transform: none;
+  }
+
+  #ceafe-mw .cmw-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 4px 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--silver);
+  }
+  #ceafe-mw .cmw-brand {
+    display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;
+  }
+  #ceafe-mw .cmw-brand img { width: 32px; height: 32px; object-fit: contain; }
+  #ceafe-mw .cmw-brand span {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    color: var(--silver);
+  }
+
+  #ceafe-mw .cmw-lang {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    overflow: hidden;
+    background: var(--wash);
+  }
+  #ceafe-mw .cmw-lang button {
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+  }
+  #ceafe-mw .cmw-lang button[aria-pressed="true"] {
+    background: var(--eu-blue);
+    color: #fff;
+  }
+
+  #ceafe-mw .cmw-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+    gap: 28px;
+    align-items: start;
+  }
+  #ceafe-mw .cmw-kicker {
+    font-family: var(--font-head) !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--slate) !important;
+    margin: 0;
+  }
+  #ceafe-mw .cmw-sections-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 22px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--silver);
+  }
+  #ceafe-mw .cmw-edition-label {
+    color: var(--eu-blue);
+    white-space: nowrap;
+  }
+  #ceafe-mw .cmw-audio {
+    display: flex; align-items: center; gap: 8px;
+    margin: -4px 0 12px;
+  }
+  #ceafe-mw .cmw-audio[hidden] { display: none !important; }
+  #ceafe-mw .cmw-audio-label {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--eu-blue);
+    white-space: nowrap;
+  }
+  #ceafe-mw .cmw-audio audio {
+    height: 32px; flex: 1 1 220px; min-width: 160px; max-width: 380px;
+  }
+  #ceafe-mw .cmw-card .cmw-card-time {
+    display: block;
+    margin: -4px 0 6px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  #ceafe-mw .cmw-sections-date {
+    font-family: var(--font-head);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+
+  #ceafe-mw .cmw-pane {
+    background: var(--wash);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  #ceafe-mw .cmw-pane-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  #ceafe-mw .cmw-nav { display: flex; align-items: center; gap: 4px; }
+  #ceafe-mw .cmw-arrow {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--slate);
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #ceafe-mw .cmw-arrow:hover { background: var(--slate-dark); }
+  #ceafe-mw .cmw-arrow:disabled {
+    background: #c5c9ce;
+    color: #f3f3f3;
+    cursor: default;
+  }
+  #ceafe-mw .cmw-stage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #111;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  #ceafe-mw .cmw-stage iframe,
+  #ceafe-mw .cmw-stage video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #000;
+  }
+  #ceafe-mw .cmw-thumb {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #ceafe-mw .cmw-play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.28);
+    color: #fff;
+  }
+  #ceafe-mw .cmw-play span {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(0, 51, 153, 0.92);
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding-left: 4px;
+  }
+  #ceafe-mw .cmw-play:hover span { background: #003399; }
+  #ceafe-mw .cmw-empty {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    text-align: center;
+    color: #eee;
+    font-size: 14px;
+    background: #2a2a2a;
+  }
+  #ceafe-mw .cmw-date {
+    margin: 10px 0 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    min-height: 1.4em;
+  }
+  /* Video title under the player is omitted: date·time alone is enough
+     (owner, 23 Nov 2026). Keep the node so existing JS can clear it. */
+  #ceafe-mw .cmw-vtitle { display: none; }
+  #ceafe-mw .cmw-error { color: #8a1f1f; }
+
+  #ceafe-mw .cmw-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  #ceafe-mw .cmw-card {
+    background: var(--wash);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--eu-blue);
+    border-radius: var(--radius);
+    padding: 14px 14px 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  #ceafe-mw .cmw-card h3 {
+    font-family: var(--font-head) !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--silver) !important;
+    margin: 0 0 10px !important;
+  }
+  #ceafe-mw .cmw-card ol {
+    margin: 0 0 12px;
+    padding-left: 1.15em;
+    flex: 1 1 auto;
+  }
+  #ceafe-mw .cmw-card li {
+    margin: 0 0 6px;
+    font-size: 14px;
+    line-height: 1.35;
+    color: var(--ink);
+  }
+  #ceafe-mw .cmw-card li:last-child { margin-bottom: 0; }
+  #ceafe-mw .cmw-card li a.cmw-story {
+    color: inherit !important;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #ceafe-mw .cmw-card li a.cmw-story:hover { text-decoration: underline; }
+  #ceafe-mw .cmw-btn {
+    display: inline-block;
+    margin-top: auto;
+    padding: 8px 14px;
+    background: var(--eu-blue);
+    color: #fff !important;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none !important;
+    align-self: flex-start;
+  }
+  #ceafe-mw .cmw-btn:hover { background: #002266; }
+  #ceafe-mw .cmw-muted { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
+
+  #ceafe-mw .cmw-side {
+    position: sticky;
+    top: 8px;
+  }
+  #ceafe-mw .cmw-side-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 0 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--silver);
+  }
+  #ceafe-mw .cmw-xwall {
+    height: min(920px, calc(100vh - 110px));
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: var(--wash);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    padding: 8px 10px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  #ceafe-mw .cmw-xcard {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px 12px 10px;
+    margin: 0 0 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+  #ceafe-mw .cmw-xcard:hover { border-color: var(--silver); text-decoration: none; }
+  #ceafe-mw .cmw-xmeta {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  #ceafe-mw .cmw-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #eee;
+    flex-shrink: 0;
+  }
+  #ceafe-mw .cmw-avatar-ph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6D7B8D;
+    color: #fff;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  #ceafe-mw .cmw-xname { font-weight: 700; font-size: 14px; color: var(--ink); line-height: 1.2; }
+  #ceafe-mw .cmw-xhandle, #ceafe-mw .cmw-xtime { color: var(--muted); font-size: 13px; font-weight: 400; }
+  #ceafe-mw .cmw-xaction { font-size: 12px; color: var(--slate); margin: 0 0 8px 50px; }
+  #ceafe-mw .cmw-xtext {
+    font-size: 15px;
+    color: var(--ink);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0 0 8px;
+  }
+  #ceafe-mw .cmw-xtext a { color: var(--eu-blue); }
+  #ceafe-mw .cmw-ximage {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    margin: 4px 0 6px;
+  }
+  #ceafe-mw .cmw-quote {
+    margin: 8px 0 0;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fafafa;
+  }
+  #ceafe-mw .cmw-xmore { margin: 10px 0 0; font-size: 13px; }
+  #ceafe-mw .cmw-xnote { margin: 0 0 2px; font-size: 12px; color: var(--muted); }
+  #ceafe-mw .cmw-xfollow {
+    display: inline-block;
+    padding: 5px 12px;
+    background: var(--eu-blue);
+    color: #fff !important;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-decoration: none !important;
+    white-space: nowrap;
+  }
+  #ceafe-mw .cmw-xfollow:hover { background: #002266; text-decoration: none !important; }
+  #ceafe-mw .cmw-notes-link {
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  #ceafe-mw .cmw-xempty { padding: 16px 8px; }
+
+  #ceafe-mw .cmw-sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Wall column matches the height of the video + notes column (owner, 16 Nov 2026) */
+  @media (min-width: 900px) {
+    #ceafe-mw .cmw-layout { align-items: stretch; }
+    #ceafe-mw .cmw-side { position: relative; top: auto; display: flex; flex-direction: column; min-height: 0; }
+    #ceafe-mw .cmw-side [data-xwall] { flex: 1 1 auto; position: relative; min-height: 420px; }
+    #ceafe-mw .cmw-side [data-xwall] > .cmw-xwall { position: absolute; inset: 0; height: auto; }
+    #ceafe-mw .cmw-xmore { margin-bottom: 0; }
+  }
+  @media (max-width: 899px) {
+    #ceafe-mw .cmw-layout { grid-template-columns: minmax(0, 1fr); }
+    #ceafe-mw .cmw-side { position: static; }
+    #ceafe-mw .cmw-xwall { height: min(700px, 80vh); }
+  }
+  @media (max-width: 640px) {
+    #ceafe-mw .cmw-cards { grid-template-columns: minmax(0, 1fr); }
+  }
+  #ceafe-mw { min-width: 0; }
+  #ceafe-mw .cmw-main, #ceafe-mw .cmw-side, #ceafe-mw .cmw-pane, #ceafe-mw .cmw-card { min-width: 0; max-width: 100%; }
+  @media (prefers-reduced-motion: reduce) {
+    #ceafe-mw * { transition: none !important; }
+  }
+</style>
+
+<div id="ceafe-mw" data-lang="es">
+  <div class="cmw-top">
+    <a class="cmw-brand" href="https://www.ceafe.eu/" data-logo-link>
+      <img alt="CEAFE" width="32" height="32" data-logo>
+      <span>CEAFE</span>
+    </a>
+    <div class="cmw-lang" role="group" aria-label="Language / Idioma">
+      <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <div class="cmw-layout">
+    <div class="cmw-main">
+      <section class="cmw-pane" data-video-pane>
+        <div class="cmw-pane-top">
+          <h2 class="cmw-kicker" data-i18n="videosTitle">Noticias de Geopolítica</h2>
+          <div class="cmw-nav">
+            <button type="button" class="cmw-arrow" data-videostep="-1" aria-label="Edición más reciente" disabled>&lsaquo;</button>
+            <button type="button" class="cmw-arrow" data-videostep="1" aria-label="Edición anterior" disabled>&rsaquo;</button>
+          </div>
+        </div>
+        <div class="cmw-stage" data-vstage></div>
+        <p class="cmw-date" data-vdate aria-live="polite"></p>
+        <p class="cmw-vtitle" data-vtitle></p>
+      </section>
+
+      <div class="cmw-sections-head">
+        <h2 class="cmw-kicker"><span data-i18n="briefsTitle">Resúmenes del día</span><span class="cmw-edition-label" data-sedition></span></h2>
+        <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;justify-content:flex-end;">
+          <a class="cmw-notes-link" data-notas-link href="https://www.ceafe.eu/page-2" target="_top" rel="noopener noreferrer" data-i18n="allNotes">Ver todas las notas</a>
+          <div class="cmw-sections-date" data-sdate></div>
+        </div>
+      </div>
+      <div class="cmw-audio" data-saudio hidden></div>
+      <div class="cmw-cards" data-cards></div>
+    </div>
+
+    <aside class="cmw-side">
+      <div class="cmw-side-head">
+        <h2 class="cmw-kicker" data-i18n="xTitle">CEAFE en X</h2>
+        <a class="cmw-xfollow" href="https://x.com/F_CEAFE" target="_blank" rel="noopener noreferrer" data-i18n="followX">Seguir en X</a>
+      </div>
+      <div data-xwall></div>
+      <p class="cmw-xmore"><a href="https://x.com/F_CEAFE" target="_blank" rel="noopener noreferrer" data-i18n="xMore">Publicaciones anteriores en X</a></p>
+    </aside>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ========== Edit this block when pasting into IONOS ========== */
+  var CONFIG = {
+    /* Public URL of manifest.json (GitHub Pages, IONOS webspace, etc.). */
+    MANIFEST_URL: "https://fceafe.github.io/ceafe-media/manifest.json",
+
+    /* Used only if the manifest cannot be loaded. Playlist IDs, not channel IDs. */
+    FALLBACK_PLAYLIST_EN: "PLQ3btccBpL7I",
+    FALLBACK_PLAYLIST_ES: "PLQGlgBUzwq1g",
+
+    /* Hosted, translated wall. Leave XWALL_URL empty to derive it from MANIFEST_URL (xwall.json beside manifest.json). */
+    X_WALL_MODE: "self",
+    X_PROFILE: "F_CEAFE",
+    X_WALL_HEIGHT: 780,
+    XWALL_URL: "",
+    NOTAS_PAGE_URL: "https://www.ceafe.eu/page-2",
+    NOTAS_PAGE_URL_EN: "https://www.ceafe.eu/en-gb/page-2",  /* provisional until the real EN URL is confirmed */
+
+    LOGO_URL: "https://cdn.website-editor.net/f7c65aed80b742b0abbdff1644ff11b2/dms3rep/multi/Logo+CEAFE.jpg",
+    DEFAULT_LANG: "es",
+    X_PROFILE_URL: "https://x.com/F_CEAFE",
+    LANG_STORAGE_KEY: "ceafe-lang"
+  };
+  /* ============================================================ */
+
+  if (window.CEAFE_WIDGET_CONFIG) {
+    Object.keys(window.CEAFE_WIDGET_CONFIG).forEach(function (k) {
+      CONFIG[k] = window.CEAFE_WIDGET_CONFIG[k];
+    });
+  }
+  try {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get("manifest")) CONFIG.MANIFEST_URL = params.get("manifest");
+    if (params.get("xmode")) CONFIG.X_WALL_MODE = params.get("xmode");
+    if (params.get("lang")) CONFIG.URL_LANG = params.get("lang");
+    if (params.get("logo")) CONFIG.LOGO_URL = params.get("logo");
+    if (params.get("xwall")) CONFIG.XWALL_URL = params.get("xwall");
+    if (params.get("notas")) { CONFIG.NOTAS_PAGE_URL = params.get("notas"); CONFIG.NOTAS_PAGE_URL_EN = params.get("notas"); }
+  } catch (e) {}
+  /* Site-wide ES/EN switch: with ?lang= the host page decides the language, so hide our own toggle. */
+  if (CONFIG.URL_LANG === "en" || CONFIG.URL_LANG === "es") {
+    var tg = document.querySelector("#ceafe-mw .cmw-lang");
+    if (tg) tg.style.display = "none";
+  }
+
+  var I18N = {
+    es: {
+      videosTitle: "Noticias de Geopolítica",
+      briefsTitle: "Resúmenes del día",
+      xTitle: "CEAFE en X",
+      xMore: "Publicaciones anteriores en X",
+      play: "Reproducir vídeo",
+      noVideo: "No hay vídeo para este día.",
+      noBrief: "No hay resumen de esta sección para la fecha seleccionada.",
+      openPdf: "Abrir PDF completo",
+      loading: "Cargando…",
+      loadError: "No se ha podido cargar el manifiesto. Se muestra la lista de YouTube, si está configurada.",
+      noManifest: "Aún no hay vídeos ni resúmenes publicados aquí. Consulte X o YouTube para el archivo de más de 7 días.",
+      reposted: "Repost de",
+      quoted: "Cita de",
+      followX: "Seguir en X",
+      allNotes: "Ver todas las notas",
+      listen: "Escuchar",
+      xEmpty: "No hay publicaciones para mostrar ahora mismo.",
+      translatedFrom: "Traducido del",
+      viewOriginal: "Ver original",
+      newer: "Edición más reciente",
+      older: "Edición anterior",
+      months: ["ene","feb","mar","abr","may","jun","jul","ago","sept","oct","nov","dic"],
+      langNames: {en:"inglés",es:"español",ar:"árabe",tr:"turco",pl:"polaco",it:"italiano",fr:"francés",de:"alemán",uk:"ucraniano",ru:"ruso",pt:"portugués",ja:"japonés",zh:"chino",nl:"neerlandés",cs:"checo",sk:"eslovaco",hu:"húngaro",ro:"rumano",el:"griego",fi:"finlandés",sv:"sueco",da:"danés",nb:"noruego",no:"noruego"}
+    },
+    en: {
+      videosTitle: "Geopolitical News",
+      briefsTitle: "Today's briefings",
+      xTitle: "CEAFE on X",
+      xMore: "Earlier posts on X",
+      play: "Play video",
+      noVideo: "No video is available for this day.",
+      noBrief: "There is no briefing in this section for the selected date.",
+      openPdf: "Open full PDF",
+      loading: "Loading…",
+      loadError: "The manifest could not be loaded. Showing the YouTube playlist if one is configured.",
+      noManifest: "No videos or briefings are published here yet. See X or YouTube for items older than 7 days.",
+      reposted: "Reposted from",
+      quoted: "Quoted from",
+      followX: "Follow on X",
+      allNotes: "Daily Notes",
+      listen: "Listen",
+      xEmpty: "There are no posts to show just now.",
+      translatedFrom: "Translated from",
+      viewOriginal: "View original",
+      newer: "Newer edition",
+      older: "Older edition",
+      months: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"],
+      langNames: {en:"English",es:"Spanish",ar:"Arabic",tr:"Turkish",pl:"Polish",it:"Italian",fr:"French",de:"German",uk:"Ukrainian",ru:"Russian",pt:"Portuguese",ja:"Japanese",zh:"Chinese",nl:"Dutch",cs:"Czech",sk:"Slovak",hu:"Hungarian",ro:"Romanian",el:"Greek",fi:"Finnish",sv:"Swedish",da:"Danish",nb:"Norwegian",no:"Norwegian"}
+    }
+  };
+
+  var root, state;
+
+  function t(key) {
+    var lang = (state && state.uiLang) || CONFIG.DEFAULT_LANG || "es";
+    return (I18N[lang] && I18N[lang][key]) || I18N.es[key] || key;
+  }
+
+  function $(sel, base) { return (base || root).querySelector(sel); }
+  function $all(sel, base) { return Array.prototype.slice.call((base || root).querySelectorAll(sel)); }
+
+  function esc(value) {
+    return String(value == null ? "" : value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function isYoutubeId(id) {
+    return typeof id === "string" && /^[A-Za-z0-9_-]{11}$/.test(id);
+  }
+
+  function formatDay(ymd, lang) {
+    if (!ymd) return "";
+    var parts = String(ymd).split("-");
+    if (parts.length !== 3) return ymd;
+    var months = (I18N[lang] || I18N.es).months;
+    var month = months[Number(parts[1]) - 1] || parts[1];
+    return Number(parts[2]) + " " + month + " " + parts[0];
+  }
+
+  function formatWhen(iso, lang) {
+    if (!iso) return "";
+    try {
+      var loc = lang === "en" ? "en-GB" : "es-ES";
+      return new Date(iso).toLocaleString(loc, {
+        timeZone: "Europe/Madrid",
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      });
+    } catch (e) {
+      return iso;
+    }
+  }
+
+  function preferredLang() {
+    if (CONFIG.URL_LANG === "en" || CONFIG.URL_LANG === "es") return CONFIG.URL_LANG;
+    try {
+      var saved = localStorage.getItem(CONFIG.LANG_STORAGE_KEY || "ceafe-lang");
+      if (saved === "en" || saved === "es") return saved;
+    } catch (e) {}
+    try {
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      if (nav.indexOf("en") === 0) return "en";
+    } catch (e) {}
+    return CONFIG.DEFAULT_LANG === "en" ? "en" : "es";
+  }
+
+  function persistLang(lang) {
+    try { localStorage.setItem(CONFIG.LANG_STORAGE_KEY || "ceafe-lang", lang); } catch (e) {}
+  }
+
+  function setLang(lang, persist) {
+    state.uiLang = lang === "en" ? "en" : "es";
+    if (persist !== false) persistLang(state.uiLang);
+    root.setAttribute("data-lang", state.uiLang);
+    root.lang = state.uiLang;
+    try { document.documentElement.lang = state.uiLang; } catch (e) {}
+    $all("[data-set-lang]").forEach(function (btn) {
+      btn.setAttribute("aria-pressed", btn.getAttribute("data-set-lang") === state.uiLang ? "true" : "false");
+    });
+    $all("[data-i18n]").forEach(function (el) {
+      el.textContent = t(el.getAttribute("data-i18n"));
+    });
+    var newer = $('[data-videostep="-1"]');
+    var older = $('[data-videostep="1"]');
+    if (newer) newer.setAttribute("aria-label", t("newer"));
+    if (older) older.setAttribute("aria-label", t("older"));
+    renderDay();
+    renderXWall(state.xwall || state.manifest);
+    $all("[data-notas-link]").forEach(function (a) {
+      var u = (state.uiLang === "en" && CONFIG.NOTAS_PAGE_URL_EN) ? CONFIG.NOTAS_PAGE_URL_EN : CONFIG.NOTAS_PAGE_URL;
+      if (u) a.href = u;
+    });
+  }
+
+  function applyLogo() {
+    $all("[data-logo]").forEach(function (img) {
+      if (CONFIG.LOGO_URL) img.src = CONFIG.LOGO_URL;
+      else img.style.display = "none";
+    });
+    $all("[data-notas-link]").forEach(function (a) {
+      var u = (state.uiLang === "en" && CONFIG.NOTAS_PAGE_URL_EN) ? CONFIG.NOTAS_PAGE_URL_EN : CONFIG.NOTAS_PAGE_URL;
+      if (u) a.href = u;
+    });
+    $all(".cmw-xfollow").forEach(function (a) {
+      a.href = CONFIG.X_PROFILE_URL || ("https://x.com/" + (CONFIG.X_PROFILE || "F_CEAFE"));
+    });
+  }
+
+  function sectionStore() {
+    return (state.manifest && (state.manifest.sections || state.manifest.briefs)) || {};
+  }
+
+  function sectionMeta() {
+    if (state.manifest && Array.isArray(state.manifest.section_list) && state.manifest.section_list.length) {
+      return state.manifest.section_list;
+    }
+    if (state.manifest && Array.isArray(state.manifest.lists) && state.manifest.lists.length) {
+      return state.manifest.lists;
+    }
+    return Object.keys(sectionStore()).map(function (id) {
+      return { id: id, slug: id, short_en: id, short_es: id, title_en: id, title_es: id };
+    });
+  }
+
+  /* Notes/editions go public at publish_at, or at the edition time that day
+     in Europe/Madrid. Items already in the manifest with no time are treated
+     as public (the server already applied the embargo). Distinct from
+     videoPublishAt, which defaults a legacy day-level video to 21:00. */
+  function itemPublishAt(item) {
+    if (!item) return null;
+    if (item.publish_at) {
+      var d = new Date(item.publish_at);
+      if (!isNaN(d.getTime())) return d;
+    }
+    if (item.date) {
+      var hh, mm, got = false;
+      if (item.edition && String(item.edition).length === 4) {
+        hh = parseInt(String(item.edition).slice(0, 2), 10);
+        mm = parseInt(String(item.edition).slice(2), 10);
+        got = !isNaN(hh) && !isNaN(mm);
+      }
+      if (!got && item.time && String(item.time).indexOf(":") >= 0) {
+        var parts = String(item.time).split(":");
+        hh = parseInt(parts[0], 10);
+        mm = parseInt(parts[1], 10);
+        got = !isNaN(hh) && !isNaN(mm);
+      }
+      if (!got) return null;
+      return madridCivil(item.date, hh, mm);
+    }
+    return null;
+  }
+
+  function isItemReleased(item, now) {
+    var at = itemPublishAt(item);
+    if (!at) return true;
+    return at.getTime() <= (now || new Date()).getTime();
+  }
+
+  /* Date chips are days that already have released notes. Unreleased videos
+     (a Sunday 14:30 upload listed before 15:00) must not create an empty
+     "today". If the window has no notes at all, fall back to released videos
+     so the player can still be browsed. */
+  function allDates() {
+    var now = new Date();
+    var seen = {};
+    var dates = [];
+    function add(d) {
+      if (d && !seen[d]) { seen[d] = true; dates.push(d); }
+    }
+    var store = sectionStore();
+    Object.keys(store).forEach(function (slug) {
+      ["en", "es"].forEach(function (lang) {
+        (((store[slug] || {})[lang] || {}).items || []).forEach(function (item) {
+          if (item && item.date && isItemReleased(item, now)) add(item.date);
+        });
+      });
+    });
+    if (!dates.length) {
+      ((state.manifest && state.manifest.videos) || []).forEach(function (item) {
+        if (item && item.date && isVideoReleased(item, now)) add(item.date);
+      });
+    }
+    dates.sort();
+    dates.reverse();
+    return dates.slice(0, 7);
+  }
+
+  function currentDate() {
+    var dates = state.dates || [];
+    var idx = state.dayIndex || 0;
+    if (!dates.length) return "";
+    if (idx < 0) idx = 0;
+    if (idx > dates.length - 1) idx = dates.length - 1;
+    state.dayIndex = idx;
+    return dates[idx];
+  }
+
+  /* Videos go public at their edition time (manifest publish_at, or
+     item.time / item.edition on item.date, or 21:00 for a legacy day-level
+     video). Before then the home player keeps the previous already-public
+     video, including the self-hosted MP4. */
+  function pad2(n) { return (n < 10 ? "0" : "") + n; }
+
+  function madridCivil(ymd, hour, minute) {
+    var want = pad2(hour) + ":" + pad2(minute);
+    var offsets = ["+01:00", "+02:00"];
+    for (var i = 0; i < offsets.length; i++) {
+      var d = new Date(ymd + "T" + want + ":00" + offsets[i]);
+      if (isNaN(d.getTime())) continue;
+      var parts = {};
+      new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Madrid",
+        year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", hourCycle: "h23"
+      }).formatToParts(d).forEach(function (p) { parts[p.type] = p.value; });
+      if (parts.year + "-" + parts.month + "-" + parts.day === ymd &&
+          parts.hour + ":" + parts.minute === want) return d;
+    }
+    return new Date(ymd + "T" + want + ":00+01:00");
+  }
+
+  function videoPublishAt(item) {
+    if (!item) return null;
+    if (item.publish_at) {
+      var d = new Date(item.publish_at);
+      if (!isNaN(d.getTime())) return d;
+    }
+    if (item.date) {
+      var hh = 21, mm = 0, got = false;
+      if (item.edition && String(item.edition).length === 4) {
+        hh = parseInt(String(item.edition).slice(0, 2), 10);
+        mm = parseInt(String(item.edition).slice(2), 10);
+        got = !isNaN(hh) && !isNaN(mm);
+      }
+      if (!got && item.time && String(item.time).indexOf(":") >= 0) {
+        var parts = String(item.time).split(":");
+        hh = parseInt(parts[0], 10);
+        mm = parseInt(parts[1], 10);
+        got = !isNaN(hh) && !isNaN(mm);
+      }
+      if (!got) { hh = 21; mm = 0; }
+      return madridCivil(item.date, hh, mm);
+    }
+    return null;
+  }
+
+  function isVideoReleased(item, now) {
+    var at = videoPublishAt(item);
+    if (!at) return true;
+    return at.getTime() <= (now || new Date()).getTime();
+  }
+
+  function videoEditionKey(item) {
+    if (!item) return "0000";
+    if (item.edition) return String(item.edition);
+    if (item.time) return String(item.time).replace(":", "");
+    return "0000";
+  }
+
+  function videoForDate(date, lang) {
+    if (!date) return null;
+    var list = (state.manifest && state.manifest.videos) || [];
+    var now = new Date();
+    var best = null;
+    for (var i = 0; i < list.length; i++) {
+      var item = list[i];
+      if (item && item.date === date && isVideoReleased(item, now) && item[lang] && (isYoutubeId(item[lang].youtube_id) || item[lang].mp4)) {
+        if (!best || videoEditionKey(item) > videoEditionKey(best)) best = item;
+      }
+    }
+    return best;
+  }
+
+  /* Items are sorted newest edition first. Without `edition`, the first match is the
+     latest edition of that day. Legacy single daily items have edition "". */
+  function sectionItem(slug, lang, date, edition) {
+    var block = sectionStore()[slug] || {};
+    var items = (block[lang] || {}).items || [];
+    var now = new Date();
+    for (var i = 0; i < items.length; i++) {
+      if (!items[i] || items[i].date !== date) continue;
+      if (!isItemReleased(items[i], now)) continue;
+      if (edition === undefined || (items[i].edition || "") === edition) return items[i];
+    }
+    return null;
+  }
+
+  /* Latest published edition of a day across all sections: {edition, time, audio} or null. */
+  function latestEdition(date) {
+    var best = null;
+    var now = new Date();
+    var list = (state.manifest && state.manifest.editions) || [];
+    for (var i = 0; i < list.length; i++) {
+      if (list[i] && list[i].date === date && isItemReleased(list[i], now)) {
+        best = { edition: list[i].edition || "", time: list[i].time || "", audio: list[i].audio || null };
+        break;
+      }
+    }
+    if (best) return best;
+    var store = sectionStore();
+    Object.keys(store).forEach(function (slug) {
+      ["en", "es"].forEach(function (lang) {
+        (((store[slug] || {})[lang] || {}).items || []).forEach(function (item) {
+          if (!item || item.date !== date || !isItemReleased(item, now)) return;
+          var ed = item.edition || "";
+          if (!best || ed > best.edition) best = { edition: ed, time: item.time || "", audio: item.audio || null };
+        });
+      });
+    });
+    return best;
+  }
+
+  function editionAudioUrl(editionObj, lang) {
+    var audio = editionObj && editionObj.audio;
+    if (!audio) return "";
+    return audio[lang] || audio.en || audio.es || "";
+  }
+
+  function renderEditionAudio(latest, lang) {
+    var box = $("[data-saudio]");
+    if (!box) return;
+    var url = editionAudioUrl(latest, lang);
+    if (!url) {
+      box.setAttribute("hidden", "hidden");
+      box.innerHTML = "";
+      return;
+    }
+    box.removeAttribute("hidden");
+    box.innerHTML = '<span class="cmw-audio-label">' + esc(t("listen")) + "</span>" +
+      '<audio controls preload="none" src="' + esc(url) + '"></audio>';
+  }
+
+  function editionLabel(date, time, lang) {
+    if (!date) return "";
+    return formatDay(date, lang) + (time ? " · " + time : "");
+  }
+
+  function hasVideoBlock(item, lang) {
+    var b = item && item[lang];
+    /* Only a playable upload counts (a thumbnail alone is not a video). */
+    return !!(b && (isYoutubeId(b.youtube_id) || b.mp4));
+  }
+
+  /* Released videos, newest edition first, in strict date+time order (not
+     one slot per day, and not by publish_at — a late upload still sits at
+     its edition time). Legacy day-level items (no edition/time) sort as 00:00
+     on that date, after any timed edition of the same day; videoPublishAt
+     still treats them as 21:00 for the embargo. */
+  function videoKey(item) {
+    return (item && item.date ? item.date : "") + "_" + videoEditionKey(item);
+  }
+
+  function compareVideosNewestFirst(a, b) {
+    if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+    var ea = videoEditionKey(a), eb = videoEditionKey(b);
+    return ea < eb ? 1 : ea > eb ? -1 : 0;
+  }
+
+  function releasedVideoList() {
+    var now = new Date();
+    var seen = {};
+    var list = [];
+    ((state.manifest && state.manifest.videos) || []).forEach(function (v) {
+      if (!v || !v.date || !isVideoReleased(v, now)) return;
+      if (!hasVideoBlock(v, "en") && !hasVideoBlock(v, "es")) return;
+      var k = videoKey(v);
+      if (seen[k]) return;
+      seen[k] = true;
+      list.push(v);
+    });
+    list.sort(compareVideosNewestFirst);
+    return list;
+  }
+
+  /* keepKey is date_edition of the video the viewer is on. Null/empty means
+     stay on (or jump to) the newest already-public video — the box is never
+     empty while a released upload exists. */
+  function rebuildVideoList(keepKey) {
+    state.videos = releasedVideoList();
+    if (!state.videos.length) {
+      state.videoIndex = 0;
+      return;
+    }
+    if (keepKey) {
+      var idx = -1;
+      for (var i = 0; i < state.videos.length; i++) {
+        if (videoKey(state.videos[i]) === keepKey) { idx = i; break; }
+      }
+      state.videoIndex = idx >= 0 ? idx : 0;
+    } else {
+      state.videoIndex = 0;
+    }
+  }
+
+  function currentVideoItem() {
+    var list = state.videos || [];
+    if (!list.length) return null;
+    var idx = state.videoIndex || 0;
+    if (idx < 0) idx = 0;
+    if (idx > list.length - 1) idx = list.length - 1;
+    state.videoIndex = idx;
+    return list[idx];
+  }
+
+  function pickVideoLang(item, lang) {
+    if (hasVideoBlock(item, lang)) return lang;
+    var other = lang === "en" ? "es" : "en";
+    if (hasVideoBlock(item, other)) return other;
+    return lang;
+  }
+
+  /* Notes on the home page still browse by calendar day. When the video
+     edition moves to another date, keep the notes date in sync with it. */
+  function syncDayIndexToVideo(item) {
+    if (!item || !item.date) return;
+    var dates = state.dates || [];
+    var i = dates.indexOf(item.date);
+    if (i >= 0) state.dayIndex = i;
+  }
+
+  /* Fallback used only if the chronological list is empty: day's newest
+     public video, else the newest public video overall. Page language first. */
+  function videoToShow(date, lang) {
+    var list = releasedVideoList();
+    var other = lang === "en" ? "es" : "en";
+    var langs = [lang, other];
+    for (var li = 0; li < langs.length; li++) {
+      var L = langs[li];
+      var exact = date ? videoForDate(date, L) : null;
+      if (exact) return { item: exact, lang: L };
+    }
+    for (var lj = 0; lj < langs.length; lj++) {
+      for (var j = 0; j < list.length; j++) {
+        if (hasVideoBlock(list[j], langs[lj])) return { item: list[j], lang: langs[lj] };
+      }
+    }
+    return null;
+  }
+
+  function scheduleVideoReleaseRefresh() {
+    if (state._publishTimer) {
+      clearTimeout(state._publishTimer);
+      state._publishTimer = null;
+    }
+    var now = Date.now();
+    var next = null;
+    function considerTs(at) {
+      if (!at) return;
+      var ts = at.getTime();
+      if (ts > now && (next === null || ts < next)) next = ts;
+    }
+    var list = (state.manifest && state.manifest.videos) || [];
+    for (var i = 0; i < list.length; i++) considerTs(videoPublishAt(list[i]));
+    ((state.manifest && state.manifest.editions) || []).forEach(function (e) { considerTs(itemPublishAt(e)); });
+    var store = sectionStore();
+    Object.keys(store).forEach(function (slug) {
+      ["en", "es"].forEach(function (lang) {
+        (((store[slug] || {})[lang] || {}).items || []).forEach(function (item) { considerTs(itemPublishAt(item)); });
+      });
+    });
+    if (next === null) return;
+    var wait = Math.max(0, next - now + 750);
+    if (wait > 2147483647) wait = 2147483647;
+    state._publishTimer = setTimeout(function () {
+      state._publishTimer = null;
+      var keepVideo = (state.videoIndex || 0) === 0 ? null : (currentVideoItem() && videoKey(currentVideoItem()));
+      var keepDay = (state.dayIndex || 0) === 0 ? null : currentDate();
+      state.dates = allDates();
+      rebuildVideoList(keepVideo);
+      if (state.videos && state.videos.length && state.videos[state.videoIndex]) {
+        syncDayIndexToVideo(state.videos[state.videoIndex]);
+      } else if (keepDay) {
+        var idx = state.dates.indexOf(keepDay);
+        state.dayIndex = idx >= 0 ? idx : 0;
+      } else {
+        state.dayIndex = 0;
+      }
+      renderDay();
+      scheduleVideoReleaseRefresh();
+    }, wait);
+  }
+
+  /* YouTube is shown as a real embed (no custom poster). One click is YouTube's
+     own play button; autoplay on a click-injected iframe is blocked by browsers. */
+  var YT_ALLOW = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen";
+
+  function mountYoutubeIframe(stage, src, title) {
+    var iframe = document.createElement("iframe");
+    iframe.src = src;
+    iframe.title = title || "";
+    iframe.allow = YT_ALLOW;
+    iframe.setAttribute("allowfullscreen", "allowfullscreen");
+    iframe.setAttribute("loading", "lazy");
+    stage.innerHTML = "";
+    stage.appendChild(iframe);
+  }
+
+  function renderYoutubeEmbed(stage, block, lang) {
+    var src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(block.youtube_id) + "?rel=0&cc_load_policy=0";
+    var title = block.title || (lang === "es" ? "Vídeo en español" : "English video");
+    mountYoutubeIframe(stage, src, title);
+  }
+
+  function renderMp4Poster(stage, block, lang) {
+    stage.innerHTML = "";
+    if (block.thumbnail) {
+      var img = document.createElement("img");
+      img.className = "cmw-thumb";
+      img.src = block.thumbnail;
+      img.alt = block.title || formatDay((state.dates || [])[state.dayIndex], lang);
+      stage.appendChild(img);
+    }
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "cmw-play";
+    btn.setAttribute("aria-label", t("play"));
+    btn.innerHTML = "<span aria-hidden=\"true\">&#9654;</span>";
+    btn.addEventListener("click", function () {
+      var video = document.createElement("video");
+      video.src = block.mp4;
+      video.controls = true;
+      video.autoplay = true;
+      video.playsInline = true;
+      if (block.thumbnail) video.poster = block.thumbnail;
+      stage.innerHTML = "";
+      stage.appendChild(video);
+    });
+    stage.appendChild(btn);
+  }
+
+  function renderVideo() {
+    var lang = state.uiLang;
+    var item = currentVideoItem();
+    var date = item ? item.date : currentDate();
+    var stage = $("[data-vstage]");
+    var dateEl = $("[data-vdate]");
+    var titleEl = $("[data-vtitle]");
+    var pick = null;
+    if (item) pick = { item: item, lang: pickVideoLang(item, lang) };
+    if (!pick) pick = videoToShow(date, lang);
+    if (!pick && (lang === "en" ? CONFIG.FALLBACK_PLAYLIST_EN : CONFIG.FALLBACK_PLAYLIST_ES)) {
+      /* No video in the manifest at all: show the YouTube playlist rather than a blank box. */
+      var pl = lang === "en" ? CONFIG.FALLBACK_PLAYLIST_EN : CONFIG.FALLBACK_PLAYLIST_ES;
+      dateEl.textContent = "";
+      titleEl.textContent = "";
+      mountYoutubeIframe(stage, "https://www.youtube-nocookie.com/embed/videoseries?list=" + encodeURIComponent(pl) + "&cc_load_policy=0",
+        lang === "es" ? "Lista de vídeos en español" : "English video playlist");
+      return;
+    }
+    if (!pick) {
+      dateEl.textContent = date ? formatDay(date, lang) : "—";
+      titleEl.textContent = "";
+      stage.innerHTML = '<div class="cmw-empty">' + esc(t("noVideo")) + "</div>";
+      return;
+    }
+    var item = pick.item;
+    dateEl.textContent = editionLabel(item.date, item.time, lang);
+    var block = item[pick.lang];
+    if (titleEl) titleEl.textContent = "";
+    if (isYoutubeId(block.youtube_id)) renderYoutubeEmbed(stage, block, lang);
+    else if (block.mp4) renderMp4Poster(stage, block, lang);
+    else if (block.thumbnail) {
+      stage.innerHTML = "";
+      var img = document.createElement("img");
+      img.className = "cmw-thumb";
+      img.src = block.thumbnail;
+      img.alt = block.title || formatDay(date, lang);
+      stage.appendChild(img);
+    } else {
+      stage.innerHTML = '<div class="cmw-empty">' + esc(t("noVideo")) + "</div>";
+    }
+  }
+
+  function storyPdfHref(item, art, index) {
+    if (art && art.pdf) return art.pdf;
+    var base = (item && item.pdf) || "";
+    if (!base) return "";
+    var id = (art && art.id) || ("s" + (index + 1));
+    var page = art && art.page;
+    var parts = [];
+    if (page) parts.push("page=" + page);
+    if (id) parts.push("nameddest=" + id);
+    return parts.length ? base.replace(/#.*$/, "") + "#" + parts.join("&") : base;
+  }
+
+  function renderCards() {
+    var box = $("[data-cards]");
+    var dateEl = $("[data-sdate]");
+    var lang = state.uiLang;
+    var date = currentDate();
+    var latest = date ? latestEdition(date) : null;
+    if (date && !latest) {
+      var dates = state.dates || [];
+      for (var i = 0; i < dates.length; i++) {
+        var cand = latestEdition(dates[i]);
+        if (cand) {
+          state.dayIndex = i;
+          date = dates[i];
+          latest = cand;
+          renderDayNav();
+          break;
+        }
+      }
+    }
+    var edLabel = $("[data-sedition]");
+    if (edLabel) {
+      edLabel.textContent = date ? " · " + editionLabel(date, latest && latest.time, lang) : "";
+      dateEl.textContent = "";
+    } else {
+      dateEl.textContent = date ? editionLabel(date, latest && latest.time, lang) : "—";
+    }
+    renderEditionAudio(latest, lang);
+    var metas = sectionMeta();
+    if (!metas.length) {
+      box.innerHTML = '<p class="cmw-muted">' + esc(t("noBrief")) + "</p>";
+      return;
+    }
+    box.innerHTML = metas.map(function (meta) {
+      var slug = meta.id || meta.slug;
+      var title = lang === "en" ? (meta.title_en || meta.short_en || slug) : (meta.title_es || meta.short_es || slug);
+      var wantEd = latest ? latest.edition : undefined;
+      var item = sectionItem(slug, lang, date, wantEd) || sectionItem(slug, lang, date);
+      var usedLang = lang;
+      if (!item && lang === "es") {
+        item = sectionItem(slug, "en", date, wantEd) || sectionItem(slug, "en", date);
+        if (item) usedLang = "en";
+      }
+      if (!item) {
+        return '<article class="cmw-card"><h3>' + esc(title) + "</h3>" +
+          '<p class="cmw-muted">' + esc(t("noBrief")) + "</p></article>";
+      }
+      var articles = item.articles && item.articles.length
+        ? item.articles
+        : (item.headlines || []).map(function (h) { return { headline: h }; });
+      var list = articles.length
+        ? "<ol>" + articles.map(function (art, i) {
+            var text = esc(art.headline || "");
+            var href = storyPdfHref(item, art, i);
+            if (href) {
+              return '<li><a class="cmw-story" href="' + esc(href) + '" target="_blank" rel="noopener noreferrer">' + text + "</a></li>";
+            }
+            return "<li>" + text + "</li>";
+          }).join("") + "</ol>"
+        : '<p class="cmw-muted">' + esc(item.title || title) + "</p>";
+      var note = usedLang !== lang
+        ? '<p class="cmw-muted">' + esc(t("noBrief")) + "</p>"
+        : "";
+      /* A section missing from the latest edition falls back to the day's earlier edition; show its time. */
+      var timeNote = (latest && item.time && (item.edition || "") !== latest.edition)
+        ? '<span class="cmw-card-time">' + esc(item.time) + "</span>"
+        : "";
+      return '<article class="cmw-card"><h3>' + esc(title) + "</h3>" + timeNote + list + note + "</article>";  /* No 'Open full PDF' button: headlines link to the PDF. */
+    }).join("");
+  }
+
+  function renderDayNav() {
+    var list = state.videos || [];
+    var idx = state.videoIndex || 0;
+    $all("[data-videostep]").forEach(function (btn) {
+      var step = Number(btn.getAttribute("data-videostep"));
+      btn.disabled = !list.length || (step < 0 && idx <= 0) || (step > 0 && idx >= list.length - 1);
+    });
+  }
+
+  function renderDay() {
+    renderDayNav();
+    renderVideo();
+    renderCards();
+  }
+
+  function stepVideo(step) {
+    var list = state.videos || [];
+    if (!list.length) return;
+    var next = (state.videoIndex || 0) + step;
+    if (next < 0 || next >= list.length) return;
+    state.videoIndex = next;
+    syncDayIndexToVideo(list[next]);
+    renderDay();
+  }
+
+  function renderFallbackVideo() {
+    var lang = state.uiLang;
+    var id = lang === "en" ? CONFIG.FALLBACK_PLAYLIST_EN : CONFIG.FALLBACK_PLAYLIST_ES;
+    var stage = $("[data-vstage]");
+    $all("[data-videostep]").forEach(function (btn) { btn.disabled = true; });
+    $("[data-vdate]").textContent = "";
+    $("[data-vtitle]").textContent = "";
+    if (!id) {
+      stage.innerHTML = '<div class="cmw-empty">' + esc(t("noVideo")) + "</div>";
+      return;
+    }
+    mountYoutubeIframe(stage, "https://www.youtube-nocookie.com/embed/videoseries?list=" + encodeURIComponent(id) + "&cc_load_policy=0",
+      lang === "es" ? "Lista de vídeos en español" : "English video playlist");
+  }
+
+  /* ---------- X wall ---------- */
+
+  function linkify(text) {
+    var escaped = esc(text || "");
+    escaped = escaped.replace(/https?:\/\/[^\s<]+/g, function (url) {
+      var cut = url.replace(/[.,;:!?)]+$/, "");
+      var trail = url.slice(cut.length);
+      return '<a href="' + cut + '" target="_blank" rel="noopener noreferrer">' + cut + "</a>" + trail;
+    });
+    escaped = escaped.replace(/(^|[\s(])@([A-Za-z0-9_]+)/g, function (_, pre, handle) {
+      return pre + '<a href="https://x.com/' + handle + '" target="_blank" rel="noopener noreferrer">@' + handle + "</a>";
+    });
+    escaped = escaped.replace(/(^|[\s(])#([A-Za-z0-9_]+)/g, function (_, pre, tag) {
+      return pre + '<a href="https://x.com/hashtag/' + encodeURIComponent(tag) + '" target="_blank" rel="noopener noreferrer">#' + tag + "</a>";
+    });
+    return escaped;
+  }
+
+  function stripRtPrefix(text) {
+    return String(text || "").replace(/^RT @[A-Za-z0-9_]+:\s*/, "");
+  }
+
+  function isCeafeAuthor(author) {
+    if (!author) return false;
+    var handle = (author.username || "").replace(/^@/, "").toLowerCase();
+    return handle === String(CONFIG.X_PROFILE || "F_CEAFE").toLowerCase() ||
+      String(author.id || "") === "1178902181593964544";
+  }
+
+  function avatarHtml(author) {
+    var url = author && (author.avatar || author.profile_image_url);
+    if (!url && isCeafeAuthor(author) && CONFIG.LOGO_URL) url = CONFIG.LOGO_URL;
+    if (url) {
+      return '<img class="cmw-avatar" src="' + esc(url) + '" alt="">';
+    }
+    var initial = ((author && (author.username || author.name)) || "?").replace(/^@/, "");
+    initial = initial ? initial.charAt(0) : "?";
+    return '<div class="cmw-avatar cmw-avatar-ph" aria-hidden="true">' + esc(initial) + "</div>";
+  }
+
+  function authorLine(author) {
+    var name = (author && (author.name || author.username)) || "CEAFE";
+    var handle = author && author.username ? "@" + author.username : "";
+    return '<div class="cmw-xname">' + esc(name) +
+      (handle ? ' <span class="cmw-xhandle">' + esc(handle) + "</span>" : "") +
+      "</div>";
+  }
+
+  function imagesHtml(images) {
+    return (images || []).map(function (img) {
+      var url = typeof img === "string" ? img : (img && img.url);
+      if (!url) return "";
+      var typ = (img && img.type) || "photo";
+      var alt = typ === "video" || typ === "animated_gif" ? "Video" : "";
+      return '<img class="cmw-ximage" src="' + esc(url) + '" alt="' + esc(alt) + '">';
+    }).join("");
+  }
+
+  function localizedText(item) {
+    if (!item) return "";
+    if (state.uiLang === "en") return item.text_en || item.text || item.text_orig || "";
+    return item.text_es || item.text || item.text_orig || "";
+  }
+
+  function langLabel(code) {
+    var names = (I18N[state.uiLang] || I18N.es).langNames || {};
+    return names[code] || code || "";
+  }
+
+  function translationNote(item) {
+    if (!item) return "";
+    var orig = (item.lang_orig || item.lang || "").toLowerCase();
+    if (!orig || orig === "und" || orig === "zxx") return "";
+    if (orig === state.uiLang) return "";
+    var shown = localizedText(item);
+    var source = item.text_orig || item.text || "";
+    if (!shown || shown === source) return "";
+    var href = item.url || "";
+    var label = t("translatedFrom") + " " + langLabel(orig);
+    var link = href
+      ? ' · <a href="' + esc(href) + '" target="_blank" rel="noopener noreferrer">' + esc(t("viewOriginal")) + "</a>"
+      : "";
+    return '<p class="cmw-xnote">' + esc(label) + link + "</p>";
+  }
+
+  function cardHtml(post) {
+    var author = post.author || { username: CONFIG.X_PROFILE, name: "CEAFE" };
+    var typ = post.type || "original";
+    var ref = post.ref;
+    var when = formatWhen(post.created_at, state.uiLang);
+    var action = "";
+    var bodyItem = post;
+    var bodyImages = post.images;
+    var quote = "";
+
+    if (typ === "repost" && ref) {
+      var who = (ref.author && ref.author.username) ? "@" + ref.author.username : (ref.author && ref.author.name) || "";
+      action = '<p class="cmw-xaction">' + esc(t("reposted") + (who ? " " + who : "")) + "</p>";
+      author = ref.author && (ref.author.username || ref.author.name) ? ref.author : author;
+      bodyItem = ref;
+      bodyImages = (ref.images && ref.images.length) ? ref.images : post.images;
+    } else if (typ === "quote" && ref) {
+      var qWho = (ref.author && ref.author.username) ? "@" + ref.author.username : "";
+      action = qWho ? '<p class="cmw-xaction">' + esc(t("quoted") + " " + qWho) + "</p>" : "";
+      quote = '<div class="cmw-quote">' +
+        authorLine(ref.author || {}) +
+        '<div class="cmw-xtext">' + linkify(localizedText(ref)) + "</div>" +
+        imagesHtml(ref.images) +
+        translationNote(ref) +
+        "</div>";
+    } else {
+      bodyItem = post;
+    }
+
+    var href = post.url || (ref && ref.url) || ("https://x.com/" + CONFIG.X_PROFILE);
+    return '<article class="cmw-xcard">' +
+      action +
+      '<div class="cmw-xmeta">' +
+        avatarHtml(author) +
+        "<div>" + authorLine(author) +
+          (href
+            ? ' <a class="cmw-xtime" href="' + esc(href) + '" target="_blank" rel="noopener noreferrer">' + esc(when) + "</a>"
+            : ' <span class="cmw-xtime">' + esc(when) + "</span>") +
+        "</div>" +
+      "</div>" +
+      '<div class="cmw-xtext">' + linkify(localizedText(bodyItem)) + "</div>" +
+      imagesHtml(bodyImages) +
+      translationNote(bodyItem) +
+      quote +
+      "</article>";
+  }
+
+  function xwallUrlFromManifest(url) {
+    if (CONFIG.XWALL_URL) return CONFIG.XWALL_URL;
+    if (!url) return "";
+    if (/xwall\.json(?:$|\?)/i.test(url)) return url;
+    if (/manifest\.json(?:$|\?)/i.test(url)) return url.replace(/manifest\.json/i, "xwall.json");
+    return url.replace(/\/?$/, "/") + "xwall.json";
+  }
+
+  function postsFromPayload(payload) {
+    if (!payload) return [];
+    if (Array.isArray(payload.posts) && payload.posts.length) return payload.posts;
+    if (Array.isArray(payload.x_posts) && payload.x_posts.length) return payload.x_posts;
+    return [];
+  }
+
+  function renderXWall(payload) {
+    var node = $("[data-xwall]");
+    if (!node) return;
+    var posts = postsFromPayload(payload);
+    if (!posts.length && state.xwall) posts = postsFromPayload(state.xwall);
+    if (!posts.length && state.manifest) posts = postsFromPayload(state.manifest);
+    if (!posts.length) {
+      var href = CONFIG.X_PROFILE_URL || ("https://x.com/" + (CONFIG.X_PROFILE || "F_CEAFE"));
+      node.innerHTML = '<div class="cmw-xwall cmw-xempty"><p class="cmw-muted">' + esc(t("xEmpty")) +
+        ' <a href="' + esc(href) + '" target="_blank" rel="noopener noreferrer">@' + esc(CONFIG.X_PROFILE || "F_CEAFE") + "</a>.</p>" +
+        '<p><a class="cmw-xfollow" href="' + esc(href) + '" target="_blank" rel="noopener noreferrer">' + esc(t("followX")) + "</a></p></div>";
+      root.setAttribute("data-rendered-x", "empty");
+      return;
+    }
+    node.innerHTML = '<div class="cmw-xwall" tabindex="0" aria-label="@' +
+      esc(CONFIG.X_PROFILE) + '">' + posts.map(cardHtml).join("") + "</div>";
+    root.setAttribute("data-rendered-x", "self");
+  }
+
+  function loadJson(url) {
+    if (!url) return Promise.resolve(null);
+    /* Cache-bust (per minute) so a stale manifest never hides a new upload. */
+    var bust = url + (url.indexOf("?") < 0 ? "?" : "&") + "v=" + Math.floor(Date.now() / 60000);
+    return fetch(bust, { credentials: "omit", mode: "cors", cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .catch(function () { return null; });
+  }
+
+  /* ---------- Boot ---------- */
+
+  function bind() {
+    $all("[data-set-lang]").forEach(function (btn) {
+      btn.addEventListener("click", function () { setLang(btn.getAttribute("data-set-lang")); });
+    });
+    $all("[data-videostep]").forEach(function (btn) {
+      btn.addEventListener("click", function () { stepVideo(Number(btn.getAttribute("data-videostep"))); });
+    });
+  }
+
+  function initWithManifest(manifest, xwall) {
+    state.manifest = manifest || { videos: [], sections: {}, briefs: {}, x_posts: [], section_list: [], lists: [] };
+    state.xwall = xwall || { posts: postsFromPayload(state.manifest) };
+    state.dates = allDates();
+    state.dayIndex = 0;
+    rebuildVideoList(null);
+    syncDayIndexToVideo(currentVideoItem());
+    setLang(state.uiLang, false);
+    renderXWall(state.xwall);
+    scheduleVideoReleaseRefresh();
+  }
+
+  function boot() {
+    root = document.getElementById("ceafe-mw");
+    if (!root || root.getAttribute("data-ready") === "1") return;
+    root.setAttribute("data-ready", "1");
+    state = { uiLang: preferredLang(), manifest: null, xwall: null, dates: [], dayIndex: 0, videos: [], videoIndex: 0 };
+    applyLogo();
+    bind();
+    $("[data-cards]").innerHTML = '<p class="cmw-muted">' + esc(I18N[state.uiLang].loading) + "</p>";
+    var url = CONFIG.MANIFEST_URL;
+    if (!url || /YOUR-HOST/.test(url)) {
+      renderFallbackVideo();
+      $("[data-cards]").innerHTML = '<p class="cmw-muted">' + esc(I18N[state.uiLang].noManifest) + "</p>";
+      loadJson(xwallUrlFromManifest(CONFIG.XWALL_URL || "")).then(function (xwall) {
+        initWithManifest({ videos: [], sections: {}, x_posts: [] }, xwall);
+      });
+      return;
+    }
+    Promise.all([loadJson(url), loadJson(xwallUrlFromManifest(url))])
+      .then(function (pair) {
+        var manifest = pair[0];
+        var xwall = pair[1];
+        if (!manifest) throw new Error("no manifest");
+        initWithManifest(manifest, xwall);
+      })
+      .catch(function () {
+        root.setAttribute("data-fallback", "1");
+        renderFallbackVideo();
+        $("[data-cards]").innerHTML = '<p class="cmw-error">' + esc(I18N[state.uiLang].loadError) + "</p>";
+        loadJson(xwallUrlFromManifest(url)).then(function (xwall) {
+          initWithManifest({ videos: [], sections: {}, x_posts: [] }, xwall);
+        });
+      });
+  }
+
+  function start() {
+    try { boot(); } catch (err) { console.log("CEAFE widget failed: " + (err && err.message)); }
+  }
+
+  if (window.dmAPI && typeof window.dmAPI.runOnReady === "function") {
+    window.dmAPI.runOnReady("ceafe-widget", start);
+  } else if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
+})();
+</script>
+<!-- CEAFE WIDGET END -->
+
+<style id="ceafe-hide-top">#ceafe-mw .cmw-brand{display:none!important} #ceafe-mw .cmw-top{border-bottom:0!important;padding-bottom:0!important;margin-top:0!important}</style>
+<script>(function(){if(new URLSearchParams(location.search).get("lang")){var t=document.querySelector("#ceafe-mw .cmw-top");if(t)t.style.display="none";}})();</script>
+</body>
+</html>

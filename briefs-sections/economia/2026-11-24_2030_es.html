@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMÍA — martes, 24 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMÍA</h1>
+      <p class="list-date">martes, 24 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> del martes 24 de noviembre, de las 14:30 a hacia las 19:30 (hora de Madrid): todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Economía de CEAFE y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Actualización: los controles estadounidenses sobre chips llegan al Sudeste Asiático; Alibaba califica de «errónea» la inclusión de su filial de Singapur en la lista negra y Singapur se compromete a colaborar con Washington</h2>
+<p>La Oficina de Industria y Seguridad (BIS) del Departamento de Comercio de EE. UU. incluyó el lunes en su Entity List a siete entidades del Sudeste Asiático, entre ellas la filial singapurense de Alibaba, Apex Enterprise Solutions, y Megaspeed International, una empresa de servicios en la nube investigada en EE. UU. por presunta elusión de los controles a la exportación de chips, alegando un «riesgo significativo» de desvío de productos de computación avanzada; las demás empresas están en Malasia, Singapur y Tailandia (Global Times, medio estatal chino, citando a Reuters y Bloomberg). Alibaba respondió: «Incluir a Apex Enterprise Solutions en la Entity List es erróneo, porque Apex nunca ha desviado chips de computación avanzada sujetos a las restricciones de exportación de EE. UU.… Recurriremos a todas las vías legales para proteger nuestros derechos y nuestra reputación» (declaración a The Straits Times; Reuters). Según una persona citada por Reuters, Apex pagó unos 4.200 millones de dólares a Megaspeed y a otras empresas como anticipo para alquilar capacidad de computación en el Sudeste Asiático y recibió parte de sus activos en garantía. El primer ministro de Singapur, Lawrence Wong, afirmó que su país está «trabajando con EE. UU.» para impedir que las empresas lo «aprovechen» para transbordar y desviar chips, y que lleva a cabo su propia investigación (SCMP, propiedad de Alibaba).</p>
+<p>La inclusión exige licencia para todos los productos sujetos a las normas de exportación estadounidenses, con presunción de denegación; la norma se publicará el 25 de noviembre. El Global Times lo presenta como una extensión «cada vez mayor» de los controles de Washington a filiales en el extranjero, mientras que Mike Kuiken, vicepresidente de la Comisión de Revisión Económica y de Seguridad EE. UU.-China, dijo a Bloomberg que China hace «todo lo que puede para introducir de contrabando» o «robar» chips avanzados estadounidenses. En su rueda de prensa del 24 de noviembre, el Ministerio de Exteriores chino no añadió nada sobre Megaspeed (edición de las 14:30). Los medios estatales chinos ya se preguntan si los Países Bajos «pueden verse ante una elección» durante la visita a China de su ministro de Exteriores (opinión del Global Times).</p>
+<p><strong>Por qué importa a Europa:</strong> los controles a la exportación de EE. UU. alcanzan ya a la filial de un grupo chino en un tercer país por alquilar allí capacidad de computación, y terceros Estados como Singapur ayudan a aplicarlos. La misma lógica extraterritorial se aplica a las empresas y los centros de datos europeos —ASML es el ejemplo principal— y Europa no tiene una herramienta recíproca ni un plan para responder.</p>
+<p><strong>Qué vigilar:</strong> el recurso legal de Alibaba; una reacción formal del Ministerio de Comercio chino; cualquier declaración neerlandesa o de la UE durante la visita a China del ministro de Exteriores Berendsen.</p>
+<p><strong>Fuentes:</strong> The Straits Times: https://www.straitstimes.com/business/alibaba-disputes-us-blacklisting-of-singapore-subsidiary-over-chip-rerouting-risks, Global Times: https://www.globaltimes.cn/page/202611/1374969.shtml, Global Times en X: https://x.com/i/status/2125218181925265745, Global Times sobre los Países Bajos: https://x.com/i/status/2125243500648358021, SCMP: https://www.scmp.com/news/asia/southeast-asia/article/3375560/pm-wong-vows-stop-firms-exploiting-singapore-ai-chip-re-routing, Bloomberg (Kuiken): https://x.com/i/status/2125213475852943629, Reuters sobre Megaspeed: https://x.com/i/status/2125285870169206963, Reuters (reproducido por Investing.com): https://www.investing.com/news/stock-market-news/us-to-blacklist-megaspeed-chip-firm-linked-to-nvidia-scandal-source-says-5046337</p>
+<h2 id="s2">La china BYD negocia en exclusiva la compra de la fábrica francesa de INEOS mientras INEOS traslada producción a EE. UU.</h2>
+<p>BYD, el mayor fabricante de automóviles de China, anunció el 24 de noviembre que ha entrado en negociaciones exclusivas para comprar a INEOS Automotive la planta de Hambach (Mosela, Francia), a reserva de la consulta con los comités de empresa; no se ha revelado el importe. Según Reuters, sería la primera compra de una fábrica de automóviles europea por un fabricante chino: sus competidores han preferido alquilar espacio (Dongfeng y Leapmotor en plantas de Stellantis en Francia y España; Geely en una planta de Ford en España). El presidente francés, Emmanuel Macron, celebró el proyecto como «una consecuencia directa» de su política económica.</p>
+<p>Ese mismo día, INEOS Automotive (Reino Unido, propiedad de Jim Ratcliffe) anunció que empezará a fabricar sus Grenadier y Quartermaster en Estados Unidos en 2028, ya que EE. UU. supone el 70 % de las ventas del Grenadier, y que decidirá el emplazamiento «en los próximos meses»; según Bloomberg, el traslado busca evitar los aranceles estadounidenses. La producción continuaría en Hambach a medio plazo. Hambach es la antigua planta de Smart/Mercedes-Benz que INEOS compró en 2020. BYD quiere producir en Europa antes de que lleguen las normas de contenido local «Made in Europe» previstas por la UE, e iniciará la producción en serie en Hungría a principios de 2027; desde el 1 de diciembre de 2026 se aplica un tope de la UE a las importaciones de vehículos híbridos chinos (France 3 Grand Est).</p>
+<p><strong>Por qué importa a Europa:</strong> una sola noticia muestra las dos caras de la presión sobre la industria europea. Los aranceles de EE. UU. empujan a un productor instalado en Europa a llevarse la producción a EE. UU., y con ella el empleo y la cadena de suministro, mientras el capital chino ocupa el hueco para asegurarse el acceso al mercado de la UE con las futuras normas de contenido local. Europa conserva la fábrica, pero depende de decisiones ajenas: el propietario se traslada a EE. UU. y el comprador es chino.</p>
+<p><strong>Qué vigilar:</strong> la consulta a los comités de empresa en Hambach; el emplazamiento estadounidense que elija INEOS; la forma final de las normas «Made in Europe» de la UE.</p>
+<p><strong>Fuentes:</strong> Bloomberg: https://x.com/i/status/2125269510684840091, Emmanuel Macron: https://x.com/i/status/2125256912199422358, INEOS: https://www.ineos.com/news/american-made-ineos-will-produce-the-grenadier-4x4-in-the-usa-to-drive-the-brands-worldwide-growth/, Reuters (reproducido por Investing.com): https://www.investing.com/news/stock-market-news/chinas-byd-in-talks-to-buy-french-car-factory-from-ineos-automotive-5048383, France 3 Grand Est: https://france3-regions.franceinfo.fr/grand-est/moselle/metz/le-constructeur-chinois-byd-annonce-etre-entre-en-negociations-exclusives-pour-l-acquisition-de-l-usine-ineos-automotive-d-hambach-en-moselle-3455360.html</p>
+<h2 id="s3">Japón adelanta su contribución de 2027 a la CPI para protegerla de las sanciones de EE. UU.</h2>
+<p>La primera ministra japonesa, Sanae Takaichi, comunicó el 24 de noviembre a la presidenta de la Corte Penal Internacional, Tomoko Akane, que Japón pagará íntegramente su contribución de 2027 a la Corte antes de que acabe 2026, después de que la CPI pidiera un pago anticipado a su mayor contribuyente (CNA, Reuters). Japón aporta en torno al 15 % del presupuesto de la CPI, seguido de Alemania, Francia, el Reino Unido, Italia, Corea del Sur y Canadá; el adelanto da a la Corte fondos antes de que las sanciones de EE. UU. surtan pleno efecto en abril de 2027 (CNA).</p>
+<p>En el archivo de CEAFE: en diciembre de 2025 la CPI rechazó nuevas designaciones de sanciones de EE. UU. contra dos de sus jueces, y en agosto de 2026, cuando Takaichi calificó de «muy lamentables» las sanciones estadounidenses contra la presidenta japonesa de la CPI, @F_CEAFE comentó que Japón hacía lo mismo que los europeos: «solo palabras». El pago de este martes es el primer paso concreto.</p>
+<p><strong>Por qué importa a Europa:</strong> un aliado cercano de EE. UU. actúa para amortiguar las sanciones estadounidenses contra un tribunal internacional, mientras que en este periodo no se ha informado de ningún paso similar de los Estados miembros de la UE que siguen a Japón en la clasificación (Alemania, Francia, Italia). La UE dispone de su propio instrumento contra las sanciones extraterritoriales, el Estatuto de Bloqueo; la cuestión es si los europeos defenderán la Corte como bloque.</p>
+<p><strong>Qué vigilar:</strong> si Alemania, Francia, Italia o la UE siguen con pagos anticipados o recurren al Estatuto de Bloqueo antes de abril de 2027.</p>
+<p><strong>Fuentes:</strong> Reuters: https://x.com/i/status/2125263217551143077, CNA: https://www.channelnewsasia.com/east-asia/japan-accelerates-icc-funding-us-sanctions-threaten-court-6577621, AP: https://apnews.com/article/japan-icc-takaichi-akane-sanctions-bbb7371ca6eb08710b5c2d50ee1cbb2c, CPI (diciembre de 2025): https://www.icc-cpi.int/news/icc-strongly-rejects-new-us-sanctions-designations-against-two-icc-judges</p>
+<h2 id="s4">El Paquete de Otoño de la Comisión alerta de la creciente exposición financiera de la UE a Estados Unidos</h2>
+<p>La Comisión Europea adoptó el 24 de noviembre en Estrasburgo el Paquete de Otoño del Semestre Europeo 2027. Su nuevo Informe Macroeconómico Europeo destaca «la creciente exposición financiera de la UE a Estados Unidos, que subraya la necesidad de una integración más profunda de los mercados de capitales europeos», y señala que la UE está reduciendo la distancia con EE. UU. en la adopción de la inteligencia artificial.</p>
+<p>La recomendación para la zona del euro pide profundizar el Mercado Único, avanzar en la Unión de Ahorros e Inversiones y dejar margen para una mayor inversión en defensa, energía e innovación; la Comisión prevé un aumento notable del déficit público agregado en 2026 y una ratio de deuda sobre PIB al alza.</p>
+<p><strong>Por qué importa a Europa:</strong> el ahorro europeo que financia la economía estadounidense en lugar de a las empresas europeas es otra forma de dependencia; ahora lo dice la propia Comisión.</p>
+<p><strong>Qué vigilar:</strong> los avances de la Unión de Ahorros e Inversiones y cómo los Estados miembros de la UE hacen hueco a la inversión en defensa dentro de las reglas fiscales.</p>
+<p><strong>Fuentes:</strong> Comisión Europea: https://reforms-investments.ec.europa.eu/publications-0/2027-european-semester-autumn-package_en, Comisión Europea (recomendación para la zona del euro): https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/euro-area-recommendation_en, EU Science &amp; Innovation: https://x.com/i/status/2125256903592673558, IEU Monitoring (nota de prensa de la Comisión): https://ieu-monitoring.com/editorial/semester-autumn-package-eu-commission-flags-fiscal-risks-in-13-member-states/1255451</p>
+<h2 id="s5">Breves</h2>
+<ul>
+<li><strong>Actualización — precios del gas en Europa:</strong> vuelven a subir ante previsiones de más frío, lo que se suma a la preocupación por el suministro invernal, ya afectado por las interrupciones de exportaciones ligadas a la guerra entre EE. UU. e Irán (Bloomberg) https://x.com/i/status/2125272219286688020</li>
+<li><strong>Petróleo ruso:</strong> China e India van camino de importaciones récord de crudo ruso en 2026, aunque se espera que la demanda toque techo (Reuters) https://x.com/i/status/2125273377006874687</li>
+<li><strong>Sanciones UE–Rusia:</strong> el comisionado ucraniano para las sanciones, Vladyslav Vlasiuk, se declaró «decepcionado» por la exclusión de la alúmina fabricada en Irlanda del último paquete de la UE (Euronews) https://x.com/i/status/2125230586428309785</li>
+<li><strong>Comercio UE–China:</strong> la UE endurece su postura mientras le cuesta reducir su déficit comercial de 360.000 millones de euros con China (Bloomberg) https://x.com/i/status/2125279562397294691</li>
+<li><strong>OPEP+:</strong> los ministros se reúnen a finales de noviembre para su «decisión más trascendental del año» sobre la oferta (Bloomberg) https://x.com/i/status/2125284603770413369</li>
+<li><strong>BCE:</strong> Ülo Kaasik, miembro del Consejo de Gobierno, afirma que los datos recientes indican que los tipos deben subir más para controlar la inflación (Bloomberg) https://x.com/i/status/2125255658417033332</li>
+<li><strong>Economía de EE. UU.:</strong> la confianza del consumidor, en máximos de casi dos años (Bloomberg) https://x.com/i/status/2125288396352262552</li>
+<li><strong>Sanciones del Reino Unido:</strong> el Reino Unido sanciona a los hutíes de Yemen y a cuatro altos cargos (Al Jazeera) https://x.com/i/status/2125283012472700951</li>
+<li><strong>Energía (Noruega):</strong> el consejero delegado de Equinor afirma que los retrasos de los proyectos europeos de captura de carbono dejan demasiado poco CO2 para nuevos contratos de almacenamiento (Bloomberg) https://x.com/i/status/2125272013300195750</li>
+<li><strong>Fusiones en EE. UU. (entre empresas estadounidenses):</strong> SpaceX y Tesla nombran a cinco consejeros para dirigir las conversaciones de fusión (FT vía Reuters) https://x.com/i/status/2125238041052656108 ; BlackSky compra la empresa de datos geoespaciales EpochGeo (SpaceNews) https://x.com/i/status/2125232174156697896</li>
+<li><strong>China–ASEAN:</strong> el TLC China–ASEAN 3.0 entra en vigor el 1 de diciembre (Global Times) https://x.com/i/status/2125233301665562962</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Economía. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

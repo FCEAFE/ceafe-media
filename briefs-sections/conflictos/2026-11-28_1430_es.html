@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTOS — sábado, 28 de noviembre de 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTOS</h1>
+      <p class="list-date">sábado, 28 de noviembre de 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Conflictos / Conflicts</li>
+<li><strong>Periodo cubierto:</strong> desde las 18:55 aprox. del viernes 27 de noviembre hasta las 13:30 aprox. del sábado 28 de noviembre, hora de Madrid: todo lo nuevo desde la edición del viernes a las 20:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Conflictos de CEAFE, las publicaciones de @F_CEAFE y el archivo de CEAFE en X.</li>
+</ul>
+<h2 id="s1">Actualización: Bloqueo de EE. UU. a Irán: minas, un ataque discutido y los plazos de Trump</h2>
+<ul>
+<li><strong>Hechos:</strong> el CENTCOM afirma que inutilizó el <em>Pacific Archer</em> con un ataque de precisión contra su popa el 26 de noviembre (@sentdefender <a href="https://x.com/i/status/2126514662971724034">https://x.com/i/status/2126514662971724034</a>). La IRGC asegura que dos petroleros chocaron con minas cerca de Jasab y en el este del estrecho (Al Jazeera <a href="https://x.com/i/status/2126442190276591784">https://x.com/i/status/2126442190276591784</a>). El comandante de la Armada iraní afirma que el CENTCOM cobra 2,5 millones de dólares por cada buque escoltado por el corredor sur, sin reembolso si es atacado (@MenchOsint <a href="https://x.com/i/status/2126420765377482900">https://x.com/i/status/2126420765377482900</a>); es una afirmación iraní. El secretario general de la OMI, Arsenio Domínguez, dijo a Al Jazeera que la organización no tiene constancia de ningún acuerdo entre Irán y Omán para regular el tráfico en el estrecho (https://x.com/i/status/2126567092963209320). Trump dice que la victoria sobre Irán llegará «cuando yo quiera», pero que da al régimen «una oportunidad de ser listo» (@FaytuksNetwork <a href="https://x.com/i/status/2126378283633684836">https://x.com/i/status/2126378283633684836</a>; vídeo original no comprobado).</li>
+<li><strong>Europa:</strong> el ministro italiano de Exteriores, Antonio Tajani, afirma, citando a los investigadores kuwaitíes, que un dron de fabricación iraní mató a dos italianos en Kuwait; Teherán niega haberlo lanzado desde su territorio y ofrece una investigación conjunta (Al Jazeera <a href="https://x.com/i/status/2126472453232717999">https://x.com/i/status/2126472453232717999</a>).</li>
+<li><strong>Por qué importa:</strong> ciudadanos y navieras europeos ya están pagando el coste de la guerra del bloqueo.</li>
+</ul>
+<h2 id="s2">Actualización: Se intensifica la guerra entre Arabia Saudí y Yemen</h2>
+<ul>
+<li><strong>Hechos:</strong> el portavoz de la coalición liderada por Arabia Saudí, el general de división Turki al Maliki, anuncia la interceptación de un misil de crucero hutí dirigido contra Riad (Al Jazeera <a href="https://x.com/i/status/2126523001458078176">https://x.com/i/status/2126523001458078176</a>). Se lanzaron misiles balísticos contra Jizán y Jamis Mushait; el portavoz saudí afirma haber interceptado uno (@MenchOsint <a href="https://x.com/i/status/2126610162332872753">https://x.com/i/status/2126610162332872753</a>). Las fuerzas del Gobierno yemení reconocido internacionalmente lanzaron ataques aéreos en territorio hutí, con al menos 121 hutíes muertos o heridos en un día (Al Jazeera <a href="https://x.com/i/status/2126629825943310408">https://x.com/i/status/2126629825943310408</a>). Al Masirah, afín a los hutíes, afirma que ataques saudíes alcanzaron redes de telecomunicaciones en Al Baida (Al Jazeera <a href="https://x.com/i/status/2126525237491593607">https://x.com/i/status/2126525237491593607</a>). Restos hallados en Al Yauf serían de un misil chino DF-15A, el segundo lanzamiento saudí conocido; Riad nunca ha reconocido poseerlo (@ClashReport <a href="https://x.com/i/status/2126609543555961147">https://x.com/i/status/2126609543555961147</a>; @MenchOsint <a href="https://x.com/i/status/2126434287780044823">https://x.com/i/status/2126434287780044823</a>).</li>
+<li><strong>Afirmaciones:</strong> cuentas afines a los hutíes aseguran que un ataque aéreo saudí mató a 11 civiles, la mayoría niños, en Al Turba (Taiz) (vía @MenchOsint <a href="https://x.com/i/status/2126402116076114361">https://x.com/i/status/2126402116076114361</a>); sin verificación independiente.</li>
+</ul>
+<h2 id="s3">Guerra de Ucrania: el puente de Kerch y los ataques en profundidad</h2>
+<ul>
+<li><strong>Hechos:</strong> The Telegraph informa de que Zelenski quiere destruir por completo el puente de Crimea (Kerch) y de que Ucrania prepara más ataques, tras el del 18 de noviembre, que destruyó parte del tramo de carretera (@ClashReport <a href="https://x.com/i/status/2126605412124496164">https://x.com/i/status/2126605412124496164</a>, <a href="https://x.com/i/status/2126604385593577489">https://x.com/i/status/2126604385593577489</a>). El Ministerio de Defensa británico publicó imágenes de satélite del puente y de sus defensas antiaéreas (vía @MilitarySummary <a href="https://x.com/i/status/2126377715301548098">https://x.com/i/status/2126377715301548098</a>; original no comprobado). Una cuenta prorrusa atribuye al Wall Street Journal que Ucrania usó en el ataque las comunicaciones por satélite israelíes HiSKY (https://x.com/i/status/2126640229201367310); original del WSJ no comprobado.</li>
+<li><strong>Ataques en profundidad (afirmaciones):</strong> el grupo Black Spark reivindica, junto a las Fuerzas de Operaciones Especiales ucranianas, un ataque contra la planta de caucho sintético de Yefrémov (región de Tula) la noche del 27 de noviembre, que describe como importante para el programa de misiles (vía @Schizointel <a href="https://x.com/i/status/2126610107806953818">https://x.com/i/status/2126610107806953818</a>). El Ministerio de Defensa ruso afirma haber interceptado 1.601 drones en 24 horas (https://x.com/i/status/2126610121014853657).</li>
+<li><strong>Mar Negro:</strong> drones rusos alcanzaron dos graneleros cerca de Odesa, el <em>Virtuous Striker</em> y el <em>Gladiator</em>, gestionados por empresas griegas y con destino a Egipto y Turquía; sin heridos (vía @Schizointel <a href="https://x.com/i/status/2126377868729147876">https://x.com/i/status/2126377868729147876</a>).</li>
+<li><strong>Líderes:</strong> Zelenski dice que EE. UU. «no puede ser un simple mediador neutral» y cuestiona sus reticencias sobre bases en Ucrania (@ClashReport <a href="https://x.com/i/status/2126585059201188033">https://x.com/i/status/2126585059201188033</a>, <a href="https://x.com/i/status/2126588219567272326">https://x.com/i/status/2126588219567272326</a>). El ministro polaco de Exteriores, Sikorski, compara los ataques rusos contra Ucrania con los V-2 nazis sobre Londres (https://x.com/i/status/2126413340180365735).</li>
+</ul>
+<h2 id="s4">Fuerzas estratégicas y control de armamentos</h2>
+<ul>
+<li>IISS: las imágenes de satélite indican que el misil intercontinental ruso RS-28 Sarmat podría haber empezado a entrar en servicio; podrían seguir más pruebas de vuelo (https://x.com/i/status/2126610304016457760). The Economist: el control de armas nucleares queda en suspenso hasta que China se ponga al día (https://x.com/i/status/2126410822570107233). El mando de submarinos de la Armada de EE. UU. no prevé un vacío operativo en el relevo de los Ohio por los Columbia (Defense Daily <a href="https://x.com/i/status/2126408622234063050">https://x.com/i/status/2126408622234063050</a>).</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Conflictos. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

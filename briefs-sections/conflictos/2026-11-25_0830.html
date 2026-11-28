@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTS — Wednesday, 25 November 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTS</h1>
+      <p class="list-date">Wednesday, 25 November 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Conflicts / Conflictos</li>
+<li><strong>Window covered:</strong> Tuesday 24 November from about 19:00 to Wednesday 25 November about 07:00 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Conflicts section brief and the posts of @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Russia escalates pressure on the Baltic states: formal warning to Estonia, Latvia weighs border closure</h2>
+<p>Russia&rsquo;s Foreign Ministry accused Estonia of hostile actions &ldquo;on the verge of triggering open war&rdquo;, linking it to Ukrainian drone strikes; Estonian Foreign Minister Margus Tsahkna dismissed the accusation as &ldquo;Russian propaganda&rdquo; (Reuters, https://x.com/i/status/2125409136120828129). Commentators describe it as Moscow&rsquo;s first formal warning to a NATO member of this kind (https://x.com/i/status/2125347552404856860). Latvia&rsquo;s Prime Minister Andris Kulbergs has asked ministries to assess restrictions on land crossings with Russia and present a position by next week, following Estonia&rsquo;s closure (https://x.com/i/status/2125319296007967132). Separately, Zelensky confirmed that Ukraine was responsible for the attack on the Russian cargo ship Sparta II in the Gulf of Finland (@FaytuksNetwork, https://x.com/i/status/2125432139831463941).</p>
+<ul>
+<li><strong>Why it matters for Europe:</strong> Russia is building a pretext against an EU and NATO member on the Baltic, while the war&rsquo;s maritime front reaches the Gulf of Finland, next to Finnish and Estonian waters.</li>
+<li><strong>What to watch:</strong> Latvian government position next week; any Russian follow-up measures against Estonia; Finnish reaction after Helsinki summoned the Russian ambassador (previous edition).</li>
+</ul>
+<p><strong>Sources:</strong> https://x.com/i/status/2125409136120828129, https://x.com/i/status/2125347552404856860, https://x.com/i/status/2125319296007967132, https://x.com/i/status/2125432139831463941</p>
+<h2 id="s2">Ukraine&rsquo;s deep strikes on Russian refineries and Russia&rsquo;s strikes on Ukraine</h2>
+<p>A large Ukrainian drone raid hit Russia overnight on 25 November; monitoring channels report two oil refineries set ablaze, with Syzran and its refinery in the Volga basin among the targets (Kyiv Independent, https://x.com/i/status/2125396503925535133; @OSINTtechnical, https://x.com/i/status/2125358622288855548). A Russian attack on Odesa Oblast killed two people, including a teenager, and a strike on a Kyiv residential courtyard injured two (Kyiv Independent, https://x.com/i/status/2125369334335692849). A pro-Russian count claims at least 405 successful Russian strikes on Ukrainian railway infrastructure in 2026 (claim, https://x.com/i/status/2125446727893168631). The Russia-installed authorities in Donetsk claim a Ukrainian drone hit a bus station there (claim, https://x.com/i/status/2125439319967969667).</p>
+<ul>
+<li><strong>Why it matters for Europe:</strong> the energy war hits both sides&rsquo; winter resilience and keeps oil and gas prices high for Europe.</li>
+<li><strong>What to watch:</strong> confirmation of the refineries hit; Russian retaliation against Ukraine&rsquo;s grid.</li>
+</ul>
+<p><strong>Sources:</strong> https://x.com/i/status/2125396503925535133, https://x.com/i/status/2125358622288855548, https://x.com/i/status/2125369334335692849, https://x.com/i/status/2125446727893168631, https://x.com/i/status/2125439319967969667</p>
+<h2 id="s3">Update: Yemen–Saudi war — Hodeidah port struck after Houthi hit on Riyadh tower</h2>
+<p>The Saudi-led coalition ordered civilians to evacuate Hodeidah port; the Houthis warned they would target Jeddah and other Saudi ports in return (Al Jazeera, https://x.com/i/status/2125388005955514515). Houthi-run Saba then reported coalition strikes on Hodeidah port and Hodeidah airport (https://x.com/i/status/2125364389347999863, https://x.com/i/status/2125397445760929929); video shows fires in the port (https://x.com/i/status/2125409052356379113), and @visegrad24 reports further Saudi strikes on the port this morning (https://x.com/i/status/2125466236330869197). Saba also reports a Saudi strike on vehicles in Lahj governorate leaving 25 people dead or missing (claim, https://x.com/i/status/2125379651438842341). The WSJ reports the Houthis hit Riyadh&rsquo;s Public Investment Fund tower for the second time in five days, injuring 11 (via https://x.com/i/status/2125426479609610484); India says two of its nationals were among the injured, and Qatar condemned the attack (Al Jazeera, https://x.com/i/status/2125470910975221926, https://x.com/i/status/2125341188391907612). The US Embassy in Jerusalem issued a region-wide alert over Houthi and Iranian threats (https://x.com/i/status/2125330492065288542).</p>
+<ul>
+<li><strong>Why it matters for Europe:</strong> a Saudi–Houthi war on the Red Sea coast threatens Suez traffic again and adds to the Hormuz disruption hitting European energy supply.</li>
+<li><strong>What to watch:</strong> Houthi strikes on Saudi Red Sea ports; status of Saudi airspace.</li>
+</ul>
+<p><strong>Sources:</strong> https://x.com/i/status/2125388005955514515, https://x.com/i/status/2125364389347999863, https://x.com/i/status/2125397445760929929, https://x.com/i/status/2125409052356379113, https://x.com/i/status/2125466236330869197, https://x.com/i/status/2125379651438842341, https://x.com/i/status/2125426479609610484, https://x.com/i/status/2125470910975221926, https://x.com/i/status/2125341188391907612, https://x.com/i/status/2125330492065288542</p>
+<h2 id="s4">Iran war: funding, blockade and the Hormuz front</h2>
+<p>Trump told the New York Post that funding for US operations against Iran is secured through the end of January 2027 and warned Democrats not to turn a &ldquo;total win&rdquo; into a loss when they take control of Congress (Al Jazeera, https://x.com/i/status/2125412908083638363). A poll cited by Al Jazeera finds 55% of US voters want the war to end immediately, regardless of terms (https://x.com/i/status/2125439333532676209). Iran&rsquo;s Supreme National Security Council secretary Mohsen Rezaei called US blockade plans &ldquo;delusional and futile&rdquo; (Iranian claim, https://x.com/i/status/2125351720951947472). Israeli Defence Minister Israel Katz says Iran is developing chemical weapons (claim, via https://x.com/i/status/2125322976988114972). @ClashReport shared footage reportedly showing a US/Israeli strike on an Iran Air Airbus at Bushehr at the start of the war (unverified, https://x.com/i/status/2125336301016584481).</p>
+<ul>
+<li><strong>Why it matters for Europe:</strong> a war funded at least into 2027 keeps Hormuz risk, energy prices and US munitions demand high, competing with European and Ukrainian needs.</li>
+<li><strong>What to watch:</strong> US confirmation or denial of the MQ-9 loss; blockade measures.</li>
+</ul>
+<p><strong>Sources:</strong> https://x.com/i/status/2125412908083638363, https://x.com/i/status/2125439333532676209, https://x.com/i/status/2125351720951947472, https://x.com/i/status/2125322976988114972, https://x.com/i/status/2125336301016584481</p>
+<h2 id="s5">Ukraine war at sea off Libya: Haftar forces count losses, Italy alarmed</h2>
+<p>Haftar&rsquo;s Libyan Arab Armed Forces announced that a navy officer and an NCO were killed in the Ukrainian attack on Benghazi port, and vowed revenge (https://x.com/i/status/2125348519754047918). The Financial Times count, relayed on the list, puts 16 major Russian naval vessels struck since 2022 (8 lost, 8 severely damaged) (https://x.com/i/status/2125351277727256977). Italy has voiced concern that the war is spreading into the Mediterranean (https://x.com/i/status/2125433342262644806).</p>
+<ul>
+<li><strong>Why it matters for Europe:</strong> Naval combat in the central Mediterranean brings the Ukraine war to the EU&rsquo;s southern flank, near Italy and Malta.</li>
+<li><strong>What to watch:</strong> movements of the Russian convoy in the Sicily Channel (Early warning).</li>
+</ul>
+<p><strong>Sources:</strong> https://x.com/i/status/2125348519754047918, https://x.com/i/status/2125351277727256977, https://x.com/i/status/2125433342262644806</p>
+<h2 id="s6">Counter-space and space: US proliferated military constellations; Shenzhou-24 docks</h2>
+<p>Jonathan McDowell lists the US military constellations now being deployed, including the Space Force&rsquo;s SDN R communications and SDN TH radar satellites, the Space Development Agency&rsquo;s missile trackers and the NRO&rsquo;s proliferated architecture with at least two sub-series (https://x.com/i/status/2125382900220645768). China&rsquo;s Shenzhou-24 crewed spacecraft launched and docked with the Tiangong station on 25 November, according to the China Manned Space Agency (state media, CGTN, https://x.com/i/status/2125441789608014257). No new satellite shadowing or proximity incident was reported in this window.</p>
+<ul>
+<li><strong>Why it matters for Europe:</strong> the US and China are scaling military space while Europe&rsquo;s own constellations (IRIS²) are still years away.</li>
+</ul>
+<p><strong>Sources:</strong> https://x.com/i/status/2125382900220645768, https://x.com/i/status/2125441789608014257</p>
+<h2 id="s7">Defence contracts with a war link</h2>
+<p>Boeing has a US Air Force contract for 15 more KC-46A tankers (203 on contract or in service worldwide) (@defpostmedia, https://x.com/i/status/2125460346253307915). Elbit Systems Deutschland will supply integrated naval electronic warfare suites for the German Navy&rsquo;s F-128 frigates (https://x.com/i/status/2125469419241426958), and Thales will deliver STAR NG and RSM NG radars to the Royal Netherlands Air and Space Force (https://x.com/i/status/2125465960060698831).</p>
+<ul>
+<li><strong>Why it matters for Europe:</strong> an Israeli group&rsquo;s German subsidiary wins EW on a German frigate, while a European supplier (Thales) equips a European air force.</li>
+</ul>
+<p><strong>Sources:</strong> https://x.com/i/status/2125460346253307915, https://x.com/i/status/2125469419241426958, https://x.com/i/status/2125465960060698831</p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Conflicts. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

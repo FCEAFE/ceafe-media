@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — martes, 24 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">martes, 24 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> del martes 24 de noviembre desde las 14:30 hasta hacia las 19:30 (hora de Madrid): todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Actualidad de CEAFE y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Washington prepara nuevos aranceles de la Sección 301 contra la UE, China y otras 14 economías; Bruselas aún no ha respondido</h2>
+<p>La Administración Trump prepara nuevas subidas arancelarias sobre productos de la Unión Europea, China, México, Japón y otros doce socios comerciales, según Politico y Bloomberg Law, que citan a personas conocedoras de los planes. Al cierre de esta edición no había anuncio oficial: la página de prensa del Representante Comercial de EE. UU. (USTR) y su expediente de la Sección 301 sobre «exceso estructural de capacidad» no recogen ninguna resolución hoy, y no se ha encontrado texto de la Casa Blanca ni del Federal Register. Politico informa de que el USTR sigue previendo presentar las propuestas el martes por la noche, hora de EE. UU., es decir, después de esta edición o de madrugada en Europa. Los aranceles cerrarían la investigación de la Sección 301 (Ley de Comercio de 1974) abierta en marzo, después de que el Tribunal Supremo de EE. UU. anulara en febrero de 2026 los aranceles globales anteriores del presidente.</p>
+<p>Los tipos siguen siendo información de prensa, no cifras oficiales. Según el Wall Street Journal (recogido por Clash Report), los aranceles abarcarían la mayoría de los productos de las economías afectadas, con exclusión del acero, el aluminio y los automóviles, que ya soportan aranceles por seguridad nacional; la UE, Japón y Corea del Sur afrontarían probablemente tipos globales del 15 % o menos en virtud de los acuerdos alcanzados antes del fallo, China un tipo más alto, y Washington podría reservarse el derecho de subirlos más adelante. Bloomberg añade que los nuevos tipos «no superarán los niveles fijados en los acuerdos comerciales de EE. UU.» y se fijarán economía por economía. Se sumarían a los aranceles del 10 %–12,5 % impuestos en julio a 60 economías en una actuación separada por trabajo forzoso, recurrida ante los tribunales. La prensa describe además una fuerte reacción de los mercados, con caídas en los futuros tecnológicos estadounidenses y en bolsas europeas como Milán y Fráncfort. @F_CEAFE publicó la información de Bloomberg Law («New US tariffs on 🇨🇳🇪🇺 goods coming»). El patrón no es nuevo: en octubre de 2019, ante otra ronda de aranceles estadounidenses, @F_CEAFE preguntaba si alguien podía imaginar «un solo país de la UE capaz de oponerse a ellos por sí mismo» (archivo de CEAFE).</p>
+<p>Hoy no se ha encontrado ninguna nueva reacción de la Comisión Europea. La última posición oficial sigue siendo la declaración del portavoz de la Comisión Olof Gill del 12 de marzo de 2026, al abrirse la investigación: las causas del exceso de capacidad mundial «no están en Europa», y la UE «responderá con firmeza y de forma proporcionada a cualquier incumplimiento» de la declaración conjunta UE–EE. UU. (el acuerdo de Turnberry, con su techo del 15 %). Entonces se citaron como posibles respuestas una lista de productos estadounidenses por valor de hasta 93.000 millones de euros y el instrumento anticoerción (Eunews). La amenaza llega el mismo día en que la UE anunció cuotas provisionales de importación para los vehículos híbridos procedentes de China, y después de que Pekín prorrogara hasta el 27 de enero de 2027 la suspensión de su prohibición de exportar galio, germanio, antimonio y materiales superduros a EE. UU. (China Daily, medio estatal chino). Por otra parte, Brasil pidió a la OMC la constitución de un panel de resolución de diferencias por aranceles adicionales de EE. UU. (OMC).</p>
+<p>Un recordatorio gráfico de que el mercado y la política de un solo Estado europeo no equivalen a los de una potencia global.</p>
+<p><strong>Por qué importa a Europa:</strong> la UE afronta esta ronda como bloque, que es la única razón por la que tiene un techo negociado; pero el límite del 15 % se aceptó sin reciprocidad, y Washington recurre ahora a un instrumento unilateral para reimponer lo que su propio Tribunal Supremo anuló. China responde a cada medida estadounidense con palancas que puede activar y desactivar; la lista europea de 93.000 millones sigue en el cajón.</p>
+<p><strong>Qué vigilar:</strong> el anuncio del USTR (previsto para el martes por la noche, hora de EE. UU.) y el tipo para la UE; la reacción de la Comisión (portavoz de Comercio, Šefčovič); el Consejo de Asuntos Exteriores (Comercio) del 30 de noviembre, con rueda de prensa previa el miércoles 25 de noviembre a las 13:00 (EU Council Press).</p>
+<p><strong>Fuentes:</strong> @F_CEAFE https://x.com/i/status/2125252123222831333, Politico (24 nov.): https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685, Bloomberg Law (24 nov.): https://news.bloomberglaw.com/international-trade/us-readies-tariff-hike-on-china-eu-goods-as-soon-as-tuesday, Bloomberg: https://x.com/i/status/2125287109833429138, Clash Report, citando al WSJ: https://clashreport.com/world/articles/u-s-prepares-higher-tariffs-on-china-and-dozens-of-other-countries-p8g0v9wje5n, Investing.com: https://www.investing.com/news/stock-market-news/white-house-prepares-sweeping-new-tariffs-on-china-eu-and-dozens-of-nations-5048285, expediente de la Sección 301 del USTR: https://ustr.gov/trade-topics/enforcement/section-301-investigations/section-301-structural-excess-capacity-and-production-manufacturing-sectors, Eunews (12 mar. 2026): https://www.eunews.it/en/2026/03/12/new-us-trade-investigations-brussels-warns-we-will-respond-to-any-violation-of-the-tariff-agreement/, China Daily: https://www.chinadaily.com.cn/a/202611/24/WS6b0569ade4b03ebf8519e6c2.html, OMC: https://x.com/i/status/2125242424108970423, EU Council Press: https://x.com/i/status/2125196431233347758, @F_CEAFE (oct. 2019): https://x.com/i/status/1180772219527421952</p>
+<h2 id="s2">Alemania se define como «potencia media»: Wadephul dice que Berlín «no es neutral» y Merz afirma que la entrada en la OTAN en 2008 habría podido evitar la guerra</h2>
+<p>En la apertura del Foro de Política Exterior de Berlín de la Fundación Körber, el ministro de Asuntos Exteriores, Johann Wadephul, dijo que en el exterior Alemania es vista como una «potencia media» —«la tercera economía del mundo, una fuerza configuradora en la Unión Europea, un peso creciente en la OTAN»— y aceptó que le encajan varias definiciones del término. Citó la frase de Davos «Si no estamos en la mesa, estamos en el menú» y contrapuso la reunión de la Coalición de Voluntarios celebrada la semana pasada en Berlín («más de cuarenta Estados») con «otros Estados que se reúnen a miles de kilómetros para discutir soluciones para otros», en alusión a la reunión trilateral de Shenzhen. «Alemania no es neutral, ni debe llegar a serlo… Lo defendemos con nuestro apoyo a Ucrania», afirmó.</p>
+<p>Ese mismo día, Wadephul se declaró «conmocionado» por la intervención del presidente Trump para que Nvidia readmitiera a Jensen Huang (dpa). El canciller Friedrich Merz dijo que la guerra podría haberse evitado si Ucrania hubiera sido admitida en la OTAN en 2008, y calificó de «lógico» el impulso de Francia para reabrir el debate sobre la adhesión (Euronews). DW informa de crecientes llamamientos en Alemania a la «contención» en política exterior, después de que una encuesta recogida en la edición de las 08:30 mostrara que el 53 % se opone ya a la ayuda militar a Ucrania.</p>
+<p><strong>Por qué importa a Europa:</strong> el discurso nombra el problema que describe CEAFE: los europeos estuvieron ausentes de la mesa en la que Washington, Pekín y Moscú hablaron de Ucrania. Pero incluso la mayor economía de la UE se define ya como «potencia media»; ningún Estado miembro de la UE puede sentarse solo en esa mesa, solo la Unión puede. Más coaliciones ad hoc y asociaciones bilaterales no sustituyen a una política exterior y de defensa común.</p>
+<p><strong>Qué vigilar:</strong> el Consejo Europeo del 26 y 27 de noviembre y si adopta una posición común sobre la representación europea en las negociaciones de paz.</p>
+<p><strong>Fuentes:</strong> Auswärtiges Amt, discurso (24 nov., en alemán): https://www.diplo.de/2812450, @GermanyDiplo: https://x.com/i/status/2125286577354252706, https://x.com/i/status/2125286591602245959, dpa: https://x.com/i/status/2125201502952165394, Euronews: https://x.com/i/status/2125210252496834699, DW: https://x.com/i/status/2125275754418049294</p>
+<h2 id="s3">Actualización: Ucrania necesita otros 25.000 millones de euros para 2027, Noruega promete al menos 7.000 millones de dólares y Zelenski dice que Washington quiere un acuerdo «para diciembre o enero»</h2>
+<p>El presidente Volodímir Zelenski dijo que Ucrania necesita «al menos 115.000 millones de euros» el próximo año «para resistir»; espera 90.000 millones y debe encontrar «otros 25.000 millones», lo que calificó de «tarea asumible», mientras trabaja con los socios europeos en la financiación. El ministro de Defensa noruego, Tore O. Sandvik, comunicó en Oslo a su homólogo ucraniano, Evgeniy Khmara, que la ayuda militar bilateral de Noruega en 2027 será de al menos 7.000 millones de dólares, sobre todo defensa aérea y drones (Ministerio de Defensa de Ucrania). En Berlín, Khmara y Boris Pistorius firmaron el sexto proyecto conjunto ucraniano-alemán de producción de defensa, una empresa conjunta en Alemania.</p>
+<p>Zelenski dijo que «el equipo estadounidense quiere cerrarlo para diciembre o enero… pero he dejado claro que esto no debe ocurrir» a costa de Ucrania, y se quejó de que «Starshield funciona en un momento y al siguiente sufre restricciones, mientras que los misiles para los sistemas Patriot no solo escasean cada vez más, sino que además se dan pasos adicionales que impiden las entregas», tras la información recogida a las 14:30 de que unos 60 interceptores pagados por europeos están retenidos. También sostuvo que «la adhesión de Ucrania a la OTAN es algo que los rusos necesitan incluso más que Ucrania». El Kremlin volvió a decir que no ve «valor añadido» en la participación europea en las negociaciones (Anadolu, agencia estatal turca).</p>
+<p><strong>Por qué importa a Europa:</strong> Europa paga la mayor parte de la factura de Ucrania (90.000 de 115.000 millones de euros), pero depende de una red de satélites estadounidense (Starshield) y de interceptores estadounidenses cuyo suministro controla Washington. La coproducción noruega, alemana y ucraniana es el camino para reducir esa dependencia.</p>
+<p><strong>Qué vigilar:</strong> de dónde salen los 25.000 millones adicionales (Consejo Europeo, 26 y 27 de noviembre); las entregas de Patriot.</p>
+<p><strong>Fuentes:</strong> Zelenski: https://x.com/i/status/2125232536733290846, https://x.com/i/status/2125206768221364353, https://x.com/i/status/2125205243633787378, https://x.com/i/status/2125203760989217036, Clash Report: https://x.com/i/status/2125265985070649352, Ministerio de Defensa de Ucrania: https://x.com/i/status/2125241780979327247, https://x.com/i/status/2125221145125278198, Anadolu: https://x.com/i/status/2125288342170562954</p>
+<h2 id="s4">La guerra en la sombra de Rusia: el OIEA nombra adjunto a un alto cargo ruso sancionado y un comisario europeo llama a Rusia «enemigo de Europa»</h2>
+<p>Los ministerios ucranianos de Exteriores y de Energía expresaron su «profunda indignación» por la decisión del director general del OIEA de nombrar como adjunto a Oleksii Ferapontov, subdirector sancionado de Rostekhnadzor, el regulador nuclear ruso. El comisario europeo de Energía, Dan Jørgensen, dijo a Euronews que «Rusia es un enemigo de Europa», que libra una «guerra ilegal» y que está «saboteando» a los Estados miembros de la UE. El número dos de la OTAN advirtió en el Simposio de Resiliencia de la Alianza de que las amenazas híbridas apuntan cada vez más a las sociedades y no solo a las fuerzas armadas, y el Parlamento Europeo debatió la seguridad de los Estados de primera línea del flanco oriental.</p>
+<p>Del lado ruso, el Ministerio de Exteriores convocó al encargado de negocios de Letonia (TASS, agencia estatal rusa), y el ministro Serguéi Lavrov estuvo en Gómel para la reunión anual conjunta de los colegios de los ministerios de Exteriores de Rusia y Bielorrusia (MAE ruso, fuente oficial rusa). La portavoz María Zajárova afirmó que la OTAN «se prepara abiertamente para un conflicto armado con Rusia» (embajada rusa en EE. UU., fuente oficial rusa).</p>
+<p><strong>Por qué importa a Europa:</strong> un alto cargo sancionado del regulador nuclear ruso en la dirección del OIEA afecta directamente a la seguridad de Zaporiyia y de las infraestructuras nucleares europeas; y cuando un comisario llama «enemigo» a Rusia, la Unión necesita una respuesta común a los ataques híbridos, no veintisiete respuestas nacionales.</p>
+<p><strong>Qué vigilar:</strong> la reacción de los Estados miembros de la UE en la Junta de Gobernadores del OIEA; cualquier iniciativa ucraniana o europea para impugnar el nombramiento.</p>
+<p><strong>Fuentes:</strong> MAE de Ucrania: https://x.com/i/status/2125227828832522509, Euronews (Jørgensen): https://x.com/i/status/2125285082009145648, OTAN: https://www.nato.int/en/news-and-events/articles/news/2026/11/24/deputy-secretary-general-addresses-the-2026-nato-resilience-symposium, Prensa del PE: https://x.com/i/status/2125284562435531080, TASS: https://x.com/i/status/2125236169348706750, MAE ruso: https://x.com/i/status/2125267639924834505, Zajárova: https://x.com/i/status/2125234894087352744</p>
+<h2 id="s5">La IA en el campo de batalla: Guterres alerta al Consejo de Seguridad mientras los Estados aplazan a 2028 las normas vinculantes sobre los «robots asesinos»</h2>
+<p>El secretario general de la ONU, António Guterres, dijo en un debate del Consejo de Seguridad sobre IA, drones y desinformación en la guerra que la llegada de la IA al campo de batalla entraña graves riesgos y que «la decisión de usar armas nucleares debe quedar siempre exclusivamente en manos de seres humanos» (UN News). En Ginebra, los Estados acordaron prolongar hasta 2028 las conversaciones sobre sistemas de armas autónomas letales, sin lograr abrir negociaciones sobre normas jurídicamente vinculantes (Anadolu, agencia estatal turca). El nuevo plan de seguridad de Japón buscará convertir al país en potencia de la IA «solo por detrás de EE. UU. y China» (Kyodo).</p>
+<p><strong>Por qué importa a Europa:</strong> las normas sobre la IA militar se aplazan mientras EE. UU. y China lideran la tecnología y otros, como Japón, aspiran abiertamente al tercer puesto. Sin capacidades propias, Europa tendrá poco peso a la hora de redactar esas normas.</p>
+<p><strong>Qué vigilar:</strong> la próxima ronda de Ginebra; si la UE define una posición común sobre las armas autónomas.</p>
+<p><strong>Fuentes:</strong> UN News: https://x.com/i/status/2125280818830471446, Anadolu: https://x.com/i/status/2125283304320471378, Kyodo: https://english.kyodonews.net/articles/-/92489</p>
+<h2 id="s6">Breves</h2>
+<ul>
+<li><strong>Cumbre UE–Balcanes Occidentales.</strong> Los líderes de la UE y de los Balcanes Occidentales se reúnen en Bruselas el miércoles 25 de noviembre (Consejo de la UE).</li>
+<li><strong>Turquía–Libia.</strong> El Parlamento Europeo debatió el memorando marítimo «ilegal» entre Turquía y Libia; el libio Jalifa Haftar visita Turquía por primera vez y está previsto que se reúna con Erdoğan (Clash Report).</li>
+<li><strong>Bajas rusas.</strong> Euronews informa de una filtración de datos según la cual al menos 490.000 soldados rusos han muerto en Ucrania (sin verificación independiente).</li>
+<li><strong>Rusia–Brunéi.</strong> Putin recibe en Moscú al sultán de Brunéi, Hassanal Bolkiah, el 25 de noviembre (MAE ruso, fuente oficial rusa).</li>
+<li><strong>China en el Cuerno de África.</strong> Pekín envió altos emisarios a cuatro países para rebajar tensiones que amenazan con una nueva guerra (Al Jazeera).</li>
+<li><strong>Corea del Norte y Suiza.</strong> Pionyang amenazó con cerrar la oficina suiza por las sanciones vinculadas a un campamento juvenil ruso (SCMP).</li>
+<li><strong>Japón–India.</strong> Japón traslada sus ejercicios con misiles a suelo indio (SCMP).</li>
+<li><strong>Israel deporta a un diputado polaco</strong> antes de una visita a Cisjordania (Haaretz).</li>
+</ul>
+<p><strong>Fuentes:</strong> Consejo de la UE: https://x.com/i/status/2125270753608344045, Clash Report: https://x.com/i/status/2125238754063323331, https://x.com/i/status/2125227602763788546, Euronews: https://x.com/i/status/2125254566446809142, MAE ruso: https://x.com/i/status/2125197753785422146, Al Jazeera: https://www.aljazeera.com/news/2026/11/24/china-walks-thin-line-in-push-to-prevent-another-horn-of-africa-war, SCMP: https://www.scmp.com/news/asia/east-asia/article/3375602/north-korea-threatens-shut-swiss-office-over-russian-youth-camp-sanctions, https://www.scmp.com/week-asia/politics/article/3375590/why-japan-taking-its-missile-drills-indian-soil, Haaretz: https://x.com/i/status/2125269504842199053</p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

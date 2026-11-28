@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Monday, 23 November 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Monday, 23 November 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> Sunday 22 November about 19:00 to Monday 23 November about 07:30 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World and Conflicts section briefs and the posts of @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Update: NATO Council meets today on the Kh-101s that fell in Poland; a former German defence minister admits Europe still depends on the US for air defence</h2>
+<p><strong>The North Atlantic Council meets in Brussels on Monday to discuss the three Russian objects that entered Polish airspace on 20 November, all identified by prosecutors in Lublin as Kh-101 cruise missiles, whose debris was found at three sites.</strong></p>
+<p>A NATO official told Anadolu that the meeting is part of the &ldquo;regular consultations&rdquo;, not an emergency session. Poland, represented by Deputy Defence Minister Paweł Zalewski, will present proposals to reinforce air defence on the eastern flank, including under Eastern Sentry (Defence Matters). None of the three objects was intercepted. The NATO Parliamentary Assembly continues in Berlin, with President Zelensky joining by video, and Chancellor Merz receives NATO Secretary General Rutte in the afternoon (Deutschlandfunk). In an interview with Der Spiegel, former German defence minister Annegret Kramp-Karrenbauer said: &ldquo;Although we have made tremendous progress, there are still a number of areas where we depend on the United States. For example, in the field of air defence.&rdquo;</p>
+<p><strong>Context:</strong> Poland is an EU member state and a NATO member. The missile fell on 20 November near Chmielek (Biłgoraj county), about 45 km inside Polish territory (14:30 edition of 20 November). Finnish lawmakers support studying tank traps and border fortifications in peacetime (Bloomberg). Antecedentes: since 2019 @F_CEAFE has questioned whether Poland&rsquo;s purchases of US weapons help integrate the EU (<a href="https://x.com/i/status/1181430134437552128">X, 2019</a>).</p>
+<p><strong>Why it matters for Europe:</strong> Russian missiles built this autumn landed on the territory of an EU member state without being intercepted, and the political response runs through NATO, whose military commander (SACEUR) is a US officer. Kramp-Karrenbauer&rsquo;s words come from someone who ran the Bundeswehr.</p>
+<p><strong>What to watch:</strong> the outcome of the NAC and any new Eastern Sentry assets; the Merz–Rutte meeting; Zelensky&rsquo;s address to the NATO Parliamentary Assembly.</p>
+<p><strong>Sources:</strong> <a href="https://www.aa.com.tr/en/europe/nato-to-meet-over-polish-airspace-violation/4133560">Anadolu</a>, <a href="https://x.com/i/status/2124731813734080596">dpa</a>, <a href="https://www.deutschlandfunk.de/beratungen-ueber-verletzungen-des-polnischen-luftraums-durch-russland-102.html">Deutschlandfunk</a>, <a href="https://defencematters.eu/nato-eastern-flank-air-defence-russian-missiles-poland/">Defence Matters</a>, <a href="https://x.com/i/status/2124646206236233760">Kyiv Independent</a>, <a href="https://en.axar.az/news/world/1151467.html">Axar.az (Der Spiegel interview)</a>, <a href="https://x.com/i/status/2124639289988284719">@F_CEAFE</a>, <a href="https://x.com/i/status/2124735979797827889">Bloomberg</a></p>
+<h2 id="s2">Kushner offers Ukraine &ldquo;Article 5-like&rdquo; guarantees and reassurance for Russia; the US intelligence chief says Putin is &ldquo;not America&rsquo;s friend in Ukraine&rdquo;</h2>
+<p><strong>US envoy Jared Kushner wrote that President Trump&rsquo;s &ldquo;willingness to consider Article 5-like security guarantees for Ukraine is a critical feature to achieving lasting peace&rdquo;, and that Russia&rsquo;s willingness to discuss them is &ldquo;a major step forward&rdquo;.</strong></p>
+<p>Kushner was quoting Zelensky&rsquo;s post that NATO membership is the clearest guarantee for Ukraine. He wrote: &ldquo;We seek a future where Ukraine is secure, Europe is stronger, Russia has confidence that NATO is not seeking confrontation, and NATO and its partners have confidence that Russia will respect the sovereignty and security of its neighbors.&rdquo; The offer is guarantees &ldquo;like&rdquo; Article 5, not NATO membership. On ABC&rsquo;s This Week, Director of National Intelligence Jay Clayton defended Trump calling Putin a &ldquo;friend&rdquo; as &ldquo;entirely appropriate&rdquo;, but said: &ldquo;He is not America&rsquo;s friend in Ukraine. Not at all&rdquo; (AP/Al Jazeera). Kremlin spokesman Dmitry Peskov said the Shenzhen talks were &ldquo;a more conceptual discussion&rdquo; (TASS, Russian state agency). Tony Blair, in an interview reposted by @F_CEAFE, said that even after Trump &ldquo;it&rsquo;s still going to be America First&rdquo;, in a world that is &ldquo;a G2 — you may have a G3 in time with India&rdquo;.</p>
+<p><strong>Context:</strong> the US–China–Russia trilateral in Shenzhen (19 November) was held without the EU at the table.</p>
+<p><strong>Why it matters for Europe:</strong> the security guarantees for Ukraine, and the reassurances for Russia about NATO, are being designed in Washington and discussed with Moscow. In Blair&rsquo;s G2 or G3, the EU is not among the powers that decide. No EU member state alone weighs enough to change that outcome.</p>
+<p><strong>What to watch:</strong> the text of any US guarantee offer and whether Europeans are asked to staff or pay for it; Moscow&rsquo;s reply.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124573146665955759">Jared Kushner</a>, <a href="https://x.com/i/status/2124187167077351761">Volodymyr Zelensky</a>, <a href="https://aje.news/2n07f4">Al Jazeera / AP</a>, <a href="https://x.com/i/status/2124565379762823265">Reuters</a>, <a href="https://t.me/tassagency_en/99489">TASS (Peskov)</a>, <a href="https://x.com/i/status/2124635678503735680">Tony Blair (Clash Report clip)</a></p>
+<h2 id="s3">Marine Le Pen on Ukraine: &ldquo;only three outcomes&rdquo; and a promise to &ldquo;talk to everyone&rdquo;</h2>
+<p><strong>National Rally candidate Marine Le Pen wrote that in Ukraine &ldquo;there are only three outcomes: either NATO enters the war and it is World War Three, or the conflict lasts for years, or all countries understand the consequences&rdquo;.</strong></p>
+<p>She added: &ldquo;If I am elected President of the Republic, I will talk to everyone.&rdquo; @F_CEAFE reposted her post. TASS (Russian state agency) reports that she does not plan to travel to Kyiv because she will make no trips abroad during the campaign. Also on Sunday, former European Commissioner Thierry Breton said Europeans must not let Xi Jinping become &ldquo;the new emperor of the world&rdquo;.</p>
+<p><strong>Why it matters for Europe:</strong> France is the EU&rsquo;s only nuclear power and the EU member state with a permanent seat on the UN Security Council, so its presidential campaign is also a debate on Europe&rsquo;s position on the Ukraine war.</p>
+<p><strong>What to watch:</strong> the other candidates&rsquo; positions on Ukraine and European defence; reactions in Kyiv and Brussels.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124599451285356940">Marine Le Pen</a>, <a href="https://t.me/tassagency_en/99483">TASS</a>, <a href="https://x.com/i/status/2124568883294277789">Thierry Breton</a></p>
+<h2 id="s4">Poland says Russian intelligence tried to kill a rapper on its soil, after a similar Danish allegation</h2>
+<p><strong>Polish authorities say Russian intelligence services tried to kill Ukrainian-American rapper Albert Vasiliev during a visit to Poland in August, Al Jazeera reports.</strong></p>
+<p>Copenhagen had earlier said Moscow allegedly targeted the same man on Danish soil. No Russian response had been found by 07:30 Madrid.</p>
+<p><strong>Why it matters for Europe:</strong> the same target in two EU member states points to an operation that crosses national borders inside the Union.</p>
+<p><strong>What to watch:</strong> any Russian denial; whether Poland and Denmark ask for EU-level measures.</p>
+<p><strong>Sources:</strong> <a href="https://aje.news/00g8g9">Al Jazeera</a>, <a href="https://x.com/i/status/2124707010218426512">Al Jazeera on X</a></p>
+<p><strong>In brief:</strong> Belgium faces a national strike against austerity, with almost all flights cancelled on Monday (<a href="https://x.com/i/status/2124710781543666020">Al Jazeera</a>). Sergey Lavrov said the UK and German defence ministers appear to be &ldquo;in an inadequate state&rdquo; after they defended Ukraine&rsquo;s deep strikes on Russia (<a href="https://v.aa.com.tr/4133824">Anadolu</a>). COP31: see Economy.</p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

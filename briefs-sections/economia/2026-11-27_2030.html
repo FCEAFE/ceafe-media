@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Friday, 27 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Friday, 27 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> from about 12:55 to about 18:55 on Friday 27 November, Europe/Madrid: everything new since the 14:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy and World section briefs, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">Tesla files to buy assets of EMAG, the German machine-tool maker</h2>
+<p>Tesla has notified Germany&rsquo;s Federal Cartel Office (Bundeskartellamt) of a plan to buy assets of the EMAG group, a machine-tool maker based in Salach, near Stuttgart (Reuters; tagesschau/SWR). The cartel office lists it as an asset acquisition, case B5-132/26, notified on 23 November and published on 27 November. The markets named are machines for precise and electrochemical machining of metal parts, and laser processing. No price, list of assets or head count has been disclosed. Tesla declined to comment and EMAG did not reply to Reuters. Tesla had already set up a company, &ldquo;Tesla Machining Technologies Management SE&rdquo;, with EMAG&rsquo;s Salach headquarters as its business address (tagesschau; Automotive World, citing Business Insider). The Stuttgarter Nachrichten reports that about 220 EMAG employees would move to Tesla; neither company has confirmed this. EMAG makes turning, grinding and gear-cutting machines for car drivetrains. More recently it also makes them for the small precision gears in the joints of humanoid robots, a known weak point of Tesla&rsquo;s Optimus robot. EMAG was founded in 1867. According to Business Insider, it lost about €42m on €496m of revenue in 2024 and announced 455 job cuts in November 2025. So far there has been no reaction from EMAG, the German government or the state of Baden-Württemberg; the cartel review is the only scrutiny on record.</p>
+<p><strong>Background (CEAFE archive):</strong> this is the latest case in CEAFE&rsquo;s tracker of US takeovers of European firms. On 19 October US drone maker Red Cat launched a bid of about €205m for Austria&rsquo;s Steyr Motors, which makes engines for military vehicles; the offer runs until 18 December and foreign-investment approvals are pending (https://ir.steyr-motors.com/en/2026/10/21/steyr-motors-ag-business-combination-agreement-signed-with-red-cat-holdings-inc-and-smot-acquisition-gmbh-binding-commitments-agreed-for-the-steyr-site-and-employees/). In 2024 Honeywell bought Italy&rsquo;s Civitanavi Systems, a navigation-systems maker, for about €200m. @F_CEAFE posted the EMAG story today as &ldquo;Another 🇪🇺 tech gem acquired by the U.S.&rdquo; (https://x.com/i/status/2126367050469638297).</p>
+<p><strong>Why it matters for Europe:</strong> EMAG is a typical German family-scale industrial firm with 159 years of know-how that is hard to rebuild. Precision gear machining is becoming a bottleneck for humanoid robots. The car-industry crisis has weakened the company, and a US buyer can now take machines, people and know-how through an asset purchase, without taking over the whole group. This is the pattern CEAFE has followed all month: high energy costs and weak demand weaken European industry, and US capital buys the best parts. A machine-tool maker is not a defence firm, so a German foreign-investment review is not certain. No single member state has a tool to keep this kind of capability in Europe unless a European buyer steps in.</p>
+<p><strong>What to watch:</strong> the cartel office&rsquo;s decision (first phase of one month); whether Berlin opens a foreign-investment review; the price, the assets and the jobs once Tesla or EMAG comment.</p>
+<p>Sources: @F_CEAFE <a href="https://x.com/i/status/2126367050469638297">https://x.com/i/status/2126367050469638297</a>, Reuters <a href="https://x.com/i/status/2126325232927461743">https://x.com/i/status/2126325232927461743</a> (reprint <a href="https://live.euronext.com/en/financial-news/tesla-plans-acquire-german-manufacturing-systems-group-emag">https://live.euronext.com/en/financial-news/tesla-plans-acquire-german-manufacturing-systems-group-emag</a>), tagesschau/SWR <a href="https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-tesla-uebernimmt-maschinenbauer-emag-spezialmaschinen-fuer-humanoide-roboter-100.html">https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-tesla-uebernimmt-maschinenbauer-emag-spezialmaschinen-fuer-humanoide-roboter-100.html</a>, Automotive World <a href="https://www.automotiveworld.com/news/tesla-files-plan-to-acquire-german-machine-maker-emag/">https://www.automotiveworld.com/news/tesla-files-plan-to-acquire-german-machine-maker-emag/</a>, Servospace <a href="https://servospace.io/news/tesla-machining-technologies-emag-salach-220-staff-optimus-gears">https://servospace.io/news/tesla-machining-technologies-emag-salach-220-staff-optimus-gears</a>, Teslarati <a href="https://www.teslarati.com/tesla-bolster-optimus-company-acquisition-emag-germany/">https://www.teslarati.com/tesla-bolster-optimus-company-acquisition-emag-germany/</a>.</p>
+<h2 id="s2">France is officially in recession: GDP fell 0.2% in the third quarter</h2>
+<p>France&rsquo;s statistics office, INSEE, published its detailed accounts on 27 November. Gross domestic product (GDP) fell 0.2% in the third quarter, revised down from a first estimate of −0.1%. The second quarter was also revised, from 0.0% to a very slight fall. France has therefore been in &ldquo;technical&rdquo; recession since the second quarter (franceinfo; AFP via France 24). GDP has now fallen three quarters in a row, to €662.6bn. Exports dropped 1.6% after rising 2.9%, and foreign trade took 0.6 points off growth. Business investment fell 0.8% and investment in manufactured goods 1.8%. Household consumption rose 0.3%. The Wall Street Journal links the fall in exports to summer heat waves that slowed Airbus&rsquo;s factories. The growth already &ldquo;carried over&rdquo; for 2026 is only 0.1%, against the government&rsquo;s forecast of 0.5%; INSEE says reaching that forecast would need 1.4% growth in the fourth quarter. The public deficit rose to 5.6% of GDP in the quarter. The same afternoon, two members of the European Central Bank&rsquo;s Governing Council, Joachim Nagel and Primož Dolenc, said the bank will probably have to raise interest rates again in December because inflation is stubborn (Bloomberg). Al Jazeera notes that euro-area inflation is at a three-year high, driven by energy prices.</p>
+<p><strong>Background (CEAFE archive):</strong> on 30 January 2024 CEAFE shared Reuters&rsquo; report that the French economy had failed to grow in the fourth quarter of 2023, according to INSEE (https://x.com/i/status/1752316330617839681). The 26 November 14:30 edition compared Germany&rsquo;s 2027 budget, with €139bn for defence, with France&rsquo;s; the 08:30 edition today covered job cuts at SAP and plant stoppages at Stellantis.</p>
+<p><strong>Why it matters for Europe:</strong> the euro area&rsquo;s second-largest economy is shrinking while the European Central Bank is still raising rates against energy-driven inflation. Industry is squeezed from both sides: expensive energy and expensive money. Falling exports and falling investment in manufacturing are the signs of deindustrialisation that CEAFE follows. They come as US buyers pick up weakened European firms, such as EMAG today. No single member state can fix this alone; a common energy and industrial policy is the only scale that works.</p>
+<p><strong>What to watch:</strong> the euro-area flash inflation figure on 2 December; the European Central Bank&rsquo;s December meeting; the budget debate in Paris with a deficit of 5.6% of GDP.</p>
+<p>Sources: INSEE <a href="https://www.insee.fr/fr/statistiques/9165918">https://www.insee.fr/fr/statistiques/9165918</a>, France 24 (AFP) <a href="https://www.france24.com/fr/info-en-continu/20261127-france-le-pib-recule-de-0-2-au-troisi%C3%A8me-trimestre-apr%C3%A8s-r%C3%A9vision-%C3%A0-la-baisse">https://www.france24.com/fr/info-en-continu/20261127-france-le-pib-recule-de-0-2-au-troisi%C3%A8me-trimestre-apr%C3%A8s-r%C3%A9vision-%C3%A0-la-baisse</a>, franceinfo <a href="https://www.franceinfo.fr/economie/croissance/le-pib-recule-de-0-2-en-france-au-troisieme-trimestre-apres-une-revision-a-la-baisse-de-l-insee_8302671.html">https://www.franceinfo.fr/economie/croissance/le-pib-recule-de-0-2-en-france-au-troisieme-trimestre-apres-une-revision-a-la-baisse-de-l-insee_8302671.html</a>, Wall Street Journal <a href="https://x.com/i/status/2126345006419955875">https://x.com/i/status/2126345006419955875</a>, Bloomberg <a href="https://x.com/i/status/2126362955906183217">https://x.com/i/status/2126362955906183217</a>, BFMTV <a href="https://x.com/i/status/2126368613389205534">https://x.com/i/status/2126368613389205534</a>, Bloomberg (Nagel) <a href="https://x.com/i/status/2126342820176740417">https://x.com/i/status/2126342820176740417</a>, Bloomberg (Dolenc) <a href="https://x.com/i/status/2126331492963942794">https://x.com/i/status/2126331492963942794</a>, Al Jazeera <a href="https://x.com/i/status/2126305037303615601">https://x.com/i/status/2126305037303615601</a>.</p>
+<p><strong>CEAFE:</strong> A graphic reminder that the market and the politics of a single European state do not equal those of a global power.</p>
+<h2 id="s3">Update: US chip controls in Southeast Asia — the Nvidia shipment halt freezes data-centre financing</h2>
+<p>The New York Times confirmed on 27 November that data-centre operators in Malaysia, Singapore, Thailand and Indonesia have had orders for Nvidia&rsquo;s most advanced chips put on hold. The Financial Times adds that Aolani, a Singapore-based cloud company that planned to lease computing power to ByteDance, is affected: banks have stopped about $500m of credit, and ByteDance may drop the deal. The halt follows the rule issued on 16 November by the US Commerce Department&rsquo;s Bureau of Industry and Security. It requires licences to export advanced chips to Indonesia, Malaysia, Singapore, Thailand and Brazil, and restricts remote access to them; cloud providers have 90 days to obtain a licence. &ldquo;There&rsquo;s this new rule but no guidance on execution… It&rsquo;s causing sheer chaos in the region,&rdquo; a cloud executive told the Financial Times. According to the same newspaper, Nvidia booked $104bn of revenue through its Singapore subsidiary in 2025. Meanwhile, President Trump plans to visit a chip factory in Phoenix next week (Washington Post). There is no official statement yet from the four governments or from China.</p>
+<p><strong>Background (CEAFE archive):</strong> the 26 November 08:30 edition first reported that Nvidia had frozen AI-server shipments to Malaysia, Singapore, Thailand and Indonesia. The Commerce Department rule of 16 November is at <a href="https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology">https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology</a>.</p>
+<p><strong>Why it matters for Europe:</strong> this is US extraterritorial power in practice: a rule written in Washington stops private investment in third countries within days. The same remote-access rule also covers data centres in the EU. Europe does not make AI chips at scale, so its cloud and AI plans also depend on US licences.</p>
+<p><strong>What to watch:</strong> US guidance on the licence process; reactions from Malaysia and Singapore; China&rsquo;s Foreign Ministry briefing on Monday.</p>
+<p>Sources: Reuters <a href="https://x.com/i/status/2126357884778733732">https://x.com/i/status/2126357884778733732</a>, Financial Times <a href="https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370">https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370</a>, New York Times <a href="https://cn.nytimes.com/business/20261127/nvidia-southeast-asia-sales/dual/">https://cn.nytimes.com/business/20261127/nvidia-southeast-asia-sales/dual/</a>, Data Center Dynamics <a href="https://www.datacenterdynamics.com/en/news/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-in-wake-of-new-dept-of-commerce-export-rule-report/">https://www.datacenterdynamics.com/en/news/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-in-wake-of-new-dept-of-commerce-export-rule-report/</a>, US Commerce Department <a href="https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology">https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology</a>, Washington Post <a href="https://x.com/i/status/2126307587448611085">https://x.com/i/status/2126307587448611085</a>.</p>
+<h2 id="s4">Update: Iraq asks OPEC for a higher quota instead of leaving, ahead of Sunday&rsquo;s OPEC+ meeting</h2>
+<p>Iraq&rsquo;s oil minister, Basim Mohammed Khudair, said in Kirkuk on 27 November: &ldquo;We are negotiating with OPEC to raise Iraq&rsquo;s production ceiling&rdquo; (Bloomberg; Reuters via Devdiscourse). He asked members to consider Iraq&rsquo;s &ldquo;exceptional circumstances&rdquo; over five decades. He also said Baghdad wants more US investment in its oil sector (Shafaq News). The Middle East Economic Survey (MEES) reports that Iraq has rejected OPEC&rsquo;s independent assessment of its maximum sustainable capacity, 4.9 million barrels a day. Iraq wants recognition of about 6 million barrels a day; its current quota is about 4.4 million. OPEC+ ministers meet online on Sunday 29 November and are expected to keep current targets. The minister also opened a pumping station on the rehabilitated Iraq–Turkey pipeline, starting at 300,000 barrels a day. In the Gulf, US Central Command said it disabled a commercial vessel in the Gulf of Oman on 26 November after its crew tried to run the US naval blockade from Bandar Abbas. OPEC has not commented on Iraq&rsquo;s request.</p>
+<p><strong>Background (CEAFE archive):</strong> the 14:30 edition reported a Reuters exclusive that the US pushed Iraq and Venezuela to consider leaving OPEC, and that Iraq&rsquo;s oil ministry advised asking for a higher quota instead (https://x.com/i/status/2126213852572639277). On 28 August CEAFE shared a Bloomberg report, via The Kobeissi Letter, that Venezuela had discussed leaving OPEC with US officials (https://x.com/i/status/2093242918030938214).</p>
+<p><strong>Why it matters for Europe:</strong> Baghdad is following the line Reuters described: stay in OPEC but ask for more barrels. This keeps OPEC together for now, but US leverage over Iraqi oil money remains. Europe imports almost all its oil. The International Energy Agency says the Hormuz crisis is now the main driver of new renewable capacity worldwide, which is also Europe&rsquo;s own route to lower dependence.</p>
+<p><strong>What to watch:</strong> the OPEC+ decision on Sunday; any statement from Venezuela; the outcome of Iraq&rsquo;s quota request.</p>
+<p>Sources: Bloomberg <a href="https://x.com/i/status/2126350386130817194">https://x.com/i/status/2126350386130817194</a> and <a href="https://www.bloomberg.com/news/articles/2026-11-27/iraq-talking-to-opec-about-its-production-ceiling-minister-says">https://www.bloomberg.com/news/articles/2026-11-27/iraq-talking-to-opec-about-its-production-ceiling-minister-says</a>, MEES <a href="https://www.mees.com/2026/11/27/opec/iraqs-msc-rejection-clouds-opec-meeting-build-up/2037d770-ea6e-11f1-ab06-41c99db91919">https://www.mees.com/2026/11/27/opec/iraqs-msc-rejection-clouds-opec-meeting-build-up/2037d770-ea6e-11f1-ab06-41c99db91919</a>, Shafaq News <a href="https://shafaq.com/en/Economy/Baghdad-seeks-higher-OPEC-quota-US-oil-investment">https://shafaq.com/en/Economy/Baghdad-seeks-higher-OPEC-quota-US-oil-investment</a>, Reuters (reprint) <a href="https://www.devdiscourse.com/article/international/4013283-iraq-in-talks-with-opec-for-higher-oil-production-ceiling-minister-says">https://www.devdiscourse.com/article/international/4013283-iraq-in-talks-with-opec-for-higher-oil-production-ceiling-minister-says</a>, US Central Command <a href="https://x.com/i/status/2126367015493603807">https://x.com/i/status/2126367015493603807</a>, International Energy Agency <a href="https://x.com/i/status/2126338265103974871">https://x.com/i/status/2126338265103974871</a>.</p>
+<h2 id="s5">Argentina&rsquo;s audit office: a third of the central bank&rsquo;s gold sits in London</h2>
+<p>Argentina&rsquo;s General Audit Office (AGN) approved by majority, on 26 November, its report on the central bank&rsquo;s transfer of gold abroad. Between June and August 2024 the central bank sent 1,000 gold bars in four shipments to the Bank of England in London. The Bank of England acted as custodian for the Bank for International Settlements, the central banks&rsquo; bank based in Basel. 115 bars were recast to London market standards (La Nación; El Cronista; Infobae). The ounces were credited to an &ldquo;unallocated gold&rdquo; account. This means Argentina now holds a claim on a quantity of gold, not on specific bars. The share of its 61.7 tonnes of gold held in that account rose from 11.3% to 31.6%. The auditors found no approved procedure for the transfer and no full risk assessment, including of a clause that sends disputes to arbitration in Zurich. They had no access to the insurance policy. They also found three placements of 32,000 ounces each in late 2024 that the central bank had denied. They asked for a more cautious strategy and for the gold to be brought back (Perfil). The central bank says the shipments were documented and approved, and that its denial referred only to 2025. Three auditors voted against the report. The audit office&rsquo;s president, Juan Manuel Olmos, is also the legal representative of the opposition Peronist party (La Nación). Some posts on X claim the gold was &ldquo;stolen&rdquo; or sent to the United States; the audit does not say that.</p>
+<p><strong>Background (CEAFE archive):</strong> in August 2024 CEAFE shared posts reporting that President Milei&rsquo;s government had begun shipping part of Argentina&rsquo;s gold abroad (https://x.com/i/status/1818974494712635538). The 14:30 edition today covered US control of Venezuelan and Iraqi oil money.</p>
+<p><strong>Why it matters for Europe:</strong> reserves held abroad can be frozen or used as leverage, as Venezuela&rsquo;s gold at the Bank of England and US control of Venezuelan and Iraqi oil money show. Where a country keeps its gold is a question of sovereignty. Europe has the same debate about reserves held in New York.</p>
+<p><strong>What to watch:</strong> the central bank&rsquo;s formal reply; any request to bring the gold back.</p>
+<p>Sources: General Audit Office (AGN) <a href="https://x.com/i/status/2126309467264524721">https://x.com/i/status/2126309467264524721</a> and <a href="https://x.com/i/status/2126309428559290660">https://x.com/i/status/2126309428559290660</a>, La Nación <a href="https://www.lanacion.com.ar/economia/tras-el-envio-de-1000-lingotes-el-banco-central-paso-a-tener-casi-un-tercio-de-su-oro-en-el-exterior-nid26112026/">https://www.lanacion.com.ar/economia/tras-el-envio-de-1000-lingotes-el-banco-central-paso-a-tener-casi-un-tercio-de-su-oro-en-el-exterior-nid26112026/</a>, El Cronista <a href="https://www.cronista.com/economia-politica/oro-del-bcra-la-agn-aprobo-una-auditoria-con-hallazgos-que-complican-al-central/">https://www.cronista.com/economia-politica/oro-del-bcra-la-agn-aprobo-una-auditoria-con-hallazgos-que-complican-al-central/</a>, Perfil <a href="https://www.perfil.com/politica/el-oro-argentino-esta-en-londres-y-el-pais-ya-no-tiene-custodia-fisica-de-los-lingotes-segun-auditoria-de-la-agn-aZBqT8U8aLA8">https://www.perfil.com/politica/el-oro-argentino-esta-en-londres-y-el-pais-ya-no-tiene-custodia-fisica-de-los-lingotes-segun-auditoria-de-la-agn-aZBqT8U8aLA8</a>, EFE <a href="https://efe.com/economia/2026-11-27/auditoria-envio-lingotes-de-oro-banco-central-argentino-inglaterra/">https://efe.com/economia/2026-11-27/auditoria-envio-lingotes-de-oro-banco-central-argentino-inglaterra/</a>, Infobae <a href="https://www.infobae.com/economia/2026/11/26/segun-la-agn-el-bcra-envio-1000-barras-de-oro-al-banco-de-inglaterra-y-fundio-115-lingotes/">https://www.infobae.com/economia/2026/11/26/segun-la-agn-el-bcra-envio-1000-barras-de-oro-al-banco-de-inglaterra-y-fundio-115-lingotes/</a>, Steve Hanke <a href="https://x.com/i/status/2126309075877048341">https://x.com/i/status/2126309075877048341</a>.</p>
+<h2 id="s6">Update: Section 301 tariffs — China&rsquo;s business council demands withdrawal and India says its US deal is nearly done</h2>
+<p>Chinese business groups, through the China Council for the Promotion of International Trade, urged the US to withdraw the proposed extra tariffs on China and 13 other economies (Xinhua, Chinese state media). The tariffs follow the US &ldquo;Section 301&rdquo; investigation into &ldquo;structural excess capacity&rdquo;. South Africa&rsquo;s foreign minister, Ronald Lamola, said: &ldquo;We have been very cordial. Unfortunately the aggression has been coming from the US.&rdquo; He kept the door open to more talks (Bloomberg). India&rsquo;s trade minister said the India–US trade deal is nearing completion (Reuters). An Al Jazeera analysis notes that the new tariffs hit China hardest, weeks before Trump and Xi meet again at the G20 summit in Miami. Reuters describes them as an attempt to &ldquo;prise global trade from China&rsquo;s grip&rdquo;. Global Times, a Chinese state outlet, ran an opinion piece arguing that the EU should move beyond &ldquo;deficit anxiety&rdquo; in its trade with China. Bloomberg reports that the US goods trade deficit widened in October for a fourth month in a row. The European Commission has still not responded.</p>
+<p><strong>Background (CEAFE archive):</strong> on 25 November the US Trade Representative said that &ldquo;with Section 301, President Trump is going country-by-country&rdquo; (https://x.com/i/status/2125669000369917960). The 25 November 20:30 edition covered the proposed 15% duty on all EU goods, and the 14:30 edition today reported that Japan, India and Vietnam were seeking their own way out.</p>
+<p><strong>Why it matters for Europe:</strong> each partner is again looking for its own way out. The EU is one of the 14 targets but has not answered. A Union of 27 that does not respond as a bloc invites separate deals and turns its members into clients.</p>
+<p><strong>What to watch:</strong> the Commission&rsquo;s response; the deadline for public comment on the Section 301 action; the G20 summit in Miami.</p>
+<p>Sources: Xinhua <a href="https://x.com/i/status/2126295651642482711">https://x.com/i/status/2126295651642482711</a>, Bloomberg (Lamola) <a href="https://x.com/i/status/2126296535361065439">https://x.com/i/status/2126296535361065439</a>, Reuters (India) <a href="https://x.com/i/status/2126311366717780216">https://x.com/i/status/2126311366717780216</a>, Al Jazeera <a href="https://x.com/i/status/2126312051551469731">https://x.com/i/status/2126312051551469731</a>, Reuters <a href="https://x.com/i/status/2126313844779933733">https://x.com/i/status/2126313844779933733</a>, Global Times <a href="https://x.com/i/status/2126338861760667840">https://x.com/i/status/2126338861760667840</a>, Bloomberg (US deficit) <a href="https://x.com/i/status/2126321426449703119">https://x.com/i/status/2126321426449703119</a>.</p>
+<h2 id="s7">The Commission clears Deutsche Börse&rsquo;s €5.3 billion takeover of Allfunds without conditions</h2>
+<p>The European Commission approved without conditions, on 27 November, Deutsche Börse&rsquo;s purchase of Allfunds, the fund-distribution platform founded in Madrid and listed in Amsterdam (Commission press release IP/26/2592; Deutsche Börse). The deal is worth about €5.3bn (Bloomberg). It still needs other supervisory approvals and the approval of an English court for the UK scheme of arrangement. Deutsche Börse expects to close it in the first quarter of 2027. Brussels Times notes that the approval came despite overlaps in some markets.</p>
+<p><strong>Why it matters for Europe:</strong> here a European buyer takes over a European financial-infrastructure firm, the opposite of the Tesla–EMAG case. Larger European capital-market players are part of the savings and investment union, which is meant to finance European industry and defence.</p>
+<p><strong>What to watch:</strong> the remaining approvals and closing in the first quarter of 2027.</p>
+<p>Sources: European Commission <a href="https://ec.europa.eu/commission/presscorner/api/files/document/print/it/ip_26_2592/IP_26_2592_EN.pdf">https://ec.europa.eu/commission/presscorner/api/files/document/print/it/ip_26_2592/IP_26_2592_EN.pdf</a>, Deutsche Börse <a href="https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Deutsche-B-rse-Group-Receives-Unconditional-Clearance-of-Allfunds-Acquisition-from-European-Commission--5789320">https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Deutsche-B-rse-Group-Receives-Unconditional-Clearance-of-Allfunds-Acquisition-from-European-Commission--5789320</a>, Bloomberg <a href="https://www.bloomberg.com/news/articles/2026-11-27/deutsche-boerse-s-5-3-billion-allfunds-deal-gets-eu-approval">https://www.bloomberg.com/news/articles/2026-11-27/deutsche-boerse-s-5-3-billion-allfunds-deal-gets-eu-approval</a>, Reuters <a href="https://x.com/i/status/2126362972620468384">https://x.com/i/status/2126362972620468384</a>.</p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

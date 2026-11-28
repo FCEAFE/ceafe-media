@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — jueves, 26 de noviembre de 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">jueves, 26 de noviembre de 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Actualidad / World</li>
+<li><strong>Periodo cubierto:</strong> desde las 20:00 aprox. del miércoles 25 de noviembre hasta las 07:30 aprox. del jueves 26 de noviembre (hora de Madrid): todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Actualidad de CEAFE, las publicaciones de @F_CEAFE y el archivo de CEAFE en X.</li>
+</ul>
+<h2 id="s1">Actualización: la mesa de paz — Kushner dice que Europa quedó fuera de Abu Dabi porque Putin la ve «provocadora» y llama a la guerra «una guerra por delegación en la que Europa financia y arma a Ucrania»</h2>
+<p><strong>Entradilla.</strong> En el pódcast MD MEETS de Mathias Döpfner, consejero delegado de Axel Springer, publicado el 25 de noviembre, el enviado estadounidense Jared Kushner afirmó: «Europa no fue incluida en Abu Dabi porque el presidente Putin ve muchas declaraciones provocadoras y muchas acciones provocadoras por parte de Europa». Describió la guerra como «en la práctica, una guerra por delegación en la que Europa financia y arma a Ucrania contra Rusia», y dijo que Putin «ha mostrado contención. Ha aceptado no usar armas nucleares» (Kyiv Post, Clash Report, dpa).</p>
+<p><strong>Contexto.</strong> Kushner explicó que Washington trabaja ahora con un grupo ampliado de ocho representantes europeos y de la OTAN (entre ellos Alemania, Reino Unido, Francia, Italia, Polonia y las instituciones de la UE) y que «no vamos a decidir nada sin el acuerdo de Europa y sin el acuerdo de Ucrania». Propuso canales permanentes de comunicación, líneas directas y mecanismos de desescalada entre Moscú y la OTAN; recordó que «la mayoría de las fronteras de Europa han cambiado con el tiempo», y espera el mayor canje de prisioneros de la guerra «muy pronto, antes» de las fiestas (Kyiv Post; Anadolu, agencia estatal turca). Esa misma tarde Trump y el secretario general de la OTAN, Mark Rutte, se reunieron en Mar-a-Lago; el comunicado de la Casa Blanca subraya «la importancia de que Rusia evite cualquier acción que, intencionadamente o no, amplíe la guerra», además de la guerra con Irán y el gasto en defensa (RTÉ). Versión rusa: TASS (agencia estatal rusa), en un post reposteado por @F_CEAFE, cita a Yulia Zhdánova, jefa de la delegación rusa en las negociaciones de Viena sobre seguridad militar: el rechazo de la Comisión Europea a las consultas bilaterales propuestas por Moscú sobre seguridad europea «demuestra que Bruselas no está dispuesta a rebajar la tensión».</p>
+<p><strong>Antecedentes (archivo de CEAFE):</strong> @F_CEAFE sigue el canal Witkoff–Kushner desde su llegada a Moscú (repost de Kirill Dmitriev, 5 sep. 2026: https://x.com/i/status/2096221861180833918). El 11 de noviembre de 2026 reposteó a Kushner afirmando que el que Europa identificara a una sola persona que hablara en su nombre sería «un logro mayor» que otros pasos de las negociaciones (https://x.com/i/status/2120598300671832248): el mismo tema de una Europa sin una sola voz en la mesa.</p>
+<p><strong>Comentario CEAFE:</strong> Mientras los europeos sigamos midiendo nuestro peso país por país, la comparación con Estados Unidos o China estará perdida de antemano.</p>
+<p><strong>Por qué importa a Europa:</strong> el enviado de Washington confirma que es Moscú quien decide si los europeos se sientan a la mesa, y que EE. UU. describe la guerra que paga Europa como la guerra por delegación de Europa. La UE es el mayor financiador de Ucrania, pero su silla depende del visto bueno de Putin y de la buena voluntad de Washington. El número de enviados nacionales en el «grupo de ocho» muestra el coste de no hablar con una sola voz: la Unión ya tiene un Alto Representante.</p>
+<p><strong>Qué vigilar:</strong> la respuesta del Consejo Europeo de hoy (pieza 2); la fecha y el tamaño del canje de prisioneros; si Rusia confirma la garantía nuclear que cita Kushner (no se encontró en fuentes del Kremlin ni de Exteriores al cierre).</p>
+<p><strong>Fuentes:</strong> Kyiv Post: https://www.kyivpost.com/post/91223 ; Clash Report: https://clashreport.com/world/articles/kushner-putin-nuclear-weapons-restraint-nk573kns11 ; reposts de @F_CEAFE de Kushner&rsquo;s clips (Clash Report, M. Simonyan): https://x.com/i/status/2125697236055281758 , https://x.com/i/status/2125720925303906587 ; Kushner en X: https://x.com/i/status/2125686466336489970 ; dpa: https://x.com/i/status/2125828649387499663 ; RTÉ sobre el comunicado Trump–Rutte: https://www.rte.ie/news/ukraine/2026/1126/1600710-trump-nato-ukraine/ ; aviso de la OTAN: https://www.nato.int/en/news-and-events/events/media-advisories/2026/11/24/nato-secretary-general-to-visit-the-united-states-of-america ; TASS vía @F_CEAFE: https://x.com/i/status/2125678724578218178</p>
+<h2 id="s2">El Consejo Europeo arranca con un préstamo de 45.000 millones para Ucrania dividido por una exención, y con una pelea presupuestaria que incluye un recorte del 30 % en defensa y espacio</h2>
+<p><strong>Entradilla.</strong> Los líderes de la UE se reúnen en Bruselas el 26 y 27 de noviembre con un préstamo propuesto de 45.000 millones de euros para financiar a Ucrania en 2027. Eslovaquia, Chequia, Hungría y Bulgaria se oponen a participar, sobre todo en el tramo militar de 25.000 millones; la Comisión les ha ofrecido quedar exentos de esa parte manteniendo el tramo civil de 20.000 millones, y el canciller Merz ha amenazado con bloquear el presupuesto 2028-2034 si no contribuyen los 27 (Euronews; France 24; EUalive).</p>
+<p><strong>Contexto.</strong> El comisario de Defensa, Andrius Kubilius, dijo ante el Comité Militar de la UE, a nivel de jefes de Estado Mayor, que el informe CARD 2026 «muestra que corremos el riesgo de no alcanzar nuestro objetivo estratégico de preparación en defensa para 2030», y trasladó la advertencia de la industria espacial: el recorte propuesto del 30 % en la partida de defensa y espacio del MFP «haría imposible cumplir las ambiciones espaciales de la UE» (@F_CEAFE lo reposteó). Marine Le Pen escribió que «no pagará 20.000 millones de euros de contribución neta a la Unión Europea» y que quiere bajarla a 6.000 millones, «el nivel aceptado por Jacques Chirac en el momento de la ampliación» (repost de @F_CEAFE). Según Euronews, los Estados miembros de la UE estudian nuevos impuestos europeos para financiar el próximo presupuesto.</p>
+<p><strong>Antecedentes (archivo de CEAFE):</strong> La pelea por la financiación no es nueva: en diciembre de 2025 @F_CEAFE reposteó a la representación de Suecia ante la UE y al primer ministro finlandés, Petteri Orpo, pidiendo un préstamo de reparaciones para Ucrania basado en los activos rusos congelados (https://x.com/i/status/1998190157556765179).</p>
+<p><strong>Comentario CEAFE:</strong> Si Europa quiere sentarse de igual a igual, tiene que sumar lo que hoy está fragmentado.</p>
+<p><strong>Por qué importa a Europa:</strong> la misma cumbre tiene que decidir si la Unión paga Ucrania como un solo actor o como una coalición con exenciones, y si recorta la partida de su propia defensa y de su espacio. Una exención en el tramo militar convertiría el esfuerzo común en un menú a la carta, mientras Washington y Moscú deciden la mesa sin la UE (pieza 1). Solo un presupuesto común da la escala que ningún Estado miembro de la UE tiene por sí solo.</p>
+<p><strong>Qué vigilar:</strong> las conclusiones sobre el préstamo y las exenciones; si se recupera la partida de defensa y espacio del MFP; las posiciones de Hungría y Eslovaquia; la cumbre de seguimiento de diciembre.</p>
+<p><strong>Fuentes:</strong> página de la reunión del Consejo Europeo: https://www.consilium.europa.eu/en/meetings/european-council/2026/11/26-27/ ; Euronews: https://www.euronews.com/2026/11/26/eu-budget-and-ukraine-aid-headed-for-collision-at-turbulent-summit ; France 24 en directo: https://www.france24.com/en/europe/20261126-live-eu-leaders-face-showdown-over-ukraine-funding-as-divisions-deepen ; EUalive: https://eualive.net/eu-tables-e45bn-ukraine-loan-as-slovakia-hungary-czechia-and-bulgaria-opt-out/ ; discurso de Kubilius: https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2586 ; Kubilius en X: https://x.com/i/status/2125700387936108785 ; reposts de @F_CEAFE de Kubilius and Le Pen: https://x.com/i/status/2125661996825907429 , https://x.com/i/status/2125763994220630043</p>
+<p><strong>Imágenes:</strong> imagen de los líderes de la UE en la página en directo de France 24 (https://pbs.twimg.com/news_img/2125828765762920449/BrAO08jM?format=jpg&amp;name=orig).</p>
+<h2 id="s3">Actualización: los aliados de la OTAN esperan que Washington aplace su decisión sobre la retirada de tropas de Europa; EE. UU. desactiva un escuadrón de Apache en Corea del Sur</h2>
+<p><strong>Entradilla.</strong> Los países de la OTAN esperan que EE. UU. aplace más allá de principios de diciembre, quizá a finales de mes o a después de Año Nuevo, su decisión final sobre la reducción de tropas en Europa, porque la Administración se centra en un acuerdo sobre Ucrania, según Bloomberg. Los aliados calculan ahora un recorte de unos 5.000 de los 80.000 militares estadounidenses en Europa, sobre todo en Alemania, mientras que el flanco oriental, en especial Polonia, ganaría tropas; el Pentágono dice que su revisión sigue en curso.</p>
+<p><strong>Contexto.</strong> Bloomberg añade que Washington «quiere usar sus bases en Europa para proyectar poder en Oriente Próximo y en otros lugares», y recuerda que el subsecretario Elbridge Colby dijo que EE. UU. «estará preparado para adaptarse en apoyo de esas negociaciones de paz» cuando se le preguntó si las exigencias rusas contarían en la revisión. En Asia, las fuerzas de EE. UU. en Corea confirmaron la desactivación de un escuadrón de helicópteros Apache en Corea del Sur (Yonhap), y el secretario de Defensa, Hegseth, podría visitar Japón el 8 de diciembre (The Japan Times), después de que Washington pidiera a Tokio triplicar sus pagos por las bases (edición de las 20:30).</p>
+<p><strong>Por qué importa a Europa:</strong> la postura de defensa de Europa vuelve a depender de una revisión estadounidense cuyo calendario va ligado a las conversaciones con Moscú, mientras las bases se mantienen porque sirven a la proyección de poder de EE. UU. Una presencia estadounidense menor llegará de todos modos; la cuestión es si Europa cubre el hueco con fuerzas e industria propias o se queda esperando.</p>
+<p><strong>Qué vigilar:</strong> el anuncio de Hegseth sobre la postura de fuerzas; las reacciones de Alemania y Polonia; si las exigencias rusas sobre despliegues de la OTAN aparecen en los textos de paz.</p>
+<p><strong>Fuentes:</strong> Bloomberg via Mint: https://www.livemint.com/politics/nato-allies-expect-us-to-delay-decision-on-troop-cuts-in-europe-11795637091706.html ; TASS en X (agencia estatal rusa): https://x.com/i/status/2125808970778485010 ; Yonhap: https://x.com/i/status/2125823275997835579 ; The Japan Times sobre Hegseth: https://x.com/i/status/2125798390726303850.</p>
+<h2 id="s4">Actualización: Sección 301 — Tokio protesta, Singapur está «muy decepcionado», Brasil denuncia presiones; Pekín no prevé represalias, y la UE sigue sin respuesta</h2>
+<p><strong>Entradilla.</strong> Japón protestó ante Washington por el gravamen propuesto del 15 % y por la acusación de exceso de capacidad (The Japan Times; Bloomberg). Singapur se declaró «muy decepcionado» y en desacuerdo con las conclusiones del USTR (CNA). Brasil expresó su indignación por los aranceles propuestos a sus aviones y su azúcar, que según su Gobierno buscan presionarle para cambiar las normas de pagos PIX y de comercio digital (Xinhua, medio estatal chino). China rechazó las acusaciones de sobrecapacidad, pero dio a entender que no tomará represalias contra aranceles que se mantengan dentro de los límites de la tregua comercial (Bloomberg).</p>
+<p><strong>Contexto.</strong> El 25 de noviembre el USTR calificó de «irrazonables» las prácticas de 14 economías, entre ellas la UE, y propuso un arancel del 15 % a todos los bienes de la UE (edición de las 20:30, pieza 1). Global Times (medio estatal chino) informó de que el MOFCOM celebró que la UE retirara a la empresa china Yusha Group de su lista vinculada a Rusia. El WSJ señaló que la nueva ronda arancelaria coincidió con un indicador clave de inflación en máximos de tres años.</p>
+<p><strong>Por qué importa a Europa:</strong> Tokio, Singapur y Brasilia respondieron en cuestión de horas; la línea de Bruselas sigue siendo «estudiar» las conclusiones y mantener el techo del 15 %. La contención de China es calculada, pero la respaldan contramedidas que ya ha usado. Una Unión que no responde como una sola invita a la siguiente ronda.</p>
+<p><strong>Qué vigilar:</strong> el Consejo de Asuntos Exteriores (Comercio) del 30 de noviembre; una posible declaración de la UE tras el Consejo Europeo; la posición formal del MOFCOM.</p>
+<p><strong>Fuentes:</strong> The Japan Times: https://www.japantimes.co.jp/business/2026/11/26/economy/japan-protests-trump-new-tariff/ ; CNA: https://www.channelnewsasia.com/singapore/singapore-us-tariffs-meti-trump-6583911 ; Xinhua sobre Brasil: https://x.com/i/status/2125799840248664078 ; Bloomberg sobre China: https://x.com/i/status/2125800493721010494 ; WSJ: https://x.com/i/status/2125825425381142929 ; comunicado del USTR: https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural ; repost de @F_CEAFE of USTR: https://x.com/i/status/2125669000369917960</p>
+<h2 id="s5">Los «USAID Files»: Washington publica 248 documentos internos sobre el trabajo de la agencia con medios y grandes tecnológicas, también en Ucrania y Rusia</h2>
+<p><strong>Entradilla.</strong> La web de USAID abre ahora con una página «USAID Files» que reúne 248 memorandos, correos, informes y vídeos internos sobre su trabajo contra la desinformación y sus contactos con Meta, YouTube y Google, publicados el 24 de noviembre «en aras de la transparencia y la rendición de cuentas» (The Boston Report). Un «Big Tech Engagement Action Plan» sin fecha proponía «listas de inclusión» privadas de medios independientes y organizaciones civiles rusas, gestionadas por ONG de confianza, para que las plataformas las favorecieran en búsquedas, recomendaciones y publicidad; el Departamento de Estado se había opuesto por motivos de libertad de expresión (Reclaim The Net; The Boston Report).</p>
+<p><strong>Contexto.</strong> Los documentos mezclan borradores, propuestas y memorandos definitivos, y no muestran si las empresas adoptaron esas listas (The Boston Report). Un recuento de un medio griego cifra en más de 267 millones de dólares la financiación de medios relacionada con Ucrania, advirtiendo que mezcla subvenciones aprobadas y presupuestos en borrador (ELTV, sin verificar). @F_CEAFE reposteó esa misma tarde ocho posts sobre los archivos, que presentan USAID como un instrumento de influencia sobre los medios en Ucrania, Rusia y Europa. La página de usaid.gov no se abrió para esta edición.</p>
+<p><strong>Por qué importa a Europa:</strong> se piense lo que se piense de esos programas, los archivos muestran a un Gobierno extranjero planificando cómo ordenan las plataformas las noticias que ven europeos y ucranianos. La soberanía informativa forma parte de la soberanía: el pluralismo de los medios europeos no debería depender de decisiones tomadas en Washington, por esta Administración o por la siguiente.</p>
+<p><strong>Qué vigilar:</strong> declaraciones oficiales del Departamento de Estado o de USAID sobre la publicación; reacciones europeas; las afirmaciones sobre medios europeos concretos, que hay que verificar documento a documento.</p>
+<p><strong>Fuentes:</strong> The Boston Report: https://thebostonreport.com/2026/11/24/usaid-files-disinformation-meta-youtube-google/ ; Reclaim The Net: https://reclaimthenet.org/usaid-files-the-inclusion-list-the-state-department-opposed ; ELTV: https://eltvnews.com/en/news/ekatommyria-dolaria-se-mesa-enimerosis-mi-kerdoskopikoys-organismoys-kai-influencers-ti-deichnoyn-ta-archeia-tis-usaid/ ; repost de @F_CEAFEs: https://x.com/i/status/2125675503566647414 , https://x.com/i/status/2125675762174845055 , https://x.com/i/status/2125764255190544702</p>
+<h2 id="s6">Asia: Kim pide más armas nucleares tras rechazar reunirse con Trump; Japón desplegará misiles hipersónicos Type-25 en Hokkaido</h2>
+<p><strong>Entradilla.</strong> El líder norcoreano Kim Jong Un, en una visita a instalaciones nucleares, inspeccionó ojivas y una planta de material fisible y pidió ampliar el despliegue de armas nucleares tácticas, según KCNA (medio estatal norcoreano), días después de rechazar la oferta de Trump de reunirse en China (Reuters, Al Jazeera, Politico). TASS (agencia estatal rusa), citando a la NHK, informó de que el Ministerio de Defensa japonés prevé desplegar a principios de diciembre sistemas de misiles Type-25 con planeadores hipersónicos en Hokkaido, la isla más cercana a Rusia (repost de @F_CEAFE).</p>
+<p><strong>Contexto.</strong> El Ministerio de Defensa de Taiwán detectó 2 salidas de aviones del EPL y 6 buques de su Armada en torno a la isla hasta las 06:00 hora local. China instó a Japón, en la conferencia de la Convención sobre Armas Químicas en La Haya, a acelerar la destrucción de las armas químicas abandonadas en China (Xinhua, medio estatal chino).</p>
+<p><strong>Por qué importa a Europa:</strong> la carrera de armamentos en el Indo-Pacífico, nuclear y convencional, se acelera mientras la atención y las fuerzas de EE. UU. se reparten (pieza 4). Europa tiene socios en Asia, pero ningún peso en esas ecuaciones si no actúa unida.</p>
+<p><strong>Qué vigilar:</strong> las próximas declaraciones de KCNA; cualquier reacción rusa al despliegue en Hokkaido; la posible visita de Hegseth a Japón el 8 de diciembre.</p>
+<p><strong>Fuentes:</strong> Reuters en X: https://x.com/i/status/2125816894917640344 ; Al Jazeera: https://x.com/i/status/2125794171340624270 ; Politico: https://x.com/i/status/2125768045742153852 ; TASS vía @F_CEAFE: https://x.com/i/status/2125663708038787479 ; Taiwan MND: https://x.com/i/status/2125756427130302732 ; Xinhua: https://x.com/i/status/2125772569546764319</p>
+<h2 id="s7">Israel: el tribunal recomienda retirar la causa más grave contra Netanyahu; Israel suma 5.000 millones de dólares a su presupuesto de defensa</h2>
+<p><strong>Entradilla.</strong> Los jueces del juicio por corrupción contra Netanyahu recomendaron a la Fiscalía retirar el Caso 4000, reconsiderar el Caso 2000 y buscar un acuerdo en el Caso 1000; la fiscal general, Gali Baharav-Miara, dijo que estudiará las recomendaciones (Times of Israel; Jerusalem Post; i24NEWS). Netanyahu escribió en X: «Hoy se ha caído el juicio» (traducción del CEAFE del hebreo). El editorial de Haaretz pidió a la fiscal general que se niegue («los jueces eligieron la salida fácil»; Haaretz suele estar tras muro de pago, solo titular).</p>
+<p><strong>Contexto.</strong> Breaking Defense informó de que Israel aumenta su presupuesto de defensa en 5.000 millones de dólares ante la incertidumbre sobre la financiación futura (repost de @F_CEAFE). En Gaza, Al Jazeera informó de al menos 16 palestinos muertos en ataques israelíes en 24 horas; el ejército israelí dijo haber atacado a un alto mando de Hamás. Exteriores de Israel afirmó que 65.000 tiendas aprobadas para Gaza siguen sin ser repartidas por la ONU.</p>
+<p><strong>Por qué importa a Europa:</strong> un Netanyahu reforzado, con más presupuesto de defensa, afronta el debate de la Knéset sobre una comisión de investigación (sus propios reposts aluden a la votación). Los Gobiernos europeos que compran sistemas de armas israelíes deberían tener presente que cada compra son empleos, I+D y control que pierde la industria europea.</p>
+<p><strong>Qué vigilar:</strong> la decisión de la fiscal general; la votación de la Knéset sobre la comisión de investigación; las conversaciones sobre la ayuda de EE. UU.</p>
+<p><strong>Fuentes:</strong> Times of Israel: https://www.timesofisrael.com/liveblog_entry/court-recommends-dropping-or-reconsidering-2-out-of-3-cases-against-netanyahu-in-severe-blow-to-prosecution/ ; Jerusalem Post: https://www.jpost.com/israel-news/crime-in-israel/article-916054 ; i24NEWS: https://www.i24news.tv/en/news/israel/politics/artc-judges-in-netanyahu-trial-to-ag-we-recommend-dropping-case-4000-re-examining-case-2000 ; Haaretz en X: https://x.com/i/status/2125828186315325496 ; Breaking Defense vía @F_CEAFE: https://x.com/i/status/2125666882531533074 ; Al Jazeera: https://x.com/i/status/2125797946109132801</p>
+<h2 id="s8">Breves</h2>
+<ul>
+<li><strong>Estonia y Letonia, en desacuerdo sobre la frontera:</strong> el primer ministro estonio, Kristen Michal, dijo que cerrar el paso ferroviario de Narva con Rusia «podría ser el siguiente paso» tras los cierres de carreteras; el primer ministro letón, Andris Kulbergs, dijo que Estonia «se precipitó» y que Letonia decidirá el jueves sobre sus propios pasos (ERR). @F_CEAFE reposteó críticas a un bloqueo ferroviario. https://news.err.ee/1610205202/estonian-pm-closing-rail-border-crossing-with-russia-could-be-next-step ; https://news.err.ee/1610206156/latvian-pm-estonia-rushed-to-close-its-border-with-russia ; https://x.com/i/status/2125697613056131380</li>
+<li><strong>Armas químicas:</strong> más de 30 países pidieron a Rusia que deje de usar sustancias tóxicas y agentes antidisturbios como método de guerra en Ucrania (Kyiv Independent); el SEAE reiteró su apoyo a la OPAQ. https://x.com/i/status/2125777287249383623</li>
+<li><strong>UE–Balcanes Occidentales:</strong> el Consejo publicó la Declaración de Bruselas del 25 de noviembre; Von der Leyen dijo que la UE va camino de «abrir y cerrar más de 100 capítulos» este año. https://www.consilium.europa.eu/en/press/press-releases/2026/11/25/brussels-declaration-25-november-2026/</li>
+<li><strong>Ataques hutíes contra Arabia Saudí:</strong> Canadá «condena enérgicamente» los ataques contra el distrito financiero Rey Abdalá de Riad y la Presidencia turca condenó el ataque; el jefe del CENTCOM emitió un comunicado (véase Conflictos). https://x.com/i/status/2125765557593231751</li>
+<li><strong>Venezuela:</strong> el Departamento de Estado dijo que la Administración «sigue comprometida con este proceso liderado por los venezolanos» dentro del plan en tres fases de Trump y Rubio. https://x.com/i/status/2125708863660060937</li>
+<li><strong>China:</strong> el Ministerio de Seguridad del Estado reveló tres casos de espionaje de agentes extranjeros (Global Times, medio estatal chino); el portavoz de la guardia costera filipina, Jay Tarriela, rebatió la versión de la embajada china sobre un incidente marítimo.</li>
+<li><strong>Ucrania y Noruega:</strong> el Ministerio de Defensa ucraniano dijo que ambos países preparan un mecanismo para que el Estado noruego participe en fondos que invierten en Ucrania.</li>
+</ul>
+<h2 id="s9">También en esta edición</h2>
+<ul>
+<li>FCC: un millón de satélites de SpaceX y límites «recíprocos» a operadores extranjeros — ver Industria de Defensa</li>
+<li>Reacciones a la Sección 301 — tratadas aquí (Actualidad)</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMÍA — viernes, 27 de noviembre de 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMÍA</h1>
+      <p class="list-date">viernes, 27 de noviembre de 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Economía / Economy</li>
+<li><strong>Periodo cubierto:</strong> desde las 19:00 aproximadamente del jueves 26 de noviembre hasta las 07:20 del viernes 27 de noviembre, hora de Madrid: todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Economía de CEAFE, las publicaciones de @F_CEAFE y el archivo de X de CEAFE.</li>
+</ul>
+<h2 id="s1">Actualización: Imperial Brands — Japan Tobacco se dispara en bolsa ante una posible oferta conjunta con Altria para trocearla</h2>
+<p>Las acciones de Japan Tobacco subieron un 4,1%, hasta 5.754 yenes, el viernes en Tokio y ganaban en torno al 4,6% (5.779 yenes) en la pausa de mediodía, después de que Bloomberg informara de que JT y Altria estudian una oferta conjunta en efectivo por Imperial Brands (Investing.com; Minkabu). La idea es comprar Imperial y repartirse sus activos por regiones. JT no quiso comentar. Imperial dice que no ha recibido ningún acercamiento, pero que estudiaría cualquier propuesta (CNA/Reuters). Según los analistas, JT se quedaría con las marcas estadounidenses de Imperial para convertirse en el «tercer competidor en EE. UU.» (Jefferies) y podría sumar los negocios de África y Oriente Medio. Eso compensaría los ingresos perdidos tras la orden de Putin de incautar sus activos en Rusia este mes; JT prevé una pérdida de 8.700 millones de dólares por esa incautación (Investing.com). Para Altria supondría volver a vender cigarrillos fuera de EE. UU., dos décadas después de escindir Philip Morris International.</p>
+<p><strong>Por qué importa a Europa:</strong> una pinza estadounidense y japonesa sobre uno de los últimos grandes grupos tabaqueros europeos (Davidoff, Gauloises, West). El tabaco queda fuera de la lista de CEAFE de compras estadounidenses de empresas estratégicas, así que no se actualiza el registro. El Estado japonés posee el 37,6% de JT (CNA).</p>
+<p><strong>Datos clave</strong></p>
+<ul>
+<li>Valor de Imperial: unos 25.900 millones de libras (34.000 millones de dólares) (CNA); sería la mayor operación del sector desde BAT–Reynolds (60.000 millones de dólares, 2016).</li>
+<li>Caja de JT: 887.300 millones de yenes (5.600 millones de dólares) a finales de septiembre; podría reemitir acciones propias por unos 7.400 millones de dólares (BTIG).</li>
+<li>Plazo británico para que Altria presente oferta firme o se retire: 24 de diciembre.</li>
+</ul>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li>Reuters (X): https://x.com/i/status/2126156656132153576 ; Bloomberg (X): https://x.com/i/status/2126132681993748839</li>
+<li>CNA (Reuters): https://www.channelnewsasia.com/business/japan-tobacco-shares-surge-talk-it-may-acquire-part-imperial-6586256</li>
+<li>Investing.com vía Yahoo Finance: https://finance.yahoo.com/markets/stocks/articles/japan-tobacco-shares-surge-report-025249524.html</li>
+<li>Minkabu (cotización de JT, 11:30 hora de Japón): https://minkabu.jp/stock/2914/chart</li>
+</ul>
+<p><strong>Seguimiento:</strong> confirmación de quién es el tercero; respuesta del consejo de Imperial; reacción del Gobierno británico.</p>
+<h2 id="s2">SAP prepara al menos 10.000 despidos para reorientarse a la IA; Stellantis planea más paradas de fábricas</h2>
+<p>SAP prepara un plan para suprimir al menos 10.000 puestos, como mínimo el 9% de su plantilla mundial, para reconstruir su negocio de software en torno a la IA, según informó Bloomberg el 26 de noviembre citando fuentes conocedoras. La cifra no es definitiva y puede cambiar tras la negociación con los representantes de los trabajadores. Producto e ingeniería, y ventas, son las áreas más afectadas. SAP se limitó a decir que «revisa continuamente su organización para asegurarse de que sigue alineada con su estrategia y las necesidades de sus clientes» (Bloomberg; Irish Examiner). SAP emplea a más de 110.000 personas. En Alemania, el comité de empresa ha negociado una garantía de empleo hasta 2028. Su última reestructuración, anunciada en 2024, suprimió unos 10.000 puestos y costó unos 3.000 millones de euros (Irish Examiner; Calcalist). Esa misma tarde, Bloomberg informó de que Stellantis planea nuevas paradas de fábricas en Europa en las próximas semanas, y Reuters citó al fabricante diciendo que mantener la producción en Italia es un «desafío diario» por el aumento de costes (publicaciones reposteadas por @F_CEAFE; artículos completos no comprobados).</p>
+<p><strong>Por qué importa a Europa:</strong> la tecnológica más valiosa de Europa y uno de sus mayores fabricantes de coches recortan capacidad europea en la misma semana. Se suma a los despidos de Renault ya recogidos en los informes. La reestructuración de SAP por la IA muestra que el campeón europeo del software también sufre presión de costes por parte de las plataformas de IA estadounidenses.</p>
+<p><strong>Datos clave</strong></p>
+<ul>
+<li>SAP: ≥10.000 puestos, ≥9% de la plantilla; 111.397 empleados a finales de 2025; contrataciones congeladas desde julio salvo en IA (Calcalist).</li>
+<li>SAP suele anunciar sus reestructuraciones con los resultados anuales, a finales de enero.</li>
+<li>Stellantis: nuevas paradas en Europa (Bloomberg); costes al alza en Italia (Reuters).</li>
+</ul>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li>Reposteos de @F_CEAFE: FT sobre SAP https://x.com/i/status/2126034731561082983 ; Bloomberg sobre Stellantis https://x.com/i/status/2126031400126087206 ; Reuters sobre Stellantis en Italia https://x.com/i/status/2126031094139265210</li>
+<li>Reuters Tech (X): https://x.com/i/status/2126030776076480760</li>
+<li>Bloomberg: https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring</li>
+<li>Irish Examiner: https://www.irishexaminer.com/business/companies/arid-41943054.html</li>
+<li>Calcalist (Ctech): https://www.calcalistech.com/ctechnews/article/al8iwkfjx</li>
+</ul>
+<p><strong>Seguimiento:</strong> resultados de SAP en enero; respuesta del comité de empresa alemán; lista de plantas de Stellantis afectadas.</p>
+<h2 id="s3">Actualización: otros dos petroleros chocan con minas cerca de Ormuz, atacan una refinería saudí y el Brent sigue cerca de 96 dólares; Turquía prorroga hasta 2032 el gas iraní</h2>
+<p>La Guardia Revolucionaria iraní afirma que dos petroleros chocaron con minas y se incendiaron al norte del puerto omaní de Jasab cuando usaban una ruta «no autorizada»; uno era un superpetrolero con más de 2 millones de barriles (Arab News; IRNA). Por otra parte, un ataque contra la refinería saudí de Jazán paralizó temporalmente parte de sus operaciones y mató a un trabajador (Bloomberg). El Brent cerró el 26 de noviembre en torno a 96,57 dólares y cotizaba hacia 96,2 el viernes por la mañana, camino de romper tres semanas de caídas (Yahoo Finance; CNBC; Reuters). La OPEP+ se reúne el domingo y probablemente mantendrá sus objetivos de producción al menos durante el primer trimestre de 2027, en medio de disputas sobre la evaluación de la capacidad de cada miembro (Reuters vía Kitco). Turquía ha prorrogado cinco años su contrato de importación de gas iraní, a 10.000 millones de metros cúbicos anuales, sin cambios de volumen ni de fórmula de precio; la licencia de importación de BOTAŞ vence ahora el 18 de abril de 2032 (prensa turca; carci.news). El Parlamento australiano aprobó un sistema de reserva de gas que obliga a los exportadores de GNL a destinar hasta el 20% de su producción al mercado interno a partir de 2028 (Reuters).</p>
+<p><strong>Por qué importa a Europa:</strong> con las reservas de gas de la UE ya bajas, una prima de riesgo en el Golfo que no desaparece, una Turquía que asegura gas iraní y una Australia que reserva GNL para consumo propio, se reduce la oferta por la que compite Europa. @F_CEAFE reposteó la prórroga entre Irán y Turquía.</p>
+<p><strong>Datos clave</strong></p>
+<ul>
+<li>Brent: cierre ~96,6 dólares (26 nov.); WTI ~84,8 (Yahoo Finance).</li>
+<li>Irán–Turquía: 10.000 millones de m³ al año, prorrogado tras expirar en julio el contrato de 25 años.</li>
+<li>Australia: reserva interna de hasta el 20% desde 2028.</li>
+</ul>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li>Al Jazeera English (X): https://x.com/i/status/2126101670136254740 ; Bloomberg (X, Jazán): https://x.com/i/status/2126072287405183481 ; Reuters (X, petróleo): https://x.com/i/status/2126186825983152146 ; Reuters (X, OPEP+): https://x.com/i/status/2126067252050919780 ; Reuters (X, Australia): https://x.com/i/status/2126140230507888665</li>
+<li>Reposteo de @F_CEAFE (gas Irán–Turquía): https://x.com/i/status/2126080338744967674</li>
+<li>Arab News: https://www.arabnews.com/middle-east/irans-revolutionary-guards-say-two-oil-tankers-hit-sea-mines-near-omans-khasab-3014111</li>
+<li>CNBC: https://www.cnbc.com/2026/11/27/brent-oil-wti-hormuz-middle-east.html ; Yahoo Finance: https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html</li>
+<li>Kitco (Reuters, OPEP+): https://www.kitco.com/news/off-the-wire/2026-11-26/opec-likely-roll-over-oil-output-targets-q1-capacity-disputes-persist</li>
+<li>Irán–Turquía: https://carci.news/en/turkey-iran-gas-deal-extended/ ; https://www.sondakika.com/ekonomi/haber-turkiye-iran-la-gaz-anlasmasini-5-yil-uzatti-botas-20456037/</li>
+</ul>
+<p><strong>Seguimiento:</strong> decisión de la OPEP+ el domingo 30; reacción del TTF; respuesta de EE. UU. o la UE a los ataques con minas.</p>
+<h2 id="s4">Los beneficios industriales de China suben un 16% entre enero y octubre y se duplican en electrónica por la IA; los fabricantes de coches caen un 26%</h2>
+<p>La Oficina Nacional de Estadística de China informó el 27 de noviembre de que los beneficios de las empresas industriales de cierto tamaño crecieron un 16,0% interanual entre enero y octubre, hasta 6,737 billones de yuanes (cerca de 1 billón de dólares), frente al 15,5% acumulado hasta septiembre. Solo en octubre subieron un 20,1% (NBS). Los beneficios de la electrónica se duplicaron y aportaron 9,7 puntos al crecimiento, impulsados por la demanda de capacidad de cálculo para IA en chips de memoria. Los de la manufactura de alta tecnología subieron un 50,9%, y los de la fabricación de fibra óptica se multiplicaron por 6,7 con la construcción de centros de datos (Xinhua). Los metales no ferrosos subieron un 71,7% y la minería del carbón un 61,4%. Los fabricantes de automóviles cayeron un 26,0%, la maquinaria eléctrica un 8,0% y el sector eléctrico un 18,4% (NBS). Los beneficios de las empresas con capital extranjero solo crecieron un 0,2%. La EIU advierte de que la recuperación «aún no se ha traducido en una mejora más duradera de la rentabilidad empresarial» (CNBC).</p>
+<p><strong>Por qué importa a Europa:</strong> la recuperación de beneficios en China se concentra en el hardware para IA y en materias primas, donde Europa depende del suministro chino, mientras los beneficios de los fabricantes chinos de coches se desploman. Esa es la presión que hay detrás de las exportaciones de coches chinos más baratos a Europa y de la disputa por la «sobrecapacidad».</p>
+<p><strong>Datos clave</strong></p>
+<ul>
+<li>Minería +38,8%, manufacturas +17,5%, suministros (electricidad, gas y agua) −14,8% (NBS).</li>
+<li>Margen de beneficio del 5,69%, +0,45 puntos; existencias de productos terminados +12,0% (NBS).</li>
+<li>Empresas estatales +13,0%; privadas +11,4%; con capital extranjero +0,2%.</li>
+</ul>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li>Global Times [medio estatal chino] (X): https://x.com/i/status/2126182143785353670</li>
+<li>NBS (en chino): https://www.stats.gov.cn/sj/zxfb/202611/t20261127_1965949.html</li>
+<li>Xinhua [medio estatal chino] (en chino): http://www.news.cn/20261127/c4f645b02de245ab9535f5892733bf7b/c.html</li>
+<li>CNBC: https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html</li>
+</ul>
+<p><strong>Seguimiento:</strong> índices PMI de noviembre (30 nov.); datos de exportación.</p>
+<h2 id="s5">Actualización: Sección 301 — Embraer y Brasil combaten un nuevo arancel estadounidense del 10% a los aviones; Pekín llama a la «sobrecapacidad» un pretexto falso</h2>
+<p>El USTR propuso el 25 de noviembre eliminar la exención de los aviones terminados en su medida de la Sección 301 contra Brasil e imponerles un arancel adicional del 10%, además de subir el arancel al azúcar fuera de cuota; la audiencia pública será el 14 de enero de 2027 (USTR). Embraer dijo que la medida la «pilló por sorpresa» y advirtió de que encarecería los costes de las aerolíneas estadounidenses y los billetes. Su E175, el avión más utilizado en EE. UU., no tiene competidor fabricado en EE. UU. y lleva más de un 40% de componentes estadounidenses. El vicepresidente brasileño, Geraldo Alckmin, calificó la propuesta de «completamente irrazonable» (Reuters vía StreetInsider). En la rueda de prensa del 26 de noviembre, el portavoz del Ministerio de Asuntos Exteriores chino, Guo Jiakun, rechazó la escalada arancelaria de EE. UU. y calificó la «sobrecapacidad industrial» de pretexto falso (Ministerio de Asuntos Exteriores).</p>
+<p><strong>Por qué importa a Europa:</strong> el arancel del 10% a los aviones rompe el régimen aeroespacial de arancel cero vigente desde los años ochenta, el mismo que protege a Airbus. Si Washington empieza a gravar aviones de pasajeros extranjeros, la tregua aeronáutica UE–EE. UU. es la siguiente en la lista.</p>
+<p><strong>Datos clave</strong></p>
+<ul>
+<li>Brasil ya sufre desde julio de 2026 un arancel del 25% de la Sección 301 sobre ciertos productos; los aviones son su cuarta exportación a EE. UU. (USTR).</li>
+<li>Embraer: 3.500 millones de dólares en activos y más de 2.500 empleados en EE. UU.; sin impacto en las entregas de 2026.</li>
+</ul>
+<p><strong>Fuentes</strong></p>
+<ul>
+<li>Reuters (X): https://x.com/i/status/2126103750955630900 ; Japan Times (X): https://x.com/i/status/2126140063465791688</li>
+<li>USTR: https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-invites-public-comment-proposed-modifications-section-301-action-regarding-brazils-unreasonable</li>
+<li>Reuters (reproducción): https://www.streetinsider.com/Reuters/Brazils+Embraer+criticizes+new+US+tariffs%2C+warns+of+air+travel+inflation/27404667.html</li>
+<li>Valor International: https://valorinternational.globo.com/business/news/2026/11/26/embraer-vows-to-defend-zero-tariff-regime-for-aerospace-industry.ghtml</li>
+<li>Transcripción del Ministerio de Asuntos Exteriores chino (26 nov.): https://www.mfa.gov.cn/mfa_eng/xw/fyrbt/202611/t20261126_12067809.html</li>
+</ul>
+<p><strong>Seguimiento:</strong> postura de Airbus y de la UE sobre el arancel a los aviones; plazos de comentarios del USTR.</p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Economía. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

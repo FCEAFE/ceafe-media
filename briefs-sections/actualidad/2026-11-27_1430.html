@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Friday, 27 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Friday, 27 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> from about 07:00 to about 12:55 on Friday 27 November, Europe/Madrid: everything new since the 08:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">Update: after the budget-summit walkout, Costa prepares deeper cuts and leaders give themselves until 17 December</h2>
+<p>POLITICO Europe reports that the &ldquo;Sensible Seven&rdquo; governments demanding a smaller 2028–2034 budget walked out of António Costa&rsquo;s small-group sessions on Thursday night; Denmark, Sweden, Belgium and Austria are named, and Austria said in a statement that &ldquo;further sessions would not bring us closer to a solution&rdquo;. According to two EU diplomats quoted by POLITICO, Costa told leaders he will table a new proposal with a further €220–230 billion of cuts to the Commission&rsquo;s draft of about €2 trillion (he had already proposed €204 billion), falling mainly on competitiveness and foreign aid rather than cohesion and farming. Macron called the cuts &ldquo;a strategic mistake&rdquo; and said dragging talks into 2027 &ldquo;is not democratically possible&rdquo; before France&rsquo;s April election. Italy&rsquo;s Meloni said &ldquo;I will not sign under these conditions&rdquo; (Anadolu). Merz said Germany pays &ldquo;around a quarter of the European budget&rdquo; but receives &ldquo;only around 8% … directly in return&rdquo;. On Friday von der Leyen said she was &ldquo;pleased&rdquo; at &ldquo;wide support&rdquo; for the proposed loan for Ukraine (Reuters). Talks resume at the European Council of 17 December.</p>
+<p><strong>Background (CEAFE archive):</strong> this follows the collapse of the special summit reported in the 08:30 edition. Two days earlier, on 25 November, EU Commissioner Andrius Kubilius warned that the European space industry considered a 30% cut to the MFF defence and space line would make its plans impossible (https://x.com/i/status/2125661996825907429).</p>
+<p><strong>Why it matters for Europe:</strong> the cuts Costa is now pointing to fall on competitiveness, the heading that carries defence-industrial and research money. A Union that trims its common budget while each capital buys alone cannot build the capabilities that no member state can afford by itself.</p>
+<p><strong>What to watch:</strong> Costa&rsquo;s new &ldquo;negotiating box&rdquo;; the 17 December European Council; whether Ukraine&rsquo;s 2027 financing is decoupled from the budget.</p>
+<p>Sources: POLITICO Europe <a href="https://www.politico.eu/article/eu-budget-summit-walkout-antonio-costa-leaves-one-month-negotiations-drama/">https://www.politico.eu/article/eu-budget-summit-walkout-antonio-costa-leaves-one-month-negotiations-drama/</a> (post <a href="https://x.com/i/status/2126254874006327807">https://x.com/i/status/2126254874006327807</a>), Anadolu <a href="http://v.aa.com.tr/4140092">http://v.aa.com.tr/4140092</a>, France 24 <a href="https://x.com/i/status/2126240006754705723">https://x.com/i/status/2126240006754705723</a>, Reuters (von der Leyen) <a href="https://x.com/i/status/2126248505815519440">https://x.com/i/status/2126248505815519440</a>, @clashreport (Merz) <a href="https://x.com/i/status/2126210837593338008">https://x.com/i/status/2126210837593338008</a>, @SMuresan <a href="https://x.com/i/status/2126249207728308603">https://x.com/i/status/2126249207728308603</a>, @KubiliusA <a href="https://x.com/i/status/2125661996825907429">https://x.com/i/status/2125661996825907429</a>.</p>
+<p><strong>CEAFE:</strong> Europe has resources; what it lacks, time and again, is the scale that only joint action can provide.</p>
+<h2 id="s2">Germany and Austria want TikTok&rsquo;s European business under European ownership</h2>
+<p>Germany and Austria called on Thursday for &ldquo;a European ownership structure for TikTok&rsquo;s European business and European responsibility for the key technological infrastructure — from the recommendation algorithm to data access&rdquo;, Euronews and AFP report. German culture and media minister Wolfram Weimer said the Chinese-owned platform poses &ldquo;fundamental security policy risks for Europe&rdquo;; Austrian digital state secretary Alexander Pröll said TikTok &ldquo;must not remain in the hands of a geopolitical systemic rival&rdquo;. The two will seek EU-wide support at the Telecommunications Council in Brussels on 2 December. The Commission preliminarily found TikTok in breach of the Digital Services Act on 6 November. TikTok said the proposal had &ldquo;zero merit&rdquo;, citing its €12 billion &ldquo;Project Clover&rdquo; data programme.</p>
+<p><strong>Background (CEAFE archive):</strong> ByteDance ceded control of TikTok&rsquo;s US operations in January to a majority American-owned joint venture after a threatened US ban. CEAFE has followed the US pressure on TikTok since July 2020, when Washington weighed a ban and Microsoft held talks to buy the US business (https://x.com/i/status/1290245943498018816).</p>
+<p><strong>Why it matters for Europe:</strong> the aim is control over strategic digital infrastructure, not regulation alone. The same reasoning applies to US platforms and cloud providers that hold European data under US law (CLOUD Act), a test of whether the principle is applied symmetrically.</p>
+<p><strong>What to watch:</strong> the 2 December Telecommunications Council; China&rsquo;s reaction (MOFCOM/MFA); whether other member states join.</p>
+<p>Sources: Euronews/AFP <a href="https://l.euronews.com/5D6Z">https://l.euronews.com/5D6Z</a> (post <a href="https://x.com/i/status/2126249853563109866">https://x.com/i/status/2126249853563109866</a>), EU Council (TTE background) <a href="https://x.com/i/status/2126280514738769960">https://x.com/i/status/2126280514738769960</a>, @WSJ (2020) <a href="https://x.com/i/status/1290245943498018816">https://x.com/i/status/1290245943498018816</a>.</p>
+<p><strong>CEAFE:</strong> Here is another example of why Europeans need to act together.</p>
+<h2 id="s3">Turkey completes ratification of the Mecca joint-defence pact with Saudi Arabia and Pakistan</h2>
+<p>Erdoğan signed Presidential Decision No. 12017 on 26 November, published in the Official Gazette on 27 November, completing Turkey&rsquo;s ratification of the &ldquo;Mecca Agreement for Joint Defense&rdquo; with Pakistan and Saudi Arabia, signed on 7 August. Article 2 states that &ldquo;any external armed attack on any of the Parties will be considered an attack against all&rdquo;; the text also covers logistic support (arms, ammunition, fuel), joint exercises and deployments, defence co-production and intelligence sharing. The Turkish parliament approved it by 279 votes to 119 (AP).</p>
+<p><strong>Background (CEAFE archive):</strong> in May 2026 CEAFE shared the SCMP&rsquo;s analysis of whether the Saudi–Pakistani defence pact would give Chinese arms risk-free exposure (https://x.com/i/status/2051735435005542791). The 08:30 edition covered Turkey&rsquo;s extension of its Iranian gas contract to 2032.</p>
+<p><strong>Why it matters for Europe:</strong> a NATO member and EU candidate is building a collective-defence commitment outside NATO, in the Gulf, during the war with Iran. Middle powers act on their own interests; Europe, which has more weight together, still struggles to agree on a common budget.</p>
+<p><strong>What to watch:</strong> deposit of the last ratification and entry into force; trilateral talks in Islamabad, with Houthi attacks on Saudi Arabia on the agenda (Türkiye Today).</p>
+<p>Sources: Türkiye Today <a href="https://www.turkiyetoday.com/nation/president-erdogan-signs-off-on-mecca-defense-pact-sealing-turkiyes-ratification-3233295">https://www.turkiyetoday.com/nation/president-erdogan-signs-off-on-mecca-defense-pact-sealing-turkiyes-ratification-3233295</a>, Official Gazette text (Lexpera) <a href="https://www.lexpera.com.tr/resmi-gazete/metin/turkiye-cumhuriyeti-pakistan-islam-cumhuriyeti-ve-suudi-arabistan-kralligi-arasinda-ortak-savunma-2">https://www.lexpera.com.tr/resmi-gazete/metin/turkiye-cumhuriyeti-pakistan-islam-cumhuriyeti-ve-suudi-arabistan-kralligi-arasinda-ortak-savunma-2</a>, AP <a href="https://apnews.com/article/pakistan-saudi-turkey-meeting-trilateral-alliance-6c17e4827e5aef3e69f78cdb01d597dc">https://apnews.com/article/pakistan-saudi-turkey-meeting-trilateral-alliance-6c17e4827e5aef3e69f78cdb01d597dc</a>, Reuters <a href="https://x.com/i/status/2126242158550118469">https://x.com/i/status/2126242158550118469</a>, SCMP <a href="https://x.com/i/status/2051735435005542791">https://x.com/i/status/2051735435005542791</a>.</p>
+<p><strong>CEAFE:</strong> The conclusion is the same once again: either Europe acts as one, or each country is left in a supporting role.</p>
+<h2 id="s4">Spain votes on Sunday: Sánchez frames the snap election as a choice on sovereignty and foreign policy</h2>
+<p>Spain holds a snap general election on Sunday 29 November. In the final debate, Prime Minister Pedro Sánchez asked whether Spaniards want &ldquo;an open, sovereign, peaceful Spain, or an impoverished, closed Spain subjected to the interests of oligarchs on the other side of the Atlantic&rdquo;, recalling that his government &ldquo;said no to the war in Iran&rdquo; (clip via Clash Report). PP leader Alberto Núñez Feijóo, the poll frontrunner, clashed with rivals over whether to call Israel&rsquo;s war in Gaza a genocide; Reuters describes Vox&rsquo;s Santiago Abascal as &ldquo;tipped to be kingmaker&rdquo;. Euronews quotes a political scientist saying &ldquo;it&rsquo;s not unthinkable that the socialists win&rdquo;.</p>
+<p><strong>Background:</strong> Spain has just secured the ECB presidency for Pablo Hernández de Cos (26 November, 20:30 edition) and is in the camp seeking a larger EU budget.</p>
+<p><strong>Why it matters for Europe:</strong> Spain is the EU&rsquo;s fourth-largest economy. The result will shape Madrid&rsquo;s line on the EU budget, defence spending and relations with Washington before the 17 December European Council.</p>
+<p><strong>What to watch:</strong> turnout and seat count on Sunday night; whether a PP–Vox deal is needed.</p>
+<p>Sources: Clash Report (Sánchez) <a href="https://x.com/i/status/2126261781030899987">https://x.com/i/status/2126261781030899987</a>, <a href="https://x.com/i/status/2126261445297942612">https://x.com/i/status/2126261445297942612</a>, debate <a href="https://x.com/i/status/2126262408297529442">https://x.com/i/status/2126262408297529442</a>, Reuters <a href="https://x.com/i/status/2126240874472300755">https://x.com/i/status/2126240874472300755</a>, <a href="https://x.com/i/status/2126242139667317027">https://x.com/i/status/2126242139667317027</a>, France 24 <a href="https://x.com/i/status/2126254969363820627">https://x.com/i/status/2126254969363820627</a>, Euronews <a href="https://x.com/i/status/2126273168965058578">https://x.com/i/status/2126273168965058578</a>.</p>
+<h2 id="s5">Israel: Eisenkot reaches 36 of the 61 seats he needs to replace Netanyahu</h2>
+<p>Gadi Eisenkot (Yashar) struck coalition deals with Avigdor Liberman&rsquo;s Yisrael Beytenu and Yair Golan&rsquo;s Democrats, bringing his bid to 36 of the 61 Knesset seats needed ahead of his 6 December deadline, Clash Report and France 24 report. Naftali Bennett is still pushing for a unity government. Haaretz reports that UAL leader Mansour Abbas is set to declare Hamas a terror group amid talks with Eisenkot.</p>
+<p><strong>Background (CEAFE archive):</strong> on 7 November President Isaac Herzog said he would task Eisenkot with forming a government (Haaretz, <a href="https://x.com/i/status/2119163536496554083">https://x.com/i/status/2119163536496554083</a>), after Arab-majority parties, the Joint List and Ra&rsquo;am, backed him (Al Jazeera, <a href="https://x.com/i/status/2118838426287886790">https://x.com/i/status/2118838426287886790</a>).</p>
+<p><strong>Why it matters for Europe:</strong> a change of government in Israel would reset EU–Israel relations: the Association Agreement review, Gaza reconstruction and sanctions on violent settlers.</p>
+<p><strong>What to watch:</strong> the 6 December deadline; whether Arab parties&rsquo; support becomes part of the arithmetic.</p>
+<p>Sources: Clash Report <a href="https://clashreport.com/world/articles/eisenkot-coalition-deals-liberman-golan-64hrud2vubo">https://clashreport.com/world/articles/eisenkot-coalition-deals-liberman-golan-64hrud2vubo</a>, France 24 <a href="https://x.com/i/status/2126270315818819894">https://x.com/i/status/2126270315818819894</a>, Haaretz <a href="https://x.com/i/status/2126281167183688111">https://x.com/i/status/2126281167183688111</a>, <a href="https://x.com/i/status/2119163536496554083">https://x.com/i/status/2119163536496554083</a>, Al Jazeera <a href="https://x.com/i/status/2118838426287886790">https://x.com/i/status/2118838426287886790</a>.</p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

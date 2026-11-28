@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONFLICTOS — miércoles, 25 de noviembre de 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">CONFLICTOS</h1>
+      <p class="list-date">miércoles, 25 de noviembre de 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Conflicts / Conflictos</li>
+<li><strong>Periodo cubierto:</strong> del martes 24 de noviembre hacia las 19:00 al miércoles 25 de noviembre hacia las 07:00 (hora de Madrid): todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Conflictos de CEAFE y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Rusia aumenta la presión sobre los bálticos: advertencia formal a Estonia y Letonia estudia cerrar la frontera</h2>
+<p>El Ministerio de Exteriores ruso acusó a Estonia de acciones hostiles «al borde de desencadenar una guerra abierta», vinculándolas a los ataques ucranianos con drones; el ministro estonio de Exteriores, Margus Tsahkna, lo despachó como «propaganda rusa» (Reuters, https://x.com/i/status/2125409136120828129). Analistas lo describen como la primera advertencia formal de este tipo de Moscú a un miembro de la OTAN (https://x.com/i/status/2125347552404856860). El primer ministro letón, Andris Kulbergs, ha pedido a los ministerios que estudien restricciones en los pasos terrestres con Rusia y presenten una posición la próxima semana, tras el cierre decidido por Estonia (https://x.com/i/status/2125319296007967132). Por otra parte, Zelenski confirmó que Ucrania fue responsable del ataque al carguero ruso Sparta II en el golfo de Finlandia (@FaytuksNetwork, https://x.com/i/status/2125432139831463941).</p>
+<ul>
+<li><strong>Por qué importa a Europa:</strong> Rusia construye un pretexto contra un miembro de la UE y de la OTAN en el Báltico, mientras el frente marítimo de la guerra llega al golfo de Finlandia, junto a aguas finlandesas y estonias.</li>
+<li><strong>Qué vigilar:</strong> posición del Gobierno letón la próxima semana; posibles nuevas medidas rusas contra Estonia; reacción finlandesa tras la convocatoria del embajador ruso (edición anterior).</li>
+</ul>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125409136120828129, https://x.com/i/status/2125347552404856860, https://x.com/i/status/2125319296007967132, https://x.com/i/status/2125432139831463941</p>
+<h2 id="s2">Ataques ucranianos en profundidad contra refinerías rusas y ataques rusos sobre Ucrania</h2>
+<p>Un gran ataque ucraniano con drones alcanzó Rusia en la noche del 25 de noviembre; canales de seguimiento informan de dos refinerías en llamas, con Sizrán y su refinería, en la cuenca del Volga, entre los objetivos (Kyiv Independent, https://x.com/i/status/2125396503925535133; @OSINTtechnical, https://x.com/i/status/2125358622288855548). Un ataque ruso sobre la región de Odesa mató a dos personas, entre ellas un adolescente, y otro sobre el patio de un edificio residencial de Kiev hirió a dos (Kyiv Independent, https://x.com/i/status/2125369334335692849). Un recuento prorruso asegura que Rusia ha logrado al menos 405 ataques contra la infraestructura ferroviaria ucraniana en 2026 (afirmación, https://x.com/i/status/2125446727893168631). Las autoridades instaladas por Rusia en Donetsk afirman que un dron ucraniano alcanzó una estación de autobuses de la ciudad (afirmación, https://x.com/i/status/2125439319967969667).</p>
+<ul>
+<li><strong>Por qué importa a Europa:</strong> la guerra energética golpea la resistencia invernal de ambos bandos y mantiene altos los precios del petróleo y del gas para Europa.</li>
+<li><strong>Qué vigilar:</strong> confirmación de las refinerías alcanzadas; represalias rusas contra la red eléctrica ucraniana.</li>
+</ul>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125396503925535133, https://x.com/i/status/2125358622288855548, https://x.com/i/status/2125369334335692849, https://x.com/i/status/2125446727893168631, https://x.com/i/status/2125439319967969667</p>
+<h2 id="s3">Actualización: guerra entre Yemen y Arabia Saudí — bombardeo del puerto de Hodeida tras el ataque hutí a una torre de Riad</h2>
+<p>La coalición liderada por Arabia Saudí ordenó evacuar a los civiles del puerto de Hodeida; los hutíes advirtieron de que atacarían Yeda y otros puertos saudíes en respuesta (Al Jazeera, https://x.com/i/status/2125388005955514515). La agencia hutí Saba informó después de ataques de la coalición contra el puerto y el aeropuerto de Hodeida (https://x.com/i/status/2125364389347999863, https://x.com/i/status/2125397445760929929); un vídeo muestra incendios en el puerto (https://x.com/i/status/2125409052356379113) y @visegrad24 informa de nuevos ataques saudíes contra el puerto esta mañana (https://x.com/i/status/2125466236330869197). Saba afirma también que un ataque saudí contra vehículos en la provincia de Lahj dejó 25 muertos o desaparecidos (afirmación, https://x.com/i/status/2125379651438842341). Según el WSJ, los hutíes alcanzaron por segunda vez en cinco días la torre del Fondo de Inversión Pública (PIF) en Riad, con 11 heridos (vía https://x.com/i/status/2125426479609610484); la India informa de que dos de sus nacionales están entre los heridos y Catar condenó el ataque (Al Jazeera, https://x.com/i/status/2125470910975221926, https://x.com/i/status/2125341188391907612). La Embajada de EE. UU. en Jerusalén emitió una alerta para toda la región por amenazas hutíes e iraníes (https://x.com/i/status/2125330492065288542).</p>
+<ul>
+<li><strong>Por qué importa a Europa:</strong> una guerra saudí-hutí en la costa del mar Rojo vuelve a amenazar el tráfico por Suez y se suma a la perturbación de Ormuz que afecta al suministro energético europeo.</li>
+<li><strong>Qué vigilar:</strong> ataques hutíes contra puertos saudíes del mar Rojo; estado del espacio aéreo saudí.</li>
+</ul>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125388005955514515, https://x.com/i/status/2125364389347999863, https://x.com/i/status/2125397445760929929, https://x.com/i/status/2125409052356379113, https://x.com/i/status/2125466236330869197, https://x.com/i/status/2125379651438842341, https://x.com/i/status/2125426479609610484, https://x.com/i/status/2125470910975221926, https://x.com/i/status/2125341188391907612, https://x.com/i/status/2125330492065288542</p>
+<h2 id="s4">Guerra de Irán: financiación, bloqueo y el frente de Ormuz</h2>
+<p>Trump dijo al New York Post que la financiación de las operaciones de EE. UU. contra Irán está asegurada hasta finales de enero de 2027 y advirtió a los demócratas de que no conviertan una «victoria total» en una derrota cuando controlen el Congreso (Al Jazeera, https://x.com/i/status/2125412908083638363). Una encuesta citada por Al Jazeera indica que el 55 % de los votantes estadounidenses quiere que la guerra termine de inmediato, sean cuales sean las condiciones (https://x.com/i/status/2125439333532676209). El secretario del Consejo Supremo de Seguridad Nacional iraní, Mohsen Rezaei, calificó de «delirantes e inútiles» los planes de bloqueo de EE. UU. (fuente iraní, https://x.com/i/status/2125351720951947472). El ministro de Defensa israelí, Israel Katz, asegura que Irán está desarrollando armas químicas (afirmación, vía https://x.com/i/status/2125322976988114972). @ClashReport difundió imágenes que mostrarían un ataque estadounidense-israelí contra un Airbus de Iran Air en Bushehr al inicio de la guerra (sin verificar, https://x.com/i/status/2125336301016584481).</p>
+<ul>
+<li><strong>Por qué importa a Europa:</strong> una guerra financiada al menos hasta 2027 mantiene altos el riesgo en Ormuz, los precios de la energía y la demanda estadounidense de munición, que compite con las necesidades europeas y ucranianas.</li>
+<li><strong>Qué vigilar:</strong> confirmación o desmentido de EE. UU. sobre la pérdida del MQ-9; medidas de bloqueo.</li>
+</ul>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125412908083638363, https://x.com/i/status/2125439333532676209, https://x.com/i/status/2125351720951947472, https://x.com/i/status/2125322976988114972, https://x.com/i/status/2125336301016584481</p>
+<h2 id="s5">La guerra de Ucrania en el mar frente a Libia: las fuerzas de Haftar cuentan bajas e Italia se alarma</h2>
+<p>Las Fuerzas Armadas Árabes Libias de Haftar anunciaron la muerte de un oficial y un suboficial de marina en el ataque ucraniano contra el puerto de Bengasi y prometieron venganza (https://x.com/i/status/2125348519754047918). El recuento del Financial Times, difundido en la lista, cifra en 16 los grandes buques de la Armada rusa alcanzados desde 2022 (8 perdidos y 8 gravemente dañados) (https://x.com/i/status/2125351277727256977). Italia ha expresado su preocupación por la extensión de la guerra al Mediterráneo (https://x.com/i/status/2125433342262644806).</p>
+<ul>
+<li><strong>Por qué importa a Europa:</strong> los combates navales en el Mediterráneo central llevan la guerra de Ucrania al flanco sur de la UE, cerca de Italia y Malta.</li>
+<li><strong>Qué vigilar:</strong> movimientos del convoy ruso en el canal de Sicilia (Alerta temprana).</li>
+</ul>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125348519754047918, https://x.com/i/status/2125351277727256977, https://x.com/i/status/2125433342262644806</p>
+<h2 id="s6">Contraespacio y espacio: constelaciones militares proliferadas de EE. UU.; el Shenzhou-24 se acopla</h2>
+<p>Jonathan McDowell enumera las constelaciones militares estadounidenses en despliegue, entre ellas los satélites de comunicaciones SDN R y de radar SDN TH de la Fuerza Espacial, los rastreadores de misiles de la Agencia de Desarrollo Espacial (SDA) y la arquitectura proliferada de la NRO, con al menos dos subseries (https://x.com/i/status/2125382900220645768). La nave tripulada china Shenzhou-24 despegó y se acopló a la estación Tiangong el 25 de noviembre, según la Agencia China de Vuelos Espaciales Tripulados (medio estatal CGTN, https://x.com/i/status/2125441789608014257). No se ha informado de ningún nuevo incidente de seguimiento o aproximación entre satélites en este periodo.</p>
+<ul>
+<li><strong>Por qué importa a Europa:</strong> EE. UU. y China amplían su espacio militar mientras las constelaciones propias de Europa (IRIS²) siguen a años de distancia.</li>
+</ul>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125382900220645768, https://x.com/i/status/2125441789608014257</p>
+<h2 id="s7">Contratos de defensa vinculados a la guerra</h2>
+<p>Boeing obtiene un contrato de la Fuerza Aérea de EE. UU. para 15 aviones cisterna KC-46A más (203 contratados o en servicio en todo el mundo) (@defpostmedia, https://x.com/i/status/2125460346253307915). Elbit Systems Deutschland suministrará sistemas integrados de guerra electrónica naval para las fragatas F-128 de la Armada alemana (https://x.com/i/status/2125469419241426958), y Thales entregará radares STAR NG y RSM NG a la Real Fuerza Aérea y Espacial de los Países Bajos (https://x.com/i/status/2125465960060698831).</p>
+<ul>
+<li><strong>Por qué importa a Europa:</strong> la filial alemana de un grupo israelí se lleva la guerra electrónica de una fragata alemana, mientras un proveedor europeo (Thales) equipa a una fuerza aérea europea.</li>
+</ul>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125460346253307915, https://x.com/i/status/2125469419241426958, https://x.com/i/status/2125465960060698831</p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Conflictos. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

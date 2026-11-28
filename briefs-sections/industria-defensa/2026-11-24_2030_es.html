@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — martes, 24 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">martes, 24 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Window covered:</strong> del martes 24 de noviembre desde las 14:30 hasta hacia las 19:30 (hora de Madrid): todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Industria de Defensa de CEAFE y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">El fondo estadounidense Cerberus compra el negocio de satélites de Airbus en EE. UU.</h2>
+<p>Cerberus Capital Management (Estados Unidos) anunció el 24 de noviembre un acuerdo para adquirir el negocio de Sistemas Espaciales de Airbus U.S. Space &amp; Defense, la filial estadounidense de Airbus, con cierre previsto antes de fin de año (Breaking Defense, SpaceNews). La unidad fabrica satélites en una planta de unos 200.000 pies cuadrados en Merritt Island (Florida), junto al Centro Espacial Kennedy; SpaceNews señala que la operación pone bajo propiedad estadounidense una fábrica construida para la constelación de banda ancha OneWeb. No se ha revelado el precio y Airbus no desglosa los ingresos de su filial estadounidense.</p>
+<p>Airbus afirma que su filial en EE. UU. «redoblará» su apuesta por la producción de aeronaves autónomas; Cerberus asegura que invertirá en la ingeniería y los productos de la unidad para atender la demanda de «capacidad de producción de naves espaciales de EE. UU.». <strong>Antecedentes (archivo CEAFE):</strong> en septiembre de 2026 @F_CEAFE compartió la noticia de que Eutelsat había encargado a Airbus 229 satélites adicionales de órbita baja para OneWeb, que se suman a los 440 satélites fabricados por Airbus que ya forman la constelación.</p>
+<p><em>CEAFE:</em> La dependencia tecnológica y de defensa no es abstracta: se ve en el número de empresas, en el gasto y en la presencia sobre el terreno.</p>
+<p><strong>Por qué importa a Europa:</strong> la fábrica que produjo en serie los satélites de OneWeb, hoy parte de la europea Eutelsat, pasa a un inversor financiero estadounidense justo cuando Europa intenta construir IRIS² y sus propias constelaciones soberanas. Un gran contratista europeo se retira de la fabricación de satélites en EE. UU. La asimetría es evidente: una planta de propiedad europea en suelo estadounidense opera bajo las reglas de control de EE. UU. (revisión del CFIUS, mitigación FOCI, ITAR), que limitan lo que Airbus puede compartir con Europa; no existe un régimen europeo común equivalente que proteja los activos propios de Europa cuando entra capital estadounidense.</p>
+<p><strong>Qué vigilar:</strong> la revisión del CFIUS; quién fabricará los satélites de reposición de Eutelsat OneWeb; los planes de Airbus para su negocio de drones en EE. UU.</p>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125271257029480613, https://x.com/i/status/2125260706480005557, https://breakingdefense.com/2026/11/investment-firm-cerberus-to-buy-space-business-of-us-airbus-arm/, https://spacenews.com/private-equity-firm-cerberus-to-acquire-airbus-u-s-satellite-business/, <a href="https://x.com/i/status/2098879154926104742">CEAFE, sept. 2026</a></p>
+<h2 id="s2">Polonia y el Reino Unido firman un acuerdo para desarrollar el misil antiaéreo CAMM-MR</h2>
+<p>Polonia y el Reino Unido firmaron el 24 de noviembre un acuerdo intergubernamental que abre la vía al desarrollo conjunto del CAMM-MR, un misil de defensa antiaérea de alcance medio que debe superar los 100 km, según la Agencia de Armamento polaca. Firmaron la secretaria de Estado Magdalena Sobkowiak-Czarnecka por Polonia y el ministro de adquisiciones de defensa Luke Pollard por el Reino Unido; MBDA, su filial polaca y el grupo estatal PGZ participan por parte de la industria. El acuerdo no financia el misil: fija las «condiciones jurídicas y financieras» del contrato de diseño detallado, al que seguirán un acuerdo ejecutivo y, después, un contrato de suministro, acompasado con el final de las entregas de las tres fragatas Miecznik polacas. No se dieron fechas ni costes. La agencia lo presenta como el primer proyecto internacional para desarrollar un misil para la defensa antiaérea polaca.</p>
+<p>@F_CEAFE citó el post de la agencia: «Why can&rsquo;t Poland buy 🇪🇺 weapons? 🇺🇸🇰🇷🇬🇧&hellip; Should we, the rest of the EU partners, keep funding them? #Polexit» («¿Por qué Polonia no puede comprar armas europeas? ¿Debemos los demás socios de la UE seguir financiándolos?»). <strong>Antecedentes (archivo CEAFE):</strong> en abril de 2022 @F_CEAFE compartió el anuncio del Ministerio de Defensa polaco de que Polonia adquiriría elementos del sistema CAMM de MBDA para integrarlos con componentes polacos.</p>
+<p><strong>Por qué importa a Europa:</strong> MBDA es un grupo paneuropeo, pero este programa se desarrolla con el Reino Unido, ya fuera de la Unión, y se suma a las grandes compras polacas de material estadounidense y surcoreano. El punto de CEAFE es el doble rasero: un Estado miembro de la UE que recibe fondos europeos de cohesión y de defensa, y se beneficia de las reglas de preferencia europea de los instrumentos de la UE, mientras se equipa en gran medida fuera de la Unión.</p>
+<p><strong>Qué vigilar:</strong> el acuerdo ejecutivo y el reparto de trabajo; si el CAMM-MR se presenta a préstamos SAFE o a financiación EDIP de la UE, que favorecen el contenido europeo.</p>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125270201063371033, https://x.com/i/status/2125260499587563546, https://defence-blog.com/poland-uk-sign-deal-to-develop-camm-mr-missile/, <a href="https://x.com/i/status/1514676307501670419">CEAFE, abr. 2022</a></p>
+<h2 id="s3">El MI5 advierte a los directivos de defensa británicos de incendios y sabotajes de intermediarios rusos</h2>
+<p>El MI5, el servicio de seguridad interior británico, ha advertido a directivos de la industria de defensa del Reino Unido de que se enfrentan a una amenaza creciente de incendios provocados y otros sabotajes a cargo de intermediarios que trabajan para Rusia, según informó Bloomberg el 24 de noviembre; AP informa de que se ha pedido a las empresas que ayudan a Ucrania que se preparen ante intentos de sabotaje. No se han podido consultar los artículos completos.</p>
+<p><strong>Por qué importa a Europa:</strong> la base industrial de defensa europea, que está aumentando la producción para Ucrania y para el rearme, es en sí misma un objetivo. Proteger plantas y plantillas pasa a ser un coste de producción y un argumento a favor de normas europeas comunes de seguridad industrial.</p>
+<p><strong>Qué vigilar:</strong> si otros gobiernos europeos lanzan advertencias similares a sus proveedores de defensa.</p>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125245588086182115, https://x.com/i/status/2125263218088038676, https://apnews.com/article/uk-mi5-russia-sabotage-warning-europe-17406e53d24d5a71f3beaf551fdf1a99</p>
+<h2 id="s4">Dinero de la UE para defensa: el buque EUROGUARD y 68 millones propuestos para I+T de defensa espacial</h2>
+<p>La Comisión Europea (DG DEFIS) informa de que el proyecto EUROGUARD ha botado un buque semiautónomo de 45 metros para la vigilancia marítima y la protección de infraestructuras críticas, incluidos los cables submarinos, con 65 millones de euros del Fondo Europeo de Defensa. Por otra parte, la Agencia Europea de Defensa indica que los Estados miembros de la UE propusieron 68 millones de euros para investigación y tecnología de defensa espacial en su reunión CapTech Space en Italia; entre los proyectos figuran ASSAI (IA para proteger satélites) y LEO2VLEO (tres satélites en órbita terrestre muy baja).</p>
+<p><strong>Por qué importa a Europa:</strong> la financiación común compra capacidades que ningún Estado miembro de la UE construiría en solitario, desde la protección de los fondos marinos tras los incidentes con cables en el Báltico hasta la defensa de satélites. Las cantidades siguen siendo pequeñas frente a los programas estadounidenses.</p>
+<p><strong>Qué vigilar:</strong> la selección de los proyectos espaciales por la EDA y las pruebas del buque.</p>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125288344859062384, https://link.europa.eu/tynmMH, https://x.com/i/status/2125259241438994624</p>
+<h2 id="s5">Un lanzador estadounidense construye su plataforma en Suecia; Canadá se une al Fondo de Innovación de la OTAN</h2>
+<p>Firefly Aerospace (EE. UU.) afirma que la construcción del Complejo de Lanzamiento 3 en el centro espacial de Esrange (Suecia) está «muy avanzada», en colaboración con la sueca SSC. Por otra parte, Defense One informa desde Halifax de que Canadá se ha unido al Fondo de Innovación de la OTAN, aunque promete mantener la relación «como siempre» con EE. UU.; Defense One lo describe como una reacción a la menguante cooperación de la Administración Trump.</p>
+<p><strong>Por qué importa a Europa:</strong> Esrange es uno de los pocos puertos de lanzamiento de la Europa continental; ceder una plataforma a un lanzador estadounidense compite con los pequeños lanzadores europeos (Isar Aerospace, RFA, PLD Space, Orbex). El paso de Canadá, en cambio, muestra a un miembro de la OTAN que diversifica hacia instrumentos europeos y multinacionales.</p>
+<p><strong>Qué vigilar:</strong> la fecha del primer lanzamiento de Firefly desde Esrange; las primeras inversiones de Canadá a través del fondo.</p>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125272509222162672, https://x.com/i/status/2125230485307605133</p>
+<h2 id="s6">Breves: EE. UU., espacio y resto del mundo</h2>
+<ul>
+<li><strong>Marina de EE. UU.:</strong> probablemente volará aviones de combate colaborativos (CCA) antes que el caza F/A-XX, según William Toti, candidato a subsecretario de la Marina (Defense One). https://x.com/i/status/2125279549885689947</li>
+<li><strong>Munición:</strong> las fuerzas armadas de EE. UU. carecen de un «plan general» para mejorar sus reservas, según la GAO; el Pentágono se mostró mayoritariamente de acuerdo (Defense One). https://x.com/i/status/2125204547949707725</li>
+<li><strong>Lockheed Martin Europe</strong> promociona el F-35 ante los aliados europeos como garante de la «soberanía nacional»; las alternativas europeas son el Eurofighter Typhoon, el Rafale y el Gripen y, en el futuro, el GCAP y el FCAS. https://x.com/i/status/2125209847842865558</li>
+<li><strong>BlackSky</strong> (EE. UU.) adquiere la empresa de IA geoespacial EpochGeo (EE. UU.) (SpaceNews). https://x.com/i/status/2125232174156697896</li>
+<li><strong>Ariane 6 (Actualización):</strong> SpaceNews confirma que Ariane 6 lanzó el 24 de noviembre el cuarto lote de satélites de Amazon Leo (Arianespace). https://x.com/i/status/2125232312006639926</li>
+<li><strong>BepiColombo (Actualización):</strong> el conjunto MPO-Mio de la ESA y JAXA está oficialmente en órbita de Mercurio tras su primer encendido de inserción orbital (Airbus Space). https://x.com/i/status/2125209183343477220</li>
+<li><strong>Shenzhou-24</strong> debe despegar a las 08:18 de Pekín del 25 de noviembre (01:18 en Madrid) desde Jiuquan, con un astronauta pakistaní a bordo (Global Times). https://x.com/i/status/2125249675045621887</li>
+<li><strong>Falcon 9 USSF-266</strong> despegó desde Vandenberg; <strong>Stoke Space</strong> llevó a la plataforma la primera etapa del Nova Pathfinder; <strong>la NASA</strong> recibió el X-59 de Lockheed Martin. https://x.com/i/status/2125260653560562086, https://x.com/i/status/2125227206268043693, https://x.com/i/status/2125264502619074930</li>
+<li><strong>ICEYE</strong> (Finlandia) acogió el 23 de noviembre a la coalición HALO de la OTAN (12 miembros de la OTAN, entre ellos España); <strong>la ESA</strong> afirma que sus actividades de exploración generan unos 2.800 millones de euros de PIB en Europa. https://x.com/i/status/2125243150717354428, https://x.com/i/status/2125243058757439884</li>
+<li><strong>Turquía–Malasia:</strong> STM afirma haber firmado la construcción de tres corbetas para la Marina Real de Malasia, la primera exportación naval turca a Asia-Pacífico; no está confirmada la fase del contrato. https://x.com/i/status/2125240584721899993</li>
+<li><strong>Ucrania:</strong> Fire Point detalla sus misiles balísticos FP-7 (hasta 250 km) y FP-9. https://x.com/i/status/2125259707577143577</li>
+<li><strong>Ventas de armas de EE. UU. (sin confirmar):</strong> la agencia turca İLKHA informa de la aprobación por el Departamento de Estado de tres posibles FMS por unos 2.270 millones de dólares (APKWS-II a EAU, Javelin a Egipto, servicios Patriot a Kuwait); no se ha podido consultar la notificación oficial. https://www.ilkha.com/english/world/us-approves-potential-$227-billion-arms-sales-to-egypt-kuwait-and-uae-566947</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

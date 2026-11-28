@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Thursday, 26 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Thursday, 26 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> from about 07:30 to about 13:15 on Thursday 26 November, Europe/Madrid: everything new since the 08:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">Huawei’s patent licences exceed US$6.9 billion, with Qualcomm, HP Inc. and Harman among its licensees</h2>
+<p>At its seventh Innovation and Intellectual Property Forum in Beijing on 24 November, Huawei said that the cumulative value of its outbound patent-licensing agreements now exceeds US$6.9 billion. Its patent-licensing revenue in 2025 was about US$800 million, and it signed 20 new licensees that year in network equipment, consumer electronics and computing, IoT, automotive, streaming and semiconductors (Huawei newsroom). According to Global Times [Chinese state media], foreign companies that took licences directly from Huawei in 2025–26 include Qualcomm, HP Inc. and Harman in the US, Mercedes-Benz and Volkswagen Group companies in Germany, and Seiko Solutions, Mitsubishi Fuso and Fujitec in Japan. The US deals are public. On 26 August 2026 Huawei and HP Inc. signed a multi-year global cross-licence that includes certain Huawei Wi-Fi patents. On 5 October 2026 Huawei and Qualcomm announced a multi-year, broad cross-licence covering 5G, compute, AI and networking, together with Qualcomm’s purchase of certain Huawei US patents. Huawei said that deal would close after regulatory approval (Huawei newsroom). Terms are confidential, and neither side has published amounts. A Qualcomm spokesperson said that “reports characterizing Qualcomm as a net payor on the license agreement are incorrect” and that the patents it is buying are “non-cellular US patents” (ip fray; Huawei Central). Huawei’s chief IP officer Alan Fan (Fan Zhiyong) said: “At Huawei, a patent represents more than a legal right. It represents an innovative achievement and a source of pride for the people behind it.” Huawei added that it received 3,052 US patents in 2025, ranking fourth in the US according to IFI Claims (Global Times).</p>
+<p><strong>Linked story (Update, US case against Huawei):</strong> on 24 November (US Eastern time) a jury in the US District Court for the Eastern District of New York convicted Huawei of conspiracy to steal trade secrets and of fraud linked to its business in Iran, but acquitted it of the racketeering (RICO) charge (AP; BBC; TIME). In its official statement Huawei said: “Huawei welcomes this decision. It confirms that these allegations lack factual basis and vindicates our consistent position over the past eight years.” It added: “We believe the government’s remaining charges are equally without legal or factual merit… We will thoroughly review the relevant verdicts and take all necessary legal actions to defend our rights and interests.” Lead defence counsel Brian Heberlig called the acquittal a “profound rejection” of the government’s case (AP; BBC; statement posted by @Huawei on X). China’s Foreign Ministry had already said on 25 November that it “firmly opposes US suppression of Chinese companies” (14:30 edition, 25 Nov).</p>
+<p><strong>Background (CEAFE archive):</strong> On 27 August 2026 @F_CEAFE reposted the announcement that Huawei and HP Inc. had signed a multiyear global patent cross-licence (<a href="https://x.com/i/status/2093031520235561408">repost</a>), one of the licensing deals now counted in the total.</p>
+<p><strong>Why it matters for Europe:</strong> a company that Washington has been trying to cut off from US technology since 2019, through the Entity List and the foreign direct product rule, now collects royalties from US champions such as Qualcomm and HP. The flow of dependence in standard-essential technologies (5G, Wi-Fi, video codecs) has partly reversed. Huawei says its patented technologies were used in more than 3.2 billion 5G devices by the end of 2025. Europe’s car industry is also paying: Mercedes-Benz and Volkswagen are on the licensee list. Meanwhile European governments have been excluding Huawei from 5G networks at Washington’s urging. Here is another case where Europe applies US-driven restrictions while US companies themselves keep doing business with the target. A Qualcomm purchase of Huawei US patents still needs regulatory clearance, which turns a court and export-control battle into a commercial negotiation.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>Cumulative value of Huawei’s outbound patent-licensing agreements: over US$6.9bn (to November 2026); licensing revenue about US$800m in 2025 (Huawei, 24 Nov).</li>
+<li>Huawei says it holds over 165,000 active granted patents and has invested more than US$270bn in R&amp;D since 2007 (Huawei statement, 25 Nov).</li>
+<li>Share of active granted patents: wireless communications 41%, terminal hardware 16%, AI and computing 13% (Huawei).</li>
+<li>US licensees named: Qualcomm (cross-licence plus patent purchase, 5 Oct 2026), HP Inc. (cross-licence incl. Wi-Fi, 26 Aug 2026) and Harman (named by Global Times; Harman is US-based and owned by Samsung Electronics). No amounts disclosed.</li>
+<li>Qualcomm’s purchase of Huawei patents is subject to regulatory approval, which ip fray says is an antitrust (HSR Act) review.</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>@F_CEAFE repost (26 Nov, 11:58 Madrid) of Global Times [Chinese state media]: https://x.com/i/status/2125907015343964461 (original https://x.com/i/status/2125758123126477056)</li>
+<li>Huawei newsroom, “Invent to Excel, Open to Empower” (24 Nov 2026): https://www.huawei.com/en/news/2026/11/innovation-ip-forum</li>
+<li>Huawei and Qualcomm Announce Broad Patent License Agreement (5 Oct 2026): https://www.huawei.com/en/news/2026/10/qualcomm-broad-patent-agreement ; Qualcomm China release: https://www.qualcomm.cn/news/releases/2026/10/releases-2026-10-05</li>
+<li>Huawei and HP Inc. Sign Global Patent Cross-Licensing Agreement (26 Aug 2026): https://www.huawei.com/en/news/2026/8/hpi-global-patent-agreement</li>
+<li>Qualcomm statement via ip fray (5 Oct 2026): https://ipfray.com/huawei-qualcomm-sign-broad-multi-year-cross-patent-licensing-agreement/ ; Huawei Central: https://www.huaweicentral.com/qualcomm-refutes-huawei-logicfolding-chip-tech-licensing-reports/</li>
+<li>Global Times [Chinese state media] (26 Nov): https://www.globaltimes.cn/page/202611/1375084.shtml ; China Daily [Chinese state media]: https://www.chinadaily.com.cn/a/202611/26/WS6b079e38e4b03ebf8519ec98.html</li>
+<li>Huawei statement on the jury verdict (25 Nov): https://www.huawei.com/en/news/2026/11/statement-on-jury-verdict ; @Huawei on X: https://x.com/i/status/2125885884507832616 and https://x.com/i/status/2125886079371026686</li>
+<li>AP: https://apnews.com/article/huawei-racketeering-trial-verdict-b39ac780e2e31140015a1be02f0329ab ; BBC: https://www.bbc.com/news/articles/cmy49ngydqzpo</li>
+</ul>
+<figure class="brief-figure">
+<img src="../../assets/media-cache/bc6c027e0fdf4364.jpg" alt="Huawei forum photo (Alan Fan at the 7th Innovation and IP Forum): ; Huawei statement graphic" />
+<figcaption>Huawei forum photo (Alan Fan at the 7th Innovation and IP Forum): ; Huawei statement graphic</figcaption>
+</figure>
+
+<figure class="brief-figure">
+<img src="../../assets/media-cache/ff7ae01fb8ca318b.png" alt="Huawei forum photo (Alan Fan at the 7th Innovation and IP Forum): ; Huawei statement graphic" />
+<figcaption>Huawei forum photo (Alan Fan at the 7th Innovation and IP Forum): ; Huawei statement graphic</figcaption>
+</figure>
+
+<p><strong>Follow-up:</strong> regulatory clearance of Qualcomm’s purchase of Huawei patents; sentencing and any appeal in the EDNY case; whether US lawmakers react to US firms paying Huawei; European licensees (Mercedes-Benz, Volkswagen) and the EU SEP regulation debate.</p>
+<h2 id="s2">US chip curbs and anti-distillation defences slow Chinese AI models; Moonshot looks to rent computing power in Europe</h2>
+<p>Reuters reports, citing people familiar with the matter, that Z.AI (Zhipu) has fallen behind schedule on its next flagship model, GLM-5.5, with about 3 trillion parameters. The model was due this month, and the new US rule could push it into the first quarter of 2027 or later. Moonshot AI expects the interval between its major releases to double from six months to a year or more if it loses access to overseas computing power, and its Kimi K4 could slip to around mid-2027. The cause is twofold. A Commerce Department rule in force since 19 November requires licences for Chinese access to large amounts of US-chip computing power in overseas data centres. And OpenAI and Anthropic have strengthened their defences against “distillation”, i.e. training models on the answers of stronger ones. Anthropic said in September it had seen nearly 200 million exchanges with Claude linked to suspected distillation campaigns, which it attributed to Chinese developers including Alibaba, Moonshot and Z.AI. According to Reuters, Moonshot has stepped up efforts to rent computing power in Europe and plans to approach Chinese chipmakers about training on their processors. No official Chinese response yet.</p>
+<p><strong>Why it matters for Europe:</strong> European data centres are becoming the next front of US extraterritorial controls. If Chinese developers turn to rented European compute, the remote-access rule and future US pressure will land on European cloud operators, who would have to police their customers on Washington’s terms. This follows the Nvidia shipment freeze to South-East Asia (topic 2, 08:30 edition).</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>US Commerce compute-access licensing rule in force since 19 Nov 2026 (Reuters).</li>
+<li>Z.AI released GLM-5.4 on 23 Nov, built on a 750bn-parameter model (Reuters).</li>
+<li>Moonshot releases: K2 (July 2025), K2.5 (January 2026), K3 (July 2026) (Reuters).</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>@F_CEAFE repost of @Reuters (26 Nov, 12:25 Madrid): https://x.com/i/status/2125913863652823293</li>
+<li>Reuters via Yahoo Finance: https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html ; via Investing.com: https://www.investing.com/news/stock-market-news/exclusiveus-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-sources-say-5052154</li>
+<li>Anthropic, “Strengthening our defenses against distillation attacks”: https://www.anthropic.com/news/distillation-defenses</li>
+</ul>
+<p><strong>Follow-up:</strong> Chinese MFA/MOFCOM reaction; whether EU cloud providers receive US licensing demands; BIS guidance on the remote-access rule.</p>
+<h2 id="s3">Update: UniCredit obtains every clearance for Commerzbank; new shares to be credited by 7 December</h2>
+<p>UniCredit announced at 07:45 on 26 November that the Polish Financial Supervision Authority (KNF) has approved the indirect change of control of Commerzbank’s Polish operations, including mBank (69.1% owned by Commerzbank, about 5.9 million customers). With that, all regulatory clearances are in place and all conditions of the exchange offer launched on 5 May 2026 are met. New UniCredit shares for the tendered Commerzbank shares are expected to be credited by 7 December 2026. UniCredit has asked Commerzbank to convene an extraordinary general meeting to elect new shareholder representatives to the supervisory board. The European Commission had cleared the deal unconditionally on 16 November, and the US Federal Reserve also approved it (Euronews). The breakthrough came from the deal with Berlin in mid-November. In a letter of 18 November to Finance Minister Lars Klingbeil, CEO Andrea Orcel set out eight “binding principles”: Frankfurt as German headquarters, keeping the listing and the AG legal form, German nationals on UniCredit’s board from the 2027 renewal, and support for Mittelstand exporters. The German state still holds about 13.3% of Commerzbank and has not announced a sale. Reuters Breakingviews values the deal at nearly US$45bn.</p>
+<p><strong>Why it matters for Europe:</strong> this is a major cross-border banking combination inside the euro area. It shows that European champions can be built across borders, though only after two years of political resistance from Berlin. It is an example of the intra-European consolidation CEAFE considers necessary, since no single member state’s banking sector can match the scale of the US giants on its own. Not posted by @F_CEAFE.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li>UniCredit press release (26 Nov): https://www.unicreditgroup.eu/en/press-media/press-releases-price-sensitive/2026/november/unicredit-receives-knf-approvals-regarding-the-offer-on-commerzb.html</li>
+<li>Orcel letter to Minister Klingbeil (18 Nov): https://www.unicreditgroup.eu/content/dam/unicreditgroup-eu/documents/en/investors/unicredit-unlimited-next-phase/Letter-to-Minister-Klingbeil.pdf</li>
+<li>Euronews (26 Nov): https://www.euronews.com/2026/11/26/unicredit-secures-final-polish-approval-for-commerzbank-takeover-bid ; X: https://x.com/i/status/2125876498569761082</li>
+<li>Reuters Breakingviews on X: https://x.com/i/status/2125884788565262585</li>
+</ul>
+<p><strong>Follow-up:</strong> Commerzbank EGM date; sale of the German state’s stake; job commitments.</p>
+<h2 id="s4">Update: Beijing answers the EU hybrid-car safeguard: “protectionism leads nowhere”</h2>
+<p>At MOFCOM’s regular press conference on 26 November, spokesperson He Yadong responded to the Commission’s preliminary ruling of 24 November. The ruling sets provisional quotas for hybrid vehicles from 1 December for up to 200 days, with China’s share about 192,000 units during the period (350,000 annualised), the largest of nine suppliers. He said the two sides had held pre-initiation consultations and “reached an understanding on hybrid vehicle trade arrangements” on three principles: WTO compliance, non-discrimination and respect for facts. China “hopes the EU will earnestly abide by the consensus” and investigate fairly under WTO rules, and “will keep a close watch… and firmly protect the legitimate rights and interests of Chinese industries” (MOFCOM; Xinhua [Chinese state media]). An opinion piece in Global Times [Chinese state media] the same day accused the Commission of having “waved the white flag” to Washington’s tariffs while acting as its “accomplice”.</p>
+<p><strong>Why it matters for Europe:</strong> the measure (14:30 edition, 25 Nov) is a global safeguard, not an anti-China duty, and Beijing’s tone is measured because it says a prior understanding exists. CEAFE’s point is the contrast: Brussels uses trade defence against China while accepting the US Section 301 “overcapacity” tariff of 15% without retaliation.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li>MOFCOM press conference transcript (Chinese): https://www.mofcom.gov.cn/xwfbzt/2026/swbzklxxwfbh2026n11y26r/index.html</li>
+<li>Xinhua [Chinese state media]: https://english.news.cn/20261126/d6aef64b899f4be19c8d3283826e6f52/c.html ; X: https://x.com/i/status/2125918305420738930</li>
+<li>Global Times [Chinese state media] news: https://www.globaltimes.cn/page/202611/1375106.shtml ; opinion: https://www.globaltimes.cn/page/202611/1375114.shtml (X: https://x.com/i/status/2125915932824605049)</li>
+</ul>
+<p><strong>Follow-up:</strong> whether China opens a counter-investigation; the definitive safeguard ruling.</p>
+<h2 id="s5">Gulf supply shock: Houthi strike on Ras Tanura and mines in Hormuz lift Brent towards US$95; Qatar’s LNG exports reach a war-time high at much higher insurance costs</h2>
+<p>Brent closed 3.5% higher on Wednesday 25 November and WTI 2% higher, after Yemen’s Houthis said they had attacked Saudi Arabia’s Ras Tanura refinery and Riyadh’s financial district. Iranian state media and the Iranian army, cited by Fars, said tankers struck mines and caught fire in the Strait of Hormuz. Early on Thursday Brent traded at US$94.71 and WTI at US$84.03 (CNBC/Reuters). Prices later eased (Reuters, 13:00 Madrid). OPEC+ ministers meet on 29 November to set 2027 output, without the UAE, which has left the group. Qatar’s LNG exports are on track for their busiest month since the US–Iran war began at the end of February. Kpler counts 36 berthings at Ras Laffan so far in November, against 35 in October and 21 in September. Exports remain at around 40% of pre-war levels (analysts via Reuters), or about half (Bloomberg). War-risk insurance for ships entering the Gulf has risen from about 0.25% of hull value at the start of 2026 to as much as 5%, adding US$2.5–12.5 million per voyage for a modern US$250 million LNG carrier (Wood Mackenzie via Reuters).</p>
+<p><strong>Why it matters for Europe:</strong> Europe competes with Asia for the same scarce LNG cargoes, and the insurance premium ends up in European gas and electricity prices. As ECFR warned on 25 November, the US could supply up to 80% of EU LNG imports by 2030. Every Gulf shock deepens Europe’s dependence on US LNG.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li>CNBC/Reuters (26 Nov): https://www.cnbc.com/2026/11/26/oil-wti-brent-hormuz-iran-saudi-arabia.html ; @Reuters: https://x.com/i/status/2125922614098956420</li>
+<li>Reuters via Business Recorder (25 Nov): https://www.brecorder.com/news/40450707</li>
+<li>Bloomberg (26 Nov): https://www.bloomberg.com/news/articles/2026-11-26/qatar-has-boosted-lng-exports-to-their-highest-since-february ; X: https://x.com/i/status/2125874733778411668</li>
+<li>Al Jazeera English (tankers near Khasab): https://x.com/i/status/2125907723204112550</li>
+</ul>
+<p><strong>Follow-up:</strong> OPEC+ meeting on 29 Nov; TTF gas price; any EIA/IEA oil-market note.</p>
+<h2 id="s6">Germany’s 2027 budget: record €561 billion, €210 billion of borrowing and €139 billion for defence, more than double France’s €63.4 billion</h2>
+<p>The Bundestag is holding its final debates on the 2027 federal budget. Spending will be just under €561bn, a record, with record borrowing of about €210bn (DW). Defence gets €109bn in the core budget, €27bn more than in 2026. With the debt-financed Bundeswehr special fund, the total reaches €139bn (DW; Defence24 gives €139.4bn = €109.7bn + €29.6bn). France’s 2027 defence budget is €63.4bn, up from €57bn in 2026 (Politico Europe). Chancellor Merz said that “if we don’t change course, in a few years… all federal revenue will have to be spent on social programmes, interest payments, and defence.” The labour and social affairs budget exceeds €200bn. The AfD called it a “debt budget” and attacked aid to Ukraine (posts reposted by @F_CEAFE).</p>
+<p><strong>CEAFE comment:</strong> No member state, on its own, has the scale of the powers it hopes to sit beside at the same table.</p>
+<figure class="brief-figure">
+<img src="charts/gasto_militar_ue_en.png" alt="Military spending: the US, China, the EU-27 and three EU member states" />
+<figcaption>Military spending: the US, China, the EU-27 and three EU member states</figcaption>
+</figure>
+
+<p><strong>Why it matters for Europe:</strong> a single member state spending more than twice as much as France changes the balance within the EU. Even so, it does so on debt and at the expense of social spending, proof that no member state can carry rearmament alone. The case for common European financing and joint procurement is stronger than for national budget races.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>2027 federal spending about €561bn; new borrowing about €210bn (DW, 25 Nov).</li>
+<li>Defence 2027: €109bn core + special fund = €139bn (DW); France €63.4bn (Politico Europe).</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>@F_CEAFE repost of @Defence24eng (12:25 Madrid): https://x.com/i/status/2125913906904260755 ; AfD posts reposted: https://x.com/i/status/2125908083754803321 , https://x.com/i/status/2125908098489696338</li>
+<li>DW (25 Nov): https://www.dw.com/en/561-billion-and-still-not-enough-germanys-2027-budget-exposes-a-coalition-on-the-brink/a-80052664</li>
+<li>Defence24: https://defence24.com/defence-policy/germany-is-rearming-at-record-speed-france-is-worried-while-the-us-backs-berlin</li>
+<li>Politico Europe: https://www.politico.eu/article/france-increases-defense-budget-despite-strained-public-finances/</li>
+</ul>
+<figure class="brief-figure">
+<img src="../../assets/media-cache/ba6fbfaddc990ce0.jpg" alt="DW photo of the Bundestag budget debate" />
+<figcaption>DW photo of the Bundestag budget debate</figcaption>
+</figure>
+
+<p><strong>Follow-up:</strong> final Bundestag vote; SIPRI/EDA comparisons; the EU summit on the MFF and Ukraine financing (December deal sought).</p>
+<h2 id="s7">Briefly noted</h2>
+<ul>
+<li><strong>Section 301 (Update):</strong> Japan formally protested the proposed 15% “overcapacity” tariff. Chief Cabinet Secretary Kihara said “Japan does not have any nonmarket policies or practices, or structural excess production capacity” and called the move “regrettable”. Japan has announced three rounds of projects worth US$130bn under its US$550bn US investment initiative (Japan Times/Bloomberg): https://www.japantimes.co.jp/business/2026/11/26/economy/japan-protests-trump-new-tariff/ . Vietnam seeks a US trade deal (Reuters): https://x.com/i/status/2125899914760561044 . Honda will import US-made Acura Integras into Japan (Kyodo): https://x.com/i/status/2125919425748677108</li>
+<li><strong>China–Mexico:</strong> the two countries agree to set up a working group on tariff reduction (Xinhua [Chinese state media]): https://x.com/i/status/2125909881832214745</li>
+<li><strong>Defence M&amp;A (cross-reference, CEAFE Industria de Defensa):</strong> Handelsblatt reports Helsing is considering buying Dutch missile maker Destinus. Helsing says it is not involved in a takeover process (Euronext/Reuters): https://live.euronext.com/en/financial-news/helsing-says-not-involved-takeover-process-dutch-firm-destinus-after-handelsblatt (@F_CEAFE repost https://x.com/i/status/2125906881181016325)</li>
+<li><strong>EU energy levy:</strong> Euronews reports a legal study saying Brussels could get around unanimity by framing a windfall levy on oil and gas companies as climate/energy policy: https://x.com/i/status/2125909325562667482</li>
+<li><strong>Spain:</strong> Bloomberg on what this weekend’s Spanish election means for renewables and nuclear: https://x.com/i/status/2125908709767332020</li>
+<li><strong>Data centres:</strong> @F_CEAFE cites Newsweek that air pollution from power plants supplying US data centres may cause 650 premature deaths (own post): https://x.com/i/status/2125913779976200355</li>
+<li><strong>Semiconductors/displays:</strong> ams OSRAM (Austria) and Samsung Display to co-develop micro-LED displays (Semiconductor Today): https://x.com/i/status/2125892209635688710</li>
+<li><strong>EU advanced materials:</strong> the Commission’s Advanced Materials for Europe agenda (proposed 18 Nov; 2035 targets of +20% R&amp;I investment and +20% start-ups) is a non-binding Council recommendation, not the Act once planned (Lovguiden): https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2475/IP_26_2475_EN.pdf</li>
+<li><strong>Space (cross-reference, Industria de Defensa):</strong> FCC authorises SpaceX to deploy up to one million orbital data-centre satellites (SpaceNews): https://x.com/i/status/2125662971418366315</li>
+</ul>
+<h2 id="s8">Also in this edition</h2>
+<ul>
+<li>Washington warns the EU against a Big Tech tax — see World</li>
+<li>Hormuz tanker incidents — see Conflicts</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

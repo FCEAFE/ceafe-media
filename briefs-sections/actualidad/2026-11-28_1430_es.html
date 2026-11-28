@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — sábado, 28 de noviembre de 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">sábado, 28 de noviembre de 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Actualidad / World</li>
+<li><strong>Periodo cubierto:</strong> desde las 18:55 aprox. del viernes 27 de noviembre hasta las 13:30 aprox. del sábado 28 de noviembre, hora de Madrid: todo lo nuevo desde la edición del viernes a las 20:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Actualidad de CEAFE, las publicaciones de @F_CEAFE y el archivo de CEAFE en X.</li>
+</ul>
+<h2 id="s1">Actualización: ataque en Bengasi — Zelenski admite que no coordinó con los europeos; Roma da el caso por cerrado, pero no la alarma</h2>
+<p>En una llamada con Giorgia Meloni el viernes, Volodímir Zelenski confirmó que la operación ucraniana con drones navales del 22 de noviembre contra buques rusos en el puerto libio de Bengasi «se llevó a cabo sin coordinación previa con los socios». Se comprometió a «compartir plenamente la información» y a mantener una comunicación «directa y constante» (Palazzo Chigi). Meloni le dijo que la operación «violó la soberanía de Libia y amenaza con extender el conflicto al Mediterráneo», y que el apoyo italiano «no puede traducirse en aceptar iniciativas que pongan en riesgo la seguridad de Italia y de la región». La llamada llegó tras una entrevista en la BBC en la que Zelenski había dicho que Kiev «nunca» actúa sin coordinarse con los aliados. El ministro de Defensa, Guido Crosetto, afirmó que «ninguno» —UE, OTAN, Francia, Alemania ni Reino Unido— lo sabía (Il Sole 24 Ore). El ministro de Exteriores, Antonio Tajani, declaró: «El Gobierno nunca ha mentido… Las disculpas de Zelenski lo aclaran definitivamente». Añadió que, de haber sido avisada, Roma se habría opuesto: «violar la soberanía de Libia es un error y no ayuda a la causa de Ucrania». Pidió a todas las partes que se abstengan de nuevas acciones militares en territorio y aguas libias, donde Italia tiene militares, un buque de la Marina, la Guardia di Finanza y terminales energéticas que abastecen al país.</p>
+<p><strong>Enfoque CEAFE:</strong> @F_CEAFE reposteó el mensaje de Zelenski sobre la llamada y el vídeo de Tajani («nunca hubo coordinación con los aliados», Clash Report).</p>
+<p><strong>Por qué importa para Europa:</strong> Ucrania dio un paso unilateral en el flanco sur de la UE, en un país donde Italia tiene fuerzas e intereses energéticos. Es una muestra de lo poco que deciden los europeos sobre la escalada de una guerra que financian. Según Clash Report, un convoy ruso con vehículos militares rumbo a Libia dio media vuelta tras el hundimiento (no verificado).</p>
+<p><strong>Fuentes:</strong> governo.it <a href="https://www.governo.it/en/articolo/president-meloni-s-telephone-conversation-president-zelensky/33210">https://www.governo.it/en/articolo/president-meloni-s-telephone-conversation-president-zelensky/33210</a>; Farnesina <a href="https://www.esteri.it/it/sala_stampa/archivionotizie/interventi/2026/11/libia-zelensky-litalia-non-sapeva-tajani-ci-saremmo-opposti-al-raid/">https://www.esteri.it/it/sala_stampa/archivionotizie/interventi/2026/11/libia-zelensky-litalia-non-sapeva-tajani-ci-saremmo-opposti-al-raid/</a>; Il Sole 24 Ore <a href="https://en.ilsole24ore.com/art/libya-attack-zelenskyy-corrects-himself-and-meloni-apologises-AJ7KdfVC">https://en.ilsole24ore.com/art/libya-attack-zelenskyy-corrects-himself-and-meloni-apologises-AJ7KdfVC</a>; Interfax-Ucrania <a href="https://en.interfax.com.ua/news/general/1243862.html">https://en.interfax.com.ua/news/general/1243862.html</a>; @F_CEAFE <a href="https://x.com/F_CEAFE/status/2126473366756524245">https://x.com/F_CEAFE/status/2126473366756524245</a>, <a href="https://x.com/F_CEAFE/status/2126382892477456418">https://x.com/F_CEAFE/status/2126382892477456418</a></p>
+<h2 id="s2">Misiles rusos sobre Polonia: Canadá convoca al embajador ruso; Moscú rechaza la acusación</h2>
+<p>Asuntos Globales de Canadá convocó el viernes al embajador ruso en Ottawa para condenar «los ataques con misiles rusos en Polonia, último ejemplo de la agresión temeraria de Rusia, que aumenta el riesgo de una escalada no deseada». Añadió: «Canadá está hombro con hombro con sus aliados. Estamos plenamente comprometidos con la defensa del territorio de la OTAN y con el apoyo a Ucrania». Según la fiscalía polaca, los restos hallados en Nowy Lipowiec (Lublin) y en Rudnik y Molodycz (Subcarpacia) son de tres misiles de crucero rusos Kh-101 que entraron en el espacio aéreo polaco durante el ataque del 20 de noviembre contra Ucrania, fabricados en Dubna en octubre o noviembre (Anadolu). Polonia convocó el 24 de noviembre al embajador designado de Rusia. <strong>Respuesta rusa:</strong> el embajador Oleg Stepánov afirmó que Rusia rechaza las acusaciones de violar el espacio aéreo de la UE y la OTAN. Dijo que Moscú «no está interesada en una escalada ni en un enfrentamiento militar directo con la OTAN», pero que garantizará su seguridad «con toda seriedad y determinación», y que Occidente acusa «sin pruebas convincentes» (Lenta.ru, medio ruso). La embajada rusa en Varsovia ya había calificado las acusaciones de «infundadas» (RBC).</p>
+<p><strong>Por qué importa para Europa:</strong> un aliado al otro lado del Atlántico actúa diplomáticamente por el espacio aéreo de la UE, mientras la petición polaca de interceptar misiles rusos sobre Ucrania no encuentra «determinación» entre los aliados (ver 26 de noviembre). La defensa aérea del flanco este sigue siendo el argumento más claro a favor de capacidades europeas comunes.</p>
+<p><strong>Fuentes:</strong> Asuntos Globales de Canadá <a href="https://x.com/i/status/2126442344433975793">https://x.com/i/status/2126442344433975793</a>; Anadolu (agencia estatal turca) <a href="https://www.aa.com.tr/en/asia-pacific/canada-summons-russian-ambassador-over-missile-strikes-in-poland/4141083">https://www.aa.com.tr/en/asia-pacific/canada-summons-russian-ambassador-over-missile-strikes-in-poland/4141083</a>; MAE de Polonia <a href="https://www.gov.pl/web/diplomacy/statement-on-the-summoning-of-the-russian-federation-ambassador-to-the-mfa">https://www.gov.pl/web/diplomacy/statement-on-the-summoning-of-the-russian-federation-ambassador-to-the-mfa</a>; Lenta.ru <a href="https://lenta.ru/news/2026/11/28/long-ne-zainteresovana-v-eskalatsii-posla-rossii-vyzvali-v-mid-kanady-iz-za-intsidenta-v-polshe-chto-skazal-diplomat/">https://lenta.ru/news/2026/11/28/long-ne-zainteresovana-v-eskalatsii-posla-rossii-vyzvali-v-mid-kanady-iz-za-intsidenta-v-polshe-chto-skazal-diplomat/</a>; RBC <a href="https://www.rbc.ru/politics/28/11/2026/6b0a12c5aecf8074dd883463">https://www.rbc.ru/politics/28/11/2026/6b0a12c5aecf8074dd883463</a></p>
+<h2 id="s3">Actualización: Golfo — Francia condena los ataques iraníes contra Kuwait y Baréin; alertas en Arabia Saudí; drones en RAF Lakenheath</h2>
+<p>Francia «condena en los términos más enérgicos los ataques iraníes contra el Reino de Baréin y el Estado de Kuwait de los últimos días, que mataron a dos personas de nacionalidad italiana e hirieron a varias más». Los califica de «inaceptables e injustificables» y pide «la máxima contención» (France Diplomatie, 27 de noviembre). El primer ministro paquistaní, Shehbaz Sharif, condenó «el reciente ataque con drones contra Kuwait». Baréin había invocado el principio del CCG de que «cualquier ataque contra un Estado miembro es un ataque contra todos» y la Resolución 2817 (2026) del Consejo de Seguridad (BNA, agencia estatal bareiní). El sábado, Defensa Civil saudí emitió varias alertas en Jazán, Jamis Mushait y Abha (Anadolu), después de que la coalición liderada por Riad anunciara haber interceptado un misil balístico hutí. El CENTCOM desmintió a un mando iraní que aseguraba que la armada de los Guardianes recuperó dos petroleros apresados por EE. UU.: «Irán ya no tiene armada». @F_CEAFE reposteó un aviso OSINT según el cual un avión vinculado al Gobierno de EAU (A6-RJC) aterrizó el sábado por la mañana en Teherán (motivo desconocido; sin confirmación oficial). En Reino Unido, fuerzas de EE. UU. repelieron unos seis drones cerca de RAF Lakenheath el 13 de noviembre, con sospechas sobre Irán, según el FT (vía Reuters y Clash Report).</p>
+<p><strong>Por qué importa para Europa:</strong> hay europeos entre los muertos de la guerra del Golfo y, según el FT, se sondean bases en suelo europeo. Aun así, la UE aparece sobre todo en declaraciones nacionales (Francia, Italia) y no con una posición común. La frase del ex primer ministro catarí Hamad bin Jasim —«Necesitamos de verdad una OTAN… defensa aérea conjunta… tecnología que desarrollemos juntos»— vale también para Europa. Detalle militar en Conflictos.</p>
+<p><strong>Fuentes:</strong> France Diplomatie <a href="https://pubt.io/view/00AC7CAE2583A77735BC59AC0010E9CE175B68B1">https://pubt.io/view/00AC7CAE2583A77735BC59AC0010E9CE175B68B1</a>; BNA <a href="https://www.bna.bh/en/BahrainstronglycondemnsrenewedIranianattacksonKuwait.aspx?cms=q8FmFJgiscL2fwIzON1%2BDnMiyRJzj3MT5tXt4Jq12BA%3D">https://www.bna.bh/en/BahrainstronglycondemnsrenewedIranianattacksonKuwait.aspx?cms=q8FmFJgiscL2fwIzON1%2BDnMiyRJzj3MT5tXt4Jq12BA%3D</a>; CENTCOM <a href="https://x.com/i/status/2126467565253779814">https://x.com/i/status/2126467565253779814</a>; Lakenheath <a href="https://x.com/i/status/2126647370423140537">https://x.com/i/status/2126647370423140537</a>; Hamad bin Jasim <a href="https://x.com/i/status/2126603588239573219">https://x.com/i/status/2126603588239573219</a>; @F_CEAFE <a href="https://x.com/F_CEAFE/status/2126637096131531004">https://x.com/F_CEAFE/status/2126637096131531004</a>, <a href="https://x.com/F_CEAFE/status/2126635595493429460">https://x.com/F_CEAFE/status/2126635595493429460</a></p>
+<h2 id="s4">Asia-Pacífico: elecciones locales en Taiwán, presión del EPL, Manila frente a Pekín y Japón estudia submarinos nucleares</h2>
+<p>Taiwán celebró el sábado elecciones locales. El KMT retuvo Taipéi, donde el alcalde Wayne Chiang resistió al DPP, y se adjudicó Kinmen (Quemoy). El DPP conservó Kaohsiung y el KMT perdió la jefatura del condado de Changhua (SCMP, diario de Hong Kong propiedad de Alibaba). El Ministerio de Defensa taiwanés detectó 33 salidas de aviones del EPL, 27 de ellas cruzando la línea media, además de 8 buques de la Armada china y 4 buques oficiales (reposteado por @F_CEAFE). En Manila, el portavoz de la Guardia Costera Jay Tarriela respaldó al secretario de Defensa, Gilberto Teodoro: «China no tiene base moral para sermonear a Filipinas sobre con quién debe trabajar» (reposteado por @F_CEAFE). Japón prevé indicar en la revisión de sus documentos de seguridad de fin de año que «empezará a estudiar y llegará a una conclusión» sobre si adquiere submarinos de propulsión nuclear (Japan Times). Global Times (medio estatal chino) informa de que el caza furtivo J-35A ha llegado a Zhuhai para su primera exhibición estática (reposteado por @F_CEAFE). El servicio de inteligencia surcoreano vigila una posible visita de Kim Jong-un a China.</p>
+<p><strong>Por qué importa para Europa:</strong> el estrecho de Taiwán y el mar de China Meridional son el escenario al que EE. UU. pide a los europeos que envíen buques. El resultado taiwanés y el debate japonés sobre submarinos nucleares (dependencia tecnológica de EE. UU. al estilo AUKUS) condicionarán esas peticiones.</p>
+<p><strong>Fuentes:</strong> SCMP <a href="https://www.scmp.com/news/china/politics/article/3376140/kmt-holds-taipei-mayor-wayne-chiang-fends-fierce-dpp-challenge">https://www.scmp.com/news/china/politics/article/3376140/kmt-holds-taipei-mayor-wayne-chiang-fends-fierce-dpp-challenge</a>, <a href="https://www.scmp.com/news/china/politics/article/3376141/kmt-challenger-ko-chih-en-falls-short-dpp-retains-kaohsiung-stronghold">https://www.scmp.com/news/china/politics/article/3376141/kmt-challenger-ko-chih-en-falls-short-dpp-retains-kaohsiung-stronghold</a>; Defensa de Taiwán <a href="https://x.com/i/status/2126481204736119281">https://x.com/i/status/2126481204736119281</a>; Tarriela <a href="https://x.com/i/status/2126479392021070147">https://x.com/i/status/2126479392021070147</a>; Japan Times <a href="https://x.com/i/status/2126609620604997906">https://x.com/i/status/2126609620604997906</a>; Global Times <a href="https://x.com/i/status/2126558913604780451">https://x.com/i/status/2126558913604780451</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

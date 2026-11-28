@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Thursday, 26 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Thursday, 26 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> from about 13:15 to about 19:20 on Thursday 26 November, Europe/Madrid: everything new since the 14:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">Altria confirms it is considering an all-cash offer for Britain’s Imperial Brands; Japan Tobacco is also studying a deal</h2>
+<p>US group Altria (Richmond, Virginia; Marlboro in the US) confirmed on 26 November that it is “considering a possible offer” for London-listed Imperial Brands and that any offer “is likely to be solely in cash”. It also said it is “in discussions with a third party regarding its possible acquisition of part of the business of Imperial Brands”, with no agreement yet (Altria, Rule 2.4 statement). Imperial’s board said it “has not had any discussions with, or received any approach or proposal from, Altria or the third party” and told shareholders to take no action. Under the UK Takeover Code Altria must make a firm offer or walk away by 17:00 London time on 24 December 2026 (Imperial Brands RNS). Bloomberg reported that Japan Tobacco is also studying a deal, possibly with a partner, splitting Imperial’s assets by region. Imperial shares jumped as much as 17.6% to 3,562p, valuing it at £26.77bn (about US$35bn) (Reuters via Investing.com).</p>
+<p><strong>Why it matters for Europe:</strong> it would be one of the largest takeovers of a British company in a decade. London-listed firms are cheap: Imperial trades at 8.3 times forward earnings against 12.6 for Altria and 17.7 for JT (LSEG via Reuters). Tobacco is not a strategic sector under CEAFE’s US-takeover list, so it is not added to that list. But it shows the same pattern: depressed European valuations make European headquarters and brands (Davidoff, Gauloises) easy prey for US and Asian capital. Imperial announced up to 4,600 job cuts last week.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>Buyer: Altria Group (US), market value about US$126.9bn; possible partner: an unnamed third party for part of the business. Rival interest: Japan Tobacco (Japan), about US$69.5bn.</li>
+<li>Target: Imperial Brands plc (UK), market value £26.77bn after the jump.</li>
+<li>Deadline: “put up or shut up” by 24 December 2026.</li>
+<li>Altria and JT already run a smoke-free joint venture (2022). RBC says a joint bid “would neatly swerve anti-trust objections”.</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Reuters (X): https://x.com/i/status/2125998242454184157 ; Bloomberg (X): https://x.com/i/status/2125976657005555775 and https://x.com/i/status/2125956525034275031</li>
+<li>Altria statement (26 Nov): https://investor.altria.com/press-releases/news-details/2026/Altria-Response-to-Media-Speculation-on-Possible-Offer-for-Imperial-Brands-plc/default.aspx</li>
+<li>Imperial Brands RNS (26 Nov): https://www.tradingview.com/news/reuters.com,2026-11-26:newsml_RSZ8831Ea:0-reg-imperial-brands-plc-altria-group-inc-statement-re-possible-offer/</li>
+<li>Reuters reprint: https://www.investing.com/news/stock-market-news/marlboro-maker-altria-explores-takeover-of-uks-imperial-brands-5052558</li>
+<li>Bloomberg: https://www.bloomberg.com/news/articles/2026-11-26/altria-studies-deal-for-cigarette-maker-imperial-brands</li>
+</ul>
+<p><strong>Follow-up:</strong> whether Altria makes a firm offer by 24 December; the identity of the third party; a JT counter-bid; UK government reaction.</p>
+<h2 id="s2">Update: Section 301 “overcapacity” tariffs: Singapore is “very disappointed”, partners hit back, and Global Times says Brussels “waved the white flag”</h2>
+<p>The US Trade Representative’s Section 301 findings on “structural excess capacity” in 14 economies, including the EU, published on 25 November (US time), keep drawing replies. Singapore’s Ministry of Energy, Trade and Industry said: “Singapore disagrees with the USTR’s findings and we are very disappointed with the proposed actions.” The USTR proposes up to 20% on Singapore’s exports, cut to 10% with a reciprocal trade agreement. METI stressed that the US has run a trade surplus with Singapore for over 20 years, US$33bn in 2025 (METI). Deputy Prime Minister Gan Kim Yong said the effective levy on Singapore’s exports would rise from 7.8% to 10.3% (Reuters). AP reports that China and other partners are pushing back and that the duties are likely to take effect early next year. They are intended to rebuild the tariffs the Supreme Court struck down in February. European stocks nonetheless rallied as “tariff fears ease” (Reuters).</p>
+<p>The reaction to Europe’s reply is the new element. On 25 November Commission spokesman Olof Gill said the EU “strongly reject[s] the premise that Europe is a source of structural overcapacity” and that “Europe is among those most exposed to overcapacity… much of it state-driven and concentrated in third countries. We regret the lack of joint action” (RTÉ). A Global Times [Chinese state media] editorial answered: “The moment Washington raised its tariff stick, the European Commission immediately waved the white flag, willingly offering itself as an accomplice in exchange for being spared.” It said that “what Europe needs is strategic autonomy, not strategic subservience”.</p>
+<p><strong>Why it matters for Europe:</strong> the EU’s 15% ceiling from the 2025 Turnberry deal is again on the table, and the Commission’s first instinct was to offer Washington a joint front against China rather than defend the rules. Beijing is exploiting the contradiction. Europe is caught between US tariffs and Chinese pressure, and has no reciprocity tool of its own in use.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>14 economies targeted; Singapore up to 20% (10% with a deal); EU expects the 15% cap to be respected “in full, including when combined with existing duties” (Gill).</li>
+<li>US trade surplus with Singapore: US$27bn (2024), US$33bn (2025) (METI).</li>
+<li>Public consultation period still to come; measures likely early 2027 (AP).</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Reuters (X): https://x.com/i/status/2125957784894124137 , https://x.com/i/status/2125960270057283984 , https://x.com/i/status/2126003108874473673 (five takeaways), https://x.com/i/status/2125945287894007980 (European stocks)</li>
+<li>Singapore METI statement (26 Nov): https://www.sgpc.gov.sg/api/file/getfile/METI%20media%20statement%20on%20the%20Office%20of%20the%20United%20States%20Trade%20Representative%20Findings%20and%20Proposed%20Actions%20in%20Section%20301%20Investigation%20into%20Structural%20Excess%20Capacity.pdf?path=%2Fsgpcmedia%2Fmedia_releases%2Fmeti%2Fpress_release%2FP-20261126-1%2Fattachment%2FMETI+media+statement+on+the+Office+of+the+United+States+Trade+Representative+Findings+and+Proposed+Actions+in+Section+301+Investigation+into+Structural+Excess+Capacity.pdf</li>
+<li>Reuters reprint: https://www.investing.com/news/economic-indicators/singapore-very-disappointed-over-new-tariffs-urges-us-to-reconsider-5052469</li>
+<li>AP: https://apnews.com/article/us-tariffs-china-japan-singapore-b94a693004ad8f9b5e78f7aafb196a71</li>
+<li>RTÉ (Commission statement): https://www.rte.ie/news/us/2026/1125/1600630-us-tariffs/</li>
+<li>Global Times [Chinese state media] (X): https://x.com/i/status/2125990563333980597 ; https://www.globaltimes.cn/page/202611/1375114.shtml ; editorial https://www.globaltimes.cn/page/202611/1375150.shtml ; GT on allies’ backlash: https://x.com/i/status/2125954246583685248</li>
+<li>MOFCOM criticism of Section 301 (GT, reposted by @F_CEAFE): https://x.com/i/status/2125862609912221752</li>
+</ul>
+<p><strong>Follow-up:</strong> USTR consultation calendar; any EU–US talks on the 15% cap; Japan, Korea and India responses.</p>
+<h2 id="s3">The EU Quantum Act shuts Chinese firms out of quantum procurement but leaves the door open to US suppliers; Beijing calls it discrimination</h2>
+<p>The draft Quantum Act unveiled by the Commission on 25 November says that “given the possible impact of quantum technologies for security and the Union’s strategic interests and technological autonomy, it is necessary to restrict procurement procedures to products, systems and services that are provided by Union controlled entities”. Suppliers from countries with a reciprocal partnership or that belong to the WTO Government Procurement Agreement (GPA) may also bid (draft quoted by Reuters, via Global Times). China is not a GPA party, so Chinese firms are excluded, while US firms can sell computers, simulators and imaging systems to EU governments (SCMP). An EU official added that Chinese-controlled entities in Hong Kong, a GPA member, could be excluded on security grounds (SCMP). Huo Jianguo of the China Society for WTO Studies told Global Times [Chinese state media] the exclusion is “outright discrimination” and that it “will only hold back the EU’s own progress in quantum technology”.</p>
+<p><strong>CEAFE comment:</strong> Technological and defence dependence is not abstract: it shows up in the number of companies, in spending and in the presence on the ground.</p>
+<p><strong>Why it matters for Europe:</strong> the Commission’s own figures show the EU hosts 32% of the world’s quantum companies (US 25%, China 5%) but holds just 6% of quantum patents (US 23%, China 46%) (European Commission report published in 2025, cited by GT). Closing the market to China while opening it to the US follows the pattern of the Industrial Accelerator Act and the procurement reform (EPRS). It protects European champions from Chinese competition but not from US competitors. That is a half-sovereignty that matches Washington’s technology-control line.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>Criterion: EU-controlled entities plus GPA/reciprocal partners; security exception case by case.</li>
+<li>Linked to the Sovereign Tech Equity Fund proposal (covered 25 Nov 20:30).</li>
+<li>EPRS (Sept 2026) notes the same GPA logic in the Industrial Accelerator Act would exclude China and admit the US.</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Global Times [Chinese state media] (X): https://x.com/i/status/2125978748952642041 ; article https://www.globaltimes.cn/page/202611/1375144.shtml</li>
+<li>SCMP: https://www.scmp.com/news/china/diplomacy/article/3375733/eus-quantum-sovereignty-push-shuts-out-china-welcomes-us-firms</li>
+<li>EPRS briefing on the Industrial Accelerator Act: https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/791495/EPRS_BRI(2026)791495_EN.pdf</li>
+<li>QuantumDaily (R&amp;D list): https://x.com/i/status/2125959076433788971</li>
+</ul>
+<p><strong>Follow-up:</strong> any formal MOFCOM/MFA response; Council and Parliament positions on the security clause.</p>
+<h2 id="s4">OPEC+ set to roll over output targets; refining margins slump; Iraq–Kurdistan oil standoff; refinery blast in Bangkok</h2>
+<p>OPEC+ is likely to roll over its oil output targets for the first quarter, as disputes over capacity persist and the Iran war adds uncertainty (Reuters and Bloomberg, citing sources). Refiners’ margins on turning crude into fuel have slumped to their lowest in months as supply recovers and demand stays sluggish (Bloomberg). In Iraq the federal government and the Kurdish region are in their sharpest confrontation in years over control of oil fields and border crossings, and thousands rallied in Kurdistan (Al Jazeera English). An explosion and fire at the Phra Khanong refinery in Bangkok injured at least seven people (Reuters; Japan Times; Xinhua [Chinese state media]).</p>
+<p><strong>Why it matters for Europe:</strong> after this morning’s Gulf supply shock (14:30 edition, topic 5), an OPEC+ rollover keeps supply tight while Europe already pays a war premium on LNG. Lower refining margins give some relief on diesel prices.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Reuters (X): https://x.com/i/status/2126005677319405980 ; Bloomberg (X): https://x.com/i/status/2125948980517384620 , https://x.com/i/status/2126003084476166537</li>
+<li>Al Jazeera English (X): https://x.com/i/status/2125991722425655558 , https://x.com/i/status/2126004305056670116</li>
+<li>Reuters (X), Bangkok refinery: https://x.com/i/status/2125945168230539714</li>
+</ul>
+<p><strong>Follow-up:</strong> OPEC+ meeting decision; Brent after the Hormuz mine reports.</p>
+<h2 id="s5">Briefly noted</h2>
+<ul>
+<li><strong>Banking (intra-European M&amp;A):</strong> Ireland’s High Court refused to sanction Austrian BAWAG’s acquisition of Permanent TSB (Reuters): https://x.com/i/status/2125986741664334195</li>
+<li><strong>Germany:</strong> metalworkers struck a wage deal that lets companies negotiate lower labour costs in return for investment and job guarantees (Bloomberg): https://x.com/i/status/2126006851963605155 . Entrepreneur Frank Thelen: “Where does Germany stand on AI? Nowhere… We have no chip technology. We have no big models… electricity is extremely expensive” (@F_CEAFE repost): https://x.com/i/status/2125905957934801235</li>
+<li><strong>Semiconductors:</strong> a global memory-chip shortage is pushing up electronics prices (WSJ): https://x.com/i/status/2126008370872099246 ; Global Times on AI data centres absorbing memory supply: https://x.com/i/status/2125953497996882427 . WSJ says the US government “quietly took the upper hand” in the AI race while attention was on Jensen Huang’s exit and return at Nvidia: https://x.com/i/status/2125955955531620549</li>
+<li><strong>Asian payments:</strong> China, Japan, South Korea and ASEAN launch talks on cross-border digital payments (Reuters): https://x.com/i/status/2125947720342913535</li>
+<li><strong>China tech policy:</strong> a 2030 roadmap for next-generation networks, including 6G (Global Times [Chinese state media]): https://x.com/i/status/2125933411458293764 ; first 600 MW-class compressed-air energy-storage expander completed: https://x.com/i/status/2125968240719585453 ; five-year services-trade opening plan: https://x.com/i/status/2125973828815978620</li>
+<li><strong>UK–EU:</strong> the agri-food (SPS) deal includes a 10-year break clause that makes the party that breaches it pay to rebuild the border (Bloomberg): https://x.com/i/status/2125980431807857074</li>
+<li><strong>France:</strong> Marine Le Pen pledges to cut VAT on electricity, gas, heating oil and fuel from 20% to 5.5% (@F_CEAFE repost): https://x.com/i/status/2125687116382502923</li>
+<li><strong>Defence industry (cross-reference, Industria de Defensa):</strong> a Franco-German clash over “Made in Europe” in the EU defence budget (FT Brussels, @F_CEAFE repost https://x.com/i/status/2125900221896864071); UK £8bn deal for nuclear-submarine maintenance in Plymouth (Reuters https://x.com/i/status/2125994273342366167); Finland orders 160 CV9035 from BAE Systems Hägglunds (Sweden) (Finnish MoD, @F_CEAFE repost https://x.com/i/status/2125940016216158499).</li>
+<li><strong>Space (cross-reference, Industria de Defensa):</strong> European start-up OSMOS X begins work on a “bodyguard” satellite (SpaceNews): https://x.com/i/status/2125992329282486632</li>
+</ul>
+<h2 id="s6">Also in this edition</h2>
+<ul>
+<li>Spain&rsquo;s Hernández de Cos chosen to lead the ECB; budget talks &ldquo;light-years&rdquo; apart — see World</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Wednesday, 25 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Wednesday, 25 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> Wednesday 25 November from about 07:00 to about 13:30 Europe/Madrid: everything new since the 08:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">Poland asks NATO allies to consider shooting down Russian missiles over Ukraine; Warsaw says it sees &ldquo;no determination&rdquo;</h2>
+<p><strong>Lede.</strong> Poland has asked NATO allies to look at intercepting Russian missiles and drones over Ukrainian territory when they are heading for NATO airspace, Bloomberg reported on Wednesday; according to agency accounts of the report, the idea was raised at a meeting of NATO ambassadors in Brussels on 23 November, some allies were supportive, and no decision was taken.</p>
+<p><strong>Context.</strong> Foreign Minister Radosław Sikorski told Polish Radio Three that Ukraine itself is asking for &ldquo;threatening objects over its territory&rdquo; to be shot down, and that doing so &ldquo;over Ukraine, at Ukraine&rsquo;s request, would fall within the definition of necessary self-defence&rdquo; (PAP via Onet). Defence Minister Władysław Kosiniak-Kamysz told RMF that &ldquo;once again, as in July&rdquo;, Poland would probably not get the reaction it expected: &ldquo;I see perhaps a greater willingness to talk, but I do not see determination&rdquo; (EFE). He asked whether the lukewarm response was about &ldquo;appeasement&rdquo; and recalled that US experts are also examining the debris; President Trump had called the incident &ldquo;a couple of little missiles&rdquo; fired by mistake (EFE). On 20 November three objects entered Polish airspace and two missiles and a suspected jet drone fell on Polish soil; a Swedish Gripen under NATO command could not engage a suspected Kh-101 because NATO rules require visual identification, while Poland changed its own rules in October to allow shoot-downs on radar data (Clash Report, citing Polish command, Kyiv Independent and EFE). Russia&rsquo;s MFA warned in 2024 that it could respond if Poland shot down Russian missiles over Ukraine (RBC, Russian business daily).
+Separately, the Italian Navy said its destroyer Giovanni delle Bande Nere intercepted a high-speed ballistic target with two Aster 30 missiles, which La Repubblica called Europe&rsquo;s only operational sea-based ballistic-missile shield (Clash Report).</p>
+<p>The conclusion is the same once again: either Europe acts as one, or each country is left in a supporting role.</p>
+<p><strong>Why it matters for Europe:</strong> the frontline state most exposed to Russian strikes is asking for a collective decision that the alliance has not taken, and its ministers openly doubt that their allies, Washington included, will back it. The Aster 30 test shows that a European-built answer to ballistic threats exists; the question is whether Europeans decide together to use it. Here is a further example of why Europeans need common rules of engagement and their own air-defence chain, rather than waiting for a consensus that depends on others.</p>
+<p><strong>What to watch:</strong> NATO military advice on interceptions over Ukraine; the European Council (26–27 Nov); any Russian MFA reaction to the Polish proposal (none found so far).</p>
+<p><strong>Sources:</strong> Clash Report: https://x.com/i/status/2125555722033205515 and https://clashreport.com/world/articles/poland-nato-shoot-down-russian-missiles-ukraine-mip2wfksx6 ; Bloomberg post: https://x.com/i/status/2125550101896561041 ; PAP/Onet (Sikorski): https://wiadomosci.onet.pl/kraj/radoslaw-sikorski-o-zestrzeliwaniu-rosyjskich-rakiet-na-prosbe-ukrainy/qex6chs ; EFE/Infobae (Kosiniak-Kamysz): https://www.infobae.com/america/agencias/2026/11/25/polonia-presiona-a-otan-para-derribar-misiles-rusos-sobre-ucrania-tras-ultimas-incursiones/ ; RBC: https://www.rbc.ru/politics/25/11/2026/6b06c39476b4eed1329dac9a ; Italian Navy Aster 30 (Clash Report): https://x.com/i/status/2125558870240079943</p>
+<figure class="brief-figure">
+<img src="../../assets/media-cache/5d4b31b3cbc3508b.jpg" alt="Clash Report article image" />
+<figcaption>Clash Report article image</figcaption>
+</figure>
+
+<h2 id="s2">Update: peace table — von der Leyen says a &ldquo;strong European team&rdquo; will join the next round, as Washington rules out troops and bases in post-war Ukraine</h2>
+<p><strong>Lede.</strong> Commission President Ursula von der Leyen told the European Parliament that &ldquo;a strong European team will participate in the next round of talks&rdquo; and that the EU will &ldquo;judge progress based on Russia&rsquo;s actions, not simply its words&rdquo;; Russia should accept a winter ceasefire on energy infrastructure and a truce guaranteeing safe passage of food exports through the Black Sea, as discussed at last week&rsquo;s Coalition of the Willing meeting.</p>
+<p><strong>Context.</strong> She said Ukraine faces a gap of about €70 billion next year; the proposed Instrument for Coordinated Support to Ukraine would provide €45 billion in 2027 (€20 billion budget support, €25 billion military), &ldquo;two thirds&rdquo; of the need, repayable only once Russia pays for the damage; she also said the EU is on track to open the last two accession clusters this year. Meanwhile the Kyiv Independent reported (exclusive) that US negotiators have privately ruled out US troops or military bases in post-war Ukraine as part of security guarantees, preferring an &ldquo;Article 5-like&rdquo; commitment whose obligations remain undefined. Kremlin spokesman Dmitry Peskov said the deployment of any foreign military contingents in Ukraine is &ldquo;unacceptable&rdquo; to Russia, responding to Boris Johnson&rsquo;s call for NATO troops (TASS, Russian state agency). Belarus&rsquo; Alexander Lukashenko told Le Point he does not rule out the withdrawal of nuclear-capable Russian missiles from Belarus as part of a settlement (TASS; BelTA). The Wall Street Journal reported that Zelenskyy would turn to the incoming Democratic-controlled Congress for aid and sanctions if Trump fails to get a deal by year-end (via Clash Report).</p>
+<p><strong>Why it matters for Europe:</strong> Brussels wants a seat, but the security guarantee on offer from Washington carries no American soldiers, so any force on the ground would be European. That makes the gap between what Europe is asked to underwrite and what it is allowed to negotiate obvious. A European seat at the table only carries weight if Europe brings its own military means.</p>
+<p><strong>What to watch:</strong> composition of the &ldquo;European team&rdquo; and date of the next round; the European Council on Ukraine financing (26–27 Nov); Moscow&rsquo;s answer to the winter-ceasefire request.</p>
+<p><strong>Sources:</strong> von der Leyen speech (Commission text via 1848.nl): https://app.1848.nl/document/item/583309 ; Commission Representation in Germany: https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/prasidentin-von-der-leyen-sicherheit-der-ukraine-wirkt-sich-unmittelbar-auf-unsere-sicherheit-aus-2026-11-25_de ; von der Leyen on X: https://x.com/i/status/2125527771468177539 ; Anadolu: https://www.aa.com.tr/en/europe/von-der-leyen-says-strong-european-team-to-join-next-round-of-ukraine-peace-talks/4136998 ; Kyiv Independent: https://kyivindependent.com/exclusive-us-rules-out-troops-military-bases-in-ukraine-under-post-war-security-guarantees-falling-short-of-kyivs-expectations/ and https://x.com/i/status/2125508306227622080 ; TASS (Peskov): https://x.com/i/status/2125543787137208759 ; TASS (Lukashenko): https://tass.com/world/2224477 ; BelTA: https://esp.belta.by/president/view/lukashenko-respondi-a-una-pregunta-sobre-la-posibilidad-de-retirar-de-belars-misiles-capaces-de-96749-2026/ ; WSJ via Clash Report: https://x.com/i/status/2125531137485205513</p>
+<p class="image-note">von der Leyen video (23 s): https://video.twimg.com/amplify_video/2125527389656539137/vid/avc1/720x720/el8chlGJHG7PgwNf.mp4</p>
+
+<h2 id="s3">Merz in the Bundestag: &ldquo;Russia wants more than Ukraine&rdquo;, as Berlin cuts other spending and AfD calls for an end to aid</h2>
+<p><strong>Lede.</strong> Opening the debate on the 2027 federal budget, Chancellor Friedrich Merz said: &ldquo;Russia knows exactly what it wants. And Russia wants more than Ukraine,&rdquo; adding that Russia is &ldquo;escalating&rdquo; in the Baltic, Poland, the Black Sea, in space &ldquo;and by now also massively here in our own country&rdquo; (Reuters via Straits Times; AFP).</p>
+<p><strong>Context.</strong> The core 2027 budget totals €560.9 billion with net borrowing of almost €123 billion (AFP); the draft plans to double defence spending to over €200 billion by 2030, 3.7% of GDP (Reuters). Anadolu reports that the Merz government plans nearly $153 billion in defence spending for 2027 while cutting aid and UN contributions. &ldquo;We no longer have the money for everything,&rdquo; Merz said. AfD co-leader Tino Chrupalla cited a poll showing a majority of Germans no longer accept military aid to Ukraine, and AfD leader Alice Weidel said &ldquo;peace in Europe is only possible with Russia and the US&rdquo; (Clash Report clips). On the EU&rsquo;s 2028–2034 budget (Costa&rsquo;s new box: €1.582 trillion, about €40 billion below the Irish presidency proposal), Merz wants spending &ldquo;limited and focused&rdquo; on &ldquo;security and competitiveness&rdquo; ahead of Thursday–Friday&rsquo;s special summit (Reuters). @F_CEAFE this morning reposted two German posts attacking Foreign Minister Wadephul&rsquo;s line that peace in Europe can only be had &ldquo;against&rdquo; Russia.</p>
+<p><strong>Why it matters for Europe:</strong> Germany is rearming nationally while asking for a smaller common EU budget. The scale Europe needs for its defence will not come from 27 national budgets competing with each other; a German build-up without a stronger common European instrument risks creating a dominant national army instead of a European one.</p>
+<p><strong>What to watch:</strong> final Bundestag vote on the 2027 budget this week; the special European Council on the MFF (26–27 Nov); Russian reaction to Merz (none found so far).</p>
+<p><strong>Sources:</strong> Straits Times (Reuters): https://www.straitstimes.com/world/europe/germanys-merz-defends-aid-for-ukraine-says-russia-poses-growing-threat-to-europe ; AFP via newsworm: https://www.newsworm.de/news/merz-defends-2027-budget-and-ukraine-support ; The Guardian live: https://www.theguardian.com/world/live/2026/nov/25/ukraine-russia-energy-strikes-mark-rutte-donald-trump-friedrich-merz-germany-latest-news-updates ; DW: https://x.com/i/status/2125536831039062076 ; Anadolu: https://x.com/i/status/2125536241156231570 ; Clash Report (Merz, Chrupalla, Weidel): https://x.com/i/status/2125540192345846128 , https://x.com/i/status/2125540094899892373 , https://x.com/i/status/2125550934621409495 ; @F_CEAFE reposts: https://x.com/i/status/2125487471357988882</p>
+<h2 id="s4">Update: the EU tightens export controls on 15 more entities tied to Russia&rsquo;s military industry; Kallas promises a hit on energy revenues</h2>
+<p><strong>Lede.</strong> The Council of the EU added 15 entities that are part of, or support, Russia&rsquo;s military-industrial complex to the list subject to tighter export restrictions on dual-use goods and advanced technology (Annex IV), citing the EU&rsquo;s &ldquo;determination to increase pressure so that Russia stops its brutal war&rdquo;.</p>
+<p><strong>Context.</strong> The Council did not name the entities in its posts. High Representative Kaja Kallas, reposted by the EEAS spokesperson, said the 22nd package will add &ldquo;dozens of actors in Russia&rsquo;s energy sector&rdquo;, including shadow-fleet enablers, and &ldquo;over 60 shadow fleet vessels&rdquo;, and tighten export bans on LNG and oil projects. Energy Commissioner Dan Jørgensen told Euronews the EU &ldquo;will never return to Russian energy&rdquo;: &ldquo;We do not trust Russia, even if there&rsquo;s peace.&rdquo; Von der Leyen told Parliament the 22nd package was adopted by the Commission on Monday (see story 2).</p>
+<p><strong>Why it matters for Europe:</strong> sanctions are one of the few areas where the EU acts as one actor with real leverage. Their impact depends on unanimity in the Council, which the Hungarian and Slovak governments have used before to delay packages.</p>
+<p><strong>What to watch:</strong> Council adoption of the 22nd package; names of the 15 entities in the Official Journal and whether third-country firms (China, UAE, Türkiye) are among them; Russian countermeasures.</p>
+<p><strong>Sources:</strong> Council of the EU: https://x.com/i/status/2125533454779765119 and https://x.com/i/status/2125534992931696641 ; press release: https://www.consilium.europa.eu/en/press/press-releases/2026/11/25/russia-s-war-of-aggression-against-ukraine-eu-restricts-trade-with-15-entities-linked-to-russia-s-military-and-industrial-complex/ (timed out at access; content from Council posts and Kommersant https://www.kommersant.ru/doc/9130305) ; Kallas via EEAS spokesperson: https://x.com/i/status/2125548943912427943 ; Euronews (Jørgensen): https://x.com/i/status/2125559756815519829</p>
+<h2 id="s5">Iran war: Washington tells Americans to leave Iran &ldquo;immediately&rdquo;; Tehran ties Hormuz to the US blockade; Houthis threaten Jeddah</h2>
+<p><strong>Lede.</strong> The US Virtual Embassy in Iran told US citizens to leave the country immediately and not to travel there for any reason, warning that hostilities, including Iranian attacks on US assets in Bahrain and Kuwait and Houthi actions, could escalate rapidly (security alert of 24 Nov; Euronews).</p>
+<p><strong>Context.</strong> Trump said the US has the funds to sustain the Iran war until January and can &ldquo;put that war to bed anytime we want&rdquo; (Anadolu). An Iranian diplomat said Iran will not allow ships through the Strait of Hormuz while the US blockade remains (IRNA, Iranian state agency, via Al Jazeera). The Houthis&rsquo; military spokesman said Jeddah and all Saudi Red Sea ports will be targets if Saudi Arabia bombs Hodeidah and told workers to evacuate (Yahya Saree on X); Sweden condemned the attacks on Riyadh&rsquo;s financial district. US officials consider Iran a leading suspect in cyberattacks on up to 50 energy tankers (WSJ via Clash Report). In Israel, opposition figure Avigdor Lieberman said there is no justification for an immediate strike on Iran (Haaretz, reposted by @F_CEAFE), and the judges in Netanyahu&rsquo;s trial proposed that the Attorney General drop the bribery charge in Case 4000 (Haaretz, Times of Israel). Greece&rsquo;s FM Gerapetritis received Yemen&rsquo;s FM to discuss maritime security.</p>
+<p><strong>Why it matters for Europe:</strong> Europe imports the war&rsquo;s costs through energy (Ofgem raised the UK price cap by 26% citing Middle East gas prices, reposted by @F_CEAFE) and Red Sea shipping, without any say in the decision to escalate.</p>
+<p><strong>What to watch:</strong> US or Israeli strike decision; Saudi response to Houthi threats; Hormuz traffic; EU Aspides mandate.</p>
+<p><strong>Sources:</strong> US Virtual Embassy Iran: https://ir.usembassy.gov/security-alert-iran-november-24-2026/ ; Euronews: https://www.euronews.com/2026/11/25/us-tells-citizens-to-leave-iran-warns-hostilities-could-escalate-fast ; Anadolu (Trump): https://x.com/i/status/2125525415577964871 ; Al Jazeera (IRNA): https://x.com/i/status/2125523772723921073 ; Houthi spokesman: https://x.com/i/status/2125555253676331501 ; Sweden MFA: https://x.com/i/status/2125472667868512387 ; WSJ via Clash Report: https://x.com/i/status/2125521029434913204 ; Haaretz: https://x.com/i/status/2125541295762395227 ; @F_CEAFE reposts (Lieberman, Ofgem): https://x.com/i/status/2125511678590845163 , https://x.com/i/status/2125511776317985211 ; Greece MFA: https://x.com/i/status/2125558163428770170</p>
+<h2 id="s6">China and Taiwan in Europe and Asia: Lithuania asks Taiwan to rename its office; Taiwan and the Philippines sign a space MOU; Japan and Singapore issue their first joint defence statement</h2>
+<p><strong>Lede.</strong> A Lithuanian presidential aide called on Taiwan to rename its &ldquo;Taiwanese Representative Office&rdquo; in Vilnius, according to the Global Times (Chinese state media), which quoted a Chinese expert saying &ldquo;blame-shifting won&rsquo;t help mend ties&rdquo;; @F_CEAFE reposted it.</p>
+<p><strong>Context.</strong> Taiwan and the Philippines signed their first space-cooperation MOU (Taiwan MOFA). Japan&rsquo;s Defence Minister Koizumi and Singapore&rsquo;s Defence Minister Chan issued their first-ever joint press statement on defence cooperation. Taiwan&rsquo;s APEC envoy Stan Shih met US Under Secretary Allison Hooker on technology partnership (reposted by @F_CEAFE). Japan&rsquo;s MoD reported four PLA Navy vessels near Cape Toi on 24 Nov. The NYT reported that the Trump administration has paused joint military operations with Ecuador (via Reuters). The US said Kim Ju-ae&rsquo;s ski gear may breach UN sanctions (SCMP, Alibaba-owned).</p>
+<p><strong>Why it matters for Europe:</strong> Lithuania&rsquo;s 2021 decision on the office name brought Chinese trade retaliation against the whole single market; a single EU member state that opens a front with Beijing alone ends up paying, and asking Brussels to pay, for it.</p>
+<p><strong>What to watch:</strong> Taiwan&rsquo;s answer and Lithuanian government confirmation; Beijing&rsquo;s follow-up.</p>
+<p><strong>Sources:</strong> Global Times via @F_CEAFE repost: https://x.com/i/status/2125511870568419418 ; Taiwan MOFA: https://x.com/i/status/2125514843708940787 ; Japan MoD: https://x.com/i/status/2125492209529274608 and https://x.com/i/status/2125500403118911703 ; Reuters (Ecuador): https://x.com/i/status/2125540030240223665 ; SCMP: https://x.com/i/status/2125523597993099744</p>
+<h2 id="s7">In brief</h2>
+<ul>
+<li><strong>Greenland:</strong> the US Mission to NATO restated that the agreement with Denmark and Greenland &ldquo;exists in perpetuity&rdquo; and gives the US a veto on adversary investment and room for new missile-defence facilities (reposted by @F_CEAFE). The text (22 Sept) has no end date; Greenland&rsquo;s parliament approved it on 3 Nov and Denmark&rsquo;s Folketing on 19 Nov (109–0); it enters into force on exchange of notes. https://x.com/i/status/2125495955386503628 ; https://disputeindex.com/cases/trump-permanent-control-us-denmark-greenland-security-agreement</li>
+<li><strong>European Parliament:</strong> final approval of the 2027 EU budget (€300 million more for research, networks, education and civil protection), the pharmaceutical reform and Critical Medicines Act; debate on Costa&rsquo;s MFF box. https://x.com/i/status/2125552583389614235</li>
+<li><strong>EU–Western Balkans summit</strong> today, with security and military mobility on the agenda (EUISS); Montenegro&rsquo;s President says Croatia has an interest in its accession (Euronews). https://x.com/i/status/2125544914671055318</li>
+<li><strong>Lavrov in Belarus:</strong> joint board of the Russian and Belarusian foreign ministries in Gomel (Russian MFA). https://x.com/i/status/2125523071742226777</li>
+<li><strong>Coalition of the Willing:</strong> French MoD briefing on Exercise KOALICJA 26 of the Multinational Force-Ukraine, Thursday 11:00 (Paris). https://x.com/i/status/2125534803772465234</li>
+<li><strong>Norway–Ukraine:</strong> Ukraine&rsquo;s Defence Minister Khmara met PM Støre in Oslo on interceptors; DESNA air-defence cooperation (Norwegian MoD). https://x.com/i/status/2125511774451462578</li>
+<li><strong>Iran:</strong> Spain, France and MEP Valérie Hayer condemned the 74 lashes inflicted on singer Parastoo Ahmadi. https://x.com/i/status/2125521231881662913</li>
+<li><strong>US cyber:</strong> after a reported intrusion into a CIA system, hackers reached Treasury&rsquo;s FinCEN systems, according to French reports relayed by SouveraineTech (unverified). https://x.com/i/status/2125545091334820296 ; https://x.com/i/status/2125494755970740410</li>
+<li><strong>UK:</strong> PM Andy Burnham announced an independent panel on nuclear-test veterans. https://x.com/i/status/2125495226277969952</li>
+<li><strong>Libya:</strong> Khalifa Haftar held talks in Ankara with Turkey&rsquo;s foreign, defence and energy ministers (Anadolu). https://x.com/i/status/2125555095265751499</li>
+<li><strong>Cross-reference:</strong> German gas overcost (€134 billion since 2022, AHK Russland), see Economy.</li>
+</ul>
+<h2 id="s8">Also in this edition</h2>
+<ul>
+<li>Huawei verdict: Beijing &ldquo;firmly opposes&rdquo; US suppression — see Economy</li>
+<li>Section 301 tariffs: Washington poised to publish findings on 16 economies — see Economy</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

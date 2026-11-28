@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Wednesday, 25 November 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Wednesday, 25 November 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> Wednesday 25 November from about 13:30 to about 20:00 Europe/Madrid: everything new since the 14:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">Update: Section 301 — Washington finds the EU and 13 other economies &ldquo;unreasonable&rdquo; and proposes a 15% tariff on all EU goods; Brussels rejects the premise, Beijing reserves countermeasures</h2>
+<p><strong>Lede.</strong> US Trade Representative Jamieson Greer determined on 25 November that the &ldquo;acts, policies, and practices&rdquo; of 14 economies relating to structural excess capacity &ldquo;are unreasonable and burden or restrict U.S. commerce&rdquo;, making them actionable under Section 301(b) of the 1974 Trade Act: China, the European Union, Singapore, Switzerland, Indonesia, Malaysia, Cambodia, Thailand, Korea, Vietnam, Taiwan, Bangladesh, Japan and India. No determination was made on Mexico or Norway.</p>
+<p><strong>Context.</strong> For the EU, USTR lists &ldquo;industrial plans to expand manufacturing&rdquo;, export credit, &ldquo;sustained market access barriers&rdquo;, &ldquo;preferential lending through centralized investment banks&rdquo; and &ldquo;failure to address global excess capacity&rdquo;, including imports and FDI from non-market economies. It proposes to &ldquo;consider applying on all goods of the EU a tariff rate of 15 percent, net of MFN rates and existing Section 301 tariffs, with exemptions for certain goods&rdquo;, taking into account Section 232 duties and the EU–US framework agreement. Other proposals: China up to 20% on goods not listed in the annexes and up to 10% on Annex A goods, with Annex B exemptions, reflecting the Kuala Lumpur arrangement of 30 Oct 2025, Japan and Switzerland up to 15%, Singapore up to 20%, India up to 25% (17% with a trade agreement), Vietnam up to 35% (20% with an agreement). Written comments are due by 5 January 2027 and hearings start on 25 January 2027; a senior US official told Politico the duties would take effect &ldquo;in January at the earliest&rdquo; and that the higher of this tariff and the 10% forced-labour tariff would apply, not both. Commission deputy chief spokesperson Olof Gill: &ldquo;We will study the findings. At the same time we strongly reject the premise that Europe is a source of structural overcapacity… We regret the lack of joint action&rdquo;, adding that the 15% all-inclusive ceiling of the joint statement must be respected &ldquo;in full, including when combined with existing duties&rdquo;. China&rsquo;s Ministry of Commerce called the finding unilateralism and protectionism, urged dialogue and reserved &ldquo;the right to take necessary measures&rdquo; (China Daily, Chinese state media). Same day, USTR also proposed tougher Section 301 measures on Brazil (Embraer shares fell almost 10%, Bloomberg). @F_CEAFE quoted USTR&rsquo;s post listing the 14 economies and posted the EU and China paragraphs of the notice.</p>
+<p><strong>Background (CEAFE archive):</strong> @F_CEAFE has tracked the Section 301 &ldquo;overcapacity&rdquo; probe since it was opened against 16 economies (Global Times repost, 27 Aug. 2026), after Washington&rsquo;s earlier 10–12.5% tariff threat on EU goods over forced labour, which @F_CEAFE quoted on 24 July 2026 asking &ldquo;Is there a limit to what we Europeans have to put up with?&rdquo;. Today @F_CEAFE also reposted USTR&rsquo;s separate Section 301 proposal on Brazil.</p>
+<p><strong>CEAFE comment:</strong> The EU as a whole can bear comparison; each capital on its own cannot. That is the difference that matters.</p>
+<p><strong>Why it matters for Europe:</strong> the 2025 Turnberry deal did not end the pressure; it set the level. Washington now lists the EU&rsquo;s industrial policy, the EIB&rsquo;s lending and its trade defence choices as &ldquo;unreasonable&rdquo; practices, while Brussels&rsquo; only stated line is that the total must stay at 15%. The contrast with Beijing is plain: China reserves countermeasures, the EU says it will &ldquo;study&rdquo; the findings. Only a common EU answer has the weight to change Washington&rsquo;s calculation; no member state can do it alone.</p>
+<p><strong>What to watch:</strong> Greer&rsquo;s expected call-in to the Foreign Affairs Council (Trade) on 30 November (Politico Europe); member states&rsquo; positions; the 5 January comment deadline and the 25 January hearings; any MOFCOM countermeasure list.</p>
+<p><strong>Sources:</strong> USTR press release (25 Nov): https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural ; USTR on X: https://x.com/i/status/2125593464138072571 ; @F_CEAFE quote: https://x.com/i/status/2125594279724597323 , notice excerpt: https://x.com/i/status/2125594889010479332 ; Politico Europe: https://www.politico.eu/article/eu-rejects-donald-trump-case-for-new-tariffs/ ; Eunews: https://www.eunews.it/en/2026/11/25/threats-of-new-tariffs-from-the-us-the-commission-responds-overcapacity-is-affecting-us-we-are-not-the-cause/ ; Reuters via Business Recorder: https://www.brecorder.com/news/40450714 ; China Daily (state media): https://www.chinadaily.com.cn/a/202611/25/WS6b06a88ee4b03ebf8519ea08.html ; USTR Brazil: https://x.com/i/status/2125581264031817919 ; Bloomberg (Embraer): https://x.com/i/status/2125620654368014599</p>
+<figure class="brief-figure">
+<img src="../../assets/media-cache/54b5ff7a4b837502.png" alt="USTR notice excerpt (EU, China, India paragraphs), posted by @F_CEAFE" />
+<figcaption>USTR notice excerpt (EU, China, India paragraphs), posted by @F_CEAFE</figcaption>
+</figure>
+
+<h2 id="s2">The Netherlands tells Washington and Beijing it wants the US MATCH Act stopped: &ldquo;We don&rsquo;t want unilateral decisions that have extraterritorial effect&rdquo;</h2>
+<p><strong>Lede.</strong> In the same line as the Section 301 proposal for a 15% tariff on all EU goods (story 1), Dutch Foreign Minister Tom Berendsen said in Beijing on Wednesday that the Netherlands is working to prevent the US Congress from passing the Multilateral Alignment of Technology Controls on Hardware (MATCH) Act: &ldquo;Our focus is on making sure that the MATCH act will not be passed&rdquo; (Reuters).</p>
+<p><strong>Context.</strong> Congress is debating whether to attach the bipartisan bill to the National Defense Authorization Act before the outgoing Congress ends. It would force allies, including the Netherlands and Japan, to adopt tougher export controls on chipmaking tools or face unilateral US restrictions on their equipment, including ASML&rsquo;s immersion DUV lithography machines. ASML expects China to account for about 20% of this year&rsquo;s sales. On Tuesday Dutch MPs called the bill &ldquo;disastrous&rdquo; for ASML (VVD) and &ldquo;unacceptable&rdquo; (JA21); Volt&rsquo;s Laurens Dassen asked for European measures to shield the company (Reuters). Berendsen met Foreign Minister Wang Yi and Vice-Premier Ding Xuexiang; he told de Volkskrant his message to Beijing was the same as to Washington and that the Netherlands decides its own export system. Xinhua (Chinese state media) reported Wang Yi saying China &ldquo;stands ready to work with the Netherlands in a spirit of openness and pragmatism&rdquo;. The SCMP (owned by Alibaba) links the renewed US push to the Nvidia saga.</p>
+<p><strong>Background (CEAFE archive):</strong> On 24 May 2026 @F_CEAFE reposted that the Dutch government was pushing back against new US restrictions affecting ASML exports to China.</p>
+<p><strong>CEAFE comment:</strong> Here is another example of why Europeans need to act together.</p>
+<p><strong>Why it matters for Europe:</strong> this is the pattern CEAFE has flagged, in the same line as the Section 301 tariffs on EU goods (story 1): the Netherlands already applies US-driven restrictions on China, and Washington now wants to legislate the rest for it. A single member state is caught between two powers; the instrument that could balance it, a common EU export-control and anti-coercion response, is not on the table. Europe&rsquo;s leverage (ASML is a chokepoint for US chipmakers too) remains unused.</p>
+<p><strong>What to watch:</strong> the NDAA text in December; whether The Hague asks for EU backing (anti-coercion instrument); any Chinese gesture to the Netherlands on Nexperia or rare earths.</p>
+<p><strong>Sources:</strong> Reuters via Euronext: https://live.euronext.com/en/financial-news/dutch-government-working-prevent-passing-us-match-bill-minister-says ; Reuters on Dutch MPs (24 Nov), via StreetInsider: https://www.streetinsider.com/Reuters/Dutch+lawmakers+urge+government+to+resist+US+MATCH+bill+targeting+ASML/27395726.html ; de Volkskrant: https://www.volkskrant.nl/economie/nederland-wil-geen-amerikaanse-bemoeienis-bij-export-machines-asml-naar-china~bcc262190/ ; Reuters post: https://x.com/i/status/2125645730442277295 ; Xinhua (state media): https://x.com/i/status/2125625700938113235 ; Global Times (state media) on the visit: https://x.com/i/status/2125644685410750617 ; SCMP: https://www.scmp.com/economy/policy/article/3375565/dutch-minister-heads-china-nvidia-saga-revives-us-push-tougher-asml-curbs</p>
+<h2 id="s3">Update: peace table — Lavrov says Europeans would &ldquo;put their feet up&rdquo; on the table; Rutte says Trump is &ldquo;testing Putin&rdquo;</h2>
+<p><strong>Lede.</strong> Russian Foreign Minister Sergey Lavrov, speaking in Gomel after a joint board meeting of the Russian and Belarusian foreign ministries, accused the European Commission of &ldquo;megaphone diplomacy&rdquo; and said: &ldquo;We have never had any contact with the European Commission about negotiations to resolve the Ukrainian crisis&rdquo; (TASS, Russian state agency).</p>
+<p><strong>Context.</strong> Lavrov said Moscow wants to know what role the &ldquo;European five&rdquo; (France, Germany, the UK, Italy, Poland) plus the EU and NATO would play in the talks resumed in Abu Dhabi: &ldquo;With those manners and those intentions, they&rsquo;ll sit down at the negotiating table and immediately put their feet up on it. We don&rsquo;t need that.&rdquo; Kremlin spokesman Dmitry Peskov said Europe keeps putting out &ldquo;contradictory statements&rdquo; on dialogue (TASS). The Commission said on 23 November that it is aware of Putin&rsquo;s invitation to Moscow but will take part only in a multilateral format, and that talks on Europe&rsquo;s security architecture can start only after a ceasefire (EC midday briefing). NATO Secretary General Mark Rutte, asked about Trump calling Putin &ldquo;my friend&rdquo;, said Trump is &ldquo;testing Putin&rdquo;, including at the Shenzhen meeting, and that Jared Kushner and Steve Witkoff &ldquo;are working&rdquo; on the issue; on Kushner&rsquo;s claim that Russia might accept Article 5-like guarantees, Moscow has said it does not (Clash Report clips). Zelensky repeated that withdrawing from Donbas would mean losing the war (post reposted by @F_CEAFE).</p>
+<p><strong>Why it matters for Europe:</strong> Moscow is using the EU&rsquo;s own ambiguity (who speaks, with what mandate) to keep it out, while Washington mediates. The &ldquo;European team&rdquo; is a group of national capitals plus the institutions, not a single negotiator with its own means. As CEAFE has argued (peace-table framing, 18 Nov), the EU is absent where the decisions are taken because no member state has the weight alone.</p>
+<p><strong>What to watch:</strong> the European Council on 26–27 November; the date and format of the next Abu Dhabi round; any written European position sent to Moscow.</p>
+<p><strong>Sources:</strong> TASS (state agency): https://tass.com/politics/2224711 ; BelTA (Belarusian state agency): https://belta.by/politics/view/glava-mid-rossii-evrokomissija-zanimaetsja-megafonnoj-diplomatiej-812609-2026/ ; Russian MFA on X: https://x.com/i/status/2125649353062912054 ; TASS on Peskov: https://x.com/i/status/2125610495734616169 ; EC midday briefing 23 Nov: https://audiovisual.ec.europa.eu/en/media/video/I-298394 ; Rutte (Clash Report): https://x.com/i/status/2125617132700377433 , https://x.com/i/status/2125617663942512721 , https://x.com/i/status/2125618941133484135 ; Zelensky on Donbas (repost by @F_CEAFE): https://x.com/i/status/2125588267718308255</p>
+<h2 id="s4">Update: eastern flank — Poland plans a no-fly zone on its border with Ukraine; RAF hides aircraft from drones; Norway and the UK pool P-8 support</h2>
+<p><strong>Lede.</strong> Poland plans a no-fly zone along its eastern border, reaching from about 10 to several dozen kilometres inland, with rules expected to apply from late December 2026 or early January 2027, while its request that NATO intercept Russian missiles over Ukraine has found no support so far (Kyiv Independent, Anadolu, Rzeczpospolita).</p>
+<p><strong>Context.</strong> Deputy Defence Minister Cezary Tomczyk told Rzeczpospolita that NATO does not want to shoot down Russian missiles over Ukraine and that a no-fly zone is needed in eastern Poland. In the UK, Sky News reported that the Royal Air Force is moving aircraft into hangars and hardened shelters at night against possible drone threats (reposted by @F_CEAFE). Norway and the UK signed an agreement letting each country receive, handle, service and inspect the other&rsquo;s P-8A Poseidon maritime patrol aircraft (Norwegian Armed Forces). @F_CEAFE also reposted a Finnish MP recommending a WSJ report that the Baltic Sea came closer to a Russia–NATO military clash this autumn than publicly known (WSJ article not re-read here). Sweden announced an extra winter support package for Ukraine (Swedish MFA).</p>
+<p><strong>Why it matters for Europe:</strong> each frontline state is taking its own measures (no-fly zone, shelters, bilateral maintenance pools) because the collective decision is not coming. The Norway–UK P-8 deal is useful but shows the dependence: both fly a US aircraft. A shared European air-defence and maritime-patrol capability would give Europeans the decision and the industrial base.</p>
+<p><strong>What to watch:</strong> Polish regulation on the zone; NATO&rsquo;s response; UK MoD statement on RAF dispersal.</p>
+<p><strong>Sources:</strong> Kyiv Independent: https://kyivindependent.com/poland-plans-no-fly-zone-near-ukraine-border-asks-nato-to-intercept-russian-missiles-over-ukraine/ ; Anadolu (state agency): https://www.aa.com.tr/en/europe/poland-plans-no-fly-zone-along-eastern-border-to-bolster-nato-flank/4137749 ; Rzeczpospolita: https://www.rp.pl/wojsko/art45541251-wiceszef-mon-nato-nie-chce-zestrzeliwac-rosyjskich-rakiet-nad-ukraina ; Sky News (repost by @F_CEAFE): https://x.com/i/status/2125568013885755540 ; Forsvaret: https://www.forsvaret.no/en/news/articles/nor-uk-p8 ; Henri Vanhanen on WSJ (repost by @F_CEAFE): https://x.com/i/status/2125592293096767870 ; Swedish MFA: https://x.com/i/status/2125560426402382330</p>
+<h2 id="s5">North Korea expels Switzerland&rsquo;s new diplomatic office over sanctions on a camp linked to Ukrainian children</h2>
+<p><strong>Lede.</strong> North Korea ordered Switzerland to close its diplomatic office in Pyongyang, declared its head, Sylvain Astier, persona non grata and gave him 48 hours to leave, in response to Swiss sanctions on the Songdowon International Children&rsquo;s Camp (KCNA, North Korean state media, via Yonhap and AP).</p>
+<p><strong>Context.</strong> Switzerland adopted the measures in line with the EU&rsquo;s 21st sanctions package against Russia; the EU says the camp hosts children from Russian-occupied areas of Ukraine in coordination with Russia, and Bern says it is responsible for &ldquo;forced assimilation, including indoctrination, and militarized education of Ukrainian minors&rdquo; (Kyodo). The Swiss foreign ministry &ldquo;regrets this decision&rdquo;; relations continue through the Swiss embassy in Beijing and North Korea&rsquo;s embassy in Bern. The office had reopened on 19 October. Kim Yo Jong had threatened the closure on Tuesday.</p>
+<p><strong>Why it matters for Europe:</strong> a neutral state that aligns with EU sanctions pays a diplomatic price, and North Korea openly defends a site the EU links to the deportation of Ukrainian children, another sign of the Moscow–Pyongyang alignment. It also shows the reach of EU sanctions when partners adopt them.</p>
+<p><strong>What to watch:</strong> whether Sweden, Poland or other European states with a presence in Pyongyang face similar pressure; any Russian comment.</p>
+<p><strong>Sources:</strong> Yonhap: https://en.yna.co.kr/view/AEN20261125005600315 ; AP: https://apnews.com/article/north-korea-switzerland-diplomat-russia-ukraine-a39dbc92d195e69443ce66913a3dff7e ; Al Jazeera: https://www.aljazeera.com/news/2026/11/25/switzerland-regrets-closure-of-north-korea-office-over-sanctions-feud ; swissinfo (Keystone-SDA): https://www.swissinfo.ch/ger/aussendepartement-best%c3%a4tigt-schliessung-von-b%c3%bcro-in-pj%c3%b6ngjang/92437428 ; Kyodo: https://english.kyodonews.net/articles/-/92578 ; Al Jazeera on X: https://x.com/i/status/2125649322197090413</p>
+<h2 id="s6">EU–Western Balkans summit: &ldquo;the future is in the EU&rdquo;, but Growth Plan money tied to the Belgrade–Pristina dialogue</h2>
+<p><strong>Lede.</strong> EU and Western Balkans leaders met in Brussels for their second summit this year; the declaration reaffirms that the region&rsquo;s future lies in the EU, calls for faster credible reforms and links funds from the Reform and Growth Facility to measurable progress in the Belgrade–Pristina dialogue (Council; RTS; Srpske Novine).</p>
+<p><strong>Context.</strong> European Council President António Costa opened the summit (&ldquo;our second Summit this year, reflecting the intensity of our political engagement&rdquo;). The Council says the EU is the region&rsquo;s leading economic partner and investor. According to Serbian media, the text also demands implementation of the remaining Succession Issues obligations and rejects the glorification of war crimes, genocide denial and revisionism. Euronews asked whether Serbia&rsquo;s new government can revive its accession bid. The European Parliament the same day welcomed the EU&rsquo;s new political partnership with Syria.</p>
+<p><strong>Why it matters for Europe:</strong> enlargement is the EU&rsquo;s main geopolitical tool in its own neighbourhood; conditioning money on the Kosovo–Serbia dialogue keeps leverage where Russia, China, Türkiye and the Gulf states compete for influence.</p>
+<p><strong>What to watch:</strong> Serbia&rsquo;s reform steps; Kosovo&rsquo;s reaction to the conditionality; the next accession clusters (Montenegro, Albania).</p>
+<p><strong>Sources:</strong> Council: https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/25/ ; Costa on X: https://x.com/i/status/2125642945168867454 ; EU Council on X: https://x.com/i/status/2125622892503212221 ; Commission (enlargement): https://enlargement.ec.europa.eu/news/turning-momentum-lasting-progress-president-von-der-leyen-eu-western-balkans-summit-2026-11-25_en ; RTS: https://www.rts.rs/vesti/politika/6092096/deklaracija-samita-eu-zapadni-balkan-prosirenje-je-realna-mogucnost-koju-treba-iskoristiti.html ; Srpske Novine: https://srpske.rs/en/news/politika/2026/11/25/brussels-declaration-ties-growth-plan-money-to-pristina-dialogue ; Euronews: https://x.com/i/status/2125647777711423699</p>
+<h2 id="s7">Asia: Washington wants Japan to triple its payments for US bases; Tokyo eyes a new anti-ship missile</h2>
+<p><strong>Lede.</strong> The United States is asking Japan to triple its spending on maintaining US military bases, to more than $19 billion over the next five years, while Japan has offered a 40% increase to $1.9 billion a year, according to Nikkei as relayed by TASS (screenshot posted by @F_CEAFE); the two sides hope to agree by the end of 2026.</p>
+<p><strong>Context.</strong> @F_CEAFE also posted Kyodo&rsquo;s report that Japan is eyeing a new anti-ship missile in its updated defence build-up plan; TASS (Russian state agency) reports Japan&rsquo;s MoD will deploy Type-25 missile systems with hypersonic glide vehicles on Hokkaido in early December. Chinese Foreign Minister Wang Yi held a phone call with British Foreign Secretary Ed Miliband (Chinese MFA spokesperson). China&rsquo;s Shenzhou-24 took a Pakistani astronaut, Muhammad Zeeshan Ali, to the Tiangong station with two Chinese crew, the first foreign astronaut there; Xi and Zardari exchanged messages (Xinhua, Chinese state media).</p>
+<p><strong>Why it matters for Europe:</strong> the same &ldquo;pay more for protection&rdquo; demand Europeans hear is being made of Japan, in figures. Allies that rely on US bases pay the bill without control. In parallel, China is turning space cooperation into diplomacy with Pakistan.</p>
+<p><strong>What to watch:</strong> Japan–US host-nation support talks; Japan&rsquo;s revised build-up plan; any readout of the Wang–Miliband call from London.</p>
+<p><strong>Sources:</strong> @F_CEAFE (TASS screenshot): https://x.com/i/status/2125598264573726990 ; Kyodo (posted by @F_CEAFE): https://english.kyodonews.net/articles/-/92619 ; TASS on Type-25: https://x.com/i/status/2125619437101523192 ; Chinese MFA (Lin Jian, Wang–Miliband): https://x.com/i/status/2125597718735388854 ; Xinhua (Shenzhou-24): https://x.com/i/status/2125628845776879664</p>
+<figure class="brief-figure">
+<img src="../../assets/media-cache/4d837ed0b9dc1ab1.png" alt="TASS Telegram post citing Nikkei (screenshot)" />
+<figcaption>TASS Telegram post citing Nikkei (screenshot)</figcaption>
+</figure>
+
+<h2 id="s8">In brief</h2>
+<ul>
+<li><strong>Israel.</strong> Judges in Netanyahu&rsquo;s corruption trial cast heavy doubt on the most serious charges and urged prosecutors to reconsider Cases 4000 and 2000; there is no acquittal and Case 1000 continues (Times of Israel; Straits Times). Netanyahu claimed vindication. Likud challenged results at 120 polling stations (Anadolu). A bill to set up a state commission of inquiry into 7 October passed a preliminary Knesset reading (Gadi Eisenkot, reposted by @F_CEAFE). https://www.timesofisrael.com/court-casts-heavy-doubt-over-most-serious-netanyahu-charges-in-huge-blow-to-prosecution/ ; https://x.com/i/status/2125636758041743489 ; https://x.com/i/status/2125571072313655604</li>
+<li><strong>Iran.</strong> Foreign Minister Araghchi rejected Israeli accusations that Iran is developing chemical weapons, saying Israel wants to drag the US into another war (Al Jazeera; post reposted by @F_CEAFE). Treasury Secretary Bessent said Iran has not loaded a single tanker since &ldquo;Operation Economic Outcast&rdquo; began in August (reposted by @F_CEAFE). Mines and tanker attacks in Hormuz: see Conflicts. https://x.com/i/status/2125618474340823311 ; https://x.com/i/status/2125592759344287920</li>
+<li><strong>Ukraine and international justice.</strong> Ukraine&rsquo;s parliament backed joining the management committee of the Special Tribunal for the Crime of Aggression; the EU backed Ukraine against the IAEA giving a lead role to a Russian official (Kyiv Independent). https://x.com/i/status/2125620616292147242 ; https://x.com/i/status/2125620853916230014</li>
+<li><strong>Libya / Türkiye.</strong> Erdoğan received Khalifa Haftar in Ankara, ahead of his first trip to Libya in 15 years (Turkish Presidency; Euronews). https://x.com/i/status/2125602939750244453 ; https://l.euronews.com/yO7Y</li>
+<li><strong>Israel in Central Europe.</strong> Israel joined a Political Directors&rsquo; meeting of the Slavkov format (Austria, Czechia, Slovakia) for the first time (Israel MFA). https://x.com/i/status/2125643655184576904</li>
+<li><strong>Germany–Ukraine.</strong> Germany has given €34.35 billion in military aid since 2022; five joint production projects worth €1.1 billion are under way and €11.6 billion is planned for 2027 (Ukrainian MoD, reposted by @F_CEAFE; see Defence Industry). https://x.com/i/status/2125591334903837066</li>
+<li><strong>EU competition.</strong> The Commission fined Firmenich, Givaudan and IFF €471.9 million for a fragrance cartel (EU Commission). https://x.com/i/status/2125625810715328963</li>
+</ul>
+<h2 id="s9">Also in this edition</h2>
+<ul>
+<li>Lukoil International: a US-led consortium with a US Government stake signs to buy the refineries of Burgas, Zeeland and Petrotel — see Economy</li>
+<li>Kubilius on the 30% (€39bn) defence and space cut in the next EU budget — covered at 14:30 (Defence Industry)</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

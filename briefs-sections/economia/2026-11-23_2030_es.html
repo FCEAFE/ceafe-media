@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMÍA — lunes, 23 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMÍA</h1>
+      <p class="list-date">lunes, 23 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> del lunes 23 de noviembre hacia las 13:00 a las 19:00 (hora de Madrid): todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Economía de CEAFE y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Bruselas propone un 22.º paquete de sanciones contra Rusia: unos 60 bancos más, fuera de SWIFT</h2>
+<p><strong>La Comisión Europea presentó este lunes su propuesta de 22.º paquete de sanciones contra Rusia, que extiende la prohibición de transacciones a unos 60 bancos rusos, todos los cuales quedarían excluidos de SWIFT.</strong></p>
+<p>La presidenta de la Comisión, Ursula von der Leyen, afirmó que el paquete apunta a las redes de criptoactivos y de pagos «en Rusia, pero también en terceros países que ayudan a Rusia a eludir nuestras sanciones», con un nuevo grupo especial sobre criptosanciones. Ninguna empresa europea podría ayudar a construir, operar o reparar infraestructuras energéticas rusas, en particular refinerías, y por primera vez se incluyen los servicios eléctricos. Se añadirían más de 70 buques de la flota en la sombra, que se suman a los más de 670 a los que ya se niegan puertos y servicios de la UE, y se prohibirían todos los petroleros asegurados en Rusia (Euronews). Los europeos no podrían formar parte de los órganos de gobierno de empresas en Rusia. Los excombatientes rusos tendrían prohibida la entrada, y los equipos y símbolos oficiales rusos quedarían vetados en las competiciones deportivas en la UE. Los 27 Estados miembros de la UE deben dar su acuerdo; Bruselas aspira a cerrarlo en diciembre. La alúmina que Aughinish (Irlanda) exporta a Rusia queda fuera porque Bruselas no percibió suficiente apoyo irlandés (Euronews). El diplomático sueco Lars Danielsson sustituye a David O&rsquo;Sullivan como enviado de la UE para las sanciones.</p>
+<p><strong>Contexto:</strong> el tope al precio del petróleo está en 44 dólares por barril. Antecedente: el 23 de julio de 2026 los Estados miembros de la UE acordaron el 21.º paquete, dirigido al sistema financiero de Moscú (<a href="https://x.com/i/status/2080232531002085381">Kallas</a>).</p>
+<p><strong>Por qué importa para Europa:</strong> las sanciones son la principal herramienta colectiva de la UE. El foco en terceros países las acerca al alcance extraterritorial que ya usa Washington, pero con mucho menos peso sobre el sistema del dólar. La unanimidad sigue siendo el punto débil, como muestra el caso de Aughinish.</p>
+<p><strong>Qué vigilar:</strong> las negociaciones en el Coreper; las posiciones de Irlanda, Hungría y Eslovaquia; las respuestas de Rusia y China.</p>
+<p><strong>Fuentes:</strong> <a href="https://ec.europa.eu/commission/presscorner/detail/en/statement_26_2563">Comisión Europea</a>, <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2521">Comisión Europea (directrices sobre visados)</a>, <a href="https://www.euronews.com/2026/11/23/eu-goes-after-russias-banks-soldiers-and-athletes-in-new-sanctions-package">Euronews</a>, <a href="https://x.com/i/status/2124880816438215059">von der Leyen</a>, <a href="https://x.com/i/status/2124881906588078185">von der Leyen</a>, <a href="https://x.com/i/status/2124922218350051636">Bloomberg</a>, <a href="https://www.politico.eu/article/eu-to-target-russian-ex-soldiers-banks-and-sports-in-new-sanctions-push/">Politico Europe</a>, <a href="https://apnews.com/article/europe-russia-sanctions-banks-crypto-visas-sports-ecad86868390f6602b346c70d1fa5757">AP</a></p>
+<h2 id="s2">Actualización: Nvidia readmite a Jensen Huang tras la presión de Trump; sus acciones suben un 30,6 %</h2>
+<p><strong>El consejo de Nvidia votó por unanimidad readmitir a Jensen Huang como presidente, consejero delegado y consejero con efecto inmediato, menos de dos semanas después de su salida tras conocerse una relación con una mujer a la que funcionarios estadounidenses vinculan con el Ministerio de Seguridad del Estado chino.</strong></p>
+<p>El consejo afirma que «recibió aportaciones de los niveles superiores del Gobierno de Estados Unidos» y ha creado un Comité de Seguridad Nacional y Control de Exportaciones (Nvidia). The New York Times informa de que Trump dirigió entre bastidores una campaña de presión sobre el consejo. En Truth Social, Trump escribió que el Gobierno «no tiene motivos para creer» que la vuelta de Huang suponga un riesgo para la seguridad nacional. En CNBC dijo que «si yo fuera el presidente Xi» habría intentado contratar a Huang. Afirmó también que Taiwán «robó» el negocio de los chips a Estados Unidos y que espera que China compre 250 aviones Boeing más (Bloomberg). Nvidia cerró a 163,98 dólares, con una subida del 30,63 %. El S&amp;P 500 subía cerca de un 5 % a mediodía en Nueva York (AP). Huang comparecerá ante un comité del Senado el 3 de diciembre (Bloomberg). El Ministerio de Exteriores chino repitió que China «ha dejado clara su posición sobre las medidas de control de exportaciones de EE. UU.».</p>
+<p><strong>Contexto:</strong> antecedente: el 17 de noviembre de 2026 @F_CEAFE compartió el relato de The New York Times sobre el secreto que llevó a la caída de Huang (<a href="https://x.com/i/status/2122584683045380473">@F_CEAFE</a>).</p>
+<p><strong>Por qué importa para Europa:</strong> una decisión de un consejo de administración dirigida desde la Casa Blanca movió los mercados mundiales, lo que mide cuánto depende la economía de la IA, también la europea, de una sola empresa estadounidense. Las concesiones mutuas con Pekín sobre chips, Taiwán y Boeing se negocian sin Europa en la mesa.</p>
+<p><strong>Qué vigilar:</strong> la audiencia del Senado del 3 de diciembre; cualquier cambio en las normas de exportación de chips a China; la reacción de Taipéi.</p>
+<p><strong>Fuentes:</strong> <a href="https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director">Nvidia</a>, <a href="https://x.com/i/status/2124912528866111940">NYT</a>, <a href="https://truthsocial.com/@realDonaldTrump/117666141823845971">Truth Social</a>, <a href="https://x.com/i/status/2124903759495020901">CNBC (Aaron Rupar)</a>, <a href="https://x.com/i/status/2124917173030133829">Bloomberg</a>, <a href="https://x.com/i/status/2124919870949097608">Bloomberg</a>, <a href="https://apnews.com/article/nvidia-jensen-huang-39d4b34ffaa867b4e669893b5fd5028f">AP</a>, <a href="https://www.bbc.com/news/articles/cq62pn6j42jko">BBC</a>, <a href="https://www.mfa.gov.cn/eng/xw/fyrbt/lxjzh/202611/t20261123_12065575.html">Ministerio de Exteriores chino</a></p>
+<h2 id="s3">La UE abre una investigación de salvaguardia sobre resinas compuestas y fibra de vidrio, sobre todo de China</h2>
+<p><strong>La Comisión Europea abrió este lunes una investigación de salvaguardia sobre el aumento de las importaciones de resinas compuestas y materiales de fibra de vidrio, procedentes principalmente de China.</strong></p>
+<p>Estos materiales se usan en energías renovables, redes eléctricas, transporte, aeronáutica y defensa. Está previsto que la investigación dure entre nueve y 11 meses. Podría terminar en cuotas o aranceles aplicables a las importaciones de todos los socios comerciales, porque los productores chinos eludieron derechos antidumping anteriores trasladando la producción a terceros países. Las importaciones chinas de bajo coste han crecido un 25 % en el último año, y el déficit comercial de la UE con China ha alcanzado un récord de 1.000 millones de euros diarios (Euronews). Ludovic Piraux, de Glass Fibre Europe, afirmó que el caso trata de «capacidades industriales que necesitamos para… reforzar nuestra defensa». Global Times (medio estatal chino) publicó ese mismo día un editorial contra los aranceles de la UE a los productos verdes chinos.</p>
+<p><strong>Contexto:</strong> el viernes los Estados miembros de la UE respaldaron el acuerdo UE-China de octubre sobre coches híbridos: cuotas de 350.000 híbridos chinos al año durante cuatro años, con un ajuste anual del 6 %, desde el 1 de diciembre. Está previsto que Šefčovič hable con el ministro de Comercio, Wang Wentao, en enero (Euronews).</p>
+<p><strong>Por qué importa para Europa:</strong> la fibra de vidrio y las resinas se usan en palas eólicas, estructuras de aeronaves y equipos de defensa. Perder a los productores europeos añadiría una nueva dependencia a la cadena de suministro de defensa.</p>
+<p><strong>Qué vigilar:</strong> el anuncio en el Diario Oficial; la respuesta del MOFCOM.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.euronews.com/2026/11/23/eu-targets-chinese-imports-in-fresh-trade-defence-investigation">Euronews</a>, <a href="https://x.com/i/status/2124925960449634319">Global Times</a></p>
+<h2 id="s4">El Tesoro de EE. UU. añade una veintena de empresas de Dubái, Turquía y Hong Kong a su lista de sanciones contra Irán</h2>
+<p><strong>La OFAC publicó el 23 de noviembre nuevas designaciones relacionadas con Irán: ocho personas iraníes y más de 20 entidades, entre ellas casas de cambio iraníes y una serie de empresas registradas fuera de Irán.</strong></p>
+<p>Las designaciones incluyen a Mellat Exchange Company y al Iran Center for Exchange of Currency and Gold. También abarcan sociedades comerciales registradas en Dubái como Alam Al Sahra, Berkeley Trading, Dexterous Global DMCC e Integral Petro Energy Trading, la turca Boğaziçi Gümrükleme y Grandez Trading, con sede en Hong Kong. Casi todas llevan la marca de «riesgo de sanciones secundarias» de la Orden Ejecutiva 13902: los bancos extranjeros que operen con ellas se exponen a sanciones de EE. UU. Ese mismo día, el viceministro de Exteriores iraní, Kazem Gharibabadi, afirmó que las sanciones estadounidenses dificultan la compra de medicamentos, equipos médicos y materias primas farmacéuticas (Al Jazeera).</p>
+<p><em>CEAFE:</em> La conclusión se repite: o Europa actúa unida, o cada país queda relegado a un papel secundario.</p>
+<p><strong>Contexto:</strong> la anterior acción de la OFAC, el 20 de noviembre, se dirigió contra fideicomisarios petroleros dentro de la «Operation Economic Outcast» (OFAC).</p>
+<p><strong>Por qué importa para Europa:</strong> las designaciones con sanciones secundarias en los Emiratos, Turquía y Hong Kong muestran el alcance extraterritorial de las medidas estadounidenses, que los bancos y exportadores europeos deben respetar sea cual sea la política de la UE. Las sanciones de la UE (véase el 22.º paquete) y las de EE. UU. apuntan ya ambas a intermediarios de terceros países.</p>
+<p><strong>Qué vigilar:</strong> el comunicado del Tesoro; las respuestas de los Emiratos y Turquía.</p>
+<p><strong>Fuentes:</strong> <a href="https://ofac.treasury.gov/recent-actions/20261123">OFAC</a>, <a href="https://x.com/i/status/2124880667846811792">Al Jazeera</a></p>
+<h2 id="s5">Ocho Estados miembros de la UE, entre ellos España, defienden el mercado de carbono ETS2 como herramienta de seguridad energética</h2>
+<p><strong>En una carta fechada el 23 de noviembre al comisario de Clima, Wopke Hoekstra, los ministros de Clima de Alemania, Dinamarca, España, Finlandia, Luxemburgo, Países Bajos, Portugal y Suecia advierten contra nuevos retrasos del ETS2.</strong></p>
+<p>El ETS2 es el precio del carbono sobre los combustibles de transporte por carretera y la calefacción, previsto para enero de 2028 tras un año de retraso. Los ministros sostienen que la dependencia de los combustibles fósiles importados es una gran vulnerabilidad económica y de seguridad. La UE importó 340.000 millones de euros en combustibles fósiles en 2025. Desde el cierre del estrecho de Ormuz a principios de este año, la subida de precios ha añadido 127.000 millones de euros a la factura (Euronews). Los cuatro de Visegrado, Italia y Grecia quieren suavizar o aplazar el ETS2. El vice primer ministro checo, Karel Havlíček, afirmó que aplicarlo ahora «no parece razonable» ante unos «costes energéticos excepcionalmente altos». Global Times (medio estatal chino) publicó esa misma tarde una viñeta: «Los costes de la electricidad no dejan de dispararse y mantienen como rehén a la economía europea».</p>
+<p><strong>Contexto:</strong> el ETS2 ya se aplazó un año, hasta enero de 2028.</p>
+<p><strong>Por qué importa para Europa:</strong> la división enfrenta a los Estados miembros que quieren reducir la dependencia de las importaciones mediante la electrificación con aquellos cuyos hogares no pueden asumir ahora facturas más altas. Ninguno de los dos bandos puede cambiar por sí solo el precio de la energía que Europa importa.</p>
+<p><strong>Qué vigilar:</strong> la evaluación de impacto del ETS2 de la Comisión; el Consejo de Medio Ambiente de diciembre.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.euronews.com/2026/11/23/eight-eu-countries-join-forces-to-defend-carbon-market-against-calls-for-delay">Euronews</a>, <a href="https://x.com/i/status/2124808743674347811">Jorge Liboreiro</a>, <a href="https://x.com/i/status/2124918404075368738">Global Times</a></p>
+<h2 id="s6">Amazon compra la tecnología de chips de IA y el equipo de la israelí Decart por unos 7.500 millones de dólares</h2>
+<p><strong>Amazon (EE. UU.) firmó un acuerdo para comprar la tecnología propia en la que se basa el Optimization Stack de Decart y para contratar a sus tres cofundadores y a su equipo de ingeniería.</strong></p>
+<p>El trabajo servirá a los chips Trainium e Inferentia de Amazon frente al dominio de Nvidia (Amazon). Amazon no reveló las condiciones. Bloomberg sitúa el valor en unos 7.500 millones de dólares, pagados en efectivo, acciones y plazos diferidos, una parte ligada a resultados durante cinco años (Reuters vía Investing.com; Calcalist). Decart (Israel), fundada en 2023, estaba valorada en unos 4.000 millones de dólares en mayo y emplea a unas 100 personas. Anthropic y Nvidia habían negociado antes su compra (Calcalist). El cierre requiere autorización regulatoria.</p>
+<p><em>CEAFE:</em> Datos que demuestran cómo el tamaño de los Estados europeos les impide competir en solitario frente a potencias globales de mucho mayor tamaño.</p>
+<p><strong>Contexto:</strong> es otra «adquisición de talento» en la que un gran proveedor de nube estadounidense absorbe el conocimiento en chips de una empresa no estadounidense.</p>
+<p><strong>Por qué importa para Europa:</strong> la operación forma parte de la carrera por romper el dominio de Nvidia en los chips de IA, una carrera que protagonizan grupos estadounidenses. Europa no tiene un comprador de este tamaño para empresas así.</p>
+<p><strong>Qué vigilar:</strong> la autorización regulatoria.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization">Amazon</a>, <a href="https://www.investing.com/news/stock-market-news/amazon-to-buy-decarts-ai-chip-optimization-tech-in-latest-ai-talent-grab-5046000">Reuters vía Investing.com</a>, <a href="https://www.calcalistech.com/ctechnews/article/g0mtcg4mi">Calcalist</a>, <a href="https://en.globes.co.il/en/article-amazon-confirms-decart-acquisition-1001564520">Globes</a>, <a href="https://x.com/i/status/2124868102752026968">Bloomberg</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Economía. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

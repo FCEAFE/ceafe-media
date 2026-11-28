@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — lunes, 23 de noviembre de 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">lunes, 23 de noviembre de 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Defence Industry / Industria de Defensa</li>
+<li><strong>Window covered:</strong> del lunes 23 de noviembre hacia las 07:00 a las 13:00 (hora de Madrid): todo lo nuevo desde la edición de las 08:30.</li>
+<li><strong>Compiled from:</strong> el informe de la sección Industria de Defensa de CEAFE y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Actualización: la oferta de ICEYE por Avio: Roma exige garantías sobre los motores de cohete de propulsante sólido</h2>
+<p><strong>Italia quiere que cualquier compra de Avio S.p.A. por la finlandesa ICEYE mantenga la empresa parcialmente italiana, preserve la soberanía nacional sobre los motores de cohete de propulsante sólido y conserve a Leonardo (18 %) como accionista clave, según Reuters.</strong></p>
+<p><strong>Comprador:</strong> ICEYE (Finlandia), a través de su vehículo italiano Iris 2. <strong>Objetivo:</strong> Avio S.p.A. (Colleferro, Italia), fabricante del lanzador Vega C y de motores de propulsante sólido, no Avio Aero, de GE Aerospace. <strong>Valor:</strong> unos 2.050 millones de euros, íntegramente en efectivo a 41 euros por acción (prima del 21,3 %), con el plan de excluirla de la Bolsa de Milán e invertir otros 1.000 millones en Italia en cinco años (European Spaceflight; ICEYE). El ministro de Defensa, Guido Crosetto, ha pedido cautela, mientras que el consejero delegado de Leonardo, Lorenzo Mariani, acogió bien la oferta. El examen formal por Golden Power aún no ha comenzado.</p>
+<p><em>CEAFE:</em> Si Europa quiere sentarse de igual a igual, tiene que sumar lo que hoy está fragmentado.</p>
+<p><strong>Contexto:</strong> Antecedentes: el 17 de noviembre @F_CEAFE reposteó el anuncio de ICEYE de su oferta pública «para crear un campeón espacial soberano europeo» (<a href="https://x.com/i/status/2122611622774747212">X, 2026</a>). ICEYE presenta la operación como una forma de reducir la dependencia europea de proveedores como Starshield, de SpaceX.</p>
+<p><strong>Por qué importa para Europa:</strong> comprador europeo, empresa europea y el objetivo declarado de un grupo soberano capaz de construir, lanzar y explotar satélites. La preocupación de Roma es que los motores de propulsante sólido también alimentan misiles. El caso pone a prueba si las normas nacionales de Golden Power permiten formar campeones europeos mientras los grupos estadounidenses ganan escala.</p>
+<p><strong>Qué vigilar:</strong> la opinión del consejo de Avio; la notificación de Golden Power y sus condiciones; la participación de Leonardo; la posición francesa (Arianespace opera el Vega C para la ESA).</p>
+<p><strong>Fuentes:</strong> <a href="https://live.euronext.com/en/financial-news/exclusive-italy-seeks-security-safeguards-finnish-bid-rocket-maker-avio-sources-say">Reuters vía Euronext</a>, <a href="https://europeanspaceflight.com/iceye-launches-e2-05b-takeover-bid-for-italian-rocket-builder-avio/">European Spaceflight</a>, <a href="https://www.iceye.com/iceye-announces-an-all-cash-public-tender-offer-in-respect-of-all-ordinary-shares-of-avio-to-create-a-european-sovereign-space-and-defense-champion">ICEYE</a></p>
+<h2 id="s2">Botado en Estonia el buque semiautónomo EUROGUARD, financiado por el Fondo Europeo de Defensa</h2>
+<p><strong>El EUROGUARD, un buque semiautónomo de 45 metros, fue botado el 18 de noviembre en Nasva (Estonia), según anunció este lunes la Comisión Europea.</strong></p>
+<p>El proyecto, iniciado en 2022, reúne a 29 organizaciones de 10 países europeos y lo coordina el astillero estonio Baltic Workboats. El Fondo Europeo de Defensa (FED) aporta 65 millones de euros de un presupuesto total de unos 95 millones. El buque puede operar con o sin tripulación; sus misiones incluyen vigilancia marítima, detección y desactivación de minas, búsqueda y rescate y protección de cables submarinos e infraestructuras energéticas.</p>
+<p><em>CEAFE:</em> Europa tiene recursos; lo que le falta, una y otra vez, es la escala que solo da la acción conjunta.</p>
+<p><strong>Contexto:</strong> Estonia es Estado miembro de la UE y miembro de la OTAN; el Báltico ha sufrido incidentes repetidos con cables submarinos.</p>
+<p><strong>Por qué importa para Europa:</strong> un programa conjunto financiado con el presupuesto de la UE para una necesidad urgente en el Báltico: diez países y un solo presupuesto logran lo que ningún pequeño Estado costero podría financiar solo. Es el tipo de adquisición intraeuropea que CEAFE considera positiva.</p>
+<p><strong>Qué vigilar:</strong> las pruebas de mar; si los Estados miembros de la UE encargan unidades de serie (EDIP/SAFE); los vínculos con Baltic Sentry de la OTAN.</p>
+<p><strong>Fuentes:</strong> <a href="https://defence-industry-space.ec.europa.eu/edf-funded-euroguard-vessel-launched-estonia-2026-11-23_en">Comisión Europea (DG DEFIS)</a></p>
+<h2 id="s3">Thales Alenia Space gana más de 240 millones de euros por los altímetros del Sentinel-3NG Topography</h2>
+<p><strong>Thales Alenia Space, empresa conjunta de Thales (67 %) y Leonardo (33 %), ha firmado con OHB System AG, contratista principal, un contrato de más de 240 millones de euros para los dos altímetros del primer satélite Copernicus Sentinel-3 Next Generation Topography.</strong></p>
+<p>Se trata de un altímetro SAR nadir, para dar continuidad, y de un nuevo altímetro interferométrico de barrido ancho que permitirá cubrir casi todo el océano en cinco días (Thales Alenia Space). OHB ya había obtenido el contrato principal del satélite, de 554 millones de euros (OHB).</p>
+<p><strong>Contexto:</strong> Copernicus es el programa de observación de la Tierra de la UE, ejecutado con la ESA.</p>
+<p><strong>Por qué importa para Europa:</strong> una cadena de valor totalmente europea (contratista principal alemán, carga útil franco-italiana) financiada por la UE y la ESA. Los datos de Copernicus son de doble uso (vigilancia marítima, hielo ártico) y evitan depender de imágenes comerciales estadounidenses.</p>
+<p><strong>Qué vigilar:</strong> el contrato del Sentinel-3NG Optical; la elección del lanzador.</p>
+<p><strong>Fuentes:</strong> <a href="https://www.thalesaleniaspace.com/en/press-releases/copernicus-sentinel-3ng-topography-thales-alenia-space-forefront-europes-next">Thales Alenia Space</a>, <a href="https://www.ohb.de/en/news/ohb-awarded-eur-554-million-contract-for-new-copernicus-sentinel-3-next-generation-topography-satellite">OHB</a>, <a href="https://x.com/i/status/2124783025611485658">lista European Defense Industry</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

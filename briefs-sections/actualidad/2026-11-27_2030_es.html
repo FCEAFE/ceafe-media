@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — viernes, 27 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">viernes, 27 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Actualidad / World</li>
+<li><strong>Periodo cubierto:</strong> desde las 12:55 hasta las 18:55, aproximadamente, del viernes 27 de noviembre, hora de Madrid: todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Actualidad de CEAFE, las publicaciones de @F_CEAFE y el archivo de X de CEAFE.</li>
+</ul>
+<h2 id="s1">Ataque con dron en Kuwait: Italia afirma que el dron que mató a dos técnicos de Rheinmetall Italia era de fabricación iraní; Irán ofrece una investigación conjunta</h2>
+<p>El ministro italiano de Asuntos Exteriores, Antonio Tajani, afirmó que los investigadores kuwaitíes han concluido que el dron que mató a dos técnicos italianos el 26 de noviembre se fabricó en Irán. Irán sostiene que el dron no se lanzó desde su territorio. Tajani respondió que «los grupos afines a Irán… tienen drones de fabricación iraní». Teherán se ha declarado dispuesto a formar parte de una comisión de investigación con Italia y Kuwait. Las víctimas eran Antonio Saccoccio, de 65 años, y Emanuele Lo Russo, de 36. Trabajaban para Rheinmetall Italia en las antenas del sistema de defensa antiaérea Skyguard, en una instalación militar kuwaití (Ministerio de Asuntos Exteriores italiano; Reuters a través de NBC). «Lo que les está ocurriendo a los países del Golfo, que no son parte en la guerra pero son atacados constantemente, es inaceptable», dijo Tajani. El secretario general de Naciones Unidas, António Guterres, condenó el ataque. Advirtió de que una reanudación de las hostilidades tendría «consecuencias devastadoras» (Anadolu).</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> la edición de las 20:30 del 26 de noviembre informó del ataque, y la de las 08:30 del 27 de noviembre, de la condena saudí. Kuwait es objetivo desde el verano: en junio de 2026, @F_CEAFE compartió la información de Reuters según la cual Irán había lanzado misiles y drones contra bases estadounidenses en Kuwait y Baréin (https://x.com/i/status/2071348746261012781).</p>
+<p><strong>Por qué importa para Europa:</strong> civiles europeos y una empresa europea de defensa son ya víctimas directas de la guerra de Irán en el Golfo. Es Roma, y no Bruselas, quien encabeza la respuesta diplomática. Un Estado miembro que actúa en solitario tiene poco peso ante Teherán o Washington. Una posición europea común pesaría más.</p>
+<p><strong>Qué vigilar:</strong> si la investigación conjunta sale adelante; una declaración de la UE; las reacciones del Golfo.</p>
+<p>Fuentes: Ministerio de Asuntos Exteriores italiano <a href="https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/11/attacco-con-droni-in-kuwait-due-cittadini-italiani-deceduti/">https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/11/attacco-con-droni-in-kuwait-due-cittadini-italiani-deceduti/</a>, Reuters a través de NBC <a href="https://www.nbcnews.com/world/middle-east/two-italians-killed-attack-kuwait-site-iran-denies-involvement-rcna611491">https://www.nbcnews.com/world/middle-east/two-italians-killed-attack-kuwait-site-iran-denies-involvement-rcna611491</a>, Al Jazeera <a href="https://www.aljazeera.com/news/2026/11/27/italians-killed-in-kuwait-why-is-iran-denying-responsibility">https://www.aljazeera.com/news/2026/11/27/italians-killed-in-kuwait-why-is-iran-denying-responsibility</a>, Clash Report (Tajani) <a href="https://x.com/i/status/2126351836466819525">https://x.com/i/status/2126351836466819525</a>, <a href="https://x.com/i/status/2126351558002561429">https://x.com/i/status/2126351558002561429</a>, Anadolu (Guterres) <a href="https://x.com/i/status/2126355045985706264">https://x.com/i/status/2126355045985706264</a>, Reuters (junio de 2026) <a href="https://x.com/i/status/2071348746261012781">https://x.com/i/status/2071348746261012781</a>.</p>
+<h2 id="s2">Actualización: Polonia firma con Palantir un contrato de 300 millones de dólares a cinco años para IA militar y lo defiende frente a las críticas por «dependencia»</h2>
+<p>El Ministerio de Defensa polaco firmó un acuerdo a cinco años, por unos 300 millones de dólares, para el Maven Smart System de Palantir (Bloomberg; Reuters; Ministerio de Defensa polaco). Maven es una plataforma de inteligencia artificial (IA) de apoyo a la decisión. Integra datos del campo de batalla, de sensores y de logística. Se desplegará en todas las Fuerzas Armadas y sus mandos. El ministro de Defensa, Władysław Kosiniak-Kamysz, dijo que sería «estúpido y erróneo» no usarlo, y citó su historial en Ucrania (POLITICO Europe). Varsovia asegura que el sistema funcionará en infraestructura militar. Los servidores, las claves de cifrado y los datos estarán solo en manos del Ejército polaco, sin acceso remoto para Palantir. Se desarrollan sistemas polacos (AIRON, NEFRYT) como posibles sucesores. Una publicación compartida por @F_CEAFE, al parecer de Palantir, elogió el «indiscutible liderazgo» de Polonia «en la defensa de una Europa libre, segura y soberana». @F_CEAFE compartió también a tres críticos polacos. Adrian Zandberg (partido Razem) calificó de «escandalosa» la forma de firmar el contrato: «estamos haciendo a Polonia dependiente de una empresa extranjera». Jan Oleszczuk-Zygmuntowski advirtió de que se entrega «el control de las capacidades operativas del Ejército polaco a una empresa privada extranjera».</p>
+<figure class="brief-figure">
+<img src="charts/polonia_es.png" alt="Polonia en el G20: su peso real frente a EE. UU., China y la UE" />
+<figcaption>Polonia en el G20: su peso real frente a EE. UU., China y la UE</figcaption>
+</figure>
+
+<p><strong>Antecedentes (archivo CEAFE):</strong> la edición de las 14:30 informó del contrato sin importe. En mayo de 2026, un alto mando de la OTAN dijo a POLITICO que la Alianza no tenía una alternativa viable a la IA de combate de Palantir (https://x.com/i/status/2057418582473007212). El 16 de noviembre, @F_CEAFE publicó la información de Reuters de que Europa busca alternativas a Palantir porque sus ejércitos quieren limitar la dependencia de EE. UU. (https://x.com/i/status/2122265332274319486).</p>
+<p><strong>Por qué importa para Europa:</strong> Polonia compra a una empresa estadounidense el núcleo de su mando y control. Tener los datos en servidores polacos no elimina la dependencia del software, de sus actualizaciones ni de la legislación estadounidense de exportación. Cada Estado miembro que firma en solitario debilita la opción de un sistema europeo común. Solo a escala de la UE podría construirse y pagarse un sistema así.</p>
+<p><strong>Qué vigilar:</strong> los detalles del contrato, como las cláusulas de auditoría y de salida; la postura de otros ejércitos europeos sobre Palantir; cualquier alternativa del Fondo Europeo de Defensa o de otro origen europeo.</p>
+<p>Fuentes: Bloomberg <a href="https://www.bloomberg.com/news/articles/2026-11-27/poland-signs-300-million-palantir-deal-to-use-ai-for-defense">https://www.bloomberg.com/news/articles/2026-11-27/poland-signs-300-million-palantir-deal-to-use-ai-for-defense</a> (de pago; titular y resumen), POLITICO Europe <a href="https://www.politico.eu/article/wed-be-stupid-not-to-poland-defends-300m-military-ai-deal-with-palantir/">https://www.politico.eu/article/wed-be-stupid-not-to-poland-defends-300m-military-ai-deal-with-palantir/</a>, Ministerio de Defensa polaco <a href="https://www.gov.pl/web/obrona-narodowa/wojsko-polskie-siega-po-nowoczesne-i-sprawdzone-technologie-wykorzystujace-sztuczna-inteligencje">https://www.gov.pl/web/obrona-narodowa/wojsko-polskie-siega-po-nowoczesne-i-sprawdzone-technologie-wykorzystujace-sztuczna-inteligencje</a>, Reuters <a href="https://x.com/i/status/2126370519482056985">https://x.com/i/status/2126370519482056985</a>, publicaciones compartidas por @F_CEAFE <a href="https://x.com/F_CEAFE/status/2126294840979964386">https://x.com/F_CEAFE/status/2126294840979964386</a> (comunicado, al parecer de Palantir), <a href="https://x.com/F_CEAFE/status/2126336214844289196">https://x.com/F_CEAFE/status/2126336214844289196</a> (Zandberg), <a href="https://x.com/F_CEAFE/status/2126307213987992036">https://x.com/F_CEAFE/status/2126307213987992036</a> (Zygmuntowski), <a href="https://x.com/i/status/2057418582473007212">https://x.com/i/status/2057418582473007212</a>, <a href="https://x.com/i/status/2122265332274319486">https://x.com/i/status/2122265332274319486</a>.</p>
+<p><strong>CEAFE:</strong> No se trata de restar mérito a este país, sino de medir su peso real frente a quien ya opera a escala continental o global.</p>
+<h2 id="s3">Actualización: Países Bajos «no aceptará imposiciones» sobre las restricciones de EE. UU. a los chips que apuntan a ASML</h2>
+<p>El Gobierno neerlandés hará presión en Washington contra la ley estadounidense MATCH Act, aún en tramitación. Esa norma obligaría a los aliados a endurecer los controles sobre la venta y el mantenimiento en China de los equipos de fabricación de chips de ASML. Si se aprueba, La Haya pedirá a EE. UU. que no la aplique (Reuters a través de Investing.com; Bloomberg). El ministro de Comercio, Sjoerd Sjoerdsma, calificó la ley de ataque a la soberanía neerlandesa sobre su política de exportaciones. Países Bajos «no aceptará imposiciones», dijo (SCMP, propiedad de Alibaba). POLITICO Europe describe la postura neerlandesa como el rechazo a un intento estadounidense «inaceptable». China supone una parte importante de las ventas de ASML (Anadolu). Los medios estatales chinos (Global Times) presentaron la decisión neerlandesa como una respuesta a la «hegemonía tecnológica» de EE. UU.; @F_CEAFE compartió esa publicación. No se ha encontrado ninguna declaración oficial china. En el mismo periodo, Reuters informó de que Nvidia ordenó a sus socios dejar de enviar servidores con sus chips a Malasia, Singapur, Tailandia e Indonesia. Es otra muestra del alcance de los controles de exportación estadounidenses sobre terceros países.</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> la edición de las 20:30 del 26 de noviembre informó de que Países Bajos pediría a Washington que «no aplique» las restricciones, y la de las 08:30 del 27 de noviembre, de la primera resistencia neerlandesa. En septiembre de 2024, @F_CEAFE publicó la «insatisfacción» de China con los nuevos controles neerlandeses a la exportación de equipos de ASML (https://x.com/i/status/1832892714976714988).</p>
+<p><strong>Por qué importa para Europa:</strong> ASML es la empresa tecnológica más valiosa de Europa y su principal baza en la cadena de suministro de chips. Un Estado miembro que se enfrenta solo a Washington y a Pekín es fácil de presionar. La política comercial es competencia de la UE, así que su respaldo mostraría si Europa puede defender su industria frente a un aliado.</p>
+<p><strong>Qué vigilar:</strong> la tramitación de la MATCH Act en el Congreso; el apoyo de la Comisión a La Haya; una reacción oficial china.</p>
+<p>Fuentes: SCMP <a href="https://www.scmp.com/economy/global-economy/article/3376024/netherlands-will-not-be-dictated-trade-chief-says-fight-against-us-match-act">https://www.scmp.com/economy/global-economy/article/3376024/netherlands-will-not-be-dictated-trade-chief-says-fight-against-us-match-act</a>, POLITICO Europe <a href="https://www.politico.eu/article/dutch-resist-unacceptable-us-bid-to-tighten-semiconductor-export-controls-asml/">https://www.politico.eu/article/dutch-resist-unacceptable-us-bid-to-tighten-semiconductor-export-controls-asml/</a>, Reuters a través de Investing.com <a href="https://www.investing.com/news/stock-market-news/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-5052431">https://www.investing.com/news/stock-market-news/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-5052431</a>, Bloomberg <a href="https://www.bloomberg.com/news/articles/2026-11-26/netherlands-plans-to-fight-rollout-of-proposed-us-curbs-on-asml">https://www.bloomberg.com/news/articles/2026-11-26/netherlands-plans-to-fight-rollout-of-proposed-us-curbs-on-asml</a>, Anadolu <a href="https://x.com/i/status/2126335269582299366">https://x.com/i/status/2126335269582299366</a>, Global Times (medio estatal chino) a través de @F_CEAFE <a href="https://x.com/F_CEAFE/status/2126336192786706586">https://x.com/F_CEAFE/status/2126336192786706586</a>, Reuters (Nvidia) <a href="https://x.com/i/status/2126357884778733732">https://x.com/i/status/2126357884778733732</a>, Reuters (2024) <a href="https://x.com/i/status/1832892714976714988">https://x.com/i/status/1832892714976714988</a>.</p>
+<h2 id="s4">Negociaciones de paz en Ucrania: Kushner dice que se elaboró un marco con Europa y que no descarta «nada» sobre la OTAN</h2>
+<p>El enviado estadounidense Jared Kushner fue entrevistado por el consejero delegado de Axel Springer, Mathias Döpfner (MD Meets, grabada el 25 de noviembre; Kushner publicó fragmentos el 27 de noviembre). Dijo que EE. UU. es «un mediador». Apoya «la opción que ponga fin a la guerra»: una congelación que lleve a un alto el fuego, o que Ucrania renuncie al Donbás a cambio del ingreso en la OTAN. Sobre Ucrania en la OTAN, afirmó: «No descartaría nada». Dijo que se elaboró con Europa un posible marco de paz. En su opinión, Putin quiere un acuerdo de posguerra antes de un alto el fuego (resumen de WELT). Sobre el terreno, tras los ataques rusos y con el invierno, Ucrania suspendió todas sus exportaciones de electricidad. Sus importaciones alcanzaron el nivel más alto desde mediados de junio (Euronews). Zelenski reunió a su mando militar para analizar las «posibles amenazas» contra Kiev. Dijo que Ucrania atacó instalaciones petrolíferas y militares en 11 regiones rusas durante la última semana (Kyiv Independent).</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> el 25 de noviembre, @F_CEAFE compartió la afirmación de Kushner de que Europa no participó en las conversaciones de Abu Dabi porque Putin ve en ella «muchas declaraciones provocadoras» (https://x.com/i/status/2125697236055281758). En octubre compartió informaciones sobre el enfrentamiento dentro del equipo negociador de Trump para Ucrania (https://x.com/i/status/2115400725593305255).</p>
+<p><strong>Por qué importa para Europa:</strong> las condiciones de la paz en el continente europeo las expone un enviado estadounidense en una entrevista con un medio alemán. La UE no está en la mesa como parte. La falta de electricidad en Ucrania aumenta además su dependencia de las redes eléctricas de la UE este invierno.</p>
+<p><strong>Qué vigilar:</strong> la próxima ronda tras Abu Dabi, Moscú y Dublín; la redacción de las garantías de seguridad; el apoyo energético de la UE a Ucrania.</p>
+<p>Fuentes: Kushner <a href="https://x.com/i/status/2126367043859484834">https://x.com/i/status/2126367043859484834</a>, <a href="https://x.com/i/status/2126369936536670323">https://x.com/i/status/2126369936536670323</a>, <a href="https://x.com/i/status/2126373996769775661">https://x.com/i/status/2126373996769775661</a>, <a href="https://x.com/i/status/2126363050890379381">https://x.com/i/status/2126363050890379381</a>, WELT <a href="https://www.welt.de/politik/ausland/plus6b06a022d4a4a3142c5729fb/jared-kushner-im-interview-wie-ist-es-wladimir-putin-in-verhandlungen-gegenueberzusitzen.html">https://www.welt.de/politik/ausland/plus6b06a022d4a4a3142c5729fb/jared-kushner-im-interview-wie-ist-es-wladimir-putin-in-verhandlungen-gegenueberzusitzen.html</a> (de pago; resumen), Euronews <a href="https://l.euronews.com/XhFb">https://l.euronews.com/XhFb</a>, Zelenski <a href="https://x.com/i/status/2126312809482891381">https://x.com/i/status/2126312809482891381</a>, Kyiv Independent <a href="https://x.com/i/status/2126369726305870327">https://x.com/i/status/2126369726305870327</a>, @clashreport <a href="https://x.com/i/status/2125697236055281758">https://x.com/i/status/2125697236055281758</a>, @thetect0nic <a href="https://x.com/i/status/2115400725593305255">https://x.com/i/status/2115400725593305255</a>.</p>
+<h2 id="s5">Estonia cerrará su frontera con Rusia el 1 de diciembre mientras Bulgaria bloquea el 22.º paquete de sanciones de la UE</h2>
+<p>Estonia cerrará todos sus pasos fronterizos con Rusia el 1 de diciembre, durante al menos seis meses (Reuters). Bulgaria bloquea el 22.º paquete de sanciones de la UE contra Rusia. Pide que se permita reanudar las importaciones de hierro ruso (Kyiv Independent). La portavoz del Ministerio de Asuntos Exteriores ruso, María Zajárova, calificó de «falsas» las informaciones de medios alemanes según las cuales Rusia planea poner en órbita una nave con una cabeza nuclear (Ministerio de Asuntos Exteriores ruso; fuente oficial rusa). El ministro griego de Asuntos Exteriores, Giorgos Gerapetritis, reiteró su apoyo a la integridad territorial de Ucrania en una llamada con su homólogo ucraniano, Andrii Sybiha.</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> la edición de las 08:30 informó del cierre estonio y de la advertencia de Moscú de que perjudicaría «a la propia Estonia». En noviembre de 2023, @F_CEAFE compartió informaciones de que Noruega y Estonia podían cerrar pasos con Rusia (https://x.com/i/status/1727643175668387930). El 21.º paquete se acordó en julio de 2026, según anunció la alta representante de la UE, Kaja Kallas (https://x.com/i/status/2080232531002085381).</p>
+<p><strong>Por qué importa para Europa:</strong> las sanciones exigen unanimidad. El interés comercial de un solo Estado miembro puede frenar todo el paquete. El cierre estonio convierte una frontera de la UE y de la OTAN en una frontera cerrada.</p>
+<p><strong>Qué vigilar:</strong> las negociaciones entre los embajadores de la UE sobre el 22.º paquete; la respuesta rusa al cierre estonio.</p>
+<p>Fuentes: Reuters <a href="https://reut.rs/3V0VnLP">https://reut.rs/3V0VnLP</a> (publicación <a href="https://x.com/i/status/2126349171011506464">https://x.com/i/status/2126349171011506464</a>), Kyiv Independent <a href="https://x.com/i/status/2126357168983065049">https://x.com/i/status/2126357168983065049</a>, Ministerio de Asuntos Exteriores ruso <a href="https://x.com/i/status/2126305709646340250">https://x.com/i/status/2126305709646340250</a>, Ministerio de Asuntos Exteriores griego <a href="https://x.com/i/status/2126354528714871077">https://x.com/i/status/2126354528714871077</a>, Kyiv Independent (2023) <a href="https://x.com/i/status/1727643175668387930">https://x.com/i/status/1727643175668387930</a>, Kaja Kallas <a href="https://x.com/i/status/2080232531002085381">https://x.com/i/status/2080232531002085381</a>.</p>
+<h2 id="s6">Actualización: tras la cumbre del presupuesto, Kubilius advierte de recortes en los grandes proyectos de defensa de la UE</h2>
+<p>El comisario europeo de Defensa y Espacio, Andrius Kubilius, dijo a France 24 que los recortes presupuestarios propuestos amenazan los grandes proyectos de defensa de la UE. En Vilna, declaró ante BusinessEurope que la industria europea de defensa «debe estar libre de dependencias peligrosas en las cadenas de suministro». En Francia, lo que está en juego crece. Marine Le Pen (Agrupación Nacional), en una publicación compartida por @F_CEAFE, afirmó: «Pese a toda nuestra amistad con Ucrania, ya no podemos permitirnos comprometernos financieramente… del préstamo de 90 000 millones de euros, 17 000 millones recaen sobre Francia, sin contar 2500 millones al año en intereses». Sus cifras son una afirmación política. El candidato de la izquierda radical Jean-Luc Mélenchon exigió una «revisión a fondo» de las relaciones con Alemania (France 24). Reuters se pregunta por qué a los líderes les cuesta «blindar frente a Le Pen» el presupuesto de 1,6 billones de euros. Mientras, el Bundestag alemán aprobó el mayor presupuesto de su historia, con más gasto en defensa e infraestructuras. DW lo cifra en 561 000 millones de euros para 2027, financiados en torno a un 40 % con deuda; Bloomberg habla de 556 000 millones.</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> la edición de las 08:30 informó del fracaso de la cumbre del presupuesto, y la de las 14:30, del plan de Costa de recortar más antes del Consejo Europeo del 17 de diciembre. El 25 de noviembre, Kubilius advirtió de que la industria espacial consideraba que un recorte del 30 % de la partida de defensa y espacio haría imposibles sus planes (https://x.com/i/status/2125661996825907429).</p>
+<p><strong>Por qué importa para Europa:</strong> Alemania gasta más en el plano nacional mientras se recorta el presupuesto común. Ese presupuesto financia el Fondo Europeo de Defensa y las líneas industriales de defensa. Ningún Estado miembro puede financiar solo los proyectos más grandes. La campaña francesa podría convertir el préstamo a Ucrania y el presupuesto de la UE en monedas de cambio nacionales.</p>
+<p><strong>Qué vigilar:</strong> la nueva propuesta de negociación de Costa; el Consejo Europeo del 17 de diciembre; las posiciones de los candidatos franceses sobre el presupuesto de la UE.</p>
+<p>Fuentes: France 24 <a href="https://go.france24.com/HEWk">https://go.france24.com/HEWk</a> (publicación <a href="https://x.com/i/status/2126361947222220930">https://x.com/i/status/2126361947222220930</a>), Kubilius <a href="https://x.com/i/status/2126315335011934356">https://x.com/i/status/2126315335011934356</a>, Le Pen a través de @F_CEAFE <a href="https://x.com/F_CEAFE/status/2126336291495141688">https://x.com/F_CEAFE/status/2126336291495141688</a>, France 24 (Mélenchon) <a href="https://x.com/i/status/2126369968170086793">https://x.com/i/status/2126369968170086793</a>, Reuters <a href="https://x.com/i/status/2126373039994507645">https://x.com/i/status/2126373039994507645</a>, DW <a href="https://x.com/i/status/2126346973804478737">https://x.com/i/status/2126346973804478737</a>, Bloomberg <a href="https://x.com/i/status/2126357928797954070">https://x.com/i/status/2126357928797954070</a>, @KubiliusA <a href="https://x.com/i/status/2125661996825907429">https://x.com/i/status/2125661996825907429</a>.</p>
+<h2 id="s7">Actualización: pacto de defensa de La Meca — el comité de Islamabad promete apoyo a la seguridad saudí e Indonesia dice que no</h2>
+<p>El Comité Estratégico Político y de Defensa de la Alianza de Defensa de La Meca celebró su segunda reunión en Islamabad el 27 de noviembre. La alianza agrupa a Arabia Saudí, Pakistán y Turquía, que completó su ratificación ese mismo día. La declaración conjunta reafirma la defensa colectiva y la solidaridad mutua. Condena los ataques de los hutíes contra civiles e infraestructuras saudíes y promete reforzar el apoyo a la seguridad saudí. Acuerda además mantener las consultas políticas y militares, cooperar en industria de defensa, tecnología y formación, y crear una Secretaría de la Alianza en Arabia Saudí (Ministerio de Asuntos Exteriores saudí; Radio Pakistan). Asistieron los ministros de Defensa, el príncipe Jalid bin Salmán y Yaşar Güler, y los de Asuntos Exteriores, el príncipe Faisal bin Farhan y Hakan Fidan. Indonesia, el país de mayoría musulmana más poblado, descartó sumarse al pacto (Clash Report; Times of India).</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> la edición de las 14:30 informó de la ratificación turca del pacto, firmado el 7 de agosto, cuyo artículo 2 considera un ataque contra una parte como un ataque contra todas. En mayo de 2026, @F_CEAFE compartió el análisis del SCMP sobre si el pacto saudí-pakistaní daría a las armas chinas una exposición sin riesgos (https://x.com/i/status/2051735435005542791).</p>
+<p><strong>Por qué importa para Europa:</strong> un miembro de la OTAN construye en el Golfo un marco paralelo de defensa colectiva e industria de defensa. Las potencias medias suman su peso. Los Estados miembros de la UE todavía tienen dificultades para hacer lo mismo.</p>
+<p><strong>Qué vigilar:</strong> la entrada en vigor; la Secretaría en Arabia Saudí; cualquier papel operativo contra los hutíes.</p>
+<p>Fuentes: Ministerio de Asuntos Exteriores saudí <a href="https://x.com/i/status/2126366199395025035">https://x.com/i/status/2126366199395025035</a>, Ministerio de Asuntos Exteriores de Pakistán <a href="https://x.com/i/status/2126360417563967536">https://x.com/i/status/2126360417563967536</a>, Radio Pakistan <a href="https://radio.gov.pk/27-11-2026/pakistan-saudi-arabia-turkiye-vow-to-strengthen-defence-cooperation">https://radio.gov.pk/27-11-2026/pakistan-saudi-arabia-turkiye-vow-to-strengthen-defence-cooperation</a>, Clash Report <a href="https://clashreport.com/world/articles/indonesia-rules-out-mecca-pact-46g50f2nthj">https://clashreport.com/world/articles/indonesia-rules-out-mecca-pact-46g50f2nthj</a>, Al Jazeera <a href="https://x.com/i/status/2126360286764413280">https://x.com/i/status/2126360286764413280</a>, SCMP <a href="https://x.com/i/status/2051735435005542791">https://x.com/i/status/2051735435005542791</a>.</p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

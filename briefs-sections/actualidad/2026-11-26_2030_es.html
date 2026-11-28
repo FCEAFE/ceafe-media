@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — jueves, 26 de noviembre de 2026 · 20:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">jueves, 26 de noviembre de 2026 · 20:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Actualidad / World</li>
+<li><strong>Periodo cubierto:</strong> desde las 13:15 hasta las 19:20 aprox. del jueves 26 de noviembre (hora de Madrid): todo lo nuevo desde la edición de las 14:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Actualidad de CEAFE, las publicaciones de @F_CEAFE y el archivo de CEAFE en X.</li>
+</ul>
+<h2 id="s1">Actualización: la Cumbre del Euro elige al español Hernández de Cos para presidir el BCE, mientras el presupuesto sigue «a años luz» de un acuerdo y el préstamo a Ucrania sigue dividido</h2>
+<p><strong>Entradilla.</strong> Los líderes de la zona euro acordaron este jueves recomendar al español Pablo Hernández de Cos como próximo presidente del Banco Central Europeo, con la francesa Laurence Boone y el alemán Markus Brunnermeier para el Comité Ejecutivo, anunció en X el presidente del Consejo Europeo, António Costa. Los Países Bajos retiraron a su candidato, Klaas Knot, tras un paquete franco-germano-español (POLITICO Europe, Euronews). Por su parte, la primera ministra italiana, Giorgia Meloni, dijo que la UE está «a años luz» de un acuerdo sobre el presupuesto 2028–2034 (Reuters vía Arab News).</p>
+<p><strong>Contexto.</strong> Christine Lagarde se va el 7 de febrero de 2027. Brunnermeier sustituiría al economista jefe Philip Lane (mandato hasta el 31 de mayo de 2027) y Boone asumiría la cartera de mercados de Isabel Schnabel, que deja el cargo el 3 de enero de 2027 para ir al FMI (Euronews). Próximos pasos: audiencia en el Parlamento Europeo el 7 de diciembre, votación en pleno la semana siguiente y nombramiento formal por los líderes el 17 de diciembre (POLITICO Europe). El BCE ha subido los tipos dos veces este año y la inflación de la eurozona rozó el 4 % en octubre (Euronews). Sobre el presupuesto, Meloni afirmó: «No estamos dispuestos a firmar un presupuesto en el que tengamos que dar más para recibir menos»; el marco a siete años requiere unanimidad y los líderes quieren un acuerdo antes de fin de año (Reuters). Costa dio por concluida la primera ronda y pasó a consultas con grupos de Estados miembros; la presidenta del Parlamento, Roberta Metsola, pidió un MFF «centrado, eficaz y simple». El letón Andris Kulbergs dijo a POLITICO Europe que «no hay ninguna posibilidad» de acuerdo hoy, pero que uno por Navidad «tiene que» ser posible. El primer ministro checo, Andrej Babiš, en un vídeo que @F_CEAFE compartió (Clash Report), preguntó cuál es el objetivo y dijo que Ucrania ha recibido 520.000 millones de euros «directa o indirectamente» y necesita otros 70.000 millones. @F_CEAFE también compartió la pieza del Financial Times «Choque franco-alemán por el &ldquo;Made in Europe&rdquo; en el presupuesto de defensa de la UE».</p>
+<p><strong>Por qué importa a Europa:</strong> un paquete franco-germano-español para el BCE muestra que los grandes Estados siguen repartiéndose los altos cargos entre ellos, mientras los mismos líderes no se ponen de acuerdo en el presupuesto común que financiaría la defensa europea. La línea de CEAFE es que los presupuestos nacionales no alcanzan la escala de EE. UU. o China; el choque sobre «Made in Europe» es la prueba de si el dinero común comprará europeo.</p>
+<p><strong>Qué vigilar:</strong> el segundo día de la cumbre (27 de noviembre); el tamaño de la línea de defensa y espacio y la regla «Made in Europe»; las exenciones en el préstamo a Ucrania; la audiencia del 7 de diciembre.</p>
+<p><strong>Fuentes:</strong> https://www.politico.eu/article/eu-leaders-clear-path-for-spains-pablo-hernandez-de-cos-to-lead-ecb/ · https://www.euronews.com/2026/11/26/eurozone-leaders-back-hernandez-de-cos-to-succeed-lagarde-at-ecb · https://www.arabnews.com/world/italys-meloni-talks-tough-on-eu-budget-warns-ukraine-on-mediterranean-strike-3014176 · https://www.consilium.europa.eu/en/meetings/european-council/2026/11/26-27/ · https://x.com/i/status/2126000659908403403 (Costa) · https://x.com/i/status/2125944919072354621 (repost de @F_CEAFE, Babiš) · https://x.com/i/status/2125945107945758733 (repost de @F_CEAFE, FT) · https://x.com/i/status/2126002175033987335 (POLITICO Europe, Kulbergs)</p>
+<h2 id="s2">Actualización: la guerra «no debe extenderse al Mediterráneo» — Meloni y Wadephul presionan a Kiev, mientras Trump dice que pidió a Putin «retirar toda agresión militar» contra Europa</h2>
+<p><strong>Entradilla.</strong> Meloni dijo en Bruselas que «la guerra no debe ni puede extenderse al Mediterráneo» y que será «muy clara» con Zelenski, tras el ataque ucraniano contra una corbeta y un carguero rusos en el puerto libio de Bengasi (ANSA; Bloomberg; hromadske). El ministro alemán de Exteriores, Johann Wadephul, dijo que Berlín respalda el derecho de Ucrania a defenderse pero que «hay que evitar cualquier escalada», e instó a Rusia a demostrar voluntad de negociar aceptando un alto el fuego en el mar Negro (DW; Anadolu).</p>
+<p><strong>Contexto.</strong> Zelenski confirmó el 23 de noviembre el hundimiento de la corbeta Merkuriy y de un helicóptero Ka-27; también fue alcanzado el carguero MV Angara. El Ejército Nacional Libio, que controla el este de Libia, dijo que dos de sus marinos murieron y amenazó con represalias. Crosetto convocó al agregado militar ucraniano y Tajani llamó al ministro Sybiha (hromadske; ANSA). La Liga también calificó el ataque de «inaceptable». Por parte de Moscú, la portavoz del Ministerio de Exteriores ruso, Maria Zajárova (fuente estatal rusa), dijo que el «régimen de Kiev» sigue atacando a civiles; el ministro polaco Radosław Sikorski dijo que Ucrania golpea bases aéreas, refinerías y el puente de Kerch y que «Rusia no está ganando en el campo de batalla» (vídeo de Clash Report). No se encontró en esta pasada una respuesta oficial rusa al ataque de Bengasi.</p>
+<p><strong>Trump.</strong> En Truth Social (14:53 UTC) Trump escribió que en sus conversaciones con Putin en China dedicó «mucho tiempo» a pedirle que «retire toda la agresión militar contra territorios de toda Europa», llamó a la guerra «UN BAÑO DE SANGRE COMPLETO» y dijo que informó a Mark Rutte, de la OTAN, en Mar-a-Lago (https://truthsocial.com/@realDonaldTrump/117683312242798397). AFP lo describe como un cambio de tono hacia Putin, a quien llamó «amigo» la semana pasada. Kyiv Independent señala que Witkoff y Kushner han visitado Rusia 14 veces desde febrero de 2025 y Ucrania dos.</p>
+<p><strong>Por qué importa a Europa:</strong> los mismos europeos a los que se pide financiar a Ucrania reciben de sus aliados la petición de frenar sus operaciones, mientras Washington marca el ritmo de las conversaciones sin ellos. Una guerra que llegue a Libia y al Mediterráneo afecta directamente a la seguridad y a los intereses energéticos de Italia y del sur de Europa (ENI, gasoductos).</p>
+<p><strong>Qué vigilar:</strong> una llamada Meloni–Zelenski; la reacción de Moscú sobre Libia; la idea de alto el fuego en el mar Negro; si Europa obtiene un asiento en la mesa de paz.</p>
+<p><strong>Fuentes:</strong> https://www.ansa.it/english/news/politics/2026/11/26/ukraine-war-must-not-spread-to-the-mediterranean-says-meloni_72423673-0318-4238-ac12-6da4a02e0717.html · https://hromadske.ua/en/world/275052-meloni-warns-against-war-spreading-to-mediterranean-after-ukrainian-strikes-off-libya · https://www.bloomberg.com/news/articles/2026-11-26/italy-s-meloni-rebukes-ukraine-over-libya-strike-in-political-balancing-act · https://x.com/i/status/2126008583145836698 (DW, Wadephul) · https://x.com/i/status/2126005664350609455 (AFP) · https://x.com/i/status/2126009414377468046 (Kyiv Independent) · https://truthsocial.com/@realDonaldTrump/117683312242798397</p>
+<h2 id="s3">Actualización: Ley MATCH — los Países Bajos pedirán a Washington «que no la aplique» a ASML; China condena las nuevas propuestas arancelarias de la Sección 301</h2>
+<p><strong>Entradilla.</strong> El ministro neerlandés de Comercio Exterior, Sjoerd Sjoerdsma, dijo en el Parlamento: «No nos van a decir sin más lo que hay que hacer. Si se aprueba la ley, nuestro mensaje a la Administración de EE. UU. será que no la aplique» (Reuters). La Ley MATCH daría a aliados como los Países Bajos y Japón 150 días para alinear los controles a la venta y mantenimiento de equipos avanzados de chips a China, o se expondrían a restricciones unilaterales de EE. UU. sobre sus equipos, incluidas las máquinas DUV de ASML. El Congreso la negocia dentro de la ley anual de defensa, con votación prevista hacia mediados de diciembre (NL Times).</p>
+<p><strong>Contexto.</strong> Sjoerdsma calificó las medidas de «excesivas» y de «interés nacional», dijo que el Gobierno neerlandés coordina con la Comisión, Alemania y Francia y estudia contramedidas bilaterales y europeas. Señaló también un doble rasero: EE. UU. quiere limitar más las herramientas de sus aliados mientras permite que lleguen a China chips de IA «muy avanzados» (NL Times; el eurodiputado Bart Groothuis lo dijo en POLITICO Europe). Una analista de política comercial dijo que la UE debería considerar el Estatuto de Bloqueo pero esperar represalias de EE. UU. China y los Países Bajos dijeron, tras la visita del ministro Tom Berendsen a Pekín el miércoles, que se comprometen a hablar de controles a la exportación; China ya condenó la Ley MATCH y advirtió de contramedidas (Reuters). Sjoerdsma dijo que sus contactos chinos no le dan motivos para esperar represalias contra los Países Bajos.</p>
+<p><strong>Reacción vinculada en aranceles.</strong> El portavoz del Ministerio de Comercio chino, He Yadong, calificó la investigación de la Sección 301 sobre sobrecapacidad de «típico acto de unilateralismo» que viola las normas de la OMC, según un post de Global Times (medio estatal chino) que @F_CEAFE compartió. El USTR propuso el 25 de noviembre un arancel del 15 % a todos los bienes de la UE, neto de los tipos NMF, y hasta el 20 % si las consultas se consideran insatisfactorias; la Comisión «rechaza con firmeza la premisa» pero pide respetar el techo del 15 % (USTR; POLITICO Europe). SCMP (propiedad de Alibaba) informa de que China criticó las propuestas pero los analistas creen que las conversaciones comerciales siguen en marcha. Un editorial de Global Times dice que la Comisión «agitó la bandera blanca de inmediato» cuando Washington levantó el palo arancelario (medio estatal chino; opinión).</p>
+<p><strong>Antecedentes (archivo de CEAFE):</strong> CEAFE sigue la resistencia neerlandesa a las restricciones de EE. UU. sobre ASML al menos desde mayo de 2026, cuando La Haya se opuso a las restricciones propuestas por Washington a las exportaciones de ASML a China (https://x.com/i/status/2058658083702734962). El 25 de noviembre @F_CEAFE publicó que el Gobierno neerlandés trabajaba para impedir la aprobación de la ley MATCH estadounidense (https://x.com/i/status/2125660817031123152); la petición de que no se aplique es el paso siguiente.</p>
+<p><strong>Comentario CEAFE:</strong> Lo que estos datos ponen de manifiesto es una asimetría de poder, no una diferencia de talento o de voluntad política.</p>
+<p><strong>Por qué importa a Europa:</strong> es el ejemplo más claro ahora mismo de la línea de CEAFE: Washington legisla el alcance comercial de las empresas europeas, mientras la mejor carta de Europa (ASML) la defiende un Gobierno nacional. El «no aplicar» neerlandés es la primera señal pública de resistencia, pero está por ver si la UE usaría su Estatuto de Bloqueo.</p>
+<p><strong>Qué vigilar:</strong> el texto de conferencia de la ley de defensa y la votación de mediados de diciembre; las audiencias del USTR; la llamada de Greer a los ministros de Comercio de la UE el lunes 30 de noviembre (POLITICO Europe); cualquier contramedida china.</p>
+<p><strong>Fuentes:</strong> https://www.aol.com/articles/dutch-minister-says-us-chip-113207000.html (Reuters) · https://nltimes.nl/2026/11/26/netherlands-draws-line-us-plan-restrict-asml-exports-china · https://www.politico.eu/article/dutch-resist-unacceptable-us-bid-to-tighten-semiconductor-export-controls-asml/ · https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural · https://www.politico.eu/article/eu-rejects-donald-trump-case-for-new-tariffs/ · https://x.com/i/status/2125862609912221752 (Global Times, MOFCOM; repost de @F_CEAFE https://x.com/i/status/2125940552197648833) · https://x.com/i/status/2125999292728988013 (SCMP) · https://x.com/i/status/2125990563333980597 (editorial de Global Times)</p>
+<h2 id="s4">Cinco países europeos compran más de 430 CV90 en la mayor compra terrestre conjunta de la OTAN; Finlandia encarga 160</h2>
+<p><strong>Entradilla.</strong> El ministro de Defensa finlandés, Antti Häkkänen, autorizó a las Fuerzas de Defensa a adquirir 160 vehículos de combate de infantería CV9035 Mk IV «Nordic Edition» a BAE Systems Hägglunds (Suecia), con opción a 100 más, en una compra conjunta con Suecia (líder), Noruega, Lituania y los Países Bajos por más de 430 vehículos (post del Ministerio de Defensa finlandés; Reuters; Bloomberg). La parte finlandesa se cifra en unos 2.800 millones de euros con apoyo, formación y repuestos.</p>
+<p><strong>Contexto.</strong> Las fuentes lo describen como la mayor compra conjunta de sistemas terrestres de la OTAN. BAE Systems Hägglunds es la filial sueca de la británica BAE Systems. Por separado, el ministro de Defensa británico, Wes Streeting, anunció en Plymouth un contrato de 8.000 millones de libras para acelerar el mantenimiento de submarinos nucleares, con 3.000 empleos (repost de @F_CEAFE; ya recogido a las 14:30; véase Industria de Defensa).</p>
+<p><strong>Antecedentes (archivo de CEAFE):</strong> CEAFE sigue el CV90 desde enero de 2020, cuando @F_CEAFE reposteó un vídeo de BAE Systems con el vehículo disparando un misil Spike-LR integrado a temperaturas bajo cero (https://x.com/i/status/1216854116007337986). Entre los hitos publicados desde entonces figuran la entrega a Noruega de los primeros CV90 de apoyo al combate (mayo de 2022), el pedido sueco de otros 20 sistemas de mortero CV90 Mjölner (enero de 2023, https://x.com/i/status/1620035895389986816) y los contratos de 2.500 millones de dólares de BAE con Dinamarca y Suecia para nuevos CV90 (diciembre de 2024). El 26 de noviembre @F_CEAFE reposteó la autorización de Finlandia para comprar 160 CV9035 Mk IV Nordic Edition (https://x.com/i/status/2125940016216158499).</p>
+<p><strong>Por qué importa a Europa:</strong> caso modelo de la línea de CEAFE: cinco Estados europeos agrupan su demanda para un vehículo europeo, con empleo e I+D en Europa y sin exposición a licencias de exportación ni «kill-switch» de EE. UU. Frente al choque franco-alemán sobre «Made in Europe» (noticia 1), muestra que agrupar funciona cuando los Estados lo eligen.</p>
+<p><strong>Qué vigilar:</strong> calendario de entregas; si otros usuarios del CV90 se suman; si la lógica de compra conjunta llega a programas financiados por la UE (SAFE/EDIP).</p>
+<p><strong>Fuentes:</strong> https://x.com/i/status/2125921291127365670 (Defensa de Finlandia, repost de @F_CEAFE) · https://uk.finance.yahoo.com/news/five-european-nations-buy-combat-122719277.html (Reuters) · https://www.bloomberg.com/news/articles/2026-11-26/five-nations-to-buy-430-combat-vehicles-in-nato-s-biggest-deal · https://www.aa.com.tr/en/europe/5-european-countries-join-forces-to-procure-bae-systems-combat-vehicles/4139348 · https://defence-industry.eu/finlands-defence-ministry-says-the-army-will-buy-160-cv90s-from-bae-systems-hagglunds-with-an-option-for-100-more/</p>
+<h2 id="s5">En breve</h2>
+<ul>
+<li><strong>España:</strong> unos 39 millones de electores están llamados a las urnas en elecciones generales anticipadas el domingo 29 de noviembre; las encuestas sitúan primero al Partido Popular, con Vox creciendo entre los jóvenes (France 24; Anadolu, agencia estatal turca; Haaretz). https://x.com/i/status/2126005846110847294</li>
+<li><strong>Rusia–Armenia (actualización):</strong> @F_CEAFE compartió el anuncio de Pashinyan de la retirada total de los guardias fronterizos rusos «en los próximos años» (Anadolu). https://x.com/i/status/2125899883651510436</li>
+<li><strong>Turquía:</strong> el Ministerio de Exteriores rechazó la resolución del Parlamento Europeo sobre su acuerdo marítimo de 2019 con Libia, diciendo que la UE «no tiene autoridad» (Anadolu, agencia estatal turca); el Consejo de Seguridad Nacional se reunió con Erdoğan; Turquía y Arabia Saudí firmaron un acuerdo de cooperación en industria de defensa. https://x.com/i/status/2126004412942623149</li>
+<li><strong>China–Rusia:</strong> los ejércitos chino y ruso mantuvieron una consulta estratégica por videoconferencia y se comprometieron a coordinarse más (China Military Bugle, medio estatal chino); Zajárova acusó a Japón de «remilitarización» (Exteriores ruso, fuente estatal). https://x.com/i/status/2125988121284419891 · https://x.com/i/status/2125982919693152560</li>
+<li><strong>Rusia sobre Alemania:</strong> tras la reunión de Lavrov con el ministro alemán en el margen de la UNGA81, Zajárova dijo que «si algo hunde a Europa no será la mítica &ldquo;amenaza rusa&rdquo;» sino la imprudencia de los políticos europeos (Exteriores ruso, fuente estatal). https://x.com/i/status/2126013120753914073</li>
+<li><strong>Israel / Líbano:</strong> Líbano e Israel celebrarán una octava ronda de conversaciones de paz antes de fin de año (Haaretz); Anadolu informa de que Netanyahu presiona a Washington para autorizar nuevas acciones contra Irán (afirmación, agencia estatal turca). https://x.com/i/status/2126009372962705658</li>
+<li><strong>Ucrania–UE:</strong> Kyiv Independent informa de que ONG ucranianas piden a la UE exigir reformas más firmes en Estado de derecho mientras Bruselas acepta, según se dice, un retroceso. https://x.com/i/status/2126012688543223920</li>
+<li><strong>Tecnología:</strong> Thierry Breton (lista EU) dijo que en «este mundo brutal» Europa debe dejar de hablar de competitividad y «asumir la relación de fuerzas» con otras potencias, y comentó el caso Nvidia–Trump; Bloomberg informa de que el consejo de Nvidia readmitió al CEO Jensen Huang tras la presión de Trump (véase Economía). https://x.com/i/status/2125980487206256812</li>
+<li><strong>Economía:</strong> UniCredit pactó con el Gobierno alemán un acuerdo de casi 45.000 millones de dólares sobre Commerzbank (Reuters); Altria estudia una oferta por Imperial Brands (Reuters/Bloomberg). Referencia cruzada: véase Economía.</li>
+</ul>
+<h2 id="s6">También en esta edición</h2>
+<ul>
+<li>Un ataque con dron iraní en Kuwait mata a dos técnicos italianos de Rheinmetall — ver Conflictos</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

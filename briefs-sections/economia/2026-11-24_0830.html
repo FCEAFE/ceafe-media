@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Tuesday, 24 November 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Tuesday, 24 November 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> Monday 23 November about 19:00 to Tuesday 24 November about 07:00 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief and the posts of @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Washington blacklists Megaspeed and six other South-east Asian firms; Malaysia and Singapore fall into line</h2>
+<p>The US Commerce Department’s Bureau of Industry and Security (BIS) added seven companies to its Entity List in a final rule filed for public inspection on 23 November (Federal Register document 2026-23999, publication scheduled for 25 November): MSFusion Sdn. Bhd., PT Megaspeed International and Speedmatrix Sdn Bhd (Malaysia); Apex Enterprise Solutions (Singapore) Private Limited, Megaspeed International Pte. Ltd. and Swiftdata Pte. Ltd. (Singapore); and Megaspeed (Thailand) Co., Ltd. The End-User Review Committee cites “the significant risk of these entities being or becoming involved in the diversion of advanced computing commodities to unauthorized end uses or end users”; any export, re-export or transfer of items subject to the EAR now needs a licence, reviewed under a presumption of denial. Megaspeed is the cloud firm at the centre of the Nvidia affair: US officials accuse its former executive Alice Huang of working with China’s Ministry of State Security; Beijing calls this “groundless speculation” (Al Jazeera). Al Jazeera reports that Commerce had declined to list the firm for months, drawing criticism from China hawks including Treasury Secretary Scott Bessent, and acted only after the scandal broke. The reaction came within hours: Malaysia’s trade ministry (MITI) said MIDA will tell every data-centre operator in the country not to host, lease space to or serve the seven firms, adding that Malaysia “will not allow itself to be used as a channel to circumvent export controls”; Singapore’s Prime Minister Lawrence Wong said the Megaspeed investigation continues and that Singapore will not be a conduit to circumvent US chip controls.</p>
+<p><em>CEAFE:</em> What these figures reveal is an asymmetry of power, not a difference in talent or political will.</p>
+<p><strong>Why it matters for Europe:</strong> a US administrative listing turned within a day into binding practice in two sovereign states that host South-east Asia’s data-centre boom — the extraterritorial reach of US export controls at work. The same EAR rules (including the 16 November remote-access rule) apply to European cloud and data-centre operators; Europe has no comparable instrument and no say in Washington’s End-User Review Committee. The contrast noted by an NYU analyst quoted by Al Jazeera is also telling: Washington blacklists a middleman for moving Nvidia chips to China while licensing Nvidia’s H200 sales to China in exchange for a 25% cut.</p>
+<p><strong>Key facts:</strong></p>
+<ul>
+<li>7 entities: 3 under Malaysia, 3 under Singapore, 1 under Thailand; licence for all items subject to the EAR, presumption of denial; 30-day savings clause for shipments en route (Federal Register PI 2026-23999; The Star/Straits Times).</li>
+<li>Signed by Deputy Assistant Secretary for Strategic Trade Julia Khersonsky; filed 23 Nov, publication 25 Nov 2026.</li>
+<li>Malaysia (MITI, 24 Nov): only Speedmatrix and MSFusion are Malaysian companies; Speedmatrix is wholly owned by Megaspeed International Pte Ltd (Singapore); PT Megaspeed International is not a data-centre operator or tenant in Malaysia (The Star).</li>
+<li>Malaysia holds more than half of South-east Asia’s data-centre capacity under construction (DC Byte via AFP/Straits Times).</li>
+</ul>
+<p><strong>What to watch:</strong> Chinese MFA and MOFCOM reaction (24 Nov briefing); Thailand’s response; Federal Register publication on 25 Nov; Huang’s Senate testimony on 3 December. @F_CEAFE has not posted this story.</p>
+<p><strong>Sources:</strong> <a href="https://public-inspection.federalregister.gov/2026-23999.pdf">BIS rule, public inspection copy</a>, <a href="https://www.federalregister.gov/public-inspection/2026-23999/additions-to-the-entity-list">federalregister.gov</a>, <a href="https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list">Al Jazeera</a>, <a href="https://x.com/i/status/2125089527375245531">X</a>, <a href="https://www.thestar.com.my/news/nation/2026/11/24/miti-data-centre-operators-to-be-advised-against-hosting-us-blacklisted-entities">The Star (MITI statement)</a>, <a href="https://www.straitstimes.com/asia/se-asia/malaysia-advises-data-centres-to-cut-links-with-us-blacklisted-firms">The Straits Times</a>, <a href="https://www.straitstimes.com/singapore/spore-working-with-us-on-chip-export-enforcement-as-megaspeed-probe-continues-pm-wong">straitstimes.com</a>, <a href="https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-at-the-q-a-segment-of-the-joint-press-conference-with-australia-pm-anthony-albanese-in-canberra-australia-nov-2026/">Singapore PMO (Wong in Canberra)</a>, <a href="https://www.mha.gov.sg/media-room/newsroom/singapore-investigations-into-alice-huang-huang-le-and-megaspeed-international-pte-ltd/">Singapore MHA</a>, <a href="https://x.com/i/status/2125056837875609732">Reuters</a>, <a href="https://x.com/i/status/2125089537575584077">Reuters on (2)</a>, <a href="https://x.com/i/status/2125054321439989790">R&amp;D list (Reuters Tech)</a>, <a href="https://x.com/i/status/2125088275446616193">R&amp;D list (Reuters Tech) (2)</a>, <a href="https://x.com/i/status/2125085237252067392">Bloomberg</a>, <a href="https://x.com/i/status/2125082012180484325">Bloomberg on (2)</a>, <a href="https://x.com/i/status/2124987975196922318">NYT</a></p>
+<h2 id="s2">Congo bans cobalt exports again from 30 November to push prices up</h2>
+<p>The Democratic Republic of Congo, which supplied about three-quarters of the world’s mined cobalt before its restrictions began, will suspend all cobalt exports from 30 November until further notice, its strategic-minerals regulator ARECOMS said on 23 November. The ban covers industrial and artisanal output and even previously authorised volumes not shipped by 30 November; quotas allocated for 2026 and 2027 will not be automatically reinstated. ARECOMS cites a “significant and sustained decline in cobalt prices” since mid-year, rising inventories and speculation, and will review the measure after four months. It is the second halt since February 2025, when a first ban was replaced in October 2025 by export quotas. Shares in Chinese cobalt producers jumped on the news (Bloomberg); CMOC (China), Glencore and Eurasian Resources Group hold the largest quotas.</p>
+<p><strong>Why it matters for Europe:</strong> cobalt is on the EU’s critical raw materials list and essential for batteries and defence alloys. Europe neither mines nor refines it at scale; a supply squeeze set in Kinshasa benefits the Chinese groups that dominate mining in Congo and refining in China, and the No. 2 producer Indonesia (Chinese-financed nickel plants). Another reminder that the EU’s Critical Raw Materials Act targets remain far from reality.</p>
+<p><strong>Key facts:</strong></p>
+<ul>
+<li>Congo exported 61,441 t of contained cobalt in January–September 2026 (DRC Ministry of Mines via S&amp;P Global).</li>
+<li>European cobalt metal (Rotterdam) at $18.15/lb on 20 Nov 2026, down 24% since the start of 2026 (Platts).</li>
+<li>Cobalt hydroxide more than quadrupled after the 2025 measures, then almost halved from an April 2026 peak (Fastmarkets via Bloomberg/Mining Weekly).</li>
+</ul>
+<p><strong>What to watch:</strong> price reaction on 24 Nov; EU and US reaction (both court Kinshasa for minerals deals); impact on European battery makers.</p>
+<p><strong>Sources:</strong> <a href="https://www.spglobal.com/energy/en/news-research/latest-news/metals/112326-drc-temporarily-suspends-cobalt-exports">S&amp;P Global (ARECOMS communication)</a>, <a href="https://www.cnbcafrica.com/2026/congo-halts-cobalt-exports-again-to-tackle-oversupply-support-prices-industry-regulator-says">Reuters via CNBC Africa</a>, <a href="https://www.miningweekly.com/article/top-cobalt-producer-congo-will-ban-exports-again-as-prices-slide-2026-11-23">Bloomberg via Mining Weekly</a>, <a href="https://x.com/i/status/2125069463494000928">Bloomberg on X (Chinese cobalt shares)</a></p>
+<h2 id="s3">The FCC proposes “reciprocity” rules against foreign satellite operators in the US</h2>
+<p>FCC Chairman Brendan Carr announced on 23 November that the Commission will vote next month on a proposal to apply to foreign satellite operators in the US “the same types of restrictions” that their home countries apply to American operators. Carr argues that foreign nations “have begun applying one set of regulations to their own satellite companies and a very different one to American satellite providers”, creating an asymmetry that disadvantages US operators. The move follows a March 2026 public notice (DA 26-208) on satellite market-access reciprocity, which notes that about a quarter of the over 200 satellite systems approved under the FCC’s Part 25 rules are licensed by foreign administrations. @F_CEAFE reposted Carr’s post.</p>
+<p><strong>Why it matters for Europe:</strong> the proposal names no country, but it lands in the middle of the European battle with Starlink over spectrum (the 2 GHz band row, covered on 22 November) and EU rules favouring European constellations. European operators such as Eutelsat-OneWeb and SES sell services in the US — Eutelsat has just won a $60 million contract to provide OneWeb services to the US armed forces. Washington is again using market access as leverage to protect a dominant US firm, while Europe has no equivalent tool it is willing to use.</p>
+<p><strong>Key facts:</strong></p>
+<ul>
+<li>Vote at the FCC’s December open meeting (Bloomberg Law; FCC).</li>
+<li>Earlier record: GN Docket 26-48, comments closed 1 April and 16 April 2026 (FCC).</li>
+</ul>
+<p><strong>What to watch:</strong> text of the draft order; Commission and ESA reaction; link with IRIS² and the EU Space Act.</p>
+<p><strong>Sources:</strong> <a href="https://www.fcc.gov/news-events/blog/2026/11/23/good-and-bad">FCC Chairman’s blog “The Good and the Bad”, 23 Nov 2026</a>, <a href="https://www.pubt.io/view/864BBA12D6BF80A9BE146D335D4FE1EC21505A53">FCC news release (via Public)</a>, <a href="https://docs.fcc.gov/public/attachments/DA-26-208A1.txt">FCC public notice DA 26-208</a>, <a href="https://news.bloomberglaw.com/tech-and-telecom-law/fcc-to-vote-on-new-rules-for-foreign-satellite-systems-in-us">Bloomberg Law</a>, <a href="https://x.com/i/status/2124970983056379978">@BrendanCarrFCC</a>, <a href="https://x.com/i/status/2125002145329992062">@BrendanCarrFCC (2)</a>, <a href="https://x.com/i/status/2124881761071219129">Eutelsat contract (@AndrewParsonson)</a>, <a href="https://x.com/i/status/2124946286420152594">Eutelsat contract (@AndrewParsonson) (2)</a></p>
+<h2 id="s4">Swiss Clariant and US fund CD&amp;R in talks to buy US chemicals maker Ashland (~$3.3bn)</h2>
+<p>Clariant (Switzerland) confirmed in an ad hoc announcement on 23 November that it is in talks to acquire Ashland Inc. (US) in partnership with the US private-equity firm Clayton, Dubilier &amp; Rice; it said there is no certainty of a deal. Bloomberg reported an all-cash deal valuing Ashland close to its Friday share price — a market value of about $3.3 billion. Ashland, based in Wilmington, Delaware, makes additives and specialty ingredients for pharmaceuticals, construction and personal care; it put itself up for sale in July under activist pressure.</p>
+<p><strong>Why it matters for Europe:</strong> a rare deal in the opposite direction — a European industrial buying in the US — but done jointly with a US fund, and in specialty chemicals, a sector where European producers are cutting capacity at home because of energy prices. It is not a US takeover of a European firm; no such deal was announced in this window.</p>
+<p><strong>Key facts:</strong></p>
+<ul>
+<li>Ashland market capitalisation $3.32bn (LSEG via Reuters); other bidders contacted included Advent, Apollo, Carlyle and Standard Industries (Reuters).</li>
+</ul>
+<p><strong>What to watch:</strong> signing and price; whether a European partner keeps operational control.</p>
+<p><strong>Sources:</strong> <a href="https://www.clariant.com/en/Corporate/News/2026/11/Clariant-confirms-talks-regarding-a-potential-acquisition-of-Ashland">Clariant ad hoc announcement</a>, <a href="https://money.usnews.com/investing/news/articles/2026-11-23/switzerlands-clariant-cd-r-in-talks-to-buy-chemicals-firm-ashland">Reuters via US News</a>, <a href="https://x.com/i/status/2124993983344464064">Bloomberg Deals</a></p>
+<h2 id="s5">Japan and the IEA launch an Asian oil-security hub as Hormuz mines hit more tankers</h2>
+<p>Japan launched an Asian oil-security task force and, with the International Energy Agency, an “IEA-Japan Oil Security Hub for Asia” in Tokyo, to help Asian countries build emergency oil stocks, share storage (including spare Japanese tanks) and coordinate releases during Gulf supply disruptions (IEA joint statement; Euronews). Overnight Iran’s IRGC said three “non-compliant” tankers under US air escort hit naval mines in the Strait of Hormuz, while Tehran said security could be restored quickly if the US meets its conditions (Al Jazeera). Bloomberg reported that oil prices fell, easing inflation concerns in US Treasuries. In Germany, the government is pressing ahead with a three-month fuel price cap from 1 January 2027, with a cabinet decision due on 2 December (Bloomberg; German government).</p>
+<p><strong>Why it matters for Europe:</strong> Asia is organising its own stockholding under IEA cover, while Europe responds country by country with price caps and tax cuts (Germany’s cap follows the “Tankrabatt” that ends in December). Europe’s exposure to the Gulf and to US LNG makes collective EU energy-security tools — joint stocks and joint buying — more urgent.</p>
+<p><strong>Key facts:</strong></p>
+<ul>
+<li>German cap: regulation valid three months from 1 Jan 2027, legal basis 12 months; cabinet on 2 Dec 2026 (coalition decision of 17 Nov; German government).</li>
+<li>IRGC: three tankers hit by mines (Al Jazeera live, 24 Nov).</li>
+</ul>
+<p><strong>What to watch:</strong> Brent and TTF on 24 Nov; German cabinet on 2 Dec; any EU-level stock coordination.</p>
+<p><strong>Sources:</strong> <a href="https://www.iea.org/news/joint-statement-by-the-government-of-japan-and-the-international-energy-agency-on-the-establishment-of-the-iea-japan-oil-security-hub-for-asia">IEA</a>, <a href="https://www.euronews.com/2026/11/23/japan-launches-asian-oil-task-force-amid-gulf-supply-disruptions">Euronews</a>, <a href="https://x.com/i/status/2125011846046400830">X (1)</a>, <a href="https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines">Al Jazeera</a>, <a href="https://x.com/i/status/2125080719227494502">X (2)</a>, <a href="https://x.com/i/status/2125026612714319920">X (3)</a>, <a href="https://x.com/i/status/2125089558400290973">Bloomberg on X (Treasuries, oil)</a>, <a href="https://x.com/i/status/2124953671137935639">(German cap)</a>, <a href="https://www.bundeskanzler.de/bk-en/news/electricity-tax-fuel-price-cap-federal-government-2461874">German government</a>, <a href="https://x.com/i/status/2124952108353061312">@HormuzReport post</a>, <a href="https://x.com/i/status/2124991927195942965">@HormuzReport post (2)</a></p>
+<h2 id="s6">Update: The Huang rally spreads to Asia; the Fed’s Williams signals more rate hikes possible</h2>
+<p>After Nvidia’s reinstatement of Jensen Huang (covered at 20:30), Reuters reported the Nasdaq up more than 6% on Monday, Asian chip stocks were set to climb and Japanese stocks rose overnight (Bloomberg). Reuters reported that President Trump and Vice President JD Vance personally intervened with the board. New York Fed President John Williams said inflation is still too high and signalled that more rate hikes are possible (Reuters). New York Mayor Zohran Mamdani warned of an economy increasingly reliant on AI-linked stocks (Reuters, Al Jazeera).</p>
+<p><strong>Why it matters for Europe:</strong> global markets, European pensions included, swing on one US company’s board decision taken under White House pressure; a hawkish Fed raises the dollar and borrowing costs for Europe.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2125039198302531699">Reuters</a>, <a href="https://x.com/i/status/2125051831340478799">Reuters on (2)</a>, <a href="https://x.com/i/status/2125107145708650893">Reuters on (3)</a>, <a href="https://x.com/i/status/2125042970428887043">R&amp;D list (Reuters Tech)</a>, <a href="https://x.com/i/status/2125034196338901057">Bloomberg</a>, <a href="https://x.com/i/status/2125027913049190777">Bloomberg on (2)</a>, <a href="https://www.euronews.com/2026/11/24/stocks-climb-as-huangs-return-to-nvidia-lifts-investor-optimism">Euronews</a>, <a href="https://english.news.cn/20261124/f0538e507487411488a6cc92d4506c4d/c.html">Xinhua (Chinese state media)</a></p>
+<h2 id="s7">Briefly noted</h2>
+<ul>
+<li><strong>Sanctions on Iran, Update:</strong> Treasury Secretary Bessent: “Iran’s shadow banking system is the last financial lifeline of a bankrupt regime” (designations of 23 Nov already covered); @F_CEAFE reposted it; Al Jazeera</li>
+<li><strong>Venezuelan oil:</strong> a US Senate committee is investigating whether Vice President Vance played a role in awarding a Venezuelan oil contract to Vitol (Reuters exclusive, Bloomberg)</li>
+<li><strong>South Korea–China:</strong> talks to widen their free trade agreement largely completed, covering entertainment, tourism and financial services (Euronews)</li>
+<li><strong>China–Taiwan:</strong> the Taiwan Affairs Office and the Export-Import Bank of China signed a five-year agreement to finance Taiwan businesses on the mainland (Xinhua, Chinese state media)</li>
+<li><strong>Telecoms M&amp;A (Asia):</strong> StarHub to buy Keppel-backed M1 in an all-share deal, creating a Singapore telecoms group with a $3.9bn enterprise value (Reuters)</li>
+<li><strong>Singapore</strong> raises its 2026 growth forecast to around 6% on the AI boom (Bloomberg)</li>
+<li><strong>Petrobras</strong> lifts its five-year plan 12% to $122bn and buys a stake in ethanol producer Neomille (Bloomberg)</li>
+<li><strong>Data centres (ranking):</strong> @KobeissiLetter says the US has 5,159 data centres (operational and planned), more than the next nine countries combined; secondary source, not verified; @F_CEAFE reposted it</li>
+<li><strong>US tariffs and France:</strong> @F_CEAFE quoted a French post arguing France alone could negotiate tariffs away: “alone and divided, no EU member state can negotiate with the global giants”</li>
+<li><strong>German budget 2027:</strong> AfD co-leader Tino Chrupalla puts new borrowing at about €210bn (party claim),</li>
+<li><strong>North Korea:</strong> Kim Yo Jong threatens to close Switzerland’s office in Pyongyang over new Swiss sanctions (Japan Times, North Korean statement); Pyongyang promotes sea-urchin farming, whose exports UN sanctions ban (Kyodo)</li>
+<li><strong>Huawei:</strong> HarmonyOS passes 100 million devices (Xinhua, Chinese state media)</li>
+<li><strong>Space (see Defence Industry section):</strong> Ford takes a minority stake in Revolution Space (SpaceNews)</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124990361067995423">X (1)</a>, <a href="https://www.aljazeera.com/news/2026/11/23/us-escalates-sanctions-on-iran-targets-shadow-banking-networks">aljazeera.com</a>, <a href="https://x.com/i/status/2125026654682521683">X (2)</a>, <a href="https://x.com/i/status/2124965995089404183">X (3)</a>, <a href="https://www.euronews.com/2026/11/23/south-korea-and-china-agree-wider-trade-deal-covering-entertainment">euronews.com</a>, <a href="https://english.news.cn/20261124/a75115414c064896a0533688d8433dcd/c.html">english.news.cn</a>, <a href="https://x.com/i/status/2125034216127627516">X (4)</a>, <a href="https://x.com/i/status/2125035457901674990">X (5)</a>, <a href="https://x.com/i/status/2125001588854919317">X (6)</a>, <a href="https://x.com/i/status/2125031778469425420">X (7)</a>, <a href="https://x.com/i/status/2125021089613086915">X (8)</a>, <a href="https://x.com/i/status/2125049705960710152">X (9)</a>, <a href="https://x.com/i/status/2125002542434361748">X (10)</a>, <a href="https://x.com/i/status/2125103740130632069">X (11)</a>, <a href="https://english.kyodonews.net/articles/-/92352">english.kyodonews.net</a>, <a href="https://x.com/i/status/2125107430183063695">X (12)</a>, <a href="https://spacenews.com/ford-takes-stake-in-revolution-space/">spacenews.com</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

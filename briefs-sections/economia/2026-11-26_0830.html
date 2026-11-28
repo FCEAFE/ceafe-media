@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Thursday, 26 November 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Thursday, 26 November 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> from about 20:00 on Wednesday 25 November to about 07:30 on Thursday 26 November, Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief, the posts of @F_CEAFE and the CEAFE X archive.</li>
+</ul>
+<h2 id="s1">Update: The Netherlands campaigns to stop the US MATCH Act on ASML; Beijing presses The Hague on Nexperia</h2>
+<p>Speaking in Beijing on 25 November, after meeting Vice-Premier Ding Xuexiang and Foreign Minister Wang Yi, Dutch Foreign Minister Tom Berendsen said: “Our focus is on making sure that the MATCH act will not be passed… We don’t want unilateral decisions that have extraterritorial effect” (Reuters). The bipartisan Multilateral Alignment of Technology Controls on Hardware (MATCH) Act would give allies such as the Netherlands and Japan 150 days to align their controls on the sale <em>and servicing</em> of chipmaking equipment in China with Washington’s. If they did not, the Commerce Department would have to extend US controls unilaterally to their equipment, including ASML’s immersion DUV tools (Politico Europe; Reuters). Congress is debating whether to attach it to the NDAA. A vote could come in mid-December, and because the bill is tied to the defence budget its passage is considered almost certain (NL Times/ANP). Foreign Trade Minister Sjoerd Sjoerdsma has told parliament the cabinet will “do everything” to have it withdrawn. He also complained that Washington invokes national security against ASML while licensing Nvidia’s advanced AI chips to China (NL Times). At the same meeting, Wang Yi urged the Netherlands to provide “a fair, transparent and predictable business environment” for Chinese companies, amid the Nexperia–Wingtech litigation in Dutch and Chinese courts. A joint statement carried by Xinhua says both sides will keep “close communication… regarding cooperation in various fields including semiconductors” (Reuters; Chinese MFA via Xinhua [Chinese state media]).</p>
+<p><strong>Why it matters for Europe:</strong> this is the clearest current case of US export law being projected onto a European champion. ASML is Europe’s most valuable listed company, and China is expected to account for about 20% of its sales this year (Reuters). A single member state is resisting a measure written in Washington, with Beijing courting The Hague over the same machines. The asymmetry is plain: the Netherlands, which already runs “one of the strictest export controls in the world”, is told to tighten while US chip exports to China are licensed. The bill also reaches beyond ASML into its supplier network, including Germany’s ZEISS (Politico Europe).</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>MATCH Act: 150-day alignment deadline for allies; would cover maintenance of machines already installed in China (Politico Europe; NL Times).</li>
+<li>Berendsen: the Netherlands “would always make its own independent decisions on export controls” (Reuters, 25 Nov).</li>
+<li>Dutch MPs called the bill “disastrous” for ASML and “unacceptable” (Reuters; ANP).</li>
+<li>China–Netherlands joint statement on semiconductor communication channels; Wang asks the Netherlands to play a “constructive role” in China–EU relations (Reuters).</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>@F_CEAFE (own post, 25 Nov 18:40 UTC / 19:40 Madrid): https://x.com/i/status/2125660817031123152 (image https://pbs.twimg.com/media/HX_dAQJXkAAUGOT.png)</li>
+<li>@ReutersTech (Nexperia): https://x.com/i/status/2125668409333440956</li>
+<li>Reuters via Yahoo Finance (MATCH): https://uk.finance.yahoo.com/news/dutch-government-working-prevent-passing-083457255.html</li>
+<li>Reuters via Yahoo Finance (Nexperia/Wang Yi): https://uk.finance.yahoo.com/news/china-urges-netherlands-offer-fair-135311338.html</li>
+<li>NL Times: https://nltimes.nl/2026/11/25/dutch-foreign-minister-urges-us-drop-proposed-restrictions-asml-china</li>
+<li>Politico Europe (17 Nov background): https://www.politico.eu/article/dutch-resist-unacceptable-us-bid-to-tighten-semiconductor-export-controls-asml/</li>
+<li>CGTN [Chinese state media]: https://news.cgtn.com/news/2026-11-25/Wang-Yi-urges-Netherlands-to-ensure-fair-environment-for-Chinese-firms-1SmNaNsPOa4/p.html</li>
+</ul>
+<figure class="brief-figure">
+<img src="../../assets/media-cache/d00917e278590071.jpg" alt="Reuters photo of Berendsen in Beijing (via Yahoo)" />
+<figcaption>Reuters photo of Berendsen in Beijing (via Yahoo)</figcaption>
+</figure>
+
+<p><strong>Follow-up:</strong> NDAA conference text (mid-December); Japan’s position; any EU-level (Commission) statement; ASML guidance.</p>
+<h2 id="s2">Update: Nvidia freezes AI-server shipments to Malaysia, Singapore, Thailand and Indonesia; Huawei answers with its own HBM</h2>
+<p>The Financial Times reports, citing three people familiar with the matter, that Nvidia has told its manufacturing partners to stop shipping servers to four South-East Asian countries, as the US steps up export controls to prevent Chinese access to AI computing power. According to the FT, as relayed by Malay Mail, Dell and Supermicro have told buyers in Malaysia, Singapore, Thailand and Indonesia that pending orders will not leave the factory. Last week’s Commerce rule gives regional cloud providers 90 days to obtain a licence by showing their customers exclude restricted Chinese entities. “There’s this new rule but no guidance on execution… It’s causing sheer chaos in the region,” said one cloud executive. Lenders have withheld about US$500m from Singapore’s Aolani, which had leases to supply computing power to ByteDance. Nvidia booked US$104bn of revenue through its Singapore subsidiary in 2025 (FT via Malay Mail). Reuters could not immediately verify the report (CNA). Nikkei Asia had reported on 21 November that at least two server partners suspended shipments. Separately, Huawei will present a custom HBM design at ISSCC 2027 on 16 February. The design has 64 channels and a 4,096-bit interface, twice the HBM4 standard, with five-layer wafer-to-wafer hybrid bonding. Huawei already uses its own HBM in the Ascend 950 series (TrendForce, citing STAR Market Daily). Bloomberg frames it as a move to launch Chinese production of a component blocked by US sanctions.</p>
+<p><strong>Background (CEAFE archive):</strong> In September 2022 @F_CEAFE shared the Reuters analysis that the US ban on Nvidia and AMD chips was seen as boosting Chinese rivals (https://x.com/i/status/1567933467446370307); Huawei&rsquo;s own HBM design points in that direction.</p>
+<p><strong>Why it matters for Europe:</strong> this follows on from the remote-access rule of 17 November (lead, 13:30 edition, 17 Nov). Washington now polices data centres in third countries, and US export controls effectively decide where AI computing capacity can be built. Europe has no comparable lever and is itself covered by the remote-access rule. China’s answer is substitution (HBM, hybrid bonding), the same pattern CEAFE has tracked in lithography and rare earths.</p>
+<p><strong>Key facts</strong></p>
+<ul>
+<li>Four countries: Malaysia, Singapore, Thailand, Indonesia; OEMs Dell and Supermicro (FT via Malay Mail).</li>
+<li>90-day licence window for regional cloud providers under last week’s rule (FT via Malay Mail).</li>
+<li>Huawei HBM: 64 channels, 4,096-bit interface, W2W hybrid bonding; Ascend 950PR 128GB/1.6TB/s, 950DT 144GB/4TB/s (TrendForce).</li>
+<li>Reuters: “How China got access to Nvidia’s AI chips despite rules to stop them” (analysis, 26 Nov).</li>
+</ul>
+<p><strong>Sources</strong></p>
+<ul>
+<li>@FT: https://x.com/i/status/2125826480542290396</li>
+<li>Malay Mail (FT report): https://www.malaymail.com/news/money/2026/11/26/ft-nvidia-stops-ai-shipments-to-malaysia-singapore-thailand-indonesia-as-us-tightens-china-curbs/244856</li>
+<li>CNA (Reuters): https://www.channelnewsasia.com/business/nvidia-halts-chip-shipments-southeast-asia-ft-reports-6584251</li>
+<li>Nikkei Asia (21 Nov): https://asia.nikkei.com/business/technology/artificial-intelligence/nvidia-server-suppliers-halt-southeast-asia-shipments-over-us-curbs</li>
+<li>@Reuters: https://x.com/i/status/2125811821118357620</li>
+<li>@business (Huawei HBM): https://x.com/i/status/2125820633724473674 ; TrendForce: https://www.trendforce.com/news/2026/11/26/news-huawei-reportedly-set-to-unveil-custom-hbm-architecture-with-twice-hbm4s-interface-width-and-hybrid-bonding/</li>
+</ul>
+<p><strong>Follow-up:</strong> BIS guidance on the licence process; reactions from Singapore and Malaysia; Nvidia comment; ByteDance capacity.</p>
+<h2 id="s3">Update: China welcomes the EU’s delisting of Yusha Group and says it is reviewing EU firms’ requests to leave China’s control list</h2>
+<p>The Council’s 25 November decision that added 15 Russia-linked entities to the export-restriction list (20:30 edition) also removed China’s Yusha Group Co Ltd. The Council said the firm had ceased the conduct behind its listing and given credible assurances. MOFCOM’s spokesperson said on 26 November: “China welcomes the EU’s lifting of sanctions against the relevant Chinese company, which is conducive to creating a sound environment for normal cooperation… We hope the EU will continue to remove more Chinese companies from the sanctions list.” MOFCOM added that it “has recently received written applications from relevant EU companies” to be removed from China’s export control list and is assessing them (MOFCOM; Global Times [Chinese state media]).</p>
+<p><strong>Why it matters for Europe:</strong> a rare reciprocal move, with a delisting on each side being traded. It shows the EU can use its own sanctions list as a bargaining instrument, and that EU firms are already exposed to China’s export-control list.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li>MOFCOM (Chinese): https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_796cdfb5a020442b926a279def0e878c.html</li>
+<li>@XHNews [Chinese state media]: https://x.com/i/status/2125833512414797833 ; @globaltimesnews: https://x.com/i/status/2125803731782635906</li>
+<li>Global Times: https://www.globaltimes.cn/page/202611/1375098.shtml ; China Daily/Xinhua: https://www.chinadaily.com.cn/a/202611/26/WS6b07c993e4b03ebf8519ece4.html</li>
+<li>Council Decision (CFSP) 2026/2622: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AL_202602622</li>
+</ul>
+<p><strong>Follow-up:</strong> which EU firms applied for removal from China’s list; any MOFCOM decision.</p>
+<h2 id="s4">Industry — McKinsey: half of Europe’s large industrial companies are under financial stress; 3.7 million jobs at risk</h2>
+<p>McKinsey’s Industrial Financial Health Index covers almost 1,200 European manufacturers with more than €100m of revenue. It classed 45% as stressed or distressed in 2025, up from 42% in 2024 and 39% in 2023, and early 2026 data point to about half (Euronews; FT). About 3.7 million jobs and more than €500bn of value added are directly at risk. Portugal fares worst, ahead of Luxembourg, the Netherlands and Spain, and Germany’s share rose 12 points last year. European industrial electricity prices average more than 1.5 times those in China and the US, and labour productivity in automotive R&amp;D is 1.5 times higher in China. China’s gross productive investment is about US$6tn against Europe’s ~US$3tn (Euronews).</p>
+<p><strong>CEAFE comment:</strong> This is the kind of comparison that should guide European decisions: not the narrative, but measurable weight.</p>
+<p><strong>Why it matters for Europe:</strong> it quantifies the deindustrialisation thesis behind CEAFE’s editorial line, with energy prices the cost gap that the US LNG deals do not close. Spain ranks among the worst four.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li>@ftbrussels (FT): https://x.com/i/status/2125676376342810981</li>
+<li>Euronews: https://www.euronews.com/2026/11/25/around-37-million-jobs-are-directly-at-risk-in-europes-struggling-industry-report-says</li>
+<li>Dealroom (FT summary): https://dealroom.co/news/other-cbten6-half-of-european-industrial-companies-under-serious-financial-stress/</li>
+</ul>
+<figure class="brief-figure">
+<img src="../../assets/media-cache/6a862b378880cc91.jpg" alt="Euronews (AP photo, Thyssenkrupp Duisburg)" />
+<figcaption>Euronews (AP photo, Thyssenkrupp Duisburg)</figcaption>
+</figure>
+
+<h2 id="s5">Briefly noted</h2>
+<ul>
+<li><strong>Korea:</strong> the Bank of Korea raised its policy rate 25bp to 3.25% and lifted its 2027 growth forecast to 4.1% on a chip-export boom (Reuters; Yonhap): https://x.com/i/status/2125819377995890943 ; https://en.yna.co.kr/view/AEN20261126001800320</li>
+<li><strong>Russia (cross-reference to Defence Industry):</strong> the Duma passed the 2027–29 budget on 24 Nov: defence a record 17.1tn roubles (+27%), 44% of spending with security; 2027 deficit 5.44tn (2.2% of GDP) (The Moscow Times): https://www.themoscowtimes.com/2026/11/24/state-duma-approves-2027-29-budget-with-record-military-spending-a94361 ; https://x.com/i/status/2125678491224166611</li>
+<li><strong>EU budget / France:</strong> Marine Le Pen: “I will not pay €20 billion of net contribution to the European Union”: https://x.com/i/status/2125763994220630043 ; the FT reports Paris and Berlin want to protect the EU budget from a possible Le Pen presidency.</li>
+<li><strong>Space economy (cross-reference to Defence Industry):</strong> the FCC authorised SpaceX to deploy up to one million orbital data-centre satellites (SpaceNews): https://x.com/i/status/2125662971418366315</li>
+<li><strong>Data centres:</strong> Japan’s data-centre boom faces resident revolt (Reuters): https://x.com/i/status/2125758987685515319 ; Bharti Airtel US$130m data-centre pact with Assam: https://x.com/i/status/2125698593256263721</li>
+<li><strong>Markets:</strong> Asian stocks rebound as tech stabilises (Euronews): https://x.com/i/status/2125826889403273518</li>
+</ul>
+<h2 id="s6">Also in this edition</h2>
+<ul>
+<li>Section 301: Tokyo, Singapore and Brazil protest; Beijing signals no retaliation — see World</li>
+<li>Lukoil International to a US-led consortium with a DFC stake — covered at 20:30 on 25 Nov. (Economy lead)</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

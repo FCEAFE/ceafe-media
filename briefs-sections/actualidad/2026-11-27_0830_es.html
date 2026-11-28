@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACTUALIDAD — viernes, 27 de noviembre de 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ACTUALIDAD</h1>
+      <p class="list-date">viernes, 27 de noviembre de 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Actualidad / World</li>
+<li><strong>Periodo cubierto:</strong> desde las 19:00 aproximadamente del jueves 26 de noviembre hasta las 07:20 del viernes 27 de noviembre, hora de Madrid: todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Actualidad de CEAFE, las publicaciones de @F_CEAFE y el archivo de X de CEAFE.</li>
+</ul>
+<h2 id="s1">Actualización: fracasa la cumbre del presupuesto de la UE; siete países «frugales» boicotean las reuniones de Costa y los líderes apuntan a un acuerdo «este año»</h2>
+<p>El Consejo Europeo extraordinario del 26 de noviembre terminó sin acuerdo sobre el presupuesto 2028–2034. Según Rapporteur, UNN y POLITICO Europe, siete países (Dinamarca, Alemania, Países Bajos, Austria, Finlandia, Suecia y Bélgica) se negaron a participar en el formato de grupos reducidos de Costa, y se suprimió la segunda jornada. La propuesta de compromiso de Costa, de 1,78 billones de euros a precios corrientes (un 10 % menos que el borrador de la Comisión), recibió críticas de ambos bandos, según Euronews. Costa la calificó de «paso necesario» y añadió: «Todos sabemos que no podemos fallar a Europa y que necesitamos un nuevo presupuesto desde el 1 de enero de 2028». Merz afirmó que las posiciones «siguen muy alejadas», pero confía en un acuerdo «este año, por una economía fuerte y una Europa segura»; Von der Leyen pidió «mantener la ambición» en el volumen, los nuevos recursos propios y el calendario. La agencia estatal rusa TASS asegura que también se atascó la ayuda adicional de 45.000 millones a Kiev (afirmación de TASS; fuentes de la UE dicen que se trató la financiación de Ucrania para 2027).</p>
+<p><strong>Enfoque CEAFE (reposts del propietario):</strong> @F_CEAFE reposteó al primer ministro griego, Mitsotakis: «Si seguimos insistiendo en más recortes al presupuesto de la UE, podemos tirar el informe Draghi y sus elevadas ambiciones al cubo de la basura de la historia europea». También citó al FT sobre el choque franco-alemán por el «Made in Europe» en el presupuesto de defensa, y reposteó que el Reino Unido pagará una «cuota de participación» adicional como precio de su acercamiento a la UE.</p>
+<p><strong>Por qué importa a Europa:</strong> en el presupuesto se decide el dinero de la defensa común (preferencia europea, EDIP, sucesor de SAFE). Una Unión que no se pone de acuerdo sobre un 1,1 % de la RNB no puede construir las capacidades propias que ningún Estado miembro puede pagar solo. Los «frugales» que abandonan la mesa están además entre los que compran sistemas estadounidenses.</p>
+<p><strong>Qué vigilar:</strong> nuevo intento en el Consejo Europeo de diciembre; si el «Made in Europe» sobrevive en el capítulo de defensa; la financiación de Ucrania en 2027.</p>
+<p><strong>Fuentes:</strong> EUCO https://x.com/i/status/2126133907628404785; rueda de prensa de Costa https://x.com/i/status/2126115892102864972; Merz https://x.com/i/status/2126075461256061359; Von der Leyen https://x.com/i/status/2126101384093180286; Euronews https://www.euronews.com/2026/11/27/a-lot-of-political-theatre-eu-summit-ends-in-disarray-as-leaders-cling-to-red-lines; Rapporteur https://www.rapporteur.com/news/euco-costas-special-eu-budget-summit-fails/; POLITICO Europe https://x.com/i/status/2126106325071302754; TASS (medio estatal ruso) https://x.com/i/status/2126153335870791698; Mitsotakis https://x.com/i/status/2126039517136142453; FT https://x.com/i/status/2126035143634604516, https://x.com/i/status/2126034979293700104.</p>
+<p><strong>CEAFE:</strong> Actuar juntos no es un adorno político: es la única forma de alcanzar una escala que ya tienen otros.</p>
+<h2 id="s2">La UE prepara nuevos préstamos y subvenciones para sustituir capacidades militares de EE. UU., mientras Washington aplaza su revisión del despliegue en Europa</h2>
+<p>Bloomberg informó el 27 de noviembre de que la UE prepara «decenas de miles de millones de euros en nuevos préstamos y subvenciones para sustituir capacidades de combate estadounidenses», con el fin de reducir su dependencia de Washington, según fuentes conocedoras. Seguiría al programa de préstamos SAFE, de 150.000 millones (la segunda convocatoria de SAFE, de 21.300 millones, se abrió el 29 de octubre con prioridad para defensa aérea y antimisiles, drones, antidrones, munición y misiles, según la Comisión). Al mismo tiempo, RFE/RL informó de que el embajador adjunto de EE. UU. ante la OTAN comunicó a los aliados que Washington publicará su revisión del despliegue en Europa después del plazo provisional del 1 de diciembre, tras la reunión de ministros de Exteriores de la OTAN de la próxima semana; el Pentágono prepara cinco opciones y aún evalúa las ofertas europeas para sustituir fuerzas y equipos estadounidenses. Trump dijo que los compromisos aliados de acercarse al 5 % de gasto y de comprar «750 F-35» le hicieron «ver las cosas de otra manera» respecto a reducir los unos 80.000 soldados estadounidenses en Europa.</p>
+<p><strong>Por qué importa a Europa:</strong> es el núcleo de la línea de CEAFE. Sustituir los facilitadores estadounidenses por europeos crea soberanía, empleo e I+D. Pagar la retirada de EE. UU. comprando 750 F-35 hace lo contrario: consolida la dependencia (software, repuestos, permisos de exportación). Ese mismo día, @F_CEAFE reposteó que Berlín descarta Maven de Palantir para la Bundeswehr por miedo al «kill switch» (según @piotrmiecz; sin confirmación oficial alemana todavía).</p>
+<p><strong>Qué vigilar:</strong> volumen y reglas del nuevo instrumento (con o sin preferencia europea); las opciones de la revisión; la reunión de ministros de Exteriores de la OTAN.</p>
+<p><strong>Fuentes:</strong> Bloomberg https://x.com/i/status/2126183012136071446 https://www.bloomberg.com/news/articles/2026-11-27/eu-plans-new-funds-to-help-replace-us-war-fighting-capabilities (de pago; titular y entradilla); Comisión Europea, segunda convocatoria SAFE https://defence-industry-space.ec.europa.eu/commission-invites-member-states-use-eur213-billion-under-safe-boost-defence-readiness-and-support-2026-10-29_en; RFE/RL https://www.rferl.org/a/trump-putin-europe-ukraine-russia-aggression/33906739.html; Palantir https://x.com/i/status/2126039195739115627.</p>
+<h2 id="s3">Trump a las tropas: los misiles de Irán «pueden alcanzar Europa», la OTAN está «en varias partes de Irán» y «tenemos Groenlandia»</h2>
+<p>En sus llamadas de Acción de Gracias a las tropas en el Golfo y en declaraciones en Mar-a-Lago el 26 de noviembre, Trump afirmó que Irán tiene misiles capaces de alcanzar Europa y que, sin paz en Oriente Medio, podría haber un «holocausto nuclear» (Al Jazeera, Dawn, Times of India). Dijo que «tenemos la victoria al alcance» en la guerra con Irán, «cuando yo quiera», que EE. UU. da a Teherán «todas las oportunidades para llegar a un acuerdo» y que, si se reanudan los ataques, «sin duda golpearemos Pickaxe Mountain». Restó importancia a la ayuda de inteligencia de Rusia y China a Irán: «para mí, implicarse sería disparar, no darles un poco de información… Nosotros hacemos lo mismo». Añadió que la OTAN está «implicada con nosotros… en varias partes de Irán», que «tenemos Groenlandia», que «no necesitamos el petróleo de Oriente Medio» y que EE. UU. está allí «protegiendo a Israel», y que Putin puede asistir al G20 de Doral. Kyiv Independent señaló que Trump incluyó a Ucrania en su advertencia contra la extensión de la guerra, a diferencia de la declaración conjunta con Rutte. Merz celebró que Trump pidiera a Putin poner fin a las hostilidades.</p>
+<p><strong>Por qué importa a Europa:</strong> se cita a Europa como objetivo en una guerra cuyas decisiones no toman los europeos, mientras se describe a la OTAN como ya implicada. «Tenemos Groenlandia» afecta a un territorio del Reino de un Estado miembro y no se explicó.</p>
+<p><strong>Qué vigilar:</strong> reacción danesa y groenlandesa; comentario de la OTAN sobre su papel en Irán; posible reanudación de los ataques.</p>
+<p><strong>Fuentes:</strong> Al Jazeera https://www.aljazeera.com/news/2026/11/27/trump-downplays-russia-china-support-for-iran-during-talks-with-us-troops; Washington Times https://www.washingtontimes.com/news/2026/nov/26/trump-phones-troops-thanksgiving-victory-hand-iran/; Times of India https://x.com/i/status/2126186760652877876; vídeos (agregadores, contrastados con las crónicas anteriores) https://x.com/i/status/2126106646753747435, https://x.com/i/status/2126106408823185862, https://x.com/i/status/2126105660181844301, https://x.com/i/status/2126103388500992156; Kyiv Independent https://x.com/i/status/2126144600897429619; Merz https://x.com/i/status/2126094821936734473; Reuters sobre el G20 https://x.com/i/status/2126137700478558392.</p>
+<h2 id="s4">Estonia cierra su frontera terrestre con Rusia el 1 de diciembre; Moscú dice que dañará «a la propia Estonia»</h2>
+<p>Estonia cerrará los cinco pasos por carretera con Rusia (Narva-1, Narva-2, Koidula, Luhamaa y Saatse) a las 07:00 del 1 de diciembre, en principio durante seis meses, tras una serie de ataques rusos, uno de ellos contra la industria de defensa, según ERR y el Gobierno estonio; el transporte ferroviario de mercancías por Narva continúa. La portavoz de Exteriores rusa, Zajárova, respondió que Moscú «sigue la tensa situación en nuestra frontera occidental, causada por las acciones abiertamente hostiles de los países bálticos» y que el cierre «asestará un duro golpe, sobre todo a la propia Estonia». También criticó a Kallas por pedir que se obtengan bases de datos rusas sobre participantes en la guerra, y celebró la retirada de Tayikistán del Estatuto de Roma de la CPI.</p>
+<p><strong>Antecedentes (archivo CEAFE):</strong> @F_CEAFE sigue desde hace años la frontera estonio-rusa: en noviembre de 2023 reposteó que Noruega y Estonia podían cerrar pasos fronterizos con Rusia (https://x.com/i/status/1727643175668387930); en mayo de 2024, que Rusia había retirado las boyas que marcan la frontera en el río Narva (https://x.com/i/status/1793708062655779082); y en octubre de 2026, que Estonia acercaba tropas de forma permanente a la frontera con una estrategia de «defensa activa» (https://x.com/i/status/2107026546913689796).</p>
+<p><strong>Por qué importa a Europa:</strong> la frontera exterior de la UE se blinda Estado por Estado. Una decisión común de la UE tendría más peso que las medidas nacionales.</p>
+<p><strong>Qué vigilar:</strong> contramedidas rusas; posibles pasos de Finlandia y Letonia; las familias separadas a ambos lados (Al Jazeera).</p>
+<p><strong>Fuentes:</strong> ERR https://news.err.ee/1610201515/estonia-to-close-land-border-with-russia-from-december-1; Exteriores de Estonia https://www.vm.ee/en/news/foreign-minister-tsahkna-border-closure-russias-hostile-activities-against-estonia-and-europe; Al Jazeera https://x.com/i/status/2126179865619554669; Exteriores ruso (fuente oficial rusa) https://x.com/i/status/2126018146264096997, https://x.com/i/status/2126023180372324536, https://x.com/i/status/2126028218486734943.</p>
+<h2 id="s5">Suiza vota el domingo si flexibiliza sus normas de exportación de armas</h2>
+<p>El 29 de noviembre los suizos votan la reforma de la Ley de Material de Guerra aprobada por el Parlamento el 19 de diciembre de 2025. Permitiría al Consejo Federal autorizar exportaciones a determinados Estados socios aunque estén en un conflicto armado (Bloomberg: 36 países, en su mayoría occidentales), admitir excepciones a los criterios de exportación y reducir las declaraciones de no reexportación. Los opositores sostienen que dañaría la neutralidad (SECO, Bloomberg).</p>
+<p><strong>Por qué importa a Europa:</strong> las prohibiciones suizas de reexportación bloquearon munición para Ucrania y alejaron a los compradores de los proveedores suizos. Un «sí» haría de la industria suiza un proveedor europeo más fiable.</p>
+<p><strong>Qué vigilar:</strong> el resultado del domingo por la noche.</p>
+<p><strong>Fuentes:</strong> Bloomberg https://x.com/i/status/2126186792021852174; SECO https://www.seco.admin.ch/en/referendum-wma; swissinfo https://www.swissinfo.ch/eng/votes/swiss-vote-should-switzerland-loosen-its-arms-export-rules/92277204.</p>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Actualidad. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

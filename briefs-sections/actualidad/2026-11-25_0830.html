@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Wednesday, 25 November 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Wednesday, 25 November 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> Tuesday 24 November from about 19:00 to Wednesday 25 November about 07:00 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief and the posts of @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Washington thins NATO&rsquo;s eastern flank: a Republican congressman says the Pentagon misled Congress, as Poland ties its defence R&amp;D to the US</h2>
+<p>Rep. Don Bacon (Republican, Nebraska; a retired US Air Force general) wrote on 24 November that &ldquo;withdrawing two armor brigades from Eastern Europe and with no warning to Polish, Romanian and Baltic leaders prior weakened the alliance and deterrence, while emboldening Putin&rdquo;, and that &ldquo;Congressional leaders were mislead by the Pentagon that these withdrawals would not occur&rdquo;. He was quoting a post by the Pentagon&rsquo;s policy chief Elbridge Colby, who said the Pentagon&rsquo;s approach is to make alliances &ldquo;stronger and more secure <em>in reality</em>&rdquo;, which &ldquo;requires being <em>realistic</em>&rdquo; about threats and resources. @F_CEAFE reposted Bacon&rsquo;s post. The same day, at the Pentagon, Polish deputy defence minister Cezary Tomczyk and US Under Secretary of War for Research and Engineering Emil Michael signed a Defense RDT&amp;E Agreement, ending 17 years of negotiations; it lets Polish universities, institutes and companies join US research, development, test and evaluation projects, with high-energy materials and ammunition as the first pilot area (Polish MoD).</p>
+<p><strong>Context.</strong> In a statement to Congress at the end of September, Colby confirmed that US brigade combat teams in Europe had been cut from five to three, one of the withdrawn brigades having rotated through Poland and the other through Romania, and that the Pentagon was exploring a permanent US base in Poland (PAP, Polish Radio). On 15 November Stars and Stripes reported that about 78,000 US personnel were assigned to EUCOM, close to the 76,000 floor set by Congress in the FY2026 NDAA; Hegseth is due to present the final posture recommendations to Trump on 1 December (Bloomberg via RO Times). In Warsaw, the Foreign Ministry said it had summoned Russia&rsquo;s ambassador and handed him &ldquo;a very strongly worded diplomatic note&rdquo; over the violation of Polish airspace by three Russian cruise missiles last week. Home Affairs Commissioner Magnus Brunner told the European Parliament that the EU would set up a Frontex rapid reaction force, deployable at a member state&rsquo;s request, plus an EU counter-drone centre of excellence and a large drone exercise in the Baltic region; about €500 million is available for border surveillance and counter-drone measures and €50 million for a Bulgarian–Romanian maritime security hub in the Black Sea. &ldquo;You will definitely not stand alone,&rdquo; he told frontline states (Anadolu).</p>
+<p><strong>Why it matters for Europe:</strong> the American presence the eastern flank relies on is being cut by decisions taken in Washington, without warning to those most exposed, a Republican lawmaker says. At the same moment Poland, already one of the biggest buyers of US equipment, ties its early-stage defence research to the Pentagon, where results fall under US rules on technical data. Commenting on X the same evening, @F_CEAFE wrote that &ldquo;member states are expected to contribute to the project, not to divert resources away from it by giving them to third parties.&rdquo; The Commission&rsquo;s answer (Frontex, counter-drone and Black Sea funds) is still small, but it is joint and European.</p>
+<p><strong>What to watch:</strong> Hegseth&rsquo;s force-posture recommendations (1 December) and Congress&rsquo;s 76,000 floor; any Pentagon reply to Bacon; the first RDT&amp;E project arrangements; the Frontex recast proposal in Parliament and Council.</p>
+<p><strong>Sources:</strong> Rep. Don Bacon: https://x.com/i/status/2125358495662817659 (original https://x.com/RepDonBacon/status/2125299577100042670, quoting https://x.com/i/status/2125285480400908739) ; @F_CEAFE reply: https://x.com/i/status/2125347435476144484 ; Polish MoD, 24 Nov: https://www.gov.pl/web/obrona-narodowa/od-badan-do-nowych-zdolnosci-polska-wzmacnia-wspolprace-obronna-z-usa ; Anadolu, 25 Nov: https://www.aa.com.tr/en/americas/poland-us-sign-defense-research-agreement-after-17-years-of-negotiations/4136545 ; Defence24: https://defence24.pl/przemysl/mon-i-pentagon-zaciesniaja-wspolprace-technologiczna ; Polish Radio (PAP), 30 Sep: https://www.polskieradio.pl/395/7785/artykul/3737255,pentagon-confirms-review-of-possible-permanent-us-base-in-poland ; Stars and Stripes, 15 Nov: https://www.stripes.com/theaters/europe/2026-11-15/us-troop-levels-europe-eucom-nato-23470991.html ; Polish MFA: https://x.com/i/status/2125299037838393508 and https://www.gov.pl/web/diplomacy/statement-on-the-summoning-of-the-russian-federation-ambassador-to-the-mfa ; Anadolu on Brunner, 25 Nov: https://aa.com.tr/en/europe/eu-to-step-up-eastern-border-defenses-with-rapid-response-force-counter-drone-capabilities/4136542 ; Commission (Frontex proposal): https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2260</p>
+<h2 id="s2">Update: peace table — Washington drops business deals as bait for Moscow; Putin threatens to retaliate for refinery strikes</h2>
+<p>The Trump administration has quietly shelved proposals to use business deals as an incentive for Russia to end the Ukraine war, after Moscow showed little interest in the proposed energy and aviation ventures, the Financial Times reported on Wednesday, citing five officials (relayed by Reuters, which could not verify it). Envoys Steve Witkoff and Jared Kushner told European officials that corporate tie-ups were no longer a core part of the US pitch; ideas had included US investment in Russian oil and titanium projects, restarting pipeline gas to Europe (a US investor in Nord Stream had been discussed in October) and opening Russian airspace to US airlines. According to Kommersant&rsquo;s account of the FT report, Russian negotiators in Abu Dhabi made clear economic offers would not soften Putin&rsquo;s terms (all of Donbas); a US official called the report inaccurate and said post-war economic engagement &ldquo;remains one of the elements&rdquo;. On Tuesday Putin said that &ldquo;despite the appeal and direct request from the US President&rdquo; to refrain from attacks, &ldquo;the Kyiv authorities are not listening&rdquo;, announced &ldquo;retaliatory actions&rdquo; for strikes on Russian refineries, and warned that attempts to restrict Russian energy exports have &ldquo;serious consequences, primarily for Europeans themselves&rdquo;. The EU&rsquo;s energy commissioner told Euronews that Brussels will press ahead with its ban on Russian gas whatever the outcome of the US–Russia talks. Lukashenko said he is ready to accompany Zelenskyy to talks with Putin (TASS, Russian state agency).</p>
+<p><strong>Why it matters for Europe:</strong> the economic side of the US plan (Nord Stream, oil, aviation) was being negotiated over Europe&rsquo;s energy future without Europe at the table. If it is shelved, the talks narrow to territory and security guarantees, the very issues on which Europeans pay the cost and have the least say. The Commission&rsquo;s gas ban is one of the few levers the EU keeps for itself.</p>
+<p><strong>What to watch:</strong> the White House&rsquo;s answer to the FT; Russia&rsquo;s &ldquo;retaliation&rdquo; for the refinery strikes; the next Abu Dhabi round; the European Council (26–27 November) on Ukraine.</p>
+<p><strong>Sources:</strong> Investing.com (Reuters), 25 Nov: https://www.investing.com/news/world-news/us-shelves-proposals-to-use-business-deals-with-russia-to-end-ukraine-war-ft-reports-5049739 ; Kommersant, 25 Nov: https://www.kommersant.ru/doc/9129851 ; Clash Report (FT): https://x.com/i/status/2125468183448445151 ; Putin (Clash Report clips): https://x.com/i/status/2125315235389038812 , https://x.com/i/status/2125315659760337293 ; Bloomberg: https://x.com/i/status/2125350028684214731 ; Euronews: https://x.com/i/status/2125354392903934199 ; TASS: https://x.com/i/status/2125313352687890894</p>
+<h2 id="s3">Two days before the European Council, EU states agree Ukraine needs money but not on how much or who pays</h2>
+<p>EU ambassadors held a first discussion on 24 November of the Commission&rsquo;s proposal to lend Ukraine €45 billion in 2027 and of António Costa&rsquo;s compromise for the 2028–2034 budget, which earmarks €100 billion for Kyiv, according to national dispatches seen by the Kyiv Independent. Estonia called the €100 billion an &ldquo;absolute minimum&rdquo;; Italy and Bulgaria questioned whether interest on existing EU loans to Ukraine (a Commission analysis puts it at €55.4 billion over the next budget cycle) would really be paid &ldquo;in addition&rdquo;; Austria rejected a bespoke instrument for it. Hungary, Czechia and Slovakia opted out of the €90 billion loan in April, and diplomats expect Bulgaria to join them on the new €45 billion; France warned that pressure is mounting in Paris against any deal before its April presidential election. Slovakia&rsquo;s Robert Fico said &ldquo;Slovakia will not go into debt for Ukraine. It is not a loan but a gift&rdquo;, accusing the EU of &ldquo;blackmail&rdquo; for linking the loan to the budget (post. Zelenskyy said Ukraine will seek €115 billion in foreign aid for 2027 (France 24) and, per Bloomberg, will turn to the new Democrat-controlled US Congress if Trump fails to reach a deal with Putin.</p>
+<p><strong>Why it matters for Europe:</strong> the Union is now Ukraine&rsquo;s main financial backer, yet it decides by unanimity and member states opt in and out one by one. Each opt-out leaves the others to pay more and weakens the Union&rsquo;s voice at a table where it is already absent.</p>
+<p><strong>What to watch:</strong> the European Council of 26–27 November; Bulgaria&rsquo;s position; whether interest costs are kept outside the €100 billion.</p>
+<p><strong>Sources:</strong> Kyiv Independent, 25 Nov: https://kyivindependent.com/days-before-key-summit-eu-countries-want-to-help-ukraine-but-cant-agree-on-how/ ; @F_CEAFE repost (Fico, via @cuprwarszawa): https://x.com/i/status/2125297333076406297 ; France 24: https://x.com/i/status/2125399282878386404 ; Bloomberg: https://x.com/i/status/2125363878959747417 ; Euronews: https://x.com/i/status/2125330814850187455</p>
+<h2 id="s4">Update: Zelenskyy says the 48 Patriot interceptors depend &ldquo;exclusively&rdquo; on Hegseth&rsquo;s signature</h2>
+<p>Speaking in Uzhhorod alongside Hungary&rsquo;s Prime Minister on Tuesday, Zelenskyy said that for the Patriot anti-ballistic interceptors &ldquo;the document is currently in the United States. Unfortunately, Hegseth has not signed it yet, so it depends exclusively on him&rdquo; (Clash Report clip; RBC-Ukraine and UNN report the figure of 48 missiles agreed and say Kyiv would welcome 60). TASS (Russian state agency) carried the same statement. It follows the FT report covered at 14:30 that Washington is holding up about 60 Patriot interceptors already paid for by Europeans.</p>
+<p><strong>Why it matters for Europe:</strong> European money buys the missiles, but a single US official decides if and when they are delivered. This is the &ldquo;kill switch&rdquo; in practice: control over supply rather than over the software.</p>
+<p><strong>What to watch:</strong> a Pentagon decision; whether European buyers of Patriot (Germany, the Netherlands, Poland and others) raise the delays at the European Council.</p>
+<p><strong>Sources:</strong> Clash Report: https://x.com/i/status/2125339204154720687 ; TASS: https://x.com/i/status/2125426996301680972 ; RBC-Ukraine: https://newsukraine.rbc.ua/news/hegseth-has-yet-to-approve-transfer-of-48-1795554783.html ; UNN: https://unn.ua/en/news/hegseth-has-still-not-approved-the-allocation-of-missiles-for-patriot-systems-to-ukraine-zelenskyy ; earlier: 2026-11-24 14:30 brief, story 4.</p>
+<h2 id="s5">Iran war: US embassies tell Americans to locate shelters as Washington debates targeting Iran&rsquo;s leaders</h2>
+<p>On 24 November US missions in Israel, Iraq, Kuwait, Bahrain and the virtual embassy for Iran issued security alerts warning of possible attacks by Iran and the Houthis, airspace closures and flight cancellations; in Israel, US citizens were told to know their nearest shelter (US Embassy Jerusalem, US Mission Iraq). @F_CEAFE reposted Hormuz Report on the alerts and on an NBC News report that Trump administration officials are debating whether to target senior Iranian leaders to end the nine-month war; opponents warn it could harden Tehran, wreck future talks and expose US personnel, and no decision has been taken (NBC News). Trump said on Tuesday: &ldquo;We had a little moratorium with Iran, and we learned that you can&rsquo;t trust them.&rdquo; Iran&rsquo;s army said it destroyed a US &ldquo;Lucas&rdquo; drone over the western Strait of Hormuz and an MQ-9 over the eastern strait (IRNA, Iranian state agency; not confirmed by the US); the IRGC Navy said two &ldquo;rogue&rdquo; tankers hit naval mines while using an &ldquo;unauthorized route&rdquo;, and Iran blacklisted 26 tugboats that assisted ships using an alternative southern route (Anadolu). Israel&rsquo;s defence minister Israel Katz claimed Iran is developing chemical weapons and plotting to kill Trump (Haaretz, paywalled); Iran&rsquo;s foreign minister Abbas Araghchi accused the US of &ldquo;crippling&rdquo; the OPCW. In Yemen, the Saudi-led coalition told civilians to leave Hodeidah port and then struck it; the Houthis&rsquo; military spokesman said Jeddah and all Saudi Red Sea ports would be targets (Al Jazeera, Reuters); the coalition reported drones downed over Ras Tanura.</p>
+<p><strong>Why it matters for Europe:</strong> a strike on Iran&rsquo;s leadership would widen a war that already chokes Hormuz and the Red Sea, the routes for Europe&rsquo;s energy and trade. Europe has no seat in these decisions, even though it bears their economic cost.</p>
+<p><strong>What to watch:</strong> any US decision on leadership strikes; independent confirmation of the drone losses and the mine strikes; Houthi action against Jeddah. Military detail: see Conflicts.</p>
+<p><strong>Sources:</strong> US Embassy Jerusalem: https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-november-24-2026/ ; US Mission Iraq: https://iq.usembassy.gov/security-alert-u-s-mission-iraq-november-24-2026/ ; US Virtual Embassy Iran: https://ir.usembassy.gov/security-alert-iran-november-24-2026/ ; NBC News: https://www.nbcnews.com/politics/national-security/trump-administration-officials-debating-targeting-irans-leaders-source-rcna610889 ; @F_CEAFE reposts: https://x.com/i/status/2125356386389479773 , https://x.com/i/status/2125293040868655528 , https://x.com/i/status/2125292835448475852 ; Trump (Clash Report): https://x.com/i/status/2125312295345570234 ; IRNA: https://x.com/i/status/2125315704622850490 ; Anadolu: https://x.com/i/status/2125461478505632085 , https://x.com/i/status/2125341202127950155 ; Haaretz: https://x.com/i/status/2125314802092327004 ; Al Jazeera live, 25 Nov: https://www.aljazeera.com/news/liveblog/2026/11/25/iran-war-live-houthis-threaten-saudi-ports-over-coalitions-hodeidah-order ; Houthi statement (Yahya Saree, Houthi): https://x.com/i/status/2125351835947106539</p>
+<h2 id="s6">Update: the EU caps Chinese hybrid imports at 191,780 cars; Beijing invokes the WTO</h2>
+<p>The Commission imposed provisional import quotas on hybrid passenger cars (HEV, PHEV and MHEV) under a safeguard investigation: from 1 December 2026 to 18 June 2027, 191,780 new hybrids from China may enter (86,301 in the first quarter, 88,219 in the second, 17,260 in the final period), and imports beyond the quota cannot enter (Implementing Regulation (EU) 2026/2614; Commission press release; electrive). China &ldquo;urged the EU to honor bilateral consensus, strictly abide by WTO rules and uphold the principle of non-discrimination&rdquo; and vowed to protect its industry (Global Times, Chinese state media;. EU member states are also leaning toward including British-made EVs in the &ldquo;Made in Europe&rdquo; scheme (Reuters), and BYD is in talks to buy Ineos Automotive&rsquo;s French factory (Reuters). This follows the 14:30 story on China&rsquo;s WTO warning.</p>
+<p><strong>Why it matters for Europe:</strong> this time the Union uses its trade instruments as a bloc to defend its car industry; the contrast is with US tariffs, which the EU has so far accepted without a counter-measure. Chinese investment in European plants (BYD) is how Beijing gets around the quota.</p>
+<p><strong>What to watch:</strong> whether China retaliates (past targets: brandy, pork, dairy); the definitive safeguard measure; the &ldquo;Made in Europe&rdquo; rules of origin.</p>
+<p><strong>Sources:</strong> EUR-Lex: https://eur-lex.europa.eu/eli/reg_impl/2026/2614/oj/eng ; Commission: https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2564/IP_26_2564_EN.pdf ; electrive, 24 Nov: https://www.electrive.com/2026/11/24/eu-introduces-import-quotas-for-hybrids-from-china-and-other-countries/ ; Reuters: https://x.com/i/status/2125298449402777936 , https://x.com/i/status/2125312291692302700 , https://x.com/i/status/2125306010717872586 ; @F_CEAFE repost (Global Times): https://x.com/i/status/2125330264922398890</p>
+<h2 id="s7">Israel: Eisenkot signs his first coalition deal; the White House says Trump&rsquo;s position on military aid is &ldquo;unchanged&rdquo;</h2>
+<p>Prime Minister-designate Gadi Eisenkot clinched his first coalition agreement, with Yashar and Yisrael Beiteinu, and aims to announce a government next week, while the Democrats halted talks with him over his unity negotiations with Likud (Reuters, Haaretz, Anadolu). After US Ambassador Mike Huckabee told an INSS conference he was unsure whether US military aid would end abruptly at year&rsquo;s end, a senior White House official told the Jerusalem Post that Trump&rsquo;s position is &ldquo;unchanged&rdquo;, without saying whether the funds have been halted. Trump announced on 3 November that the roughly $4 billion a year would stop after this year; the 2016 memorandum ($3.3 billion in FMF and $500 million for missile defence a year) runs to 2028, and the Senate&rsquo;s FY2027 bills still include it (JNS). The Times of Israel reports worries about US aid to Egypt and Jordan. Israel&rsquo;s Supreme Court said West Bank settlers are acting &ldquo;like militias&rdquo; (Haaretz), and Amnesty called for an ICC genocide investigation over Israel&rsquo;s impact on births in Gaza (France 24).</p>
+<p><strong>Why it matters for Europe:</strong> a smaller US subsidy pushes Israel towards more domestic defence production and arms exports, many of them to European buyers (Elbit, Rafael, IAI). Changes in its government matter for Gaza, the West Bank and the Iran war on Europe&rsquo;s southern flank.</p>
+<p><strong>What to watch:</strong> formation of the Eisenkot government; Congress&rsquo;s appropriations; any US statement on Egypt and Jordan.</p>
+<p><strong>Sources:</strong> Reuters: https://x.com/i/status/2125424337226236136 ; Haaretz: https://x.com/i/status/2125375210027102333 , https://x.com/i/status/2125360149170696209 , https://x.com/i/status/2125405396621816125 ; Anadolu: https://x.com/i/status/2125308486539993588 ; Jerusalem Post, 25 Nov: https://www.jpost.com/international/article-916041 ; JNS: https://www.jns.org/news/u-s-news/senate-includes-israel-aid-in-funding-bills-despite-trumps-call-for-year-end-halt ; Times of Israel: https://x.com/i/status/2125394193707069881 ; France 24: https://x.com/i/status/2125440706944860638</p>
+<h2 id="s8">Indo-Pacific: Canberra signs its Solomon Islands treaty, Japan backs the ICC and Beijing purges a Politburo member</h2>
+<ul>
+<li><strong>Australia–Solomon Islands (Update).</strong> The two signed a security treaty that makes Canberra the &ldquo;defence partner of choice&rdquo; and affirms there will be no foreign military base in the Pacific country, while Honiara reviews its ties with China (Reuters, Japan Times, Kyodo; see 24 Nov 14:30, story 8). https://x.com/i/status/2125439711166550221 ; https://x.com/i/status/2125424457837580662</li>
+<li><strong>Japan and the ICC.</strong> Prime Minister Sanae Takaichi moved forward Japan&rsquo;s financial contribution to the ICC in her first meeting with court President Tomoko Akane since the US sanctions (Japan Times). https://www.japantimes.co.jp/news/2026/11/24/japan/politics/japan-pm-takaichi-icc-akane/</li>
+<li><strong>Russia–Japan.</strong> Russia plans a geothermal power plant on a disputed island claimed by Japan (Kyodo). https://english.kyodonews.net/articles/-/92504</li>
+<li><strong>China&rsquo;s leadership.</strong> Beijing opened an investigation into Shanghai party chief Chen Jining, the fourth Politburo member to fall since 2025 (Reuters). https://x.com/i/status/2125341249490051211</li>
+</ul>
+<p><strong>Why it matters for Europe:</strong> China&rsquo;s space station hosting a partner&rsquo;s astronaut and Australia&rsquo;s treaty both show powers using capability as diplomacy. Europe has its own capabilities (ESA), but these days it uses them less as leverage.</p>
+<h2 id="s9">In brief</h2>
+<ul>
+<li><strong>Spain votes on 29 November amid a Russian disinformation campaign.</strong> Pro-Russian actors are impersonating media outlets and spreading fake videos ahead of Spain&rsquo;s snap election to undermine support for Ukraine and EU sanctions (&ldquo;Matryoshka&rdquo; campaign, EuronewsVerify). https://x.com/i/status/2125320298056827094</li>
+<li><strong>Union for the Mediterranean.</strong> Spain&rsquo;s Foreign Minister José Manuel Albares hosts EU and Mediterranean ministers at the 11th UfM Regional Forum in Barcelona today, Wednesday 25 November (MAEC). https://www.exteriores.gob.es/es/Comunicacion/NotasPrensa/Paginas/2026_NOTAS_P/Albares-recibe-en-Barcelona-a-los-ministros-de-la-Union-por-el-Mediterraneo-un-ano-despues-del-lanzamiento-de-su-reforma.aspx</li>
+<li><strong>Hungary–Ukraine (Update).</strong> After Péter Magyar&rsquo;s visit, Zelenskyy said they &ldquo;reached agreements on all key areas&rdquo;, energy above all; Magyar said &ldquo;membership in the European Union must be earned… the EU does not know such a thing as an accelerated process&rdquo;. https://x.com/i/status/2125372418122289365 ; https://x.com/i/status/2125341659365810441</li>
+<li><strong>Baltic tension.</strong> Estonia&rsquo;s Foreign Minister Margus Tsahkna dismissed as &ldquo;Russian propaganda&rdquo; Moscow&rsquo;s charge that Tallinn is &ldquo;on the verge of triggering open war&rdquo; (Reuters); Russia summoned Latvia&rsquo;s chargé d&rsquo;affaires over Riga&rsquo;s demand that the Russian embassy dismiss its locally hired social-welfare staff (Russian MFA, official source). https://x.com/i/status/2125409136120828129 ; https://x.com/i/status/2125295843175473163</li>
+<li><strong>UK–Ukraine.</strong> Ukrainian-designed strike drones will be produced in the UK under agreements announced during Defence Secretary Wes Streeting&rsquo;s visit to Kyiv; Chancellor Merz awarded Keir Starmer Germany&rsquo;s Grand Cross for the Kensington Treaty. https://x.com/i/status/2125336737174151379 ; https://x.com/i/status/2125331849409106260</li>
+<li><strong>Venezuela.</strong> Trump: &ldquo;We took over the country of Venezuela&rdquo; (Thanksgiving event; Clash Report clip). Germany sent its first high-level visit in decades (State Secretary von Geyr); Caracas put public debt at $237.5 billion ahead of a restructuring. WHO chief Tedros urged the US to lift its oil blockade on Cuba. https://x.com/i/status/2125311852804534608 ; https://x.com/i/status/2125321594587529468 ; https://x.com/i/status/2125375198274711745 ; https://x.com/i/status/2125390314688991261</li>
+<li><strong>Libya (cross-reference, see Conflicts).</strong> Two Libyan soldiers were killed in the Ukrainian attack on Russian vessels at Benghazi (France 24); Ukraine&rsquo;s foreign minister called it legitimate self-defence (Japan Times). https://x.com/i/status/2125437611367858422 ; https://x.com/i/status/2125430835792818622</li>
+<li><strong>Gulf.</strong> Bahrain&rsquo;s King Hamad and Trump discussed the GCC–US partnership by phone; Saudi Foreign Minister Faisal bin Farhan spoke to Rubio. https://x.com/i/status/2125416685754519949 ; https://x.com/i/status/2125430987882414272</li>
+<li><strong>Canada–Qatar.</strong> Ottawa signed a foreign investment promotion and protection agreement with Qatar, part of Carney&rsquo;s push for non-US markets. https://x.com/i/status/2125348287397933328</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

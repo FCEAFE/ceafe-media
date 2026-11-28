@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMY — Monday, 23 November 2026 · 14:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMY</h1>
+      <p class="list-date">Monday, 23 November 2026 · 14:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> Economy / Economía</li>
+<li><strong>Window covered:</strong> Monday 23 November about 07:00 to 13:00 Europe/Madrid: everything new since the 08:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE Economy section brief and the posts of @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Europe&rsquo;s sovereign-cloud push gains ground, but US hyperscalers still hold over 70% of the market</h2>
+<p><strong>A Reuters analysis finds that sovereignty is moving into cloud procurement in Europe, yet AWS, Microsoft Azure and Google Cloud still control more than 70% of the European market.</strong></p>
+<p>In April the European Commission awarded sovereign-cloud contracts worth up to €180m over six years to groups led by Post Telecom (Luxembourg) and Proximus (Belgium), plus StackIT (Germany) and Scaleway (France); the Dutch government, Denmark&rsquo;s DSB, Swiss federal bodies and German public broadcasters have added sovereignty criteria. Nextcloud reports demand up roughly fivefold since Trump&rsquo;s second term began, and T-Systems more than fourfold since mid-2025. According to a Commission draft of the Cloud and AI Development Act, EU providers&rsquo; share fell from 29% in 2017 to 15% in 2022 and has stagnated since. Only a single-digit percentage of IONOS&rsquo;s public-sector talks turn into contracts.</p>
+<p><em>CEAFE:</em> Figures that illustrate, once again, why European sovereignty is only credible if it is exercised together.</p>
+<p><strong>Context:</strong> US providers are answering with their own &ldquo;sovereign&rdquo; offerings, while the new US AI-chip rules reach data centres outside the US (Bloomberg).</p>
+<p><strong>Why it matters for Europe:</strong> the figures measure the dependence: Europe&rsquo;s own share of its cloud market halved between 2017 and 2022. Procurement rules help, but no single member state&rsquo;s market can build a challenger.</p>
+<p><strong>What to watch:</strong> negotiations on the Cloud and AI Development Act.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124819328076001694">@F_CEAFE</a>, <a href="https://x.com/i/status/2124756864218874029">Reuters</a>, <a href="https://www.channelnewsasia.com/business/analysiseuropes-cloud-sovereignty-push-gains-ground-us-hyperscalers-remain-dominant-6574046">CNA (Reuters)</a></p>
+<h2 id="s2">Norway&rsquo;s Vår Energi buys ConocoPhillips&rsquo; Norwegian business and its Teesside terminal stake for $4.425bn</h2>
+<p><strong>Vår Energi (Norway) agreed on Monday to buy the entire Norwegian upstream business of ConocoPhillips (US), anchored by the operated Greater Ekofisk Area, plus its 40.25% interest in, and operatorship of, the Teesside oil terminal in the United Kingdom.</strong></p>
+<p>The agreed enterprise value is $4.425bn; ConocoPhillips expects net cash proceeds of about $2.5bn after a remaining 2026 tax liability of about $1.4bn, and will use part of them for share buybacks. The assets include interests in eight partner-operated fields and the Norpipe oil pipeline, and produced about 120,000 barrels of oil equivalent per day in 2025. Closing is expected around the end of the first quarter of 2027, subject to approval by Norway&rsquo;s Ministry of Energy. Vår Energi says it will become Europe&rsquo;s largest independent producer.</p>
+<p><strong>Context:</strong> Norway is not an EU member state but is part of the European Economic Area and a NATO member, and is Europe&rsquo;s main pipeline gas supplier.</p>
+<p><strong>Why it matters for Europe:</strong> it is the reverse of the flow CEAFE usually tracks: a US major leaves and a European operator takes control of a historic North Sea hub. Control of European hydrocarbons matters as Europe pays far more for energy than the US and depends on US LNG, but it is one Norwegian company&rsquo;s deal, not a European energy strategy.</p>
+<p><strong>What to watch:</strong> Norwegian approval; whether other US majors sell North Sea assets.</p>
+<p><strong>Sources:</strong> <a href="https://news.cision.com/var-energi-asa/r/var-energi-to-acquire-conocophillips--norwegian-business--and-related-uk-infrastructure--strengtheni,c4427939">Vår Energi</a>, <a href="https://www.conocophillips.com/news-media/story/conocophillips-announces-agreement-to-sell-norway-business-and-teesside-asset-to-var-energi-2/">ConocoPhillips</a>, <a href="https://x.com/i/status/2124757371909996594">Bloomberg</a>, <a href="https://x.com/i/status/2124767231217176844">WSJ</a>, <a href="https://www.offshore-energy.biz/2026/11/23/dollar44-billion-play-for-conocophillips-norwegian-oil-and-gas-assets-and-uk-infrastructure-expands-var-energis-north-sea-footprint">Offshore Energy</a></p>
+<h2 id="s3">ABB to buy German fan and motor maker Ziehl-Abegg for $2.65bn</h2>
+<p><strong>Swiss-Swedish engineering group ABB has agreed to acquire Ziehl-Abegg of Künzelsau (Baden-Württemberg), a family-owned maker of high-efficiency fans, electric motors and ventilation controls, for an enterprise value of $2.65bn (equity value $2.22bn).</strong></p>
+<p>Ziehl-Abegg expects about $1.4bn of revenue in 2026 and employs about 6,300 people; its products go into HVAC, data centres, clean rooms, medical technology and industry. ABB highlights its ferrite-magnet technology, &ldquo;which reduces dependence on rare earth materials&rdquo;. Closing is expected in the second half of 2027 and the headquarters will stay in Künzelsau (ABB; tagesschau/SWR). Vontobel called the valuation &ldquo;rich&rdquo; (Bloomberg).</p>
+<p><strong>Context:</strong> the sale followed the death of owner Uwe Ziehl in June 2026 (tagesschau).</p>
+<p><strong>Why it matters for Europe:</strong> a German Mittelstand technology firm passes to a European group rather than a US or Chinese buyer, and its rare-earth-free motor technology matters given China&rsquo;s grip on rare-earth magnets. The deal is driven by data-centre cooling demand for an AI build-out that Europe mostly hosts rather than owns.</p>
+<p><strong>What to watch:</strong> job guarantees at Künzelsau; regulatory approvals.</p>
+<p><strong>Sources:</strong> <a href="https://new.abb.com/news/detail/140614/abb-to-acquire-ziehl-abegg-expanding-offering-for-hvac-and-industrial-cooling-applications">ABB</a>, <a href="https://x.com/i/status/2124798900007506346">Reuters</a>, <a href="https://www.swissinfo.ch/eng/abb-buys-german-data-center-cooling-firm-for-%242.2-billion/92422021">swissinfo (Bloomberg)</a>, <a href="https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-milliardendeal-in-hohenlohe-schwedisch-schweizer-unternehmen-abb-uebernimmt-ziehl-abegg-100.html">tagesschau/SWR</a></p>
+<h2 id="s4">Abu Dhabi&rsquo;s IRH agrees terms for a possible £353m takeover of Irish miner Kenmare Resources</h2>
+<p><strong>The boards of Kenmare Resources (Ireland; London-listed mineral sands producer operating in Mozambique) and Abu Dhabi-based International Resources Holding (IRH) agreed in principle on a pre-conditional possible cash offer of 380 pence per share.</strong></p>
+<p>That values Kenmare&rsquo;s share capital at about £352.8m and implies an enterprise value of about £487.1m, a 52% premium to Friday&rsquo;s close. It is not yet a firm offer: pre-conditions include consents from the Government of Mozambique. Kenmare shares jumped 24% (Proactive Investors).</p>
+<p><strong>Context:</strong> Ireland is an EU member state; the EU&rsquo;s Critical Raw Materials Act seeks secure supplies of minerals.</p>
+<p><strong>Why it matters for Europe:</strong> a European-listed raw-materials producer heads to a Gulf state-linked buyer, part of a pattern in which Gulf, US and Chinese capital buys the mining assets Europe says it needs.</p>
+<p><strong>What to watch:</strong> a firm offer or walk-away; Mozambique&rsquo;s consent.</p>
+<p><strong>Sources:</strong> <a href="https://www.globenewswire.com/news-release/2026/11/23/3408030/0/en/joint-statement-regarding-agreement-of-a-pre-conditional-possible-cash-acquisition-of-kenmare-resources-plc-by-international-resources-holding-rsc-ltd.html">Joint statement</a>, <a href="https://x.com/i/status/2124811474761605449">Bloomberg</a>, <a href="https://www.rte.ie/news/business/2026/1123/1600256-kenmare-resources-offer/">RTÉ</a></p>
+<h2 id="s5">Update: Beijing restates its position after Trump&rsquo;s &ldquo;older chips only&rdquo; remark; NYT details Alice Huang&rsquo;s contacts with China&rsquo;s Ministry of State Security</h2>
+<p><strong>Asked about President Trump&rsquo;s 20 November remark that the US wants to sell China &ldquo;only older chips&rdquo;, Chinese Foreign Ministry spokesperson Guo Jiakun said only that China had already made its position on US export controls clear (Global Times, Chinese state media).</strong></p>
+<p>The New York Times reports, citing people familiar with US intelligence reports, that Alice Huang, former head of Singapore-based Megaspeed, a major Nvidia customer, was in touch with an officer of China&rsquo;s Ministry of State Security from spring 2025 to autumn 2026, overlapping with her relationship with Jensen Huang, who stepped down as Nvidia CEO this month. US officials say they have not concluded she spied for China (Reuters). Bloomberg reports that Washington&rsquo;s new AI-chip rules threaten a multibillion-dollar cloud business serving South-East Asian data centres.</p>
+<p><strong>Context:</strong> on 17 November Guo had called US controls &ldquo;economic coercion and long-arm jurisdiction&rdquo;.</p>
+<p><strong>Why it matters for Europe:</strong> the affair pushes Washington to meter chips more strictly everywhere, including through European data centres, and a bilateral US–China chip deal would be negotiated without a European seat.</p>
+<p><strong>What to watch:</strong> the MFA transcript; a possible MOFCOM statement; a congressional hearing for Commerce Secretary Lutnick.</p>
+<p><strong>Sources:</strong> <a href="https://www.globaltimes.cn/page/202611/1374863.shtml">Global Times</a>, <a href="https://news.bjd.com.cn/2026/11/23/12040721.shtml">Beijing Daily</a>, <a href="https://x.com/i/status/2124797643440161243">Reuters</a>, <a href="https://www.thehindu.com/news/international/alice-huang-in-touch-with-chinese-spy-agency-during-affair-with-nvidia-ceo-says-nyt/article71733237.ece">The Hindu (Reuters)</a>, <a href="https://cn.nytimes.com/technology/20261123/alice-huang-china-spy-agency-nvidia/">NYT</a>, <a href="https://x.com/i/status/2124753933071433828">Bloomberg</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — Economy. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

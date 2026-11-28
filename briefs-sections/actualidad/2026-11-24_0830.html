@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WORLD — Tuesday, 24 November 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">WORLD</h1>
+      <p class="list-date">Tuesday, 24 November 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Section:</strong> World / Actualidad</li>
+<li><strong>Window covered:</strong> Monday 23 November about 19:00 to Tuesday 24 November about 07:00 Europe/Madrid: everything new since the 20:30 edition.</li>
+<li><strong>Compiled from:</strong> the CEAFE World section brief and the posts of @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Update: Le Pen wants to negotiate tariffs with Washington alone and keep France&rsquo;s UN seat national; CEAFE: &ldquo;exactly what other powers want: a divided Union&rdquo;</h2>
+<p>Marine Le Pen (National Rally) argued in a video posted on X that the United States &ldquo;is a historic ally&rdquo; and that US tariffs &ldquo;hit France hard because they are applied to the whole European Union&rdquo;; if France &ldquo;talked with the United States&rdquo; on its own, she said, the tariffs &ldquo;could disappear, because there is no trade surplus&rdquo;. In the same interview, given to Indian presenter Palki Sharma, she said France &ldquo;will not share&rdquo; its permanent seat on the UN Security Council (&ldquo;I know that Germany is eyeing our seat… We will not share that with the European Union&rdquo;) and that France&rsquo;s nuclear force &ldquo;will remain French&rdquo;. The UN-seat remark was noted in the 14:30 edition of 23 November; the new element is @F_CEAFE&rsquo;s answer.</p>
+<p>@F_CEAFE quoted Le Pen&rsquo;s tariff remark: &ldquo;This is exactly what other powers want: a divided Union. Under its current leadership, the EU too often fails to defend its citizens, but alone and divided, no EU member state can negotiate with the global giants or influence their decisions.&rdquo; He also reposted the UN-seat clip.</p>
+<p><em>CEAFE:</em> The EU as a whole can bear comparison; each capital on its own cannot. That is the difference that matters.</p>
+<p><strong>Why it matters for Europe:</strong> trade is an exclusive EU competence, so a bilateral tariff deal between Paris and Washington is not legally available. What the proposal offers instead is the &ldquo;special relationship&rdquo; logic CEAFE criticises: a member state hoping to be treated better alone than as part of a bloc of some 450 million people. The US tariffs are applied to the EU as a whole because the EU negotiates as a whole, and that is the source of its weight. Le Pen&rsquo;s two positions point the same way: trade talks without the Union, and a Security Council seat kept away from it.</p>
+<p><strong>What to watch:</strong> whether other National Rally figures repeat the bilateral-trade idea; any response from the Commission or the French government; the French presidential campaign debate on the EU&rsquo;s common commercial policy.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2125049705960710152">@F_CEAFE&rsquo;s quote</a>, <a href="https://x.com/i/status/2124596449044578640">Le Pen&rsquo;s post</a>, <a href="https://x.com/i/status/2124800736517370087">UN-seat clip (Clash Report, aggregator)</a>, <a href="https://www.youtube.com/watch?v=atgYJmPGgxo">full interview (YouTube)</a></p>
+<h2 id="s2">Update: Libya — Kyiv confirms it sank the corvette <em>Merkury</em>; Tripoli warns of being &ldquo;dragged&rdquo; into the war, Moscow speaks of a &ldquo;very dangerous trend&rdquo;</h2>
+<p>On Monday President Zelensky confirmed that seven Ukrainian naval drones, launched from a &ldquo;mother ship&rdquo; according to the SBU, sank the Russian corvette <em>Merkury</em> at the Benghazi naval base on Sunday and hit the Russian dry-cargo ship <em>MV Angara</em>. He said Moscow had used the cargo ship to carry weapons (Reuters, AP, The Guardian). Satellite images showed the corvette capsized, with only the bow above water (Vantor, via Al Jazeera); local authorities reported at least 10 injured. The 20:30 edition of 23 November reported the attack as unconfirmed.</p>
+<p><strong>Reactions overnight:</strong> Libya&rsquo;s Presidential Council called the attack a &ldquo;declaration of war against the Libyan state&rdquo; and asked the UN Security Council for an emergency session (statement relayed on X; not yet checked against the Council&rsquo;s own channels). Prime Minister Abdul Hamid Dbeibah (Tripoli), meeting Italian Ambassador Gianluca Alberini, warned that armed groups acting on their own risk dragging Libya into both the Russia–Ukraine war and Sudan&rsquo;s, a &ldquo;dangerous gamble&rdquo;, and condemned the military use of civilian ports (Anadolu, Turkish state agency). The eastern government asked the UN to investigate &ldquo;suspicions&rdquo; that the drones came from western Libya. UNSMIL called for an independent investigation. <strong>Russia&rsquo;s response:</strong> Kremlin spokesman Dmitry Peskov called the Libya and Baltic attacks a &ldquo;very dangerous trend&rdquo;, referred questions to the Defence Ministry, and said Russia&rsquo;s daily strikes have &ldquo;very painful consequences for the Kiev regime&rdquo; (TRT World). At the UN Security Council, Russia&rsquo;s envoy accused Kyiv of &ldquo;criminally expanding the scope and geography&rdquo; of maritime attacks and said Ukraine had targeted more than 200 commercial vessels since July. He also ruled out &ldquo;any new grain deal&rdquo;. Ukraine answered that Russia &ldquo;bears full responsibility for this war&rdquo; and asked for more Patriot PAC-3 interceptors (Anadolu).</p>
+<p><strong>Why it matters for Europe:</strong> the war has reached the southern shore of the Mediterranean, in a country where Italy (an EU member state) and Türkiye both have a military presence and where Europe&rsquo;s migration and energy interests meet. Dbeibah chose the Italian ambassador to deliver his warning. Rome and Brussels are the first European capitals that Libyan factions will hold to account.</p>
+<p><strong>What to watch:</strong> a Russian Defence Ministry statement on <em>Merkury</em>; a UN Security Council emergency session on Libya; Italy&rsquo;s response; any Russian retaliation in the Mediterranean.</p>
+<p><strong>Sources:</strong> <a href="https://www.investing.com/news/world-news/zelenskiy-says-ukraine-sank-russian-warship-in-libya-5044753">Reuters (via Investing.com)</a>, <a href="https://apnews.com/article/ukraine-russia-zelenskyy-warship-attack-libya-c382f8eb06dca7d87e89bc6c18ba7d61">AP</a>, <a href="https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya">The Guardian</a>, <a href="https://www.aljazeera.com/news/2026/11/23/russian-ships-hit-by-drones-off-libya-coast-what-do-we-know">Al Jazeera</a>, <a href="https://www.aa.com.tr/en/russia-ukraine-war/libyan-prime-minister-warns-military-groups-against-dragging-libya-into-russia-ukraine-war/4135211">Anadolu (Turkish state agency), Dbeibah</a>, <a href="https://www.aa.com.tr/en/world/russia-ukraine-clash-at-un-over-attacks-on-black-sea-shipping-energy-strikes/4135194">UN Security Council</a>, <a href="https://www.trtworld.com/article/ad4249812e76">TRT World (Turkish public broadcaster), Peskov</a>, <a href="https://x.com/i/status/2124974405717516766">Libyan Presidential Council statement (relayed by @Archer83Able)</a>, <a href="https://x.com/i/status/2125076947600302453">Reuters</a>, <a href="https://x.com/i/status/2125063858213855647">UN News (DiCarlo on energy strikes)</a></p>
+<h2 id="s3">Germany turns: 53% now oppose military aid to Ukraine as the AfD promises to cut defence spending and stop arms deliveries</h2>
+<p>The Körber-Stiftung&rsquo;s annual <em>Berlin Pulse</em> survey (Forsa, 1,501 eligible voters, 15–28 September 2026, published 24 November) finds that military support for Ukraine no longer has a majority in Germany. 46% are in favour (59% in 2025) and 53% against (39% in 2025). Germans are split 50–48 on whether Ukraine&rsquo;s defence also protects Germany and Europe. Only 11% of AfD supporters back military aid and 75% want relations with Russia normalised; in the east, support is 31% (west: 48%). On Monday evening, AfD co-leader Alice Weidel promised &ldquo;cuts amounting to tens of billions in excessive defence spending&rdquo;, sharply lower payments to the EU, and an end to &ldquo;payments and weapons deliveries to Ukraine&rdquo;. Co-leader Tino Chrupalla attacked the 2027 federal budget (about €210 billion of new debt). Meanwhile Ukraine&rsquo;s Defence Ministry says Germany is its largest military-aid partner in 2026 (€11.5 billion), as Defence Minister Evgeniy Khmara met Boris Pistorius in Berlin with air defence as the priority before winter.</p>
+<p><strong>Why it matters for Europe:</strong> Germany is the largest European backer of Ukraine and the EU&rsquo;s largest economy. If its public support collapses, Europe&rsquo;s main instrument in the war rests on a narrowing domestic base. The AfD platform joins three things: less defence, less EU and no aid to Ukraine. A purely national retreat of this kind would leave Germany neither sovereign nor safe, because no EU member state can defend itself alone. Europe&rsquo;s answer has to be common capability, so that defence does not depend on one government&rsquo;s electoral cycle.</p>
+<p><strong>What to watch:</strong> the Bundestag&rsquo;s 2027 budget vote; federal and state polls; whether Berlin keeps its 2026 pledges for air defence.</p>
+<p><strong>Sources:</strong> <a href="https://koerber-stiftung.de/presse/mitteilungen/trendwende-wunsch-nach-aussenpolitischer-zurueckhaltung-waechst/">Körber-Stiftung press release</a>, <a href="https://koerber-stiftung.de/site/assets/files/58448/the_berlin_pulse_2026_forsa_ergebnisbericht_sperrfrist.pdf">Forsa report (PDF)</a>, <a href="https://www.dw.com/de/studie-mehrheit-der-deutschen-gegen-mehr-waffen-f%C3%BCr-ukraine/a-80020315">DW</a>, <a href="https://x.com/i/status/2125097111666438331">Bloomberg</a>, <a href="https://x.com/i/status/2124946252031013092">Weidel (Clash Report)</a>, <a href="https://x.com/i/status/2124943847096561859">Chrupalla</a>, <a href="https://x.com/i/status/2124981088187548149">Ukrainian Defence Ministry</a></p>
+<h2 id="s4">Visegrád Four and Austria reject the EU&rsquo;s 2028–2034 budget proposal; Magyar: Ukraine aid should not be in the EU budget</h2>
+<p>Meeting in Bratislava on Monday with Austrian Chancellor Christian Stocker, the prime ministers of Slovakia, Czechia, Poland and Hungary criticised the revised proposal for the next Multiannual Financial Framework (Euronews, ORF, TASR). Hungary&rsquo;s Péter Magyar said it was not &ldquo;an acceptable starting point for negotiations&rdquo;. He wrote to European Council President António Costa that there was little point in the special summit planned for later this week (&ldquo;no point spending two days in Brussels not agreeing on anything&rdquo;). He also argued that support for Ukraine should not be built into the budget in a way that makes contributions mandatory. Czechia&rsquo;s Andrej Babiš attacked the cost of the European Parliament&rsquo;s three seats. Poland&rsquo;s Donald Tusk stressed that Kyiv&rsquo;s defence is strategic for Europe, but opposed financing it through joint EU borrowing. Robert Fico said there was no joint position, but broad alignment on cohesion, farming and migration.</p>
+<p><strong>Why it matters for Europe:</strong> the MFF decides whether the Union can pay for common defence, industry and Ukraine on a European scale or falls back on national budgets. A regional bloc forming against the proposal before the summit, and a refusal of both mandatory contributions and joint borrowing, shrinks the tools that let a Union of mid-sized states act like a power.</p>
+<p><strong>What to watch:</strong> the special European Council on the MFF this week (Costa&rsquo;s response to Magyar&rsquo;s letter); positions of the net contributors; how Ukraine funding is moved outside the MFF.</p>
+<p><strong>Sources:</strong> <a href="https://www.euronews.com/2026/11/23/visegrad-four-leaders-voice-concerns-over-eu-budget-proposal">Euronews (1)</a>, <a href="https://orf.at/stories/3449074/">ORF</a>, <a href="https://newsnow.tasr.sk/pm-fico-v4-and-austria-consider-eu-budget-proposal-to-be-unacceptable/">TASR</a>, <a href="https://www.polskieradio.pl/395/7785/artykul/3756220">Polskie Radio</a>, <a href="https://x.com/i/status/2125073883678019844">Euronews (2)</a></p>
+<h2 id="s5">Qatar signs a critical-minerals framework with Washington under the US-led Pax Silica</h2>
+<p>At the eighth US–Qatar Strategic Dialogue in Washington on Monday, chaired by Secretary of State Marco Rubio and Qatari Prime Minister and Foreign Minister Sheikh Mohammed bin Abdulrahman Al Thani, the two countries signed a Critical Minerals Framework. Under Secretary for Economic Affairs Jacob Helberg said &ldquo;Qatar has been a leader in Pax Silica since day one&rdquo; and that the framework secures supply chains &ldquo;from mining to refining&rdquo; (The National, Anadolu). Qatar joined Pax Silica, the US initiative for secure supply chains for AI and advanced technology, in January 2026. Helberg then described it as a &ldquo;coalition of capabilities&rdquo; and named its signatories: Japan, South Korea, Singapore, the United Kingdom, Australia, Israel and Qatar. The January plan included joint investment in minerals &ldquo;through vehicles like TechMet, in Africa and other third markets&rdquo;, new logistics corridors and AI data centres.</p>
+<p><strong>Context:</strong> Antecedentes: Pax Silica, a US-led initiative on technology and semiconductor supply-chain security, was unveiled in December 2025; on 14 December 2025 @F_CEAFE reposted Israel&rsquo;s announcement that it had joined (<a href="https://x.com/i/status/2000164574826492141">X, 2025</a>), and on 16 December the US Under Secretary for Economic Affairs said the United States had &ldquo;brought together a group of allied nations&rdquo; to launch it (<a href="https://x.com/i/status/2001007946789216462">X, 2025</a>).</p>
+<p><strong>Why it matters for Europe:</strong> Washington is building a minerals and compute bloc with Gulf capital and Asian industry. No EU member state appeared on the signatory list Helberg read out in January. The Union negotiates critical-raw-materials partnerships of its own; the risk is that Gulf money and African minerals get locked into US-led structures that exclude cooperation with other powers, while Europe remains a customer. CEAFE&rsquo;s view is that Europe should cooperate with all actors on its own terms, not join exclusive blocs.</p>
+<p><strong>What to watch:</strong> the text of the framework (not yet published); new Pax Silica accessions; EU–Gulf talks on raw materials.</p>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124970998193926202">Helberg</a>, <a href="https://x.com/i/status/2124999294566662468">Rubio</a>, <a href="https://www.thenationalnews.com/business/energy/2026/11/23/us-qatar-critical-minerals-framework/">The National</a>, <a href="https://www.aa.com.tr/en/americas/us-qatar-reaffirm-strategic-partnership-at-8th-dialogue-in-washington/4135206">Anadolu</a>, <a href="https://www.state.gov/remarks-on-the-accession-of-qatar-to-the-pax-silica-declaration">State Department, Helberg remarks of 12 January 2026</a></p>
+<h2 id="s6">Iran: Washington hits the &ldquo;shadow banking&rdquo; network; Tehran&rsquo;s speaker denounces a &ldquo;no war, no peace&rdquo; stalemate</h2>
+<p>The US Treasury (&ldquo;Operation Economic Outcast&rdquo;) sanctioned more than two dozen exchange houses, front companies and individuals in Iran, the UAE, Türkiye and Hong Kong, which it says form Iran&rsquo;s shadow banking network. Secretary Scott Bessent called it &ldquo;the last financial lifeline of a bankrupt regime&rdquo; and said Treasury would continue &ldquo;until we have buried the head of the snake&rdquo;. Iran&rsquo;s parliament speaker said the US seeks to impose a &ldquo;no war, no peace&rdquo; stalemate on Iran and that &ldquo;sustainable deterrence&rdquo; is key (Anadolu). US officials are investigating cyberattacks on up to 50 tankers, some of which received bomb threats, with Iran and Russia as possible suspects; Al Jazeera notes that Washington says it has no evidence of Iranian involvement (WSJ, Reuters, Al Jazeera). An account posting as &ldquo;HormuzReport&rdquo;,, reported that Iran had begun firing anti-ship cruise missiles at US-escorted ships near Khasab (Oman) and that a tanker was hit. <strong>This could not be corroborated by an official or major-outlet source by 06:00 UTC.</strong> UKMTO had reported two tanker attacks near Khasab on 20–21 November.</p>
+<p><strong>Why it matters for Europe:</strong> Treasury designations in Türkiye and the UAE again apply US law to third countries&rsquo; banks. European firms comply because of their exposure to the dollar, without any EU decision. At the same time, a &ldquo;no war, no peace&rdquo; Gulf keeps Europe&rsquo;s energy and shipping costs high.</p>
+<p><strong>What to watch:</strong> Iranian countermeasures; UKMTO or CENTCOM confirmation of any new Hormuz attack; EU position on the Treasury designations affecting Türkiye.</p>
+<p><strong>Sources:</strong> <a href="https://home.treasury.gov/news/press-releases/sb0699">US Treasury</a>, <a href="https://ofac.treasury.gov/recent-actions/20261123">OFAC</a>, <a href="https://x.com/i/status/2124951217751429303">Bessent</a>, <a href="https://www.aljazeera.com/news/2026/11/23/us-escalates-sanctions-on-iran-targets-shadow-banking-networks">Al Jazeera (1)</a>, <a href="https://x.com/i/status/2125054312975937653">Anadolu (Iranian speaker)</a>, <a href="https://x.com/i/status/2125089722821226574">WSJ</a>, <a href="https://x.com/i/status/2125088850083295612">Al Jazeera (2)</a>, <a href="https://x.com/i/status/2124952108353061312">HormuzReport (unverified)</a>, <a href="https://www.ukmto.org/-/media/ukmto/products/20261121-ukmto_warning_215-26.pdf">UKMTO warning</a></p>
+<h2 id="s7">In brief</h2>
+<ul>
+<li><strong>Coalition of the Willing in Poland:</strong> the Multinational Force – Ukraine (MNF-U) completed several weeks of training in Poland &ldquo;to deploy and contribute to regenerate and reassure&rdquo; Ukrainian forces &ldquo;whenever a ceasefire occurs&rdquo;; it brought 2,800 personnel from 11 participating states, 1,100 of them French, under joint French–British command (French Armed Forces:).</li>
+<li><strong>Eastern flank (Update):</strong> NATO&rsquo;s North Atlantic Council discussed last week&rsquo;s violations of Polish airspace: &ldquo;a dangerous incident and Russia bears full responsibility&rdquo; (NATO,:). Russia accused Estonia of hostile actions &ldquo;on the verge of triggering open war&rdquo; after the border-closure decision (Japan Times:). Zelensky warned of intelligence on new Russian strikes and asked for anti-ballistic interceptors.</li>
+<li><strong>US at the UN:</strong> the US mission again called on Russia and Ukraine to halt attacks on energy infrastructure and food supply chains (:).</li>
+<li><strong>Myanmar:</strong> the UK sanctioned five senior military figures and recognised the crimes against the Rohingya as genocide after the ICJ ruling (FCDO:). Spain and 13 other countries issued a joint statement on the ICJ ruling (Spanish MFA:).</li>
+<li><strong>China–Colombia, Taiwan:</strong> China&rsquo;s embassy in Colombia protested an &ldquo;improper&rdquo; official visit to Taiwan by Colombian lawmakers (embassy statement:; Global Times, Chinese state media:). Taiwan&rsquo;s PLA monitoring: 3 sorties and 9 vessels (Taiwan MND:). Taiwan holds local elections on 28 November (Reuters:).</li>
+<li><strong>South China Sea:</strong> Malaysia&rsquo;s Anwar calls Beijing &ldquo;extremely reasonable&rdquo; in talks (SCMP, Alibaba-owned:).</li>
+<li><strong>COP31:</strong> MEP Valérie Hayer called the failure of COP31 &ldquo;particularly worrying&rdquo; and said the EU was right to refuse a deal that did not even mention fossil fuels.</li>
+<li><strong>Bangladesh:</strong> ousted PM Sheikh Hasina, sentenced to death in absentia, plans to return from India on 16 December (AP:).</li>
+<li><strong>Gaza:</strong> Israeli drone attacks killed at least nine Palestinians in 24 hours despite the October 2025 ceasefire (Al Jazeera:).</li>
+<li><strong>See Economía:</strong> the FCC&rsquo;s &ldquo;reciprocity&rdquo; move against foreign satellite operators in the US market (:); the US Entity List addition of Megaspeed and six other Southeast Asian firms, and Malaysia telling data-centre operators not to serve them (Al Jazeera:; Bloomberg:). <strong>See Industria de Defensa:</strong> Eutelsat&rsquo;s US$60 million OneWeb contract with the US armed forces (:); Airbus Manching works council calls for a German sixth-generation fighter . <strong>See Conflictos:</strong> Ukrainian drone raid towards Moscow overnight (:); Russian strike on a Zaporizhzhia residential building, 2 killed, 22 injured (Kyiv Independent:).</li>
+</ul>
+<p><strong>Sources:</strong> <a href="https://x.com/i/status/2124938956965838855">X (1)</a>, <a href="https://x.com/i/status/2124930723631038641">X (2)</a>, <a href="https://x.com/i/status/2125059112857686369">X (3)</a>, <a href="https://x.com/i/status/2124947086915575812">X (4)</a>, <a href="https://x.com/i/status/2124920032337842393">X (5)</a>, <a href="https://www.gov.uk/government/news/uk-leads-global-action-with-major-new-measures-against-myanmar-military-following-landmark-genocide-judgment">gov.uk</a>, <a href="https://www.exteriores.gob.es/es/Comunicacion/Comunicados/Paginas/2026_COMUNICADOS/Declaracion-conjunta-sobre-la-resolucion-de-la-Corte-Internacional-de-Justicia-relativa-a-Myanmar.aspx">exteriores.gob.es</a>, <a href="https://x.com/i/status/2125025643679322392">X (6)</a>, <a href="https://x.com/i/status/2125058766098092431">X (7)</a>, <a href="https://x.com/i/status/2125032297628049742">X (8)</a>, <a href="https://x.com/i/status/2125087020829593688">X (9)</a>, <a href="https://www.scmp.com/week-asia/politics/article/3375503/malaysias-anwar-says-beijing-extremely-reasonable-south-china-sea-talks">scmp.com</a>, <a href="https://x.com/i/status/2124955013457891749">X (10)</a>, <a href="https://x.com/i/status/2125086293419762071">X (11)</a>, <a href="https://x.com/i/status/2125102110220104098">X (12)</a>, <a href="https://x.com/i/status/2124970983056379978">X (13)</a>, <a href="https://x.com/i/status/2125089527375245531">X (14)</a>, <a href="https://x.com/i/status/2125082012180484325">X (15)</a>, <a href="https://x.com/i/status/2124881761071219129">X (16)</a>, <a href="https://x.com/i/status/2125015560849100918">X (17)</a>, <a href="https://kyivindependent.com/2-killed-22-injured-in-russian-attack-on-residential-building-in-zaporizhzhia/">kyivindependent.com</a></p>
+    </article>
+    <footer class="doc-footer">
+<p>CEAFE daily briefing — World. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

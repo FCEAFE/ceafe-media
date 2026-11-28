@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECONOMÍA — miércoles, 25 de noviembre de 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">ECONOMÍA</h1>
+      <p class="list-date">miércoles, 25 de noviembre de 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Economy / Economía</li>
+<li><strong>Periodo cubierto:</strong> del martes 24 de noviembre hacia las 19:00 al miércoles 25 de noviembre hacia las 07:00 (hora de Madrid): todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Economía de CEAFE y las publicaciones de @F_CEAFE.</li>
+</ul>
+<h2 id="s1">Un jurado de EE. UU. declara culpable a Huawei de engañar a bancos sobre sus negocios en Irán y de robar secretos comerciales</h2>
+<p>Un jurado federal de Brooklyn (Nueva York) declaró culpable a Huawei el martes 24 de noviembre de 10 de los 12 cargos que afrontaba, entre ellos fraude bancario, fraude electrónico, violación de sanciones, conspiración para defraudar a Estados Unidos y conspiración para robar secretos comerciales; la absolvió de conspiración para delinquir como organización criminal (RICO) y de conspiración para obstruir a la justicia (Reuters vía Investing.com; France 24/AFP; CNN). Según el Departamento de Justicia, Huawei «mintió a los bancos sobre sus actividades en Irán para obtener miles de millones de dólares y acceso a los servicios de compensación en dólares»; los cargos de secretos comerciales se refieren a código fuente y manuales de routers, tecnología de antenas y de pruebas robóticas de empresas estadounidenses. El caso comenzó en 2018; Huawei entró en la Entity List de EE. UU. en 2019. La jueza Ann Donnelly dictará sentencia el 14 de septiembre de 2027; aún no se conocen las penas. El fiscal general Todd Blanche: «Ninguna persona ni empresa está por encima de la ley». Huawei afirma que la absolución por RICO «confirma nuestra posición de los últimos ocho años», considera los demás cargos «sin fundamento jurídico ni fáctico» y anuncia «todas las acciones legales necesarias»; su abogado prevé recurrir. <strong>Respuesta china:</strong> la embajada china en Washington no comentó de inmediato y el Ministerio de Asuntos Exteriores aún no se había pronunciado al cierre; en septiembre ese ministerio dijo que China «se opone firmemente a la represión y contención de las empresas chinas por parte de EE. UU.». @F_CEAFE no ha publicado esta noticia.</p>
+<p><strong>Por qué importa a Europa:</strong> el veredicto confirma hasta dónde llega Washington: una empresa china es condenada en un tribunal estadounidense por negocios con un tercer país (Irán) porque pasaron por la compensación en dólares. Cualquier empresa o banco europeo que use el dólar está expuesto a la misma lógica; por eso las empresas europeas cumplen las sanciones de EE. UU. contra Irán aunque la UE no las comparta. La UE tiene un Estatuto de Bloqueo, pero nunca lo ha hecho efectivo, y carece de una herramienta equivalente para proyectar su propio derecho. En el caso de Huawei, muchos gobiernos europeos ya la excluyeron del 5G a instancias de EE. UU., sin pedir nada a cambio.</p>
+<p><strong>Datos clave:</strong></p>
+<ul>
+<li>Tribunal: Tribunal Federal del Distrito Este de Nueva York; juicio de más de dos meses, más de 60 testigos de la acusación y 15 de la defensa.</li>
+<li>Veredicto: culpable de 10 de 12 cargos; absuelta de RICO y de obstrucción.</li>
+<li>Sentencia: 14 de septiembre de 2027 (CNN/Reuters).</li>
+<li>Reacción: comunicado de Huawei rechazando los cargos; sin declaración del Gobierno chino aún — atentos a la rueda de prensa de hoy del Ministerio de Exteriores y al MOFCOM.</li>
+</ul>
+<p>En el archivo de CEAFE: @F_CEAFE sigue el caso de EE. UU. contra Huawei desde 2020, cuando Canadá retenía a la directora financiera de Huawei, Meng Wanzhou, para su extradición a Estados Unidos (https://x.com/i/status/1315698697695526916, https://x.com/i/status/1392768106028732416).</p>
+<p><strong>Fuentes:</strong></p>
+<ul>
+<li>https://x.com/i/status/2125328627210305866 (New York Times)</li>
+<li>https://x.com/i/status/2125374482294722914 (France 24)</li>
+<li>https://x.com/i/status/2125406950343016657 (CNN)</li>
+<li>https://x.com/i/status/2125408010193215799 (Japan Times)</li>
+<li>https://x.com/i/status/2125422701523169287 (Al Jazeera English, comunicado de Huawei)</li>
+<li>https://x.com/i/status/2125348584875053277 (Huawei, comunicado sobre el veredicto)</li>
+<li>https://www.france24.com/en/americas/20261124-new-york-jury-convicts-huawei-of-stealing-trade-secrets</li>
+<li>https://edition.cnn.com/2026/11/24/china/china-huawei-iran-conviction-intl-hnk</li>
+<li>https://cnnespanol.cnn.com/2026/11/24/mundo/jurado-eeuu-declara-culpable-huawei-fraude-conspiracion-reux</li>
+<li>https://www.investing.com/news/economy-news/chinas-huawei-convicted-at-us-criminal-trial-stemming-from-iran-business-5048943 (reproducción de Reuters)</li>
+<li>https://apnews.com/article/huawei-racketeering-trial-verdict-b39ac780e2e31140015a1be02f0329ab (AP; acceso directo bloqueado, datos del extracto de búsqueda)</li>
+</ul>
+<p><strong>Qué vigilar:</strong> reacción del Ministerio de Exteriores y del MOFCOM; estimación de la multa; recurso de Huawei; efecto en la tregua comercial China–EE. UU.</p>
+<hr>
+<h2 id="s2">Actualización: siguen sin publicarse los aranceles de la Sección 301 por «sobrecapacidad» contra China, la UE y otras 14 economías</h2>
+<p>El anuncio previsto para la noche del martes no llegó. A las 07:05 (Madrid), la página de comunicados de USTR no mostraba nada posterior al 19 de noviembre. Durante la noche, AP y Reuters volvieron a informar, citando fuentes conocedoras, de que la Administración «se dispone a presentar» nuevos aranceles tras su investigación sobre exceso de capacidad industrial, que afectarían a China, la Unión Europea y otras 14 economías. Los mercados reaccionaron: Wall Street cayó el martes, arrastrado por los fabricantes de chips, porque «los nuevos planes arancelarios reavivaron la preocupación comercial» (Bloomberg), y el oro mantuvo su caída al reforzar los aranceles las expectativas de otra subida de tipos de la Fed (Bloomberg). Además, Bloomberg informa de que el acero asiático más barato gana terreno entre los compradores estadounidenses pese a los aranceles de la Sección 232, porque el auge de la construcción de centros de datos tensiona la oferta nacional.</p>
+<p><strong>Por qué importa a Europa:</strong> la UE aún no sabe qué tipo pagará con la nueva base legal, un año después de aceptar un techo del 15% en su acuerdo de 2025. La incertidumbre ya es un coste para los exportadores europeos; la respuesta común de la UE debe estar lista antes de que se publique la lista, no después.</p>
+<p><strong>Datos clave:</strong></p>
+<ul>
+<li>Situación a las 07:05 (Madrid): ni determinación, ni tipos, ni lista de productos de USTR.</li>
+<li>16 economías investigadas desde el 11 de marzo de 2026 (ver edición de las 20:30, tema 1).</li>
+<li><strong>Reacción:</strong> sin declaraciones de la UE ni de China todavía.</li>
+</ul>
+<p><strong>Fuentes:</strong></p>
+<ul>
+<li>https://x.com/i/status/2125394431343837377 (AP)</li>
+<li>https://x.com/i/status/2125387773955768594 (Reuters)</li>
+<li>https://x.com/i/status/2125347419395125561 (Bloomberg)</li>
+<li>https://x.com/i/status/2125313554190320094 (Bloomberg, bolsas de EE. UU.)</li>
+<li>https://x.com/i/status/2125407910758891766 (Bloomberg, oro)</li>
+<li>https://x.com/i/status/2125390299186753974 (Bloomberg, importaciones de acero)</li>
+<li>https://ustr.gov/about-us/policy-offices/press-office/press-releases (consultada a las 07:05, sin novedades)</li>
+</ul>
+<p><strong>Qué vigilar:</strong> publicación de USTR; respuestas de la Comisión y del MOFCOM.</p>
+<hr>
+<h2 id="s3">Corea del Norte expulsa al representante suizo por las sanciones de Suiza a un campamento vinculado a niños ucranianos deportados</h2>
+<p>El Ministerio de Exteriores norcoreano declaró persona non grata a Sylvain Astier, jefe de la oficina diplomática suiza recién reabierta en Pyongyang, le dio 48 horas para salir del país y exigió el cierre de la oficina (KCNA, medio estatal norcoreano). El motivo alegado es la inclusión por Suiza del Campamento Infantil Internacional de Songdowon (Wonsan) en su lista de sanciones; Berna sostiene que el campamento forma parte de programas que llevan a Corea del Norte a niños ucranianos de los territorios ocupados por Rusia para adoctrinarlos. El Reino Unido sancionó el campamento en mayo de 2026 y la UE en septiembre de 2026; Suiza, que adopta las sanciones de la UE contra Rusia, los siguió. La oficina se había reabierto el 19 de octubre, durante la visita del ministro de Exteriores Ignazio Cassis (Euronews). Kim Yo Jong lo había amenazado el 24 de noviembre (edición de las 08:30 del 24). Por otra parte, Bloomberg informa de que los activos rusos congelados por Suiza con las sanciones alineadas con la UE ascienden ya a 10.200 millones de dólares.</p>
+<p><strong>Por qué importa a Europa:</strong> un Estado europeo no comunitario que se alinea con las sanciones de la UE paga solo el precio diplomático y pierde uno de los pocos canales occidentales con Pyongyang. Muestra a la vez el alcance de las sanciones de la UE cuando los socios se alinean y el escaso peso de cualquier Estado europeo aislado cuando el sancionado responde.</p>
+<p><strong>Datos clave:</strong></p>
+<ul>
+<li>Represalia: expulsión del representante (48 horas) y exigencia de cierre de la oficina, 25 de noviembre (KCNA).</li>
+<li>Entidad sancionada: Campamento de Songdowon — Reino Unido (mayo de 2026), UE (septiembre de 2026), Suiza (noviembre de 2026).</li>
+<li>Activos rusos congelados en Suiza: 10.200 millones de dólares (Bloomberg, cifra publicada el 24 de noviembre).</li>
+</ul>
+<p><strong>Fuentes:</strong></p>
+<ul>
+<li>https://x.com/i/status/2125462025090293790 (Bloomberg)</li>
+<li>https://x.com/i/status/2125314804009091480 (Bloomberg, activos rusos congelados en Suiza)</li>
+<li>http://www.kcna.kp/en/article/detail/66b6fd73f166f5a43a756e54cee318d6 (KCNA, medio estatal norcoreano)</li>
+<li>https://www.euronews.com/2026/11/25/north-korea-expels-swiss-diplomat-and-orders-berns-new-pyongyang-office-to-close</li>
+<li>https://www.straitstimes.com/asia/north-korea-expels-swiss-representative-over-sanctions-related-to-childrens-camp (reproducción de Reuters)</li>
+<li>https://www.nknews.org/2026/11/north-korea-expels-swiss-diplomat-over-sanctions-on-childrens-camp/</li>
+</ul>
+<p><strong>Qué vigilar:</strong> respuesta suiza; si Pyongyang actúa contra las misiones de la UE o del Reino Unido.</p>
+<hr>
+<h2 id="s4">La UE no volverá a la energía rusa, salga lo que salga de las negociaciones EE. UU.–Rusia, afirma el comisario Jørgensen</h2>
+<p>El comisario europeo de Energía, Dan Jørgensen, dijo a Euronews (24 de noviembre) que la UE «nunca más» importará energía rusa, sea cual sea el resultado de las negociaciones de paz impulsadas por EE. UU.: «Si de mí depende, no volveremos a importar ni una molécula de Rusia». Subrayó que la UE ha aprobado legislación para eliminar de forma permanente el gas ruso —«más fuerte que las sanciones, porque las sanciones deben renovarse cada seis meses»— y que ningún acuerdo entre Washington y Moscú puede pasar por encima del derecho de la UE. Euronews recuerda que la Administración estadounidense suavizó el mes pasado las restricciones al gasóleo ruso y ha indicado que podría apoyar el regreso de Rusia como actor energético, incluso en Europa, tras un acuerdo de paz. La UE ha reducido el gas ruso del 45% a cerca del 10% de sus importaciones y prevé eliminarlo el año que viene. Jørgensen advirtió de un invierno difícil en las gasolineras; los precios medios del gas en Europa subieron un 163% interanual en octubre. Rechazó un impuesto europeo sobre beneficios extraordinarios pedido por Austria, Alemania, Italia, Polonia, Portugal y España, y prefiere decisiones nacionales y rebajar los impuestos a la electricidad (en torno al 29% de la factura media de los hogares).</p>
+<p><strong>Por qué importa a Europa:</strong> la mesa de la paz se monta en Washington y Moscú, pero las normas energéticas de la UE se hacen en Bruselas: es el único ámbito en que el bloque ha convertido una política de sanciones en ley permanente. El coste es real (precios del gas un 163% más altos en octubre que un año antes) y parte de la dependencia europea se ha desplazado al GNL estadounidense.</p>
+<p><strong>Datos clave:</strong></p>
+<ul>
+<li>Peso del gas ruso en las importaciones de la UE: del 45% (antes de la invasión a gran escala de febrero de 2022) a cerca del 10% (2026); fin total previsto en 2027.</li>
+<li>Seis Estados miembros, entre ellos España, pidieron un impuesto europeo sobre beneficios extraordinarios; la Comisión lo descarta.</li>
+</ul>
+<p><strong>Fuentes:</strong></p>
+<ul>
+<li>https://x.com/i/status/2125354392903934199 (Euronews)</li>
+<li>https://www.euronews.com/2026/11/24/eu-rules-out-russian-energy-return-regardless-of-us-russia-peace-talks-jorgensen-tells-eur</li>
+</ul>
+<p><strong>Qué vigilar:</strong> posición de EE. UU. sobre la energía rusa en el marco de paz; precios del gas este invierno.</p>
+<hr>
+<h2 id="s5">Comercio dirigido EE. UU.–China: primer grupo de trabajo agrícola de la «Junta de Comercio» y el mayor pedido chino a Boeing desde 2017</h2>
+<p>China y Estados Unidos celebraron en Pekín, los días 23 y 24 de noviembre, la primera reunión del grupo de trabajo agrícola de la Junta de Comercio China–EE. UU., con intercambios «francos, profundos y constructivos» sobre regulación de productos agrarios, acceso al mercado y comercio, según el MOFCOM (25 de noviembre). Esa misma tarde, Xiamen Airlines (participada al 55% por China Southern) firmó la compra de 50 Boeing 737-8, con precio de catálogo de unos 7.400 millones de dólares y entregas entre 2031 y 2034; el precio real es menor por los descuentos de Boeing y la operación aún necesita la aprobación del Estado chino (comunicación a la Bolsa de Hong Kong). Aviation Week lo califica como el mayor pedido chino a Boeing desde 2017. Global Times (medio estatal chino) lo vincula a los esfuerzos de Boeing por recuperar su negocio en China.</p>
+<p><strong>Por qué importa a Europa:</strong> mientras Washington prepara aranceles contra la UE como economía de «sobrecapacidad», negocia con Pekín compras sector a sector —productos agrarios y aviones, estos en competencia directa con Airbus, cuya cuota en China es un activo industrial europeo—. Un comercio dirigido entre EE. UU. y China puede hacerse a costa de Europa.</p>
+<p><strong>Datos clave:</strong></p>
+<ul>
+<li>La Junta de Comercio se reunió por primera vez por videoconferencia el 13 de noviembre (MOFCOM, 19 de noviembre).</li>
+<li>Pedido a Boeing: 50 × 737-8; catálogo 7.400 millones de dólares (unos 49.700 millones de yuanes); pendiente de aprobación estatal y de los accionistas.</li>
+</ul>
+<p><strong>Fuentes:</strong></p>
+<ul>
+<li>https://x.com/i/status/2125467175398080960 (Global Times, medio estatal chino — grupo agrícola)</li>
+<li>https://x.com/i/status/2125466741103006193 (Global Times, medio estatal chino — Boeing)</li>
+<li>https://www.mofcom.gov.cn/xwfb/rcxwfb/art/2026/art_6e6ac6c48c544802b6f2b68e4ef07522.html (MOFCOM, en chino)</li>
+<li>https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1124/2026112401223.pdf (comunicación de China Southern)</li>
+<li>https://www.cnbc.com/2026/11/25/china-xiamen-boeing-deal.html</li>
+<li>https://aviationweek.com/air-transport/airlines-lessors/chinas-xiamen-airlines-signs-50-boeing-737-maxs</li>
+</ul>
+<p><strong>Qué vigilar:</strong> nuevos grupos de trabajo de la Junta de Comercio; pedidos chinos a Airbus.</p>
+<hr>
+<h2 id="s6">Irak toma el control de los campos petrolíferos kurdos y rechaza la evaluación de capacidad de la OPEP+ antes de la reunión del fin de semana</h2>
+<p>El primer ministro iraquí, Ali al Zaidi, ordenó al Ministerio del Petróleo gestionar todos los campos de su propiedad que hoy controla el Gobierno Regional del Kurdistán, y a las fuerzas federales tomar el control de campos y pasos fronterizos en zonas kurdas, alegando contrabando de crudo (Bloomberg; Al Jazeera). Irak también ha rechazado una evaluación de su capacidad de producción encargada por la OPEP+, lo que anticipa un choque en la reunión de este fin de semana sobre cuotas (Bloomberg). El crudo caía más de un 1% el miércoles por la mañana, porque la perspectiva de exceso de oferta pesa más que el temor a cortes en Oriente Medio (Reuters). ExxonMobil afirma que la producción de Guyana superará el millón de barriles diarios en semanas (publicado por @F_CEAFE).</p>
+<p><strong>Por qué importa a Europa:</strong> Europa importa casi todo su petróleo; las disputas en la OPEP+ y la nueva oferta de fuera del cártel (Guyana, EE. UU.) marcan los precios que pagarán los europeos este invierno, ya presionados por el gas.</p>
+<p><strong>Fuentes:</strong></p>
+<ul>
+<li>https://x.com/i/status/2125469586845741509 (Bloomberg)</li>
+<li>https://x.com/i/status/2125334052597276865 (Al Jazeera English)</li>
+<li>https://x.com/i/status/2125323613167390844 (Bloomberg, evaluación de la OPEP+)</li>
+<li>https://x.com/i/status/2125469639178076556 (Reuters, precios del crudo)</li>
+<li>https://x.com/i/status/2125292076346511782 (@F_CEAFE, Exxon en Guyana)</li>
+</ul>
+<p><strong>Qué vigilar:</strong> reunión de la OPEP+ del fin de semana.</p>
+<hr>
+<h2 id="s7">El director de la OMS pide a EE. UU. que levante el bloqueo de combustible a Cuba</h2>
+<p>El director general de la OMS, Tedros Adhanom Ghebreyesus, de visita en La Habana, pidió a EE. UU. que levante su bloqueo de combustible a Cuba: «La intensificación de las restricciones de combustible y de las sanciones está causando un daño directo al pueblo cubano, especialmente a los más vulnerables»; la ONU destinó 2 millones de dólares a vacunación y equipos médicos (Al Jazeera; Reuters). La OFAC publicó nuevas preguntas frecuentes sobre Cuba el 23 de noviembre.</p>
+<p><strong>Por qué importa a Europa:</strong> la presión secundaria de EE. UU. sobre el transporte y el comercio de terceros países con Cuba también golpea a empresas europeas (en particular españolas presentes en la isla), y la UE nunca ha usado con eficacia su Estatuto de Bloqueo para protegerlas.</p>
+<p><strong>Fuentes:</strong></p>
+<ul>
+<li>https://x.com/i/status/2125452067422499248 (Al Jazeera English)</li>
+<li>https://x.com/i/status/2125451950745440315 (Reuters)</li>
+<li>https://www.aljazeera.com/news/2026/11/25/who-chief-urges-end-to-us-fuel-blockade-on-cuba</li>
+<li>https://ofac.treasury.gov/recent-actions</li>
+</ul>
+<hr>
+<h2 id="s8">Breves</h2>
+<ul>
+<li><strong>Japón:</strong> el indicador clave de inflación de servicios, en máximos de 36 años (Reuters) https://x.com/i/status/2125467052521537815</li>
+<li><strong>Australia:</strong> la inflación subyacente se aceleró inesperadamente en octubre pese a cinco subidas de tipos del RBA este año (Bloomberg) https://x.com/i/status/2125415456852828184</li>
+<li><strong>Corea del Sur:</strong> se espera que el Banco de Corea vuelva a subir tipos por el auge de los chips (Bloomberg) https://x.com/i/status/2125379015036801291</li>
+<li><strong>Nvidia:</strong> Jensen Huang, restituido como consejero delegado, admitió ante la plantilla que vulneró partes del código de conducta (Reuters) https://x.com/i/status/2125418011062366648 ; el fiscal general Blanche llamó a Nvidia «buen ciudadano corporativo» (Reuters) https://x.com/i/status/2125322310936854681 ; el rebote asiático por Huang se esfumó (Bloomberg) https://x.com/i/status/2125423004150600104</li>
+<li><strong>Mercados de IA:</strong> las acciones de Anthropic cayeron por debajo de su precio de salida de 83 dólares (Reuters) https://x.com/i/status/2125329861245903274 ; bonos de CoreWeave en mínimos (Bloomberg) https://x.com/i/status/2125345023814164646 ; el WSJ se pregunta qué supondría un pinchazo de la IA para la economía de EE. UU. https://x.com/i/status/2125426877519085702</li>
+<li><strong>EE. UU.–China:</strong> la Comisión Federal de Comercio de EE. UU. demandó a Shein por engañar a los consumidores (Bloomberg) https://x.com/i/status/2125334926836838470</li>
+<li><strong>Fusiones en EE. UU. (EE. UU.–EE. UU.):</strong> Blackstone, Warburg Pincus y Apollo negocian respaldar la compra de Global Payments por GTCR, de 50.000 millones de dólares (Reuters) https://x.com/i/status/2125416727638884670</li>
+<li><strong>Chips:</strong> el consejero delegado de ASML advirtió a Washington contra nuevas normas de exportación (publicación reposteada por @F_CEAFE; no verificada con fuente primaria) https://x.com/i/status/2125178871381389744</li>
+<li><strong>Pacífico:</strong> Australia e Islas Salomón firmaron un tratado de seguridad que excluye bases extranjeras, visto como un freno a China (Reuters; Japan Times) https://x.com/i/status/2125439711166550221</li>
+<li><strong>África:</strong> la refinería Dangote empezará a cotizar en Lagos la próxima semana, la mayor OPV de África (Bloomberg) https://x.com/i/status/2125293408554029398</li>
+<li><strong>Patentes:</strong> Huawei afirma que tenía más de 165.000 patentes concedidas en vigor en el mundo a finales de 2025 (foro de PI de Huawei) https://x.com/i/status/2125434440067502212</li>
+<li><strong>Espacio (ver sección Industria de Defensa):</strong> lanzada la Shenzhou-24 con el primer astronauta pakistaní, acoplada a Tiangong (Xinhua, medio estatal chino) https://x.com/i/status/2125467747119427819 ; Euronews sobre el lugar de Europa en la economía orbital https://x.com/i/status/2125400847098216607</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Economía. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>

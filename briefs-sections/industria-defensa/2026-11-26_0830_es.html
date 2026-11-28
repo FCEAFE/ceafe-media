@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INDUSTRIA DE DEFENSA — jueves, 26 de noviembre de 2026 · 08:30 — CEAFE</title>
+  <style>
+/* CEAFE daily list brief — article look
+   Silver #999999 sampled from the CEAFE wordmark lettering.
+   Site fonts: Montserrat, Source Sans Pro (and Source Serif Pro for body). */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Sans%20Pro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("file:///usr/share/fonts/truetype/sand-box/custom/Source%20Serif%20Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --silver: #999999;
+  --ink: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #d0d0d0;
+  --eu-blue: #003399;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0 18mm 16mm;
+}
+
+/* ----- Masthead ----- */
+.masthead {
+  text-align: center;
+  padding: 8mm 0 6mm;
+}
+
+.masthead .logo {
+  display: block;
+  margin: 0 auto 7mm;
+  width: 168mm;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-title {
+  margin: 0;
+  padding: 0 4mm;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.list-title.long {
+  font-size: 12.5pt;
+  letter-spacing: 0.10em;
+  line-height: 1.35;
+}
+
+.list-date {
+  margin: 3mm 0 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+  text-transform: none;
+  text-align: center;
+}
+
+.masthead-rule {
+  border: 0;
+  border-top: 0.6pt solid var(--silver);
+  width: 42mm;
+  margin: 5.5mm auto 0;
+  opacity: 0.85;
+}
+
+/* ----- Article body ----- */
+article {
+  margin-top: 7mm;
+}
+
+article > h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-size: 13pt;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: #222;
+  margin: 7.5mm 0 3mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: #333;
+  margin: 5mm 0 2mm;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.6mm;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.masthead p {
+  text-align: center;
+}
+
+a {
+  color: var(--eu-blue);
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.6px;
+  word-break: break-word;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Section labels like **Why it matters for Europe:** */
+p > strong:first-child,
+li > strong:first-child {
+  font-family: "Source Sans Pro", "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+ul, ol {
+  margin: 0 0 3.2mm;
+  padding-left: 5.5mm;
+}
+
+li {
+  margin: 0 0 1.4mm;
+  padding-left: 1mm;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+li:last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 0.4pt solid var(--rule);
+  margin: 6mm auto;
+  width: 100%;
+}
+
+blockquote {
+  margin: 3mm 0 3mm 4mm;
+  padding: 0 0 0 3.5mm;
+  border-left: 1.6pt solid var(--silver);
+  color: #333;
+}
+
+/* Images / figures */
+figure.brief-figure {
+  margin: 4mm auto 5mm;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.brief-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 95mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.8mm;
+  text-align-last: center;
+}
+
+.image-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Footer */
+.doc-footer {
+  margin-top: 10mm;
+  padding-top: 3.5mm;
+  border-top: 0.4pt solid var(--rule);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: #888;
+}
+
+.doc-footer p { margin: 0 0 1.5mm; text-align: left; }
+.doc-footer p:last-child { margin-bottom: 0; }
+.doc-footer a { color: #666; }
+
+/* Print / PDF */
+@page {
+  size: A4;
+  margin: 12mm 14mm 14mm 14mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  .masthead { padding-top: 1mm; }
+}
+
+@media screen {
+  body { background: #ececec; }
+  .page {
+    background: #fff;
+    margin: 12px auto 32px;
+    padding: 12mm 18mm 16mm;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    min-height: 297mm;
+  }
+}
+
+
+/* Extra clearance for the stamped steel bar is reserved on the last page only,
+   via .steel-footer-spacer. Base @page bottom margin stays 14 mm. */
+@media print {
+  .steel-footer { display: none !important; }
+  .steel-footer-spacer {
+    display: block;
+    height: 10mm;
+  }
+}
+.steel-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 8mm;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.steel-footer .steel-bar {
+  width: 148mm;
+  max-width: 100%;
+  height: 6.8mm;
+  box-sizing: border-box;
+  border-radius: 1.6mm;
+  background: linear-gradient(to right, #6d6661 0%, #6b6a6c 45%, #848389 100%);
+  box-shadow: inset 0 0.35mm 0.6mm rgba(255,255,255,0.20),
+              inset 0 -0.3mm 0.5mm rgba(0,0,0,0.22);
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", "Calibri", Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 6.8mm;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4mm;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.steel-footer .steel-bar .steel-copy {
+  margin-left: auto;
+}
+.steel-footer .steel-bar a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+@media screen {
+  .steel-footer {
+    position: relative;
+    bottom: auto;
+    margin: 12mm auto 4mm;
+  }
+  .steel-footer-spacer { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="../../assets/cabecera_2.png" alt="CEAFE — Centro de Estudios y Análisis sobre el Futuro de Europa" />
+      <h1 class="list-title">INDUSTRIA DE DEFENSA</h1>
+      <p class="list-date">jueves, 26 de noviembre de 2026 · 08:30</p>
+      <hr class="masthead-rule" />
+    </header>
+    <article>
+<ul>
+<li><strong>Sección:</strong> Industria de Defensa / Defence Industry</li>
+<li><strong>Periodo cubierto:</strong> desde las 20:00 aprox. del miércoles 25 de noviembre hasta las 07:30 aprox. del jueves 26 de noviembre (hora de Madrid): todo lo nuevo desde la edición de las 20:30.</li>
+<li><strong>Elaborado a partir de:</strong> el informe de la sección Industria de Defensa de CEAFE, las publicaciones de @F_CEAFE y el archivo de CEAFE en X.</li>
+</ul>
+<h2 id="s1">Kubilius a los jefes de Defensa de la UE: el CARD 2026 muestra que Europa puede no llegar a tiempo a 2030</h2>
+<p>Tras su intervención ante el Comité Militar de la UE a nivel de jefes de Defensa, Kubilius escribió el 25 de noviembre que «Rusia sigue escalando», que «no producimos lo suficiente para Ucrania» y que el informe CARD 2026 muestra que «corremos el riesgo de no cumplir nuestro objetivo estratégico de preparación en defensa para 2030» (<a href="https://x.com/KubiliusA/status/2125700387936108785">@KubiliusA</a>). Según el SEAE, los jefes de Defensa, presididos por el general Seán Clancy, con intervención inaugural de Kaja Kallas y una exposición del director ejecutivo de la AED, André Denk, pidieron acelerar la defensa antiaérea para Ucrania antes del invierno y eliminar las barreras a la movilidad militar en la UE para 2027; celebraron además la prórroga de la misión EUMAM Ucrania hasta noviembre de 2028. Esa misma tarde Kubilius difundió la advertencia de la industria espacial europea: el recorte propuesto del 30 % en la partida de defensa y espacio del MFP «haría imposible cumplir las ambiciones espaciales de la UE» (<a href="https://x.com/KubiliusA/status/2125655246529802255">@KubiliusA</a>).</p>
+<p><strong>Comentario CEAFE:</strong> Cuando se comparan capacidades —económicas, tecnológicas o militares— la unidad europea deja de ser un lema y se convierte en una condición.</p>
+<p><strong>Por qué importa a Europa:</strong> la propia revisión de la Comisión reconoce que los esfuerzos nacionales fragmentados no bastan. Tenemos aquí otra prueba de que solo un presupuesto y unas compras de escala europea permitirán llegar a tiempo.</p>
+<p><strong>Qué vigilar:</strong> las negociaciones presupuestarias del Consejo Europeo que empiezan hoy en Bruselas y la publicación de las conclusiones del CARD 2026.</p>
+<p>Fuentes: <a href="https://www.eeas.europa.eu/eeas/eu-chiefs-defence-call-faster-delivery-european-defence-readiness-0_en">SEAE</a>; <a href="https://x.com/KubiliusA/status/2125700392642384340">@KubiliusA</a>; <a href="https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2586">discurso en la web de la Comisión</a> (sin texto).</p>
+<h2 id="s2">Bulgaria compra cinco IRIS-T SLM alemanes más por unos 925,9 millones de euros con préstamos SAFE</h2>
+<p>El Parlamento búlgaro ha ratificado un acuerdo con Alemania para adquirir cinco sistemas IRIS-T SLM más por unos 925,9 millones de euros, financiados con el programa de préstamos SAFE de la UE, según Global Defense Corp (su titular dice cuatro; el texto, cinco). Es la segunda fase del programa búlgaro dentro de la Iniciativa Escudo Europeo del Cielo y eleva el total a unos 1.106 millones; se espera una modificación del contrato con Diehl Defence. La decisión llega tras los ataques con drones contra dos mercantes en la zona económica exclusiva búlgara del mar Negro. Cada batería usa un radar TRML-4D de Hensoldt.</p>
+<p><strong>Antecedentes (archivo de CEAFE):</strong> En noviembre de 2019 @F_CEAFE señaló lo estrecha que era la relación de defensa de Bulgaria con EE. UU., que dejaba «poco margen para cooperar en #EUDefence» (https://x.com/i/status/1196064454200512512); en junio de 2023 saludó el pedido alemán de seis unidades de fuego IRIS-T SLM con #BuyEuropean (https://x.com/i/status/1672224725693521921). Una compra búlgara de IRIS-T financiada con préstamos SAFE de la UE marca ese giro.</p>
+<p><strong>Por qué importa a Europa:</strong> comprador europeo, sistema europeo y dinero europeo: justo para lo que se creó SAFE, y un contraejemplo frente a las compras europeas de defensa antiaérea estadounidense.</p>
+<p><strong>Qué vigilar:</strong> la modificación del contrato con Diehl y la compra prevista de un IRIS-T SLX antes de 2032.</p>
+<p>Fuentes: <a href="https://www.globaldefensecorp.com/2026/11/26/bulgaria-purchases-four-more-iris-t-slm-missile-defence-systems-using-eu-backed-funds/">Global Defense Corp</a>.</p>
+<h2 id="s3">EE. UU. aprueba un paquete de apoyo a los F-16 de Ucrania de 621,9 millones de dólares, pagado por Bélgica, Dinamarca, Países Bajos y Noruega</h2>
+<p>El Departamento de Estado aprobó el 25 de noviembre la posible venta a Ucrania de apoyo de mantenimiento de F-16 y equipos asociados por unos 621,9 millones de dólares (cartuchos pirotécnicos, equipos de laboratorio y apoyo al transporte), según The New Voice of Ukraine. Pagarán Bélgica, Dinamarca, Países Bajos y Noruega, sin fondos estadounidenses, y los contratistas se elegirán por concurso. Zelenski dijo en octubre que la mitad de los F-16 ucranianos estaban en Europa en mantenimiento, y el 17 de noviembre, que Ucrania necesita 40 más.</p>
+<p><strong>Por qué importa a Europa:</strong> el contribuyente europeo financia un contrato de apoyo estadounidense para un avión estadounidense. Europa ya mantiene estos aviones (la belga Sabena Aerospace Engineering aparece en la noticia): cuanto más trabajo vaya a empresas europeas, más dinero se quedará en Europa. A largo plazo, la respuesta europea para Ucrania son el Gripen y el Rafale.</p>
+<p><strong>Qué vigilar:</strong> el aviso formal en la web del Departamento de Estado y qué empresas europeas obtienen trabajo.</p>
+<p>Fuentes: <a href="https://english.nv.ua/nation/state-department-approves-622m-f-16-sale-to-ukraine-50662644.html">The New Voice of Ukraine</a>.</p>
+<h2 id="s4">La FCC autoriza a SpaceX a desplegar hasta un millón de satélites-centro de datos «Starmind» y estudia represalias recíprocas contra operadores extranjeros</h2>
+<p>La FCC concedió a SpaceX autorización para su sistema de centros de datos orbitales «Starmind»: hasta un millón de satélites en órbita baja, con licencia de 15 años. El despliegue debe empezar antes del 25 de noviembre de 2033, con 100.000 satélites en 2035, 500.000 en 2038 y el millón completo en 2040; los enlaces principales serán ópticos y la banda Ka solo de respaldo para telemetría y mando (orden de la FCC, Spaceflight Now, NBC). Además, la FCC anunció que estudiará restricciones recíprocas a operadores de satélites extranjeros, mensaje que @F_CEAFE compartió (<a href="https://x.com/F_CEAFE/status/2125720675419828569">@FCC vía @F_CEAFE</a>).</p>
+<p><strong>Por qué importa a Europa:</strong> una licencia de este tamaño reserva órbitas y espectro a una escala que ningún operador europeo puede igualar, y la amenaza de reciprocidad llega justo cuando la UE defiende su banda de 2 GHz e IRIS². La soberanía orbital y del espectro es ya política industrial.</p>
+<p><strong>Qué vigilar:</strong> el procedimiento de reciprocidad de la FCC y la respuesta de la UE sobre IRIS² y los 2 GHz (acuerdo previsto el 1 de diciembre).</p>
+<p>Fuentes: <a href="https://eu-assets.contentstack.com/v3/assets/blt23eb5bbc4124baa6/bltf4cdf2af47159e12/6b071c5f5506bb38bca5b0ec/FCC_report_and_order_on_SpaceX_Starmind_AI_constellation_11-25-2026.pdf">orden de la FCC (PDF)</a>; <a href="https://spaceflightnow.com/2026/11/26/fcc-green-lights-spacexs-plan-to-launch-1-million-starmind-data-center-satellites/">Spaceflight Now</a>; <a href="https://www.nbcnews.com/science/space/spacex-fcc-authorizes-1-million-satellites-data-centers-space-rcna611341">NBC News</a>.</p>
+<h2 id="s5">El Senado quiere prohibir los contratos sin concurso de más de 100 millones de la Fuerza Espacial que fueron a SpaceX; la Casa Blanca pide 5.000 millones para la Cúpula Dorada</h2>
+<p>Un grupo bipartidista de senadores quiere impedir que SpaceX reciba contratos sin concurso de la Fuerza Espacial para el escudo antimisiles, según Bloomberg (<a href="https://x.com/business/status/2125658367158788487">@business</a>). Según resultados de búsqueda que citan el proyecto, la sección 8127 del presupuesto de defensa FY2027 del Senado prohíbe usar fondos en contratos sin concurso de más de 100 millones para la Space Data Network y el AMTI espacial, ambos adjudicados inicialmente a SpaceX; el proyecto dota a la Cúpula Dorada con 9.390 millones. La Oficina de Presupuesto de la Casa Blanca ha pedido al Congreso una excepción de 5.000 millones en la prórroga presupuestaria para la Cúpula Dorada y ayuda para reponer la flota de MQ-9, antes del plazo del 11 de diciembre (Air &amp; Space Forces Magazine).</p>
+<p><strong>Por qué importa a Europa:</strong> Washington evita depender de un único proveedor espacial mientras Europa sigue dependiendo de Starlink en Ucrania. La lección para la UE es la misma: competencia y alternativas soberanas (IRIS²) antes de quedar atrapada.</p>
+<p><strong>Qué vigilar:</strong> si la sección 8127 sobrevive a la negociación y el texto de la prórroga antes del 11 de diciembre.</p>
+<p>Fuentes: <a href="https://www.bloomberg.com/news/articles/2026-11-25/spacex-sole-source-deals-targeted-in-defense-spending-bill">Bloomberg</a> (no accesible); <a href="https://www.airandspaceforces.com/pentagon-congress-help-with-golden-dome-mq-9/">Air &amp; Space Forces Magazine</a>; <a href="https://x.com/AviationWeek/status/2125724213663154195">@AviationWeek</a>.</p>
+<h2 id="s6">Los 76 helicópteros navales de la India (unos 15.000 crore de rupias) sitúan en cabeza a Leonardo y Airbus</h2>
+<p>La Armada india (51) y la Guardia Costera (25) preparan la compra de 76 helicópteros navales utilitarios para sustituir a los Chetak, en un programa de unos 15.000 crore de rupias, probablemente en la categoría Buy and Make (Indian), que obliga a los fabricantes extranjeros a asociarse con empresas indias, según el Times of India. Los europeos parten como favoritos: el AW169M de Leonardo (asociada con Adani Defence and Aerospace desde febrero de 2026) y Airbus, con HAL también en liza.</p>
+<p><strong>Por qué importa a Europa:</strong> una gran oportunidad de exportación europea en el Indo-Pacífico y un ejemplo de cooperación con la India que amplía las opciones estratégicas europeas más allá de los bloques liderados por EE. UU.</p>
+<p>Fuentes: <a href="https://timesofindia.indiatimes.com/defence/news/navy-coast-guard-helicopter-acquisition-puts-leonardo-airbus-and-hal-in-focus/articleshow/136152110.cms">Times of India</a>.</p>
+<h2 id="s7">Actualización: Polonia pide ayuda antiaérea concreta al Reino Unido y Francia mientras avanza el CAMM-MR</h2>
+<p>El ministro polaco de Defensa, Władysław Kosiniak-Kamysz, pide al Reino Unido y a Francia que conviertan sus compromisos en apoyo concreto de defensa antiaérea, antimisiles y de reconocimiento, y Varsovia prevé una zona de exclusión aérea en su frontera oriental para finales de diciembre o principios de enero (Anadolu, PAP). Aviation Week añade que Polonia quiere ampliar su apuesta por la familia CAMM de MBDA con la versión de medio alcance desarrollada con el Reino Unido, tras el acuerdo intergubernamental del 24 de noviembre ya cubierto. Véanse Actualidad/Conflictos para la zona de exclusión aérea.</p>
+<p><strong>Por qué importa a Europa:</strong> que Polonia recurra a socios y misiles europeos (PGZ–MBDA UK) es la tendencia positiva; falta ver si Londres y París cumplen.</p>
+<p>Fuentes: <a href="https://www.pap.pl/en/news/poland-introduce-no-fly-zone-east-amid-russian-missile-threat">PAP</a>; <a href="https://aviationweek.com/defense/missile-defense-weapons/poland-cements-camm-mr-missile-interest-uk-handshake-agreement">Aviation Week</a>; <a href="https://www.janes.com/defence-intelligence-insights/defence-news/sea/poland-and-uk-advance-camm-mr-missile-project-three-years-after-concept-unveiled">Janes</a>.</p>
+<h2 id="s8">EE. UU. en breve: SLCM-N, encarecimiento del KC-46, retraso del MV-75 y acciones de SpaceX para las «Trump Accounts»</h2>
+<ul>
+<li><strong>SLCM-N:</strong> la Armada de EE. UU. eligió a Raytheon para llevar el misil de crucero nuclear lanzado desde el mar a demostraciones de prototipo (RTX, 24 de noviembre, vía <a href="https://www.armyrecognition.com/news/navy-news/2026/u-s-navy-taps-raytheon-to-advance-new-submarine-launched-nuclear-missile-toward-prototype-demonstrations">Army Recognition</a>).</li>
+<li><strong>KC-46, lote 13 (actualización):</strong> el contrato de 2.820 millones por 15 aviones sitúa el coste unitario en casi 188 millones, más de un 14 % por encima del lote 12 (<a href="https://www.airandspaceforces.com/air-force-boeing-2-8b-contract-more-kc-46s/">Air &amp; Space Forces Magazine</a>). La alternativa europea es el A330 MRTT.</li>
+<li><strong>MV-75:</strong> el Ejército no recibirá en 2026 el primer Bell MV-75 de pruebas, al agotarse los fondos de 2026 en julio (<a href="https://breakingdefense.com/2026/11/delivery-of-first-mv-75-for-testing-officially-delayed-amid-funding-setbacks-army/">Breaking Defense</a>).</li>
+<li><strong>SpaceX</strong> se compromete a dar una acción de clase A a cada «Trump Account» activa, y Musk igualará la cifra (<a href="https://x.com/SpaceX/status/2125671356339499494">@SpaceX</a>).</li>
+<li><strong>BlackSky</strong> mostró imágenes de la base aérea china de Shaodong entregadas 17 minutos después de tomarlas; <strong>HII</strong>, sobre el último viaje del USS Enterprise (CVN-65) para su desguace en Mobile.</li>
+</ul>
+<h2 id="s9">Aeronáutica y espacio: MaiaSpace envía su cohete a Kurú, Terran R ensambla su primera etapa y Corea traslada la producción del Nuri a Hanwha</h2>
+<ul>
+<li><strong>MaiaSpace</strong> (ArianeGroup) envió modelos mecánicos a escala real de las dos etapas del Maia desde Vernon, vía Le Havre a bordo del Canopée, a la Guayana Francesa para pruebas combinadas en el primer semestre de 2027 (<a href="https://europeanspaceflight.com/maiaspace-ships-maia-mechanical-models-to-launch-site/">European Spaceflight</a>).</li>
+<li><strong>Relativity</strong> acopló la primera etapa del Terran R (13 motores Aeon R); <strong>Stoke</strong> prepara el ensayo con carga de su etapa 1; <strong>Vast</strong> integró los 15 tanques COPV de Haven-1; <strong>Rocket Lab</strong> batió su récord de ensayo general (4 h 45) para su próxima misión de Synspective.</li>
+<li><strong>NASA:</strong> su misión de demostración de propulsión nuclear hará un uso limitado de esa propulsión (titular de SpaceNews, no consultado).</li>
+<li><strong>Corea del Sur:</strong> KARI, KASA y Hanwha Aerospace completaron la prueba de transporte de maquetas de las etapas del Nuri; desde el sexto lanzamiento se ensamblarán en la planta de Hanwha en Suncheon (<a href="https://x.com/kari2030/status/2125773907492065571">@kari2030</a>).</li>
+</ul>
+<h2 id="s10">Resto del mundo y Europa en breve</h2>
+<ul>
+<li><strong>Elbit</strong> presentó SPECTRO 12, carga EO/IR multiespectral de 25 kg con designador láser para drones y helicópteros ligeros.</li>
+<li><strong>Turquía:</strong> EHSİM mantiene la producción en serie de sistemas de guerra electrónica y nuevas inversiones de capacidad.</li>
+<li><strong>China:</strong> el avión de medición atmosférica Y12F de AVIC y una hoja de ruta para una red de comunicaciones de nueva generación en 2030 (Xinhua vía Global Times).</li>
+<li><strong>Ucrania:</strong> el láser Blysk de Carmine Sky (4 kW) habría derribado por primera vez un dron ruso a reacción (Kyiv Independent, Ukrinform; véase Conflictos); Fire Point promociona sus misiles balísticos nacionales.</li>
+<li><strong>Lockheed en Europa:</strong> primer UH-60L Black Hawk del Ejército portugués y primeros vuelos de los UH-60M lituanos; helicópteros no europeos cuando Airbus (H145M/NH90) y Leonardo (AW149) ofrecen alternativas europeas.</li>
+</ul>
+<h2 id="s11">También en esta edición</h2>
+<ul>
+<li>Consejo Europeo: préstamo de 45.000 millones a Ucrania y recorte del 30 % en defensa y espacio — ver Actualidad</li>
+<li>Polonia pide a la OTAN estudiar derribar misiles rusos sobre Ucrania — ver Conflictos</li>
+</ul>
+    </article>
+    <footer class="doc-footer">
+<p>Resumen diario de CEAFE — Industria De Defensa. Centro de Estudios y Análisis sobre el Futuro de Europa · <a href="https://ceafe.eu">ceafe.eu</a></p>
+    </footer>
+  </div>
+<div class="steel-footer-spacer" aria-hidden="true"></div><div class="steel-footer" aria-label="CEAFE"><div class="steel-bar"><a href="mailto:info@ceafe.eu">info@ceafe.eu</a><span class="steel-copy">© 2026 CEAFE</span></div></div>
+</body>
+</html>
